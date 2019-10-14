@@ -368,6 +368,12 @@
       <summary>A numeric value that specifies a constant batch size override value for the target model.</summary>
       <returns>The constant batch size for model inputs feature values expected by calls to Bind. The default value for the **BatchSizeOverride** will be 1 indicating a static batch size of 1.</returns>
     </member>
+    <member name="P:Windows.AI.MachineLearning.LearningModelSessionOptions.CloseModelOnSessionCreation">
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+    </member>
     <member name="T:Windows.AI.MachineLearning.MachineLearningContract">
       <summary>
       </summary>

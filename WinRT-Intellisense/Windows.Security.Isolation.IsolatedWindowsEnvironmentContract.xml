@@ -1,0 +1,750 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>Windows.Security.Isolation.IsolatedWindowsEnvironmentContract</name>
+  </assembly>
+  <members>
+    <member name="T:Windows.Security.Isolation.IsolatedWindowsEnvironment">
+      <summary>
+      </summary>
+    </member>
+    <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironment.Id">
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Windows.Security.Isolation.IsolatedWindowsEnvironment.CreateAsync(Windows.Security.Isolation.IsolatedWindowsEnvironmentOptions)">
+      <summary>
+      </summary>
+      <param name="options">
+      </param>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Windows.Security.Isolation.IsolatedWindowsEnvironment.CreateAsync(Windows.Security.Isolation.IsolatedWindowsEnvironmentOptions,Windows.Security.Isolation.IsolatedWindowsEnvironmentTelemetryParameters)">
+      <summary>
+      </summary>
+      <param name="options">
+      </param>
+      <param name="telemetryParameters">
+      </param>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Windows.Security.Isolation.IsolatedWindowsEnvironment.FindByOwnerId(System.String)">
+      <summary>
+      </summary>
+      <param name="environmentOwnerId">
+      </param>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Windows.Security.Isolation.IsolatedWindowsEnvironment.GetById(System.String)">
+      <summary>
+      </summary>
+      <param name="environmentId">
+      </param>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Windows.Security.Isolation.IsolatedWindowsEnvironment.LaunchFileWithUIAsync(System.String,System.String,System.String)">
+      <summary>
+      </summary>
+      <param name="appExePath">
+      </param>
+      <param name="argumentsTemplate">
+      </param>
+      <param name="filePath">
+      </param>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Windows.Security.Isolation.IsolatedWindowsEnvironment.LaunchFileWithUIAsync(System.String,System.String,System.String,Windows.Security.Isolation.IsolatedWindowsEnvironmentTelemetryParameters)">
+      <summary>
+      </summary>
+      <param name="appExePath">
+      </param>
+      <param name="argumentsTemplate">
+      </param>
+      <param name="filePath">
+      </param>
+      <param name="telemetryParameters">
+      </param>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Windows.Security.Isolation.IsolatedWindowsEnvironment.RegisterMessageReceiver(System.Guid,Windows.Security.Isolation.MessageReceivedCallback)">
+      <summary>
+      </summary>
+      <param name="receiverId">
+      </param>
+      <param name="messageReceivedCallback">
+      </param>
+    </member>
+    <member name="M:Windows.Security.Isolation.IsolatedWindowsEnvironment.ShareFolderAsync(System.String,Windows.Security.Isolation.IsolatedWindowsEnvironmentShareFolderRequestOptions)">
+      <summary>
+      </summary>
+      <param name="hostFolder">
+      </param>
+      <param name="requestOptions">
+      </param>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Windows.Security.Isolation.IsolatedWindowsEnvironment.ShareFolderAsync(System.String,Windows.Security.Isolation.IsolatedWindowsEnvironmentShareFolderRequestOptions,Windows.Security.Isolation.IsolatedWindowsEnvironmentTelemetryParameters)">
+      <summary>
+      </summary>
+      <param name="hostFolder">
+      </param>
+      <param name="requestOptions">
+      </param>
+      <param name="telemetryParameters">
+      </param>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Windows.Security.Isolation.IsolatedWindowsEnvironment.StartProcessSilentlyAsync(System.String,System.String,Windows.Security.Isolation.IsolatedWindowsEnvironmentActivator)">
+      <summary>
+      </summary>
+      <param name="hostExePath">
+      </param>
+      <param name="arguments">
+      </param>
+      <param name="activator">
+      </param>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Windows.Security.Isolation.IsolatedWindowsEnvironment.StartProcessSilentlyAsync(System.String,System.String,Windows.Security.Isolation.IsolatedWindowsEnvironmentActivator,Windows.Security.Isolation.IsolatedWindowsEnvironmentTelemetryParameters)">
+      <summary>
+      </summary>
+      <param name="hostExePath">
+      </param>
+      <param name="arguments">
+      </param>
+      <param name="activator">
+      </param>
+      <param name="telemetryParameters">
+      </param>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Windows.Security.Isolation.IsolatedWindowsEnvironment.TerminateAsync">
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Windows.Security.Isolation.IsolatedWindowsEnvironment.TerminateAsync(Windows.Security.Isolation.IsolatedWindowsEnvironmentTelemetryParameters)">
+      <summary>
+      </summary>
+      <param name="telemetryParameters">
+      </param>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Windows.Security.Isolation.IsolatedWindowsEnvironment.UnregisterMessageReceiver(System.Guid)">
+      <summary>
+      </summary>
+      <param name="receiverId">
+      </param>
+    </member>
+    <member name="T:Windows.Security.Isolation.IsolatedWindowsEnvironmentActivator">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentActivator.System">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentActivator.User">
+      <summary>
+      </summary>
+    </member>
+    <member name="T:Windows.Security.Isolation.IsolatedWindowsEnvironmentAllowedClipboardFormats">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentAllowedClipboardFormats.Image">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentAllowedClipboardFormats.None">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentAllowedClipboardFormats.Text">
+      <summary>
+      </summary>
+    </member>
+    <member name="T:Windows.Security.Isolation.IsolatedWindowsEnvironmentAvailablePrinters">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentAvailablePrinters.Local">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentAvailablePrinters.Network">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentAvailablePrinters.None">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentAvailablePrinters.SystemPrintToPdf">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentAvailablePrinters.SystemPrintToXps">
+      <summary>
+      </summary>
+    </member>
+    <member name="T:Windows.Security.Isolation.IsolatedWindowsEnvironmentClipboardCopyPasteDirections">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentClipboardCopyPasteDirections.HostToIsolatedWindowsEnvironment">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentClipboardCopyPasteDirections.IsolatedWindowsEnvironmentToHost">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentClipboardCopyPasteDirections.None">
+      <summary>
+      </summary>
+    </member>
+    <member name="T:Windows.Security.Isolation.IsolatedWindowsEnvironmentContract">
+      <summary>
+      </summary>
+    </member>
+    <member name="T:Windows.Security.Isolation.IsolatedWindowsEnvironmentCreateProgress">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentCreateProgress.PercentComplete">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentCreateProgress.State">
+      <summary>
+      </summary>
+    </member>
+    <member name="T:Windows.Security.Isolation.IsolatedWindowsEnvironmentCreateResult">
+      <summary>
+      </summary>
+    </member>
+    <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentCreateResult.Environment">
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentCreateResult.ExtendedError">
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentCreateResult.Status">
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="T:Windows.Security.Isolation.IsolatedWindowsEnvironmentCreateStatus">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentCreateStatus.FailureByPolicy">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentCreateStatus.Success">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentCreateStatus.UnknownFailure">
+      <summary>
+      </summary>
+    </member>
+    <member name="T:Windows.Security.Isolation.IsolatedWindowsEnvironmentFile">
+      <summary>
+      </summary>
+    </member>
+    <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentFile.HostPath">
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentFile.Id">
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Windows.Security.Isolation.IsolatedWindowsEnvironmentFile.Close">
+      <summary>
+      </summary>
+    </member>
+    <member name="T:Windows.Security.Isolation.IsolatedWindowsEnvironmentHost">
+      <summary>
+      </summary>
+    </member>
+    <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentHost.HostErrors">
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentHost.IsReady">
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="T:Windows.Security.Isolation.IsolatedWindowsEnvironmentHostError">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentHostError.AdminPolicyIsDisabledOrNotPresent">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentHostError.FeatureNotInstalled">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentHostError.HardwareRequirementsNotMet">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentHostError.RebootRequired">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentHostError.UnknownError">
+      <summary>
+      </summary>
+    </member>
+    <member name="T:Windows.Security.Isolation.IsolatedWindowsEnvironmentLaunchFileResult">
+      <summary>
+      </summary>
+    </member>
+    <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentLaunchFileResult.ExtendedError">
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentLaunchFileResult.File">
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentLaunchFileResult.Status">
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="T:Windows.Security.Isolation.IsolatedWindowsEnvironmentLaunchFileStatus">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentLaunchFileStatus.EnvironmentUnavailable">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentLaunchFileStatus.FileNotFound">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentLaunchFileStatus.Success">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentLaunchFileStatus.TimedOut">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentLaunchFileStatus.UnknownFailure">
+      <summary>
+      </summary>
+    </member>
+    <member name="T:Windows.Security.Isolation.IsolatedWindowsEnvironmentOptions">
+      <summary>
+      </summary>
+    </member>
+    <member name="M:Windows.Security.Isolation.IsolatedWindowsEnvironmentOptions.#ctor">
+      <summary>
+      </summary>
+    </member>
+    <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentOptions.AllowCameraAndMicrophoneAccess">
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentOptions.AllowedClipboardFormats">
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentOptions.AllowGraphicsHardwareAcceleration">
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentOptions.AvailablePrinters">
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentOptions.ClipboardCopyPasteDirections">
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentOptions.EnvironmentOwnerId">
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentOptions.PersistUserProfile">
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentOptions.SharedFolderNameInEnvironment">
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentOptions.SharedHostFolderPath">
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Windows.Security.Isolation.IsolatedWindowsEnvironmentOptions.ShareHostFolderForUntrustedItems(System.String,System.String)">
+      <summary>
+      </summary>
+      <param name="SharedHostFolderPath">
+      </param>
+      <param name="ShareFolderNameInEnvironment">
+      </param>
+    </member>
+    <member name="T:Windows.Security.Isolation.IsolatedWindowsEnvironmentOwnerRegistration">
+      <summary>
+      </summary>
+    </member>
+    <member name="M:Windows.Security.Isolation.IsolatedWindowsEnvironmentOwnerRegistration.Register(System.String,Windows.Security.Isolation.IsolatedWindowsEnvironmentOwnerRegistrationData)">
+      <summary>
+      </summary>
+      <param name="ownerName">
+      </param>
+      <param name="ownerRegistrationData">
+      </param>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Windows.Security.Isolation.IsolatedWindowsEnvironmentOwnerRegistration.Unregister(System.String)">
+      <summary>
+      </summary>
+      <param name="ownerName">
+      </param>
+    </member>
+    <member name="T:Windows.Security.Isolation.IsolatedWindowsEnvironmentOwnerRegistrationData">
+      <summary>
+      </summary>
+    </member>
+    <member name="M:Windows.Security.Isolation.IsolatedWindowsEnvironmentOwnerRegistrationData.#ctor">
+      <summary>
+      </summary>
+    </member>
+    <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentOwnerRegistrationData.ActivationFileExtensions">
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentOwnerRegistrationData.ProcessesRunnableAsSystem">
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentOwnerRegistrationData.ProcessesRunnableAsUser">
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentOwnerRegistrationData.ShareableFolders">
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="T:Windows.Security.Isolation.IsolatedWindowsEnvironmentOwnerRegistrationResult">
+      <summary>
+      </summary>
+    </member>
+    <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentOwnerRegistrationResult.ExtendedError">
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentOwnerRegistrationResult.Status">
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="T:Windows.Security.Isolation.IsolatedWindowsEnvironmentOwnerRegistrationStatus">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentOwnerRegistrationStatus.AccessDenied">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentOwnerRegistrationStatus.InsufficientMemory">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentOwnerRegistrationStatus.InvalidArgument">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentOwnerRegistrationStatus.Success">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentOwnerRegistrationStatus.UnknownFailure">
+      <summary>
+      </summary>
+    </member>
+    <member name="T:Windows.Security.Isolation.IsolatedWindowsEnvironmentProcess">
+      <summary>
+      </summary>
+    </member>
+    <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentProcess.ExitCode">
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentProcess.State">
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Windows.Security.Isolation.IsolatedWindowsEnvironmentProcess.WaitForExit">
+      <summary>
+      </summary>
+    </member>
+    <member name="M:Windows.Security.Isolation.IsolatedWindowsEnvironmentProcess.WaitForExitAsync">
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Windows.Security.Isolation.IsolatedWindowsEnvironmentProcess.WaitForExitWithTimeout(System.UInt32)">
+      <summary>
+      </summary>
+      <param name="timeoutMilliseconds">
+      </param>
+    </member>
+    <member name="T:Windows.Security.Isolation.IsolatedWindowsEnvironmentProcessState">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentProcessState.Aborted">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentProcessState.Completed">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentProcessState.Running">
+      <summary>
+      </summary>
+    </member>
+    <member name="T:Windows.Security.Isolation.IsolatedWindowsEnvironmentProgressState">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentProgressState.Completed">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentProgressState.Processing">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentProgressState.Queued">
+      <summary>
+      </summary>
+    </member>
+    <member name="T:Windows.Security.Isolation.IsolatedWindowsEnvironmentShareFolderRequestOptions">
+      <summary>
+      </summary>
+    </member>
+    <member name="M:Windows.Security.Isolation.IsolatedWindowsEnvironmentShareFolderRequestOptions.#ctor">
+      <summary>
+      </summary>
+    </member>
+    <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentShareFolderRequestOptions.AllowWrite">
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="T:Windows.Security.Isolation.IsolatedWindowsEnvironmentShareFolderResult">
+      <summary>
+      </summary>
+    </member>
+    <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentShareFolderResult.ExtendedError">
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentShareFolderResult.Status">
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="T:Windows.Security.Isolation.IsolatedWindowsEnvironmentShareFolderStatus">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentShareFolderStatus.AccessDenied">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentShareFolderStatus.EnvironmentUnavailable">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentShareFolderStatus.FolderNotFound">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentShareFolderStatus.Success">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentShareFolderStatus.UnknownFailure">
+      <summary>
+      </summary>
+    </member>
+    <member name="T:Windows.Security.Isolation.IsolatedWindowsEnvironmentStartProcessResult">
+      <summary>
+      </summary>
+    </member>
+    <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentStartProcessResult.ExtendedError">
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentStartProcessResult.Process">
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentStartProcessResult.Status">
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="T:Windows.Security.Isolation.IsolatedWindowsEnvironmentStartProcessStatus">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentStartProcessStatus.AppNotRegistered">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentStartProcessStatus.EnvironmentUnavailable">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentStartProcessStatus.FileNotFound">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentStartProcessStatus.Success">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentStartProcessStatus.UnknownFailure">
+      <summary>
+      </summary>
+    </member>
+    <member name="T:Windows.Security.Isolation.IsolatedWindowsEnvironmentTelemetryParameters">
+      <summary>
+      </summary>
+    </member>
+    <member name="M:Windows.Security.Isolation.IsolatedWindowsEnvironmentTelemetryParameters.#ctor">
+      <summary>
+      </summary>
+    </member>
+    <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentTelemetryParameters.CorrelationId">
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="T:Windows.Security.Isolation.IsolatedWindowsHostMessenger">
+      <summary>
+      </summary>
+    </member>
+    <member name="M:Windows.Security.Isolation.IsolatedWindowsHostMessenger.GetFileId(System.String)">
+      <summary>
+      </summary>
+      <param name="filePath">
+      </param>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Windows.Security.Isolation.IsolatedWindowsHostMessenger.PostMessageToReceiver(System.Guid,Windows.Foundation.Collections.IVectorView{System.Object})">
+      <summary>
+      </summary>
+      <param name="receiverId">
+      </param>
+      <param name="message">
+      </param>
+    </member>
+    <member name="T:Windows.Security.Isolation.MessageReceivedCallback">
+      <summary>
+      </summary>
+      <param name="receiverId">
+      </param>
+      <param name="message">
+      </param>
+    </member>
+  </members>
+</doc>
