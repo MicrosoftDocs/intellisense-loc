@@ -369,10 +369,8 @@
       <returns>The constant batch size for model inputs feature values expected by calls to Bind. The default value for the **BatchSizeOverride** will be 1 indicating a static batch size of 1.</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.LearningModelSessionOptions.CloseModelOnSessionCreation">
-      <summary>
-      </summary>
-      <returns>
-      </returns>
+      <summary>Specifies whether a LearningModelSession should close the associated learning model when it is created.</summary>
+      <returns>Indicates whether the model should be closed upon session creation.</returns>
     </member>
     <member name="T:Windows.AI.MachineLearning.MachineLearningContract">
       <summary>

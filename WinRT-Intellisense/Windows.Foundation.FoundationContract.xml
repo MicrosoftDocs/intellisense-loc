@@ -565,7 +565,7 @@
       <returns>The property value.</returns>
     </member>
     <member name="M:Windows.Foundation.PropertyValue.CreateGuidArray(System.Guid[])">
-      <summary>Creates a property value from an array of GUID.</summary>
+      <summary>Creates a property value from an array of GUID s.</summary>
       <param name="value">The array to store in the property value.</param>
       <returns>The property value.</returns>
     </member>
@@ -1156,35 +1156,35 @@
       <summary>Indicates that the class is an activatable runtime class.</summary>
     </member>
     <member name="M:Windows.Foundation.Metadata.ActivatableAttribute.#ctor(System.Type,System.UInt32)">
-      <summary>Creates and initializes a new instance of the attribute.</summary>
-      <param name="type">The type of the class.</param>
-      <param name="version">The version of the class.</param>
+      <summary>Indicates that the runtime class can be activated with parameters, starting in a particular version.</summary>
+      <param name="type">The type of the interface that is used to activate objects.</param>
+      <param name="version">The minimum version that can activate the runtime class with the specified interface.</param>
     </member>
     <member name="M:Windows.Foundation.Metadata.ActivatableAttribute.#ctor(System.Type,System.UInt32,System.String)">
-      <summary>Creates and initializes a new instance of the attribute.</summary>
-      <param name="type">The type of the class.</param>
-      <param name="version">The version of the API contract implementing the class.</param>
-      <param name="contractName">A string representing the type of the API contract implementing the class.</param>
+      <summary>Indicates that the runtime class can be activated with parameters, starting in a particular version of a particular API contract.</summary>
+      <param name="type">The type of the interface that is used to activate objects.</param>
+      <param name="version">The minimum version of the API contract that can activate the runtime class with the specified interface. The major version is in the high-order 16-bits and the minor version is in the low-order 16 bits.</param>
+      <param name="contractName">The name of the API contract that can activate the runtime class with the specified interface.</param>
     </member>
     <member name="M:Windows.Foundation.Metadata.ActivatableAttribute.#ctor(System.Type,System.UInt32,Windows.Foundation.Metadata.Platform)">
-      <summary>Creates and initializes a new instance of the attribute.</summary>
-      <param name="type">The type of the class.</param>
-      <param name="version">The version of the class.</param>
-      <param name="platform">A value of the enumeration. The default is **Windows**.</param>
+      <summary>Indicates that the runtime class can be activated with parameters, starting in a particular version of a particular platform.</summary>
+      <param name="type">The type of the interface that is used to activate objects.</param>
+      <param name="version">The version of the platform that can activate the runtime class with the specified interface.</param>
+      <param name="platform">The platform that can activate the runtime class with the specified interface.</param>
     </member>
     <member name="M:Windows.Foundation.Metadata.ActivatableAttribute.#ctor(System.UInt32)">
-      <summary>Creates and initializes a new instance of the attribute.</summary>
-      <param name="version">The version of the class.</param>
+      <summary>Indicates that the runtime class can be activated with no parameters, starting in a particular version.</summary>
+      <param name="version">The minimum version that can activate the runtime class with no parameters.</param>
     </member>
     <member name="M:Windows.Foundation.Metadata.ActivatableAttribute.#ctor(System.UInt32,System.String)">
-      <summary>Creates and initializes a new instance of the attribute.</summary>
-      <param name="version">The version of the class.</param>
-      <param name="type">A string representing the type of the factory interface.</param>
+      <summary>Indicates that the runtime class can be activated with no parameters, starting in a particular version of a particular API contract.</summary>
+      <param name="version">The version of the API contract that can activate the runtime class with no parameters. The major version is in the high-order 16-bits and the minor version is in the low-order 16 bits.</param>
+      <param name="type">The name of the API contract that can activate the runtime class with no parameters.</param>
     </member>
     <member name="M:Windows.Foundation.Metadata.ActivatableAttribute.#ctor(System.UInt32,Windows.Foundation.Metadata.Platform)">
-      <summary>Creates and initializes a new instance of the attribute.</summary>
-      <param name="version">The version of the class.</param>
-      <param name="platform">A value of the enumeration. The default is **Windows**.</param>
+      <summary>Indicates that the runtime class can be activated with no parameters, starting in a particular version of a particular platform.</summary>
+      <param name="version">The minimum version of the platform that can activate the runtime class with no parameters.</param>
+      <param name="platform">The platform that can activate the runtime class with no parameters.</param>
     </member>
     <member name="T:Windows.Foundation.Metadata.AllowForWebAttribute">
       <summary>Enables developers to expose a native Universal Windows Platform (UWP) object as a global parameter in the context of the top-level document inside of a WebView. For a Universal Windows Platform (UWP) object to be projected, it must implement IAgileObject and be decorated with the AllowForWebAttribute attribute.</summary>
@@ -1269,14 +1269,11 @@
       <returns>**True** if the specified property is present for the type; otherwise, **false**.</returns>
     </member>
     <member name="T:Windows.Foundation.Metadata.AttributeNameAttribute">
-      <summary>
-      </summary>
+      <summary>Indicates the name of the attribute</summary>
     </member>
     <member name="M:Windows.Foundation.Metadata.AttributeNameAttribute.#ctor(System.String)">
-      <summary>
-      </summary>
-      <param name="A_0">
-      </param>
+      <summary>Creates and initializes a new instance of the attribute.</summary>
+      <param name="A_0">One or more of the enumeration values.</param>
     </member>
     <member name="T:Windows.Foundation.Metadata.AttributeTargets">
       <summary>Specifies the programming construct to which an attribute applies.</summary>
@@ -1444,30 +1441,23 @@
       <summary>Creates and initializes a new instance of the attribute.</summary>
     </member>
     <member name="T:Windows.Foundation.Metadata.FastAbiAttribute">
-      <summary>
-      </summary>
+      <summary>Indicates if the type supports fast ABI.</summary>
     </member>
     <member name="M:Windows.Foundation.Metadata.FastAbiAttribute.#ctor(System.UInt32)">
-      <summary>
-      </summary>
-      <param name="version">
-      </param>
+      <summary>Creates and initializes a new instance of the attribute.</summary>
+      <param name="version">The ABI version number.</param>
     </member>
     <member name="M:Windows.Foundation.Metadata.FastAbiAttribute.#ctor(System.UInt32,System.String)">
       <summary>
       </summary>
-      <param name="version">
-      </param>
-      <param name="contractName">
-      </param>
+      <param name="version">The ABI version number.</param>
+      <param name="contractName">The ABI contractName.</param>
     </member>
     <member name="M:Windows.Foundation.Metadata.FastAbiAttribute.#ctor(System.UInt32,Windows.Foundation.Metadata.Platform)">
       <summary>
       </summary>
-      <param name="version">
-      </param>
-      <param name="platform">
-      </param>
+      <param name="version">The ABI version number.</param>
+      <param name="platform">The ABI platform name.</param>
     </member>
     <member name="T:Windows.Foundation.Metadata.FeatureAttribute">
       <summary>Expresses the state of the Windows Runtime feature associated with a Windows Runtime Type.</summary>
@@ -1589,12 +1579,10 @@
       <summary>Creates and initializes a new instance of the attribute.</summary>
     </member>
     <member name="T:Windows.Foundation.Metadata.NoExceptionAttribute">
-      <summary>
-      </summary>
+      <summary>Indicates if the type raises exceptions.</summary>
     </member>
     <member name="M:Windows.Foundation.Metadata.NoExceptionAttribute.#ctor">
-      <summary>
-      </summary>
+      <summary>Creates and initializes a new instance of the attribute.</summary>
     </member>
     <member name="T:Windows.Foundation.Metadata.OverloadAttribute">
       <summary>Identifies the method as an overload in a language that supports overloading.</summary>
