@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>Windows.Storage.Provider.CloudFilesContract</name>
+  </assembly>
+  <members>
+    <member name="T:Windows.Storage.Provider.CloudFilesContract">
+      <summary>
+      </summary>
+    </member>
+    <member name="T:Windows.Storage.Provider.IStorageProviderItemPropertySource">
+      <summary>提供对同步根中存储提供程序项属性的访问权限。</summary>
+    </member>
+    <member name="M:Windows.Storage.Provider.IStorageProviderItemPropertySource.GetItemProperties(System.String)">
+      <summary>获取存储提供程序的项属性的列表。</summary>
+      <param name="itemPath">存储项的路径。</param>
+      <returns>存储提供程序中项属性的列表。</returns>
+    </member>
+    <member name="T:Windows.Storage.Provider.IStorageProviderPropertyCapabilities">
+      <summary>提供对受同步根支持的属性功能的访问。</summary>
+    </member>
+    <member name="M:Windows.Storage.Provider.IStorageProviderPropertyCapabilities.IsPropertySupported(System.String)">
+      <summary>确定属性是否受同步根支持。</summary>
+      <param name="propertyCanonicalName">属性的名称。 例如，“System.Photo.DateTaken”</param>
+      <returns>如果属性受同步根支持则为 **True**；否则为 **False**</returns>
+    </member>
+    <member name="T:Windows.Storage.Provider.IStorageProviderUriSource">
+      <summary>用于获取内容 URI 路径和信息的接口。</summary>
+    </member>
+    <member name="M:Windows.Storage.Provider.IStorageProviderUriSource.GetContentInfoForPath(System.String,Windows.Storage.Provider.StorageProviderGetContentInfoForPathResult)">
+      <summary>获取有关给定 URI 路径的存储提供程序 URI 的信息。</summary>
+      <param name="path">存储提供程序 URI 的路径。</param>
+      <param name="result">有关提供的存储提供程序 URI 的内容信息。</param>
+    </member>
+    <member name="M:Windows.Storage.Provider.IStorageProviderUriSource.GetPathForContentUri(System.String,Windows.Storage.Provider.StorageProviderGetPathForContentUriResult)">
+      <summary>获取给定 URI 名称的内容 URI 的路径。</summary>
+      <param name="contentUri">内容 URI 的字符串名称。</param>
+      <param name="result">提供的内容 URI 的路径。</param>
+    </member>
+    <member name="T:Windows.Storage.Provider.StorageProviderFileTypeInfo">
+      <summary>
+      </summary>
+    </member>
+    <member name="M:Windows.Storage.Provider.StorageProviderFileTypeInfo.#ctor(System.String,System.String)">
+      <summary>
+      </summary>
+      <param name="fileExtension">
+      </param>
+      <param name="iconResource">
+      </param>
+    </member>
+    <member name="P:Windows.Storage.Provider.StorageProviderFileTypeInfo.FileExtension">
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Storage.Provider.StorageProviderFileTypeInfo.IconResource">
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="T:Windows.Storage.Provider.StorageProviderGetContentInfoForPathResult">
+      <summary>提供获取有关内容 URI 路径的其他信息的方法。</summary>
+    </member>
+    <member name="M:Windows.Storage.Provider.StorageProviderGetContentInfoForPathResult.#ctor">
+      <summary>StorageProviderGetContentInfoForPathResult 默认构造函数。</summary>
+    </member>
+    <member name="P:Windows.Storage.Provider.StorageProviderGetContentInfoForPathResult.ContentId">
+      <summary>获取或设置与 StorageProviderGetContentInfoForPathResult 关联的内容 ID。</summary>
+      <returns>内容 ID 值。</returns>
+    </member>
+    <member name="P:Windows.Storage.Provider.StorageProviderGetContentInfoForPathResult.ContentUri">
+      <summary>获取或设置与 StorageProviderGetContentInfoForPathResult 关联的内容 URI。</summary>
+      <returns>内容 URI 值。</returns>
+    </member>
+    <member name="P:Windows.Storage.Provider.StorageProviderGetContentInfoForPathResult.Status">
+      <summary>与 StorageProviderGetContentInfoForPathResult 关联的存储提供程序的状态。</summary>
+      <returns>StorageProviderUriSourceStatus 枚举值。</returns>
+    </member>
+    <member name="T:Windows.Storage.Provider.StorageProviderGetPathForContentUriResult">
+      <summary>提供获取有关内容 URI 结果的其他信息的方法。</summary>
+    </member>
+    <member name="M:Windows.Storage.Provider.StorageProviderGetPathForContentUriResult.#ctor">
+      <summary>StorageProviderGetPathForContentUriResult 默认构造函数。</summary>
+    </member>
+    <member name="P:Windows.Storage.Provider.StorageProviderGetPathForContentUriResult.Path">
+      <summary>获取 StorageProviderGetPathForContentUriResult 对象的路径。</summary>
+      <returns>内容 URI 路径。</returns>
+    </member>
+    <member name="P:Windows.Storage.Provider.StorageProviderGetPathForContentUriResult.Status">
+      <summary>与 StorageProviderGetPathForContentUriResult 关联的存储提供程序的状态。</summary>
+      <returns>StorageProviderUriSourceStatus 枚举值。</returns>
+    </member>
+    <member name="T:Windows.Storage.Provider.StorageProviderHardlinkPolicy">
+      <summary>指定是否允许在占位符文件或文件夹中使用硬链接。 默认情况下，不允许在占位符上使用硬链接。</summary>
+    </member>
+    <member name="F:Windows.Storage.Provider.StorageProviderHardlinkPolicy.Allowed">
+      <summary>允许在同一同步根内的占位符上使用硬链接。</summary>
+    </member>
+    <member name="F:Windows.Storage.Provider.StorageProviderHardlinkPolicy.None">
+      <summary>不允许使用硬链接。</summary>
+    </member>
+    <member name="T:Windows.Storage.Provider.StorageProviderHydrationPolicy">
+      <summary>占位符文件的文件水合作用策略值的枚举。 水合作用策略允许同步根自定义检索占位符文件的数据的行为。</summary>
+    </member>
+    <member name="F:Windows.Storage.Provider.StorageProviderHydrationPolicy.AlwaysFull">
+      <summary>如果选择此项，但是，不能完全对占位符进行水合作用，则平台将会失败，显示 ERROR_CLOUD_FILE_INVALID_REQUEST。</summary>
+    </member>
+    <member name="F:Windows.Storage.Provider.StorageProviderHydrationPolicy.Full">
+      <summary>执行完全水合作用。 确保占位符在完成请求前本地可用。</summary>
+    </member>
+    <member name="F:Windows.Storage.Provider.StorageProviderHydrationPolicy.Partial">
+      <summary>根据用户请求执行水合作用。 不在后台继续进行水合作用。</summary>
+    </member>
+    <member name="F:Windows.Storage.Provider.StorageProviderHydrationPolicy.Progressive">
+      <summary>执行按需水合作用。 如果尚未完成水合作用，它将在后台继续进行。</summary>
+    </member>
+    <member name="T:Windows.Storage.Provider.StorageProviderHydrationPolicyModifier">
+      <summary>提供要与主要 StorageProviderHydrationPolicy 一起使用的策略修饰符。</summary>
+    </member>
+    <member name="F:Windows.Storage.Provider.StorageProviderHydrationPolicyModifier.AutoDehydrationAllowed">
+      <summary>允许自动文件冻结。</summary>
+    </member>
+    <member name="F:Windows.Storage.Provider.StorageProviderHydrationPolicyModifier.None">
+      <summary>无修饰符。</summary>
+    </member>
+    <member name="F:Windows.Storage.Provider.StorageProviderHydrationPolicyModifier.StreamingAllowed">
+      <summary>此修饰符不允许平台在磁盘上存储同步提供程序返回的任何数据。</summary>
+    </member>
+    <member name="F:Windows.Storage.Provider.StorageProviderHydrationPolicyModifier.ValidationRequired">
+      <summary>将数据水合到文件中后，将会对其进行验证。</summary>
+    </member>
+    <member name="T:Windows.Storage.Provider.StorageProviderInSyncPolicy">
+      <summary>包含同步根支持的文件和目录属性。</summary>
+    </member>
+    <member name="F:Windows.Storage.Provider.StorageProviderInSyncPolicy.Default">
+      <summary>默认同步策略值。</summary>
+    </member>
+    <member name="F:Windows.Storage.Provider.StorageProviderInSyncPolicy.DirectoryCreationTime">
+      <summary>目录创建时间。</summary>
+    </member>
+    <member name="F:Windows.Storage.Provider.StorageProviderInSyncPolicy.DirectoryHiddenAttribute">
+      <summary>目录的隐藏属性。</summary>
+    </member>
+    <member name="F:Windows.Storage.Provider.StorageProviderInSyncPolicy.DirectoryLastWriteTime">
+      <summary>上次在目录上写入的时间。</summary>
+    </member>
+    <member name="F:Windows.Storage.Provider.StorageProviderInSyncPolicy.DirectoryReadOnlyAttribute">
+      <summary>目录的只读属性。</summary>
+    </member>
+    <member name="F:Windows.Storage.Provider.StorageProviderInSyncPolicy.DirectorySystemAttribute">
+      <summary>文件的系统属性。</summary>
+    </member>
+    <member name="F:Windows.Storage.Provider.StorageProviderInSyncPolicy.FileCreationTime">
+      <summary>文件创建时间。</summary>
+    </member>
+    <member name="F:Windows.Storage.Provider.StorageProviderInSyncPolicy.FileHiddenAttribute">
+      <summary>文件的隐藏属性。</summary>
+    </member>
+    <member name="F:Windows.Storage.Provider.StorageProviderInSyncPolicy.FileLastWriteTime">
+      <summary>上次在文件上写入的时间。</summary>
+    </member>
+    <member name="F:Windows.Storage.Provider.StorageProviderInSyncPolicy.FileReadOnlyAttribute">
+      <summary>文件的只读属性。</summary>
+    </member>
+    <member name="F:Windows.Storage.Provider.StorageProviderInSyncPolicy.FileSystemAttribute">
+      <summary>文件的系统属性。</summary>
+    </member>
+    <member name="F:Windows.Storage.Provider.StorageProviderInSyncPolicy.PreserveInsyncForSyncEngine">
+      <summary>为同步引擎保留的值。</summary>
+    </member>
+    <member name="T:Windows.Storage.Provider.StorageProviderItemProperties">
+      <summary>提供对云存储提供程序存储项（如文件或文件夹）的属性的访问。</summary>
+    </member>
+    <member name="M:Windows.Storage.Provider.StorageProviderItemProperties.SetAsync(Windows.Storage.IStorageItem,Windows.Foundation.Collections.IIterable{Windows.Storage.Provider.StorageProviderItemProperty})">
+      <summary>设置存储项的自定义属性值。</summary>
+      <param name="item">存储项。</param>
+      <param name="itemProperties">存储项的 StorageProviderItemProperty 状态的可迭代列表。</param>
+      <returns>异步操作。 如果使用 Asynchronous 编程，则返回类型为 void。</returns>
+    </member>
+    <member name="T:Windows.Storage.Provider.StorageProviderItemProperty">
+      <summary>定义存储项（如文件或文件夹）的云存储提供程序属性。</summary>
+    </member>
+    <member name="M:Windows.Storage.Provider.StorageProviderItemProperty.#ctor">
+      <summary>StorageProviderItemProperty 默认构造函数。</summary>
+    </member>
+    <member name="P:Windows.Storage.Provider.StorageProviderItemProperty.IconResource">
+      <summary>对云存储提供程序属性的图标资源的引用。</summary>
+      <returns>图标资源引用的字符串值。 例如，“SyncProviderResources.dll, -1234”</returns>
+    </member>
+    <member name="P:Windows.Storage.Provider.StorageProviderItemProperty.Id">
+      <summary>云存储提供程序提供的存储项的 ID。</summary>
+      <returns>存储项的 ID。</returns>
+    </member>
+    <member name="P:Windows.Storage.Provider.StorageProviderItemProperty.Value">
+      <summary>存储提供程序存储项状态的描述性文本。</summary>
+      <returns>文本的字符串值。</returns>
+    </member>
+    <member name="T:Windows.Storage.Provider.StorageProviderItemPropertyDefinition">
+      <summary>定义云存储提供程序的项的属性。</summary>
+    </member>
+    <member name="M:Windows.Storage.Provider.StorageProviderItemPropertyDefinition.#ctor">
+      <summary>StorageProviderItemPropertyDefinition 默认构造函数。</summary>
+    </member>
+    <member name="P:Windows.Storage.Provider.StorageProviderItemPropertyDefinition.DisplayNameResource">
+      <summary>获取或设置云存储提供程序状态的显示名称。</summary>
+      <returns>状态显示名称的字符串值。</returns>
+    </member>
+    <member name="P:Windows.Storage.Provider.StorageProviderItemPropertyDefinition.Id">
+      <summary>注册同步根时，云存储提供程序提供的存储项的 ID。</summary>
+      <returns>存储项的 ID 号。</returns>
+    </member>
+    <member name="T:Windows.Storage.Provider.StorageProviderPopulationPolicy">
+      <summary>允许同步提供程序控制占位符文件或目录的使用方式</summary>
+    </member>
+    <member name="F:Windows.Storage.Provider.StorageProviderPopulationPolicy.AlwaysFull">
+      <summary>平台将假定占位符文件和目录在本地始终可用。</summary>
+    </member>
+    <member name="F:Windows.Storage.Provider.StorageProviderPopulationPolicy.Full">
+      <summary>如果未完全填充占位符文件或目录，则平台将请求同步提供程序在完成用户请求前填充它们。</summary>
+    </member>
+    <member name="T:Windows.Storage.Provider.StorageProviderProtectionMode">
+      <summary>指示同步根中包含的数据的类型。</summary>
+    </member>
+    <member name="F:Windows.Storage.Provider.StorageProviderProtectionMode.Personal">
+      <summary>同步根应仅包含个人文件，不得包含加密文件或业务相关文件。</summary>
+    </member>
+    <member name="F:Windows.Storage.Provider.StorageProviderProtectionMode.Unknown">
+      <summary>同步根可包含任意类型的文件。</summary>
+    </member>
+    <member name="T:Windows.Storage.Provider.StorageProviderSyncRootInfo">
+      <summary>包含要通过操作系统注册的云存储提供程序同步根的属性。</summary>
+    </member>
+    <member name="M:Windows.Storage.Provider.StorageProviderSyncRootInfo.#ctor">
+      <summary>StorageProviderSyncRootInfo 默认构造函数。</summary>
+    </member>
+    <member name="P:Windows.Storage.Provider.StorageProviderSyncRootInfo.AllowPinning">
+      <summary>启用或禁用让文件脱机可用的功能。</summary>
+      <returns>如果启用了固定，则为 **True**；否则为 **False**</returns>
+    </member>
+    <member name="P:Windows.Storage.Provider.StorageProviderSyncRootInfo.Context">
+      <summary>包含同步根标识信息。</summary>
+      <returns>包含同步根标识的缓冲区。</returns>
+    </member>
+    <member name="P:Windows.Storage.Provider.StorageProviderSyncRootInfo.DisplayNameResource">
+      <summary>映射到现有同步根注册的可选显示名称。</summary>
+      <returns>显示名称。</returns>
+    </member>
+    <member name="P:Windows.Storage.Provider.StorageProviderSyncRootInfo.FallbackFileTypeInfo">
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Storage.Provider.StorageProviderSyncRootInfo.HardlinkPolicy">
+      <summary>同步根的硬链接策略。</summary>
+      <returns>定义的 StorageProviderHardlinkPolicy。</returns>
+    </member>
+    <member name="P:Windows.Storage.Provider.StorageProviderSyncRootInfo.HydrationPolicy">
+      <summary>同步根注册的水合作用策略。</summary>
+      <returns>存储提供程序水合作用策略枚举值。</returns>
+    </member>
+    <member name="P:Windows.Storage.Provider.StorageProviderSyncRootInfo.HydrationPolicyModifier">
+      <summary>同步根注册的水合作用策略修饰符。</summary>
+      <returns>存储提供程序水合作用策略修饰符枚举值。</returns>
+    </member>
+    <member name="P:Windows.Storage.Provider.StorageProviderSyncRootInfo.IconResource">
+      <summary>文件或文件夹自定义状态的图标资源的路径。</summary>
+      <returns>图标资源的路径，例如“SyncProvider.dll,-100”或“SyncProvider.dll,-101”</returns>
+    </member>
+    <member name="P:Windows.Storage.Provider.StorageProviderSyncRootInfo.Id">
+      <summary>同步根的标识符。</summary>
+      <returns>表单中的标识符：[Storage Provider ID]![Windows SID]![Account ID]</returns>
+    </member>
+    <member name="P:Windows.Storage.Provider.StorageProviderSyncRootInfo.InSyncPolicy">
+      <summary>提供对云存储提供程序的同步策略的访问。</summary>
+      <returns>同步策略值。</returns>
+    </member>
+    <member name="P:Windows.Storage.Provider.StorageProviderSyncRootInfo.Path">
+      <summary>表示基于云的文件夹系统的根路径的存储文件夹。</summary>
+      <returns>存储文件夹。</returns>
+    </member>
+    <member name="P:Windows.Storage.Provider.StorageProviderSyncRootInfo.PopulationPolicy">
+      <summary>同步根注册的填充策略。</summary>
+      <returns>填充策略枚举值。</returns>
+    </member>
+    <member name="P:Windows.Storage.Provider.StorageProviderSyncRootInfo.ProtectionMode">
+      <summary>同步根注册的保护模式。</summary>
+      <returns>保护模式枚举值。</returns>
+    </member>
+    <member name="P:Windows.Storage.Provider.StorageProviderSyncRootInfo.ProviderId">
+      <summary>获取或设置一个表示存储提供程序 ID 的 GUID。</summary>
+      <returns>一个表示存储提供程序 ID 的 GUID。</returns>
+    </member>
+    <member name="P:Windows.Storage.Provider.StorageProviderSyncRootInfo.RecycleBinUri">
+      <summary>云存储回收站的 URI。</summary>
+      <returns>回收站的 URI。</returns>
+    </member>
+    <member name="P:Windows.Storage.Provider.StorageProviderSyncRootInfo.ShowSiblingsAsGroup">
+      <summary>显示在文件资源管理器的主同步根下列出的同级同步根。</summary>
+      <returns>如果显示同级同步根则为 **True**，否则为 **False**</returns>
+    </member>
+    <member name="P:Windows.Storage.Provider.StorageProviderSyncRootInfo.StorageProviderItemPropertyDefinitions">
+      <summary>获取同步根的 StorageProviderItemPropertyDefinition 信息。</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Storage.Provider.StorageProviderSyncRootInfo.Version">
+      <summary>同步根的版本号。</summary>
+      <returns>版本号的字符串值。 例如，“1.0”</returns>
+    </member>
+    <member name="T:Windows.Storage.Provider.StorageProviderSyncRootManager">
+      <summary>提供通过操作系统注册或注销云存储提供程序同步根的功能。</summary>
+    </member>
+    <member name="M:Windows.Storage.Provider.StorageProviderSyncRootManager.GetCurrentSyncRoots">
+      <summary>获取所有当前注册的同步根。</summary>
+      <returns>当前已注册的同步根的集合。</returns>
+    </member>
+    <member name="M:Windows.Storage.Provider.StorageProviderSyncRootManager.GetSyncRootInformationForFolder(Windows.Storage.IStorageFolder)">
+      <summary>返回云存储提供程序同步根的属性（如果提供存储文件夹）。</summary>
+      <param name="folder">同步根的存储文件夹。</param>
+      <returns>给定存储文件夹的云存储提供程序同步根的属性。</returns>
+    </member>
+    <member name="M:Windows.Storage.Provider.StorageProviderSyncRootManager.GetSyncRootInformationForId(System.String)">
+      <summary>返回云存储提供程序同步根的属性（如果提供同步根 ID）。</summary>
+      <param name="id">同步根 ID 的字符串值。</param>
+      <returns>指定的同步根的属性。</returns>
+    </member>
+    <member name="M:Windows.Storage.Provider.StorageProviderSyncRootManager.IsSupported">
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Windows.Storage.Provider.StorageProviderSyncRootManager.Register(Windows.Storage.Provider.StorageProviderSyncRootInfo)">
+      <summary>通过操作系统注册同步根。</summary>
+      <param name="syncRootInformation">要注册的同步根。</param>
+    </member>
+    <member name="M:Windows.Storage.Provider.StorageProviderSyncRootManager.Unregister(System.String)">
+      <summary>从操作系统注销同步根。</summary>
+      <param name="id">要注销的同步根的 ID。</param>
+    </member>
+    <member name="T:Windows.Storage.Provider.StorageProviderUriSourceStatus">
+      <summary>存储提供程序 URI 状态的枚举。</summary>
+    </member>
+    <member name="F:Windows.Storage.Provider.StorageProviderUriSourceStatus.FileNotFound">
+      <summary>同步提供程序未识别 URI。</summary>
+    </member>
+    <member name="F:Windows.Storage.Provider.StorageProviderUriSourceStatus.NoSyncRoot">
+      <summary>没有通过 URI 源注册的同步根。</summary>
+    </member>
+    <member name="F:Windows.Storage.Provider.StorageProviderUriSourceStatus.Success">
+      <summary>此存储提供程序 ID 存在。</summary>
+    </member>
+  </members>
+</doc>
