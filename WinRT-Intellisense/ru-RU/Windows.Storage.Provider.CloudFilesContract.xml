@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>Windows.Storage.Provider.CloudFilesContract</name>
+  </assembly>
+  <members>
+    <member name="T:Windows.Storage.Provider.CloudFilesContract">
+      <summary>
+      </summary>
+    </member>
+    <member name="T:Windows.Storage.Provider.IStorageProviderItemPropertySource">
+      <summary>Предоставляет доступ к свойствам элемента поставщика хранилища из корня синхронизации.</summary>
+    </member>
+    <member name="M:Windows.Storage.Provider.IStorageProviderItemPropertySource.GetItemProperties(System.String)">
+      <summary>Получает список свойств элемента для поставщика хранилища.</summary>
+      <param name="itemPath">Путь к элементу хранилища.</param>
+      <returns>Список свойств элемента от поставщика хранилища.</returns>
+    </member>
+    <member name="T:Windows.Storage.Provider.IStorageProviderPropertyCapabilities">
+      <summary>Предоставляет доступ к возможностям свойства, поддерживаемым корневой синхронизацией.</summary>
+    </member>
+    <member name="M:Windows.Storage.Provider.IStorageProviderPropertyCapabilities.IsPropertySupported(System.String)">
+      <summary>Определяет, поддерживается ли свойство корневой синхронизацией.</summary>
+      <param name="propertyCanonicalName">Имя свойства. Например, "System.Photo.DateTaken"</param>
+      <returns>Значение **True**, если свойство поддерживается корневой синхронизацией; в противном случае — **False**.</returns>
+    </member>
+    <member name="T:Windows.Storage.Provider.IStorageProviderUriSource">
+      <summary>Интерфейс для получения пути URI содержимого и сведений.</summary>
+    </member>
+    <member name="M:Windows.Storage.Provider.IStorageProviderUriSource.GetContentInfoForPath(System.String,Windows.Storage.Provider.StorageProviderGetContentInfoForPathResult)">
+      <summary>Получает сведения о поставщике хранилища URI по пути к URI.</summary>
+      <param name="path">Путь к URI поставщика хранилища.</param>
+      <param name="result">Сведения о содержимом для предоставленного URI поставщика хранилища.</param>
+    </member>
+    <member name="M:Windows.Storage.Provider.IStorageProviderUriSource.GetPathForContentUri(System.String,Windows.Storage.Provider.StorageProviderGetPathForContentUriResult)">
+      <summary>Получает путь к URI содержимого по указанному имени URI.</summary>
+      <param name="contentUri">Строковое имя URI содержимого.</param>
+      <param name="result">Путь к URI предоставленного содержимого.</param>
+    </member>
+    <member name="T:Windows.Storage.Provider.StorageProviderFileTypeInfo">
+      <summary>
+      </summary>
+    </member>
+    <member name="M:Windows.Storage.Provider.StorageProviderFileTypeInfo.#ctor(System.String,System.String)">
+      <summary>
+      </summary>
+      <param name="fileExtension">
+      </param>
+      <param name="iconResource">
+      </param>
+    </member>
+    <member name="P:Windows.Storage.Provider.StorageProviderFileTypeInfo.FileExtension">
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Storage.Provider.StorageProviderFileTypeInfo.IconResource">
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="T:Windows.Storage.Provider.StorageProviderGetContentInfoForPathResult">
+      <summary>Предоставляет методы для получения дополнительных сведений о путь URI содержимого.</summary>
+    </member>
+    <member name="M:Windows.Storage.Provider.StorageProviderGetContentInfoForPathResult.#ctor">
+      <summary>Конструктор по умолчанию StorageProviderGetContentInfoForPathResult.</summary>
+    </member>
+    <member name="P:Windows.Storage.Provider.StorageProviderGetContentInfoForPathResult.ContentId">
+      <summary>Получает или задает идентификатор содержимого, связанного с StorageProviderGetContentInfoForPathResult.</summary>
+      <returns>Значение идентификатора содержимого.</returns>
+    </member>
+    <member name="P:Windows.Storage.Provider.StorageProviderGetContentInfoForPathResult.ContentUri">
+      <summary>Получает или задает URI содержимого, связанного с StorageProviderGetContentInfoForPathResult.</summary>
+      <returns>Значение URI содержимого.</returns>
+    </member>
+    <member name="P:Windows.Storage.Provider.StorageProviderGetContentInfoForPathResult.Status">
+      <summary>Состояние поставщика хранилища, связанного с StorageProviderGetContentInfoForPathResult.</summary>
+      <returns>Значение перечисления StorageProviderUriSourceStatus.</returns>
+    </member>
+    <member name="T:Windows.Storage.Provider.StorageProviderGetPathForContentUriResult">
+      <summary>Предоставляет методы для получения дополнительных сведений о результате URI содержимого.</summary>
+    </member>
+    <member name="M:Windows.Storage.Provider.StorageProviderGetPathForContentUriResult.#ctor">
+      <summary>Конструктор по умолчанию StorageProviderGetPathForContentUriResult.</summary>
+    </member>
+    <member name="P:Windows.Storage.Provider.StorageProviderGetPathForContentUriResult.Path">
+      <summary>Получает путь объекта StorageProviderGetPathForContentUriResult.</summary>
+      <returns>Путь URI содержимого.</returns>
+    </member>
+    <member name="P:Windows.Storage.Provider.StorageProviderGetPathForContentUriResult.Status">
+      <summary>Состояние поставщика хранилища, связанного с StorageProviderGetPathForContentUriResult.</summary>
+      <returns>Значение перечисления StorageProviderUriSourceStatus.</returns>
+    </member>
+    <member name="T:Windows.Storage.Provider.StorageProviderHardlinkPolicy">
+      <summary>Указывает, разрешены ли жесткие связи в файле или папке-прототипе. По умолчанию жесткие связи в прототипе не разрешены.</summary>
+    </member>
+    <member name="F:Windows.Storage.Provider.StorageProviderHardlinkPolicy.Allowed">
+      <summary>Жесткие связи разрешены в прототипе с тем же корнем синхронизации.</summary>
+    </member>
+    <member name="F:Windows.Storage.Provider.StorageProviderHardlinkPolicy.None">
+      <summary>Жесткие связи не разрешены.</summary>
+    </member>
+    <member name="T:Windows.Storage.Provider.StorageProviderHydrationPolicy">
+      <summary>Перечисление значений политики расконсервации файла для файла-прототипа. Политика расконсервации позволяет корню синхронизации настраивать реакцию на событие для извлекаемых данных для замещающего файла.</summary>
+    </member>
+    <member name="F:Windows.Storage.Provider.StorageProviderHydrationPolicy.AlwaysFull">
+      <summary>Если это значение выбрано и прототип невозможно полностью расконсервировать, платформа даст сбой с ошибкой: ERROR_CLOUD_FILE_INVALID_REQUEST.</summary>
+    </member>
+    <member name="F:Windows.Storage.Provider.StorageProviderHydrationPolicy.Full">
+      <summary>Выполняется полная расконсервация. Гарантирует, что прототип будет доступен локально перед выполнением запроса.</summary>
+    </member>
+    <member name="F:Windows.Storage.Provider.StorageProviderHydrationPolicy.Partial">
+      <summary>Расконсервация выполняется по запросу пользователя. Расконсервация не продолжается в фоновом режиме.</summary>
+    </member>
+    <member name="F:Windows.Storage.Provider.StorageProviderHydrationPolicy.Progressive">
+      <summary>Расконсервация выполняется по запросу. Если расконсервация не завершена, она продолжится в фоновом режиме.</summary>
+    </member>
+    <member name="T:Windows.Storage.Provider.StorageProviderHydrationPolicyModifier">
+      <summary>Предоставляет модификаторы политики для использования с основной StorageProviderHydrationPolicy.</summary>
+    </member>
+    <member name="F:Windows.Storage.Provider.StorageProviderHydrationPolicyModifier.AutoDehydrationAllowed">
+      <summary>Автоматическая консервация файлов разрешена.</summary>
+    </member>
+    <member name="F:Windows.Storage.Provider.StorageProviderHydrationPolicyModifier.None">
+      <summary>Без модификаторов.</summary>
+    </member>
+    <member name="F:Windows.Storage.Provider.StorageProviderHydrationPolicyModifier.StreamingAllowed">
+      <summary>Этот модификатор не разрешает платформе сохранять на диске какие-либо данные, возвращаемые поставщиком синхронизации.</summary>
+    </member>
+    <member name="F:Windows.Storage.Provider.StorageProviderHydrationPolicyModifier.ValidationRequired">
+      <summary>Как только данные будут расконсервированы в файл, он будет проверен.</summary>
+    </member>
+    <member name="T:Windows.Storage.Provider.StorageProviderInSyncPolicy">
+      <summary>Содержит атрибуты файла и каталога, поддерживаемые корневой синхронизацией.</summary>
+    </member>
+    <member name="F:Windows.Storage.Provider.StorageProviderInSyncPolicy.Default">
+      <summary>Значение политики синхронизации по умолчанию.</summary>
+    </member>
+    <member name="F:Windows.Storage.Provider.StorageProviderInSyncPolicy.DirectoryCreationTime">
+      <summary>Время создания каталога.</summary>
+    </member>
+    <member name="F:Windows.Storage.Provider.StorageProviderInSyncPolicy.DirectoryHiddenAttribute">
+      <summary>Атрибут каталога "Скрытый".</summary>
+    </member>
+    <member name="F:Windows.Storage.Provider.StorageProviderInSyncPolicy.DirectoryLastWriteTime">
+      <summary>Время последней операции записи в каталоге.</summary>
+    </member>
+    <member name="F:Windows.Storage.Provider.StorageProviderInSyncPolicy.DirectoryReadOnlyAttribute">
+      <summary>Атрибут каталога "Только для чтения".</summary>
+    </member>
+    <member name="F:Windows.Storage.Provider.StorageProviderInSyncPolicy.DirectorySystemAttribute">
+      <summary>Системный атрибут файла.</summary>
+    </member>
+    <member name="F:Windows.Storage.Provider.StorageProviderInSyncPolicy.FileCreationTime">
+      <summary>Время создания файла.</summary>
+    </member>
+    <member name="F:Windows.Storage.Provider.StorageProviderInSyncPolicy.FileHiddenAttribute">
+      <summary>Атрибут файла "Скрытый".</summary>
+    </member>
+    <member name="F:Windows.Storage.Provider.StorageProviderInSyncPolicy.FileLastWriteTime">
+      <summary>Время последней операции записи в файле.</summary>
+    </member>
+    <member name="F:Windows.Storage.Provider.StorageProviderInSyncPolicy.FileReadOnlyAttribute">
+      <summary>Атрибут файла "Только для чтения".</summary>
+    </member>
+    <member name="F:Windows.Storage.Provider.StorageProviderInSyncPolicy.FileSystemAttribute">
+      <summary>Системный атрибут файла.</summary>
+    </member>
+    <member name="F:Windows.Storage.Provider.StorageProviderInSyncPolicy.PreserveInsyncForSyncEngine">
+      <summary>Значение, зарезервированное для механизма синхронизации.</summary>
+    </member>
+    <member name="T:Windows.Storage.Provider.StorageProviderItemProperties">
+      <summary>Предоставляет доступ к свойствам элемента хранилища (например, файла или папки) поставщика облачного хранилища.</summary>
+    </member>
+    <member name="M:Windows.Storage.Provider.StorageProviderItemProperties.SetAsync(Windows.Storage.IStorageItem,Windows.Foundation.Collections.IIterable{Windows.Storage.Provider.StorageProviderItemProperty})">
+      <summary>Задает значения настраиваемого свойства элемента хранилища.</summary>
+      <param name="item">Элемент хранилища.</param>
+      <param name="itemProperties">Допускающий итерацию список состояний StorageProviderItemProperty для элемента хранения.</param>
+      <returns>Асинхронное действие. Если используется асинхронное программирование, возвращаемый тип — void.</returns>
+    </member>
+    <member name="T:Windows.Storage.Provider.StorageProviderItemProperty">
+      <summary>Определяет свойство поставщика облачного хранилища для элемента хранилища (например, файла или папки).</summary>
+    </member>
+    <member name="M:Windows.Storage.Provider.StorageProviderItemProperty.#ctor">
+      <summary>Конструктор по умолчанию StorageProviderItemProperty.</summary>
+    </member>
+    <member name="P:Windows.Storage.Provider.StorageProviderItemProperty.IconResource">
+      <summary>Ссылка на ресурс значка для свойства поставщика облачного хранилища.</summary>
+      <returns>Строковое значение ссылки на значок ресурсов. Например, "SyncProviderResources.dll, -1234"</returns>
+    </member>
+    <member name="P:Windows.Storage.Provider.StorageProviderItemProperty.Id">
+      <summary>Код для элемента хранилища, предоставляемый поставщиком облачного хранилища.</summary>
+      <returns>Идентификатор элемента хранилища.</returns>
+    </member>
+    <member name="P:Windows.Storage.Provider.StorageProviderItemProperty.Value">
+      <summary>Текст описания состояния элемента хранилища поставщика хранилища.</summary>
+      <returns>Строковое значение текста.</returns>
+    </member>
+    <member name="T:Windows.Storage.Provider.StorageProviderItemPropertyDefinition">
+      <summary>Определяет свойства элемента из поставщика облачного хранилища.</summary>
+    </member>
+    <member name="M:Windows.Storage.Provider.StorageProviderItemPropertyDefinition.#ctor">
+      <summary>Конструктор по умолчанию StorageProviderItemPropertyDefinition.</summary>
+    </member>
+    <member name="P:Windows.Storage.Provider.StorageProviderItemPropertyDefinition.DisplayNameResource">
+      <summary>Получает или задает отображаемое имя состояния поставщика облачного хранилища.</summary>
+      <returns>Строковое значение для отображаемого имени состояния.</returns>
+    </member>
+    <member name="P:Windows.Storage.Provider.StorageProviderItemPropertyDefinition.Id">
+      <summary>Код для элемента хранилища, предоставляемый поставщиком облачного хранилища при регистрации корня синхронизации.</summary>
+      <returns>Идентификационный номер элемента хранилища.</returns>
+    </member>
+    <member name="T:Windows.Storage.Provider.StorageProviderPopulationPolicy">
+      <summary>Позволяет поставщику синхронизации управлять, тем как файл или каталог-прототип</summary>
+    </member>
+    <member name="F:Windows.Storage.Provider.StorageProviderPopulationPolicy.AlwaysFull">
+      <summary>Платформа будет предполагать, что файлы и каталоги-прототипы всегда доступны локально.</summary>
+    </member>
+    <member name="F:Windows.Storage.Provider.StorageProviderPopulationPolicy.Full">
+      <summary>Если файлы или каталоги-прототипы не полностью заполнены, платформа попросит поставщика синхронизации заполнить их, прежде чем выполнять запрос пользователя.</summary>
+    </member>
+    <member name="T:Windows.Storage.Provider.StorageProviderProtectionMode">
+      <summary>Указывает тип данных, содержащихся в корне синхронизации.</summary>
+    </member>
+    <member name="F:Windows.Storage.Provider.StorageProviderProtectionMode.Personal">
+      <summary>Корень синхронизации должен содержать только личные файлы, а не зашифрованные файлы или файлы, связанные с бизнесом.</summary>
+    </member>
+    <member name="F:Windows.Storage.Provider.StorageProviderProtectionMode.Unknown">
+      <summary>Корень синхронизации может содержать файлы любого типа.</summary>
+    </member>
+    <member name="T:Windows.Storage.Provider.StorageProviderSyncRootInfo">
+      <summary>Содержит свойства корня синхронизации поставщика облачного хранилища, регистрируемого в операционной системе.</summary>
+    </member>
+    <member name="M:Windows.Storage.Provider.StorageProviderSyncRootInfo.#ctor">
+      <summary>Конструктор по умолчанию StorageProviderSyncRootInfo.</summary>
+    </member>
+    <member name="P:Windows.Storage.Provider.StorageProviderSyncRootInfo.AllowPinning">
+      <summary>Включает и отключает возможность доступности файлов в автономном режиме.</summary>
+      <returns>Значение **true**, если закрепление включено; в противном случае — значение **false**.</returns>
+    </member>
+    <member name="P:Windows.Storage.Provider.StorageProviderSyncRootInfo.Context">
+      <summary>Содержит сведения идентификации корневой синхронизации.</summary>
+      <returns>Буфер, содержащий идентификацию корневой синхронизации.</returns>
+    </member>
+    <member name="P:Windows.Storage.Provider.StorageProviderSyncRootInfo.DisplayNameResource">
+      <summary>Дополнительное отображаемое имя, которое соответствует существующей регистрации корневой синхронизации.</summary>
+      <returns>Отображаемое имя.</returns>
+    </member>
+    <member name="P:Windows.Storage.Provider.StorageProviderSyncRootInfo.FallbackFileTypeInfo">
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Storage.Provider.StorageProviderSyncRootInfo.HardlinkPolicy">
+      <summary>Политика корня синхронизации в отношении жестких связей.</summary>
+      <returns>Определенная StorageProviderHardlinkPolicy.</returns>
+    </member>
+    <member name="P:Windows.Storage.Provider.StorageProviderSyncRootInfo.HydrationPolicy">
+      <summary>Политика расконсервации регистрации корня синхронизации.</summary>
+      <returns>Значение перечисления политики расконсервации поставщика хранилища.</returns>
+    </member>
+    <member name="P:Windows.Storage.Provider.StorageProviderSyncRootInfo.HydrationPolicyModifier">
+      <summary>Модификатор политики расконсервации регистрации корня синхронизации.</summary>
+      <returns>Значение перечисления модификатора политики расконсервации поставщика хранилища.</returns>
+    </member>
+    <member name="P:Windows.Storage.Provider.StorageProviderSyncRootInfo.IconResource">
+      <summary>Путь к ресурсу значка для пользовательского состояния файла или папки.</summary>
+      <returns>Путь к ресурсу значка, например "SyncProvider.dll,-100" или "SyncProvider.dll,-101"</returns>
+    </member>
+    <member name="P:Windows.Storage.Provider.StorageProviderSyncRootInfo.Id">
+      <summary>Идентификатор корня синхронизации.</summary>
+      <returns>Идентификатор в форме: [код поставщика хранилища]![Windows SID]![Идентификатор учетной записи]</returns>
+    </member>
+    <member name="P:Windows.Storage.Provider.StorageProviderSyncRootInfo.InSyncPolicy">
+      <summary>Предоставляет доступ к политике синхронизации для поставщика облачного хранилища.</summary>
+      <returns>Значение политики синхронизации.</returns>
+    </member>
+    <member name="P:Windows.Storage.Provider.StorageProviderSyncRootInfo.Path">
+      <summary>Папка хранилища, предоставляющая путь к корню облачной системы папок.</summary>
+      <returns>Папка хранилища.</returns>
+    </member>
+    <member name="P:Windows.Storage.Provider.StorageProviderSyncRootInfo.PopulationPolicy">
+      <summary>Политика заполнения регистрации корня синхронизации.</summary>
+      <returns>Значение перечисления политики заполнения.</returns>
+    </member>
+    <member name="P:Windows.Storage.Provider.StorageProviderSyncRootInfo.ProtectionMode">
+      <summary>Режим защиты регистрации корня синхронизации.</summary>
+      <returns>Значение перечисления режима защиты.</returns>
+    </member>
+    <member name="P:Windows.Storage.Provider.StorageProviderSyncRootInfo.ProviderId">
+      <summary>Получает или задает код GUID, представляющий идентификатор поставщика хранилища.</summary>
+      <returns>Код GUID, представляющий идентификатор поставщика хранилища.</returns>
+    </member>
+    <member name="P:Windows.Storage.Provider.StorageProviderSyncRootInfo.RecycleBinUri">
+      <summary>URI для корзины облачного хранилища.</summary>
+      <returns>URI для корзины.</returns>
+    </member>
+    <member name="P:Windows.Storage.Provider.StorageProviderSyncRootInfo.ShowSiblingsAsGroup">
+      <summary>Показывает корни одноуровневой синхронизации, перечисленные в корне основной синхронизации в проводнике.</summary>
+      <returns>Значение **True**, если корни одноуровневой синхронизации показываются; в противном случае — значение **False**</returns>
+    </member>
+    <member name="P:Windows.Storage.Provider.StorageProviderSyncRootInfo.StorageProviderItemPropertyDefinitions">
+      <summary>Получает сведения StorageProviderItemPropertyDefinition для корня синхронизации.</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Storage.Provider.StorageProviderSyncRootInfo.Version">
+      <summary>Номер версии корня синхронизации.</summary>
+      <returns>Строковое значение номера версии. Например, "1.0"</returns>
+    </member>
+    <member name="T:Windows.Storage.Provider.StorageProviderSyncRootManager">
+      <summary>Предоставляет возможность регистрации или отмены регистрации корня синхронизации поставщика облачного хранилища в операционной системе.</summary>
+    </member>
+    <member name="M:Windows.Storage.Provider.StorageProviderSyncRootManager.GetCurrentSyncRoots">
+      <summary>Получает все корни синхронизации, зарегистрированные в настоящее время.</summary>
+      <returns>Коллекция корней синхронизации, зарегистрированных в настоящее время.</returns>
+    </member>
+    <member name="M:Windows.Storage.Provider.StorageProviderSyncRootManager.GetSyncRootInformationForFolder(Windows.Storage.IStorageFolder)">
+      <summary>Возвращает свойства корня синхронизации поставщика облачного хранилища по заданной папке хранилища.</summary>
+      <param name="folder">Папка хранилища для корня синхронизации.</param>
+      <returns>Свойства корня синхронизации поставщика облачного хранилища для заданной папки хранилища.</returns>
+    </member>
+    <member name="M:Windows.Storage.Provider.StorageProviderSyncRootManager.GetSyncRootInformationForId(System.String)">
+      <summary>Возвращает свойства корня синхронизации поставщика облачного хранилища по заданному идентификатору корня синхронизации.</summary>
+      <param name="id">Строковое значение идентификатора корня синхронизации.</param>
+      <returns>Свойства для указанного корня синхронизации.</returns>
+    </member>
+    <member name="M:Windows.Storage.Provider.StorageProviderSyncRootManager.IsSupported">
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Windows.Storage.Provider.StorageProviderSyncRootManager.Register(Windows.Storage.Provider.StorageProviderSyncRootInfo)">
+      <summary>Регистрирует корень синхронизации в операционной системе.</summary>
+      <param name="syncRootInformation">Корень синхронизации для регистрации.</param>
+    </member>
+    <member name="M:Windows.Storage.Provider.StorageProviderSyncRootManager.Unregister(System.String)">
+      <summary>Отменяет регистрацию корня синхронизации в операционной системе.</summary>
+      <param name="id">Идентификатор корня синхронизации, регистрацию которого необходимо отменить.</param>
+    </member>
+    <member name="T:Windows.Storage.Provider.StorageProviderUriSourceStatus">
+      <summary>Перечисление состояния URI поставщика хранилища.</summary>
+    </member>
+    <member name="F:Windows.Storage.Provider.StorageProviderUriSourceStatus.FileNotFound">
+      <summary>URI не распознан поставщиком синхронизации.</summary>
+    </member>
+    <member name="F:Windows.Storage.Provider.StorageProviderUriSourceStatus.NoSyncRoot">
+      <summary>Нет корневой синхронизации, зарегистрированной с источником URI.</summary>
+    </member>
+    <member name="F:Windows.Storage.Provider.StorageProviderUriSourceStatus.Success">
+      <summary>Этот идентификатор поставщика хранилища существует.</summary>
+    </member>
+  </members>
+</doc>

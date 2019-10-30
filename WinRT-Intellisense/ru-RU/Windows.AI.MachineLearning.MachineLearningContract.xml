@@ -1,0 +1,1272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>Windows.AI.MachineLearning.MachineLearningContract</name>
+  </assembly>
+  <members>
+    <member name="T:Windows.AI.MachineLearning.ILearningModelFeatureDescriptor">
+      <summary>Описывает общие свойства, присущие всем компонентам.</summary>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.ILearningModelFeatureDescriptor.Description">
+      <summary>Описание того, для чего этот компонент используется в модели.</summary>
+      <returns>Описание того, для чего этот компонент используется в модели.</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.ILearningModelFeatureDescriptor.IsRequired">
+      <summary>Если значение — true, необходимо привязать к этому компоненту значение перед вызовом LearningModelSession.Evaluate.</summary>
+      <returns>Если значение — true, необходимо привязать к этому компоненту значение перед вызовом **LearningModelSession.Evaluate**.</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.ILearningModelFeatureDescriptor.Kind">
+      <summary>Тип компонента — позволяет понять, какой производный класс использовать.</summary>
+      <returns>Тип компонента — позволяет понять, какой производный класс использовать.</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.ILearningModelFeatureDescriptor.Name">
+      <summary>Имя, используемое для привязки значений к этому компоненту.</summary>
+      <returns>Имя, используемое для привязки значений к этому компоненту.</returns>
+    </member>
+    <member name="T:Windows.AI.MachineLearning.ILearningModelFeatureValue">
+      <summary>Приписанное значение для компонента.</summary>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.ILearningModelFeatureValue.Kind">
+      <summary>Тип данных компонента.</summary>
+      <returns>Тип данных компонента.</returns>
+    </member>
+    <member name="T:Windows.AI.MachineLearning.ILearningModelOperatorProvider">
+      <summary>
+      </summary>
+    </member>
+    <member name="T:Windows.AI.MachineLearning.ImageFeatureDescriptor">
+      <summary>Описывает свойства изображения, ожидаемого моделью.</summary>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.ImageFeatureDescriptor.BitmapAlphaMode">
+      <summary>Указывает ожидаемый режима альфа-канала изображения.</summary>
+      <returns>Режим альфа-канала изображения.</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.ImageFeatureDescriptor.BitmapPixelFormat">
+      <summary>Указывает ожидаемый формат пикселей (порядок каналов, разрядность и тип данных).</summary>
+      <returns>Формат пикселей изображения.</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.ImageFeatureDescriptor.Description">
+      <summary>Описание того, для чего этот компонент используется в модели.</summary>
+      <returns>Описание того, для чего этот компонент используется в модели.</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.ImageFeatureDescriptor.Height">
+      <summary>Ожидаемая высота изображения.</summary>
+      <returns>Ожидаемая высота изображения.</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.ImageFeatureDescriptor.IsRequired">
+      <summary>Если значение — true, необходимо привязать к этому компоненту значение перед вызовом LearningModelSession.Evaluate.</summary>
+      <returns>Значение True, если необходимо привязать к этому компоненту значение перед вызовом LearningModelSession.Evaluate, в противном случае — значение false.</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.ImageFeatureDescriptor.Kind">
+      <summary>Тип компонента — позволяет понять, какой производный класс использовать.</summary>
+      <returns>Тип компонента.</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.ImageFeatureDescriptor.Name">
+      <summary>Имя, используемое для привязки значений к этому компоненту.</summary>
+      <returns>Имя, используемое для привязки значений к этому компоненту.</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.ImageFeatureDescriptor.Width">
+      <summary>Ожидаемая ширина изображения.</summary>
+      <returns>Ожидаемая ширина изображения.</returns>
+    </member>
+    <member name="T:Windows.AI.MachineLearning.ImageFeatureValue">
+      <summary>Описаны свойства изображения, используемые для передачи в модель.</summary>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.ImageFeatureValue.Kind">
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.ImageFeatureValue.VideoFrame">
+      <summary>Получает видеокадр.</summary>
+      <returns>Видеокадр.</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.ImageFeatureValue.CreateFromVideoFrame(Windows.Media.VideoFrame)">
+      <summary>Создает ImageFeatureValue с использованием указанного видеокадра.</summary>
+      <param name="image">Видеокадр, используемый для создания **ImageFeatureValue**.</param>
+      <returns>**ImageFeatureValue**, созданное из указанного видеокадра.</returns>
+    </member>
+    <member name="T:Windows.AI.MachineLearning.ITensor">
+      <summary>Тензоры представляют собой многомерные значения.</summary>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.ITensor.Shape">
+      <summary>Возвращает количество и размер каждого измерения.</summary>
+      <returns>Возвращает количество и размер каждого измерения тензора.</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.ITensor.TensorKind">
+      <summary>Возвращает тип данных тензора.</summary>
+      <returns>Тип данных тензора.</returns>
+    </member>
+    <member name="T:Windows.AI.MachineLearning.LearningModel">
+      <summary>Представляет обученную модель машинного обучения.</summary>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.LearningModel.Author">
+      <summary>Имя автора модели.</summary>
+      <returns>Имя автора модели.</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.LearningModel.Description">
+      <summary>Описание модели.</summary>
+      <returns>Описание модели.</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.LearningModel.Domain">
+      <summary>Домен модели.</summary>
+      <returns>Домен модели.</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.LearningModel.InputFeatures">
+      <summary>Список входных компонентов модели.</summary>
+      <returns>Список входных компонентов модели.</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.LearningModel.Metadata">
+      <summary>Необработанные метаданные &lt;string,string&gt; из модели ONNX.</summary>
+      <returns>Необработанные метаданные &lt;string,string&gt; из модели ONNX.</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.LearningModel.Name">
+      <summary>Имя модели.</summary>
+      <returns>Имя модели.</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.LearningModel.OutputFeatures">
+      <summary>Список выходных компонентов модели.</summary>
+      <returns>Список выходных компонентов модели.</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.LearningModel.Version">
+      <summary>Версия модели.</summary>
+      <returns>Версия модели.</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.LearningModel.Close">
+      <summary>Освобождает модель ONNX в памяти. После этого вызова вы не сможете создать дополнительные объекты LearningModelSession.</summary>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.LearningModel.LoadFromFilePath(System.String)">
+      <summary>Загружает модель ONNX из файла на диске.</summary>
+      <param name="filePath">Путь к файлу модели ONNX на диске.</param>
+      <returns>Объект , представляющий модель.</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.LearningModel.LoadFromFilePath(System.String,Windows.AI.MachineLearning.ILearningModelOperatorProvider)">
+      <summary>Загружает модель ONNX из файла на диске.</summary>
+      <param name="filePath">Путь к файлу модели ONNX на диске.</param>
+      <param name="operatorProvider">
+      </param>
+      <returns>Объект , представляющий модель.</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.LearningModel.LoadFromStorageFileAsync(Windows.Storage.IStorageFile)">
+      <summary>Асинхронно загружает модель ONNX из IStorageFile.</summary>
+      <param name="modelFile">Расположение файла модели.</param>
+      <returns>LearningModel, основанная на файле модели.</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.LearningModel.LoadFromStorageFileAsync(Windows.Storage.IStorageFile,Windows.AI.MachineLearning.ILearningModelOperatorProvider)">
+      <summary>Асинхронно загружает модель ONNX из IStorageFile.</summary>
+      <param name="modelFile">Расположение файла модели.</param>
+      <param name="operatorProvider">
+      </param>
+      <returns>LearningModel, основанная на файле модели.</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.LearningModel.LoadFromStream(Windows.Storage.Streams.IRandomAccessStreamReference)">
+      <summary>Загружает модель ONNX из потока.</summary>
+      <param name="modelStream">Поток, из которого требуется загрузить модель.</param>
+      <returns>Объект, представляющий файл модели.</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.LearningModel.LoadFromStream(Windows.Storage.Streams.IRandomAccessStreamReference,Windows.AI.MachineLearning.ILearningModelOperatorProvider)">
+      <summary>Загружает модель ONNX из потока.</summary>
+      <param name="modelStream">Поток, из которого требуется загрузить модель.</param>
+      <param name="operatorProvider">
+      </param>
+      <returns>Объект, представляющий файл модели.</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.LearningModel.LoadFromStreamAsync(Windows.Storage.Streams.IRandomAccessStreamReference)">
+      <summary>Асинхронно загружает модель ONNX из потока.</summary>
+      <param name="modelStream">Поток, из которого требуется загрузить модель.</param>
+      <returns>Объект , представляющий модель.</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.LearningModel.LoadFromStreamAsync(Windows.Storage.Streams.IRandomAccessStreamReference,Windows.AI.MachineLearning.ILearningModelOperatorProvider)">
+      <summary>Асинхронно загружает модель ONNX из потока.</summary>
+      <param name="modelStream">Поток, из которого требуется загрузить модель.</param>
+      <param name="operatorProvider">
+      </param>
+      <returns>Объект , представляющий модель.</returns>
+    </member>
+    <member name="T:Windows.AI.MachineLearning.LearningModelBinding">
+      <summary>Используется для привязки значений к именованным входным и выходным компонентам.</summary>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.LearningModelBinding.#ctor(Windows.AI.MachineLearning.LearningModelSession)">
+      <summary>Создает LearningModelBinding из указанного LearningModelSession.</summary>
+      <param name="session">Создает **LearningModelBinding** из указанного **LearningModelSession**.</param>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.LearningModelBinding.Size">
+      <summary>Получает число элементов в сопоставлении.</summary>
+      <returns>Число элементов в сопоставлении.</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.LearningModelBinding.Bind(System.String,System.Object)">
+      <summary>Привязывает значение к именованному компоненту.</summary>
+      <param name="name">Имя компонента.</param>
+      <param name="value">Значение для привязки.</param>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.LearningModelBinding.Bind(System.String,System.Object,Windows.Foundation.Collections.IPropertySet)">
+      <summary>Привязывает значение к именованному компоненту с использованием свойств для управления привязкой.</summary>
+      <param name="name">Имя компонента для привязки.</param>
+      <param name="value">Значение, которое следует привязать к компоненту.</param>
+      <param name="props">Свойства для контроля привязки.</param>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.LearningModelBinding.Clear">
+      <summary>Удаление всех привязок.</summary>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.LearningModelBinding.First">
+      <summary>Возвращает итератор, который инициализируется до первого элемента в представлении карты.</summary>
+      <returns>Итератор, который инициализируется до первого элемента в представлении карты.</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.LearningModelBinding.HasKey(System.String)">
+      <summary>Определяет, содержится ли указанный ключ в сопоставлении представления.</summary>
+      <param name="key">Ключ для проверки на содержание в представлении карты.</param>
+      <returns>Значение True, если в представлении карты содержится указанный ключ; в противном случае — значение false.</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.LearningModelBinding.Lookup(System.String)">
+      <summary>Возвращает элемент по указанному ключу в представлении сопоставления.</summary>
+      <param name="key">Ключ в представлении карты, который нужно найти.</param>
+      <returns>Элемент по указанному ключу в представлении карты.</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.LearningModelBinding.Split(Windows.Foundation.Collections.IMapView{System.String,System.Object}@,Windows.Foundation.Collections.IMapView{System.String,System.Object}@)">
+      <summary>Разделяет представление сопоставления на два представления.</summary>
+      <param name="first">Половина исходного сопоставления.</param>
+      <param name="second">Вторая половина исходного сопоставления.</param>
+    </member>
+    <member name="T:Windows.AI.MachineLearning.LearningModelDevice">
+      <summary>Устройство, используемое для оценки модели машинного обучения.</summary>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.LearningModelDevice.#ctor(Windows.AI.MachineLearning.LearningModelDeviceKind)">
+      <summary>Создает LearningModelDevice из указанного LearningModelDeviceKind.</summary>
+      <param name="deviceKind">Указанный **LearningModelDeviceKind** для оценки модели машинного обучения.</param>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.LearningModelDevice.AdapterId">
+      <summary>Возвращает уникальный идентификатор для устройства.</summary>
+      <returns>Уникальный идентификатор для устройства.</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.LearningModelDevice.Direct3D11Device">
+      <summary>Возвращает IDirect3DDevice для устройства.</summary>
+      <returns>**IDirect3DDevice** для устройства.</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.LearningModelDevice.CreateFromDirect3D11Device(Windows.Graphics.DirectX.Direct3D11.IDirect3DDevice)">
+      <summary>Создает LearningModelDevice из указанного IDirect3DDevice.</summary>
+      <param name="device">**IDirect3DDevice**, из которого создается **LearningModelDevice**.</param>
+      <returns>**LearningModelDevice** создается из указанного **IDirect3DDevice**.</returns>
+    </member>
+    <member name="T:Windows.AI.MachineLearning.LearningModelDeviceKind">
+      <summary>Определяет список констант устройств, которые могут оценивать модель машинного обучения.</summary>
+    </member>
+    <member name="F:Windows.AI.MachineLearning.LearningModelDeviceKind.Cpu">
+      <summary>Использовать ЦП для оценки модели.</summary>
+    </member>
+    <member name="F:Windows.AI.MachineLearning.LearningModelDeviceKind.Default">
+      <summary>Разрешить системе решать, какое устройство использовать.</summary>
+    </member>
+    <member name="F:Windows.AI.MachineLearning.LearningModelDeviceKind.DirectX">
+      <summary>Использовать графический процессор или другое устройство DirectX для оценки модели.</summary>
+    </member>
+    <member name="F:Windows.AI.MachineLearning.LearningModelDeviceKind.DirectXHighPerformance">
+      <summary>Использовать устройство, определенное в политике системы, для повышения производительности.</summary>
+    </member>
+    <member name="F:Windows.AI.MachineLearning.LearningModelDeviceKind.DirectXMinPower">
+      <summary>Использовать устройство, определенное в политике системы, для минимального потребления энергии.</summary>
+    </member>
+    <member name="T:Windows.AI.MachineLearning.LearningModelEvaluationResult">
+      <summary>Получает результаты оценки.</summary>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.LearningModelEvaluationResult.CorrelationId">
+      <summary>Необязательная строка, переданная в LearningModelSession.Evaluate.</summary>
+      <returns>Необязательная строка, переданная в **LearningModelSession.Evaluate**.</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.LearningModelEvaluationResult.ErrorStatus">
+      <summary>Если оценка завершилась сбоем, возвращает код ошибки, указывающий причину сбоя.</summary>
+      <returns>Код ошибки, вызвавшей сбой.</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.LearningModelEvaluationResult.Outputs">
+      <summary>Получает выходные компоненты модели.</summary>
+      <returns>Выходные компоненты модели.</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.LearningModelEvaluationResult.Succeeded">
+      <summary>Значение true, если оценка успешно завершена; в противном случае — значение false.</summary>
+      <returns>Значение true, если оценка успешно завершена; в противном случае — значение false.</returns>
+    </member>
+    <member name="T:Windows.AI.MachineLearning.LearningModelFeatureKind">
+      <summary>Типы входных и выходных компонентов для модели машинного обучения.</summary>
+    </member>
+    <member name="F:Windows.AI.MachineLearning.LearningModelFeatureKind.Image">
+      <summary>Компонент является изображением — используйте ImageFeatureDescriptor.</summary>
+    </member>
+    <member name="F:Windows.AI.MachineLearning.LearningModelFeatureKind.Map">
+      <summary>Компонент является картой — используйте MapFeatureDescriptor.</summary>
+    </member>
+    <member name="F:Windows.AI.MachineLearning.LearningModelFeatureKind.Sequence">
+      <summary>Компонент является последовательностью — используйте SequenceFeatureDescriptor.</summary>
+    </member>
+    <member name="F:Windows.AI.MachineLearning.LearningModelFeatureKind.Tensor">
+      <summary>Компонент является тензором — используйте TensorFeatureDescriptor.</summary>
+    </member>
+    <member name="T:Windows.AI.MachineLearning.LearningModelSession">
+      <summary>Использовать для оценки моделей машинного обучения.</summary>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.LearningModelSession.#ctor(Windows.AI.MachineLearning.LearningModel)">
+      <summary>Создает сеанс с использованием устройства по умолчанию.</summary>
+      <param name="model">Обученная модель машинного обучения для этого сеанса.</param>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.LearningModelSession.#ctor(Windows.AI.MachineLearning.LearningModel,Windows.AI.MachineLearning.LearningModelDevice)">
+      <summary>Создает сеанс с использованием указанного устройства.</summary>
+      <param name="model">Обученная модель машинного обучения для этого сеанса.</param>
+      <param name="deviceToRunOn">Устройство оценки сеанса.</param>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.LearningModelSession.#ctor(Windows.AI.MachineLearning.LearningModel,Windows.AI.MachineLearning.LearningModelDevice,Windows.AI.MachineLearning.LearningModelSessionOptions)">
+      <summary>Создает сеанс, используя указанное устройство и дополнительные параметры вывода.</summary>
+      <param name="model">Обученная модель машинного обучения для этого сеанса.</param>
+      <param name="deviceToRunOn">Устройство оценки сеанса.</param>
+      <param name="learningModelSessionOptions">Параметры, используемые для настройки создания и оценки сеанса.</param>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.LearningModelSession.Device">
+      <summary>Возвращает устройство оценки сеанса.</summary>
+      <returns>Устройство оценки сеанса.</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.LearningModelSession.EvaluationProperties">
+      <summary>Набор свойств, определяющих оценку модели.</summary>
+      <returns>Набор свойств, определяющих оценку модели.</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.LearningModelSession.Model">
+      <summary>Возвращает обученную модель машинного обучения для этого сеанса.</summary>
+      <returns>Обученная модель машинного обучения для этого сеанса.</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.LearningModelSession.Close">
+      <summary>
+      </summary>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.LearningModelSession.Evaluate(Windows.AI.MachineLearning.LearningModelBinding,System.String)">
+      <summary>Оценивает модель машинного обучения с использованием значений компонентов, привязанных в *bindings*.</summary>
+      <param name="bindings">Держатель для связей между входными данными модели и экземплярами переменных.</param>
+      <param name="correlationId">Необязательная указанная пользователем строка для подключения выходные результаты.</param>
+      <returns>Результаты оценки.</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.LearningModelSession.EvaluateAsync(Windows.AI.MachineLearning.LearningModelBinding,System.String)">
+      <summary>Асинхронно оценивает модель машинного обучения с использованием значений компонентов, уже привязанных в *bindings*.</summary>
+      <param name="bindings">Значения, привязанные к именованным входным и выходным компонентам.</param>
+      <param name="correlationId">Необязательная указанная пользователем строка для подключения выходные результаты.</param>
+      <returns>LearningModelEvaluationResult на основе оценки.</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.LearningModelSession.EvaluateFeatures(Windows.Foundation.Collections.IMap{System.String,System.Object},System.String)">
+      <summary>Оценивает модель машинного обучения с использованием значений компонентов в *features*.</summary>
+      <param name="features">Сопоставление функций, из которого вычисляется модель.</param>
+      <param name="correlationId">Необязательная указанная пользователем строка для подключения выходные результаты.</param>
+      <returns>Результат оценки.</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.LearningModelSession.EvaluateFeaturesAsync(Windows.Foundation.Collections.IMap{System.String,System.Object},System.String)">
+      <summary>Асинхронно оценивает модель машинного обучения с использованием значений компонента в *features*.</summary>
+      <param name="features">Сопоставление функций, из которого вычисляется модель.</param>
+      <param name="correlationId">Необязательная указанная пользователем строка для подключения выходные результаты.</param>
+      <returns>Результат оценки.</returns>
+    </member>
+    <member name="T:Windows.AI.MachineLearning.LearningModelSessionOptions">
+      <summary>Описывает параметры вывода, используемые во время создания объектов LearningModelSession.</summary>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.LearningModelSessionOptions.#ctor">
+      <summary>Создает параметры, чтобы настроить создание LearningModelSession.</summary>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.LearningModelSessionOptions.BatchSizeOverride">
+      <summary>Числовое значение, которое указывает постоянное переопределенное значение пакета для целевой модели.</summary>
+      <returns>Постоянные значения пакета для компонента входных данных модели, ожидающих привязки. Значение по умолчанию для ** BatchSizeOverride ** будет 1, указывающее статический размер пакета 1.</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.LearningModelSessionOptions.CloseModelOnSessionCreation">
+      <summary>Указывает, должен ли конструктор LearningModelSession закрывать связанную модель обучения при создании сеанса.</summary>
+      <returns>Указывает, следует ли закрыть модель при создании сеанса.</returns>
+    </member>
+    <member name="T:Windows.AI.MachineLearning.MachineLearningContract">
+      <summary>
+      </summary>
+    </member>
+    <member name="T:Windows.AI.MachineLearning.MapFeatureDescriptor">
+      <summary>Карта представляет собой коллекцию пар (ключ, значение).</summary>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.MapFeatureDescriptor.Description">
+      <summary>Описание того, для чего этот компонент используется в модели.</summary>
+      <returns>Описание того, для чего этот компонент используется в модели.</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.MapFeatureDescriptor.IsRequired">
+      <summary>Если значение — true, необходимо привязать к этому компоненту значение перед вызовом LearningModelSession.Evaluate.</summary>
+      <returns>Значение True, если необходимо привязать к этому компоненту значение перед вызовом **LearningModelSession.Evaluate**, в противном случае — значение false.</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.MapFeatureDescriptor.KeyKind">
+      <summary>Ключи в карте могут быть типами тензоров.</summary>
+      <returns>Тип тензора является ключом этой карты.</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.MapFeatureDescriptor.Kind">
+      <summary>Тип компонента; позволяет понять, какой производный класс использовать.</summary>
+      <returns>Тип компонента.</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.MapFeatureDescriptor.Name">
+      <summary>Имя, используемое для привязки значений к этому компоненту.</summary>
+      <returns>Имя, используемое для привязки значений к этому компоненту.</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.MapFeatureDescriptor.ValueDescriptor">
+      <summary>Значения в карте могут быть типами компонентов.</summary>
+      <returns>Компонент для этого значения карты.</returns>
+    </member>
+    <member name="T:Windows.AI.MachineLearning.SequenceFeatureDescriptor">
+      <summary>Последовательность представляет собой массив элементов.</summary>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.SequenceFeatureDescriptor.Description">
+      <summary>Описание того, для чего этот компонент используется в модели.</summary>
+      <returns>Описание того, для чего этот компонент используется в модели.</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.SequenceFeatureDescriptor.ElementDescriptor">
+      <summary>Элементы последовательности могут представлять собой типы компонентов.</summary>
+      <returns>Дескриптор компонента для этого элемента последовательности.</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.SequenceFeatureDescriptor.IsRequired">
+      <summary>Если значение — true, необходимо привязать к этому компоненту значение перед вызовом LearningModelSession.Evaluate.</summary>
+      <returns>Значение True, если необходимо привязать к этому компоненту значение перед вызовом **LearningModelSession.Evaluate**, в противном случае — значение false.</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.SequenceFeatureDescriptor.Kind">
+      <summary>Тип компонента; позволяет понять, какой производный класс использовать.</summary>
+      <returns>Тип компонента.</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.SequenceFeatureDescriptor.Name">
+      <summary>Имя, используемое для привязки значений к этому компоненту.</summary>
+      <returns>Имя, используемое для привязки значений к этому компоненту.</returns>
+    </member>
+    <member name="T:Windows.AI.MachineLearning.TensorBoolean">
+      <summary>Объект-тензор в виде логического значения.</summary>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.TensorBoolean.Kind">
+      <summary>Тип компонента.</summary>
+      <returns>Тип компонента.</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.TensorBoolean.Shape">
+      <summary>Возвращает количество и размер каждого измерения.</summary>
+      <returns>Количество и размер каждого измерения.</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.TensorBoolean.TensorKind">
+      <summary>Возвращает тип данных тензора.</summary>
+      <returns>Тип данных тензора.</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorBoolean.Close">
+      <summary>Если нет ожидающих IMemoryBufferReference объектов, созданных на основе этого объекта, **Close** ликвидирует объект и удалит связанные ресурсы. В противном случае — **Close** произведет самоотключение от связанных ресурсов и будет удалено при закрытии последнего IMemoryBufferReference.</summary>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorBoolean.Create">
+      <summary>Создает объект-тензор в виде логического значения без выделения буфера.</summary>
+      <returns>Объект-тензор в виде логического значения.</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorBoolean.Create(Windows.Foundation.Collections.IIterable{System.Int64})">
+      <summary>Создает объект-тензор в виде логического значения и выделяет буфер размера *shape*.</summary>
+      <param name="shape">Размер буфера.</param>
+      <returns>Объект-тензор в виде логического значения с буфером заданного размера.</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorBoolean.CreateFromArray(Windows.Foundation.Collections.IIterable{System.Int64},System.Boolean[])">
+      <summary>Создает объект-тензор в виде логического значения, выделяет буфер размера *shape*, и копирует в него все *data*.</summary>
+      <param name="shape">Размер буфера.</param>
+      <param name="data">Данные, копируемые в буфер.</param>
+      <returns>Объект-тензор в виде логического значения с буфером, содержащим указанные данные.</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorBoolean.CreateFromBuffer(System.Int64[],Windows.Storage.Streams.IBuffer)">
+      <summary>Создает объект-тензор в виде логического значения с заданной *shape* и использует базовому буферу в *data* для последующих оценки.</summary>
+      <param name="shape">Размер буфера.</param>
+      <param name="buffer">Буфер для использования во время оценки.</param>
+      <returns>Объект-тензор в виде логического значения поддерживается ссылкой на буфер на предоставленные IBuffer * data *.</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorBoolean.CreateFromIterable(Windows.Foundation.Collections.IIterable{System.Int64},Windows.Foundation.Collections.IIterable{System.Boolean})">
+      <summary>Создает объект-тензор в виде логического значения, выделяет буфер размера *shape*, и копирует в него все *data*.</summary>
+      <param name="shape">Размер буфера.</param>
+      <param name="data">Данные, копируемые в буфер.</param>
+      <returns>Объект-тензор в виде логического значения с буфером, содержащим указанные данные.</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorBoolean.CreateFromShapeArrayAndDataArray(System.Int64[],System.Boolean[])">
+      <summary>Создает объект-тензор в виде логического значения, выделяет буфер размера *shape*, и копирует в него все *data*.</summary>
+      <param name="shape">Размер буфера.</param>
+      <param name="data">Данные, копируемые в буфер.</param>
+      <returns>Объект-тензор в виде логического значения с буфером, содержащим указанные данные.</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorBoolean.CreateReference">
+      <summary>Возвращает представление IMemoryBufferReference буфера, поддерживающего объект-тензор в виде логического значения.</summary>
+      <returns>Представление IMemoryBufferReference буфера тензора.</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorBoolean.GetAsVectorView">
+      <summary>Возвращает доступное только для чтения представление данных.</summary>
+      <returns>Доступное только для чтения представление данных.</returns>
+    </member>
+    <member name="T:Windows.AI.MachineLearning.TensorDouble">
+      <summary>Объект-тензор в виде 64-разрядного числа с плавающей точкой.</summary>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.TensorDouble.Kind">
+      <summary>Тип компонента.</summary>
+      <returns>Тип компонента.</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.TensorDouble.Shape">
+      <summary>Возвращает количество и размер каждого измерения.</summary>
+      <returns>Количество и размер каждого измерения.</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.TensorDouble.TensorKind">
+      <summary>Возвращает тип данных тензора.</summary>
+      <returns>Тип данных тензора.</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorDouble.Close">
+      <summary>Если нет ожидающих IMemoryBufferReference объектов, созданных на основе этого объекта, **Close** ликвидирует объект и удалит связанные ресурсы. В противном случае — **Close** произведет самоотключение от связанных ресурсов и будет удалено при закрытии последнего IMemoryBufferReference.</summary>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorDouble.Create">
+      <summary>Создает объект-тензор в виде 64-разрядного числа с плавающей точкой без выделения буфера.</summary>
+      <returns>Объект-тензор в виде 64-разрядного числа с плавающей точкой.</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorDouble.Create(Windows.Foundation.Collections.IIterable{System.Int64})">
+      <summary>Создает объект-тензор в виде 64-разрядного числа с плавающей точкой и выделяет буфер размера *shape*.</summary>
+      <param name="shape">Размер буфера.</param>
+      <returns>Объект-тензор в виде 64-разрядного числа с плавающей точкой с буфером заданного размера.</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorDouble.CreateFromArray(Windows.Foundation.Collections.IIterable{System.Int64},System.Double[])">
+      <summary>Создает объект-тензор в виде 64-разрядного числа с плавающей точкой, выделяет буфер размера *shape* и копирует в него все *data*.</summary>
+      <param name="shape">Размер буфера.</param>
+      <param name="data">Данные, копируемые в буфер.</param>
+      <returns>Объект-тензор в виде 64-разрядного числа с плавающей точкой с буфером, содержащим указанные данные.</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorDouble.CreateFromBuffer(System.Int64[],Windows.Storage.Streams.IBuffer)">
+      <summary>Создает двойной объект-тензор с заданной *shape* и использует базовый буфер в *data* для последующих оценки.</summary>
+      <param name="shape">Размер буфера.</param>
+      <param name="buffer">Буфер для использования во время оценки.</param>
+      <returns>Двойной объект-тензор поддерживается ссылкой на буфер на предоставленные IBuffer *data*.</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorDouble.CreateFromIterable(Windows.Foundation.Collections.IIterable{System.Int64},Windows.Foundation.Collections.IIterable{System.Double})">
+      <summary>Создает объект-тензор в виде 64-разрядного числа с плавающей точкой, выделяет буфер размера *shape* и копирует в него все *data*.</summary>
+      <param name="shape">Размер буфера.</param>
+      <param name="data">Данные, копируемые в буфер.</param>
+      <returns>Объект-тензор в виде 64-разрядного числа с плавающей точкой с буфером, содержащим указанные данные.</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorDouble.CreateFromShapeArrayAndDataArray(System.Int64[],System.Double[])">
+      <summary>Создает объект-тензор в виде 64-разрядного числа с плавающей точкой, выделяет буфер размера *shape* и копирует в него все *data*.</summary>
+      <param name="shape">Размер буфера.</param>
+      <param name="data">Данные, копируемые в буфер.</param>
+      <returns>Объект-тензор в виде 64-разрядного числа с плавающей точкой с буфером, содержащим указанные данные.</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorDouble.CreateReference">
+      <summary>Возвращает представление IMemoryBufferReference буфера, поддерживающего двойной объект-тензор.</summary>
+      <returns>Представление IMemoryBufferReference буфера тензора.</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorDouble.GetAsVectorView">
+      <summary>Возвращает доступное только для чтения представление данных.</summary>
+      <returns>Доступное только для чтения представление данных.</returns>
+    </member>
+    <member name="T:Windows.AI.MachineLearning.TensorFeatureDescriptor">
+      <summary>Тензоры представляют собой многомерные массивы значений.</summary>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.TensorFeatureDescriptor.Description">
+      <summary>Описание того, для чего этот компонент используется в модели.</summary>
+      <returns>Описание того, для чего этот компонент используется в модели.</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.TensorFeatureDescriptor.IsRequired">
+      <summary>Если значение — true, необходимо привязать к этому компоненту значение перед вызовом LearningModelSession.Evaluate.</summary>
+      <returns>Значение True, если необходимо привязать к этому компоненту значение перед вызовом **LearningModelSession.Evaluate**, в противном случае — значение false.</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.TensorFeatureDescriptor.Kind">
+      <summary>Тип компонента; позволяет понять, какой производный класс использовать.</summary>
+      <returns>Тип компонента.</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.TensorFeatureDescriptor.Name">
+      <summary>Имя, используемое для привязки значений к этому компоненту.</summary>
+      <returns>Имя, используемое для привязки значений к этому компоненту.</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.TensorFeatureDescriptor.Shape">
+      <summary>Возвращает количество и размер каждого измерения.</summary>
+      <returns>Количество и размер каждого измерения.</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.TensorFeatureDescriptor.TensorKind">
+      <summary>Возвращает тип данных тензора.</summary>
+      <returns>Тип данных тензора.</returns>
+    </member>
+    <member name="T:Windows.AI.MachineLearning.TensorFloat">
+      <summary>Объект-тензор в виде 32-разрядного числа с плавающей точкой.</summary>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.TensorFloat.Kind">
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.TensorFloat.Shape">
+      <summary>Возвращает количество и размер каждого измерения.</summary>
+      <returns>Количество и размер каждого измерения.</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.TensorFloat.TensorKind">
+      <summary>Возвращает тип данных тензора.</summary>
+      <returns>Тип данных тензора.</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorFloat.Close">
+      <summary>
+      </summary>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorFloat.Create">
+      <summary>Создает объект-тензор в виде 32-разрядного числа с плавающей точкой без выделения буфера.</summary>
+      <returns>Объект-тензор в виде 32-разрядного числа с плавающей точкой.</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorFloat.Create(Windows.Foundation.Collections.IIterable{System.Int64})">
+      <summary>Создает объект-тензор в виде 32-разрядного числа с плавающей точкой и выделяет буфер размера *shape*.</summary>
+      <param name="shape">Размер буфера.</param>
+      <returns>Объект-тензор в виде 32-разрядного числа с плавающей точкой с буфером заданного размера.</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorFloat.CreateFromArray(Windows.Foundation.Collections.IIterable{System.Int64},System.Single[])">
+      <summary>Создает объект-тензор в виде 32-разрядного числа с плавающей точкой, выделяет буфер размера *shape* и копирует в него все *data*.</summary>
+      <param name="shape">Размер буфера.</param>
+      <param name="data">Данные, копируемые в буфер.</param>
+      <returns>Объект-тензор в виде 32-разрядного числа с плавающей точкой с буфером, содержащим указанные данные.</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorFloat.CreateFromBuffer(System.Int64[],Windows.Storage.Streams.IBuffer)">
+      <summary>Создает объект-тензор с плавающей точкой с заданной *shape* и использует базовый буфер в *data* для последующей оценки.</summary>
+      <param name="shape">Размер буфера.</param>
+      <param name="buffer">Буфер для использования во время оценки.</param>
+      <returns>Объект-тензор с плавающей точкой поддерживается ссылкой на буфер на предоставленные IBuffer *data*.</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorFloat.CreateFromIterable(Windows.Foundation.Collections.IIterable{System.Int64},Windows.Foundation.Collections.IIterable{System.Single})">
+      <summary>Создает объект-тензор в виде 32-разрядного числа с плавающей точкой, выделяет буфер размера *shape* и копирует в него все *data*.</summary>
+      <param name="shape">Размер буфера.</param>
+      <param name="data">Данные, копируемые в буфер.</param>
+      <returns>Объект-тензор в виде 32-разрядного числа с плавающей точкой с буфером, содержащим указанные данные.</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorFloat.CreateFromShapeArrayAndDataArray(System.Int64[],System.Single[])">
+      <summary>Создает объект-тензор в виде 32-разрядного числа с плавающей точкой, выделяет буфер размера *shape* и копирует в него все *data*.</summary>
+      <param name="shape">Размер буфера.</param>
+      <param name="data">Данные, копируемые в буфер.</param>
+      <returns>Объект-тензор в виде 32-разрядного числа с плавающей точкой с буфером, содержащим указанные данные.</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorFloat.CreateReference">
+      <summary>Возвращает представление IMemoryBufferReference буфера, поддерживающего объект-тензор в виде 32-разрядного числа с плавающей точкой.</summary>
+      <returns>Представление IMemoryBufferReference буфера тензора.</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorFloat.GetAsVectorView">
+      <summary>Возвращает доступное только для чтения представление данных.</summary>
+      <returns>Доступное только для чтения представление данных.</returns>
+    </member>
+    <member name="T:Windows.AI.MachineLearning.TensorFloat16Bit">
+      <summary>Объект-тензор в виде 16-разрядного числа с плавающей точкой.</summary>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.TensorFloat16Bit.Kind">
+      <summary>Тип компонента.</summary>
+      <returns>Тип компонента.</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.TensorFloat16Bit.Shape">
+      <summary>Возвращает количество и размер каждого измерения.</summary>
+      <returns>Количество и размер каждого измерения.</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.TensorFloat16Bit.TensorKind">
+      <summary>Возвращает тип данных тензора.</summary>
+      <returns>Тип данных тензора.</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorFloat16Bit.Close">
+      <summary>Если нет ожидающих IMemoryBufferReference объектов, созданных на основе этого объекта, **Close** ликвидирует объект и удалит связанные ресурсы. В противном случае — **Close** произведет самоотключение от связанных ресурсов и будет удалено при закрытии последнего IMemoryBufferReference.</summary>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorFloat16Bit.Create">
+      <summary>Создает объект-тензор в виде 16-разрядного числа с плавающей точкой без выделения буфера.</summary>
+      <returns>Объект-тензор в виде 16-разрядного числа с плавающей точкой.</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorFloat16Bit.Create(Windows.Foundation.Collections.IIterable{System.Int64})">
+      <summary>Создает объект-тензор в виде 16-разрядного числа с плавающей точкой и выделяет буфер размера *shape*.</summary>
+      <param name="shape">Размер буфера.</param>
+      <returns>Объект-тензор в виде 16-разрядного числа с плавающей точкой с буфером заданного размера.</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorFloat16Bit.CreateFromArray(Windows.Foundation.Collections.IIterable{System.Int64},System.Single[])">
+      <summary>Создает объект-тензор в виде 16-разрядного числа с плавающей точкой, выделяет буфер размера *shape* и копирует в него все *data*.</summary>
+      <param name="shape">Размер буфера.</param>
+      <param name="data">Данные, копируемые в буфер.</param>
+      <returns>Объект-тензор в виде 16-разрядного числа с плавающей точкой с буфером, содержащим указанные данные.</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorFloat16Bit.CreateFromBuffer(System.Int64[],Windows.Storage.Streams.IBuffer)">
+      <summary>Создает объект-тензор в виде 16-разрядного числа с плавающей точкой с заданной *shape* и использует базовый буфер в *data* для последующей оценки.</summary>
+      <param name="shape">Размер буфера.</param>
+      <param name="buffer">Буфер для использования во время оценки.</param>
+      <returns>Объект-тензор в виде 16-разрядного числа с плавающей точкой поддерживается ссылкой на буфер на предоставленные IBuffer *data*.</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorFloat16Bit.CreateFromIterable(Windows.Foundation.Collections.IIterable{System.Int64},Windows.Foundation.Collections.IIterable{System.Single})">
+      <summary>Создает объект-тензор в виде 16-разрядного числа с плавающей точкой, выделяет буфер размера *shape* и копирует в него все *data*.</summary>
+      <param name="shape">Размер буфера.</param>
+      <param name="data">Данные, копируемые в буфер.</param>
+      <returns>Объект-тензор в виде 16-разрядного числа с плавающей точкой с буфером, содержащим указанные данные.</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorFloat16Bit.CreateFromShapeArrayAndDataArray(System.Int64[],System.Single[])">
+      <summary>Создает объект-тензор в виде 16-разрядного числа с плавающей точкой, выделяет буфер размера *shape* и копирует в него все *data*.</summary>
+      <param name="shape">Размер буфера.</param>
+      <param name="data">Данные, копируемые в буфер.</param>
+      <returns>Объект-тензор в виде 16-разрядного числа с плавающей точкой с буфером, содержащим указанные данные.</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorFloat16Bit.CreateReference">
+      <summary>Возвращает представление IMemoryBufferReference буфера, поддерживающего объект-тензор в виде 16-разрядного числа с плавающей точкой.</summary>
+      <returns>Представление IMemoryBufferReference буфера тензора.</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorFloat16Bit.GetAsVectorView">
+      <summary>Возвращает доступное только для чтения представление данных.</summary>
+      <returns>Доступное только для чтения представление данных.</returns>
+    </member>
+    <member name="T:Windows.AI.MachineLearning.TensorInt16Bit">
+      <summary>Объект-тензор в виде 16-разрядного знакового целого числа.</summary>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.TensorInt16Bit.Kind">
+      <summary>Тип компонента.</summary>
+      <returns>Тип компонента.</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.TensorInt16Bit.Shape">
+      <summary>Возвращает количество и размер каждого измерения.</summary>
+      <returns>Количество и размер каждого измерения.</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.TensorInt16Bit.TensorKind">
+      <summary>Возвращает тип данных тензора.</summary>
+      <returns>Тип данных тензора.</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorInt16Bit.Close">
+      <summary>Если нет ожидающих IMemoryBufferReference объектов, созданных на основе этого объекта, **Close** ликвидирует объект и удалит связанные ресурсы. В противном случае — **Close** произведет самоотключение от связанных ресурсов и будет удалено при закрытии последнего IMemoryBufferReference.</summary>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorInt16Bit.Create">
+      <summary>Создает объект-тензор в виде 16-разрядного знакового целого числа без выделения буфера.</summary>
+      <returns>Объект-тензор в виде 16-разрядного знакового целого числа.</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorInt16Bit.Create(Windows.Foundation.Collections.IIterable{System.Int64})">
+      <summary>Создает объект-тензор в виде 16-разрядного знакового целого числа и выделяет буфер размера *shape*.</summary>
+      <param name="shape">Размер буфера.</param>
+      <returns>Объект-тензор в виде 16-разрядного числа знакового целого числа с буфером заданного размера.</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorInt16Bit.CreateFromArray(Windows.Foundation.Collections.IIterable{System.Int64},System.Int16[])">
+      <summary>Создает объект-тензор в виде 16-разрядного знакового целого числа, выделяет буфер размера *shape* и копирует в него все *data*.</summary>
+      <param name="shape">Размер буфера.</param>
+      <param name="data">Данные, копируемые в буфер.</param>
+      <returns>Объект-тензор в виде 16-разрядного знакового целого числа с буфером, содержащим указанные данные.</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorInt16Bit.CreateFromBuffer(System.Int64[],Windows.Storage.Streams.IBuffer)">
+      <summary>Создает объект-тензор в виде 16-разрядного знакового целого числа с заданной *shape* и использует базовый буфер в *buffer* для последующей оценки.</summary>
+      <param name="shape">Размер буфера.</param>
+      <param name="buffer">Буфер для использования во время оценки.</param>
+      <returns>Объект-тензор в виде 16-разрядного знакового целого числа поддерживается ссылкой на буфер на предоставленные IBuffer *buffer*.</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorInt16Bit.CreateFromIterable(Windows.Foundation.Collections.IIterable{System.Int64},Windows.Foundation.Collections.IIterable{System.Int16})">
+      <summary>Создает объект-тензор в виде 16-разрядного знакового целого числа, выделяет буфер размера *shape* и копирует в него все *data*.</summary>
+      <param name="shape">Размер буфера.</param>
+      <param name="data">Данные, копируемые в буфер.</param>
+      <returns>Объект-тензор в виде 16-разрядного знакового целого числа с буфером, содержащим указанные данные.</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorInt16Bit.CreateFromShapeArrayAndDataArray(System.Int64[],System.Int16[])">
+      <summary>Создает объект-тензор в виде 16-разрядного знакового целого числа, выделяет буфер размера *shape* и копирует в него все *data*.</summary>
+      <param name="shape">Размер буфера.</param>
+      <param name="data">Данные, копируемые в буфер.</param>
+      <returns>Объект-тензор в виде 16-разрядного знакового целого числа с буфером, содержащим указанные данные.</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorInt16Bit.CreateReference">
+      <summary>Возвращает представление IMemoryBufferReference буфера, поддерживающего объект-тензор в виде 16-разрядного знакового целого числа.</summary>
+      <returns>Представление IMemoryBufferReference буфера тензора.</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorInt16Bit.GetAsVectorView">
+      <summary>Возвращает доступное только для чтения представление данных.</summary>
+      <returns>Доступное только для чтения представление данных.</returns>
+    </member>
+    <member name="T:Windows.AI.MachineLearning.TensorInt32Bit">
+      <summary>Объект-тензор в виде 32-разрядного знакового целого числа.</summary>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.TensorInt32Bit.Kind">
+      <summary>Тип компонента.</summary>
+      <returns>Тип компонента.</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.TensorInt32Bit.Shape">
+      <summary>Возвращает количество и размер каждого измерения.</summary>
+      <returns>Количество и размер каждого измерения.</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.TensorInt32Bit.TensorKind">
+      <summary>Возвращает тип данных тензора.</summary>
+      <returns>Тип данных тензора.</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorInt32Bit.Close">
+      <summary>Если нет ожидающих IMemoryBufferReference объектов, созданных на основе этого объекта, **Close** ликвидирует объект и удалит связанные ресурсы. В противном случае — **Close** произведет самоотключение от связанных ресурсов и будет удалено при закрытии последнего IMemoryBufferReference.</summary>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorInt32Bit.Create">
+      <summary>Создает объект-тензор в виде 32-разрядного знакового целого числа без выделения буфера.</summary>
+      <returns>Объект-тензор в виде 32-разрядного знакового целого числа.</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorInt32Bit.Create(Windows.Foundation.Collections.IIterable{System.Int64})">
+      <summary>Создает объект-тензор в виде 32-разрядного знакового целого числа и выделяет буфер размера *shape*.</summary>
+      <param name="shape">Размер буфера.</param>
+      <returns>Объект-тензор в виде 32-разрядного числа знакового целого числа с буфером заданного размера.</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorInt32Bit.CreateFromArray(Windows.Foundation.Collections.IIterable{System.Int64},System.Int32[])">
+      <summary>Создает объект-тензор в виде 32-разрядного знакового целого числа, выделяет буфер размера *shape* и копирует в него все *data*.</summary>
+      <param name="shape">Размер буфера.</param>
+      <param name="data">Данные, копируемые в буфер.</param>
+      <returns>Объект-тензор в виде 32-разрядного знакового целого числа с буфером, содержащим указанные данные.</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorInt32Bit.CreateFromBuffer(System.Int64[],Windows.Storage.Streams.IBuffer)">
+      <summary>Создает объект-тензор в виде 32-разрядного знакового целого числа с заданной *shape* и использует базовый буфер в *buffer* для последующей оценки.</summary>
+      <param name="shape">Размер буфера.</param>
+      <param name="buffer">Буфер для использования во время оценки.</param>
+      <returns>Объект-тензор в виде 32-разрядного знакового целого числа поддерживается ссылкой на буфер на предоставленные IBuffer *buffer*.</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorInt32Bit.CreateFromIterable(Windows.Foundation.Collections.IIterable{System.Int64},Windows.Foundation.Collections.IIterable{System.Int32})">
+      <summary>Создает объект-тензор в виде 32-разрядного знакового целого числа, выделяет буфер размера *shape* и копирует в него все *data*.</summary>
+      <param name="shape">Размер буфера.</param>
+      <param name="data">Данные, копируемые в буфер.</param>
+      <returns>Объект-тензор в виде 32-разрядного знакового целого числа с буфером, содержащим указанные данные.</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorInt32Bit.CreateFromShapeArrayAndDataArray(System.Int64[],System.Int32[])">
+      <summary>Создает объект-тензор в виде 32-разрядного знакового целого числа, выделяет буфер размера *shape* и копирует в него все *data*.</summary>
+      <param name="shape">Размер буфера.</param>
+      <param name="data">Данные, копируемые в буфер.</param>
+      <returns>Объект-тензор в виде 32-разрядного знакового целого числа с буфером, содержащим указанные данные.</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorInt32Bit.CreateReference">
+      <summary>Возвращает представление IMemoryBufferReference буфера, поддерживающего объект-тензор в виде 32-разрядного знакового целого числа.</summary>
+      <returns>Представление IMemoryBufferReference буфера тензора.</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorInt32Bit.GetAsVectorView">
+      <summary>Возвращает доступное только для чтения представление данных.</summary>
+      <returns>Доступное только для чтения представление данных.</returns>
+    </member>
+    <member name="T:Windows.AI.MachineLearning.TensorInt64Bit">
+      <summary>Объект-тензор в виде 64-разрядного знакового целого числа.</summary>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.TensorInt64Bit.Kind">
+      <summary>Тип компонента.</summary>
+      <returns>Тип компонента.</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.TensorInt64Bit.Shape">
+      <summary>Возвращает количество и размер каждого измерения.</summary>
+      <returns>Количество и размер каждого измерения.</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.TensorInt64Bit.TensorKind">
+      <summary>Возвращает тип данных тензора.</summary>
+      <returns>Тип данных тензора.</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorInt64Bit.Close">
+      <summary>Если нет ожидающих IMemoryBufferReference объектов, созданных на основе этого объекта, **Close** ликвидирует объект и удалит связанные ресурсы. В противном случае — **Close** произведет самоотключение от связанных ресурсов и будет удалено при закрытии последнего IMemoryBufferReference.</summary>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorInt64Bit.Create">
+      <summary>Создает объект-тензор в виде 64-разрядного знакового целого числа без выделения буфера.</summary>
+      <returns>Объект-тензор в виде 64-разрядного знакового целого числа.</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorInt64Bit.Create(Windows.Foundation.Collections.IIterable{System.Int64})">
+      <summary>Создает объект-тензор в виде 64-разрядного знакового целого числа и выделяет буфер размера *shape*.</summary>
+      <param name="shape">Размер буфера.</param>
+      <returns>Объект-тензор в виде 64-разрядного числа знакового целого числа с буфером заданного размера.</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorInt64Bit.CreateFromArray(Windows.Foundation.Collections.IIterable{System.Int64},System.Int64[])">
+      <summary>Создает объект-тензор в виде 64-разрядного знакового целого числа, выделяет буфер размера *shape* и копирует в него все *data*.</summary>
+      <param name="shape">Размер буфера.</param>
+      <param name="data">Данные, копируемые в буфер.</param>
+      <returns>Объект-тензор в виде 64-разрядного знакового целого числа с буфером, содержащим указанные данные.</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorInt64Bit.CreateFromBuffer(System.Int64[],Windows.Storage.Streams.IBuffer)">
+      <summary>Создает объект-тензор в виде 64-разрядного знакового целого числа с заданной *shape* и использует базовый буфер в *buffer* для последующей оценки.</summary>
+      <param name="shape">Размер буфера.</param>
+      <param name="buffer">Буфер для использования во время оценки.</param>
+      <returns>Объект-тензор в виде 64-разрядного знакового целого числа поддерживается ссылкой на буфер на предоставленные IBuffer *buffer*.</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorInt64Bit.CreateFromIterable(Windows.Foundation.Collections.IIterable{System.Int64},Windows.Foundation.Collections.IIterable{System.Int64})">
+      <summary>Создает объект-тензор в виде 64-разрядного знакового целого числа, выделяет буфер размера *shape* и копирует в него все *data*.</summary>
+      <param name="shape">Размер буфера.</param>
+      <param name="data">Данные, копируемые в буфер.</param>
+      <returns>Объект-тензор в виде 64-разрядного знакового целого числа с буфером, содержащим указанные данные.</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorInt64Bit.CreateFromShapeArrayAndDataArray(System.Int64[],System.Int64[])">
+      <summary>Создает объект-тензор в виде 64-разрядного знакового целого числа, выделяет буфер размера *shape* и копирует в него все *data*.</summary>
+      <param name="shape">Размер буфера.</param>
+      <param name="data">Данные, копируемые в буфер.</param>
+      <returns>Объект-тензор в виде 64-разрядного знакового целого числа с буфером, содержащим указанные данные.</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorInt64Bit.CreateReference">
+      <summary>Возвращает представление IMemoryBufferReference буфера, поддерживающего объект-тензор в виде 64-разрядного знакового целого числа.</summary>
+      <returns>Представление IMemoryBufferReference буфера тензора.</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorInt64Bit.GetAsVectorView">
+      <summary>Возвращает доступное только для чтения представление данных.</summary>
+      <returns>Доступное только для чтения представление данных.</returns>
+    </member>
+    <member name="T:Windows.AI.MachineLearning.TensorInt8Bit">
+      <summary>Объект-тензор в виде 8-разрядного знакового целого числа.</summary>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.TensorInt8Bit.Kind">
+      <summary>Тип компонента.</summary>
+      <returns>Тип компонента.</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.TensorInt8Bit.Shape">
+      <summary>Возвращает количество и размер каждого измерения.</summary>
+      <returns>Количество и размер каждого измерения.</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.TensorInt8Bit.TensorKind">
+      <summary>Возвращает тип данных тензора.</summary>
+      <returns>Тип данных тензора.</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorInt8Bit.Close">
+      <summary>Если нет ожидающих IMemoryBufferReference объектов, созданных на основе этого объекта, **Close** ликвидирует объект и удалит связанные ресурсы. В противном случае — **Close** произведет самоотключение от связанных ресурсов и будет удалено при закрытии последнего IMemoryBufferReference.</summary>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorInt8Bit.Create">
+      <summary>Создает объект-тензор в виде 8-разрядного знакового целого числа без выделения буфера.</summary>
+      <returns>Объект-тензор в виде 8-разрядного знакового целого числа.</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorInt8Bit.Create(Windows.Foundation.Collections.IIterable{System.Int64})">
+      <summary>Создает объект-тензор в виде 8-разрядного знакового целого числа и выделяет буфер размера *shape*.</summary>
+      <param name="shape">Размер буфера.</param>
+      <returns>Объект-тензор в виде 8-разрядного числа знакового целого числа с буфером заданного размера.</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorInt8Bit.CreateFromArray(Windows.Foundation.Collections.IIterable{System.Int64},System.Byte[])">
+      <summary>Создает объект-тензор в виде 8-разрядного знакового целого числа, выделяет буфер размера *shape* и копирует в него все *data*.</summary>
+      <param name="shape">Размер буфера.</param>
+      <param name="data">Данные, копируемые в буфер.</param>
+      <returns>Объект-тензор в виде 8-разрядного знакового целого числа с буфером, содержащим указанные данные.</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorInt8Bit.CreateFromBuffer(System.Int64[],Windows.Storage.Streams.IBuffer)">
+      <summary>Создает объект-тензор в виде 8-разрядного знакового целого числа с заданной *shape* и использует базовый буфер в *buffer* для последующей оценки.</summary>
+      <param name="shape">Размер буфера.</param>
+      <param name="buffer">Буфер для использования во время оценки.</param>
+      <returns>Объект-тензор в виде 8-разрядного знакового целого числа поддерживается ссылкой на буфер на предоставленные IBuffer *buffer*.</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorInt8Bit.CreateFromIterable(Windows.Foundation.Collections.IIterable{System.Int64},Windows.Foundation.Collections.IIterable{System.Byte})">
+      <summary>Создает объект-тензор в виде 8-разрядного знакового целого числа, выделяет буфер размера *shape* и копирует в него все *data*.</summary>
+      <param name="shape">Размер буфера.</param>
+      <param name="data">Данные, копируемые в буфер.</param>
+      <returns>Объект-тензор в виде 8-разрядного знакового целого числа с буфером, содержащим указанные данные.</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorInt8Bit.CreateFromShapeArrayAndDataArray(System.Int64[],System.Byte[])">
+      <summary>Создает объект-тензор в виде 8-разрядного знакового целого числа, выделяет буфер размера *shape* и копирует в него все *data*.</summary>
+      <param name="shape">Размер буфера.</param>
+      <param name="data">Данные, копируемые в буфер.</param>
+      <returns>Объект-тензор в виде 8-разрядного знакового целого числа с буфером, содержащим указанные данные.</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorInt8Bit.CreateReference">
+      <summary>Возвращает представление IMemoryBufferReference буфера, поддерживающего объект-тензор в виде 8-разрядного знакового целого числа.</summary>
+      <returns>Представление IMemoryBufferReference буфера тензора.</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorInt8Bit.GetAsVectorView">
+      <summary>Возвращает доступное только для чтения представление данных.</summary>
+      <returns>Доступное только для чтения представление данных.</returns>
+    </member>
+    <member name="T:Windows.AI.MachineLearning.TensorKind">
+      <summary>Определяет список поддерживаемых типов данных тензоров.</summary>
+    </member>
+    <member name="F:Windows.AI.MachineLearning.TensorKind.Boolean">
+      <summary>Тип тензора — **Boolean**.</summary>
+    </member>
+    <member name="F:Windows.AI.MachineLearning.TensorKind.Complex128">
+      <summary>Недопустимый тип.</summary>
+    </member>
+    <member name="F:Windows.AI.MachineLearning.TensorKind.Complex64">
+      <summary>Недопустимый тип.</summary>
+    </member>
+    <member name="F:Windows.AI.MachineLearning.TensorKind.Double">
+      <summary>Тип тензора — 64-разрядное число с плавающей точкой.</summary>
+    </member>
+    <member name="F:Windows.AI.MachineLearning.TensorKind.Float">
+      <summary>Тип тензора — 32-разрядное число с плавающей точкой.</summary>
+    </member>
+    <member name="F:Windows.AI.MachineLearning.TensorKind.Float16">
+      <summary>Тип тензора — 16-разрядное число с плавающей точкой.</summary>
+    </member>
+    <member name="F:Windows.AI.MachineLearning.TensorKind.Int16">
+      <summary>Тип тензора — 16-разрядное знаковое целое число.</summary>
+    </member>
+    <member name="F:Windows.AI.MachineLearning.TensorKind.Int32">
+      <summary>Тип тензора — 32-разрядное знаковое целое число.</summary>
+    </member>
+    <member name="F:Windows.AI.MachineLearning.TensorKind.Int64">
+      <summary>Тип тензора — 64-разрядное знаковое целое число.</summary>
+    </member>
+    <member name="F:Windows.AI.MachineLearning.TensorKind.Int8">
+      <summary>Тип тензора — 8-разрядное знаковое целое число.</summary>
+    </member>
+    <member name="F:Windows.AI.MachineLearning.TensorKind.String">
+      <summary>Тип тензора — **String**.</summary>
+    </member>
+    <member name="F:Windows.AI.MachineLearning.TensorKind.UInt16">
+      <summary>Тип тензора — 16-разрядное целое число без знака.</summary>
+    </member>
+    <member name="F:Windows.AI.MachineLearning.TensorKind.UInt32">
+      <summary>Тип тензора — 32-разрядное целое число без знака.</summary>
+    </member>
+    <member name="F:Windows.AI.MachineLearning.TensorKind.UInt64">
+      <summary>Тип тензора — 64-разрядное целое число без знака.</summary>
+    </member>
+    <member name="F:Windows.AI.MachineLearning.TensorKind.UInt8">
+      <summary>Тип тензора — 8-разрядное целое число без знака.</summary>
+    </member>
+    <member name="F:Windows.AI.MachineLearning.TensorKind.Undefined">
+      <summary>Недопустимый тип.</summary>
+    </member>
+    <member name="T:Windows.AI.MachineLearning.TensorString">
+      <summary>Объект-тензор в виде строки.</summary>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.TensorString.Kind">
+      <summary>Тип компонента.</summary>
+      <returns>Тип компонента.</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.TensorString.Shape">
+      <summary>Возвращает количество и размер каждого измерения.</summary>
+      <returns>Количество и размер каждого измерения.</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.TensorString.TensorKind">
+      <summary>Возвращает тип данных тензора.</summary>
+      <returns>Тип данных тензора.</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorString.Close">
+      <summary>Если нет ожидающих IMemoryBufferReference объектов, созданных на основе этого объекта, **Close** ликвидирует объект и удалит связанные ресурсы. В противном случае — **Close** произведет самоотключение от связанных ресурсов и будет удалено при закрытии последнего IMemoryBufferReference.</summary>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorString.Create">
+      <summary>Создает объект-тензор в виде строки без выделения буфера.</summary>
+      <returns>Объект-тензор в виде строки.</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorString.Create(Windows.Foundation.Collections.IIterable{System.Int64})">
+      <summary>Создает объект-тензор в виде строки и выделяет буфер размера *shape*.</summary>
+      <param name="shape">Размер буфера.</param>
+      <returns>Объект-тензор в виде строки с буфером заданного размера.</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorString.CreateFromArray(Windows.Foundation.Collections.IIterable{System.Int64},System.String[])">
+      <summary>Создает объект-тензор в виде строки, выделяет буфер размера *shape* и копирует в него все *data*.</summary>
+      <param name="shape">Размер буфера.</param>
+      <param name="data">Данные, копируемые в буфер.</param>
+      <returns>Объект-тензор в виде строки с буфером, содержащим указанные данные.</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorString.CreateFromIterable(Windows.Foundation.Collections.IIterable{System.Int64},Windows.Foundation.Collections.IIterable{System.String})">
+      <summary>Создает объект-тензор в виде строки, выделяет буфер размера *shape* и копирует в него все *data*.</summary>
+      <param name="shape">Размер буфера.</param>
+      <param name="data">Данные, копируемые в буфер.</param>
+      <returns>Объект-тензор в виде строки с буфером, содержащим указанные данные.</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorString.CreateFromShapeArrayAndDataArray(System.Int64[],System.String[])">
+      <summary>Создает объект-тензор в виде строки, выделяет буфер размера *shape* и копирует в него все *data*.</summary>
+      <param name="shape">Размер буфера.</param>
+      <param name="data">Данные, копируемые в буфер.</param>
+      <returns>Объект-тензор в виде строки с буфером, содержащим указанные данные.</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorString.CreateReference">
+      <summary>Этот метод запрещен на объектах TensorString и не должен использоваться.</summary>
+      <returns>Возвращаемое IMemoryBufferReference всегда равно **null**.</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorString.GetAsVectorView">
+      <summary>Возвращает доступное только для чтения представление данных.</summary>
+      <returns>Доступное только для чтения представление данных.</returns>
+    </member>
+    <member name="T:Windows.AI.MachineLearning.TensorUInt16Bit">
+      <summary>Объект-тензор в виде 16-разрядного целого числа без знака.</summary>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.TensorUInt16Bit.Kind">
+      <summary>Тип компонента.</summary>
+      <returns>Тип компонента.</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.TensorUInt16Bit.Shape">
+      <summary>Возвращает количество и размер каждого измерения.</summary>
+      <returns>Количество и размер каждого измерения.</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.TensorUInt16Bit.TensorKind">
+      <summary>Возвращает тип данных тензора.</summary>
+      <returns>Тип данных тензора.</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorUInt16Bit.Close">
+      <summary>Если нет ожидающих IMemoryBufferReference объектов, созданных на основе этого объекта, **Close** ликвидирует объект и удалит связанные ресурсы. В противном случае — **Close** произведет самоотключение от связанных ресурсов и будет удалено при закрытии последнего IMemoryBufferReference.</summary>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorUInt16Bit.Create">
+      <summary>Создает объект-тензор в виде 16-разрядного целого числа без знака без выделения буфера.</summary>
+      <returns>Объект-тензор в виде 16-разрядного целого числа без знака.</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorUInt16Bit.Create(Windows.Foundation.Collections.IIterable{System.Int64})">
+      <summary>Создает объект-тензор в виде 16-разрядного целого числа без знака и выделяет буфер размера *shape*.</summary>
+      <param name="shape">Размер буфера.</param>
+      <returns>Объект-тензор в виде 16-разрядного числа целого числа без знака с буфером заданного размера.</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorUInt16Bit.CreateFromArray(Windows.Foundation.Collections.IIterable{System.Int64},System.UInt16[])">
+      <summary>Создает объект-тензор в виде 16-разрядного целого числа без знака, выделяет буфер размера *shape* и копирует в него все *data*.</summary>
+      <param name="shape">Размер буфера.</param>
+      <param name="data">Данные, копируемые в буфер.</param>
+      <returns>Объект-тензор в виде 16-разрядного целого числа без знака с буфером, содержащим указанные данные.</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorUInt16Bit.CreateFromBuffer(System.Int64[],Windows.Storage.Streams.IBuffer)">
+      <summary>Создает объект-тензор в виде 16-разрядного целого числа без знака с заданной *shape* и использует базовый буфер в *buffer* для последующей оценки.</summary>
+      <param name="shape">Размер буфера.</param>
+      <param name="buffer">Буфер для использования во время оценки.</param>
+      <returns>Объект-тензор в виде 16-разрядного целого числа без знака поддерживается ссылкой на буфер на предоставленные IBuffer *buffer*.</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorUInt16Bit.CreateFromIterable(Windows.Foundation.Collections.IIterable{System.Int64},Windows.Foundation.Collections.IIterable{System.UInt16})">
+      <summary>Создает объект-тензор в виде 16-разрядного целого числа без знака, выделяет буфер размера *shape* и копирует в него все *data*.</summary>
+      <param name="shape">Размер буфера.</param>
+      <param name="data">Данные, копируемые в буфер.</param>
+      <returns>Объект-тензор в виде 16-разрядного целого числа без знака с буфером, содержащим указанные данные.</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorUInt16Bit.CreateFromShapeArrayAndDataArray(System.Int64[],System.UInt16[])">
+      <summary>Создает объект-тензор в виде 16-разрядного целого числа без знака, выделяет буфер размера *shape* и копирует в него все *data*.</summary>
+      <param name="shape">Размер буфера.</param>
+      <param name="data">Данные, копируемые в буфер.</param>
+      <returns>Объект-тензор в виде 16-разрядного целого числа без знака с буфером, содержащим указанные данные.</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorUInt16Bit.CreateReference">
+      <summary>Возвращает представление IMemoryBufferReference буфера, поддерживающего объект-тензор в виде 16-разрядного целого числа без знака.</summary>
+      <returns>Представление IMemoryBufferReference буфера тензора.</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorUInt16Bit.GetAsVectorView">
+      <summary>Возвращает доступное только для чтения представление данных.</summary>
+      <returns>Доступное только для чтения представление данных.</returns>
+    </member>
+    <member name="T:Windows.AI.MachineLearning.TensorUInt32Bit">
+      <summary>Объект-тензор в виде 32-разрядного целого числа без знака.</summary>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.TensorUInt32Bit.Kind">
+      <summary>Тип компонента.</summary>
+      <returns>Тип компонента.</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.TensorUInt32Bit.Shape">
+      <summary>Возвращает количество и размер каждого измерения.</summary>
+      <returns>Количество и размер каждого измерения.</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.TensorUInt32Bit.TensorKind">
+      <summary>Возвращает тип данных тензора.</summary>
+      <returns>Тип данных тензора.</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorUInt32Bit.Close">
+      <summary>Если нет ожидающих IMemoryBufferReference объектов, созданных на основе этого объекта, **Close** ликвидирует объект и удалит связанные ресурсы. В противном случае — **Close** произведет самоотключение от связанных ресурсов и будет удалено при закрытии последнего IMemoryBufferReference.</summary>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorUInt32Bit.Create">
+      <summary>Создает объект-тензор в виде 32-разрядного целого числа без знака без выделения буфера.</summary>
+      <returns>Объект-тензор в виде 32-разрядного целого числа без знака.</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorUInt32Bit.Create(Windows.Foundation.Collections.IIterable{System.Int64})">
+      <summary>Создает объект-тензор в виде 32-разрядного целого числа без знака и выделяет буфер размера *shape*.</summary>
+      <param name="shape">Размер буфера.</param>
+      <returns>Объект-тензор в виде 32-разрядного числа целого числа без знака с буфером заданного размера.</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorUInt32Bit.CreateFromArray(Windows.Foundation.Collections.IIterable{System.Int64},System.UInt32[])">
+      <summary>Создает объект-тензор в виде 32-разрядного целого числа без знака, выделяет буфер размера *shape* и копирует в него все *data*.</summary>
+      <param name="shape">Размер буфера.</param>
+      <param name="data">Данные, копируемые в буфер.</param>
+      <returns>Объект-тензор в виде 32-разрядного целого числа без знака с буфером, содержащим указанные данные.</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorUInt32Bit.CreateFromBuffer(System.Int64[],Windows.Storage.Streams.IBuffer)">
+      <summary>Создает объект-тензор в виде 32-разрядного целого числа без знака с заданной *shape* и использует базовый буфер в *buffer* для последующей оценки.</summary>
+      <param name="shape">Размер буфера.</param>
+      <param name="buffer">Буфер для использования во время оценки.</param>
+      <returns>Объект-тензор в виде 32-разрядного целого числа без знака поддерживается ссылкой на буфер на предоставленные IBuffer *buffer*.</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorUInt32Bit.CreateFromIterable(Windows.Foundation.Collections.IIterable{System.Int64},Windows.Foundation.Collections.IIterable{System.UInt32})">
+      <summary>Создает объект-тензор в виде 32-разрядного целого числа без знака, выделяет буфер размера *shape* и копирует в него все *data*.</summary>
+      <param name="shape">Размер буфера.</param>
+      <param name="data">Данные, копируемые в буфер.</param>
+      <returns>Объект-тензор в виде 32-разрядного целого числа без знака с буфером, содержащим указанные данные.</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorUInt32Bit.CreateFromShapeArrayAndDataArray(System.Int64[],System.UInt32[])">
+      <summary>Создает объект-тензор в виде 32-разрядного целого числа без знака, выделяет буфер размера *shape* и копирует в него все *data*.</summary>
+      <param name="shape">Размер буфера.</param>
+      <param name="data">Данные, копируемые в буфер.</param>
+      <returns>Объект-тензор в виде 32-разрядного целого числа без знака с буфером, содержащим указанные данные.</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorUInt32Bit.CreateReference">
+      <summary>Возвращает представление IMemoryBufferReference буфера, поддерживающего объект-тензор в виде 32-разрядного целого числа без знака.</summary>
+      <returns>Представление IMemoryBufferReference буфера тензора.</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorUInt32Bit.GetAsVectorView">
+      <summary>Возвращает доступное только для чтения представление данных.</summary>
+      <returns>Доступное только для чтения представление данных.</returns>
+    </member>
+    <member name="T:Windows.AI.MachineLearning.TensorUInt64Bit">
+      <summary>Объект-тензор в виде 64-разрядного целого числа без знака.</summary>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.TensorUInt64Bit.Kind">
+      <summary>Тип компонента.</summary>
+      <returns>Тип компонента.</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.TensorUInt64Bit.Shape">
+      <summary>Возвращает количество и размер каждого измерения.</summary>
+      <returns>Количество и размер каждого измерения.</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.TensorUInt64Bit.TensorKind">
+      <summary>Возвращает тип данных тензора.</summary>
+      <returns>Тип данных тензора.</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorUInt64Bit.Close">
+      <summary>Если нет ожидающих IMemoryBufferReference объектов, созданных на основе этого объекта, **Close** ликвидирует объект и удалит связанные ресурсы. В противном случае — **Close** произведет самоотключение от связанных ресурсов и будет удалено при закрытии последнего IMemoryBufferReference.</summary>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorUInt64Bit.Create">
+      <summary>Создает объект-тензор в виде 64-разрядного целого числа без знака без выделения буфера.</summary>
+      <returns>Объект-тензор в виде 64-разрядного целого числа без знака.</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorUInt64Bit.Create(Windows.Foundation.Collections.IIterable{System.Int64})">
+      <summary>Создает объект-тензор в виде 64-разрядного целого числа без знака и выделяет буфер размера *shape*.</summary>
+      <param name="shape">Размер буфера.</param>
+      <returns>Объект-тензор в виде 64-разрядного числа целого числа без знака с буфером заданного размера.</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorUInt64Bit.CreateFromArray(Windows.Foundation.Collections.IIterable{System.Int64},System.UInt64[])">
+      <summary>Создает объект-тензор в виде 64-разрядного целого числа без знака, выделяет буфер размера *shape* и копирует в него все *data*.</summary>
+      <param name="shape">Размер буфера.</param>
+      <param name="data">Данные, копируемые в буфер.</param>
+      <returns>Объект-тензор в виде 64-разрядного целого числа без знака с буфером, содержащим указанные данные.</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorUInt64Bit.CreateFromBuffer(System.Int64[],Windows.Storage.Streams.IBuffer)">
+      <summary>Создает объект-тензор в виде 64-разрядного целого числа без знака с заданной *shape* и использует базовый буфер в *buffer* для последующей оценки.</summary>
+      <param name="shape">Размер буфера.</param>
+      <param name="buffer">Буфер для использования во время оценки.</param>
+      <returns>Объект-тензор в виде 64-разрядного целого числа без знака поддерживается ссылкой на буфер на предоставленные IBuffer *buffer*.</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorUInt64Bit.CreateFromIterable(Windows.Foundation.Collections.IIterable{System.Int64},Windows.Foundation.Collections.IIterable{System.UInt64})">
+      <summary>Создает объект-тензор в виде 64-разрядного целого числа без знака, выделяет буфер размера *shape* и копирует в него все *data*.</summary>
+      <param name="shape">Размер буфера.</param>
+      <param name="data">Данные, копируемые в буфер.</param>
+      <returns>Объект-тензор в виде 64-разрядного целого числа без знака с буфером, содержащим указанные данные.</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorUInt64Bit.CreateFromShapeArrayAndDataArray(System.Int64[],System.UInt64[])">
+      <summary>Создает объект-тензор в виде 64-разрядного целого числа без знака, выделяет буфер размера *shape* и копирует в него все *data*.</summary>
+      <param name="shape">Размер буфера.</param>
+      <param name="data">Данные, копируемые в буфер.</param>
+      <returns>Объект-тензор в виде 64-разрядного целого числа без знака с буфером, содержащим указанные данные.</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorUInt64Bit.CreateReference">
+      <summary>Возвращает представление IMemoryBufferReference буфера, поддерживающего объект-тензор в виде 64-разрядного целого числа без знака.</summary>
+      <returns>Представление IMemoryBufferReference буфера тензора.</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorUInt64Bit.GetAsVectorView">
+      <summary>Возвращает доступное только для чтения представление данных.</summary>
+      <returns>Доступное только для чтения представление данных.</returns>
+    </member>
+    <member name="T:Windows.AI.MachineLearning.TensorUInt8Bit">
+      <summary>Объект-тензор в виде 8-разрядного целого числа без знака.</summary>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.TensorUInt8Bit.Kind">
+      <summary>Тип компонента.</summary>
+      <returns>Тип компонента.</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.TensorUInt8Bit.Shape">
+      <summary>Возвращает количество и размер каждого измерения.</summary>
+      <returns>Количество и размер каждого измерения.</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.TensorUInt8Bit.TensorKind">
+      <summary>Возвращает тип данных тензора.</summary>
+      <returns>Тип данных тензора.</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorUInt8Bit.Close">
+      <summary>Если нет ожидающих IMemoryBufferReference объектов, созданных на основе этого объекта, **Close** ликвидирует объект и удалит связанные ресурсы. В противном случае — **Close** произведет самоотключение от связанных ресурсов и будет удалено при закрытии последнего IMemoryBufferReference.</summary>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorUInt8Bit.Create">
+      <summary>Создает объект-тензор в виде 8-разрядного целого числа без знака без выделения буфера.</summary>
+      <returns>Объект-тензор в виде 8-разрядного целого числа без знака.</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorUInt8Bit.Create(Windows.Foundation.Collections.IIterable{System.Int64})">
+      <summary>Создает объект-тензор в виде 8-разрядного целого числа без знака и выделяет буфер размера *shape*.</summary>
+      <param name="shape">Размер буфера.</param>
+      <returns>Объект-тензор в виде 8-разрядного числа целого числа без знака с буфером заданного размера.</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorUInt8Bit.CreateFromArray(Windows.Foundation.Collections.IIterable{System.Int64},System.Byte[])">
+      <summary>Создает объект-тензор в виде 8-разрядного целого числа без знака, выделяет буфер размера *shape* и копирует в него все *data*.</summary>
+      <param name="shape">Размер буфера.</param>
+      <param name="data">Данные, копируемые в буфер.</param>
+      <returns>Объект-тензор в виде 8-разрядного целого числа без знака с буфером, содержащим указанные данные.</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorUInt8Bit.CreateFromBuffer(System.Int64[],Windows.Storage.Streams.IBuffer)">
+      <summary>Создает объект-тензор в виде 8-разрядного целого числа без знака с заданной *shape* и использует базовый буфер в *buffer* для последующей оценки.</summary>
+      <param name="shape">Размер буфера.</param>
+      <param name="buffer">Буфер для использования во время оценки.</param>
+      <returns>Объект-тензор в виде 8-разрядного целого числа без знака поддерживается ссылкой на буфер на предоставленные IBuffer *buffer*.</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorUInt8Bit.CreateFromIterable(Windows.Foundation.Collections.IIterable{System.Int64},Windows.Foundation.Collections.IIterable{System.Byte})">
+      <summary>Создает объект-тензор в виде 8-разрядного целого числа без знака, выделяет буфер размера *shape* и копирует в него все *data*.</summary>
+      <param name="shape">Размер буфера.</param>
+      <param name="data">Данные, копируемые в буфер.</param>
+      <returns>Объект-тензор в виде 8-разрядного целого числа без знака с буфером, содержащим указанные данные.</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorUInt8Bit.CreateFromShapeArrayAndDataArray(System.Int64[],System.Byte[])">
+      <summary>Создает объект-тензор в виде 8-разрядного целого числа без знака, выделяет буфер размера *shape* и копирует в него все *data*.</summary>
+      <param name="shape">Размер буфера.</param>
+      <param name="data">Данные, копируемые в буфер.</param>
+      <returns>Объект-тензор в виде 8-разрядного целого числа без знака с буфером, содержащим указанные данные.</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorUInt8Bit.CreateReference">
+      <summary>Возвращает представление IMemoryBufferReference буфера, поддерживающего объект-тензор в виде 8-разрядного числа без знака.</summary>
+      <returns>Представление IMemoryBufferReference буфера тензора.</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorUInt8Bit.GetAsVectorView">
+      <summary>Возвращает доступное только для чтения представление данных.</summary>
+      <returns>Доступное только для чтения представление данных.</returns>
+    </member>
+  </members>
+</doc>
