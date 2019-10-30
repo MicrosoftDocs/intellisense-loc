@@ -1,0 +1,2341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>Windows.Phone.PhoneContract</name>
+  </assembly>
+  <members>
+    <member name="T:Windows.ApplicationModel.CameraApplicationManager">
+      <summary>Permet à une application de lancer une boîte de dialogue qui affiche toutes les applications d'objectif installées sur le périphérique et permet à l'utilisateur de passer rapidement de l'une à l'autre.</summary>
+    </member>
+    <member name="M:Windows.ApplicationModel.CameraApplicationManager.ShowInstalledApplicationsUI">
+      <summary>Lance une boîte de dialogue qui affiche toutes les applications d'objectif installées sur le périphérique et permet à l'utilisateur de passer rapidement de l'une à l'autre.</summary>
+    </member>
+    <member name="T:Windows.Media.Capture.ScreenCapture">
+      <summary>Active une application pour capturer l'audio et la vidéo du contenu affiché sur le périphérique.</summary>
+    </member>
+    <member name="P:Windows.Media.Capture.ScreenCapture.AudioSource">
+      <summary>Obtient la source audio utilisée pour la capture d'écran.</summary>
+      <returns>Source audio utilisée pour la capture d'écran.</returns>
+    </member>
+    <member name="P:Windows.Media.Capture.ScreenCapture.IsAudioSuspended">
+      <summary>Indique si la capture d'écran de l'audio est actuellement suspendue.</summary>
+      <returns>Indique si la capture d'écran de l'audio est actuellement suspendue.</returns>
+    </member>
+    <member name="P:Windows.Media.Capture.ScreenCapture.IsVideoSuspended">
+      <summary>Indique si la capture d'écran de la vidéo est actuellement suspendue.</summary>
+      <returns>Indique si la capture d'écran de la vidéo est actuellement suspendue.</returns>
+    </member>
+    <member name="P:Windows.Media.Capture.ScreenCapture.VideoSource">
+      <summary>Obtient la source vidéo utilisée pour la capture d'écran.</summary>
+      <returns>Source vidéo utilisée pour la capture d'écran.</returns>
+    </member>
+    <member name="E:Windows.Media.Capture.ScreenCapture.SourceSuspensionChanged">
+      <summary>Déclenché lorsque la suspension de l'écran a capturé des modifications audio ou vidéo.</summary>
+    </member>
+    <member name="M:Windows.Media.Capture.ScreenCapture.GetForCurrentView">
+      <summary>Obtient l'objet ScreenCapture associé à la vue d'application actuelle.</summary>
+      <returns>Objet ScreenCapture associé à la vue d'application actuelle.</returns>
+    </member>
+    <member name="T:Windows.Media.Capture.SourceSuspensionChangedEventArgs">
+      <summary>Fournit des informations sur un événement SourceSuspensionChanged qui est déclenché lorsque la capture de l'audio ou de la vidéo est suspendue ou reprise.</summary>
+    </member>
+    <member name="P:Windows.Media.Capture.SourceSuspensionChangedEventArgs.IsAudioSuspended">
+      <summary>Indique si la capture d'écran de l'audio est actuellement suspendue.</summary>
+      <returns>Indique si la capture d'écran de l'audio est actuellement suspendue.</returns>
+    </member>
+    <member name="P:Windows.Media.Capture.SourceSuspensionChangedEventArgs.IsVideoSuspended">
+      <summary>Indique si la capture d'écran de l'audio est actuellement suspendue.</summary>
+      <returns>Indique si la capture d'écran de l'audio est actuellement suspendue.</returns>
+    </member>
+    <member name="T:Windows.Media.Effects.SlowMotionEffectDefinition">
+      <summary>Représente une définition d'effet de ralenti.</summary>
+    </member>
+    <member name="M:Windows.Media.Effects.SlowMotionEffectDefinition.#ctor">
+      <summary>Crée et initialise une nouvelle instance (vide) de l'objet SlowMotionEffectDefinition.</summary>
+    </member>
+    <member name="P:Windows.Media.Effects.SlowMotionEffectDefinition.ActivatableClassId">
+      <summary>Obtient l'ID de classe activable de la définition d'effet de ralenti.</summary>
+      <returns>Identificateur de la classe d'exécution dans le système d'exploitation, tel que « Windows.Media.Effects.SlowMotionEffectDefinition ».</returns>
+    </member>
+    <member name="P:Windows.Media.Effects.SlowMotionEffectDefinition.Properties">
+      <summary>Obtient le jeu de propriétés pour configurer l'objet SlowMotionEffectDefinition.</summary>
+      <returns>Jeu de propriétés pour configurer l'objet SlowMotionEffectDefinition.</returns>
+    </member>
+    <member name="P:Windows.Media.Effects.SlowMotionEffectDefinition.TimeStretchRate">
+      <summary>Obtient ou définit le taux d'étirement du temps actuel.</summary>
+      <returns>Taux d'étirement du temps actuel.</returns>
+    </member>
+    <member name="T:Windows.Media.SpeechRecognition.VoiceCommandManager">
+      <summary>Classe statique qui permet d'installer les jeux de commandes à partir d'un fichier VCD (Voice Command Definition) et d'accéder aux jeux de commandes installés.</summary>
+    </member>
+    <member name="P:Windows.Media.SpeechRecognition.VoiceCommandManager.InstalledCommandSets">
+      <summary>Dictionnaire contenant tous les jeux de commandes installés pour lesquels un attribut Name est défini dans le fichier.</summary>
+      <returns>Dictionnaire des jeux de commandes installés pour lesquels un attribut Name est défini dans le fichier VCD (Voice Command Definition).</returns>
+    </member>
+    <member name="M:Windows.Media.SpeechRecognition.VoiceCommandManager.InstallCommandSetsFromStorageFileAsync(Windows.Storage.StorageFile)">
+      <summary>Installe les éléments CommandSet d'un fichier.</summary>
+      <param name="file">Objet représentant un fichier de définition de commande vocale (VCD, Voice Command Definition).</param>
+      <returns>Action asynchrone.</returns>
+    </member>
+    <member name="T:Windows.Media.SpeechRecognition.VoiceCommandSet">
+      <summary>Permet d'effectuer des opérations sur un jeu de commandes installé spécifique.</summary>
+    </member>
+    <member name="P:Windows.Media.SpeechRecognition.VoiceCommandSet.Language">
+      <summary>Permet d'obtenir la valeur de langue (xml:lang) de l'élément CommandSet du fichier.</summary>
+      <returns>La langue (`xml:lang`) du jeu de commandes.</returns>
+    </member>
+    <member name="P:Windows.Media.SpeechRecognition.VoiceCommandSet.Name">
+      <summary>Obtient la valeur de l'attribut Name de l'élément CommandSet dans le fichier .</summary>
+      <returns>Valeur de l'attribut Name de l'élément `CommandSet`.</returns>
+    </member>
+    <member name="M:Windows.Media.SpeechRecognition.VoiceCommandSet.SetPhraseListAsync(System.String,Windows.Foundation.Collections.IIterable{System.String})">
+      <summary>Remplit un élément `PhraseList` avec un tableau d'éléments `Item`.</summary>
+      <param name="phraseListName">Chaîne qui correspond à l'attribut d'étiquette de l'élément `PhraseList`.</param>
+      <param name="phraseList">Tableau de chaînes de valeurs qui seront ajoutées à l'élément PhraseList comme éléments Item.</param>
+      <returns>Action asynchrone.</returns>
+    </member>
+    <member name="T:Windows.Phone.PhoneContract">
+      <summary>
+      </summary>
+    </member>
+    <member name="T:Windows.Phone.ApplicationModel.ApplicationProfile">
+      <summary>Fournit des informations de profil à propos d'une application.</summary>
+    </member>
+    <member name="P:Windows.Phone.ApplicationModel.ApplicationProfile.Modes">
+      <summary>Obtient une valeur qui indique le mode d'exécution d'une application.</summary>
+      <returns>Valeur qui indique le mode d'exécution d'une application.</returns>
+    </member>
+    <member name="T:Windows.Phone.ApplicationModel.ApplicationProfileModes">
+      <summary>Indique le mode d'exécution d'une application.</summary>
+    </member>
+    <member name="F:Windows.Phone.ApplicationModel.ApplicationProfileModes.Alternate">
+      <summary>L'application s'exécute dans l'autre mode.</summary>
+    </member>
+    <member name="F:Windows.Phone.ApplicationModel.ApplicationProfileModes.Default">
+      <summary>L'application s'exécute dans le mode par défaut.</summary>
+    </member>
+    <member name="T:Windows.Phone.Devices.Notification.VibrationDevice">
+      <summary>Fait vibrer le téléphone.</summary>
+    </member>
+    <member name="M:Windows.Phone.Devices.Notification.VibrationDevice.Cancel">
+      <summary>Arrête la vibration du téléphone.</summary>
+    </member>
+    <member name="M:Windows.Phone.Devices.Notification.VibrationDevice.GetDefault">
+      <summary>Obtient une instance de la classe VibrationDevice.</summary>
+      <returns>Instance VibrationDevice par défaut.</returns>
+    </member>
+    <member name="M:Windows.Phone.Devices.Notification.VibrationDevice.Vibrate(Windows.Foundation.TimeSpan)">
+      <summary>Fait vibrer le téléphone pendant la durée spécifiée (de 0 à 5 secondes).</summary>
+      <param name="duration">Durée (de 0 à 5 secondes) pendant laquelle le téléphone vibre. Une valeur inférieure à 0 ou supérieure à 5 déclenche une exception.</param>
+    </member>
+    <member name="T:Windows.Phone.Devices.Power.Battery">
+      <summary>Fournit des informations sur l'état de la batterie du téléphone.</summary>
+    </member>
+    <member name="P:Windows.Phone.Devices.Power.Battery.RemainingChargePercent">
+      <summary>Obtient une valeur indiquant le pourcentage de charge restant sur la batterie de téléphone.</summary>
+      <returns>Valeur comprise entre 0 et 100 qui indique le pourcentage de charge restant sur la batterie de téléphone.</returns>
+    </member>
+    <member name="P:Windows.Phone.Devices.Power.Battery.RemainingDischargeTime">
+      <summary>Obtient une valeur qui évalue le temps restant avant que la batterie du téléphone soit entièrement déchargée. Chaque valeur d'unité représente 100 nanosecondes.</summary>
+      <returns>Valeur qui évalue le temps restant avant que la batterie du téléphone soit entièrement déchargée. Chaque valeur d'unité représente 100 nanosecondes.</returns>
+    </member>
+    <member name="E:Windows.Phone.Devices.Power.Battery.RemainingChargePercentChanged">
+      <summary>Se produit lorsque la valeur de RemainingChargePercent diminue de 1 %.</summary>
+    </member>
+    <member name="M:Windows.Phone.Devices.Power.Battery.GetDefault">
+      <summary>Obtient l'objet Battery par défaut pour le téléphone.</summary>
+      <returns>Objet Battery par défaut pour le téléphone.</returns>
+    </member>
+    <member name="T:Windows.Phone.Management.Deployment.Enterprise">
+      <summary>Représente une entreprise dans laquelle l'utilisateur peut s'inscrire pour installer des applications d'entreprise, ou à partir de laquelle l'utilisateur peut annuler l'inscription.</summary>
+    </member>
+    <member name="P:Windows.Phone.Management.Deployment.Enterprise.EnrollmentValidFrom">
+      <summary>Obtient la date de début de validité de l'inscription de l'utilisateur dans l'entreprise.</summary>
+      <returns>Date de début de validité de l'inscription de l'utilisateur dans l'entreprise.</returns>
+    </member>
+    <member name="P:Windows.Phone.Management.Deployment.Enterprise.EnrollmentValidTo">
+      <summary>Obtient la date de fin de validité de l'inscription de l'utilisateur dans l'entreprise.</summary>
+      <returns>Date de fin de validité de l'inscription de l'utilisateur dans l'entreprise.</returns>
+    </member>
+    <member name="P:Windows.Phone.Management.Deployment.Enterprise.Id">
+      <summary>Obtient l'ID unique de l'entreprise, tel qu'il apparaît dans le certificat d'entreprise.</summary>
+      <returns>ID unique de l'entreprise, tel qu'il apparaît dans le certificat d'entreprise.</returns>
+    </member>
+    <member name="P:Windows.Phone.Management.Deployment.Enterprise.Name">
+      <summary>Obtient le nom de l'entreprise, tel qu'il apparaît sur le certificat d'entreprise.</summary>
+      <returns>Nom de l'entreprise, tel qu'il apparaît sur le certificat d'entreprise.</returns>
+    </member>
+    <member name="P:Windows.Phone.Management.Deployment.Enterprise.Status">
+      <summary>Obtient l'état actuel de l'inscription de l'utilisateur dans l'entreprise.</summary>
+      <returns>État actuel de l'inscription de l'utilisateur dans l'entreprise.</returns>
+    </member>
+    <member name="P:Windows.Phone.Management.Deployment.Enterprise.WorkplaceId">
+      <summary>Obtient l'ID unique de l'entreprise, tel qu'il apparaît dans le certificat d'entreprise.</summary>
+      <returns>ID unique de l'entreprise, tel qu'il apparaît dans le certificat d'entreprise.</returns>
+    </member>
+    <member name="T:Windows.Phone.Management.Deployment.EnterpriseEnrollmentManager">
+      <summary>Gère l'inscription dans une entreprise.</summary>
+    </member>
+    <member name="P:Windows.Phone.Management.Deployment.EnterpriseEnrollmentManager.CurrentEnterprise">
+      <summary>Obtient l'entreprise inscrite pour l'application actuelle.</summary>
+      <returns>Entreprise inscrite pour l'application actuelle.</returns>
+    </member>
+    <member name="P:Windows.Phone.Management.Deployment.EnterpriseEnrollmentManager.EnrolledEnterprises">
+      <summary>Obtient la liste de toutes les entreprises auprès desquelles l'utilisateur est inscrit.</summary>
+      <returns>Liste de toutes les entreprises auprès desquelles l'utilisateur est inscrit.</returns>
+    </member>
+    <member name="M:Windows.Phone.Management.Deployment.EnterpriseEnrollmentManager.RequestEnrollmentAsync(System.String)">
+      <summary>Inscrit ou réinscrit l'entreprise identifiée par l'URI.</summary>
+      <param name="enrollmentToken">URI de l'entreprise à inscrire.</param>
+      <returns>Opération asynchrone qui indique le résultat de l'action d'inscription.</returns>
+    </member>
+    <member name="M:Windows.Phone.Management.Deployment.EnterpriseEnrollmentManager.RequestUnenrollmentAsync(Windows.Phone.Management.Deployment.Enterprise)">
+      <summary>Annule l'inscription de l'entreprise identifiée par l'URI.</summary>
+      <param name="enterprise">URI de l'entreprise pour laquelle annuler l'inscription.</param>
+      <returns>Opération asynchrone qui indique le résultat de l'action d'inscription.</returns>
+    </member>
+    <member name="M:Windows.Phone.Management.Deployment.EnterpriseEnrollmentManager.ValidateEnterprisesAsync">
+      <summary>Déclenche une connexion qui valide les inscriptions d'entreprise de l'utilisateur.</summary>
+      <returns>Action asynchrone qui représente la validation.</returns>
+    </member>
+    <member name="T:Windows.Phone.Management.Deployment.EnterpriseEnrollmentResult">
+      <summary>Indique l'état de l'action d'inscription initiée par l'utilisateur.</summary>
+    </member>
+    <member name="P:Windows.Phone.Management.Deployment.EnterpriseEnrollmentResult.EnrolledEnterprise">
+      <summary>Obtient l'entreprise pour laquelle l'utilisateur a initié l'inscription.</summary>
+      <returns>Entreprise pour laquelle l'utilisateur a initié l'inscription.</returns>
+    </member>
+    <member name="P:Windows.Phone.Management.Deployment.EnterpriseEnrollmentResult.Status">
+      <summary>Obtient l'état de l'action d'inscription initiée par l'utilisateur.</summary>
+      <returns>État de l'action d'inscription initiée par l'utilisateur.</returns>
+    </member>
+    <member name="T:Windows.Phone.Management.Deployment.EnterpriseEnrollmentStatus">
+      <summary>Indique l'état de l'inscription de l'utilisateur dans l'entreprise.</summary>
+    </member>
+    <member name="F:Windows.Phone.Management.Deployment.EnterpriseEnrollmentStatus.CancelledByUser">
+      <summary>L'inscription a été annulée par l'utilisateur.</summary>
+    </member>
+    <member name="F:Windows.Phone.Management.Deployment.EnterpriseEnrollmentStatus.Success">
+      <summary>L'inscription a réussi.</summary>
+    </member>
+    <member name="F:Windows.Phone.Management.Deployment.EnterpriseEnrollmentStatus.UnknownFailure">
+      <summary>L'inscription a rencontré un problème inattendu.</summary>
+    </member>
+    <member name="T:Windows.Phone.Management.Deployment.EnterpriseStatus">
+      <summary>Spécifie l'état actuel de l'inscription de l'utilisateur dans l'entreprise.</summary>
+    </member>
+    <member name="F:Windows.Phone.Management.Deployment.EnterpriseStatus.Disabled">
+      <summary>L'inscription a été désactivée car trop de temps s'est écoulé depuis le dernier contrôle d'inscription.</summary>
+    </member>
+    <member name="F:Windows.Phone.Management.Deployment.EnterpriseStatus.Enrolled">
+      <summary>L'utilisateur est inscrit dans l'entreprise et l'inscription est active.</summary>
+    </member>
+    <member name="F:Windows.Phone.Management.Deployment.EnterpriseStatus.Expired">
+      <summary>Le certificat d'entreprise a expiré et n'est plus valide.</summary>
+    </member>
+    <member name="F:Windows.Phone.Management.Deployment.EnterpriseStatus.Revoked">
+      <summary>L'inscription d'entreprise a été révoquée.</summary>
+    </member>
+    <member name="T:Windows.Phone.Management.Deployment.InstallationManager">
+      <summary>Gère les installations d'application pour un téléphone.</summary>
+    </member>
+    <member name="M:Windows.Phone.Management.Deployment.InstallationManager.AddPackageAsync(System.String,Windows.Foundation.Uri)">
+      <summary>Démarre le processus d'installation de l'application spécifiée par le titre d'application et l'URI d'emplacement.</summary>
+      <param name="title">Nom de l'application à installer.</param>
+      <param name="sourceLocation">Emplacement d'URI de l'application à installer.</param>
+      <returns>Opération asynchrone qui représente le processus d'installation.</returns>
+    </member>
+    <member name="M:Windows.Phone.Management.Deployment.InstallationManager.AddPackageAsync(System.String,Windows.Foundation.Uri,System.String,System.String,Windows.Foundation.Uri)">
+      <summary>Cette API n'est pas destinée à être utilisée directement à partir du code.</summary>
+      <param name="title">Cette API n'est pas destinée à être utilisée directement à partir du code.</param>
+      <param name="sourceLocation">Cette API n'est pas destinée à être utilisée directement à partir du code.</param>
+      <param name="instanceId">Cette API n'est pas destinée à être utilisée directement à partir du code.</param>
+      <param name="offerId">Cette API n'est pas destinée à être utilisée directement à partir du code.</param>
+      <param name="license">Cette API n'est pas destinée à être utilisée directement à partir du code.</param>
+      <returns>Cette API n'est pas destinée à être utilisée directement à partir du code.</returns>
+    </member>
+    <member name="M:Windows.Phone.Management.Deployment.InstallationManager.FindPackages">
+      <summary>Récupère les informations relatives à tous les packages installés pour tous les utilisateurs.</summary>
+      <returns>Si la méthode réussit, une collection énumérable d'objets de données est retournée. Chaque objet de package de cette collection contient des informations sur le package, y compris mais sans s'y limiter, son nom, son éditeur, sa version et son emplacement d'installation.</returns>
+    </member>
+    <member name="M:Windows.Phone.Management.Deployment.InstallationManager.FindPackages(System.String,System.String)">
+      <summary>Recherche tous les packages installés avec le nom et l'éditeur spécifiés.</summary>
+      <param name="packageName">Nom du package. Ce paramètre ne peut pas être **null**.</param>
+      <param name="packagePublisher">Éditeur du package. Ce paramètre ne peut pas être **null**.</param>
+      <returns>Si la méthode réussit, une collection énumérable d'objets du package portant le même nom de package et d'éditeur est retournée. Chaque objet de package de cette collection contient des informations sur le package, y compris mais sans s'y limiter, son nom, son éditeur, sa version et son emplacement d'installation. Si aucun module avec le nom et l'éditeur spécifié n'est trouvé, cette méthode retourne une liste vide.</returns>
+    </member>
+    <member name="M:Windows.Phone.Management.Deployment.InstallationManager.FindPackagesForCurrentPublisher">
+      <summary>Retourne tous les packages d'application ayant le même ID d'éditeur que l'application qui appelle cette méthode.</summary>
+      <returns>Liste de packages d'applications avec le même ID d'éditeur que l'application appelant cette méthode.</returns>
+    </member>
+    <member name="M:Windows.Phone.Management.Deployment.InstallationManager.GetPendingPackageInstalls">
+      <summary>Retourne toutes les installations d'application en cours.</summary>
+      <returns>Liste des installations d'application en cours. La liste contient l'objet PackageInstallResult (en attente) pour chaque installation, qui sont encapsulés par la classe d'opération asynchrone (IAsyncOperationWithProgress). Consultez Programmation asynchrone pour plus d'informations sur l'obtention des informations de progression.</returns>
+    </member>
+    <member name="M:Windows.Phone.Management.Deployment.InstallationManager.RegisterPackageAsync(Windows.Foundation.Uri,Windows.Foundation.Collections.IIterable{Windows.Foundation.Uri},Windows.Management.Deployment.DeploymentOptions)">
+      <summary>Enregistre un package (package principal) et ses packages de dépendance pour l'utilisateur actuel.</summary>
+      <param name="manifestUri">Chemin d'accès du manifeste du package principal.</param>
+      <param name="dependencyPackageUris">Chemins d'accès vers les packages de dépendance. En l'absence de packages de dépendance ou si les packages de dépendance sont déjà enregistrés, ce paramètre peut être null. Lorsque DeploymentOptions est défini sur **DevelopmentMode**, laissez ce paramètre null.</param>
+      <param name="deploymentOptions">Options qui modifient l'opération de déploiement.</param>
+      <returns>Objet qui représente l'opération de déploiement asynchrone et inclut des mises à jour de progression.</returns>
+    </member>
+    <member name="M:Windows.Phone.Management.Deployment.InstallationManager.RemovePackageAsync(System.String,Windows.Management.Deployment.RemovalOptions)">
+      <summary>Supprime un package pour l'utilisateur actuel de façon asynchrone et reçoit des messages de progression et d'état sur l'opération de suppression. Les packages de dépendance sont également supprimés pour l'utilisateur si aucun autre package installé pour l'utilisateur n'est interdépendant.</summary>
+      <param name="packageFullName">Représentation sous forme de chaîne de l'identité de package pour identifier le package à supprimer.</param>
+      <param name="removalOptions">Options qui modifient l'opération de suppression.</param>
+      <returns>Objet qui représente l'opération de suppression asynchrone et inclut des mises à jour de progression.</returns>
+    </member>
+    <member name="T:Windows.Phone.Management.Deployment.PackageInstallResult">
+      <summary>Fournit les résultats d'une installation d'application pour un package d'application spécifié.</summary>
+    </member>
+    <member name="P:Windows.Phone.Management.Deployment.PackageInstallResult.ErrorText">
+      <summary>Obtient le texte de l'erreur associée à l'installation du package d'application.</summary>
+      <returns>Texte de l'erreur associée à l'installation du package d'application.</returns>
+    </member>
+    <member name="P:Windows.Phone.Management.Deployment.PackageInstallResult.InstallState">
+      <summary>Obtient l'état d'installation du package d'application.</summary>
+      <returns>État d'installation du package d'application.</returns>
+    </member>
+    <member name="P:Windows.Phone.Management.Deployment.PackageInstallResult.ProductId">
+      <summary>Obtient l'identificateur unique du package d'application pour lequel l'état d'installation est fourni.</summary>
+      <returns>Identificateur unique du package d'application pour lequel cet état d'installation est fourni.</returns>
+    </member>
+    <member name="T:Windows.Phone.Media.Devices.AudioRoutingEndpoint">
+      <summary>Répertorie les points de terminaison audio qui peuvent être explicitement définis.</summary>
+    </member>
+    <member name="F:Windows.Phone.Media.Devices.AudioRoutingEndpoint.Bluetooth">
+      <summary>Périphérique Bluetooth.</summary>
+    </member>
+    <member name="F:Windows.Phone.Media.Devices.AudioRoutingEndpoint.BluetoothPreferred">
+      <summary>Un périphérique Bluetooth est préférable.</summary>
+    </member>
+    <member name="F:Windows.Phone.Media.Devices.AudioRoutingEndpoint.BluetoothWithNoiseAndEchoCancellation">
+      <summary>Périphérique Bluetooth avec annulation du bruit et de l'écho.</summary>
+    </member>
+    <member name="F:Windows.Phone.Media.Devices.AudioRoutingEndpoint.Default">
+      <summary>Point de terminaison audio par défaut. Le point de terminaison par défaut est un casque câblé, si disponible ; sinon, le combiné téléphonique.</summary>
+    </member>
+    <member name="F:Windows.Phone.Media.Devices.AudioRoutingEndpoint.Earpiece">
+      <summary>Écouteur.</summary>
+    </member>
+    <member name="F:Windows.Phone.Media.Devices.AudioRoutingEndpoint.Speakerphone">
+      <summary>Téléphone mains libres.</summary>
+    </member>
+    <member name="F:Windows.Phone.Media.Devices.AudioRoutingEndpoint.WiredHeadset">
+      <summary>Casque câblé.</summary>
+    </member>
+    <member name="F:Windows.Phone.Media.Devices.AudioRoutingEndpoint.WiredHeadsetSpeakerOnly">
+      <summary>Casque câblé pour la sortie uniquement ; l'entrée est reçue par le microphone par défaut.</summary>
+    </member>
+    <member name="T:Windows.Phone.Media.Devices.AudioRoutingManager">
+      <summary>Fournit une fonctionnalité qui permet aux applications de Voix sur IP d'acheminer des données audio vers des points de terminaison autres que le téléphone mains libres.</summary>
+    </member>
+    <member name="P:Windows.Phone.Media.Devices.AudioRoutingManager.AvailableAudioEndpoints">
+      <summary>Obtient la liste des points de terminaison de routage audio disponibles.</summary>
+      <returns>Liste des points de terminaison de routage audio disponibles. Lorsque plusieurs points de terminaison sont disponibles, les valeurs de l'énumération AvailableAudioRoutingEndpoints sont combinées à l'aide de bits OR.</returns>
+    </member>
+    <member name="E:Windows.Phone.Media.Devices.AudioRoutingManager.AudioEndpointChanged">
+      <summary>Se produit lorsque le point de terminaison audio en cours d'utilisation a changé, ou lorsque le jeu de points de terminaison audio disponibles a changé.</summary>
+    </member>
+    <member name="M:Windows.Phone.Media.Devices.AudioRoutingManager.GetAudioEndpoint">
+      <summary>Obtient le point de terminaison audio actuellement utilisé.</summary>
+      <returns>Entrée audio utilisée actuellement.</returns>
+    </member>
+    <member name="M:Windows.Phone.Media.Devices.AudioRoutingManager.GetDefault">
+      <summary>Obtient l'instance par défaut de la classe AudioRoutingManager.</summary>
+      <returns>Instance par défaut de la classe AudioRoutingManager.</returns>
+    </member>
+    <member name="M:Windows.Phone.Media.Devices.AudioRoutingManager.SetAudioEndpoint(Windows.Phone.Media.Devices.AudioRoutingEndpoint)">
+      <summary>Demande un point de terminaison audio différent.</summary>
+      <param name="endpoint">Point de terminaison audio à utiliser.</param>
+    </member>
+    <member name="T:Windows.Phone.Media.Devices.AvailableAudioRoutingEndpoints">
+      <summary>Indique les points de terminaison audio disponibles.</summary>
+    </member>
+    <member name="F:Windows.Phone.Media.Devices.AvailableAudioRoutingEndpoints.Bluetooth">
+      <summary>Un périphérique Bluetooth est disponible.</summary>
+    </member>
+    <member name="F:Windows.Phone.Media.Devices.AvailableAudioRoutingEndpoints.Earpiece">
+      <summary>Un écouteur est disponible.</summary>
+    </member>
+    <member name="F:Windows.Phone.Media.Devices.AvailableAudioRoutingEndpoints.None">
+      <summary>Aucun point de terminaison audio n'est disponible.</summary>
+    </member>
+    <member name="F:Windows.Phone.Media.Devices.AvailableAudioRoutingEndpoints.Speakerphone">
+      <summary>Le téléphone mains libres est disponible.</summary>
+    </member>
+    <member name="T:Windows.Phone.Notification.Management.AccessoryManager">
+      <summary>Fournit des méthodes pour enregistrer et activer des notifications et d'autres utilitaires pour les appareils accessoires comme les boîtiers de téléphone actifs, les montres intelligentes ou les bandes élastiques de musculation.</summary>
+    </member>
+    <member name="P:Windows.Phone.Notification.Management.AccessoryManager.BatterySaverState">
+      <summary>Obtient une valeur indiquant si l'économiseur de batterie est activé.</summary>
+      <returns>Retourne la valeur true si l'économiseur de batterie est activé ; sinon, retourne la valeur false.</returns>
+    </member>
+    <member name="P:Windows.Phone.Notification.Management.AccessoryManager.DoNotDisturbEnabled">
+      <summary>Obtient une valeur indiquant si Ne pas déranger est appliqué au téléphone.</summary>
+      <returns>Retourne la valeur true si Ne pas déranger est activé ; sinon, false.</returns>
+    </member>
+    <member name="P:Windows.Phone.Notification.Management.AccessoryManager.DrivingModeEnabled">
+      <summary>Obtient une valeur indiquant si le mode conduite est appliqué au téléphone.</summary>
+      <returns>Retourne la valeur true si le mode conduite est activé ; sinon, false.</returns>
+    </member>
+    <member name="P:Windows.Phone.Notification.Management.AccessoryManager.IsPhonePinLocked">
+      <summary>Obtient une valeur indiquant si le téléphone est verrouillé.</summary>
+      <returns>True si le téléphone est verrouillé ; sinon, false.</returns>
+    </member>
+    <member name="P:Windows.Phone.Notification.Management.AccessoryManager.MediaPlaybackCapabilities">
+      <summary>Représente les fonctions de lecture autorisées.</summary>
+      <returns>L'une des valeurs d'énumération, notamment Play, Pause, Stop et Record.</returns>
+    </member>
+    <member name="P:Windows.Phone.Notification.Management.AccessoryManager.MediaPlaybackStatus">
+      <summary>Obtient l'état du média en cours de lecture sur l'accessoire.</summary>
+      <returns>L'une des valeurs de l'énumération : Playing, Paused, Stopped ou TrackChanged.</returns>
+    </member>
+    <member name="P:Windows.Phone.Notification.Management.AccessoryManager.PhoneCallAudioEndpoint">
+      <summary>Obtient ou définit le point de terminaison de l'appel : par défaut, haut-parleur ou mains libres.</summary>
+      <returns>Point de terminaison de l'appel.</returns>
+    </member>
+    <member name="P:Windows.Phone.Notification.Management.AccessoryManager.PhoneLineDetails">
+      <summary>Obtient les informations détaillées de la ligne téléphonique.</summary>
+      <returns>Informations sur la ligne téléphonique, notamment identificateur et numéro de téléphone.</returns>
+    </member>
+    <member name="P:Windows.Phone.Notification.Management.AccessoryManager.PhoneMute">
+      <summary>Obtient ou définit si l'appel téléphonique est muet.</summary>
+      <returns>True si l'appel téléphonique est muet ; sinon, false.</returns>
+    </member>
+    <member name="P:Windows.Phone.Notification.Management.AccessoryManager.SpeedDialList">
+      <summary>Fournit la liste des contacts favoris et leurs informations de contact à l'accessoire.</summary>
+      <returns>Liste des contacts favoris.</returns>
+    </member>
+    <member name="P:Windows.Phone.Notification.Management.AccessoryManager.VolumeInfo">
+      <summary>Permet d'obtenir la valeur qui représente l'état du volume du téléphone.</summary>
+      <returns>Valeur qui représente l'état du volume du téléphone.</returns>
+    </member>
+    <member name="M:Windows.Phone.Notification.Management.AccessoryManager.AcceptPhoneCall(System.UInt32)">
+      <summary>Accepte un appel téléphonique entrant.</summary>
+      <param name="phoneCallId">Identificateur de l'appel téléphonique entrant.</param>
+    </member>
+    <member name="M:Windows.Phone.Notification.Management.AccessoryManager.AcceptPhoneCall(System.UInt32,Windows.Phone.Notification.Management.PhoneCallAudioEndpoint)">
+      <summary>Accepte un appel téléphonique entrant.</summary>
+      <param name="phoneCallId">Identificateur de l'appel entrant</param>
+      <param name="endPoint">Point de terminaison audio de l'appel entrant</param>
+    </member>
+    <member name="M:Windows.Phone.Notification.Management.AccessoryManager.AcceptPhoneCallWithVideo(System.UInt32)">
+      <summary>Accepte un appel vidéo entrant.</summary>
+      <param name="phoneCallId">Identificateur de l'appel entrant</param>
+    </member>
+    <member name="M:Windows.Phone.Notification.Management.AccessoryManager.AcceptPhoneCallWithVideo(System.UInt32,Windows.Phone.Notification.Management.PhoneCallAudioEndpoint)">
+      <summary>Accepte un appel vidéo entrant.</summary>
+      <param name="phoneCallId">Identificateur de l'appel entrant</param>
+      <param name="endPoint">Point de terminaison audio de l'appel entrant</param>
+    </member>
+    <member name="M:Windows.Phone.Notification.Management.AccessoryManager.ClearToast(System.String)">
+      <summary>Lorsqu'un message de toast est lu sur un appareil accessoire, le toast peut être effacé sur le téléphone en utilisant cette méthode. Le résultat visible de l'appel de cette méthode sera que l'entrée correspondant au toast dans le centre d'action sera effacée.</summary>
+      <param name="instanceId">Chaîne contenant l'ID d'instance du toast à effacer.</param>
+    </member>
+    <member name="M:Windows.Phone.Notification.Management.AccessoryManager.DecreaseVolume(System.Int32)">
+      <summary>Réduit le volume de la valeur indiquée.</summary>
+      <param name="step">Valeur à déduire du volume.</param>
+    </member>
+    <member name="M:Windows.Phone.Notification.Management.AccessoryManager.DisableAllAccessoryNotificationTypes">
+      <summary>N'accepte pas la réception de notifications pour la désinstallation des toasts et des applications.</summary>
+    </member>
+    <member name="M:Windows.Phone.Notification.Management.AccessoryManager.DisableEmailNotificationEmailAccount(System.String)">
+      <summary>Désactive les notifications pour le compte de messagerie spécifié.</summary>
+      <param name="emailAccount">Chaîne contenant le nom du compte de messagerie.</param>
+    </member>
+    <member name="M:Windows.Phone.Notification.Management.AccessoryManager.DisableNotificationsForApplication(System.String)">
+      <summary>N'accepte pas la réception des notifications de désinstallation des toasts et des applications provenant de l'application spécifiée.</summary>
+      <param name="appId">Identificateur de l'application.</param>
+    </member>
+    <member name="M:Windows.Phone.Notification.Management.AccessoryManager.DismissAlarm(System.Guid)">
+      <summary>Ignore l'alarme active.</summary>
+      <param name="alarmId">Identificateur de l'alarme à ignorer.</param>
+    </member>
+    <member name="M:Windows.Phone.Notification.Management.AccessoryManager.DismissAlarmByInstanceId(System.String)">
+      <summary>Permet d'ignorer l’alarme identifiée par l’id d’instance.</summary>
+      <param name="instanceId">Chaîne contenant l'ID d'instance de l'alarme à ignorer.</param>
+    </member>
+    <member name="M:Windows.Phone.Notification.Management.AccessoryManager.DismissReminder(System.Guid)">
+      <summary>Ignore le rappel actif.</summary>
+      <param name="reminderId">Identificateur du rappel à ignorer.</param>
+    </member>
+    <member name="M:Windows.Phone.Notification.Management.AccessoryManager.DismissReminderByInstanceId(System.String)">
+      <summary>Permet d'ignorer le rappel identifié par l’id d’instance.</summary>
+      <param name="instanceId">Chaîne contenant l'ID d'instance du rappel à ignorer.</param>
+    </member>
+    <member name="M:Windows.Phone.Notification.Management.AccessoryManager.EnableAccessoryNotificationTypes(System.Int32)">
+      <summary>Accepte la réception des notifications pour la désinstallation des toasts et des applications.</summary>
+      <param name="accessoryNotificationTypes">Une des valeurs spécifiées par l’énumération AccessoryNotificationType.</param>
+    </member>
+    <member name="M:Windows.Phone.Notification.Management.AccessoryManager.EnableEmailNotificationEmailAccount(System.String)">
+      <summary>Active les notifications par courrier électronique pour le compte de messagerie spécifié.</summary>
+      <param name="emailAccount">Chaîne contenant le nom du compte de messagerie.</param>
+    </member>
+    <member name="M:Windows.Phone.Notification.Management.AccessoryManager.EnableEmailNotificationFolderFilter(System.String,Windows.Foundation.Collections.IVectorView{System.String})">
+      <summary>Active les notifications par courrier électronique pour les dossiers spécifiés dans le compte spécifié.</summary>
+      <param name="emailAccount">Compte de messagerie pour lequel activer les notifications par courrier électronique.</param>
+      <param name="folders">Dossiers du compte de messagerie que l'utilisateur souhaite surveiller.</param>
+    </member>
+    <member name="M:Windows.Phone.Notification.Management.AccessoryManager.EnableNotificationsForApplication(System.String)">
+      <summary>Accepte la réception des notifications de désinstallation des toasts et des applications provenant de l'application spécifiée.</summary>
+      <param name="appId">Chaîne contenant l'ID de l'application qui envoie les notifications.</param>
+    </member>
+    <member name="M:Windows.Phone.Notification.Management.AccessoryManager.EndPhoneCall(System.UInt32)">
+      <summary>Met fin à un appel téléphonique pour l'identificateur de l'appel téléphonique donné.</summary>
+      <param name="phoneCallId">Identificateur de l'appel téléphonique. Obtient cette valeur de la propriété PhoneNotificationTriggerDetail.CallDetails.CallID pour un appel entrant actif.</param>
+    </member>
+    <member name="M:Windows.Phone.Notification.Management.AccessoryManager.GetAllEmailAccounts">
+      <summary>Obtient les comptes de messagerie sur l'appareil.</summary>
+      <returns>Collection d'objets EmailAccountInfo contenant les données relatives aux comptes de messagerie sur l'appareil.</returns>
+    </member>
+    <member name="M:Windows.Phone.Notification.Management.AccessoryManager.GetAppIcon(System.String)">
+      <summary>Obtient une icône pour l'identificateur d'application donné.</summary>
+      <param name="appId">Identificateur associé à l'application.</param>
+      <returns>Flux contenant l'icône de l'application.</returns>
+    </member>
+    <member name="M:Windows.Phone.Notification.Management.AccessoryManager.GetApps">
+      <summary>Obtient un dictionnaire qui contient le nom et l'ID des applications compatibles toast sur l'appareil.</summary>
+      <returns>Dictionnaire qui contient le nom et l'ID des applications. La valeur peut être une chaîne vide si l'application associée est en cours de mise à jour.</returns>
+    </member>
+    <member name="M:Windows.Phone.Notification.Management.AccessoryManager.GetEnabledAccessoryNotificationTypes">
+      <summary>Obtient une liste de types de notification activés, comme représenté par l’énumération AccessoryNotificationType.</summary>
+      <returns>Les valeurs sont des combinaisons de bits indicateurs des indicateurs de l'énumération AccessoryNotificationType. Vous pouvez combiner les valeurs d'énumération à l'aide de l'opérateur OU pour indiquer les types de notification pour lesquels vous devez être alerté.</returns>
+    </member>
+    <member name="M:Windows.Phone.Notification.Management.AccessoryManager.GetFolders(System.String)">
+      <summary>Obtient une liste de dossiers de messagerie définis sur le téléphone.</summary>
+      <param name="emailAccount">Compte de messagerie dans lequel les dossiers sont définis.</param>
+      <returns>Collection d'objets EmailFolderInfo.</returns>
+    </member>
+    <member name="M:Windows.Phone.Notification.Management.AccessoryManager.GetMediaMetadata">
+      <summary>Obtient le titre, le sous-titre, l'artiste, l'album, le numéro de piste, la miniature et la durée de la piste actuelle qui est mise en file d'attente.</summary>
+      <returns>Objet MediaMetadata contenant le titre, le sous-titre, l'artiste, l'album, le numéro de piste, la miniature et la durée.</returns>
+    </member>
+    <member name="M:Windows.Phone.Notification.Management.AccessoryManager.GetNextTriggerDetails">
+      <summary>Obtient les prochaines informations du déclencheur contenant les informations sur le déclencheur, notamment le type de notification, le nom d'affichage et l'heure de création.</summary>
+      <returns>Contient les informations sur le déclencheur.</returns>
+    </member>
+    <member name="M:Windows.Phone.Notification.Management.AccessoryManager.GetPhoneLineDetails(System.Guid)">
+      <summary>Obtient des détails sur la ligne téléphonique, notamment le numéro de ligne, l'identificateur de ligne, le nom d'affichage et le nombre de messages vocaux.</summary>
+      <param name="phoneLine">Identificateur de la ligne téléphonique.</param>
+      <returns>Informations du téléphone, notamment le numéro de ligne, l'identificateur de ligne, le nom convivial et le nombre de messages vocaux.</returns>
+    </member>
+    <member name="M:Windows.Phone.Notification.Management.AccessoryManager.GetUserConsent">
+      <summary>Obtient une valeur booléenne indiquant si l'utilisateur a autorisé l'application accessoire à recevoir des notifications.</summary>
+      <returns>Retourne true si l'utilisateur a donné son accord ; sinon, false.</returns>
+    </member>
+    <member name="M:Windows.Phone.Notification.Management.AccessoryManager.HoldPhoneCall(System.UInt32,System.Boolean)">
+      <summary>Met l'appel téléphonique actuel en attente ou prend l'appel téléphonique en attente.</summary>
+      <param name="phoneCallId">Identificateur de l'appel.</param>
+      <param name="holdCall">True si l'appel est mis en attente, false si l'appel en attente est pris.</param>
+    </member>
+    <member name="M:Windows.Phone.Notification.Management.AccessoryManager.IncreaseVolume(System.Int32)">
+      <summary>Augmente le volume du média lu sur le téléphone.</summary>
+      <param name="step">Valeur d'augmentation du volume.</param>
+    </member>
+    <member name="M:Windows.Phone.Notification.Management.AccessoryManager.IsNotificationEnabledForApplication(System.String)">
+      <summary>Obtient une valeur indiquant si l'application accessoire appelante recevra des notifications toast de l'application spécifiée.</summary>
+      <param name="appId">Identificateur de l'application.</param>
+      <returns>Retourne true si l'application prend en charge les notifications ; sinon, false.</returns>
+    </member>
+    <member name="M:Windows.Phone.Notification.Management.AccessoryManager.MakePhoneCall(System.Guid,System.String)">
+      <summary>Effectue un appel téléphonique.</summary>
+      <param name="phoneLine">Identificateur de la ligne téléphonique. Mappe à la propriété LineId dans PhoneLineDetails.</param>
+      <param name="phoneNumber">Numéro à appeler.</param>
+    </member>
+    <member name="M:Windows.Phone.Notification.Management.AccessoryManager.MakePhoneCall(System.Guid,System.String,Windows.Phone.Notification.Management.PhoneCallAudioEndpoint)">
+      <summary>Effectue un appel téléphonique.</summary>
+      <param name="phoneLine">Identificateur de la ligne téléphonique. Mappe à la propriété LineId dans PhoneLineDetails.</param>
+      <param name="phoneNumber">Numéro à appeler.</param>
+      <param name="endPoint">Point de terminaison audio de l'appel.</param>
+    </member>
+    <member name="M:Windows.Phone.Notification.Management.AccessoryManager.MakePhoneCallWithVideo(System.Guid,System.String)">
+      <summary>Effectue un appel de visiophone.</summary>
+      <param name="phoneLine">Identificateur de la ligne téléphonique.</param>
+      <param name="phoneNumber">Numéro à appeler.</param>
+    </member>
+    <member name="M:Windows.Phone.Notification.Management.AccessoryManager.MakePhoneCallWithVideo(System.Guid,System.String,Windows.Phone.Notification.Management.PhoneCallAudioEndpoint)">
+      <summary>Effectue un appel de visiophone.</summary>
+      <param name="phoneLine">Identificateur de la ligne téléphonique.</param>
+      <param name="phoneNumber">Numéro à appeler.</param>
+      <param name="endPoint">Point de terminaison audio ; l'une des valeurs possibles : par défaut, haut-parleur ou mains-libres.</param>
+    </member>
+    <member name="M:Windows.Phone.Notification.Management.AccessoryManager.PerformMediaPlaybackCommand(Windows.Phone.Notification.Management.PlaybackCommand)">
+      <summary>Exécute une action sur le flux de données multimédias.</summary>
+      <param name="command">L'une des valeurs d'énumération : Play, Pause, Stop, Previous, FastForward, Next, etc.</param>
+    </member>
+    <member name="M:Windows.Phone.Notification.Management.AccessoryManager.ProcessTriggerDetails(Windows.Phone.Notification.Management.IAccessoryNotificationTriggerDetails)">
+      <summary>Indique à l'objet AccessoryManager que les informations de déclencheur spécifiées ont été traitées par l'accessoire. Ces informations sont alors supprimées de la file d'attente des détails de déclencheur de l'objet AccessoryManager.</summary>
+      <param name="pDetails">Détails de déclencheur qui doivent être marqués comme traités par l'accessoire.</param>
+    </member>
+    <member name="M:Windows.Phone.Notification.Management.AccessoryManager.RegisterAccessoryApp">
+      <summary>Enregistre l'application accessoire avec l'objet AccessoryManager et retourne l'identificateur du déclencheur.</summary>
+      <returns>Identificateur du déclencheur de cette application accessoire. Cet identificateur de déclencheur est utilisé pour créer un **DeviceManufacturerNotificationTrigger**.</returns>
+    </member>
+    <member name="M:Windows.Phone.Notification.Management.AccessoryManager.RejectPhoneCall(System.UInt32)">
+      <summary>Rejette un appel téléphonique avec l'identificateur donné.</summary>
+      <param name="phoneCallId">Identificateur de l'appel téléphonique.</param>
+    </member>
+    <member name="M:Windows.Phone.Notification.Management.AccessoryManager.RejectPhoneCall(System.UInt32,System.UInt32)">
+      <summary>Rejette un appel téléphonique avec l'identificateur donné et envoie une réponse SMS.</summary>
+      <param name="phoneCallId">Identificateur de l'appel téléphonique.</param>
+      <param name="textResponseID">Identificateur de TextResponse.</param>
+    </member>
+    <member name="M:Windows.Phone.Notification.Management.AccessoryManager.RingDevice">
+      <summary>Fait sonner le téléphone.</summary>
+    </member>
+    <member name="M:Windows.Phone.Notification.Management.AccessoryManager.SetMute(System.Boolean)">
+      <summary>Définit mute sur le téléphone sur on ou off.</summary>
+      <param name="mute">True si mute est défini ; sinon, false.</param>
+    </member>
+    <member name="M:Windows.Phone.Notification.Management.AccessoryManager.SetRingerVibrate(System.Boolean,System.Boolean)">
+      <summary>Un accessoire peut activer et désactiver les paramètres de la sonnerie et du vibreur du téléphone.</summary>
+      <param name="ringer">True si la sonnerie est activée ; sinon, false.</param>
+      <param name="vibrate">True si le mode vibreur est activé ; sinon, false.</param>
+    </member>
+    <member name="M:Windows.Phone.Notification.Management.AccessoryManager.SnoozeAlarm(System.Guid)">
+      <summary>Répète l'alarme.</summary>
+      <param name="alarmId">Identificateur de l'alarme à répéter.</param>
+    </member>
+    <member name="M:Windows.Phone.Notification.Management.AccessoryManager.SnoozeAlarm(System.Guid,Windows.Foundation.TimeSpan)">
+      <summary>Répète une alarme pour l'intervalle de temps donné.</summary>
+      <param name="alarmId">Identificateur de l'alarme.</param>
+      <param name="timeSpan">Durée de répétition de l'alarme.</param>
+    </member>
+    <member name="M:Windows.Phone.Notification.Management.AccessoryManager.SnoozeAlarmByInstanceId(System.String)">
+      <summary>Répète l’alarme identifiée par l’id d’instance.</summary>
+      <param name="instanceId">Chaîne contenant l'ID d'instance de l'alarme à répéter.</param>
+    </member>
+    <member name="M:Windows.Phone.Notification.Management.AccessoryManager.SnoozeReminder(System.Guid)">
+      <summary>Répète un rappel.</summary>
+      <param name="reminderId">Identificateur du rappel.</param>
+    </member>
+    <member name="M:Windows.Phone.Notification.Management.AccessoryManager.SnoozeReminder(System.Guid,Windows.Foundation.TimeSpan)">
+      <summary>Répète un rappel pendant l'intervalle de temps spécifié.</summary>
+      <param name="reminderId">Identificateur du rappel.</param>
+      <param name="timeSpan">Durée pendant laquelle ignorer le rappel.</param>
+    </member>
+    <member name="M:Windows.Phone.Notification.Management.AccessoryManager.SnoozeReminderByInstanceId(System.String)">
+      <summary>Permet de répéter le rappel identifié par l’id d’instance.</summary>
+      <param name="instanceId">Chaîne contenant l'ID d'instance du rappel à répéter.</param>
+    </member>
+    <member name="M:Windows.Phone.Notification.Management.AccessoryManager.SwapPhoneCalls(System.UInt32,System.UInt32)">
+      <summary>Met l'appel téléphonique actuel en attente puis connecte l'appel téléphonique en attente.</summary>
+      <param name="phoneCallIdToHold">Identificateur de l'appel téléphonique à mettre en attente.</param>
+      <param name="phoneCallIdOnHold">Identificateur de l'appel téléphonique à connecter.</param>
+    </member>
+    <member name="M:Windows.Phone.Notification.Management.AccessoryManager.UpdateEmailReadStatus(Windows.Phone.Notification.Management.BinaryId,System.Boolean)">
+      <summary>Met à jour si le message électronique a l'état Lu.</summary>
+      <param name="messageEntryId">Identificateur unique du message électronique.</param>
+      <param name="isRead">True si le message électronique est lu ; sinon, false.</param>
+    </member>
+    <member name="T:Windows.Phone.Notification.Management.AccessoryNotificationType">
+      <summary>Représente les types de notifications qui sont déclenchés sur le téléphone. Les objets IAccessoryNotificationTriggerDetails sont disponibles pour la méthode **IBackgroundTask.Run** qui est exécutée par l'objet AccessoryManager lors du déclenchement. Au sein de l'objet IAccessoryNotificationTriggerDetails figure un objet **INotification**. Le développeur **BackgroundTask** doit examiner cette interface pour déterminer le type de notification spécifique.</summary>
+    </member>
+    <member name="F:Windows.Phone.Notification.Management.AccessoryNotificationType.Alarm">
+      <summary>Notification provenant d'un objet Alarm qui a été déclenché.</summary>
+    </member>
+    <member name="F:Windows.Phone.Notification.Management.AccessoryNotificationType.AppUninstalled">
+      <summary>Notification indiquant qu'une application est désinstallée.</summary>
+    </member>
+    <member name="F:Windows.Phone.Notification.Management.AccessoryNotificationType.BatterySaver">
+      <summary>Notification indiquant que l'économiseur de batterie est activé ou désactivé.</summary>
+    </member>
+    <member name="F:Windows.Phone.Notification.Management.AccessoryNotificationType.CalendarChanged">
+      <summary>Notification indiquant qu'un événement de calendrier a changé.</summary>
+    </member>
+    <member name="F:Windows.Phone.Notification.Management.AccessoryNotificationType.CortanaTile">
+      <summary>Notification issue d'une vignette Cortana. Pour plus d'informations, voir CortanaTileNotificationTriggerDetails.</summary>
+    </member>
+    <member name="F:Windows.Phone.Notification.Management.AccessoryNotificationType.Dnd">
+      <summary>Notification indiquant que Ne pas déranger est activé ou désactivé.</summary>
+    </member>
+    <member name="F:Windows.Phone.Notification.Management.AccessoryNotificationType.DrivingMode">
+      <summary>Notification indiquant que le mode conduite est activé ou désactivé.</summary>
+    </member>
+    <member name="F:Windows.Phone.Notification.Management.AccessoryNotificationType.Email">
+      <summary>Une notification indiquant un nouveau lot de messages électroniques a été reçue</summary>
+    </member>
+    <member name="F:Windows.Phone.Notification.Management.AccessoryNotificationType.EmailReadStatusChanged">
+      <summary>Notification indiquant que l'état de lecture d'un courrier électronique a changé.</summary>
+    </member>
+    <member name="F:Windows.Phone.Notification.Management.AccessoryNotificationType.Media">
+      <summary>Notification indiquant que l'état de lecture du média a changé.</summary>
+    </member>
+    <member name="F:Windows.Phone.Notification.Management.AccessoryNotificationType.None">
+      <summary>Le type de notification est None.</summary>
+    </member>
+    <member name="F:Windows.Phone.Notification.Management.AccessoryNotificationType.Phone">
+      <summary>Une notification indiquant un appel téléphonique a été reçue.</summary>
+    </member>
+    <member name="F:Windows.Phone.Notification.Management.AccessoryNotificationType.Reminder">
+      <summary>Une notification provenant d'un objet Reminder a été déclenchée.</summary>
+    </member>
+    <member name="F:Windows.Phone.Notification.Management.AccessoryNotificationType.Toast">
+      <summary>Notification issue d'une application, qui se manifeste sous forme de toast dans l'interface utilisateur du téléphone.</summary>
+    </member>
+    <member name="F:Windows.Phone.Notification.Management.AccessoryNotificationType.ToastCleared">
+      <summary>Notification indiquant qu'un toast a été effacé.</summary>
+    </member>
+    <member name="F:Windows.Phone.Notification.Management.AccessoryNotificationType.VolumeChanged">
+      <summary>Notification indiquant que le volume a changé.</summary>
+    </member>
+    <member name="T:Windows.Phone.Notification.Management.AlarmNotificationTriggerDetails">
+      <summary>Représente toutes les informations nécessaires pour afficher une notification d'alarme sur un accessoire.</summary>
+    </member>
+    <member name="P:Windows.Phone.Notification.Management.AlarmNotificationTriggerDetails.AccessoryNotificationType">
+      <summary>Spécifie le type de notification reçu. Pour les alarmes, cette valeur est **AccessoryNotificationType.Alarm**.</summary>
+      <returns>AccessoryNotificationType.Alarm</returns>
+    </member>
+    <member name="P:Windows.Phone.Notification.Management.AlarmNotificationTriggerDetails.AlarmId">
+      <summary>ID unique de l'alarme pour laquelle la notification a été créée.</summary>
+      <returns>ID unique de l'alarme pour laquelle la notification a été créée.</returns>
+    </member>
+    <member name="P:Windows.Phone.Notification.Management.AlarmNotificationTriggerDetails.AppDisplayName">
+      <summary>Nom d'affichage de l'application qui a généré la notification.</summary>
+      <returns>Nom d'affichage de l'application qui a généré la notification.</returns>
+    </member>
+    <member name="P:Windows.Phone.Notification.Management.AlarmNotificationTriggerDetails.AppId">
+      <summary>ID d'instance de l'application qui a généré la notification.</summary>
+      <returns>ID d'instance de l'application qui a généré la notification.</returns>
+    </member>
+    <member name="P:Windows.Phone.Notification.Management.AlarmNotificationTriggerDetails.InstanceId">
+      <summary>Permet d'obtenir un identificateur qui lève l’ambiguïté entre plusieurs instances d'alarmes.</summary>
+      <returns>Identificateur de chaîne qui lève l’ambiguïté entre plusieurs instances d'alarmes.</returns>
+    </member>
+    <member name="P:Windows.Phone.Notification.Management.AlarmNotificationTriggerDetails.ReminderState">
+      <summary>Valeur ReminderState qui indique l'état actuel de l'alarme.</summary>
+      <returns>Pour obtenir la liste des valeurs possibles, consultez ReminderState.</returns>
+    </member>
+    <member name="P:Windows.Phone.Notification.Management.AlarmNotificationTriggerDetails.StartedProcessing">
+      <summary>Spécifie si l'accessoire a commencé à traiter la notification.</summary>
+      <returns>**true** si l'accessoire a commencé à traiter la notification ; sinon, **false**</returns>
+    </member>
+    <member name="P:Windows.Phone.Notification.Management.AlarmNotificationTriggerDetails.TimeCreated">
+      <summary>Date et heure auxquelles la notification a été créée.</summary>
+      <returns>Date et heure auxquelles la notification a été créée.</returns>
+    </member>
+    <member name="P:Windows.Phone.Notification.Management.AlarmNotificationTriggerDetails.Timestamp">
+      <summary>Représente la date et l'heure auxquelles la notification a été transmise par le service Accessory Manager à l'application accessoire.</summary>
+      <returns>Date et heure auxquelles la notification a été transmise par le service Accessory Manager à l'application accessoire.</returns>
+    </member>
+    <member name="P:Windows.Phone.Notification.Management.AlarmNotificationTriggerDetails.Title">
+      <summary>Titre de l'alarme.</summary>
+      <returns>Titre de l'alarme.</returns>
+    </member>
+    <member name="T:Windows.Phone.Notification.Management.AppNotificationInfo">
+      <summary>Représente le nom et l'identificateur d'une application.</summary>
+    </member>
+    <member name="P:Windows.Phone.Notification.Management.AppNotificationInfo.Id">
+      <summary>Obtient l'identificateur de l'application.</summary>
+      <returns>Identificateur de l'application.</returns>
+    </member>
+    <member name="P:Windows.Phone.Notification.Management.AppNotificationInfo.Name">
+      <summary>Obtient le nom de l'application.</summary>
+      <returns>Nom de l’application.</returns>
+    </member>
+    <member name="T:Windows.Phone.Notification.Management.BinaryId">
+      <summary>Représente un identificateur binaire.</summary>
+    </member>
+    <member name="P:Windows.Phone.Notification.Management.BinaryId.Id">
+      <summary>Obtient l'identificateur de l'ID binaire.</summary>
+      <returns>Identificateur.</returns>
+    </member>
+    <member name="P:Windows.Phone.Notification.Management.BinaryId.Length">
+      <summary>Obtient la longueur de l'identificateur.</summary>
+      <returns>Longueur de l'identificateur.</returns>
+    </member>
+    <member name="T:Windows.Phone.Notification.Management.CalendarChangedEvent">
+      <summary>Représente le type d'événement de calendrier.</summary>
+    </member>
+    <member name="F:Windows.Phone.Notification.Management.CalendarChangedEvent.AppointmentAdded">
+      <summary>Un rendez-vous a été ajouté au calendrier.</summary>
+    </member>
+    <member name="F:Windows.Phone.Notification.Management.CalendarChangedEvent.AppointmentChanged">
+      <summary>Un rendez-vous a été modifié dans le calendrier.</summary>
+    </member>
+    <member name="F:Windows.Phone.Notification.Management.CalendarChangedEvent.AppointmentDeleted">
+      <summary>Un rendez-vous a été supprimé du calendrier.</summary>
+    </member>
+    <member name="F:Windows.Phone.Notification.Management.CalendarChangedEvent.CalendarAdded">
+      <summary>Un calendrier a été ajouté.</summary>
+    </member>
+    <member name="F:Windows.Phone.Notification.Management.CalendarChangedEvent.CalendarChanged">
+      <summary>Un calendrier a été modifié.</summary>
+    </member>
+    <member name="F:Windows.Phone.Notification.Management.CalendarChangedEvent.CalendarDeleted">
+      <summary>Un calendrier a été supprimé.</summary>
+    </member>
+    <member name="F:Windows.Phone.Notification.Management.CalendarChangedEvent.LostEvents">
+      <summary>L'événement a été perdu.</summary>
+    </member>
+    <member name="T:Windows.Phone.Notification.Management.CalendarChangedNotificationTriggerDetails">
+      <summary>Représente toutes les informations nécessaires pour afficher une notification de calendrier modifié sur un accessoire.</summary>
+    </member>
+    <member name="P:Windows.Phone.Notification.Management.CalendarChangedNotificationTriggerDetails.AccessoryNotificationType">
+      <summary>AccessoryNotificationType qui spécifie le type de notification reçue.</summary>
+      <returns>AccessoryNotificationType.CalendarChanged</returns>
+    </member>
+    <member name="P:Windows.Phone.Notification.Management.CalendarChangedNotificationTriggerDetails.AppDisplayName">
+      <summary>Représente le nom d'affichage de l'application qui a généré la notification.</summary>
+      <returns>Nom d'affichage de l'application qui a généré la notification.</returns>
+    </member>
+    <member name="P:Windows.Phone.Notification.Management.CalendarChangedNotificationTriggerDetails.AppId">
+      <summary>Représente l'ID d'instance de l'application qui a généré la notification.</summary>
+      <returns>ID d'instance de l'application qui a généré la notification.</returns>
+    </member>
+    <member name="P:Windows.Phone.Notification.Management.CalendarChangedNotificationTriggerDetails.EventType">
+      <summary>Représente le type d'événement.</summary>
+      <returns>Type d'événement de calendrier modifié.</returns>
+    </member>
+    <member name="P:Windows.Phone.Notification.Management.CalendarChangedNotificationTriggerDetails.ItemId">
+      <summary>Représente l'identificateur de l'élément de calendrier.</summary>
+      <returns>Identificateur d'élément de l'élément de calendrier.</returns>
+    </member>
+    <member name="P:Windows.Phone.Notification.Management.CalendarChangedNotificationTriggerDetails.StartedProcessing">
+      <summary>Spécifie si l'accessoire a commencé à traiter la notification.</summary>
+      <returns>**true** si l'accessoire a commencé à traiter la notification ; sinon, **false**.</returns>
+    </member>
+    <member name="P:Windows.Phone.Notification.Management.CalendarChangedNotificationTriggerDetails.TimeCreated">
+      <summary>Obtient la date et heure auxquelles la notification a été créée.</summary>
+      <returns>Date et heure auxquelles la notification a été créée.</returns>
+    </member>
+    <member name="T:Windows.Phone.Notification.Management.CortanaTileNotificationTriggerDetails">
+      <summary>Représente toutes les informations nécessaires pour afficher une notification de mise à jour par vignette dynamique sur un accessoire.</summary>
+    </member>
+    <member name="P:Windows.Phone.Notification.Management.CortanaTileNotificationTriggerDetails.AccessoryNotificationType">
+      <summary>AccessoryNotificationType qui spécifie le type de notification reçue. Pour les notifications de vignette Cortana, c'est la valeur AccessoryNotificationType.CortanaTile.</summary>
+      <returns>AccessoryNotificationType.CortanaTile</returns>
+    </member>
+    <member name="P:Windows.Phone.Notification.Management.CortanaTileNotificationTriggerDetails.AppDisplayName">
+      <summary>Représente le nom d'affichage de l'application qui a généré la notification.</summary>
+      <returns>Nom d'affichage de l'application qui a généré la notification.</returns>
+    </member>
+    <member name="P:Windows.Phone.Notification.Management.CortanaTileNotificationTriggerDetails.AppId">
+      <summary>Représente l'ID d'instance de l'application qui a généré la notification.</summary>
+      <returns>ID d'instance de l'application qui a généré la notification.</returns>
+    </member>
+    <member name="P:Windows.Phone.Notification.Management.CortanaTileNotificationTriggerDetails.Content">
+      <summary>Chaîne qui représente un texte d'annotation sur une vignette dynamique Cortana. Sur la vignette dynamique, ce contenu est renvoyé sur jusqu'à quatre lignes.</summary>
+      <returns>Chaîne qui représente un texte d'annotation sur une vignette dynamique Cortana.</returns>
+    </member>
+    <member name="P:Windows.Phone.Notification.Management.CortanaTileNotificationTriggerDetails.EmphasizedText">
+      <summary>Chaîne utilisée pour afficher la température sur une vignette dynamique Cortana. Sur la vignette dynamique, ce texte s'affiche dans une police ultra-large et n'est pas renvoyé à la ligne. Si cette propriété a une valeur, LargeContent2, NonWrappedSmallContent2, NonWrappedSmallContent3 et NonWrappedSmallContent4 sont toujours masqués.</summary>
+      <returns>Chaîne utilisée pour afficher la température sur une vignette dynamique Cortana.</returns>
+    </member>
+    <member name="P:Windows.Phone.Notification.Management.CortanaTileNotificationTriggerDetails.LargeContent1">
+      <summary>Chaîne qui représente un titre de vignette dynamique Cortana. Sur la vignette dynamique, le contenu s'affiche en majuscules.</summary>
+      <returns>Chaîne qui représente un titre de vignette dynamique Cortana.</returns>
+    </member>
+    <member name="P:Windows.Phone.Notification.Management.CortanaTileNotificationTriggerDetails.LargeContent2">
+      <summary>Chaîne qui représente le texte qui apparaît sous le titre qui s'affiche éventuellement sous le titre d'une vignette dynamique Cortana. Sur la vignette dynamique, le contenu est renvoyé sur deux lignes.</summary>
+      <returns>Chaîne qui représente le texte qui apparaît sous le titre qui s'affiche éventuellement sous le titre d'une vignette dynamique Cortana.</returns>
+    </member>
+    <member name="P:Windows.Phone.Notification.Management.CortanaTileNotificationTriggerDetails.NonWrappedSmallContent1">
+      <summary>Chaîne qui représente la première ligne du petit texte non renvoyé à la ligne, affiché sur une vignette dynamique Cortana.</summary>
+      <returns>Chaîne qui représente la première ligne du petit texte non renvoyé à la ligne, affiché sur une vignette dynamique Cortana.</returns>
+    </member>
+    <member name="P:Windows.Phone.Notification.Management.CortanaTileNotificationTriggerDetails.NonWrappedSmallContent2">
+      <summary>Chaîne qui représente la deuxième ligne du petit texte non renvoyé à la ligne, affiché sur une vignette dynamique Cortana.</summary>
+      <returns>Chaîne qui représente la deuxième ligne du petit texte non renvoyé à la ligne, affiché sur une vignette dynamique Cortana.</returns>
+    </member>
+    <member name="P:Windows.Phone.Notification.Management.CortanaTileNotificationTriggerDetails.NonWrappedSmallContent3">
+      <summary>Chaîne qui représente la troisième ligne du petit texte non renvoyé à la ligne, affiché sur une vignette dynamique Cortana.</summary>
+      <returns>Chaîne qui représente la troisième ligne du petit texte non renvoyé à la ligne, affiché sur une vignette dynamique Cortana.</returns>
+    </member>
+    <member name="P:Windows.Phone.Notification.Management.CortanaTileNotificationTriggerDetails.NonWrappedSmallContent4">
+      <summary>Chaîne qui représente la quatrième ligne du petit texte non renvoyé à la ligne, affiché sur une vignette dynamique Cortana.</summary>
+      <returns>Chaîne qui représente la quatrième ligne du petit texte non renvoyé à la ligne, affiché sur une vignette dynamique Cortana.</returns>
+    </member>
+    <member name="P:Windows.Phone.Notification.Management.CortanaTileNotificationTriggerDetails.Source">
+      <summary>Chaîne qui correspond au texte source issu d'une vignette dynamique Cortana. Le texte source est affiché dans l'angle inférieur droit d'une grande vignette.</summary>
+      <returns>Texte source d'une vignette dynamique Cortana.</returns>
+    </member>
+    <member name="P:Windows.Phone.Notification.Management.CortanaTileNotificationTriggerDetails.StartedProcessing">
+      <summary>Spécifie si l'accessoire a commencé à traiter la notification.</summary>
+      <returns>**true** si l'accessoire a commencé à traiter la notification ; sinon, **false**.</returns>
+    </member>
+    <member name="P:Windows.Phone.Notification.Management.CortanaTileNotificationTriggerDetails.TileId">
+      <summary>ID de la vignette dynamique Cortana qui correspond à la notification qui a été reçue.</summary>
+      <returns>ID de la vignette dynamique Cortana qui correspond à la notification qui a été reçue.</returns>
+    </member>
+    <member name="P:Windows.Phone.Notification.Management.CortanaTileNotificationTriggerDetails.TimeCreated">
+      <summary>Date et heure auxquelles la notification a été créée.</summary>
+      <returns>Date et heure auxquelles la notification a été créée.</returns>
+    </member>
+    <member name="T:Windows.Phone.Notification.Management.EmailAccountInfo">
+      <summary>Représente le nom d'affichage du compte de messagerie et si les notifications sont activées sur le compte.</summary>
+    </member>
+    <member name="P:Windows.Phone.Notification.Management.EmailAccountInfo.DisplayName">
+      <summary>Représente le nom d'affichage du compte de messagerie.</summary>
+      <returns>Chaîne contenant le nom d'affichage.</returns>
+    </member>
+    <member name="P:Windows.Phone.Notification.Management.EmailAccountInfo.IsNotificationEnabled">
+      <summary>Obtient une valeur indiquant si les notifications sont activées pour le compte de messagerie.</summary>
+      <returns>true si les notifications sont activées pour le compte de messagerie ; sinon false.</returns>
+    </member>
+    <member name="T:Windows.Phone.Notification.Management.EmailFolderInfo">
+      <summary>Représente le nom d'affichage du dossier de messagerie et si les notifications sont activées sur ce dossier.</summary>
+    </member>
+    <member name="P:Windows.Phone.Notification.Management.EmailFolderInfo.DisplayName">
+      <summary>Représente le nom d'affichage du dossier de messagerie.</summary>
+      <returns>Chaîne contenant le nom d'affichage du dossier de messagerie.</returns>
+    </member>
+    <member name="P:Windows.Phone.Notification.Management.EmailFolderInfo.IsNotificationEnabled">
+      <summary>Obtient une valeur indiquant si le compte de messagerie peut fournir des notifications à l'application pour accessoire.</summary>
+      <returns>true si le compte de messagerie peut fournir des notifications ; sinon false.</returns>
+    </member>
+    <member name="T:Windows.Phone.Notification.Management.EmailNotificationTriggerDetails">
+      <summary>Représente toutes les informations nécessaires pour afficher une notification de courrier électronique sur un accessoire.</summary>
+    </member>
+    <member name="P:Windows.Phone.Notification.Management.EmailNotificationTriggerDetails.AccessoryNotificationType">
+      <summary>AccessoryNotificationType qui spécifie le type de notification reçue. Pour les notifications de courrier électronique, cette valeur est AccessoryNotificationType.Email.</summary>
+      <returns>AccessoryNotificationType.Email</returns>
+    </member>
+    <member name="P:Windows.Phone.Notification.Management.EmailNotificationTriggerDetails.AccountName">
+      <summary>Nom du compte sur le téléphone.</summary>
+      <returns>Chaîne qui spécifie le nom qui désigne le compte sur le téléphone.</returns>
+    </member>
+    <member name="P:Windows.Phone.Notification.Management.EmailNotificationTriggerDetails.AppDisplayName">
+      <summary>Représente le nom d'affichage de l'application qui a généré la notification de courrier électronique.</summary>
+      <returns>Nom d'affichage de l'application qui a généré la notification de courrier électronique.</returns>
+    </member>
+    <member name="P:Windows.Phone.Notification.Management.EmailNotificationTriggerDetails.AppId">
+      <summary>ID de l’application associée à la notification, le cas échéant. Ce n'est pas l'ID de l'application figurant dans le magasin. C'est l'ID de l'instance d'application sur le téléphone qui identifie de manière unique l'application.</summary>
+      <returns>Chaîne de caractères qui spécifie l'ID de l'application.</returns>
+    </member>
+    <member name="P:Windows.Phone.Notification.Management.EmailNotificationTriggerDetails.EmailMessage">
+      <summary>Objet EmailMessage qui contient des informations supplémentaires sur le courrier électronique.</summary>
+      <returns>Interface pour Windows.ApplicationModel.Email.EmailMessage.</returns>
+    </member>
+    <member name="P:Windows.Phone.Notification.Management.EmailNotificationTriggerDetails.MessageEntryId">
+      <summary>Représente un identificateur unique d'un courrier électronique dans la banque MAPI du téléphone.</summary>
+      <returns>Identificateur du courrier électronique.</returns>
+    </member>
+    <member name="P:Windows.Phone.Notification.Management.EmailNotificationTriggerDetails.ParentFolderName">
+      <summary>Nom du dossier parent du message électronique.</summary>
+      <returns>Chaîne contenant le nom du dossier parent.</returns>
+    </member>
+    <member name="P:Windows.Phone.Notification.Management.EmailNotificationTriggerDetails.SenderAddress">
+      <summary>Adresse de messagerie de l'expéditeur du message électronique.</summary>
+      <returns>Chaîne qui représente l'adresse de messagerie de l'expéditeur du message électronique.</returns>
+    </member>
+    <member name="P:Windows.Phone.Notification.Management.EmailNotificationTriggerDetails.SenderName">
+      <summary>Nom d'affichage de l'expéditeur du message électronique.</summary>
+      <returns>Chaîne qui indique le nom d'affichage de l'expéditeur du message électronique.</returns>
+    </member>
+    <member name="P:Windows.Phone.Notification.Management.EmailNotificationTriggerDetails.StartedProcessing">
+      <summary>Spécifie si l'accessoire a commencé à traiter la notification de courrier électronique.</summary>
+      <returns>**true** si l'accessoire a commencé à traiter la notification par courrier électronique ; sinon, **false**.</returns>
+    </member>
+    <member name="P:Windows.Phone.Notification.Management.EmailNotificationTriggerDetails.TimeCreated">
+      <summary>Représente la date et heure auxquelles la notification de courrier électronique a été créée.</summary>
+      <returns>Date et heure auxquelles la notification de courrier électronique été créée.</returns>
+    </member>
+    <member name="P:Windows.Phone.Notification.Management.EmailNotificationTriggerDetails.Timestamp">
+      <summary>Représente la date et l'heure auxquelles la notification a été transmise par le service Accessory Manager à l'application accessoire.</summary>
+      <returns>Date et heure auxquelles la notification a été transmise par le service Accessory Manager à l'application accessoire.</returns>
+    </member>
+    <member name="T:Windows.Phone.Notification.Management.EmailReadNotificationTriggerDetails">
+      <summary>Représente toutes les informations nécessaires pour afficher une notification lue sur un accessoire.</summary>
+    </member>
+    <member name="P:Windows.Phone.Notification.Management.EmailReadNotificationTriggerDetails.AccessoryNotificationType">
+      <summary>AccessoryNotificationType qui spécifie le type de notification reçue. Pour les notifications de courrier électronique, cette valeur est AccessoryNotificationType.EmailRead.</summary>
+      <returns>AccessoryNotificationType.EmailRead</returns>
+    </member>
+    <member name="P:Windows.Phone.Notification.Management.EmailReadNotificationTriggerDetails.AccountName">
+      <summary>Représente le nom du compte de messagerie.</summary>
+      <returns>Chaîne contenant le nom du compte de messagerie.</returns>
+    </member>
+    <member name="P:Windows.Phone.Notification.Management.EmailReadNotificationTriggerDetails.AppDisplayName">
+      <summary>Représente le nom d'affichage de l'application qui a généré la notification de courrier électronique lue.</summary>
+      <returns>Nom d'affichage de l'application qui a généré la notification de courrier électronique.</returns>
+    </member>
+    <member name="P:Windows.Phone.Notification.Management.EmailReadNotificationTriggerDetails.AppId">
+      <summary>ID de l’application associée à la notification, le cas échéant. Ce n'est pas l'ID de l'application figurant dans le magasin. C'est l'ID de l'instance d'application sur le téléphone qui identifie de manière unique l'application.</summary>
+      <returns>Chaîne de caractères qui spécifie l'ID de l'application.</returns>
+    </member>
+    <member name="P:Windows.Phone.Notification.Management.EmailReadNotificationTriggerDetails.IsRead">
+      <summary>Indique si un courrier électronique a été lu.</summary>
+      <returns>True si le courrier électronique a été lu ; sinon, false.</returns>
+    </member>
+    <member name="P:Windows.Phone.Notification.Management.EmailReadNotificationTriggerDetails.MessageEntryId">
+      <summary>Représente un identificateur unique d'un courrier électronique dans la banque MAPI du téléphone.</summary>
+      <returns>Identificateur du courrier électronique.</returns>
+    </member>
+    <member name="P:Windows.Phone.Notification.Management.EmailReadNotificationTriggerDetails.ParentFolderName">
+      <summary>Nom du dossier parent du message électronique.</summary>
+      <returns>Chaîne contenant le nom du dossier parent.</returns>
+    </member>
+    <member name="P:Windows.Phone.Notification.Management.EmailReadNotificationTriggerDetails.StartedProcessing">
+      <summary>Spécifie si l'accessoire a commencé à traiter la notification de courrier électronique.</summary>
+      <returns>**true** si l'accessoire a commencé à traiter la notification par courrier électronique ; sinon, **false**.</returns>
+    </member>
+    <member name="P:Windows.Phone.Notification.Management.EmailReadNotificationTriggerDetails.TimeCreated">
+      <summary>Représente la date et heure auxquelles la notification de courrier électronique a été créée.</summary>
+      <returns>Date et heure auxquelles la notification de courrier électronique été créée.</returns>
+    </member>
+    <member name="T:Windows.Phone.Notification.Management.IAccessoryNotificationTriggerDetails">
+      <summary>Représente une collection de données de notification d'accessoire.</summary>
+    </member>
+    <member name="P:Windows.Phone.Notification.Management.IAccessoryNotificationTriggerDetails.AccessoryNotificationType">
+      <summary>AccessoryNotificationType qui spécifie le type de notification reçue.</summary>
+      <returns>Pour obtenir la liste des valeurs possibles, consultez AccessoryNotificationType.</returns>
+    </member>
+    <member name="P:Windows.Phone.Notification.Management.IAccessoryNotificationTriggerDetails.AppDisplayName">
+      <summary>Représente le nom d'affichage de l'application qui a généré la notification.</summary>
+      <returns>Nom d'affichage de l'application qui a généré la notification.</returns>
+    </member>
+    <member name="P:Windows.Phone.Notification.Management.IAccessoryNotificationTriggerDetails.AppId">
+      <summary>Représente l'ID d'instance de l'application qui a généré la notification.</summary>
+      <returns>ID d'instance de l'application qui a généré la notification.</returns>
+    </member>
+    <member name="P:Windows.Phone.Notification.Management.IAccessoryNotificationTriggerDetails.StartedProcessing">
+      <summary>Spécifie si l'accessoire a commencé à traiter la notification.</summary>
+      <returns>**true** si l'accessoire a commencé à traiter la notification ; sinon, **false**.</returns>
+    </member>
+    <member name="P:Windows.Phone.Notification.Management.IAccessoryNotificationTriggerDetails.TimeCreated">
+      <summary>Représente les date et heure auxquelles la notification a été créée.</summary>
+      <returns>Date et heure auxquelles la notification a été créée.</returns>
+    </member>
+    <member name="T:Windows.Phone.Notification.Management.MediaControlsTriggerDetails">
+      <summary>Représente toutes les données nécessaires pour afficher une notification indiquant que l'état de lecture du média sur le téléphone a changé.</summary>
+    </member>
+    <member name="P:Windows.Phone.Notification.Management.MediaControlsTriggerDetails.AccessoryNotificationType">
+      <summary>Spécifie le type de notification reçu. Pour les notifications multimédias, cette valeur est AccessoryNotificationType.Media.</summary>
+      <returns>AccessoryNotificationType.Media</returns>
+    </member>
+    <member name="P:Windows.Phone.Notification.Management.MediaControlsTriggerDetails.AppDisplayName">
+      <summary>Nom d'affichage de l'application qui a généré la notification.</summary>
+      <returns>Nom d'affichage de l'application qui a généré la notification.</returns>
+    </member>
+    <member name="P:Windows.Phone.Notification.Management.MediaControlsTriggerDetails.AppId">
+      <summary>ID d'instance de l'application qui a généré la notification.</summary>
+      <returns>ID d'instance de l'application qui a généré la notification.</returns>
+    </member>
+    <member name="P:Windows.Phone.Notification.Management.MediaControlsTriggerDetails.MediaMetadata">
+      <summary>Objet MediaMetadata qui contient des informations supplémentaires sur le média.</summary>
+      <returns>Objet MediaMetadata qui contient des informations supplémentaires sur le média.</returns>
+    </member>
+    <member name="P:Windows.Phone.Notification.Management.MediaControlsTriggerDetails.PlaybackStatus">
+      <summary>État de lecture actuel du média correspondant.</summary>
+      <returns>Pour obtenir la liste des valeurs possibles, consultez PlaybackStatus.</returns>
+    </member>
+    <member name="P:Windows.Phone.Notification.Management.MediaControlsTriggerDetails.StartedProcessing">
+      <summary>Spécifie si l'accessoire a commencé à traiter la notification.</summary>
+      <returns>**true** si l'accessoire a commencé à traiter la notification ; sinon, **false**</returns>
+    </member>
+    <member name="P:Windows.Phone.Notification.Management.MediaControlsTriggerDetails.TimeCreated">
+      <summary>Date et heure auxquelles la notification a été créée.</summary>
+      <returns>Date et heure auxquelles la notification a été créée.</returns>
+    </member>
+    <member name="T:Windows.Phone.Notification.Management.MediaMetadata">
+      <summary>Obtient les métadonnées associées à l'instance de notification d'accessoire.</summary>
+    </member>
+    <member name="P:Windows.Phone.Notification.Management.MediaMetadata.Album">
+      <summary>Obtient le nom de l'album.</summary>
+      <returns>Nom de l'album.</returns>
+    </member>
+    <member name="P:Windows.Phone.Notification.Management.MediaMetadata.Artist">
+      <summary>Obtient le nom de l'artiste.</summary>
+      <returns>Chaîne contenant le nom de l'artiste.</returns>
+    </member>
+    <member name="P:Windows.Phone.Notification.Management.MediaMetadata.Duration">
+      <summary>Obtient la durée du média.</summary>
+      <returns>Durée du média.</returns>
+    </member>
+    <member name="P:Windows.Phone.Notification.Management.MediaMetadata.Subtitle">
+      <summary>Obtient le sous-titre du média.</summary>
+      <returns>Sous-titre du média.</returns>
+    </member>
+    <member name="P:Windows.Phone.Notification.Management.MediaMetadata.Thumbnail">
+      <summary>Obtient la miniature du média.</summary>
+      <returns>Miniature du média.</returns>
+    </member>
+    <member name="P:Windows.Phone.Notification.Management.MediaMetadata.Title">
+      <summary>Obtient le titre du média.</summary>
+      <returns>Titre du média.</returns>
+    </member>
+    <member name="P:Windows.Phone.Notification.Management.MediaMetadata.Track">
+      <summary>Obtient la piste du média.</summary>
+      <returns>Numéro de piste du média.</returns>
+    </member>
+    <member name="T:Windows.Phone.Notification.Management.PhoneCallAudioEndpoint">
+      <summary>Représente le point de terminaison de l'appel téléphonique, notamment les valeurs pour Par défaut, Haut-parleur et Mains libres.</summary>
+    </member>
+    <member name="F:Windows.Phone.Notification.Management.PhoneCallAudioEndpoint.Default">
+      <summary>Le téléphone est le point de terminaison.</summary>
+    </member>
+    <member name="F:Windows.Phone.Notification.Management.PhoneCallAudioEndpoint.Handsfree">
+      <summary>Le kit mains libres est le point de terminaison.</summary>
+    </member>
+    <member name="F:Windows.Phone.Notification.Management.PhoneCallAudioEndpoint.Speaker">
+      <summary>Le téléphone mains libres est le point de terminaison.</summary>
+    </member>
+    <member name="T:Windows.Phone.Notification.Management.PhoneCallDetails">
+      <summary>Fournit l'accès en lecture seule aux détails concernant un appel téléphonique.</summary>
+    </member>
+    <member name="P:Windows.Phone.Notification.Management.PhoneCallDetails.CallDirection">
+      <summary>Obtient la direction de l'appel téléphonique, entrant ou sortant.</summary>
+      <returns>Direction de l'appel téléphonique.</returns>
+    </member>
+    <member name="P:Windows.Phone.Notification.Management.PhoneCallDetails.CallId">
+      <summary>Obtient l'identificateur de l'appel téléphonique.</summary>
+      <returns>Identificateur de l'appel téléphonique.</returns>
+    </member>
+    <member name="P:Windows.Phone.Notification.Management.PhoneCallDetails.CallMediaType">
+      <summary>Obtient le type de média, audio uniquement ou audio et vidéo.</summary>
+      <returns>Type de média.</returns>
+    </member>
+    <member name="P:Windows.Phone.Notification.Management.PhoneCallDetails.CallTransport">
+      <summary>Obtient le type de transport, cellulaire ou VoIP.</summary>
+      <returns>Type de transport.</returns>
+    </member>
+    <member name="P:Windows.Phone.Notification.Management.PhoneCallDetails.ConferenceCallId">
+      <summary>Obtient l'identificateur d'une conférence téléphonique.</summary>
+      <returns>Identificateur de la conférence téléphonique.</returns>
+    </member>
+    <member name="P:Windows.Phone.Notification.Management.PhoneCallDetails.ContactName">
+      <summary>Obtient le nom du contact de l'appel téléphonique.</summary>
+      <returns>Nom du contact.</returns>
+    </member>
+    <member name="P:Windows.Phone.Notification.Management.PhoneCallDetails.EndTime">
+      <summary>Obtient l'heure de fin de l'appel téléphonique.</summary>
+      <returns>Heure de fin de l'appel téléphonique.</returns>
+    </member>
+    <member name="P:Windows.Phone.Notification.Management.PhoneCallDetails.PhoneLine">
+      <summary>Obtient la ligne téléphonique.</summary>
+      <returns>Ligne téléphonique.</returns>
+    </member>
+    <member name="P:Windows.Phone.Notification.Management.PhoneCallDetails.PhoneNumber">
+      <summary>Obtient le numéro de l'appel téléphonique.</summary>
+      <returns>Numéro de l'appel téléphonique.</returns>
+    </member>
+    <member name="P:Windows.Phone.Notification.Management.PhoneCallDetails.PresetTextResponses">
+      <summary>Obtient la liste des réponses textes prédéfinies qui peuvent être affichées par l'application pour accessoire.</summary>
+      <returns>Liste des réponses textes prédéfinies. La réponse texte contient un ID de réponse et la chaîne de texte mappée à cet ID.</returns>
+    </member>
+    <member name="P:Windows.Phone.Notification.Management.PhoneCallDetails.StartTime">
+      <summary>Obtient l'heure de début de l'appel téléphonique.</summary>
+      <returns>Heure de début de l'appel téléphonique.</returns>
+    </member>
+    <member name="P:Windows.Phone.Notification.Management.PhoneCallDetails.State">
+      <summary>Obtient l'état de l'appel téléphonique, par exemple, sonne, en attente ou terminé.</summary>
+      <returns>État de l'appel téléphonique.</returns>
+    </member>
+    <member name="T:Windows.Phone.Notification.Management.PhoneCallDirection">
+      <summary>Représente la direction de l'appel téléphonique.</summary>
+    </member>
+    <member name="F:Windows.Phone.Notification.Management.PhoneCallDirection.Incoming">
+      <summary>L'appel téléphonique entre.</summary>
+    </member>
+    <member name="F:Windows.Phone.Notification.Management.PhoneCallDirection.Outgoing">
+      <summary>L'appel téléphonique sort.</summary>
+    </member>
+    <member name="T:Windows.Phone.Notification.Management.PhoneCallState">
+      <summary>Représente l'état de l'appel téléphonique, par exemple, sonne ou en attente.</summary>
+    </member>
+    <member name="F:Windows.Phone.Notification.Management.PhoneCallState.Ended">
+      <summary>L'état de l'appel téléphonique est Terminé.</summary>
+    </member>
+    <member name="F:Windows.Phone.Notification.Management.PhoneCallState.Held">
+      <summary>L'état de l'appel téléphonique est En attente.</summary>
+    </member>
+    <member name="F:Windows.Phone.Notification.Management.PhoneCallState.Ringing">
+      <summary>L'état d'appel téléphonique est Sonne.</summary>
+    </member>
+    <member name="F:Windows.Phone.Notification.Management.PhoneCallState.Talking">
+      <summary>L'état de l'appel téléphonique est Discussion.</summary>
+    </member>
+    <member name="F:Windows.Phone.Notification.Management.PhoneCallState.Unknown">
+      <summary>L'état de l'appel téléphonique est inconnu.</summary>
+    </member>
+    <member name="T:Windows.Phone.Notification.Management.PhoneCallTransport">
+      <summary>Représente le type de transport, cellulaire ou VoIP.</summary>
+    </member>
+    <member name="F:Windows.Phone.Notification.Management.PhoneCallTransport.Cellular">
+      <summary>Le transport est cellulaire.</summary>
+    </member>
+    <member name="F:Windows.Phone.Notification.Management.PhoneCallTransport.Voip">
+      <summary>Le transport est VoIP.</summary>
+    </member>
+    <member name="T:Windows.Phone.Notification.Management.PhoneLineDetails">
+      <summary>Représente les détails d'une ligne téléphonique.</summary>
+    </member>
+    <member name="P:Windows.Phone.Notification.Management.PhoneLineDetails.DefaultOutgoingLine">
+      <summary>Obtient une valeur qui indique si la ligne téléphonique est la ligne sortante par défaut.</summary>
+      <returns>True si la ligne téléphonique est la ligne sortante par défaut , sinon, false.</returns>
+    </member>
+    <member name="P:Windows.Phone.Notification.Management.PhoneLineDetails.DisplayName">
+      <summary>Obtient le nom d'affichage de la ligne téléphonique.</summary>
+      <returns>Nom d'affichage de la ligne téléphonique.</returns>
+    </member>
+    <member name="P:Windows.Phone.Notification.Management.PhoneLineDetails.LineId">
+      <summary>Obtient l'identificateur de la ligne téléphonique.</summary>
+      <returns>Identificateur de la ligne téléphonique.</returns>
+    </member>
+    <member name="P:Windows.Phone.Notification.Management.PhoneLineDetails.LineNumber">
+      <summary>Obtient le numéro de la ligne téléphonique.</summary>
+      <returns>Numéro de ligne du téléphone.</returns>
+    </member>
+    <member name="P:Windows.Phone.Notification.Management.PhoneLineDetails.MissedCallCount">
+      <summary>Représente le nombre d'appels manqués sur la ligne téléphonique.</summary>
+      <returns>Nombre d'appels manqués.</returns>
+    </member>
+    <member name="P:Windows.Phone.Notification.Management.PhoneLineDetails.RegistrationState">
+      <summary>Obtient l'état d'enregistrement de la ligne téléphonique : déconnectée, personnelle ou itinérante.</summary>
+      <returns>État d'enregistrement du téléphone.</returns>
+    </member>
+    <member name="P:Windows.Phone.Notification.Management.PhoneLineDetails.VoicemailCount">
+      <summary>Obtient le nombre de messages vocaux sur la ligne téléphonique.</summary>
+      <returns>Nombre de messages vocaux sur la ligne téléphonique.</returns>
+    </member>
+    <member name="T:Windows.Phone.Notification.Management.PhoneLineRegistrationState">
+      <summary>Représente l'état d'enregistrement de la ligne téléphonique : déconnectée, personnelle ou itinérante.</summary>
+    </member>
+    <member name="F:Windows.Phone.Notification.Management.PhoneLineRegistrationState.Disconnected">
+      <summary>L'état d'enregistrement de la ligne téléphonique est Déconnectée.</summary>
+    </member>
+    <member name="F:Windows.Phone.Notification.Management.PhoneLineRegistrationState.Home">
+      <summary>L'état d'enregistrement de la ligne téléphonique est Personnelle.</summary>
+    </member>
+    <member name="F:Windows.Phone.Notification.Management.PhoneLineRegistrationState.Roaming">
+      <summary>L'état d'enregistrement de la ligne téléphonique est Itinérante.</summary>
+    </member>
+    <member name="T:Windows.Phone.Notification.Management.PhoneMediaType">
+      <summary>Représente le type de média sur la ligne téléphonique : audio uniquement ou audio et vidéo.</summary>
+    </member>
+    <member name="F:Windows.Phone.Notification.Management.PhoneMediaType.AudioOnly">
+      <summary>Le média sur la ligne téléphonique est réservé à l'audio.</summary>
+    </member>
+    <member name="F:Windows.Phone.Notification.Management.PhoneMediaType.AudioVideo">
+      <summary>Le média sur la ligne téléphonique est pour l'audio et la vidéo.</summary>
+    </member>
+    <member name="T:Windows.Phone.Notification.Management.PhoneNotificationTriggerDetails">
+      <summary>Représente toutes les informations nécessaires pour afficher une notification de téléphone sur un accessoire.</summary>
+    </member>
+    <member name="P:Windows.Phone.Notification.Management.PhoneNotificationTriggerDetails.AccessoryNotificationType">
+      <summary>AccessoryNotificationType qui spécifie le type de notification reçue. Pour les notifications de téléphone, cette valeur est AccessoryNotificationType.Phone.</summary>
+      <returns>AccessoryNotificationType.Phone</returns>
+    </member>
+    <member name="P:Windows.Phone.Notification.Management.PhoneNotificationTriggerDetails.AppDisplayName">
+      <summary>Représente le nom d'affichage de l'application qui a généré la notification de téléphone.</summary>
+      <returns>Nom d'affichage de l'application qui a généré la notification de téléphone.</returns>
+    </member>
+    <member name="P:Windows.Phone.Notification.Management.PhoneNotificationTriggerDetails.AppId">
+      <summary>ID de l’application associée à la notification, le cas échéant. Ce n'est pas l'ID de l'application figurant dans le magasin. C'est l'ID de l'instance d'application sur le téléphone qui identifie de manière unique l'application.</summary>
+      <returns>Chaîne de caractères qui spécifie l'ID de l'application.</returns>
+    </member>
+    <member name="P:Windows.Phone.Notification.Management.PhoneNotificationTriggerDetails.CallDetails">
+      <summary>Représente les détails d'un appel téléphonique qui a généré la notification de téléphone.</summary>
+      <returns>Détails d'un appel téléphonique.</returns>
+    </member>
+    <member name="P:Windows.Phone.Notification.Management.PhoneNotificationTriggerDetails.PhoneLineChangedId">
+      <summary>Représente l'ID d'instance de la ligne téléphonique modifiée qui a généré la notification.</summary>
+      <returns>Représente l'ID de la nouvelle ligne téléphonique.</returns>
+    </member>
+    <member name="P:Windows.Phone.Notification.Management.PhoneNotificationTriggerDetails.PhoneNotificationType">
+      <summary>Valeur de l'énumération PhoneNotificationType qui indique le type de la notification reçue.</summary>
+      <returns>Pour obtenir la liste des valeurs possibles, consultez PhoneNotificationType.</returns>
+    </member>
+    <member name="P:Windows.Phone.Notification.Management.PhoneNotificationTriggerDetails.StartedProcessing">
+      <summary>Spécifie si l'accessoire a commencé à traiter la notification de téléphone.</summary>
+      <returns>**true** si l'accessoire a commencé à traiter la notification téléphonique ; sinon, **false**.</returns>
+    </member>
+    <member name="P:Windows.Phone.Notification.Management.PhoneNotificationTriggerDetails.TimeCreated">
+      <summary>Représente la date et l'heure auxquelles la notification d'appel téléphonique a été créée.</summary>
+      <returns>Date et heure auxquelles la notification a été créée.</returns>
+    </member>
+    <member name="T:Windows.Phone.Notification.Management.PhoneNotificationType">
+      <summary>Représente le type de notification envoyé à l'application pour accessoire.</summary>
+    </member>
+    <member name="F:Windows.Phone.Notification.Management.PhoneNotificationType.CallChanged">
+      <summary>La notification concerne un appel modifié.</summary>
+    </member>
+    <member name="F:Windows.Phone.Notification.Management.PhoneNotificationType.LineChanged">
+      <summary>La notification concerne une ligne téléphonique modifiée.</summary>
+    </member>
+    <member name="F:Windows.Phone.Notification.Management.PhoneNotificationType.NewCall">
+      <summary>La notification concerne un nouvel appel.</summary>
+    </member>
+    <member name="F:Windows.Phone.Notification.Management.PhoneNotificationType.PhoneCallAudioEndpointChanged">
+      <summary>La notification concerne un changement du point de terminaison audio : mains libres, haut-parleur ou téléphone.</summary>
+    </member>
+    <member name="F:Windows.Phone.Notification.Management.PhoneNotificationType.PhoneMuteChanged">
+      <summary>La notification concerne le changement de l'état muet du téléphone.</summary>
+    </member>
+    <member name="T:Windows.Phone.Notification.Management.PlaybackCapability">
+      <summary>Représente le type de fonctionnalité de lecture du média.</summary>
+    </member>
+    <member name="F:Windows.Phone.Notification.Management.PlaybackCapability.ChannelDown">
+      <summary>Fonctionnalité de lecture du canal vers le bas.</summary>
+    </member>
+    <member name="F:Windows.Phone.Notification.Management.PlaybackCapability.ChannelUp">
+      <summary>Fonctionnalité de lecture du canal vers le haut</summary>
+    </member>
+    <member name="F:Windows.Phone.Notification.Management.PlaybackCapability.FastForward">
+      <summary>Fonctionnalité de lecture rapide.</summary>
+    </member>
+    <member name="F:Windows.Phone.Notification.Management.PlaybackCapability.Next">
+      <summary>Fonctionnalité de lecture suivante.</summary>
+    </member>
+    <member name="F:Windows.Phone.Notification.Management.PlaybackCapability.None">
+      <summary>Aucune fonctionnalité de lecture.</summary>
+    </member>
+    <member name="F:Windows.Phone.Notification.Management.PlaybackCapability.Pause">
+      <summary>Fonctionnalité de lecture Pause.</summary>
+    </member>
+    <member name="F:Windows.Phone.Notification.Management.PlaybackCapability.Play">
+      <summary>Fonctionnalité de lecture Lecture.</summary>
+    </member>
+    <member name="F:Windows.Phone.Notification.Management.PlaybackCapability.Previous">
+      <summary>Fonction de lecture précédente.</summary>
+    </member>
+    <member name="F:Windows.Phone.Notification.Management.PlaybackCapability.Record">
+      <summary>Fonctionnalité de lecture d'enregistrement.</summary>
+    </member>
+    <member name="F:Windows.Phone.Notification.Management.PlaybackCapability.Rewind">
+      <summary>Fonctionnalité de lecture de rembobinage.</summary>
+    </member>
+    <member name="F:Windows.Phone.Notification.Management.PlaybackCapability.Stop">
+      <summary>Arrête la fonctionnalité de lecture.</summary>
+    </member>
+    <member name="T:Windows.Phone.Notification.Management.PlaybackCommand">
+      <summary>Représente la commande de lecture de média à exécuter.</summary>
+    </member>
+    <member name="F:Windows.Phone.Notification.Management.PlaybackCommand.ChannelDown">
+      <summary>Exécute la commande lecture du canal vers le bas.</summary>
+    </member>
+    <member name="F:Windows.Phone.Notification.Management.PlaybackCommand.ChannelUp">
+      <summary>Exécute la commande de lecture du canal vers le haut.</summary>
+    </member>
+    <member name="F:Windows.Phone.Notification.Management.PlaybackCommand.FastForward">
+      <summary>Exécute la commande de lecture rapide.</summary>
+    </member>
+    <member name="F:Windows.Phone.Notification.Management.PlaybackCommand.Next">
+      <summary>Exécute la commande Suivant.</summary>
+    </member>
+    <member name="F:Windows.Phone.Notification.Management.PlaybackCommand.Pause">
+      <summary>Exécute la commande de pause.</summary>
+    </member>
+    <member name="F:Windows.Phone.Notification.Management.PlaybackCommand.Play">
+      <summary>Exécute la commande de lecture.</summary>
+    </member>
+    <member name="F:Windows.Phone.Notification.Management.PlaybackCommand.Previous">
+      <summary>Execute la commande Précédent.</summary>
+    </member>
+    <member name="F:Windows.Phone.Notification.Management.PlaybackCommand.Record">
+      <summary>Exécute la commande d'enregistrement.</summary>
+    </member>
+    <member name="F:Windows.Phone.Notification.Management.PlaybackCommand.Rewind">
+      <summary>Exécute la commande de rembobinage.</summary>
+    </member>
+    <member name="F:Windows.Phone.Notification.Management.PlaybackCommand.Stop">
+      <summary>Exécute la commande d'arrêt.</summary>
+    </member>
+    <member name="T:Windows.Phone.Notification.Management.PlaybackStatus">
+      <summary>Représente l'état de lecture du média.</summary>
+    </member>
+    <member name="F:Windows.Phone.Notification.Management.PlaybackStatus.None">
+      <summary>Il n'y a aucun média.</summary>
+    </member>
+    <member name="F:Windows.Phone.Notification.Management.PlaybackStatus.Paused">
+      <summary>La lecture de la piste du média est suspendue.</summary>
+    </member>
+    <member name="F:Windows.Phone.Notification.Management.PlaybackStatus.Playing">
+      <summary>La piste du média est en cours de lecture.</summary>
+    </member>
+    <member name="F:Windows.Phone.Notification.Management.PlaybackStatus.Stopped">
+      <summary>La lecture de la piste du média s'est arrêtée.</summary>
+    </member>
+    <member name="F:Windows.Phone.Notification.Management.PlaybackStatus.TrackChanged">
+      <summary>La piste du média a changé.</summary>
+    </member>
+    <member name="T:Windows.Phone.Notification.Management.ReminderNotificationTriggerDetails">
+      <summary>Représente toutes les informations nécessaires pour afficher une notification de rappel sur un accessoire.</summary>
+    </member>
+    <member name="P:Windows.Phone.Notification.Management.ReminderNotificationTriggerDetails.AccessoryNotificationType">
+      <summary>Spécifie le type de notification reçu. Pour les rappels, cette valeur est AccessoryNotificationType.Reminder.</summary>
+      <returns>AccessoryNotificationType.Reminder</returns>
+    </member>
+    <member name="P:Windows.Phone.Notification.Management.ReminderNotificationTriggerDetails.AppDisplayName">
+      <summary>Nom d'affichage de l'application qui a généré la notification.</summary>
+      <returns>Nom d'affichage de l'application qui a généré la notification.</returns>
+    </member>
+    <member name="P:Windows.Phone.Notification.Management.ReminderNotificationTriggerDetails.AppId">
+      <summary>ID d'instance de l'application qui a généré la notification.</summary>
+      <returns>ID d'instance de l'application qui a généré la notification.</returns>
+    </member>
+    <member name="P:Windows.Phone.Notification.Management.ReminderNotificationTriggerDetails.Appointment">
+      <summary>Objet Appointment qui contient des informations supplémentaires sur le rappel.</summary>
+      <returns>Pour plus d'informations, voir Appointment.</returns>
+    </member>
+    <member name="P:Windows.Phone.Notification.Management.ReminderNotificationTriggerDetails.Description">
+      <summary>Description du rappel.</summary>
+      <returns>Description du rappel.</returns>
+    </member>
+    <member name="P:Windows.Phone.Notification.Management.ReminderNotificationTriggerDetails.Details">
+      <summary>Informations supplémentaires pour le rappel.</summary>
+      <returns>Chaîne qui contient des informations supplémentaires pour le rappel.</returns>
+    </member>
+    <member name="P:Windows.Phone.Notification.Management.ReminderNotificationTriggerDetails.InstanceId">
+      <summary>Permet d'obtenir un identificateur qui lève l’ambiguïté entre plusieurs instances de rappels.</summary>
+      <returns>Identificateur de chaîne qui lève l’ambiguïté entre plusieurs instances de rappels.</returns>
+    </member>
+    <member name="P:Windows.Phone.Notification.Management.ReminderNotificationTriggerDetails.ReminderId">
+      <summary>ID unique du rappel correspondant pour la notification.</summary>
+      <returns>ID unique du rappel correspondant pour la notification.</returns>
+    </member>
+    <member name="P:Windows.Phone.Notification.Management.ReminderNotificationTriggerDetails.ReminderState">
+      <summary>Valeur ReminderState qui représente l'état du rappel.</summary>
+      <returns>Pour obtenir la liste des valeurs possibles, consultez ReminderState.</returns>
+    </member>
+    <member name="P:Windows.Phone.Notification.Management.ReminderNotificationTriggerDetails.StartedProcessing">
+      <summary>Spécifie si l'accessoire a commencé à traiter la notification.</summary>
+      <returns>**true** si l'accessoire a commencé à traiter la notification ; sinon, **false**</returns>
+    </member>
+    <member name="P:Windows.Phone.Notification.Management.ReminderNotificationTriggerDetails.TimeCreated">
+      <summary>Date et heure auxquelles la notification a été créée.</summary>
+      <returns>Date et heure auxquelles la notification a été créée.</returns>
+    </member>
+    <member name="P:Windows.Phone.Notification.Management.ReminderNotificationTriggerDetails.Timestamp">
+      <summary>Représente la date et l'heure auxquelles la notification a été transmise par le service Accessory Manager à l'application accessoire.</summary>
+      <returns>Représente la date et l'heure auxquelles la notification a été transmise par le service Accessory Manager à l'application accessoire.</returns>
+    </member>
+    <member name="P:Windows.Phone.Notification.Management.ReminderNotificationTriggerDetails.Title">
+      <summary>Titre du rappel.</summary>
+      <returns>Titre du rappel.</returns>
+    </member>
+    <member name="T:Windows.Phone.Notification.Management.ReminderState">
+      <summary>Représente l'état du rappel : actif, répété ou fermé.</summary>
+    </member>
+    <member name="F:Windows.Phone.Notification.Management.ReminderState.Active">
+      <summary>Le rappel est actif.</summary>
+    </member>
+    <member name="F:Windows.Phone.Notification.Management.ReminderState.Dismissed">
+      <summary>Le rappel est fermé.</summary>
+    </member>
+    <member name="F:Windows.Phone.Notification.Management.ReminderState.Snoozed">
+      <summary>Le rappel est répété.</summary>
+    </member>
+    <member name="T:Windows.Phone.Notification.Management.SpeedDialEntry">
+      <summary>Représente une entrée dans une liste de numéros favoris.</summary>
+    </member>
+    <member name="P:Windows.Phone.Notification.Management.SpeedDialEntry.ContactName">
+      <summary>Représente le nom du contact de l'entrée.</summary>
+      <returns>Chaîne contenant le nom du contact.</returns>
+    </member>
+    <member name="P:Windows.Phone.Notification.Management.SpeedDialEntry.NumberType">
+      <summary>Représente le type de numéro de l'entrée.</summary>
+      <returns>Chaîne contenant le type de numéro.</returns>
+    </member>
+    <member name="P:Windows.Phone.Notification.Management.SpeedDialEntry.PhoneNumber">
+      <summary>Représente le numéro de téléphone de l'entrée de numérotation rapide.</summary>
+      <returns>Chaîne contenant le numéro de téléphone de l'entrée de numérotation rapide.</returns>
+    </member>
+    <member name="T:Windows.Phone.Notification.Management.TextResponse">
+      <summary>Obtient un objet qui contient un identificateur unique et une réponse sous forme de texte de chaîne, prédéfinie sur le téléphone. Ces messages peuvent éventuellement être envoyés lorsque l'utilisateur rejette un appel téléphonique sur l'accessoire. Ces objets sont envoyés comme faisant partie de l'objet PhoneNotificationTriggerDetails et sont toujours à jour à compter de l'appel téléphonique.</summary>
+    </member>
+    <member name="P:Windows.Phone.Notification.Management.TextResponse.Content">
+      <summary>Obtient une chaîne représentant une réponse texte prédéfinie sur le téléphone.</summary>
+      <returns>Chaîne représentant une réponse texte prédéfinie sur le téléphone.</returns>
+    </member>
+    <member name="P:Windows.Phone.Notification.Management.TextResponse.Id">
+      <summary>Obtient l'identificateur qui identifie la réponse de texte de manière unique.</summary>
+      <returns>Identificateur qui identifie de manière unique la réponse texte.</returns>
+    </member>
+    <member name="T:Windows.Phone.Notification.Management.ToastNotificationTriggerDetails">
+      <summary>Représente toutes les informations nécessaires pour afficher une notification toast sur un accessoire.</summary>
+    </member>
+    <member name="P:Windows.Phone.Notification.Management.ToastNotificationTriggerDetails.AccessoryNotificationType">
+      <summary>AccessoryNotificationType qui spécifie le type de notification reçue. Pour les notifications toast, cette valeur est AccessoryNotificationType.Toast.</summary>
+      <returns>AccessoryNotificationType.Toast</returns>
+    </member>
+    <member name="P:Windows.Phone.Notification.Management.ToastNotificationTriggerDetails.AppDisplayName">
+      <summary>Cette propriété représente le nom d'affichage de l'application qui a généré la notification.</summary>
+      <returns>Nom d'affichage de l'application qui a généré la notification.</returns>
+    </member>
+    <member name="P:Windows.Phone.Notification.Management.ToastNotificationTriggerDetails.AppId">
+      <summary>ID d'instance de l'application qui a généré la notification.</summary>
+      <returns>ID d'instance de l'application qui a généré la notification.</returns>
+    </member>
+    <member name="P:Windows.Phone.Notification.Management.ToastNotificationTriggerDetails.InstanceId">
+      <summary>Représente l'ID unique de la notification toast.</summary>
+      <returns>Chaîne contenant l'identificateur.</returns>
+    </member>
+    <member name="P:Windows.Phone.Notification.Management.ToastNotificationTriggerDetails.StartedProcessing">
+      <summary>Spécifie si l'accessoire a commencé à traiter la notification toast.</summary>
+      <returns>**true** si l'accessoire a commencé à traiter la notification toast ; sinon, **false**.</returns>
+    </member>
+    <member name="P:Windows.Phone.Notification.Management.ToastNotificationTriggerDetails.SuppressPopup">
+      <summary>Indique si la notification toast est supprimée. Les notifications toast supprimées génèrent des notifications dans le centre de notifications mais n'apparaissent pas sur le téléphone.</summary>
+      <returns>**true** si la notification toast est supprimée ; sinon, **false**.</returns>
+    </member>
+    <member name="P:Windows.Phone.Notification.Management.ToastNotificationTriggerDetails.Text1">
+      <summary>Représente un champ de texte qui contient des données de notification toast.</summary>
+      <returns>Texte de la notification toast.</returns>
+    </member>
+    <member name="P:Windows.Phone.Notification.Management.ToastNotificationTriggerDetails.Text2">
+      <summary>Représente un champ de texte qui contient des données de notification toast.</summary>
+      <returns>Texte de la notification toast.</returns>
+    </member>
+    <member name="P:Windows.Phone.Notification.Management.ToastNotificationTriggerDetails.Text3">
+      <summary>Représente un champ de texte qui contient des données de notification toast.</summary>
+      <returns>Texte de la notification toast.</returns>
+    </member>
+    <member name="P:Windows.Phone.Notification.Management.ToastNotificationTriggerDetails.Text4">
+      <summary>Représente un champ de texte qui contient des données de notification toast.</summary>
+      <returns>Texte de la notification toast.</returns>
+    </member>
+    <member name="P:Windows.Phone.Notification.Management.ToastNotificationTriggerDetails.TimeCreated">
+      <summary>Représente la date et heure auxquelles la notification a été créée.</summary>
+      <returns>Date et heure auxquelles la notification a été créée.</returns>
+    </member>
+    <member name="T:Windows.Phone.Notification.Management.VibrateState">
+      <summary>Représente l'état des modes vibreur et sonnerie du téléphone.</summary>
+    </member>
+    <member name="F:Windows.Phone.Notification.Management.VibrateState.RingerOffVibrateOff">
+      <summary>Les modes vibreur et sonnerie sont désactivés.</summary>
+    </member>
+    <member name="F:Windows.Phone.Notification.Management.VibrateState.RingerOffVibrateOn">
+      <summary>La sonnerie est désactivée et le mode vibreur est activé.</summary>
+    </member>
+    <member name="F:Windows.Phone.Notification.Management.VibrateState.RingerOnVibrateOff">
+      <summary>La sonnerie est activée et le mode vibreur est désactivé.</summary>
+    </member>
+    <member name="F:Windows.Phone.Notification.Management.VibrateState.RingerOnVibrateOn">
+      <summary>Les modes vibreur et sonnerie sont activés.</summary>
+    </member>
+    <member name="T:Windows.Phone.Notification.Management.VolumeInfo">
+      <summary>Représente l'état du volume du téléphone.</summary>
+    </member>
+    <member name="P:Windows.Phone.Notification.Management.VolumeInfo.CallVolume">
+      <summary>Permet d'obtenir le volume d'appel du téléphone.</summary>
+      <returns>Valeur numérique qui représente le volume d'appel du téléphone.</returns>
+    </member>
+    <member name="P:Windows.Phone.Notification.Management.VolumeInfo.IsMuted">
+      <summary>Permet d'obtenir une valeur indiquant si le son du téléphone est désactivé.</summary>
+      <returns>« True » si le son du téléphone est désactivé ; sinon, « false ».</returns>
+    </member>
+    <member name="P:Windows.Phone.Notification.Management.VolumeInfo.IsVibrateEnabled">
+      <summary>Permet d'obtenir une valeur indiquant si le mode vibreur est activé pour le téléphone.</summary>
+      <returns>« True » si le mode vibreur est activé pour le téléphone ; sinon, « false ».</returns>
+    </member>
+    <member name="P:Windows.Phone.Notification.Management.VolumeInfo.MediaVolume">
+      <summary>Obtient le volume du média du téléphone.</summary>
+      <returns>Valeur numérique qui représente le volume du média du téléphone.</returns>
+    </member>
+    <member name="P:Windows.Phone.Notification.Management.VolumeInfo.SystemVolume">
+      <summary>Permet d'obtenir le volume système du téléphone.</summary>
+      <returns>Valeur numérique qui représente le volume système du téléphone.</returns>
+    </member>
+    <member name="T:Windows.Phone.PersonalInformation.ContactAddress">
+      <summary>Représente une adresse postale pour les objets StoredContact.</summary>
+    </member>
+    <member name="M:Windows.Phone.PersonalInformation.ContactAddress.#ctor">
+      <summary>Initialise une nouvelle instance de la classe ContactAddress.</summary>
+    </member>
+    <member name="P:Windows.Phone.PersonalInformation.ContactAddress.Country">
+      <summary>Obtient ou définit le pays associé à une adresse de contact.</summary>
+      <returns>Pays associé à une adresse de contact.</returns>
+    </member>
+    <member name="P:Windows.Phone.PersonalInformation.ContactAddress.Locality">
+      <summary>Obtient ou définit la localité d'une adresse de contact.</summary>
+      <returns>La localité de l'adresse d'un contact.</returns>
+    </member>
+    <member name="P:Windows.Phone.PersonalInformation.ContactAddress.PostalCode">
+      <summary>Obtient ou définit un code postal associé à une adresse de contact.</summary>
+      <returns>Code postal associé à une adresse de contact.</returns>
+    </member>
+    <member name="P:Windows.Phone.PersonalInformation.ContactAddress.Region">
+      <summary>Obtient ou définit la région associée à une adresse de contact.</summary>
+      <returns>Région associée à une adresse de contact.</returns>
+    </member>
+    <member name="P:Windows.Phone.PersonalInformation.ContactAddress.StreetAddress">
+      <summary>Obtient ou définit l'adresse postale associée à une adresse de contact.</summary>
+      <returns>Adresse postale associée à une adresse de contact.</returns>
+    </member>
+    <member name="T:Windows.Phone.PersonalInformation.ContactChangeRecord">
+      <summary>Représente une modification des informations de contact qui s'est produite entre les révisions.</summary>
+    </member>
+    <member name="P:Windows.Phone.PersonalInformation.ContactChangeRecord.ChangeType">
+      <summary>Obtient le type de modification apportée.</summary>
+      <returns>Type de modification apportée.</returns>
+    </member>
+    <member name="P:Windows.Phone.PersonalInformation.ContactChangeRecord.Id">
+      <summary>Obtient l'identificateur local du contact qui a changé.</summary>
+      <returns>Identificateur local du contact qui a changé.</returns>
+    </member>
+    <member name="P:Windows.Phone.PersonalInformation.ContactChangeRecord.RemoteId">
+      <summary>Obtient l'identificateur distant du contact qui a changé.</summary>
+      <returns>Identificateur distant du contact qui a changé.</returns>
+    </member>
+    <member name="P:Windows.Phone.PersonalInformation.ContactChangeRecord.RevisionNumber">
+      <summary>Obtient le numéro de révision associé à la modification des données de contact.</summary>
+      <returns>Numéro de révision associé à la modification des données de contact.</returns>
+    </member>
+    <member name="T:Windows.Phone.PersonalInformation.ContactChangeType">
+      <summary>Indique le type de modification représenté par un ContactChangeRecord.</summary>
+    </member>
+    <member name="F:Windows.Phone.PersonalInformation.ContactChangeType.Created">
+      <summary>Le contact a été créé.</summary>
+    </member>
+    <member name="F:Windows.Phone.PersonalInformation.ContactChangeType.Deleted">
+      <summary>Le contact a été supprimé.</summary>
+    </member>
+    <member name="F:Windows.Phone.PersonalInformation.ContactChangeType.Modified">
+      <summary>Le contact a été modifié.</summary>
+    </member>
+    <member name="T:Windows.Phone.PersonalInformation.ContactInformation">
+      <summary>Représente un contact sans association à un magasin de contacts.</summary>
+    </member>
+    <member name="M:Windows.Phone.PersonalInformation.ContactInformation.#ctor">
+      <summary>Initialise une nouvelle instance de la classe ContactInformation.</summary>
+    </member>
+    <member name="P:Windows.Phone.PersonalInformation.ContactInformation.DisplayName">
+      <summary>Obtient ou définit le nom d'affichage d'un contact.</summary>
+      <returns>Nom complet d'un contact.</returns>
+    </member>
+    <member name="P:Windows.Phone.PersonalInformation.ContactInformation.DisplayPicture">
+      <summary>Obtient l'image affichée d'un contact.</summary>
+      <returns>Flux contenant les données d'image.</returns>
+    </member>
+    <member name="P:Windows.Phone.PersonalInformation.ContactInformation.FamilyName">
+      <summary>Obtient ou définit le nom de famille d'un contact.</summary>
+      <returns>Nom de famille d'un contact.</returns>
+    </member>
+    <member name="P:Windows.Phone.PersonalInformation.ContactInformation.GivenName">
+      <summary>Obtient ou définit le nom donné d'un contact.</summary>
+      <returns>Nom donné d'un contact.</returns>
+    </member>
+    <member name="P:Windows.Phone.PersonalInformation.ContactInformation.HonorificPrefix">
+      <summary>Obtient ou définit le préfixe honorifique d'un contact.</summary>
+      <returns>Préfixe honorifique d'un contact.</returns>
+    </member>
+    <member name="P:Windows.Phone.PersonalInformation.ContactInformation.HonorificSuffix">
+      <summary>Obtient ou définit le suffixe honorifique d'un contact.</summary>
+      <returns>Suffixe honorifique d'un contact.</returns>
+    </member>
+    <member name="M:Windows.Phone.PersonalInformation.ContactInformation.GetDisplayPictureAsync">
+      <summary>Obtient l'image affichée d'un contact.</summary>
+      <returns>Flux contenant les données d'image.</returns>
+    </member>
+    <member name="M:Windows.Phone.PersonalInformation.ContactInformation.GetPropertiesAsync">
+      <summary>Obtient les propriétés d'un contact en tant que mappage de paires nom/valeur.</summary>
+      <returns>Lorsque cette méthode est terminée, elle retourne une carte/un dictionnaire de paires nom/valeur (nom de chaîne, valeurs non typées). Si vous utilisez la programmation asynchrone, le type de résultat est une carte ou un dictionnaire de ces paires clé-valeur, indexées par le nom de chaîne. (Vous pouvez utiliser les API de IMap&lt;Platform::String,Platform::Object&gt; pour C++, les API de IDictionary&lt;String,Object&gt; pour .NET.)</returns>
+    </member>
+    <member name="M:Windows.Phone.PersonalInformation.ContactInformation.ParseVcardAsync(Windows.Storage.Streams.IInputStream)">
+      <summary>Analyse une vCard à partir d'un flux et retourne un objet ContactInformation rempli.</summary>
+      <param name="vcard">Flux contenant les données vCard.</param>
+      <returns>Lorsque cette méthode est terminée, elle retourne un objet ContactInformation rempli avec les données de la carte de visite (vCard). Si vous utilisez la programmation asynchrone, le type du résultat est ContactInformation.</returns>
+    </member>
+    <member name="M:Windows.Phone.PersonalInformation.ContactInformation.SetDisplayPictureAsync(Windows.Storage.Streams.IInputStream)">
+      <summary>Définit l'image d'affichage d'un contact à l'aide d'un objet [IInputStream](https://docs.microsoft.com/previous-versions/hh438387(v=vs.85)).</summary>
+      <param name="stream">Flux contenant les données d'image.</param>
+      <returns>Action asynchrone. Si vous utilisez la programmation asynchrone, le type du résultat est **void**.</returns>
+    </member>
+    <member name="M:Windows.Phone.PersonalInformation.ContactInformation.ToVcardAsync">
+      <summary>Récupère une représentation vCard du contact à l'aide de la version 3.0 du format vCard.</summary>
+      <returns>Lorsque cette méthode se termine, elle retourne un flux contenant les données de cartes de visite (vCard). Si vous utilisez la programmation asynchrone, le type de résultat est IRandomAccessStream, qui correspond aux données.</returns>
+    </member>
+    <member name="M:Windows.Phone.PersonalInformation.ContactInformation.ToVcardAsync(Windows.Phone.PersonalInformation.VCardFormat)">
+      <summary>Récupère une représentation vCard du contact à l'aide du format vCard spécifié.</summary>
+      <param name="format">Format qui sera utilisé par la carte de visite (vCard) retournée.</param>
+      <returns>Lorsque cette méthode se termine, elle retourne un flux contenant les données de cartes de visite (vCard). Si vous utilisez la programmation asynchrone, le type de résultat est IRandomAccessStream, qui correspond aux données.</returns>
+    </member>
+    <member name="T:Windows.Phone.PersonalInformation.ContactQueryOptions">
+      <summary>Représente des options de requête pour récupérer des contacts à l'aide de CreateContactQuery.</summary>
+    </member>
+    <member name="M:Windows.Phone.PersonalInformation.ContactQueryOptions.#ctor">
+      <summary>Initialise une nouvelle instance de la classe ContactQueryOptions.</summary>
+    </member>
+    <member name="P:Windows.Phone.PersonalInformation.ContactQueryOptions.DesiredFields">
+      <summary>Obtient ou définit la liste des propriétés qui doivent être retournées avec chaque contact.</summary>
+      <returns>Liste des propriétés qui doivent être retournées avec chaque contact.</returns>
+    </member>
+    <member name="P:Windows.Phone.PersonalInformation.ContactQueryOptions.OrderBy">
+      <summary>Obtient ou définit le champ utilisé pour classer les résultats de la requête de contact.</summary>
+      <returns>Champ utilisé pour classer les résultats de la requête de contact, comme valeur de l'énumération.</returns>
+    </member>
+    <member name="T:Windows.Phone.PersonalInformation.ContactQueryResult">
+      <summary>Représente le résultat d'une requête de contact.</summary>
+    </member>
+    <member name="M:Windows.Phone.PersonalInformation.ContactQueryResult.GetContactCountAsync">
+      <summary>Obtient le nombre de contacts dans le magasin de contacts.</summary>
+      <returns>Lorsque cette méthode s'exécute correctement, elle retourne le nombre de contacts contenus dans le magasin de contacts. Si vous utilisez la programmation asynchrone, le type de résultat est un entier non signé.</returns>
+    </member>
+    <member name="M:Windows.Phone.PersonalInformation.ContactQueryResult.GetContactsAsync">
+      <summary>Récupère des contacts du magasin de contacts.</summary>
+      <returns>Lorsque cette méthode est terminée, elle retourne un objet [IVectorView](https://docs.microsoft.com/previous-versions/br224594(v=vs.85)) contenant des objets StoredContact. Si vous utilisez une programmation asynchrone, le type de résultat est une liste ou un vecteur en lecture seule d'éléments StoredContact (vous pouvez utiliser les API d'IVectorView&lt;StoredContact&gt; pour C++, les API de IReadOnlyList&lt;StoredContact&gt; pour .NET).</returns>
+    </member>
+    <member name="M:Windows.Phone.PersonalInformation.ContactQueryResult.GetContactsAsync(System.UInt32,System.UInt32)">
+      <summary>Récupère des contacts du magasin de contacts en fonction de l'index de départ spécifié et du nombre d'éléments à retourner.</summary>
+      <param name="startIndex">Index du premier contact à récupérer.</param>
+      <param name="maxNumberOfItems">Nombre de contacts à récupérer.</param>
+      <returns>Lorsque cette méthode est terminée, elle retourne un objet [IVectorView](https://docs.microsoft.com/previous-versions/br224594(v=vs.85)) contenant des objets StoredContact. Si vous utilisez une programmation asynchrone, le type de résultat est une liste ou un vecteur en lecture seule d'éléments StoredContact (vous pouvez utiliser les API d'IVectorView&lt;StoredContact&gt; pour C++, les API de IReadOnlyList&lt;StoredContact&gt; pour .NET).</returns>
+    </member>
+    <member name="M:Windows.Phone.PersonalInformation.ContactQueryResult.GetCurrentQueryOptions">
+      <summary>Obtient les options de requête actuelles.</summary>
+      <returns>Options de requête actuelles.</returns>
+    </member>
+    <member name="T:Windows.Phone.PersonalInformation.ContactQueryResultOrdering">
+      <summary>Spécifie l'ordre dans lequel les contacts sont retournés à partir d'un appel CreateContactQuery.</summary>
+    </member>
+    <member name="F:Windows.Phone.PersonalInformation.ContactQueryResultOrdering.FamilyNameGivenName">
+      <summary>Triez par nom de famille puis par nom donné.</summary>
+    </member>
+    <member name="F:Windows.Phone.PersonalInformation.ContactQueryResultOrdering.GivenNameFamilyName">
+      <summary>Triez par nom donné puis par nom de famille.</summary>
+    </member>
+    <member name="F:Windows.Phone.PersonalInformation.ContactQueryResultOrdering.SystemDefault">
+      <summary>Classement par défaut utilisé par le système d'exploitation.</summary>
+    </member>
+    <member name="T:Windows.Phone.PersonalInformation.ContactStore">
+      <summary>Représente le magasin de contacts personnalisé pour une application Windows Phone.</summary>
+    </member>
+    <member name="P:Windows.Phone.PersonalInformation.ContactStore.RevisionNumber">
+      <summary>Obtient le numéro de révision du magasin de contacts.</summary>
+      <returns>Numéro de révision du magasin de contacts.</returns>
+    </member>
+    <member name="M:Windows.Phone.PersonalInformation.ContactStore.CreateContactQuery">
+      <summary>Crée une requête de contact avec les options par défaut.</summary>
+      <returns>Objet ContactQueryResult contenant les contacts issus du magasin.</returns>
+    </member>
+    <member name="M:Windows.Phone.PersonalInformation.ContactStore.CreateContactQuery(Windows.Phone.PersonalInformation.ContactQueryOptions)">
+      <summary>Crée une requête de contact avec les options personnalisées.</summary>
+      <param name="options">Options de requête.</param>
+      <returns>Objet ContactQueryResult contenant les contacts issus du magasin.</returns>
+    </member>
+    <member name="M:Windows.Phone.PersonalInformation.ContactStore.CreateMeContactAsync(System.String)">
+      <summary>Établit le fait que le contact spécifié représente l'utilisateur actuel connecté du périphérique.</summary>
+      <param name="id">ID du contact qui représente l'utilisateur de l'appareil connecté actuellement.</param>
+      <returns>Opération asynchrone qui retourne un objet StoredContact une fois l'opération terminée correctement. Si vous utilisez la programmation asynchrone, le type du résultat est StoredContact.</returns>
+    </member>
+    <member name="M:Windows.Phone.PersonalInformation.ContactStore.CreateOrOpenAsync">
+      <summary>Ouvre le magasin de contacts personnalisé de l'application, ce qui crée le magasin avec les options par défaut s'il n'existe pas déjà.</summary>
+      <returns>Lorsque cette méthode est terminée, elle retourne un objet ContactStore représentant le magasin de contacts personnalisé de l'application. Si vous utilisez la programmation asynchrone, le type du résultat est ContactStore.</returns>
+    </member>
+    <member name="M:Windows.Phone.PersonalInformation.ContactStore.CreateOrOpenAsync(Windows.Phone.PersonalInformation.ContactStoreSystemAccessMode,Windows.Phone.PersonalInformation.ContactStoreApplicationAccessMode)">
+      <summary>Ouvre le magasin de contacts personnalisé de l'application, ce qui crée le magasin avec les options spécifiées s'il n'existe pas déjà.</summary>
+      <param name="access">Indique si les contacts dans le magasin peuvent être modifiés par l'expérience de téléphone ou uniquement par l'application qui les a créés.</param>
+      <param name="sharing">Indique si toutes les propriétés des contacts dans le magasin sont visibles par les autres applications ou uniquement la description et l'image affichée.</param>
+      <returns>Lorsque cette méthode est terminée, elle retourne un objet ContactStore représentant le magasin de contacts personnalisé de l'application. Si vous utilisez la programmation asynchrone, le type du résultat est ContactStore.</returns>
+    </member>
+    <member name="M:Windows.Phone.PersonalInformation.ContactStore.DeleteAsync">
+      <summary>Supprime le magasin de contacts personnalisé de l'application.</summary>
+      <returns>Action asynchrone. Si vous utilisez la programmation asynchrone, le type du résultat est **void**.</returns>
+    </member>
+    <member name="M:Windows.Phone.PersonalInformation.ContactStore.DeleteContactAsync(System.String)">
+      <summary>Supprime le contact avec l'ID spécifié du magasin de contacts.</summary>
+      <param name="id">ID du contact à supprimer.</param>
+      <returns>Action asynchrone. Si vous utilisez la programmation asynchrone, le type du résultat est **void**.</returns>
+    </member>
+    <member name="M:Windows.Phone.PersonalInformation.ContactStore.FindContactByIdAsync(System.String)">
+      <summary>Récupère le contact avec l'ID spécifié du magasin de contacts.</summary>
+      <param name="id">ID du contact à récupérer.</param>
+      <returns>Lorsque cette méthode s'exécute, elle retourne la copie sous forme d'un objet StoredContact. Si vous utilisez la programmation asynchrone, le type du résultat est StoredContact.</returns>
+    </member>
+    <member name="M:Windows.Phone.PersonalInformation.ContactStore.FindContactByRemoteIdAsync(System.String)">
+      <summary>Récupère le contact avec l'ID distant spécifié du magasin de contacts.</summary>
+      <param name="id">ID distant défini par l'application du contact à récupérer.</param>
+      <returns>Lorsque cette méthode s'exécute, elle retourne la copie sous forme d'un objet StoredContact. Si vous utilisez la programmation asynchrone, le type du résultat est StoredContact.</returns>
+    </member>
+    <member name="M:Windows.Phone.PersonalInformation.ContactStore.GetChangesAsync(System.UInt64)">
+      <summary>Obtient la liste des modifications apportées au magasin de contacts associé au numéro de révision fourni.</summary>
+      <param name="baseRevisionNumber">Numéro de révision pour lequel les modifications doivent être récupérées.</param>
+      <returns>Lorsque cette méthode est terminée, elle retourne un objet [VectorView](https://docs.microsoft.com/previous-versions/br224594(v=vs.85)) contenant un objet ContactChangeRecord pour chaque modification associée au numéro de révision. Si vous utilisez une programmation asynchrone, le type de résultat est une liste ou un vecteur en lecture seule d'éléments ContactChangeRecord (vous pouvez utiliser les API de IVectorView&lt;ContactChangeRecord&gt; pour C++, les API de IReadOnlyList&lt;ContactChangeRecord&gt; pour .NET).</returns>
+    </member>
+    <member name="M:Windows.Phone.PersonalInformation.ContactStore.LoadExtendedPropertiesAsync">
+      <summary>Charge les propriétés étendues pour le magasin de contacts personnalisé de l'application.</summary>
+      <returns>Lorsque cette méthode est terminée, elle retourne une carte/un dictionnaire contenant les paires clé de chaîne/valeur non typée. Si vous utilisez la programmation asynchrone, le type de résultat est une carte ou un dictionnaire de ces paires clé-valeur, indexées par le nom de chaîne. (Vous pouvez utiliser les API de IMap&lt;Platform::String,Platform::Object&gt; pour C++, les API de IDictionary&lt;String,Object&gt; pour .NET.)</returns>
+    </member>
+    <member name="M:Windows.Phone.PersonalInformation.ContactStore.SaveExtendedPropertiesAsync(Windows.Foundation.Collections.IMapView{System.String,System.Object})">
+      <summary>Enregistre la liste fournie de paires nom/valeur dans les propriétés étendues du magasin de contacts personnalisé.</summary>
+      <param name="data">Jeu de propriétés nom/valeur à définir.</param>
+      <returns>Action asynchrone. Si vous utilisez la programmation asynchrone, le type du résultat est **void**.</returns>
+    </member>
+    <member name="T:Windows.Phone.PersonalInformation.ContactStoreApplicationAccessMode">
+      <summary>Spécifie le mode d'accès à l'application pour un magasin de contacts personnalisé créé avec CreateOrOpenAsync.</summary>
+    </member>
+    <member name="F:Windows.Phone.PersonalInformation.ContactStoreApplicationAccessMode.LimitedReadOnly">
+      <summary>D'autres applications peuvent uniquement lire la description et l'image affichée des contacts dans le magasin.</summary>
+    </member>
+    <member name="F:Windows.Phone.PersonalInformation.ContactStoreApplicationAccessMode.ReadOnly">
+      <summary>D'autres applications peuvent lire toutes les propriétés des contacts du magasin.</summary>
+    </member>
+    <member name="T:Windows.Phone.PersonalInformation.ContactStoreSystemAccessMode">
+      <summary>Spécifie le mode d'accès au système pour un magasin de contacts personnalisé créé avec CreateOrOpenAsync.</summary>
+    </member>
+    <member name="F:Windows.Phone.PersonalInformation.ContactStoreSystemAccessMode.ReadOnly">
+      <summary>Le système d'exploitation peut uniquement lire à partir du magasin de contacts.</summary>
+    </member>
+    <member name="F:Windows.Phone.PersonalInformation.ContactStoreSystemAccessMode.ReadWrite">
+      <summary>Le système d'exploitation peut modifier les contacts dans le magasin.</summary>
+    </member>
+    <member name="T:Windows.Phone.PersonalInformation.IContactInformation">
+      <summary>Définit l'interface pour les informations de contact.</summary>
+    </member>
+    <member name="P:Windows.Phone.PersonalInformation.IContactInformation.DisplayName">
+      <summary>Obtient ou définit le nom d'affichage d'un contact.</summary>
+      <returns>Nom complet d'un contact.</returns>
+    </member>
+    <member name="P:Windows.Phone.PersonalInformation.IContactInformation.DisplayPicture">
+      <summary>Obtient l'image affichée du contact.</summary>
+      <returns>Flux contenant les données d'image.</returns>
+    </member>
+    <member name="P:Windows.Phone.PersonalInformation.IContactInformation.FamilyName">
+      <summary>Obtient ou définit le nom de famille d'un contact.</summary>
+      <returns>Nom de famille d'un contact.</returns>
+    </member>
+    <member name="P:Windows.Phone.PersonalInformation.IContactInformation.GivenName">
+      <summary>Obtient ou définit le nom donné d'un contact.</summary>
+      <returns>Nom donné d'un contact.</returns>
+    </member>
+    <member name="P:Windows.Phone.PersonalInformation.IContactInformation.HonorificPrefix">
+      <summary>Obtient ou définit le préfixe honorifique d'un contact.</summary>
+      <returns>Préfixe honorifique d'un contact.</returns>
+    </member>
+    <member name="P:Windows.Phone.PersonalInformation.IContactInformation.HonorificSuffix">
+      <summary>Obtient ou définit le suffixe honorifique d'un contact.</summary>
+      <returns>Suffixe honorifique d'un contact.</returns>
+    </member>
+    <member name="M:Windows.Phone.PersonalInformation.IContactInformation.GetDisplayPictureAsync">
+      <summary>Obtient l'image affichée d'un contact.</summary>
+      <returns>Flux contenant les données d'image. Si vous utilisez une programmation asynchrone, le type de résultat est IRandomAccessStream, qui correspond aux données bitmap d'une image fournie sous forme de flux.</returns>
+    </member>
+    <member name="M:Windows.Phone.PersonalInformation.IContactInformation.GetPropertiesAsync">
+      <summary>Obtient les propriétés d'un contact en tant que mappage de paires nom/valeur.</summary>
+      <returns>Lorsque cette méthode est terminée, elle retourne une carte/un dictionnaire de paires nom de chaîne/valeur non typée.</returns>
+    </member>
+    <member name="M:Windows.Phone.PersonalInformation.IContactInformation.SetDisplayPictureAsync(Windows.Storage.Streams.IInputStream)">
+      <summary>Définit l'image d'affichage d'un contact à l'aide d'un objet [IInputStream](https://docs.microsoft.com/previous-versions/hh438387(v=vs.85)).</summary>
+      <param name="stream">Flux contenant les données d'image.</param>
+      <returns>Action asynchrone. Si vous utilisez la programmation asynchrone, le type du résultat est **void**.</returns>
+    </member>
+    <member name="M:Windows.Phone.PersonalInformation.IContactInformation.ToVcardAsync">
+      <summary>Récupère une représentation vCard du contact à l'aide de la version 3.0 du format vCard.</summary>
+      <returns>Lorsque cette méthode se termine, elle retourne un flux contenant les données de cartes de visite (vCard). Si vous utilisez la programmation asynchrone, le type de résultat est IRandomAccessStream, qui correspond aux données.</returns>
+    </member>
+    <member name="M:Windows.Phone.PersonalInformation.IContactInformation.ToVcardAsync(Windows.Phone.PersonalInformation.VCardFormat)">
+      <summary>Récupère une représentation vCard du contact à l'aide du format vCard spécifié.</summary>
+      <param name="format">Format qui sera utilisé par la carte de visite (vCard) retournée.</param>
+      <returns>Lorsque cette méthode se termine, elle retourne un flux contenant les données de cartes de visite (vCard). Si vous utilisez la programmation asynchrone, le type de résultat est IRandomAccessStream, qui correspond aux données.</returns>
+    </member>
+    <member name="T:Windows.Phone.PersonalInformation.IContactInformation2">
+      <summary>Fournit des propriétés de contact supplémentaires.</summary>
+    </member>
+    <member name="P:Windows.Phone.PersonalInformation.IContactInformation2.DisplayPictureDate">
+      <summary>Obtient ou définit la date de création ou de modification d'une image d'affichage. Permet d'activer le tri des images affichées par date.</summary>
+      <returns>Date à laquelle une image d'affichage a été créée ou modifiée.</returns>
+    </member>
+    <member name="T:Windows.Phone.PersonalInformation.KnownContactProperties">
+      <summary>Fournit les noms des clés permettant d'accéder aux propriétés connues pour les objets StoredContact ou ContactInformation.</summary>
+    </member>
+    <member name="P:Windows.Phone.PersonalInformation.KnownContactProperties.AdditionalName">
+      <summary>Obtient le nom de la propriété **AdditionalName**.</summary>
+      <returns>Nom de la propriété **AdditionalName**.</returns>
+    </member>
+    <member name="P:Windows.Phone.PersonalInformation.KnownContactProperties.Address">
+      <summary>Obtient le nom de la propriété **Address**.</summary>
+      <returns>Nom de la propriété **Address**.</returns>
+    </member>
+    <member name="P:Windows.Phone.PersonalInformation.KnownContactProperties.AlternateMobileTelephone">
+      <summary>Obtient le nom de la propriété **AlternateMobileTelephone**.</summary>
+      <returns>Nom de la propriété **AlternateMobileTelephone**.</returns>
+    </member>
+    <member name="P:Windows.Phone.PersonalInformation.KnownContactProperties.AlternateTelephone">
+      <summary>Obtient le nom de la propriété **AlternateTelephone**.</summary>
+      <returns>Nom de la propriété **AlternateTelephone**.</returns>
+    </member>
+    <member name="P:Windows.Phone.PersonalInformation.KnownContactProperties.AlternateWorkTelephone">
+      <summary>Obtient le nom de la propriété **AlternateWorkTelephone**.</summary>
+      <returns>Nom de la propriété **AlternateWorkTelephone**.</returns>
+    </member>
+    <member name="P:Windows.Phone.PersonalInformation.KnownContactProperties.Anniversary">
+      <summary>Obtient le nom de la propriété **Anniversary**.</summary>
+      <returns>Nom de la propriété **Anniversary**.</returns>
+    </member>
+    <member name="P:Windows.Phone.PersonalInformation.KnownContactProperties.Birthdate">
+      <summary>Obtient le nom de la propriété **Birthdate**.</summary>
+      <returns>Nom de la propriété **Birthdate**.</returns>
+    </member>
+    <member name="P:Windows.Phone.PersonalInformation.KnownContactProperties.Children">
+      <summary>Obtient le nom de la propriété **Children**.</summary>
+      <returns>Nom de la propriété **Children**.</returns>
+    </member>
+    <member name="P:Windows.Phone.PersonalInformation.KnownContactProperties.CompanyName">
+      <summary>Obtient le nom de la propriété **CompanyName**.</summary>
+      <returns>Nom de la propriété **CompanyName**.</returns>
+    </member>
+    <member name="P:Windows.Phone.PersonalInformation.KnownContactProperties.CompanyTelephone">
+      <summary>Obtient le nom de la propriété **CompanyTelephone**.</summary>
+      <returns>Nom de la propriété **CompanyTelephone**.</returns>
+    </member>
+    <member name="P:Windows.Phone.PersonalInformation.KnownContactProperties.DisplayName">
+      <summary>Obtient le nom de la propriété **DisplayName**.</summary>
+      <returns>Nom de la propriété **DisplayName**.</returns>
+    </member>
+    <member name="P:Windows.Phone.PersonalInformation.KnownContactProperties.Email">
+      <summary>Obtient le nom de la propriété **Email**.</summary>
+      <returns>Nom de la propriété **Email**.</returns>
+    </member>
+    <member name="P:Windows.Phone.PersonalInformation.KnownContactProperties.FamilyName">
+      <summary>Obtient le nom de la propriété **FamilyName**.</summary>
+      <returns>Nom de la propriété **FamilyName**.</returns>
+    </member>
+    <member name="P:Windows.Phone.PersonalInformation.KnownContactProperties.GivenName">
+      <summary>Obtient le nom de la propriété **GivenName**.</summary>
+      <returns>Nom de la propriété **GivenName**.</returns>
+    </member>
+    <member name="P:Windows.Phone.PersonalInformation.KnownContactProperties.HomeFax">
+      <summary>Obtient le nom de la propriété **HomeFax**.</summary>
+      <returns>Nom de la propriété **HomeFax**.</returns>
+    </member>
+    <member name="P:Windows.Phone.PersonalInformation.KnownContactProperties.HonorificPrefix">
+      <summary>Obtient le nom de la propriété **HonorificPrefix**.</summary>
+      <returns>Nom de la propriété **HonorificPrefix**.</returns>
+    </member>
+    <member name="P:Windows.Phone.PersonalInformation.KnownContactProperties.HonorificSuffix">
+      <summary>Obtient le nom de la propriété **HonorificSuffix**.</summary>
+      <returns>Nom de la propriété **HonorificSuffix**.</returns>
+    </member>
+    <member name="P:Windows.Phone.PersonalInformation.KnownContactProperties.JobTitle">
+      <summary>Obtient le nom de la propriété **JobTitle**.</summary>
+      <returns>Nom de la propriété **JobTitle**.</returns>
+    </member>
+    <member name="P:Windows.Phone.PersonalInformation.KnownContactProperties.Manager">
+      <summary>Obtient le nom de la propriété **Manager**.</summary>
+      <returns>Nom de la propriété **Manager**.</returns>
+    </member>
+    <member name="P:Windows.Phone.PersonalInformation.KnownContactProperties.MobileTelephone">
+      <summary>Obtient le nom de la propriété **MobileTelephone**.</summary>
+      <returns>Nom de la propriété **MobileTelephone**.</returns>
+    </member>
+    <member name="P:Windows.Phone.PersonalInformation.KnownContactProperties.Nickname">
+      <summary>Obtient le nom de la propriété **Nickname**.</summary>
+      <returns>Nom de la propriété **Nickname**.</returns>
+    </member>
+    <member name="P:Windows.Phone.PersonalInformation.KnownContactProperties.Notes">
+      <summary>Obtient le nom de la propriété **Notes**.</summary>
+      <returns>Nom de la propriété **Notes**.</returns>
+    </member>
+    <member name="P:Windows.Phone.PersonalInformation.KnownContactProperties.OfficeLocation">
+      <summary>Obtient le nom de la propriété **OfficeLocation**.</summary>
+      <returns>Nom de la propriété **OfficeLocation**.</returns>
+    </member>
+    <member name="P:Windows.Phone.PersonalInformation.KnownContactProperties.OtherAddress">
+      <summary>Obtient le nom de la propriété **OtherAddress**.</summary>
+      <returns>Nom de la propriété **OtherAddress**.</returns>
+    </member>
+    <member name="P:Windows.Phone.PersonalInformation.KnownContactProperties.OtherEmail">
+      <summary>Obtient le nom de la propriété **OtherEmail**.</summary>
+      <returns>Nom de la propriété **OtherEmail**.</returns>
+    </member>
+    <member name="P:Windows.Phone.PersonalInformation.KnownContactProperties.SignificantOther">
+      <summary>Obtient le nom de la propriété **SignificantOther**.</summary>
+      <returns>Nom de la propriété SignificantOther.</returns>
+    </member>
+    <member name="P:Windows.Phone.PersonalInformation.KnownContactProperties.Telephone">
+      <summary>Obtient le nom de la propriété **Telephone**.</summary>
+      <returns>Nom de la propriété **Telephone**.</returns>
+    </member>
+    <member name="P:Windows.Phone.PersonalInformation.KnownContactProperties.Url">
+      <summary>Obtient le nom de la propriété **Url**.</summary>
+      <returns>Nom de la propriété **Url**.</returns>
+    </member>
+    <member name="P:Windows.Phone.PersonalInformation.KnownContactProperties.WorkAddress">
+      <summary>Obtient le nom de la propriété **WorkAddress**.</summary>
+      <returns>Nom de la propriété **WorkAddress**.</returns>
+    </member>
+    <member name="P:Windows.Phone.PersonalInformation.KnownContactProperties.WorkEmail">
+      <summary>Obtient le nom de la propriété **WorkEmail**.</summary>
+      <returns>Nom de la propriété **WorkEmail**.</returns>
+    </member>
+    <member name="P:Windows.Phone.PersonalInformation.KnownContactProperties.WorkFax">
+      <summary>Obtient le nom de la propriété **WorkFax**.</summary>
+      <returns>Nom de la propriété **WorkFax**.</returns>
+    </member>
+    <member name="P:Windows.Phone.PersonalInformation.KnownContactProperties.WorkTelephone">
+      <summary>Obtient le nom de la propriété **WorkTelephone**.</summary>
+      <returns>Nom de la propriété **WorkTelephone**.</returns>
+    </member>
+    <member name="P:Windows.Phone.PersonalInformation.KnownContactProperties.YomiCompanyName">
+      <summary>Obtient le nom de la propriété **YomiCompanyName**.</summary>
+      <returns>Nom de la propriété **YomiCompanyName**.</returns>
+    </member>
+    <member name="P:Windows.Phone.PersonalInformation.KnownContactProperties.YomiFamilyName">
+      <summary>Obtient le nom de la propriété **YomiFamilyName**.</summary>
+      <returns>Nom de la propriété **YomiFamilyName**.</returns>
+    </member>
+    <member name="P:Windows.Phone.PersonalInformation.KnownContactProperties.YomiGivenName">
+      <summary>Obtient le nom de la propriété **YomiGivenName**.</summary>
+      <returns>Nom de la propriété **YomiGivenName**.</returns>
+    </member>
+    <member name="T:Windows.Phone.PersonalInformation.StoredContact">
+      <summary>Représente un contact associé à un magasin de contacts personnalisé.</summary>
+    </member>
+    <member name="M:Windows.Phone.PersonalInformation.StoredContact.#ctor(Windows.Phone.PersonalInformation.ContactStore)">
+      <summary>Initialise une nouvelle instance de la classe StoredContact.</summary>
+      <param name="store">Magasin de contacts dans lequel le contact doit être créé.</param>
+    </member>
+    <member name="M:Windows.Phone.PersonalInformation.StoredContact.#ctor(Windows.Phone.PersonalInformation.ContactStore,Windows.Phone.PersonalInformation.ContactInformation)">
+      <summary>Initialise une nouvelle instance de la classe StoredContact et initialise les valeurs de propriétés à partir de l'objet ContactInformation fourni.</summary>
+      <param name="store">Magasin de contacts dans lequel le contact doit être créé.</param>
+      <param name="contact">Objet d'informations de contact avec lequel les nouvelles propriétés d'objet de contact seront initialisées.</param>
+    </member>
+    <member name="P:Windows.Phone.PersonalInformation.StoredContact.DisplayName">
+      <summary>Obtient ou définit le nom d'affichage d'un contact stocké.</summary>
+      <returns>Nom complet d'un contact.</returns>
+    </member>
+    <member name="P:Windows.Phone.PersonalInformation.StoredContact.DisplayPicture">
+      <summary>Obtient l'image affichée d'un contact enregistré.</summary>
+      <returns>Flux contenant les données d'image.</returns>
+    </member>
+    <member name="P:Windows.Phone.PersonalInformation.StoredContact.DisplayPictureDate">
+      <summary>Obtient ou définit la date de création ou de modification d'une image d'affichage. Permet d'activer le tri des images affichées par date.</summary>
+      <returns>Date à laquelle une image d'affichage a été créée ou modifiée.</returns>
+    </member>
+    <member name="P:Windows.Phone.PersonalInformation.StoredContact.FamilyName">
+      <summary>Obtient ou définit le nom de famille du contact enregistré.</summary>
+      <returns>Nom de famille du contact.</returns>
+    </member>
+    <member name="P:Windows.Phone.PersonalInformation.StoredContact.GivenName">
+      <summary>Obtient ou définit le nom donné du contact enregistré.</summary>
+      <returns>Nom donné du contact.</returns>
+    </member>
+    <member name="P:Windows.Phone.PersonalInformation.StoredContact.HonorificPrefix">
+      <summary>Obtient ou définit le préfixe honorifique du contact enregistré.</summary>
+      <returns>Préfixe honorifique du contact.</returns>
+    </member>
+    <member name="P:Windows.Phone.PersonalInformation.StoredContact.HonorificSuffix">
+      <summary>Obtient ou définit le suffixe honorifique du contact enregistré.</summary>
+      <returns>Suffixe honorifique du contact.</returns>
+    </member>
+    <member name="P:Windows.Phone.PersonalInformation.StoredContact.Id">
+      <summary>Obtient l'identificateur local du contact enregistré.</summary>
+      <returns>Identificateur local du contact.</returns>
+    </member>
+    <member name="P:Windows.Phone.PersonalInformation.StoredContact.RemoteId">
+      <summary>Obtient l'identificateur distant du contact enregistré.</summary>
+      <returns>Identificateur distant du contact.</returns>
+    </member>
+    <member name="P:Windows.Phone.PersonalInformation.StoredContact.Store">
+      <summary>Obtient l'objet ContactStore dans lequel le contact est enregistré.</summary>
+      <returns>Objet ContactStore dans lequel le contact est enregistré.</returns>
+    </member>
+    <member name="M:Windows.Phone.PersonalInformation.StoredContact.GetDisplayPictureAsync">
+      <summary>Obtient l'image affichée d'un contact enregistré.</summary>
+      <returns>Opération asynchrone qui retourne un objet IRandomAccessStream une fois l'opération terminée correctement. Si vous utilisez la programmation asynchrone, le type du résultat est IRandomAccessStream. Fichier source de l'image sous la forme d'un flux bitmap.</returns>
+    </member>
+    <member name="M:Windows.Phone.PersonalInformation.StoredContact.GetExtendedPropertiesAsync">
+      <summary>Obtient les propriétés étendues d'un contact enregistré en tant que mappage de paires nom/valeur.</summary>
+      <returns>Lorsque cette méthode est terminée, elle retourne une carte/un dictionnaire de paires nom/valeur (nom de chaîne, valeurs non typées). Si vous utilisez la programmation asynchrone, le type de résultat est une carte ou un dictionnaire de ces paires clé-valeur, indexées par le nom de chaîne. (Vous pouvez utiliser les API de IMap&lt;Platform::String,Platform::Object&gt; pour C++, les API de IDictionary&lt;String,Object&gt; pour .NET.)</returns>
+    </member>
+    <member name="M:Windows.Phone.PersonalInformation.StoredContact.GetPropertiesAsync">
+      <summary>Obtient les propriétés connues du contact.</summary>
+      <returns>Lorsque cette méthode est terminée, elle retourne une carte/un dictionnaire de paires nom/valeur (nom de chaîne, valeurs non typées). Si vous utilisez la programmation asynchrone, le type de résultat est une carte ou un dictionnaire de ces paires clé-valeur, indexées par le nom de chaîne. (Vous pouvez utiliser les API de IMap&lt;Platform::String,Platform::Object&gt; pour C++, les API de IDictionary&lt;String,Object&gt; pour .NET.)</returns>
+    </member>
+    <member name="M:Windows.Phone.PersonalInformation.StoredContact.ReplaceExistingContactAsync(System.String)">
+      <summary>Remplace le contact avec l'ID spécifié par le contact actuel.</summary>
+      <param name="id">ID du contact à remplacer.</param>
+      <returns>Action asynchrone. Si vous utilisez la programmation asynchrone, le type du résultat est **void**.</returns>
+    </member>
+    <member name="M:Windows.Phone.PersonalInformation.StoredContact.SaveAsync">
+      <summary>Enregistre l'état actuel du contact dans le magasin de contacts.</summary>
+      <returns>Action asynchrone. Si vous utilisez la programmation asynchrone, le type du résultat est **void**.</returns>
+    </member>
+    <member name="M:Windows.Phone.PersonalInformation.StoredContact.SetDisplayPictureAsync(Windows.Storage.Streams.IInputStream)">
+      <summary>Définit l'image d'affichage d'un contact à l'aide d'un objet [IInputStream](https://docs.microsoft.com/previous-versions/hh438387(v=vs.85)).</summary>
+      <param name="stream">Flux contenant les données d'image.</param>
+      <returns>Action asynchrone. Si vous utilisez la programmation asynchrone, le type du résultat est **void**.</returns>
+    </member>
+    <member name="M:Windows.Phone.PersonalInformation.StoredContact.ToVcardAsync">
+      <summary>Récupère une représentation vCard du contact à l'aide de la version 3.0 du format vCard.</summary>
+      <returns>Lorsque cette méthode se termine, elle retourne un flux contenant les données de cartes de visite (vCard). Si vous utilisez la programmation asynchrone, le type de résultat est IRandomAccessStream, qui correspond aux données.</returns>
+    </member>
+    <member name="M:Windows.Phone.PersonalInformation.StoredContact.ToVcardAsync(Windows.Phone.PersonalInformation.VCardFormat)">
+      <summary>Récupère une représentation vCard du contact à l'aide du format vCard spécifié.</summary>
+      <param name="format">Format qui sera utilisé par la carte de visite (vCard) retournée.</param>
+      <returns>Lorsque cette méthode se termine, elle retourne un flux contenant les données de cartes de visite (vCard). Si vous utilisez la programmation asynchrone, le type de résultat est IRandomAccessStream, qui correspond aux données.</returns>
+    </member>
+    <member name="T:Windows.Phone.PersonalInformation.VCardFormat">
+      <summary>Format d'une vCard.</summary>
+    </member>
+    <member name="F:Windows.Phone.PersonalInformation.VCardFormat.Version2_1">
+      <summary>Version 2.1</summary>
+    </member>
+    <member name="F:Windows.Phone.PersonalInformation.VCardFormat.Version3">
+      <summary>Version :</summary>
+    </member>
+    <member name="T:Windows.Phone.PersonalInformation.Provisioning.ContactPartnerProvisioningManager">
+      <summary>Cette API n'est pas destinée à être utilisée directement à partir du code.</summary>
+    </member>
+    <member name="M:Windows.Phone.PersonalInformation.Provisioning.ContactPartnerProvisioningManager.AssociateNetworkAccountAsync(Windows.Phone.PersonalInformation.ContactStore,System.String,System.String)">
+      <summary>Cette API n'est pas destinée à être utilisée directement à partir du code.</summary>
+      <param name="store">Magasin de contacts.</param>
+      <param name="networkName">Nom du réseau.</param>
+      <param name="networkAccountId">ID du compte.</param>
+      <returns>Action asynchrone. Si vous utilisez la programmation asynchrone, le type du résultat est **void**.</returns>
+    </member>
+    <member name="M:Windows.Phone.PersonalInformation.Provisioning.ContactPartnerProvisioningManager.AssociateSocialNetworkAccountAsync(Windows.Phone.PersonalInformation.ContactStore,System.String,System.String)">
+      <summary>Cette API n'est pas destinée à être utilisée directement à partir du code.</summary>
+      <param name="store">Magasin de contacts.</param>
+      <param name="networkName">Nom du réseau.</param>
+      <param name="networkAccountId">ID du compte réseau.</param>
+      <returns>Action asynchrone. Si vous utilisez la programmation asynchrone, le type du résultat est **void**.</returns>
+    </member>
+    <member name="M:Windows.Phone.PersonalInformation.Provisioning.ContactPartnerProvisioningManager.ImportVcardToSystemAsync(Windows.Storage.Streams.IInputStream)">
+      <summary>Cette API n'est pas destinée à être utilisée directement à partir du code.</summary>
+      <param name="stream">Flux contenant les données vCard.</param>
+      <returns>Action asynchrone. Si vous utilisez la programmation asynchrone, le type du résultat est **void**.</returns>
+    </member>
+    <member name="T:Windows.Phone.PersonalInformation.Provisioning.MessagePartnerProvisioningManager">
+      <summary>Cette API n'est pas destinée à être utilisée directement à partir du code.</summary>
+    </member>
+    <member name="M:Windows.Phone.PersonalInformation.Provisioning.MessagePartnerProvisioningManager.ImportMmsToSystemAsync(System.Boolean,System.Boolean,System.String,System.String,Windows.Foundation.Collections.IVectorView{System.String},Windows.Foundation.DateTime,Windows.Foundation.Collections.IVectorView{Windows.Foundation.Collections.IMapView{System.String,System.Object}})">
+      <summary>Cette API n'est pas destinée à être utilisée directement à partir du code.</summary>
+      <param name="incoming">Cette API n'est pas destinée à être utilisée directement à partir du code.</param>
+      <param name="read">Cette API n'est pas destinée à être utilisée directement à partir du code.</param>
+      <param name="subject">Cette API n'est pas destinée à être utilisée directement à partir du code.</param>
+      <param name="sender">Cette API n'est pas destinée à être utilisée directement à partir du code.</param>
+      <param name="recipients">Cette API n'est pas destinée à être utilisée directement à partir du code.</param>
+      <param name="deliveryTime">Cette API n'est pas destinée à être utilisée directement à partir du code.</param>
+      <param name="attachments">Cette API n'est pas destinée à être utilisée directement à partir du code.</param>
+      <returns>Cette API n'est pas destinée à être utilisée directement à partir du code.</returns>
+    </member>
+    <member name="M:Windows.Phone.PersonalInformation.Provisioning.MessagePartnerProvisioningManager.ImportSmsToSystemAsync(System.Boolean,System.Boolean,System.String,System.String,Windows.Foundation.Collections.IVectorView{System.String},Windows.Foundation.DateTime)">
+      <summary>Cette API n'est pas destinée à être utilisée directement à partir du code.</summary>
+      <param name="incoming">Cette API n'est pas destinée à être utilisée directement à partir du code.</param>
+      <param name="read">Cette API n'est pas destinée à être utilisée directement à partir du code.</param>
+      <param name="body">Cette API n'est pas destinée à être utilisée directement à partir du code.</param>
+      <param name="sender">Cette API n'est pas destinée à être utilisée directement à partir du code.</param>
+      <param name="recipients">Cette API n'est pas destinée à être utilisée directement à partir du code.</param>
+      <param name="deliveryTime">Cette API n'est pas destinée à être utilisée directement à partir du code.</param>
+      <returns>Cette API n'est pas destinée à être utilisée directement à partir du code.</returns>
+    </member>
+    <member name="T:Windows.Phone.Speech.Recognition.SpeechRecognitionUIStatus">
+      <summary>Indique l'état de la session de reconnaissance vocale.</summary>
+    </member>
+    <member name="F:Windows.Phone.Speech.Recognition.SpeechRecognitionUIStatus.Busy">
+      <summary>L'interface graphique utilisateur du module de reconnaissance vocale n'a pas pu démarrer parce que la fonctionnalité vocale du téléphone était active, ou parce que l'application a tenté une reconnaissance vocale pendant un appel téléphonique en cours.</summary>
+    </member>
+    <member name="F:Windows.Phone.Speech.Recognition.SpeechRecognitionUIStatus.Cancelled">
+      <summary>L'utilisateur a annulé manuellement l'interface graphique utilisateur du module de reconnaissance vocale, en utilisant par exemple le bouton Précédent. Cette valeur est également retournée si l'utilisateur bascule hors de l'application, ou si un appel téléphonique est reçu alors que l'interface utilisateur graphique est active.</summary>
+    </member>
+    <member name="F:Windows.Phone.Speech.Recognition.SpeechRecognitionUIStatus.Preempted">
+      <summary>La valeur anticipée est retournée dans les cas suivants :</summary>
+    </member>
+    <member name="F:Windows.Phone.Speech.Recognition.SpeechRecognitionUIStatus.PrivacyPolicyDeclined">
+      <summary>L'utilisateur a refusé la politique de confidentialité.</summary>
+    </member>
+    <member name="F:Windows.Phone.Speech.Recognition.SpeechRecognitionUIStatus.Succeeded">
+      <summary>Reconnaissance vocale réussie via l'interface utilisateur graphique (GUI) par défaut.</summary>
+    </member>
+    <member name="T:Windows.Phone.System.SystemProtection">
+      <summary>Fournit des informations relatives à la protection du système.</summary>
+    </member>
+    <member name="P:Windows.Phone.System.SystemProtection.ScreenLocked">
+      <summary>Obtient une valeur qui indique si l'écran est verrouillé.</summary>
+      <returns>**true** si l'écran est verrouillé ; sinon, **false**.</returns>
+    </member>
+    <member name="M:Windows.Phone.System.SystemProtection.RequestScreenUnlock">
+      <summary>Demande le déverrouillage de l'écran.</summary>
+    </member>
+    <member name="T:Windows.Phone.System.Power.PowerManager">
+      <summary>Fournit des informations qui indiquent si la batterie du téléphone est en mode d'économie d'énergie.</summary>
+    </member>
+    <member name="P:Windows.Phone.System.Power.PowerManager.PowerSavingMode">
+      <summary>Obtient une valeur indiquant si la batterie du téléphone est en mode d'économie d'énergie.</summary>
+      <returns>true si la batterie du téléphone est en mode économie d'énergie ; sinon, False.</returns>
+    </member>
+    <member name="P:Windows.Phone.System.Power.PowerManager.PowerSavingModeEnabled">
+      <summary>Obtient une valeur indiquant si le mode d'économie d'énergie est actuellement activé au téléphone, même si le mode d'économie d'énergie est actuellement actif.</summary>
+      <returns>Valeur indiquant si le mode d'économie d'énergie est actuellement activé au téléphone, même si le mode d'économie d'énergie est actuellement actif.</returns>
+    </member>
+    <member name="E:Windows.Phone.System.Power.PowerManager.PowerSavingModeChanged">
+      <summary>Se produit lorsque le mode d'économie d'énergie de la batterie du téléphone est modifié.</summary>
+    </member>
+    <member name="T:Windows.Phone.System.Power.PowerSavingMode">
+      <summary>Spécifie si la batterie du téléphone est en mode économie d'énergie.</summary>
+    </member>
+    <member name="F:Windows.Phone.System.Power.PowerSavingMode.Off">
+      <summary>La batterie du téléphone n'est pas en mode économie d'énergie.</summary>
+    </member>
+    <member name="F:Windows.Phone.System.Power.PowerSavingMode.On">
+      <summary>La batterie du téléphone est en mode économie d'énergie.</summary>
+    </member>
+    <member name="T:Windows.Phone.System.Profile.RetailMode">
+      <summary>Contient des paramètres en mode commercial.</summary>
+      <deprecated type="deprecate">Utilisez plutôt Windows.System.Profile.RetailInfo.</deprecated>
+    </member>
+    <member name="P:Windows.Phone.System.Profile.RetailMode.RetailModeEnabled">
+      <summary>Obtient une valeur qui indique si le mode commercial est activé.</summary>
+      <returns>true si le mode de détail est activé ; sinon, false.</returns>
+    </member>
+    <member name="T:Windows.Phone.System.UserProfile.GameServices.Core.GameService">
+      <summary>Permet d'accéder au service de jeu.</summary>
+    </member>
+    <member name="P:Windows.Phone.System.UserProfile.GameServices.Core.GameService.ServiceUri">
+      <summary>Obtient l'URI du service de jeu.</summary>
+      <returns>URI du service de jeu.</returns>
+    </member>
+    <member name="M:Windows.Phone.System.UserProfile.GameServices.Core.GameService.GetAuthenticationStatus">
+      <summary>Obtient le dernier résultat d'authentification du service de jeu.</summary>
+      <returns>Dernier résultat d'authentification du service de jeu.</returns>
+    </member>
+    <member name="M:Windows.Phone.System.UserProfile.GameServices.Core.GameService.GetGamerProfileAsync">
+      <summary>Récupère le profil de joueur de l'utilisateur actuel.</summary>
+      <returns>Lorsque cette méthode est terminée, elle retourne un objet GameServicePropertyCollection représentant le profil de joueur.</returns>
+    </member>
+    <member name="M:Windows.Phone.System.UserProfile.GameServices.Core.GameService.GetInstalledGameItemsAsync">
+      <summary>Récupère les éléments de jeu actuellement installés.</summary>
+      <returns>Lorsque cette méthode s'exécute correctement, elle retourne un objet GameServicePropertyCollection représentant la liste des éléments installés.</returns>
+    </member>
+    <member name="M:Windows.Phone.System.UserProfile.GameServices.Core.GameService.GetPartnerTokenAsync(Windows.Foundation.Uri)">
+      <summary>Récupère le jeton de partenaire pour l'URI spécifié.</summary>
+      <param name="audienceUri">URI pour laquelle le jeton de partenaire est récupéré.</param>
+      <returns>Lorsque cette méthode est terminée, elle retourne une chaîne contenant le jeton de partenaire.</returns>
+    </member>
+    <member name="M:Windows.Phone.System.UserProfile.GameServices.Core.GameService.GetPrivilegesAsync">
+      <summary>Récupère la chaîne de privilège pour l'utilisateur actuel.</summary>
+      <returns>Lorsque cette méthode s'exécute correctement, elle retourne la chaîne de privilège.</returns>
+    </member>
+    <member name="M:Windows.Phone.System.UserProfile.GameServices.Core.GameService.GrantAchievement(System.UInt32)">
+      <summary>Accorde la réalisation spécifiée à l'utilisateur actuel.</summary>
+      <param name="achievementId">Identificateur de la réalisation.</param>
+    </member>
+    <member name="M:Windows.Phone.System.UserProfile.GameServices.Core.GameService.GrantAvatarAward(System.UInt32)">
+      <summary>Accorde la récompense d'avatar spécifiée à l'utilisateur actuel.</summary>
+      <param name="avatarAwardId">Identificateur de la récompense d'avatar.</param>
+    </member>
+    <member name="M:Windows.Phone.System.UserProfile.GameServices.Core.GameService.NotifyPartnerTokenExpired(Windows.Foundation.Uri)">
+      <summary>Invalide le jeton de partenaire mis en cache pour l'URI spécifiée.</summary>
+      <param name="audienceUri">URI spécifié.</param>
+    </member>
+    <member name="M:Windows.Phone.System.UserProfile.GameServices.Core.GameService.PostResult(System.UInt32,Windows.Phone.System.UserProfile.GameServices.Core.GameServiceScoreKind,System.Int64,Windows.Phone.System.UserProfile.GameServices.Core.GameServiceGameOutcome,Windows.Storage.Streams.IBuffer)">
+      <summary>Terminer et publier les résultats d'un jeu.</summary>
+      <param name="gameVariant">Identificateur de variante de jeu spécifique à l'application.</param>
+      <param name="scoreKind">Genre de notes dans le résultat.</param>
+      <param name="scoreValue">Valeur de score dans le résultat.</param>
+      <param name="gameOutcome">Résultat du jeu.</param>
+      <param name="buffer">Mémoire tampon de données à inclure avec le résultat.</param>
+    </member>
+    <member name="T:Windows.Phone.System.UserProfile.GameServices.Core.GameServiceGameOutcome">
+      <summary>Indique le résultat d'un jeu.</summary>
+    </member>
+    <member name="F:Windows.Phone.System.UserProfile.GameServices.Core.GameServiceGameOutcome.Loss">
+      <summary>Perte.</summary>
+    </member>
+    <member name="F:Windows.Phone.System.UserProfile.GameServices.Core.GameServiceGameOutcome.None">
+      <summary>Aucun résultat.</summary>
+    </member>
+    <member name="F:Windows.Phone.System.UserProfile.GameServices.Core.GameServiceGameOutcome.Tie">
+      <summary>Cravate.</summary>
+    </member>
+    <member name="F:Windows.Phone.System.UserProfile.GameServices.Core.GameServiceGameOutcome.Win">
+      <summary>Victoire.</summary>
+    </member>
+    <member name="T:Windows.Phone.System.UserProfile.GameServices.Core.GameServicePropertyCollection">
+      <summary>Permet d'accéder aux propriétés de service de joueur.</summary>
+    </member>
+    <member name="M:Windows.Phone.System.UserProfile.GameServices.Core.GameServicePropertyCollection.GetPropertyAsync(System.String)">
+      <summary>Obtient la propriété de service de jeu spécifiée.</summary>
+      <param name="propertyName">Nom de la propriété à récupérer.</param>
+      <returns>Lorsque cette méthode se termine avec succès, elle retourne un objet représentant la propriété demandée.</returns>
+    </member>
+    <member name="T:Windows.Phone.System.UserProfile.GameServices.Core.GameServiceScoreKind">
+      <summary>Indique le type de score utilisé par un jeu.</summary>
+    </member>
+    <member name="F:Windows.Phone.System.UserProfile.GameServices.Core.GameServiceScoreKind.Number">
+      <summary>La note est un nombre.</summary>
+    </member>
+    <member name="F:Windows.Phone.System.UserProfile.GameServices.Core.GameServiceScoreKind.Time">
+      <summary>La note est une égalité.</summary>
+    </member>
+    <member name="T:Windows.Phone.UI.Input.BackPressedEventArgs">
+      <summary>Fournit des données pour l'événement BackPressed.</summary>
+    </member>
+    <member name="P:Windows.Phone.UI.Input.BackPressedEventArgs.Handled">
+      <summary>Obtient ou définit si l'événement a été géré.</summary>
+      <returns>Indique si l'événement a été géré.</returns>
+    </member>
+    <member name="T:Windows.Phone.UI.Input.CameraEventArgs">
+      <summary>Fournit des données pour les événements CameraHalfPressed, CameraPressed et CameraReleased.</summary>
+    </member>
+    <member name="T:Windows.Phone.UI.Input.HardwareButtons">
+      <summary>Permet d'accéder aux boutons matériels du téléphone.</summary>
+    </member>
+    <member name="E:Windows.Phone.UI.Input.HardwareButtons.BackPressed">
+      <summary>Se produit lorsque l'utilisateur appuie sur le bouton matériel Précédent.</summary>
+    </member>
+    <member name="E:Windows.Phone.UI.Input.HardwareButtons.CameraHalfPressed">
+      <summary>Se produit lorsque l'utilisateur appuie à moitié sur le bouton matériel de la caméra.</summary>
+    </member>
+    <member name="E:Windows.Phone.UI.Input.HardwareButtons.CameraPressed">
+      <summary>Se produit lorsque l'utilisateur appuie sur le bouton matériel de la caméra.</summary>
+    </member>
+    <member name="E:Windows.Phone.UI.Input.HardwareButtons.CameraReleased">
+      <summary>Se produit lorsque l'utilisateur relâche le bouton matériel de la caméra.</summary>
+    </member>
+    <member name="T:Windows.UI.ViewManagement.StatusBar">
+      <summary>Fournit des propriétés et des méthodes pour l'interaction avec la barre d'état associée à une vue d'application (fenêtre). La barre d’état est une expérience présentée par le système au bord supérieur de l'écran (en général) ; elle permet à l'utilisateur de contrôler le comportement de l’appareil et peut afficher la progression.</summary>
+    </member>
+    <member name="P:Windows.UI.ViewManagement.StatusBar.BackgroundColor">
+      <summary>Obtient ou définit la couleur d'arrière-plan de la barre d'état. Le canal alpha de la couleur n'est pas utilisé.</summary>
+      <returns>Couleur d'arrière-plan de la barre d'état.</returns>
+    </member>
+    <member name="P:Windows.UI.ViewManagement.StatusBar.BackgroundOpacity">
+      <summary>Obtient ou définit l'opacité de la couleur d'arrière-plan de la barre d'état.</summary>
+      <returns>Opacité de la couleur d'arrière-plan de la barre d'état.</returns>
+    </member>
+    <member name="P:Windows.UI.ViewManagement.StatusBar.ForegroundColor">
+      <summary>Obtient ou définit la couleur de premier plan de la barre d'état. Le canal alpha de la couleur n'est pas utilisé.</summary>
+      <returns>Couleur de premier plan de la barre d'état.</returns>
+    </member>
+    <member name="P:Windows.UI.ViewManagement.StatusBar.OccludedRect">
+      <summary>Obtient la zone de la fenêtre principale actuellement cachée par la barre d'état.</summary>
+      <returns>Zone de la fenêtre principale actuellement cachée par la barre d'état.</returns>
+    </member>
+    <member name="P:Windows.UI.ViewManagement.StatusBar.ProgressIndicator">
+      <summary>Obtient l'indicateur de progression de la barre d'état.</summary>
+      <returns>Indicateur de progression de la barre d'état.</returns>
+    </member>
+    <member name="E:Windows.UI.ViewManagement.StatusBar.Hiding">
+      <summary>Cet événement est déclenché lorsque la barre d'état est masquée.</summary>
+    </member>
+    <member name="E:Windows.UI.ViewManagement.StatusBar.Showing">
+      <summary>Cet événement est déclenché lorsque la barre d'état est affichée.</summary>
+    </member>
+    <member name="M:Windows.UI.ViewManagement.StatusBar.GetForCurrentView">
+      <summary>Obtient la barre d'état de la fenêtre active (vue d'application).</summary>
+      <returns>Barre d'état de la fenêtre active (vue d'application).</returns>
+    </member>
+    <member name="M:Windows.UI.ViewManagement.StatusBar.HideAsync">
+      <summary>Masque la barre d'état.</summary>
+      <returns>Résultats asynchrones de l'opération. Utilisez cet élément pour déterminer quand l'appel asynchrone est terminé.</returns>
+    </member>
+    <member name="M:Windows.UI.ViewManagement.StatusBar.ShowAsync">
+      <summary>Affiche la barre d'état.</summary>
+      <returns>Résultats asynchrones de l'opération. Utilisez cet élément pour déterminer quand l'appel asynchrone est terminé.</returns>
+    </member>
+    <member name="T:Windows.UI.ViewManagement.StatusBarProgressIndicator">
+      <summary>Fournit des méthodes et des propriétés permettant d'interagir avec l'indicateur de progression sur la barre d'état dans une fenêtre (affichage d'application).</summary>
+    </member>
+    <member name="P:Windows.UI.ViewManagement.StatusBarProgressIndicator.ProgressValue">
+      <summary>Obtient ou définit une valeur représentant la progression dans la plage de 0 à 1.</summary>
+      <returns>Valeur qui représente la progression dans la plage de 0 à 1.</returns>
+    </member>
+    <member name="P:Windows.UI.ViewManagement.StatusBarProgressIndicator.Text">
+      <summary>Obtient ou définit l'étiquette de texte affichée sur l'indicateur de progression.</summary>
+      <returns>Étiquette de texte affichée sur l'indicateur de progression.</returns>
+    </member>
+    <member name="M:Windows.UI.ViewManagement.StatusBarProgressIndicator.HideAsync">
+      <summary>Masque l'indicateur de progression.</summary>
+      <returns>Résultats asynchrones de l'opération. Utilisez cet élément pour déterminer quand l'appel asynchrone est terminé.</returns>
+    </member>
+    <member name="M:Windows.UI.ViewManagement.StatusBarProgressIndicator.ShowAsync">
+      <summary>Affiche l'indicateur de progression.</summary>
+      <returns>Résultats asynchrones de l'opération. Utilisez cet élément pour déterminer quand l'appel asynchrone est terminé.</returns>
+    </member>
+  </members>
+</doc>
