@@ -1,0 +1,1272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>Windows.AI.MachineLearning.MachineLearningContract</name>
+  </assembly>
+  <members>
+    <member name="T:Windows.AI.MachineLearning.ILearningModelFeatureDescriptor">
+      <summary>すべての機能が持つ一般的なプロパティについて説明します。</summary>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.ILearningModelFeatureDescriptor.Description">
+      <summary>この機能のモデルでの用途に関する説明。</summary>
+      <returns>この機能のモデルでの用途に関する説明。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.ILearningModelFeatureDescriptor.IsRequired">
+      <summary>true の場合は、LearningModelSession.Evaluate を呼び出す前に値をこの機能にバインドする必要があります。</summary>
+      <returns>true の場合は、**LearningModelSession.Evaluate** を呼び出す前に値をこの機能にバインドする必要があります。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.ILearningModelFeatureDescriptor.Kind">
+      <summary>機能の種類 - どの派生クラスを使うか知るために使用します。</summary>
+      <returns>機能の種類 - どの派生クラスを使うか知るために使用します。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.ILearningModelFeatureDescriptor.Name">
+      <summary>この機能に値をバインドするために使用する名前。</summary>
+      <returns>この機能に値をバインドするために使用する名前。</returns>
+    </member>
+    <member name="T:Windows.AI.MachineLearning.ILearningModelFeatureValue">
+      <summary>機能のインスタンス化された値。</summary>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.ILearningModelFeatureValue.Kind">
+      <summary>変数のデータ型。</summary>
+      <returns>変数のデータ型。</returns>
+    </member>
+    <member name="T:Windows.AI.MachineLearning.ILearningModelOperatorProvider">
+      <summary>
+      </summary>
+    </member>
+    <member name="T:Windows.AI.MachineLearning.ImageFeatureDescriptor">
+      <summary>モデルが想定しているイメージのプロパティについて説明します。</summary>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.ImageFeatureDescriptor.BitmapAlphaMode">
+      <summary>イメージの想定されるアルファ モードを指定します。</summary>
+      <returns>イメージのアルファ モード。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.ImageFeatureDescriptor.BitmapPixelFormat">
+      <summary>想定されるピクセル形式 (チャンネルの並び順、ビットの深さ、およびデータの種類) を指定します。</summary>
+      <returns>イメージのピクセル形式。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.ImageFeatureDescriptor.Description">
+      <summary>この機能のモデルでの用途に関する説明。</summary>
+      <returns>この機能のモデルでの用途に関する説明。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.ImageFeatureDescriptor.Height">
+      <summary>想定されるイメージの高さ。</summary>
+      <returns>想定されるイメージの高さ。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.ImageFeatureDescriptor.IsRequired">
+      <summary>true の場合は、LearningModelSession.Evaluate を呼び出す前に値をこの機能にバインドする必要があります。</summary>
+      <returns>LearningModelSession.Evaluate を呼び出す前に値をこの機能にバインドする必要がある場合は true、それ以外の場合は false。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.ImageFeatureDescriptor.Kind">
+      <summary>機能の種類 - どの派生クラスを使うか知るために使用します。</summary>
+      <returns>機能の種類。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.ImageFeatureDescriptor.Name">
+      <summary>この機能に値をバインドするために使用する名前。</summary>
+      <returns>この機能に値をバインドするために使用する名前。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.ImageFeatureDescriptor.Width">
+      <summary>想定されるイメージの幅。</summary>
+      <returns>想定されるイメージの幅。</returns>
+    </member>
+    <member name="T:Windows.AI.MachineLearning.ImageFeatureValue">
+      <summary>モデルに渡すために使用するイメージのプロパティについて説明します。</summary>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.ImageFeatureValue.Kind">
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.ImageFeatureValue.VideoFrame">
+      <summary>ビデオ フレームを取得します。</summary>
+      <returns>ビデオ フレーム。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.ImageFeatureValue.CreateFromVideoFrame(Windows.Media.VideoFrame)">
+      <summary>指定されたビデオ フレームを使用して ImageFeatureValue を作成します。</summary>
+      <param name="image">**ImageFeatureValue** を作成するために使用するビデオ フレーム。</param>
+      <returns>指定されたビデオ フレームから作成された **ImageFeatureValue**。</returns>
+    </member>
+    <member name="T:Windows.AI.MachineLearning.ITensor">
+      <summary>テンソルは、多次元の値です。</summary>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.ITensor.Shape">
+      <summary>各次元の数とサイズを返します。</summary>
+      <returns>テンソルの各次元の数とサイズ。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.ITensor.TensorKind">
+      <summary>Tensor データ タイプを返します。</summary>
+      <returns>テンソルのデータ型。</returns>
+    </member>
+    <member name="T:Windows.AI.MachineLearning.LearningModel">
+      <summary>トレーニングされた機械学習モデルを表します。</summary>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.LearningModel.Author">
+      <summary>モデル作成者の名前。</summary>
+      <returns>モデル作成者の名前。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.LearningModel.Description">
+      <summary>モデルの説明。</summary>
+      <returns>モデルの説明。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.LearningModel.Domain">
+      <summary>モデルのドメイン。</summary>
+      <returns>モデルのドメイン。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.LearningModel.InputFeatures">
+      <summary>モデルの入力機能の一覧。</summary>
+      <returns>モデルの入力機能の一覧。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.LearningModel.Metadata">
+      <summary>ONNX モデルからの処理されていないメタデータ &lt;string,string&gt;。</summary>
+      <returns>ONNX モデルからの処理されていないメタデータ &lt;string,string&gt;。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.LearningModel.Name">
+      <summary>モデル名。</summary>
+      <returns>モデル名。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.LearningModel.OutputFeatures">
+      <summary>モデルの出力機能の一覧。</summary>
+      <returns>モデルの出力機能の一覧。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.LearningModel.Version">
+      <summary>モデルのバージョン。</summary>
+      <returns>モデルのバージョン。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.LearningModel.Close">
+      <summary>メモリ内 ONNX モデルを解放します。 これを呼び出した後、さらに LearningModelSession オブジェクトを作成することはできません。</summary>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.LearningModel.LoadFromFilePath(System.String)">
+      <summary>ディスク上のファイルから ONNX モデルを読み込みます。</summary>
+      <param name="filePath">ディスク上の ONNX モデル ファイルへのパス。</param>
+      <returns>モデルを表すオブジェクト。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.LearningModel.LoadFromFilePath(System.String,Windows.AI.MachineLearning.ILearningModelOperatorProvider)">
+      <summary>ディスク上のファイルから ONNX モデルを読み込みます。</summary>
+      <param name="filePath">ディスク上の ONNX モデル ファイルへのパス。</param>
+      <param name="operatorProvider">
+      </param>
+      <returns>モデルを表すオブジェクト。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.LearningModel.LoadFromStorageFileAsync(Windows.Storage.IStorageFile)">
+      <summary>IStorageFile から非同期的に ONNX モデルを読み込みます。</summary>
+      <param name="modelFile">モデル ファイルの場所。</param>
+      <returns>モデル ファイルに基づく LearningModel。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.LearningModel.LoadFromStorageFileAsync(Windows.Storage.IStorageFile,Windows.AI.MachineLearning.ILearningModelOperatorProvider)">
+      <summary>IStorageFile から非同期的に ONNX モデルを読み込みます。</summary>
+      <param name="modelFile">モデル ファイルの場所。</param>
+      <param name="operatorProvider">
+      </param>
+      <returns>モデル ファイルに基づく LearningModel。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.LearningModel.LoadFromStream(Windows.Storage.Streams.IRandomAccessStreamReference)">
+      <summary>ストリームから ONNX モデルを読み込みます。</summary>
+      <param name="modelStream">モデルの読み込み元のストリーム。</param>
+      <returns>モデル ファイルを表すオブジェクト。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.LearningModel.LoadFromStream(Windows.Storage.Streams.IRandomAccessStreamReference,Windows.AI.MachineLearning.ILearningModelOperatorProvider)">
+      <summary>ストリームから ONNX モデルを読み込みます。</summary>
+      <param name="modelStream">モデルの読み込み元のストリーム。</param>
+      <param name="operatorProvider">
+      </param>
+      <returns>モデル ファイルを表すオブジェクト。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.LearningModel.LoadFromStreamAsync(Windows.Storage.Streams.IRandomAccessStreamReference)">
+      <summary>ストリームから非同期的に ONNX モデルを読み込みます。</summary>
+      <param name="modelStream">モデルの読み込み元のストリーム。</param>
+      <returns>モデルを表すオブジェクト。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.LearningModel.LoadFromStreamAsync(Windows.Storage.Streams.IRandomAccessStreamReference,Windows.AI.MachineLearning.ILearningModelOperatorProvider)">
+      <summary>ストリームから非同期的に ONNX モデルを読み込みます。</summary>
+      <param name="modelStream">モデルの読み込み元のストリーム。</param>
+      <param name="operatorProvider">
+      </param>
+      <returns>モデルを表すオブジェクト。</returns>
+    </member>
+    <member name="T:Windows.AI.MachineLearning.LearningModelBinding">
+      <summary>名前付きの入力と出力機能に値をバインドするために使用されます。</summary>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.LearningModelBinding.#ctor(Windows.AI.MachineLearning.LearningModelSession)">
+      <summary>指定した LearningModelSession から、LearningModelBinding を作成します。</summary>
+      <param name="session">**LearningModelBinding** の作成元の **LearningModelSession**。</param>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.LearningModelBinding.Size">
+      <summary>マップ内の要素数を取得します。</summary>
+      <returns>マップ内の要素数</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.LearningModelBinding.Bind(System.String,System.Object)">
+      <summary>名前付き機能に値をバインドします。</summary>
+      <param name="name">機能の名前。</param>
+      <param name="value">バインドする値。</param>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.LearningModelBinding.Bind(System.String,System.Object,Windows.Foundation.Collections.IPropertySet)">
+      <summary>バインドを制御するには、プロパティを使用して名前付き機能に値をバインドします。</summary>
+      <param name="name">バインドする機能の名前。</param>
+      <param name="value">機能にバインドする値。</param>
+      <param name="props">バインディングを制御するプロパティ。</param>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.LearningModelBinding.Clear">
+      <summary>すべてのバインディングを削除します。</summary>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.LearningModelBinding.First">
+      <summary>マップ ビュー内の最初の要素に初期化される反復子を返します。</summary>
+      <returns>マップ ビュー内の最初の要素に初期化される反復子。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.LearningModelBinding.HasKey(System.String)">
+      <summary>指定したキーがマップ ビューに含まれているかどうかを判断します。</summary>
+      <param name="key">マップ ビューに含まれているかどうかをチェックするキー。</param>
+      <returns>指定されたビューがマップ ビューに含まれている場合は true、それ以外の場合は false。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.LearningModelBinding.Lookup(System.String)">
+      <summary>マップ ビュー内の指定されたキーにある項目を返します。</summary>
+      <param name="key">マップ ビュー内で検索するキー。</param>
+      <returns>マップ内の指定されたキーにある項目。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.LearningModelBinding.Split(Windows.Foundation.Collections.IMapView{System.String,System.Object}@,Windows.Foundation.Collections.IMapView{System.String,System.Object}@)">
+      <summary>マップ ビューを 2 つのビューに分割します。</summary>
+      <param name="first">元のマップの 2 分の 1。</param>
+      <param name="second">元マップの後半。</param>
+    </member>
+    <member name="T:Windows.AI.MachineLearning.LearningModelDevice">
+      <summary>機械学習モデルを評価するために使用されるデバイス。</summary>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.LearningModelDevice.#ctor(Windows.AI.MachineLearning.LearningModelDeviceKind)">
+      <summary>指定した LearningModelDeviceKind から、LearningModelDevice を作成します。</summary>
+      <param name="deviceKind">モデルを評価するために指定された **LearningModelDeviceKind**。</param>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.LearningModelDevice.AdapterId">
+      <summary>デバイス固有の識別子を返します。</summary>
+      <returns>デバイス固有の識別子。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.LearningModelDevice.Direct3D11Device">
+      <summary>デバイスの IDirect3DDevice を返します。</summary>
+      <returns>デバイスの **IDirect3DDevice**。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.LearningModelDevice.CreateFromDirect3D11Device(Windows.Graphics.DirectX.Direct3D11.IDirect3DDevice)">
+      <summary>指定した IDirect3DDevice から、LearningModelDevice を作成します。</summary>
+      <param name="device">**LearningModelDevice** の作成元の **IDirect3DDevice**。</param>
+      <returns>**IDirect3DDevice** から作成された **LearningModelDevice**。</returns>
+    </member>
+    <member name="T:Windows.AI.MachineLearning.LearningModelDeviceKind">
+      <summary>機械学習モデルを評価できるデバイスの種類の一覧を定義します。</summary>
+    </member>
+    <member name="F:Windows.AI.MachineLearning.LearningModelDeviceKind.Cpu">
+      <summary>モデルを評価するには、CPU を使用します。</summary>
+    </member>
+    <member name="F:Windows.AI.MachineLearning.LearningModelDeviceKind.Default">
+      <summary>システムに、使用するデバイスを決定させます。</summary>
+    </member>
+    <member name="F:Windows.AI.MachineLearning.LearningModelDeviceKind.DirectX">
+      <summary>モデルを評価するには、GPU またはほかの DirectX デバイスを使用します。</summary>
+    </member>
+    <member name="F:Windows.AI.MachineLearning.LearningModelDeviceKind.DirectXHighPerformance">
+      <summary>高パフォーマンスを得るには、システム ポリシー定義デバイスを使用します。</summary>
+    </member>
+    <member name="F:Windows.AI.MachineLearning.LearningModelDeviceKind.DirectXMinPower">
+      <summary>最小電源にするには、システム ポリシー定義デバイスを使用します。</summary>
+    </member>
+    <member name="T:Windows.AI.MachineLearning.LearningModelEvaluationResult">
+      <summary>評価の結果を取得します。</summary>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.LearningModelEvaluationResult.CorrelationId">
+      <summary>LearningModelSession.Evaluate に渡されたオプションの文字列。</summary>
+      <returns>**LearningModelSession.Evaluate** に渡されたオプションの文字列。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.LearningModelEvaluationResult.ErrorStatus">
+      <summary>評価が失敗した場合は、失敗の原因のエラー コードを返します。</summary>
+      <returns>失敗の原因のエラー コード。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.LearningModelEvaluationResult.Outputs">
+      <summary>モデルの出力機能を取得します。</summary>
+      <returns>モデルの出力機能。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.LearningModelEvaluationResult.Succeeded">
+      <summary>評価が正常に完了した場合は true。それ以外の場合は false。</summary>
+      <returns>評価が正常に完了した場合は true。それ以外の場合は false。</returns>
+    </member>
+    <member name="T:Windows.AI.MachineLearning.LearningModelFeatureKind">
+      <summary>機械学習モデルの入力と出力機能の種類。</summary>
+    </member>
+    <member name="F:Windows.AI.MachineLearning.LearningModelFeatureKind.Image">
+      <summary>この機能はイメージです。ImageFeatureDescriptor を使用してください。</summary>
+    </member>
+    <member name="F:Windows.AI.MachineLearning.LearningModelFeatureKind.Map">
+      <summary>この機能はマップです。MapFeatureDescriptor を使用してください。</summary>
+    </member>
+    <member name="F:Windows.AI.MachineLearning.LearningModelFeatureKind.Sequence">
+      <summary>この機能はシーケンスです。SequenceFeatureDescriptor を使用してください。</summary>
+    </member>
+    <member name="F:Windows.AI.MachineLearning.LearningModelFeatureKind.Tensor">
+      <summary>この機能はテンソルです。TensorFeatureDescriptor を使用してください。</summary>
+    </member>
+    <member name="T:Windows.AI.MachineLearning.LearningModelSession">
+      <summary>機械学習モデルを評価するために使用します。</summary>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.LearningModelSession.#ctor(Windows.AI.MachineLearning.LearningModel)">
+      <summary>既定のデバイスを使用してセッションを作成します。</summary>
+      <param name="model">このセッションのトレーニングされた機械学習モデル。</param>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.LearningModelSession.#ctor(Windows.AI.MachineLearning.LearningModel,Windows.AI.MachineLearning.LearningModelDevice)">
+      <summary>指定したデバイスを使用してセッションを作成します。</summary>
+      <param name="model">このセッションのトレーニングされた機械学習モデル。</param>
+      <param name="deviceToRunOn">セッションの評価用デバイス。</param>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.LearningModelSession.#ctor(Windows.AI.MachineLearning.LearningModel,Windows.AI.MachineLearning.LearningModelDevice,Windows.AI.MachineLearning.LearningModelSessionOptions)">
+      <summary>指定されたデバイスと追加の推論オプションを使用してセッションを作成します。</summary>
+      <param name="model">このセッションのトレーニングされた機械学習モデル。</param>
+      <param name="deviceToRunOn">セッションの評価用デバイス。</param>
+      <param name="learningModelSessionOptions">セッションの作成と評価を構成するために使用されたオプション。</param>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.LearningModelSession.Device">
+      <summary>セッションの評価版のデバイスを返します。</summary>
+      <returns>セッションの評価用デバイス。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.LearningModelSession.EvaluationProperties">
+      <summary>モデルの評価を制御するプロパティのセット。</summary>
+      <returns>モデルの評価を制御するプロパティのセット。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.LearningModelSession.Model">
+      <summary>このセッションのトレーニングされた機械学習モデルを返します。</summary>
+      <returns>このセッションのトレーニングされた機械学習モデル。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.LearningModelSession.Close">
+      <summary>
+      </summary>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.LearningModelSession.Evaluate(Windows.AI.MachineLearning.LearningModelBinding,System.String)">
+      <summary>*bindings* でバインドされている機能の値を使用して、機械学習モデルを評価します。</summary>
+      <param name="bindings">モデル入力と変数インスタンスとの関連付けを表すホルダー。</param>
+      <param name="correlationId">出力結果を接続するためのオプションのユーザー指定の文字列。</param>
+      <returns>評価の結果。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.LearningModelSession.EvaluateAsync(Windows.AI.MachineLearning.LearningModelBinding,System.String)">
+      <summary>既に *bindings* でバインドされている機能の値を使用して、非同期的に機械学習モデルを評価します。</summary>
+      <param name="bindings">名前付きの入力と出力機能にバインドされる値。</param>
+      <param name="correlationId">出力結果を接続するためのオプションのユーザー指定の文字列。</param>
+      <returns>評価からの LearningModelEvaluationResult。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.LearningModelSession.EvaluateFeatures(Windows.Foundation.Collections.IMap{System.String,System.Object},System.String)">
+      <summary>*features* 内の機能の値を使用して、機械学習モデルを評価します。</summary>
+      <param name="features">モデルを評価するために使用する機能のマップ。</param>
+      <param name="correlationId">出力結果を接続するためのオプションのユーザー指定の文字列。</param>
+      <returns>評価の結果。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.LearningModelSession.EvaluateFeaturesAsync(Windows.Foundation.Collections.IMap{System.String,System.Object},System.String)">
+      <summary>*features* 内の機能の値を使用して、機械学習モデルを評価します。</summary>
+      <param name="features">モデルを評価するために使用する機能のマップ。</param>
+      <param name="correlationId">出力結果を接続するためのオプションのユーザー指定の文字列。</param>
+      <returns>評価の結果。</returns>
+    </member>
+    <member name="T:Windows.AI.MachineLearning.LearningModelSessionOptions">
+      <summary>LearningModelSession オブジェクトの作成時に使用される推論オプションについて説明します。</summary>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.LearningModelSessionOptions.#ctor">
+      <summary>LearningModelSession の作成を構成するオプションを作成します。</summary>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.LearningModelSessionOptions.BatchSizeOverride">
+      <summary>ターゲット モデルの定数バッチ サイズ オーバーライド値を指定する数値。</summary>
+      <returns>モデルの定数バッチ サイズは、Bind の呼び出しによって想定されている機能の値を入力します。 **BatchSizeOverride** の既定値は、静的バッチサイズ 1 を示す 1 です。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.LearningModelSessionOptions.CloseModelOnSessionCreation">
+      <summary>LearningModelSession の作成時に関連付けられている学習モデルを閉じる必要があるかどうかを指定します。</summary>
+      <returns>セッションの作成時にモデルを閉じる必要があるかどうかを示します。</returns>
+    </member>
+    <member name="T:Windows.AI.MachineLearning.MachineLearningContract">
+      <summary>
+      </summary>
+    </member>
+    <member name="T:Windows.AI.MachineLearning.MapFeatureDescriptor">
+      <summary>マップは、(キー, 値) のペアのコレクションです。</summary>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.MapFeatureDescriptor.Description">
+      <summary>この機能のモデルでの用途に関する説明。</summary>
+      <returns>この機能のモデルでの用途に関する説明。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.MapFeatureDescriptor.IsRequired">
+      <summary>true の場合は、LearningModelSession.Evaluate を呼び出す前に値をこの機能にバインドする必要があります。</summary>
+      <returns>**LearningModelSession.Evaluate** を呼び出す前に値をこの機能にバインドする必要がある場合は true、それ以外の場合は false。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.MapFeatureDescriptor.KeyKind">
+      <summary>マップのキーは、Tensor の種類の場合があります。</summary>
+      <returns>このマップ キーのテンソルの型。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.MapFeatureDescriptor.Kind">
+      <summary>機能の種類。どの派生クラスを使うか知るために使用します。</summary>
+      <returns>機能の種類。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.MapFeatureDescriptor.Name">
+      <summary>この機能に値をバインドするために使用する名前。</summary>
+      <returns>この機能に値をバインドするために使用する名前。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.MapFeatureDescriptor.ValueDescriptor">
+      <summary>マップの値は、機能の種類の場合があります。</summary>
+      <returns>このマップ値に対する機能。</returns>
+    </member>
+    <member name="T:Windows.AI.MachineLearning.SequenceFeatureDescriptor">
+      <summary>シーケンスは、要素の配列です。</summary>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.SequenceFeatureDescriptor.Description">
+      <summary>この機能のモデルでの用途に関する説明。</summary>
+      <returns>この機能のモデルでの用途に関する説明。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.SequenceFeatureDescriptor.ElementDescriptor">
+      <summary>シーケンス要素は、機能の種類の場合があります。</summary>
+      <returns>このシーケンス要素の機能記述子。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.SequenceFeatureDescriptor.IsRequired">
+      <summary>true の場合は、LearningModelSession.Evaluate を呼び出す前に値をこの機能にバインドする必要があります。</summary>
+      <returns>**LearningModelSession.Evaluate** を呼び出す前に値をこの機能にバインドする必要がある場合は true、それ以外の場合は false。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.SequenceFeatureDescriptor.Kind">
+      <summary>機能の種類。どの派生クラスを使うか知るために使用します。</summary>
+      <returns>機能の種類。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.SequenceFeatureDescriptor.Name">
+      <summary>この機能に値をバインドするために使用する名前。</summary>
+      <returns>この機能に値をバインドするために使用する名前。</returns>
+    </member>
+    <member name="T:Windows.AI.MachineLearning.TensorBoolean">
+      <summary>ブール値の Tensor オブジェクト。</summary>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.TensorBoolean.Kind">
+      <summary>機能の種類。</summary>
+      <returns>機能の種類。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.TensorBoolean.Shape">
+      <summary>各次元の数とサイズを返します。</summary>
+      <returns>各次元の数とサイズ。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.TensorBoolean.TensorKind">
+      <summary>Tensor データ タイプを返します。</summary>
+      <returns>テンソルのデータ型。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorBoolean.Close">
+      <summary>このオブジェクトから作成された未処理の IMemoryBufferReference オブジェクトがない場合、**Close** はオブジェクトを破棄し、オブジェクトに関連付けられているリソースを破棄します。 それ以外の場合、**Close** は関連付けられているリソースからそれ自体をデタッチし、最後の IMemoryBufferReference が閉じられるとリソースは破棄されます。</summary>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorBoolean.Create">
+      <summary>バッファーを割り当てずに、ブール値の Tensor オブジェクトを作成します。</summary>
+      <returns>ブール値の Tensor オブジェクト。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorBoolean.Create(Windows.Foundation.Collections.IIterable{System.Int64})">
+      <summary>ブール型のテンソル オブジェクトを作成し、*shape* サイズのバッファーを割り当てます。</summary>
+      <param name="shape">バッファーのサイズ。</param>
+      <returns>指定されたサイズのバッファーを持つブール型のテンソル オブジェクト。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorBoolean.CreateFromArray(Windows.Foundation.Collections.IIterable{System.Int64},System.Boolean[])">
+      <summary>ブール型のテンソル オブジェクトを作成し、*shape* サイズのバッファーを割り当て、すべての *data* をその中にコピーします。</summary>
+      <param name="shape">バッファーのサイズ。</param>
+      <param name="data">バッファーにコピーするデータ。</param>
+      <returns>指定されたデータを格納するバッファーを持つブール型のテンソル オブジェクト。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorBoolean.CreateFromBuffer(System.Int64[],Windows.Storage.Streams.IBuffer)">
+      <summary>指定された *shape* のブール型のテンソル オブジェクトを作成し、以降の評価用 *data* で基になるバッファーを使用します。</summary>
+      <param name="shape">バッファーのサイズ。</param>
+      <param name="buffer">評価中に使用するバッファー。</param>
+      <returns>指定された IBuffer *data* へのバッファー参照によってサポートされるブール型のテンソル オブジェクト。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorBoolean.CreateFromIterable(Windows.Foundation.Collections.IIterable{System.Int64},Windows.Foundation.Collections.IIterable{System.Boolean})">
+      <summary>ブール型のテンソル オブジェクトを作成し、*shape* サイズのバッファーを割り当て、すべての *data* をその中にコピーします。</summary>
+      <param name="shape">バッファーのサイズ。</param>
+      <param name="data">バッファーにコピーするデータ。</param>
+      <returns>指定されたデータを格納するバッファーを持つブール型のテンソル オブジェクト。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorBoolean.CreateFromShapeArrayAndDataArray(System.Int64[],System.Boolean[])">
+      <summary>ブール型のテンソル オブジェクトを作成し、*shape* サイズのバッファーを割り当て、すべての *data* をその中にコピーします。</summary>
+      <param name="shape">バッファーのサイズ。</param>
+      <param name="data">バッファーにコピーするデータ。</param>
+      <returns>指定されたデータを格納するバッファーを持つブール型のテンソル オブジェクト。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorBoolean.CreateReference">
+      <summary>ブール型のテンソル オブジェクトをサポートするバッファーの IMemoryBufferReference 表現を返します。</summary>
+      <returns>テンソル バッファーの IMemoryBufferReference 表現。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorBoolean.GetAsVectorView">
+      <summary>データの読み取り専用ビューを返します。</summary>
+      <returns>データの読み取り専用ビュー。</returns>
+    </member>
+    <member name="T:Windows.AI.MachineLearning.TensorDouble">
+      <summary>64 ビット浮動小数点型のテンソル オブジェクト。</summary>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.TensorDouble.Kind">
+      <summary>機能の種類。</summary>
+      <returns>機能の種類。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.TensorDouble.Shape">
+      <summary>各次元の数とサイズを返します。</summary>
+      <returns>各次元の数とサイズ。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.TensorDouble.TensorKind">
+      <summary>Tensor データ タイプを返します。</summary>
+      <returns>テンソルのデータ型。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorDouble.Close">
+      <summary>このオブジェクトから作成された未処理の IMemoryBufferReference オブジェクトがない場合、**Close** はオブジェクトを破棄し、オブジェクトに関連付けられているリソースを破棄します。 それ以外の場合、**Close** は関連付けられているリソースからそれ自体をデタッチし、最後の IMemoryBufferReference が閉じられるとリソースは破棄されます。</summary>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorDouble.Create">
+      <summary>バッファーを割り当てずに、64 ビット浮動小数点型のテンソル オブジェクトを作成します。</summary>
+      <returns>64 ビット浮動小数点型のテンソル オブジェクト。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorDouble.Create(Windows.Foundation.Collections.IIterable{System.Int64})">
+      <summary>64 ビット浮動小数点型のテンソル オブジェクトを作成し、*shape* サイズのバッファーを割り当てます。</summary>
+      <param name="shape">バッファーのサイズ。</param>
+      <returns>指定されたサイズのバッファーを持つ 64 ビット浮動小数点型のテンソル オブジェクト。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorDouble.CreateFromArray(Windows.Foundation.Collections.IIterable{System.Int64},System.Double[])">
+      <summary>64 ビット浮動小数点型のテンソル オブジェクトを作成し、*shape* サイズのバッファーを割り当て、すべての *data* をその中にコピーします。</summary>
+      <param name="shape">バッファーのサイズ。</param>
+      <param name="data">バッファーにコピーするデータ。</param>
+      <returns>指定されたデータを格納するバッファーを持つ 64 ビット浮動小数点型のテンソル オブジェクト。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorDouble.CreateFromBuffer(System.Int64[],Windows.Storage.Streams.IBuffer)">
+      <summary>指定された *shape* の倍精度浮動小数点型のテンソル オブジェクトを作成し、以降の評価用 *data* で基になるバッファーを使用します。</summary>
+      <param name="shape">バッファーのサイズ。</param>
+      <param name="buffer">評価中に使用するバッファー。</param>
+      <returns>指定された IBuffer *data* へのバッファー参照によってサポートされる倍精度浮動小数点型のテンソル オブジェクト。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorDouble.CreateFromIterable(Windows.Foundation.Collections.IIterable{System.Int64},Windows.Foundation.Collections.IIterable{System.Double})">
+      <summary>64 ビット浮動小数点型のテンソル オブジェクトを作成し、*shape* サイズのバッファーを割り当て、すべての *data* をその中にコピーします。</summary>
+      <param name="shape">バッファーのサイズ。</param>
+      <param name="data">バッファーにコピーするデータ。</param>
+      <returns>指定されたデータを格納するバッファーを持つ 64 ビット浮動小数点型のテンソル オブジェクト。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorDouble.CreateFromShapeArrayAndDataArray(System.Int64[],System.Double[])">
+      <summary>64 ビット浮動小数点型のテンソル オブジェクトを作成し、*shape* サイズのバッファーを割り当て、すべての *data* をその中にコピーします。</summary>
+      <param name="shape">バッファーのサイズ。</param>
+      <param name="data">バッファーにコピーするデータ。</param>
+      <returns>指定されたデータを格納するバッファーを持つ 64 ビット浮動小数点型のテンソル オブジェクト。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorDouble.CreateReference">
+      <summary>倍精度浮動小数点型のテンソル オブジェクトをサポートするバッファーの IMemoryBufferReference 表現を返します。</summary>
+      <returns>テンソル バッファーの IMemoryBufferReference 表現。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorDouble.GetAsVectorView">
+      <summary>データの読み取り専用ビューを返します。</summary>
+      <returns>データの読み取り専用ビュー。</returns>
+    </member>
+    <member name="T:Windows.AI.MachineLearning.TensorFeatureDescriptor">
+      <summary>テンソルは、値の多次元配列です。</summary>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.TensorFeatureDescriptor.Description">
+      <summary>この機能のモデルでの用途に関する説明。</summary>
+      <returns>この機能のモデルでの用途に関する説明。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.TensorFeatureDescriptor.IsRequired">
+      <summary>true の場合は、LearningModelSession.Evaluate を呼び出す前に値をこの機能にバインドする必要があります。</summary>
+      <returns>**LearningModelSession.Evaluate** を呼び出す前に値をこの機能にバインドする必要がある場合は true、それ以外の場合は false。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.TensorFeatureDescriptor.Kind">
+      <summary>機能の種類。どの派生クラスを使うか知るために使用します。</summary>
+      <returns>機能の種類。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.TensorFeatureDescriptor.Name">
+      <summary>この機能に値をバインドするために使用する名前。</summary>
+      <returns>この機能に値をバインドするために使用する名前。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.TensorFeatureDescriptor.Shape">
+      <summary>各次元の数とサイズを返します。</summary>
+      <returns>各次元の数とサイズ。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.TensorFeatureDescriptor.TensorKind">
+      <summary>Tensor データ タイプを返します。</summary>
+      <returns>テンソルのデータ型。</returns>
+    </member>
+    <member name="T:Windows.AI.MachineLearning.TensorFloat">
+      <summary>32 ビット浮動小数点型のテンソル オブジェクト。</summary>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.TensorFloat.Kind">
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.TensorFloat.Shape">
+      <summary>各次元の数とサイズを返します。</summary>
+      <returns>各次元の数とサイズ。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.TensorFloat.TensorKind">
+      <summary>Tensor データ タイプを返します。</summary>
+      <returns>テンソルのデータ型。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorFloat.Close">
+      <summary>
+      </summary>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorFloat.Create">
+      <summary>バッファーを割り当てずに、32 ビット浮動小数点型のテンソル オブジェクトを作成します。</summary>
+      <returns>32 ビット浮動小数点型のテンソル オブジェクト。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorFloat.Create(Windows.Foundation.Collections.IIterable{System.Int64})">
+      <summary>32 ビット浮動小数点型のテンソル オブジェクトを作成し、*shape* サイズのバッファーを割り当てます。</summary>
+      <param name="shape">バッファーのサイズ。</param>
+      <returns>指定されたサイズのバッファーを持つ 32 ビット浮動小数点型のテンソル オブジェクト。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorFloat.CreateFromArray(Windows.Foundation.Collections.IIterable{System.Int64},System.Single[])">
+      <summary>32 ビット浮動小数点型のテンソル オブジェクトを作成し、*shape* サイズのバッファーを割り当て、すべての *data* をその中にコピーします。</summary>
+      <param name="shape">バッファーのサイズ。</param>
+      <param name="data">バッファーにコピーするデータ。</param>
+      <returns>指定されたデータを格納するバッファーを持つ 32 ビット浮動小数点型のテンソル オブジェクト。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorFloat.CreateFromBuffer(System.Int64[],Windows.Storage.Streams.IBuffer)">
+      <summary>指定された *shape* の浮動小数点型のテンソル オブジェクトを作成し、以降の評価用 *data* で基になるバッファーを使用します。</summary>
+      <param name="shape">バッファーのサイズ。</param>
+      <param name="buffer">評価中に使用するバッファー。</param>
+      <returns>指定された IBuffer *data* へのバッファー参照によってサポートされる浮動小数点型のテンソル オブジェクト。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorFloat.CreateFromIterable(Windows.Foundation.Collections.IIterable{System.Int64},Windows.Foundation.Collections.IIterable{System.Single})">
+      <summary>32 ビット浮動小数点型のテンソル オブジェクトを作成し、*shape* サイズのバッファーを割り当て、すべての *data* をその中にコピーします。</summary>
+      <param name="shape">バッファーのサイズ。</param>
+      <param name="data">バッファーにコピーするデータ。</param>
+      <returns>指定されたデータを格納するバッファーを持つ 32 ビット浮動小数点型のテンソル オブジェクト。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorFloat.CreateFromShapeArrayAndDataArray(System.Int64[],System.Single[])">
+      <summary>32 ビット浮動小数点型のテンソル オブジェクトを作成し、*shape* サイズのバッファーを割り当て、すべての *data* をその中にコピーします。</summary>
+      <param name="shape">バッファーのサイズ。</param>
+      <param name="data">バッファーにコピーするデータ。</param>
+      <returns>指定されたデータを格納するバッファーを持つ 32 ビット浮動小数点型のテンソル オブジェクト。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorFloat.CreateReference">
+      <summary>32 ビット浮動小数点型のテンソル オブジェクトをサポートするバッファーの IMemoryBufferReference 表現を返します。</summary>
+      <returns>テンソル バッファーの IMemoryBufferReference 表現。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorFloat.GetAsVectorView">
+      <summary>データの読み取り専用ビューを返します。</summary>
+      <returns>データの読み取り専用ビュー。</returns>
+    </member>
+    <member name="T:Windows.AI.MachineLearning.TensorFloat16Bit">
+      <summary>16 ビット浮動小数点型のテンソル オブジェクト。</summary>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.TensorFloat16Bit.Kind">
+      <summary>機能の種類。</summary>
+      <returns>機能の種類。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.TensorFloat16Bit.Shape">
+      <summary>各次元の数とサイズを返します。</summary>
+      <returns>各次元の数とサイズ。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.TensorFloat16Bit.TensorKind">
+      <summary>Tensor データ タイプを返します。</summary>
+      <returns>テンソルのデータ型。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorFloat16Bit.Close">
+      <summary>このオブジェクトから作成された未処理の IMemoryBufferReference オブジェクトがない場合、**Close** はオブジェクトを破棄し、オブジェクトに関連付けられているリソースを破棄します。 それ以外の場合、**Close** は関連付けられているリソースからそれ自体をデタッチし、最後の IMemoryBufferReference が閉じられるとリソースは破棄されます。</summary>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorFloat16Bit.Create">
+      <summary>バッファーを割り当てずに、16 ビット浮動小数点型のテンソル オブジェクトを作成します。</summary>
+      <returns>16 ビット浮動小数点型のテンソル オブジェクト。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorFloat16Bit.Create(Windows.Foundation.Collections.IIterable{System.Int64})">
+      <summary>16 ビット浮動小数点型のテンソル オブジェクトを作成し、*shape* サイズのバッファーを割り当てます。</summary>
+      <param name="shape">バッファーのサイズ。</param>
+      <returns>指定されたサイズのバッファーを持つ 16 ビット浮動小数点型のテンソル オブジェクト。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorFloat16Bit.CreateFromArray(Windows.Foundation.Collections.IIterable{System.Int64},System.Single[])">
+      <summary>16 ビット浮動小数点型のテンソル オブジェクトを作成し、*shape* サイズのバッファーを割り当て、すべての *data* をその中にコピーします。</summary>
+      <param name="shape">バッファーのサイズ。</param>
+      <param name="data">バッファーにコピーするデータ。</param>
+      <returns>指定されたデータを格納するバッファーを持つ 16 ビット浮動小数点型のテンソル オブジェクト。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorFloat16Bit.CreateFromBuffer(System.Int64[],Windows.Storage.Streams.IBuffer)">
+      <summary>指定された *shape* の 16 ビット浮動小数点型のテンソル オブジェクトを作成し、以降の評価用 *data* で基になるバッファーを使用します。</summary>
+      <param name="shape">バッファーのサイズ。</param>
+      <param name="buffer">評価中に使用するバッファー。</param>
+      <returns>指定された IBuffer *data* へのバッファー参照によってサポートされる 16 ビット浮動小数点型のテンソル オブジェクト。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorFloat16Bit.CreateFromIterable(Windows.Foundation.Collections.IIterable{System.Int64},Windows.Foundation.Collections.IIterable{System.Single})">
+      <summary>16 ビット浮動小数点型のテンソル オブジェクトを作成し、*shape* サイズのバッファーを割り当て、すべての *data* をその中にコピーします。</summary>
+      <param name="shape">バッファーのサイズ。</param>
+      <param name="data">バッファーにコピーするデータ。</param>
+      <returns>指定されたデータを格納するバッファーを持つ 16 ビット浮動小数点型のテンソル オブジェクト。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorFloat16Bit.CreateFromShapeArrayAndDataArray(System.Int64[],System.Single[])">
+      <summary>16 ビット浮動小数点型のテンソル オブジェクトを作成し、*shape* サイズのバッファーを割り当て、すべての *data* をその中にコピーします。</summary>
+      <param name="shape">バッファーのサイズ。</param>
+      <param name="data">バッファーにコピーするデータ。</param>
+      <returns>指定されたデータを格納するバッファーを持つ 16 ビット浮動小数点型のテンソル オブジェクト。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorFloat16Bit.CreateReference">
+      <summary>16 ビット浮動小数点型のテンソル オブジェクトをサポートするバッファーの IMemoryBufferReference 表現を返します。</summary>
+      <returns>テンソル バッファーの IMemoryBufferReference 表現。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorFloat16Bit.GetAsVectorView">
+      <summary>データの読み取り専用ビューを返します。</summary>
+      <returns>データの読み取り専用ビュー。</returns>
+    </member>
+    <member name="T:Windows.AI.MachineLearning.TensorInt16Bit">
+      <summary>16 ビット符号付き整数型のテンソル オブジェクト。</summary>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.TensorInt16Bit.Kind">
+      <summary>機能の種類。</summary>
+      <returns>機能の種類。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.TensorInt16Bit.Shape">
+      <summary>各次元の数とサイズを返します。</summary>
+      <returns>各次元の数とサイズ。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.TensorInt16Bit.TensorKind">
+      <summary>Tensor データ タイプを返します。</summary>
+      <returns>テンソルのデータ型。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorInt16Bit.Close">
+      <summary>このオブジェクトから作成された未処理の IMemoryBufferReference オブジェクトがない場合、**Close** はオブジェクトを破棄し、オブジェクトに関連付けられているリソースを破棄します。 それ以外の場合、**Close** は関連付けられているリソースからそれ自体をデタッチし、最後の IMemoryBufferReference が閉じられるとリソースは破棄されます。</summary>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorInt16Bit.Create">
+      <summary>バッファーを割り当てずに、16 ビット符号付き整数型のテンソル オブジェクトを作成します。</summary>
+      <returns>16 ビット符号付き整数型のテンソル オブジェクト。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorInt16Bit.Create(Windows.Foundation.Collections.IIterable{System.Int64})">
+      <summary>16 ビット符号付き整数型のテンソル オブジェクトを作成し、*shape* サイズのバッファーを割り当てます。</summary>
+      <param name="shape">バッファーのサイズ。</param>
+      <returns>指定されたサイズのバッファーを持つ 16 ビット符号付き整数型のテンソル オブジェクト。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorInt16Bit.CreateFromArray(Windows.Foundation.Collections.IIterable{System.Int64},System.Int16[])">
+      <summary>16 ビット符号付き整数型のテンソル オブジェクトを作成し、*shape* サイズのバッファーを割り当て、すべての *data* をその中にコピーします。</summary>
+      <param name="shape">バッファーのサイズ。</param>
+      <param name="data">バッファーにコピーするデータ。</param>
+      <returns>指定されたデータを格納するバッファーを持つ 16 ビット符号付き整数型のテンソル オブジェクト。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorInt16Bit.CreateFromBuffer(System.Int64[],Windows.Storage.Streams.IBuffer)">
+      <summary>指定された *shape* の 16 ビット符号付き整数型のテンソル オブジェクトを作成し、以降の評価で *buffer* の基になるバッファーを使用します。</summary>
+      <param name="shape">バッファーのサイズ。</param>
+      <param name="buffer">評価中に使用するバッファー。</param>
+      <returns>指定された IBuffer *buffer* へのバッファー参照によってサポートされる 16 ビット符号付き整数型のテンソル オブジェクト。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorInt16Bit.CreateFromIterable(Windows.Foundation.Collections.IIterable{System.Int64},Windows.Foundation.Collections.IIterable{System.Int16})">
+      <summary>16 ビット符号付き整数型のテンソル オブジェクトを作成し、*shape* サイズのバッファーを割り当て、すべての *data* をその中にコピーします。</summary>
+      <param name="shape">バッファーのサイズ。</param>
+      <param name="data">バッファーにコピーするデータ。</param>
+      <returns>指定されたデータを格納するバッファーを持つ 16 ビット符号付き整数型のテンソル オブジェクト。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorInt16Bit.CreateFromShapeArrayAndDataArray(System.Int64[],System.Int16[])">
+      <summary>16 ビット符号付き整数型のテンソル オブジェクトを作成し、*shape* サイズのバッファーを割り当て、すべての *data* をその中にコピーします。</summary>
+      <param name="shape">バッファーのサイズ。</param>
+      <param name="data">バッファーにコピーするデータ。</param>
+      <returns>指定されたデータを格納するバッファーを持つ 16 ビット符号付き整数型のテンソル オブジェクト。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorInt16Bit.CreateReference">
+      <summary>16 ビット符号付き整数型のテンソル オブジェクトをサポートするバッファーの IMemoryBufferReference 表現を返します。</summary>
+      <returns>テンソル バッファーの IMemoryBufferReference 表現。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorInt16Bit.GetAsVectorView">
+      <summary>データの読み取り専用ビューを返します。</summary>
+      <returns>データの読み取り専用ビュー。</returns>
+    </member>
+    <member name="T:Windows.AI.MachineLearning.TensorInt32Bit">
+      <summary>32 ビット符号付き整数型のテンソル オブジェクト。</summary>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.TensorInt32Bit.Kind">
+      <summary>機能の種類。</summary>
+      <returns>機能の種類。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.TensorInt32Bit.Shape">
+      <summary>各次元の数とサイズを返します。</summary>
+      <returns>各次元の数とサイズ。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.TensorInt32Bit.TensorKind">
+      <summary>Tensor データ タイプを返します。</summary>
+      <returns>テンソルのデータ型。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorInt32Bit.Close">
+      <summary>このオブジェクトから作成された未処理の IMemoryBufferReference オブジェクトがない場合、**Close** はオブジェクトを破棄し、オブジェクトに関連付けられているリソースを破棄します。 それ以外の場合、**Close** は関連付けられているリソースからそれ自体をデタッチし、最後の IMemoryBufferReference が閉じられるとリソースは破棄されます。</summary>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorInt32Bit.Create">
+      <summary>バッファーを割り当てずに、32 ビット符号付き整数型のテンソル オブジェクトを作成します。</summary>
+      <returns>32 ビット符号付き整数型のテンソル オブジェクト。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorInt32Bit.Create(Windows.Foundation.Collections.IIterable{System.Int64})">
+      <summary>32 ビット符号付き整数型のテンソル オブジェクトを作成し、*shape* サイズのバッファーを割り当てます。</summary>
+      <param name="shape">バッファーのサイズ。</param>
+      <returns>指定されたサイズのバッファーを持つ 32 ビット符号付き整数型のテンソル オブジェクト。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorInt32Bit.CreateFromArray(Windows.Foundation.Collections.IIterable{System.Int64},System.Int32[])">
+      <summary>32 ビット符号付き整数型のテンソル オブジェクトを作成し、*shape* サイズのバッファーを割り当て、すべての *data* をその中にコピーします。</summary>
+      <param name="shape">バッファーのサイズ。</param>
+      <param name="data">バッファーにコピーするデータ。</param>
+      <returns>指定されたデータを格納するバッファーを持つ 32 ビット符号付き整数型のテンソル オブジェクト。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorInt32Bit.CreateFromBuffer(System.Int64[],Windows.Storage.Streams.IBuffer)">
+      <summary>指定された *shape* の 32 ビット符号付き整数型のテンソル オブジェクトを作成し、以降の評価で *buffer* の基になるバッファーを使用します。</summary>
+      <param name="shape">バッファーのサイズ。</param>
+      <param name="buffer">評価中に使用するバッファー。</param>
+      <returns>指定された IBuffer *buffer* へのバッファー参照によってサポートされる 32 ビット符号付き整数型のテンソル オブジェクト。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorInt32Bit.CreateFromIterable(Windows.Foundation.Collections.IIterable{System.Int64},Windows.Foundation.Collections.IIterable{System.Int32})">
+      <summary>32 ビット符号付き整数型のテンソル オブジェクトを作成し、*shape* サイズのバッファーを割り当て、すべての *data* をその中にコピーします。</summary>
+      <param name="shape">バッファーのサイズ。</param>
+      <param name="data">バッファーにコピーするデータ。</param>
+      <returns>指定されたデータを格納するバッファーを持つ 32 ビット符号付き整数型のテンソル オブジェクト。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorInt32Bit.CreateFromShapeArrayAndDataArray(System.Int64[],System.Int32[])">
+      <summary>32 ビット符号付き整数型のテンソル オブジェクトを作成し、*shape* サイズのバッファーを割り当て、すべての *data* をその中にコピーします。</summary>
+      <param name="shape">バッファーのサイズ。</param>
+      <param name="data">バッファーにコピーするデータ。</param>
+      <returns>指定されたデータを格納するバッファーを持つ 32 ビット符号付き整数型のテンソル オブジェクト。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorInt32Bit.CreateReference">
+      <summary>32 ビット符号付き整数型のテンソル オブジェクトをサポートするバッファーの IMemoryBufferReference 表現を返します。</summary>
+      <returns>テンソル バッファーの IMemoryBufferReference 表現。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorInt32Bit.GetAsVectorView">
+      <summary>データの読み取り専用ビューを返します。</summary>
+      <returns>データの読み取り専用ビュー。</returns>
+    </member>
+    <member name="T:Windows.AI.MachineLearning.TensorInt64Bit">
+      <summary>64 ビット符号付き整数型のテンソル オブジェクト。</summary>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.TensorInt64Bit.Kind">
+      <summary>機能の種類。</summary>
+      <returns>機能の種類。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.TensorInt64Bit.Shape">
+      <summary>各次元の数とサイズを返します。</summary>
+      <returns>各次元の数とサイズ。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.TensorInt64Bit.TensorKind">
+      <summary>Tensor データ タイプを返します。</summary>
+      <returns>テンソルのデータ型。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorInt64Bit.Close">
+      <summary>このオブジェクトから作成された未処理の IMemoryBufferReference オブジェクトがない場合、**Close** はオブジェクトを破棄し、オブジェクトに関連付けられているリソースを破棄します。 それ以外の場合、**Close** は関連付けられているリソースからそれ自体をデタッチし、最後の IMemoryBufferReference が閉じられるとリソースは破棄されます。</summary>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorInt64Bit.Create">
+      <summary>バッファーを割り当てずに、64 ビット符号付き整数型のテンソル オブジェクトを作成します。</summary>
+      <returns>64 ビット符号付き整数型のテンソル オブジェクト。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorInt64Bit.Create(Windows.Foundation.Collections.IIterable{System.Int64})">
+      <summary>64 ビット符号付き整数型のテンソル オブジェクトを作成し、*shape* サイズのバッファーを割り当てます。</summary>
+      <param name="shape">バッファーのサイズ。</param>
+      <returns>指定されたサイズのバッファーを持つ 64 ビット符号付き整数型のテンソル オブジェクト。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorInt64Bit.CreateFromArray(Windows.Foundation.Collections.IIterable{System.Int64},System.Int64[])">
+      <summary>64 ビット符号付き整数型のテンソル オブジェクトを作成し、*shape* サイズのバッファーを割り当て、すべての *data* をその中にコピーします。</summary>
+      <param name="shape">バッファーのサイズ。</param>
+      <param name="data">バッファーにコピーするデータ。</param>
+      <returns>指定されたデータを格納するバッファーを持つ 64 ビット符号付き整数型のテンソル オブジェクト。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorInt64Bit.CreateFromBuffer(System.Int64[],Windows.Storage.Streams.IBuffer)">
+      <summary>指定された *shape* の 64 ビット符号付き整数型のテンソル オブジェクトを作成し、以降の評価で *buffer* の基になるバッファーを使用します。</summary>
+      <param name="shape">バッファーのサイズ。</param>
+      <param name="buffer">評価中に使用するバッファー。</param>
+      <returns>指定された IBuffer *buffer* へのバッファー参照によってサポートされる 64 ビット符号付き整数型のテンソル オブジェクト。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorInt64Bit.CreateFromIterable(Windows.Foundation.Collections.IIterable{System.Int64},Windows.Foundation.Collections.IIterable{System.Int64})">
+      <summary>64 ビット符号付き整数型のテンソル オブジェクトを作成し、*shape* サイズのバッファーを割り当て、すべての *data* をその中にコピーします。</summary>
+      <param name="shape">バッファーのサイズ。</param>
+      <param name="data">バッファーにコピーするデータ。</param>
+      <returns>指定されたデータを格納するバッファーを持つ 64 ビット符号付き整数型のテンソル オブジェクト。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorInt64Bit.CreateFromShapeArrayAndDataArray(System.Int64[],System.Int64[])">
+      <summary>64 ビット符号付き整数型のテンソル オブジェクトを作成し、*shape* サイズのバッファーを割り当て、すべての *data* をその中にコピーします。</summary>
+      <param name="shape">バッファーのサイズ。</param>
+      <param name="data">バッファーにコピーするデータ。</param>
+      <returns>指定されたデータを格納するバッファーを持つ 64 ビット符号付き整数型のテンソル オブジェクト。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorInt64Bit.CreateReference">
+      <summary>64 ビット符号付き整数型のテンソル オブジェクトをサポートするバッファーの IMemoryBufferReference 表現を返します。</summary>
+      <returns>テンソル バッファーの IMemoryBufferReference 表現。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorInt64Bit.GetAsVectorView">
+      <summary>データの読み取り専用ビューを返します。</summary>
+      <returns>データの読み取り専用ビュー。</returns>
+    </member>
+    <member name="T:Windows.AI.MachineLearning.TensorInt8Bit">
+      <summary>8 ビット符号付き整数型のテンソル オブジェクト。</summary>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.TensorInt8Bit.Kind">
+      <summary>機能の種類。</summary>
+      <returns>機能の種類。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.TensorInt8Bit.Shape">
+      <summary>各次元の数とサイズを返します。</summary>
+      <returns>各次元の数とサイズ。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.TensorInt8Bit.TensorKind">
+      <summary>Tensor データ タイプを返します。</summary>
+      <returns>テンソルのデータ型。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorInt8Bit.Close">
+      <summary>このオブジェクトから作成された未処理の IMemoryBufferReference オブジェクトがない場合、**Close** はオブジェクトを破棄し、オブジェクトに関連付けられているリソースを破棄します。 それ以外の場合、**Close** は関連付けられているリソースからそれ自体をデタッチし、最後の IMemoryBufferReference が閉じられるとリソースは破棄されます。</summary>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorInt8Bit.Create">
+      <summary>バッファーを割り当てずに、8 ビット符号付き整数型のテンソル オブジェクトを作成します。</summary>
+      <returns>8 ビット符号付き整数型のテンソル オブジェクト。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorInt8Bit.Create(Windows.Foundation.Collections.IIterable{System.Int64})">
+      <summary>8 ビット符号付き整数型のテンソル オブジェクトを作成し、*shape* サイズのバッファーを割り当てます。</summary>
+      <param name="shape">バッファーのサイズ。</param>
+      <returns>指定されたサイズのバッファーを持つ 8 ビット符号付き整数型のテンソル オブジェクト。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorInt8Bit.CreateFromArray(Windows.Foundation.Collections.IIterable{System.Int64},System.Byte[])">
+      <summary>8 ビット符号付き整数型のテンソル オブジェクトを作成し、*shape* サイズのバッファーを割り当て、すべての *data* をその中にコピーします。</summary>
+      <param name="shape">バッファーのサイズ。</param>
+      <param name="data">バッファーにコピーするデータ。</param>
+      <returns>指定されたデータを格納するバッファーを持つ 8 ビット符号付き整数型のテンソル オブジェクト。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorInt8Bit.CreateFromBuffer(System.Int64[],Windows.Storage.Streams.IBuffer)">
+      <summary>指定された *shape* の 8 ビット符号付き整数型のテンソル オブジェクトを作成し、以降の評価で *buffer* の基になるバッファーを使用します。</summary>
+      <param name="shape">バッファーのサイズ。</param>
+      <param name="buffer">評価中に使用するバッファー。</param>
+      <returns>指定された IBuffer *buffer* へのバッファー参照によってサポートされる 8 ビット符号付き整数型のテンソル オブジェクト。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorInt8Bit.CreateFromIterable(Windows.Foundation.Collections.IIterable{System.Int64},Windows.Foundation.Collections.IIterable{System.Byte})">
+      <summary>8 ビット符号付き整数型のテンソル オブジェクトを作成し、*shape* サイズのバッファーを割り当て、すべての *data* をその中にコピーします。</summary>
+      <param name="shape">バッファーのサイズ。</param>
+      <param name="data">バッファーにコピーするデータ。</param>
+      <returns>指定されたデータを格納するバッファーを持つ 8 ビット符号付き整数型のテンソル オブジェクト。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorInt8Bit.CreateFromShapeArrayAndDataArray(System.Int64[],System.Byte[])">
+      <summary>8 ビット符号付き整数型のテンソル オブジェクトを作成し、*shape* サイズのバッファーを割り当て、すべての *data* をその中にコピーします。</summary>
+      <param name="shape">バッファーのサイズ。</param>
+      <param name="data">バッファーにコピーするデータ。</param>
+      <returns>指定されたデータを格納するバッファーを持つ 8 ビット符号付き整数型のテンソル オブジェクト。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorInt8Bit.CreateReference">
+      <summary>8 ビット符号付き整数型のテンソル オブジェクトをサポートするバッファーの IMemoryBufferReference 表現を返します。</summary>
+      <returns>テンソル バッファーの IMemoryBufferReference 表現。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorInt8Bit.GetAsVectorView">
+      <summary>データの読み取り専用ビューを返します。</summary>
+      <returns>データの読み取り専用ビュー。</returns>
+    </member>
+    <member name="T:Windows.AI.MachineLearning.TensorKind">
+      <summary>サポートされている Tensor データ タイプの一覧を定義します。</summary>
+    </member>
+    <member name="F:Windows.AI.MachineLearning.TensorKind.Boolean">
+      <summary>テンソルの型は **Boolean** です。</summary>
+    </member>
+    <member name="F:Windows.AI.MachineLearning.TensorKind.Complex128">
+      <summary>無効な型。</summary>
+    </member>
+    <member name="F:Windows.AI.MachineLearning.TensorKind.Complex64">
+      <summary>無効な型。</summary>
+    </member>
+    <member name="F:Windows.AI.MachineLearning.TensorKind.Double">
+      <summary>テンソルの型は 64 ビット浮動小数点です。</summary>
+    </member>
+    <member name="F:Windows.AI.MachineLearning.TensorKind.Float">
+      <summary>テンソルの型は 32 ビット浮動小数点です。</summary>
+    </member>
+    <member name="F:Windows.AI.MachineLearning.TensorKind.Float16">
+      <summary>テンソルの型は 16 ビット浮動小数点です。</summary>
+    </member>
+    <member name="F:Windows.AI.MachineLearning.TensorKind.Int16">
+      <summary>テンソルの型は 16 ビット符号付き整数です。</summary>
+    </member>
+    <member name="F:Windows.AI.MachineLearning.TensorKind.Int32">
+      <summary>テンソルの型は 32 ビット符号付き整数です。</summary>
+    </member>
+    <member name="F:Windows.AI.MachineLearning.TensorKind.Int64">
+      <summary>テンソルの型は 64 ビット符号付き整数です。</summary>
+    </member>
+    <member name="F:Windows.AI.MachineLearning.TensorKind.Int8">
+      <summary>テンソルの型は 8 ビット符号付き整数です。</summary>
+    </member>
+    <member name="F:Windows.AI.MachineLearning.TensorKind.String">
+      <summary>テンソルの型は **String** です。</summary>
+    </member>
+    <member name="F:Windows.AI.MachineLearning.TensorKind.UInt16">
+      <summary>テンソルの型は 16 ビット符号なし整数です。</summary>
+    </member>
+    <member name="F:Windows.AI.MachineLearning.TensorKind.UInt32">
+      <summary>テンソルの型は 32 ビット符号なし整数です。</summary>
+    </member>
+    <member name="F:Windows.AI.MachineLearning.TensorKind.UInt64">
+      <summary>テンソルの型は 64 ビット符号なし整数です。</summary>
+    </member>
+    <member name="F:Windows.AI.MachineLearning.TensorKind.UInt8">
+      <summary>テンソルの型は 8 ビット符号なし整数です。</summary>
+    </member>
+    <member name="F:Windows.AI.MachineLearning.TensorKind.Undefined">
+      <summary>無効な型。</summary>
+    </member>
+    <member name="T:Windows.AI.MachineLearning.TensorString">
+      <summary>文字列の Tensor オブジェクト。</summary>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.TensorString.Kind">
+      <summary>機能の種類。</summary>
+      <returns>機能の種類。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.TensorString.Shape">
+      <summary>各次元の数とサイズを返します。</summary>
+      <returns>各次元の数とサイズ。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.TensorString.TensorKind">
+      <summary>Tensor データ タイプを返します。</summary>
+      <returns>テンソルのデータ型。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorString.Close">
+      <summary>このオブジェクトから作成された未処理の IMemoryBufferReference オブジェクトがない場合、**Close** はオブジェクトを破棄し、オブジェクトに関連付けられているリソースを破棄します。 それ以外の場合、**Close** は関連付けられているリソースからそれ自体をデタッチし、最後の IMemoryBufferReference が閉じられるとリソースは破棄されます。</summary>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorString.Create">
+      <summary>バッファーを割り当てずに、文字列の Tensor オブジェクトを作成します。</summary>
+      <returns>文字列の Tensor オブジェクト。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorString.Create(Windows.Foundation.Collections.IIterable{System.Int64})">
+      <summary>文字列型のテンソル オブジェクトを作成し、*shape* サイズのバッファーを割り当てます。</summary>
+      <param name="shape">バッファーのサイズ。</param>
+      <returns>指定されたサイズのバッファーを持つ文字列型のテンソル オブジェクト。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorString.CreateFromArray(Windows.Foundation.Collections.IIterable{System.Int64},System.String[])">
+      <summary>文字列型のテンソル オブジェクトを作成し、*shape* サイズのバッファーを割り当て、すべての *data* をその中にコピーします。</summary>
+      <param name="shape">バッファーのサイズ。</param>
+      <param name="data">バッファーにコピーするデータ。</param>
+      <returns>指定されたデータを格納するバッファーを持つ文字列型のテンソル オブジェクト。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorString.CreateFromIterable(Windows.Foundation.Collections.IIterable{System.Int64},Windows.Foundation.Collections.IIterable{System.String})">
+      <summary>文字列型のテンソル オブジェクトを作成し、*shape* サイズのバッファーを割り当て、すべての *data* をその中にコピーします。</summary>
+      <param name="shape">バッファーのサイズ。</param>
+      <param name="data">バッファーにコピーするデータ。</param>
+      <returns>指定されたデータを格納するバッファーを持つ文字列型のテンソル オブジェクト。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorString.CreateFromShapeArrayAndDataArray(System.Int64[],System.String[])">
+      <summary>文字列型のテンソル オブジェクトを作成し、*shape* サイズのバッファーを割り当て、すべての *data* をその中にコピーします。</summary>
+      <param name="shape">バッファーのサイズ。</param>
+      <param name="data">バッファーにコピーするデータ。</param>
+      <returns>指定されたデータを格納するバッファーを持つ文字列型のテンソル オブジェクト。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorString.CreateReference">
+      <summary>このメソッドは TensorString オブジェクトでは認められていないため、使用しないでください。</summary>
+      <returns>返される IMemoryBufferReference は常に **null** です。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorString.GetAsVectorView">
+      <summary>データの読み取り専用ビューを返します。</summary>
+      <returns>データの読み取り専用ビュー。</returns>
+    </member>
+    <member name="T:Windows.AI.MachineLearning.TensorUInt16Bit">
+      <summary>16 ビット符号なし整数型のテンソル オブジェクト。</summary>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.TensorUInt16Bit.Kind">
+      <summary>機能の種類。</summary>
+      <returns>機能の種類。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.TensorUInt16Bit.Shape">
+      <summary>各次元の数とサイズを返します。</summary>
+      <returns>各次元の数とサイズ。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.TensorUInt16Bit.TensorKind">
+      <summary>Tensor データ タイプを返します。</summary>
+      <returns>テンソルのデータ型。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorUInt16Bit.Close">
+      <summary>このオブジェクトから作成された未処理の IMemoryBufferReference オブジェクトがない場合、**Close** はオブジェクトを破棄し、オブジェクトに関連付けられているリソースを破棄します。 それ以外の場合、**Close** は関連付けられているリソースからそれ自体をデタッチし、最後の IMemoryBufferReference が閉じられるとリソースは破棄されます。</summary>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorUInt16Bit.Create">
+      <summary>バッファーを割り当てずに、16 ビット符号なし整数型のテンソル オブジェクトを作成します。</summary>
+      <returns>16 ビット符号なし整数型のテンソル オブジェクト。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorUInt16Bit.Create(Windows.Foundation.Collections.IIterable{System.Int64})">
+      <summary>16 ビット符号なし整数型のテンソル オブジェクトを作成し、*shape* サイズのバッファーを割り当てます。</summary>
+      <param name="shape">バッファーのサイズ。</param>
+      <returns>指定されたサイズのバッファーを持つ 16 ビット符号なし整数型のテンソル オブジェクト。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorUInt16Bit.CreateFromArray(Windows.Foundation.Collections.IIterable{System.Int64},System.UInt16[])">
+      <summary>16 ビット符号なし整数型のテンソル オブジェクトを作成し、*shape* サイズのバッファーを割り当て、すべての *data* をその中にコピーします。</summary>
+      <param name="shape">バッファーのサイズ。</param>
+      <param name="data">バッファーにコピーするデータ。</param>
+      <returns>指定されたデータを格納するバッファーを持つ 16 ビット符号なし整数型のテンソル オブジェクト。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorUInt16Bit.CreateFromBuffer(System.Int64[],Windows.Storage.Streams.IBuffer)">
+      <summary>指定された *shape* の 16 ビット符号なし整数型のテンソル オブジェクトを作成し、以降の評価で *buffer* の基になるバッファーを使用します。</summary>
+      <param name="shape">バッファーのサイズ。</param>
+      <param name="buffer">評価中に使用するバッファー。</param>
+      <returns>指定された IBuffer *buffer* へのバッファー参照によってサポートされる 16 ビット符号なし整数型のテンソル オブジェクト。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorUInt16Bit.CreateFromIterable(Windows.Foundation.Collections.IIterable{System.Int64},Windows.Foundation.Collections.IIterable{System.UInt16})">
+      <summary>16 ビット符号なし整数型のテンソル オブジェクトを作成し、*shape* サイズのバッファーを割り当て、すべての *data* をその中にコピーします。</summary>
+      <param name="shape">バッファーのサイズ。</param>
+      <param name="data">バッファーにコピーするデータ。</param>
+      <returns>指定されたデータを格納するバッファーを持つ 16 ビット符号なし整数型のテンソル オブジェクト。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorUInt16Bit.CreateFromShapeArrayAndDataArray(System.Int64[],System.UInt16[])">
+      <summary>16 ビット符号なし整数型のテンソル オブジェクトを作成し、*shape* サイズのバッファーを割り当て、すべての *data* をその中にコピーします。</summary>
+      <param name="shape">バッファーのサイズ。</param>
+      <param name="data">バッファーにコピーするデータ。</param>
+      <returns>指定されたデータを格納するバッファーを持つ 16 ビット符号なし整数型のテンソル オブジェクト。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorUInt16Bit.CreateReference">
+      <summary>16 ビット符号なし整数型のテンソル オブジェクトをサポートするバッファーの IMemoryBufferReference 表現を返します。</summary>
+      <returns>テンソル バッファーの IMemoryBufferReference 表現。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorUInt16Bit.GetAsVectorView">
+      <summary>データの読み取り専用ビューを返します。</summary>
+      <returns>データの読み取り専用ビュー。</returns>
+    </member>
+    <member name="T:Windows.AI.MachineLearning.TensorUInt32Bit">
+      <summary>32 ビット符号なし整数型のテンソル オブジェクト。</summary>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.TensorUInt32Bit.Kind">
+      <summary>機能の種類。</summary>
+      <returns>機能の種類。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.TensorUInt32Bit.Shape">
+      <summary>各次元の数とサイズを返します。</summary>
+      <returns>各次元の数とサイズ。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.TensorUInt32Bit.TensorKind">
+      <summary>Tensor データ タイプを返します。</summary>
+      <returns>テンソルのデータ型。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorUInt32Bit.Close">
+      <summary>このオブジェクトから作成された未処理の IMemoryBufferReference オブジェクトがない場合、**Close** はオブジェクトを破棄し、オブジェクトに関連付けられているリソースを破棄します。 それ以外の場合、**Close** は関連付けられているリソースからそれ自体をデタッチし、最後の IMemoryBufferReference が閉じられるとリソースは破棄されます。</summary>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorUInt32Bit.Create">
+      <summary>バッファーを割り当てずに、32 ビット符号なし整数型のテンソル オブジェクトを作成します。</summary>
+      <returns>32 ビット符号なし整数型のテンソル オブジェクト。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorUInt32Bit.Create(Windows.Foundation.Collections.IIterable{System.Int64})">
+      <summary>32 ビット符号なし整数型のテンソル オブジェクトを作成し、*shape* サイズのバッファーを割り当てます。</summary>
+      <param name="shape">バッファーのサイズ。</param>
+      <returns>指定されたサイズのバッファーを持つ 32 ビット符号なし整数型のテンソル オブジェクト。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorUInt32Bit.CreateFromArray(Windows.Foundation.Collections.IIterable{System.Int64},System.UInt32[])">
+      <summary>32 ビット符号なし整数型のテンソル オブジェクトを作成し、*shape* サイズのバッファーを割り当て、すべての *data* をその中にコピーします。</summary>
+      <param name="shape">バッファーのサイズ。</param>
+      <param name="data">バッファーにコピーするデータ。</param>
+      <returns>指定されたデータを格納するバッファーを持つ 32 ビット符号なし整数型のテンソル オブジェクト。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorUInt32Bit.CreateFromBuffer(System.Int64[],Windows.Storage.Streams.IBuffer)">
+      <summary>指定された *shape* の 32 ビット符号なし整数型のテンソル オブジェクトを作成し、以降の評価で *buffer* の基になるバッファーを使用します。</summary>
+      <param name="shape">バッファーのサイズ。</param>
+      <param name="buffer">評価中に使用するバッファー。</param>
+      <returns>指定された IBuffer *buffer* へのバッファー参照によってサポートされる 32 ビット符号なし整数型のテンソル オブジェクト。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorUInt32Bit.CreateFromIterable(Windows.Foundation.Collections.IIterable{System.Int64},Windows.Foundation.Collections.IIterable{System.UInt32})">
+      <summary>32 ビット符号なし整数型のテンソル オブジェクトを作成し、*shape* サイズのバッファーを割り当て、すべての *data* をその中にコピーします。</summary>
+      <param name="shape">バッファーのサイズ。</param>
+      <param name="data">バッファーにコピーするデータ。</param>
+      <returns>指定されたデータを格納するバッファーを持つ 32 ビット符号なし整数型のテンソル オブジェクト。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorUInt32Bit.CreateFromShapeArrayAndDataArray(System.Int64[],System.UInt32[])">
+      <summary>32 ビット符号なし整数型のテンソル オブジェクトを作成し、*shape* サイズのバッファーを割り当て、すべての *data* をその中にコピーします。</summary>
+      <param name="shape">バッファーのサイズ。</param>
+      <param name="data">バッファーにコピーするデータ。</param>
+      <returns>指定されたデータを格納するバッファーを持つ 32 ビット符号なし整数型のテンソル オブジェクト。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorUInt32Bit.CreateReference">
+      <summary>32 ビット符号なし整数型のテンソル オブジェクトをサポートするバッファーの IMemoryBufferReference 表現を返します。</summary>
+      <returns>テンソル バッファーの IMemoryBufferReference 表現。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorUInt32Bit.GetAsVectorView">
+      <summary>データの読み取り専用ビューを返します。</summary>
+      <returns>データの読み取り専用ビュー。</returns>
+    </member>
+    <member name="T:Windows.AI.MachineLearning.TensorUInt64Bit">
+      <summary>64 ビット符号なし整数型のテンソル オブジェクト。</summary>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.TensorUInt64Bit.Kind">
+      <summary>機能の種類。</summary>
+      <returns>機能の種類。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.TensorUInt64Bit.Shape">
+      <summary>各次元の数とサイズを返します。</summary>
+      <returns>各次元の数とサイズ。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.TensorUInt64Bit.TensorKind">
+      <summary>Tensor データ タイプを返します。</summary>
+      <returns>テンソルのデータ型。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorUInt64Bit.Close">
+      <summary>このオブジェクトから作成された未処理の IMemoryBufferReference オブジェクトがない場合、**Close** はオブジェクトを破棄し、オブジェクトに関連付けられているリソースを破棄します。 それ以外の場合、**Close** は関連付けられているリソースからそれ自体をデタッチし、最後の IMemoryBufferReference が閉じられるとリソースは破棄されます。</summary>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorUInt64Bit.Create">
+      <summary>バッファーを割り当てずに、64 ビット符号なし整数型のテンソル オブジェクトを作成します。</summary>
+      <returns>64 ビット符号なし整数型のテンソル オブジェクト。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorUInt64Bit.Create(Windows.Foundation.Collections.IIterable{System.Int64})">
+      <summary>64 ビット符号なし整数型のテンソル オブジェクトを作成し、*shape* サイズのバッファーを割り当てます。</summary>
+      <param name="shape">バッファーのサイズ。</param>
+      <returns>指定されたサイズのバッファーを持つ 64 ビット符号なし整数型のテンソル オブジェクト。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorUInt64Bit.CreateFromArray(Windows.Foundation.Collections.IIterable{System.Int64},System.UInt64[])">
+      <summary>64 ビット符号なし整数型のテンソル オブジェクトを作成し、*shape* サイズのバッファーを割り当て、すべての *data* をその中にコピーします。</summary>
+      <param name="shape">バッファーのサイズ。</param>
+      <param name="data">バッファーにコピーされるデータ。</param>
+      <returns>指定されたデータを格納するバッファーを持つ 64 ビット符号なし整数型のテンソル オブジェクト。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorUInt64Bit.CreateFromBuffer(System.Int64[],Windows.Storage.Streams.IBuffer)">
+      <summary>指定された *shape* の 64 ビット符号なし整数型のテンソル オブジェクトを作成し、以降の評価で *buffer* の基になるバッファーを使用します。</summary>
+      <param name="shape">バッファーのサイズ。</param>
+      <param name="buffer">評価中に使用するバッファー。</param>
+      <returns>指定された IBuffer *buffer* へのバッファー参照によってサポートされる 64 ビット符号なし整数型のテンソル オブジェクト。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorUInt64Bit.CreateFromIterable(Windows.Foundation.Collections.IIterable{System.Int64},Windows.Foundation.Collections.IIterable{System.UInt64})">
+      <summary>64 ビット符号なし整数型のテンソル オブジェクトを作成し、*shape* サイズのバッファーを割り当て、すべての *data* をその中にコピーします。</summary>
+      <param name="shape">バッファーのサイズ。</param>
+      <param name="data">バッファーにコピーされるデータ。</param>
+      <returns>指定されたデータを格納するバッファーを持つ 64 ビット符号なし整数型のテンソル オブジェクト。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorUInt64Bit.CreateFromShapeArrayAndDataArray(System.Int64[],System.UInt64[])">
+      <summary>64 ビット符号なし整数型のテンソル オブジェクトを作成し、*shape* サイズのバッファーを割り当て、すべての *data* をその中にコピーします。</summary>
+      <param name="shape">バッファーのサイズ。</param>
+      <param name="data">バッファーにコピーされるデータ。</param>
+      <returns>指定されたデータを格納するバッファーを持つ 64 ビット符号なし整数型のテンソル オブジェクト。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorUInt64Bit.CreateReference">
+      <summary>64 ビット符号なし整数型のテンソル オブジェクトをサポートするバッファーの IMemoryBufferReference 表現を返します。</summary>
+      <returns>テンソル バッファーの IMemoryBufferReference 表現。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorUInt64Bit.GetAsVectorView">
+      <summary>データの読み取り専用ビューを返します。</summary>
+      <returns>データの読み取り専用ビュー。</returns>
+    </member>
+    <member name="T:Windows.AI.MachineLearning.TensorUInt8Bit">
+      <summary>8 ビット符号なし整数型のテンソル オブジェクト。</summary>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.TensorUInt8Bit.Kind">
+      <summary>機能の種類。</summary>
+      <returns>機能の種類。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.TensorUInt8Bit.Shape">
+      <summary>各次元の数とサイズを返します。</summary>
+      <returns>各次元の数とサイズ。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.TensorUInt8Bit.TensorKind">
+      <summary>Tensor データ タイプを返します。</summary>
+      <returns>テンソルのデータ型。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorUInt8Bit.Close">
+      <summary>このオブジェクトから作成された未処理の IMemoryBufferReference オブジェクトがない場合、**Close** はオブジェクトを破棄し、オブジェクトに関連付けられているリソースを破棄します。 それ以外の場合、**Close** は関連付けられているリソースからそれ自体をデタッチし、最後の IMemoryBufferReference が閉じられるとリソースは破棄されます。</summary>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorUInt8Bit.Create">
+      <summary>バッファーを割り当てずに、8 ビット符号なし整数型のテンソル オブジェクトを作成します。</summary>
+      <returns>8 ビット符号なし整数型のテンソル オブジェクト。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorUInt8Bit.Create(Windows.Foundation.Collections.IIterable{System.Int64})">
+      <summary>8 ビット符号なし整数型のテンソル オブジェクトを作成し、*shape* サイズのバッファーを割り当てます。</summary>
+      <param name="shape">バッファーのサイズ。</param>
+      <returns>指定されたサイズのバッファーを持つ 8 ビット符号なし整数型のテンソル オブジェクト。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorUInt8Bit.CreateFromArray(Windows.Foundation.Collections.IIterable{System.Int64},System.Byte[])">
+      <summary>8 ビット符号なし整数型のテンソル オブジェクトを作成し、*shape* サイズのバッファーを割り当て、すべての *data* をその中にコピーします。</summary>
+      <param name="shape">バッファーのサイズ。</param>
+      <param name="data">バッファーにコピーするデータ。</param>
+      <returns>指定されたデータを格納するバッファーを持つ 8 ビット符号なし整数型のテンソル オブジェクト。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorUInt8Bit.CreateFromBuffer(System.Int64[],Windows.Storage.Streams.IBuffer)">
+      <summary>指定された *shape* の 8 ビット符号なし整数型のテンソル オブジェクトを作成し、以降の評価で *buffer* の基になるバッファーを使用します。</summary>
+      <param name="shape">バッファーのサイズ。</param>
+      <param name="buffer">評価中に使用するバッファー。</param>
+      <returns>指定された IBuffer *buffer* へのバッファー参照によってサポートされる 8 ビット符号なし整数型のテンソル オブジェクト。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorUInt8Bit.CreateFromIterable(Windows.Foundation.Collections.IIterable{System.Int64},Windows.Foundation.Collections.IIterable{System.Byte})">
+      <summary>8 ビット符号なし整数型のテンソル オブジェクトを作成し、*shape* サイズのバッファーを割り当て、すべての *data* をその中にコピーします。</summary>
+      <param name="shape">バッファーのサイズ。</param>
+      <param name="data">バッファーにコピーするデータ。</param>
+      <returns>指定されたデータを格納するバッファーを持つ 8 ビット符号なし整数型のテンソル オブジェクト。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorUInt8Bit.CreateFromShapeArrayAndDataArray(System.Int64[],System.Byte[])">
+      <summary>8 ビット符号なし整数型のテンソル オブジェクトを作成し、*shape* サイズのバッファーを割り当て、すべての *data* をその中にコピーします。</summary>
+      <param name="shape">バッファーのサイズ。</param>
+      <param name="data">バッファーにコピーするデータ。</param>
+      <returns>指定されたデータを格納するバッファーを持つ 8 ビット符号なし整数型のテンソル オブジェクト。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorUInt8Bit.CreateReference">
+      <summary>8 ビット符号なし整数型のテンソル オブジェクトをサポートするバッファーの IMemoryBufferReference 表現を返します。</summary>
+      <returns>テンソル バッファーの IMemoryBufferReference 表現。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorUInt8Bit.GetAsVectorView">
+      <summary>データの読み取り専用ビューを返します。</summary>
+      <returns>データの読み取り専用ビュー。</returns>
+    </member>
+  </members>
+</doc>
