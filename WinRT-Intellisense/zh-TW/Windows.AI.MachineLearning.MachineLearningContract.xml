@@ -1,0 +1,1272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>Windows.AI.MachineLearning.MachineLearningContract</name>
+  </assembly>
+  <members>
+    <member name="T:Windows.AI.MachineLearning.ILearningModelFeatureDescriptor">
+      <summary>描述所有功能都有的通用屬性。</summary>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.ILearningModelFeatureDescriptor.Description">
+      <summary>描述模型中使用此功能的內容。</summary>
+      <returns>描述模型中使用此功能的內容。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.ILearningModelFeatureDescriptor.IsRequired">
+      <summary>若為 true，呼叫 LearningModelSession.Evaluate 前您必須將值繫結到這項功能。</summary>
+      <returns>若為 true，呼叫 **LearningModelSession.Evaluate** 前您必須將值繫結到這項功能。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.ILearningModelFeatureDescriptor.Kind">
+      <summary>功能種類—使用此資料可得知要使用哪個衍生類別。</summary>
+      <returns>功能種類—使用此資料可得知要使用哪個衍生類別。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.ILearningModelFeatureDescriptor.Name">
+      <summary>您用來將值繫結至此功能的名稱。</summary>
+      <returns>您用來將值繫結至此功能的名稱。</returns>
+    </member>
+    <member name="T:Windows.AI.MachineLearning.ILearningModelFeatureValue">
+      <summary>功能的具現化值。</summary>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.ILearningModelFeatureValue.Kind">
+      <summary>功能的資料類型。</summary>
+      <returns>功能的資料類型。</returns>
+    </member>
+    <member name="T:Windows.AI.MachineLearning.ILearningModelOperatorProvider">
+      <summary>
+      </summary>
+    </member>
+    <member name="T:Windows.AI.MachineLearning.ImageFeatureDescriptor">
+      <summary>描述模型所期望的影像屬性。</summary>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.ImageFeatureDescriptor.BitmapAlphaMode">
+      <summary>指定影像的預期 Alpha 模式。</summary>
+      <returns>影像的 Alpha 模式。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.ImageFeatureDescriptor.BitmapPixelFormat">
+      <summary>指定預期的像素格式 (頻道順序、位元深度和資料型別)。</summary>
+      <returns>影像的像素格式。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.ImageFeatureDescriptor.Description">
+      <summary>描述模型中使用此功能的內容。</summary>
+      <returns>描述模型中使用此功能的內容。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.ImageFeatureDescriptor.Height">
+      <summary>預期的影像高度。</summary>
+      <returns>預期的影像高度。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.ImageFeatureDescriptor.IsRequired">
+      <summary>若為 true，呼叫 LearningModelSession.Evaluate 前您必須將值繫結到這項功能。</summary>
+      <returns>如果您在呼叫 LearningModelSession.Evaluate 前必須先將值繫結到這項功能，則為 true，否則為 false。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.ImageFeatureDescriptor.Kind">
+      <summary>功能種類—使用此資料可得知要使用哪個衍生類別。</summary>
+      <returns>功能的種類。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.ImageFeatureDescriptor.Name">
+      <summary>您用來將值繫結至此功能的名稱。</summary>
+      <returns>您用來將值繫結至此功能的名稱。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.ImageFeatureDescriptor.Width">
+      <summary>預期的影像寬度。</summary>
+      <returns>預期的影像寬度。</returns>
+    </member>
+    <member name="T:Windows.AI.MachineLearning.ImageFeatureValue">
+      <summary>描述用來傳遞到模型的影像屬性。</summary>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.ImageFeatureValue.Kind">
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.ImageFeatureValue.VideoFrame">
+      <summary>取得視訊框架。</summary>
+      <returns>視訊框架。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.ImageFeatureValue.CreateFromVideoFrame(Windows.Media.VideoFrame)">
+      <summary>使用指定之視訊框架建立 ImageFeatureValue。</summary>
+      <param name="image">用來建立 **ImageFeatureValue** 的視訊框架。</param>
+      <returns>從指定之視訊框架建立的 **ImageFeatureValue**。</returns>
+    </member>
+    <member name="T:Windows.AI.MachineLearning.ITensor">
+      <summary>張量是多維值。</summary>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.ITensor.Shape">
+      <summary>傳回每個維度的計數和大小。</summary>
+      <returns>張量每個維度的計數和大小。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.ITensor.TensorKind">
+      <summary>傳回張量的資料類型。</summary>
+      <returns>張量的資料類型。</returns>
+    </member>
+    <member name="T:Windows.AI.MachineLearning.LearningModel">
+      <summary>表示受訓練機器學習模型。</summary>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.LearningModel.Author">
+      <summary>模型作者的名稱。</summary>
+      <returns>模型作者的名稱。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.LearningModel.Description">
+      <summary>模型的描述。</summary>
+      <returns>模型的描述。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.LearningModel.Domain">
+      <summary>模型的網域。</summary>
+      <returns>模型的網域。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.LearningModel.InputFeatures">
+      <summary>模型輸入功能的清單。</summary>
+      <returns>模型輸入功能的清單。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.LearningModel.Metadata">
+      <summary>來自 ONNX 模型的原始 &lt;string,string&gt; 中繼資料。</summary>
+      <returns>來自 ONNX 模型的原始 &lt;string,string&gt; 中繼資料。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.LearningModel.Name">
+      <summary>模型的名稱。</summary>
+      <returns>模型的名稱。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.LearningModel.OutputFeatures">
+      <summary>模型輸出功能的清單。</summary>
+      <returns>模型輸出功能的清單。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.LearningModel.Version">
+      <summary>模型的版本。</summary>
+      <returns>模型的版本。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.LearningModel.Close">
+      <summary>發行記憶體中 ONNX 模型。 呼叫此項目之後，您再也無法建立任何其他 LearningModelSession 物件。</summary>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.LearningModel.LoadFromFilePath(System.String)">
+      <summary>從磁碟檔案載入 ONNX 模型。</summary>
+      <param name="filePath">磁碟上 ONNX 模型檔案的路徑。</param>
+      <returns>表示模型的物件。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.LearningModel.LoadFromFilePath(System.String,Windows.AI.MachineLearning.ILearningModelOperatorProvider)">
+      <summary>從磁碟檔案載入 ONNX 模型。</summary>
+      <param name="filePath">磁碟上 ONNX 模型檔案的路徑。</param>
+      <param name="operatorProvider">
+      </param>
+      <returns>表示模型的物件。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.LearningModel.LoadFromStorageFileAsync(Windows.Storage.IStorageFile)">
+      <summary>從 IStorageFile 非同步載入 ONNX 模型。</summary>
+      <param name="modelFile">模型檔案的位置。</param>
+      <returns>根據模型檔案的 LearningModel。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.LearningModel.LoadFromStorageFileAsync(Windows.Storage.IStorageFile,Windows.AI.MachineLearning.ILearningModelOperatorProvider)">
+      <summary>從 IStorageFile 非同步載入 ONNX 模型。</summary>
+      <param name="modelFile">模型檔案的位置。</param>
+      <param name="operatorProvider">
+      </param>
+      <returns>根據模型檔案的 LearningModel。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.LearningModel.LoadFromStream(Windows.Storage.Streams.IRandomAccessStreamReference)">
+      <summary>從串流載入 ONNX 模型。</summary>
+      <param name="modelStream">要從其中載入模型的資料流。</param>
+      <returns>表示模型檔案的物件。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.LearningModel.LoadFromStream(Windows.Storage.Streams.IRandomAccessStreamReference,Windows.AI.MachineLearning.ILearningModelOperatorProvider)">
+      <summary>從串流載入 ONNX 模型。</summary>
+      <param name="modelStream">要從其中載入模型的資料流。</param>
+      <param name="operatorProvider">
+      </param>
+      <returns>表示模型檔案的物件。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.LearningModel.LoadFromStreamAsync(Windows.Storage.Streams.IRandomAccessStreamReference)">
+      <summary>從串流非同步載入 ONNX 模型。</summary>
+      <param name="modelStream">要從其中載入模型的資料流。</param>
+      <returns>表示模型的物件。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.LearningModel.LoadFromStreamAsync(Windows.Storage.Streams.IRandomAccessStreamReference,Windows.AI.MachineLearning.ILearningModelOperatorProvider)">
+      <summary>從串流非同步載入 ONNX 模型。</summary>
+      <param name="modelStream">要從其中載入模型的資料流。</param>
+      <param name="operatorProvider">
+      </param>
+      <returns>表示模型的物件。</returns>
+    </member>
+    <member name="T:Windows.AI.MachineLearning.LearningModelBinding">
+      <summary>用來將值繫結到具名的輸入與輸出功能。</summary>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.LearningModelBinding.#ctor(Windows.AI.MachineLearning.LearningModelSession)">
+      <summary>從指定的 LearningModelSession 建立 LearningModelBinding。</summary>
+      <param name="session">要從其中建立 **LearningModelBinding** 的 **LearningModelSession**。</param>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.LearningModelBinding.Size">
+      <summary>取得對應中的項目數目。</summary>
+      <returns>對應中的項目數目</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.LearningModelBinding.Bind(System.String,System.Object)">
+      <summary>將值繫結至具名功能。</summary>
+      <param name="name">功能的名稱。</param>
+      <param name="value">要繫結的值。</param>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.LearningModelBinding.Bind(System.String,System.Object,Windows.Foundation.Collections.IPropertySet)">
+      <summary>將值繫結至使用屬性控制繫結的具名功能。</summary>
+      <param name="name">要繫結之功能的名稱。</param>
+      <param name="value">要繫結至功能的值。</param>
+      <param name="props">控制繫結的屬性。</param>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.LearningModelBinding.Clear">
+      <summary>移除所有繫結。</summary>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.LearningModelBinding.First">
+      <summary>傳回初始化為對應檢視中第一個項目的迭代器。</summary>
+      <returns>初始化為對應檢視中第一個項目的迭代器。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.LearningModelBinding.HasKey(System.String)">
+      <summary>判斷對應檢視是否包含指定的索引鍵。</summary>
+      <param name="key">要查看其是否包含在對應檢視中的索引鍵。</param>
+      <returns>如果對應檢視包含指定的索引鍵則為 true，否則為 false。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.LearningModelBinding.Lookup(System.String)">
+      <summary>傳回對應檢視中指定索引鍵處的項目。</summary>
+      <param name="key">要在對應檢視中查詢的索引鍵。</param>
+      <returns>對應檢視中指定索引鍵處的項目。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.LearningModelBinding.Split(Windows.Foundation.Collections.IMapView{System.String,System.Object}@,Windows.Foundation.Collections.IMapView{System.String,System.Object}@)">
+      <summary>將對應檢視分割成兩個檢視。</summary>
+      <param name="first">原始對應的一半。</param>
+      <param name="second">原始對應的後半部。</param>
+    </member>
+    <member name="T:Windows.AI.MachineLearning.LearningModelDevice">
+      <summary>用來評估機器學習模型的裝置。</summary>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.LearningModelDevice.#ctor(Windows.AI.MachineLearning.LearningModelDeviceKind)">
+      <summary>從指定的 LearningModelDeviceKind 建立 LearningModelDevice。</summary>
+      <param name="deviceKind">在其上評估模型的指定 **LearningModelDeviceKind**。</param>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.LearningModelDevice.AdapterId">
+      <summary>傳回裝置的唯一識別碼。</summary>
+      <returns>裝置的唯一識別碼。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.LearningModelDevice.Direct3D11Device">
+      <summary>傳回裝置的 IDirect3DDevice。</summary>
+      <returns>裝置的 **IDirect3DDevice**。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.LearningModelDevice.CreateFromDirect3D11Device(Windows.Graphics.DirectX.Direct3D11.IDirect3DDevice)">
+      <summary>從指定的 IDirect3DDevice 建立 LearningModelDevice。</summary>
+      <param name="device">要建立 **LearningModelDevice** 的來源 **IDirect3DDevice**。</param>
+      <returns>從指定之 **IDirect3DDevice** 建立的 **LearningModelDevice**。</returns>
+    </member>
+    <member name="T:Windows.AI.MachineLearning.LearningModelDeviceKind">
+      <summary>定義裝置種類清單，可評估機器學習模型。</summary>
+    </member>
+    <member name="F:Windows.AI.MachineLearning.LearningModelDeviceKind.Cpu">
+      <summary>使用 CPU 來評估模型。</summary>
+    </member>
+    <member name="F:Windows.AI.MachineLearning.LearningModelDeviceKind.Default">
+      <summary>讓系統選擇要使用哪一個裝置。</summary>
+    </member>
+    <member name="F:Windows.AI.MachineLearning.LearningModelDeviceKind.DirectX">
+      <summary>使用 GPU 或其他 DirectX 裝置來評估模型。</summary>
+    </member>
+    <member name="F:Windows.AI.MachineLearning.LearningModelDeviceKind.DirectXHighPerformance">
+      <summary>使用系統原則定義的高效能裝置。</summary>
+    </member>
+    <member name="F:Windows.AI.MachineLearning.LearningModelDeviceKind.DirectXMinPower">
+      <summary>使用系統原則定義的最小功率裝置。</summary>
+    </member>
+    <member name="T:Windows.AI.MachineLearning.LearningModelEvaluationResult">
+      <summary>取得評估的結果。</summary>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.LearningModelEvaluationResult.CorrelationId">
+      <summary>傳遞至 LearningModelSession.Evaluate 的選用字串。</summary>
+      <returns>傳遞至 **LearningModelSession.Evaluate** 的選用字串。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.LearningModelEvaluationResult.ErrorStatus">
+      <summary>如果評估失敗，會傳回造成失敗原因的錯誤碼。</summary>
+      <returns>造成失敗原因的錯誤碼。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.LearningModelEvaluationResult.Outputs">
+      <summary>取得模型的輸出功能。</summary>
+      <returns>模型的輸出功能。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.LearningModelEvaluationResult.Succeeded">
+      <summary>如果評估順利完成，則為 true，否則為 false。</summary>
+      <returns>如果評估順利完成，則為 true，否則為 false。</returns>
+    </member>
+    <member name="T:Windows.AI.MachineLearning.LearningModelFeatureKind">
+      <summary>機器學習模型的輸入和輸出功能種類。</summary>
+    </member>
+    <member name="F:Windows.AI.MachineLearning.LearningModelFeatureKind.Image">
+      <summary>此功能是影像，因此請使用 ImageFeatureDescriptor。</summary>
+    </member>
+    <member name="F:Windows.AI.MachineLearning.LearningModelFeatureKind.Map">
+      <summary>此功能是地圖，因此請使用 MapFeatureDescriptor。</summary>
+    </member>
+    <member name="F:Windows.AI.MachineLearning.LearningModelFeatureKind.Sequence">
+      <summary>此功能是序列，因此請使用 SequenceFeatureDescriptor。</summary>
+    </member>
+    <member name="F:Windows.AI.MachineLearning.LearningModelFeatureKind.Tensor">
+      <summary>此功能是張量，因此請使用 TensorFeatureDescriptor。</summary>
+    </member>
+    <member name="T:Windows.AI.MachineLearning.LearningModelSession">
+      <summary>用於評估機器學習模型。</summary>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.LearningModelSession.#ctor(Windows.AI.MachineLearning.LearningModel)">
+      <summary>使用預設裝置建立工作階段。</summary>
+      <param name="model">此工作階段的受訓練機器學習模型。</param>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.LearningModelSession.#ctor(Windows.AI.MachineLearning.LearningModel,Windows.AI.MachineLearning.LearningModelDevice)">
+      <summary>使用指定的裝置建立工作階段。</summary>
+      <param name="model">此工作階段的受訓練機器學習模型。</param>
+      <param name="deviceToRunOn">工作階段的評估裝置。</param>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.LearningModelSession.#ctor(Windows.AI.MachineLearning.LearningModel,Windows.AI.MachineLearning.LearningModelDevice,Windows.AI.MachineLearning.LearningModelSessionOptions)">
+      <summary>使用指定的裝置和額外的推斷選項，建立工作階段。</summary>
+      <param name="model">此工作階段的受訓練機器學習模型。</param>
+      <param name="deviceToRunOn">工作階段的評估裝置。</param>
+      <param name="learningModelSessionOptions">用來設定工作階段建立和評估的選項。</param>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.LearningModelSession.Device">
+      <summary>傳回工作階段的評估裝置。</summary>
+      <returns>工作階段的評估裝置。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.LearningModelSession.EvaluationProperties">
+      <summary>一組屬性，控制模型評估。</summary>
+      <returns>一組屬性，控制模型評估。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.LearningModelSession.Model">
+      <summary>傳回此工作階段的受訓練機器學習模型。</summary>
+      <returns>此工作階段的受訓練機器學習模型。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.LearningModelSession.Close">
+      <summary>
+      </summary>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.LearningModelSession.Evaluate(Windows.AI.MachineLearning.LearningModelBinding,System.String)">
+      <summary>使用 *繫結* 中繫結的功能值，評估機器學習模型。</summary>
+      <param name="bindings">模型輸入和變數執行個體之間關聯的持有者。</param>
+      <param name="correlationId">選用的使用者提供字串，用於連接輸出結果。</param>
+      <returns>評估的結果。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.LearningModelSession.EvaluateAsync(Windows.AI.MachineLearning.LearningModelBinding,System.String)">
+      <summary>使用 *繫結* 中已繫結的功能值，非同步評估機器學習模型。</summary>
+      <param name="bindings">繫結到具名輸入與輸出功能的值。</param>
+      <param name="correlationId">選用的使用者提供字串，用於連接輸出結果。</param>
+      <returns>來自評估的 LearningModelEvaluationResult。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.LearningModelSession.EvaluateFeatures(Windows.Foundation.Collections.IMap{System.String,System.Object},System.String)">
+      <summary>使用 *功能* 中的功能值，評估機器學習模型。</summary>
+      <param name="features">用於評估模型的功能對應。</param>
+      <param name="correlationId">選用的使用者提供字串，用於連接輸出結果。</param>
+      <returns>評估的結果。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.LearningModelSession.EvaluateFeaturesAsync(Windows.Foundation.Collections.IMap{System.String,System.Object},System.String)">
+      <summary>使用 *功能* 中的功能值，非同步評估機器學習模型。</summary>
+      <param name="features">用於評估模型的功能對應。</param>
+      <param name="correlationId">選用的使用者提供字串，用於連接輸出結果。</param>
+      <returns>評估的結果。</returns>
+    </member>
+    <member name="T:Windows.AI.MachineLearning.LearningModelSessionOptions">
+      <summary>描述在建立 LearningModelSession 物件期間所使用的推斷選項。</summary>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.LearningModelSessionOptions.#ctor">
+      <summary>建立選項以設定 LearningModelSession 的建立。</summary>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.LearningModelSessionOptions.BatchSizeOverride">
+      <summary>數值，指定目標模型的常數批次大小覆寫值。</summary>
+      <returns>模型輸入值的常數批次大小具備呼叫繫結所需的值。 **BatchSizeOverride** 的預設值將是 1，表示 1 的靜態批次大小。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.LearningModelSessionOptions.CloseModelOnSessionCreation">
+      <summary>指定 LearningModelSession 是否應該在建立時關閉相關聯的學習模型。</summary>
+      <returns>指出是否應該在建立工作階段時關閉模型。</returns>
+    </member>
+    <member name="T:Windows.AI.MachineLearning.MachineLearningContract">
+      <summary>
+      </summary>
+    </member>
+    <member name="T:Windows.AI.MachineLearning.MapFeatureDescriptor">
+      <summary>對應是 (索引鍵, 值) 組的集合。</summary>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.MapFeatureDescriptor.Description">
+      <summary>描述模型中使用此功能的內容。</summary>
+      <returns>描述模型中使用此功能的內容。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.MapFeatureDescriptor.IsRequired">
+      <summary>若為 true，呼叫 LearningModelSession.Evaluate 前您必須將值繫結到這項功能。</summary>
+      <returns>如果您在呼叫 **LearningModelSession.Evaluate** 前必須先將值繫結到這項功能，則為 true，否則為 false。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.MapFeatureDescriptor.KeyKind">
+      <summary>對應索引鍵可以是張量種類。</summary>
+      <returns>此對應索引鍵的張量類型。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.MapFeatureDescriptor.Kind">
+      <summary>功能種類；使用此資料可得知要使用哪個衍生類別。</summary>
+      <returns>功能的種類。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.MapFeatureDescriptor.Name">
+      <summary>您用來將值繫結至此功能的名稱。</summary>
+      <returns>您用來將值繫結至此功能的名稱。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.MapFeatureDescriptor.ValueDescriptor">
+      <summary>對應值可以是功能種類。</summary>
+      <returns>這個對應值的功能。</returns>
+    </member>
+    <member name="T:Windows.AI.MachineLearning.SequenceFeatureDescriptor">
+      <summary>序列是元素的陣列。</summary>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.SequenceFeatureDescriptor.Description">
+      <summary>描述模型中使用此功能的內容。</summary>
+      <returns>描述模型中使用此功能的內容。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.SequenceFeatureDescriptor.ElementDescriptor">
+      <summary>序列元素可以是功能種類。</summary>
+      <returns>這個序列元素的功能描述元。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.SequenceFeatureDescriptor.IsRequired">
+      <summary>若為 true，呼叫 LearningModelSession.Evaluate 前您必須將值繫結到這項功能。</summary>
+      <returns>如果您在呼叫 **LearningModelSession.Evaluate** 前必須先將值繫結到這項功能，則為 true，否則為 false。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.SequenceFeatureDescriptor.Kind">
+      <summary>功能種類；使用此資料可得知要使用哪個衍生類別。</summary>
+      <returns>功能的種類。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.SequenceFeatureDescriptor.Name">
+      <summary>您用來將值繫結至此功能的名稱。</summary>
+      <returns>您用來將值繫結至此功能的名稱。</returns>
+    </member>
+    <member name="T:Windows.AI.MachineLearning.TensorBoolean">
+      <summary>布林值張量物件。</summary>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.TensorBoolean.Kind">
+      <summary>功能的種類。</summary>
+      <returns>功能的種類。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.TensorBoolean.Shape">
+      <summary>傳回每個維度的計數和大小。</summary>
+      <returns>每個維度的計數和大小。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.TensorBoolean.TensorKind">
+      <summary>傳回張量的資料類型。</summary>
+      <returns>張量的資料類型。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorBoolean.Close">
+      <summary>如果沒有從此物件建立的未處理 IMemoryBufferReference 物件，**Close** 會處置物件並摧毀其相關資源。 否則，**Close** 會從其相關資源卸離本身，並在最後一個 IMemoryBufferReference 關閉時將它們摧毀。</summary>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorBoolean.Create">
+      <summary>建立布林值張量物件，不配置緩衝區。</summary>
+      <returns>布林值張量物件。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorBoolean.Create(Windows.Foundation.Collections.IIterable{System.Int64})">
+      <summary>建立布林值張量物件，並配置大小為 *shape* 的緩衝區。</summary>
+      <param name="shape">緩衝區的大小。</param>
+      <returns>布林值張量物件，具備特定大小的緩衝區。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorBoolean.CreateFromArray(Windows.Foundation.Collections.IIterable{System.Int64},System.Boolean[])">
+      <summary>建立布林值張量物件，並配置大小為 *shape* 的緩衝區，複製所有*資料*進去。</summary>
+      <param name="shape">緩衝區的大小。</param>
+      <param name="data">複製到緩衝區的資料。</param>
+      <returns>布林值張量物件，具備內含特定資料的緩衝區。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorBoolean.CreateFromBuffer(System.Int64[],Windows.Storage.Streams.IBuffer)">
+      <summary>建立布林值張量物件，具備指定*圖形*，並使用*資料*中的基礎緩衝區來進行後續評估。</summary>
+      <param name="shape">緩衝區的大小。</param>
+      <param name="buffer">在評估期間使用的緩衝區。</param>
+      <returns>由緩衝區參考備份到所提供 IBuffer *資料*的布林值張量物件。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorBoolean.CreateFromIterable(Windows.Foundation.Collections.IIterable{System.Int64},Windows.Foundation.Collections.IIterable{System.Boolean})">
+      <summary>建立布林值張量物件，並配置大小為 *shape* 的緩衝區，複製所有*資料*進去。</summary>
+      <param name="shape">緩衝區的大小。</param>
+      <param name="data">複製到緩衝區的資料。</param>
+      <returns>布林值張量物件，具備內含特定資料的緩衝區。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorBoolean.CreateFromShapeArrayAndDataArray(System.Int64[],System.Boolean[])">
+      <summary>建立布林值張量物件，並配置大小為 *shape* 的緩衝區，複製所有*資料*進去。</summary>
+      <param name="shape">緩衝區的大小。</param>
+      <param name="data">複製到緩衝區的資料。</param>
+      <returns>布林值張量物件，具備內含特定資料的緩衝區。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorBoolean.CreateReference">
+      <summary>傳回備份布林值張量物件之緩衝區的 IMemoryBufferReference 表示。</summary>
+      <returns>張量緩衝區的 IMemoryBufferReference 表示。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorBoolean.GetAsVectorView">
+      <summary>傳回資料的唯讀檢視。</summary>
+      <returns>資料的唯讀檢視。</returns>
+    </member>
+    <member name="T:Windows.AI.MachineLearning.TensorDouble">
+      <summary>64 位元浮動張量物件。</summary>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.TensorDouble.Kind">
+      <summary>功能的種類。</summary>
+      <returns>功能的種類。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.TensorDouble.Shape">
+      <summary>傳回每個維度的計數和大小。</summary>
+      <returns>每個維度的計數和大小。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.TensorDouble.TensorKind">
+      <summary>傳回張量的資料類型。</summary>
+      <returns>張量的資料類型。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorDouble.Close">
+      <summary>如果沒有從此物件建立的未處理 IMemoryBufferReference 物件，**Close** 會處置物件並摧毀其相關資源。 否則，**Close** 會從其相關資源卸離本身，並在最後一個 IMemoryBufferReference 關閉時將它們摧毀。</summary>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorDouble.Create">
+      <summary>建立 64 位元浮動張量物件，不配置緩衝區。</summary>
+      <returns>64 位元浮動張量物件。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorDouble.Create(Windows.Foundation.Collections.IIterable{System.Int64})">
+      <summary>建立 64 位元浮動張量物件，並配置大小為*圖形*的緩衝區。</summary>
+      <param name="shape">緩衝區的大小。</param>
+      <returns>64 位元浮動張量物件，具備特定大小的緩衝區。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorDouble.CreateFromArray(Windows.Foundation.Collections.IIterable{System.Int64},System.Double[])">
+      <summary>建立 64 位元浮動張量物件，並配置大小為*圖形*的緩衝區，複製所有*資料*進去。</summary>
+      <param name="shape">緩衝區的大小。</param>
+      <param name="data">複製到緩衝區的資料。</param>
+      <returns>64 位元浮動張量物件，具備內含特定資料的緩衝區。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorDouble.CreateFromBuffer(System.Int64[],Windows.Storage.Streams.IBuffer)">
+      <summary>建立雙精確度張量物件，具備指定*圖形*，並使用*資料*中的基礎緩衝區來進行後續評估。</summary>
+      <param name="shape">緩衝區的大小。</param>
+      <param name="buffer">在評估期間使用的緩衝區。</param>
+      <returns>由緩衝區參考備份到所提供 IBuffer *資料*的雙精確度張量物件。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorDouble.CreateFromIterable(Windows.Foundation.Collections.IIterable{System.Int64},Windows.Foundation.Collections.IIterable{System.Double})">
+      <summary>建立 64 位元浮動張量物件，並配置大小為*圖形*的緩衝區，複製所有*資料*進去。</summary>
+      <param name="shape">緩衝區的大小。</param>
+      <param name="data">複製到緩衝區的資料。</param>
+      <returns>64 位元浮動張量物件，具備內含特定資料的緩衝區。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorDouble.CreateFromShapeArrayAndDataArray(System.Int64[],System.Double[])">
+      <summary>建立 64 位元浮動張量物件，並配置大小為*圖形*的緩衝區，複製所有*資料*進去。</summary>
+      <param name="shape">緩衝區的大小。</param>
+      <param name="data">複製到緩衝區的資料。</param>
+      <returns>64 位元浮動張量物件，具備內含特定資料的緩衝區。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorDouble.CreateReference">
+      <summary>傳回備份雙精確度張量物件之緩衝區的 IMemoryBufferReference 表示。</summary>
+      <returns>張量緩衝區的 IMemoryBufferReference 表示。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorDouble.GetAsVectorView">
+      <summary>傳回資料的唯讀檢視。</summary>
+      <returns>資料的唯讀檢視。</returns>
+    </member>
+    <member name="T:Windows.AI.MachineLearning.TensorFeatureDescriptor">
+      <summary>張量是多維值的陣列。</summary>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.TensorFeatureDescriptor.Description">
+      <summary>描述模型中使用此功能的內容。</summary>
+      <returns>描述模型中使用此功能的內容。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.TensorFeatureDescriptor.IsRequired">
+      <summary>若為 true，呼叫 LearningModelSession.Evaluate 前您必須將值繫結到這項功能。</summary>
+      <returns>如果您在呼叫 **LearningModelSession.Evaluate** 前必須先將值繫結到這項功能，則為 true，否則為 false。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.TensorFeatureDescriptor.Kind">
+      <summary>功能種類；使用此資料可得知要使用哪個衍生類別。</summary>
+      <returns>功能的種類。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.TensorFeatureDescriptor.Name">
+      <summary>您用來將值繫結至此功能的名稱。</summary>
+      <returns>您用來將值繫結至此功能的名稱。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.TensorFeatureDescriptor.Shape">
+      <summary>傳回每個維度的計數和大小。</summary>
+      <returns>每個維度的計數和大小。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.TensorFeatureDescriptor.TensorKind">
+      <summary>傳回張量的資料類型。</summary>
+      <returns>張量的資料類型。</returns>
+    </member>
+    <member name="T:Windows.AI.MachineLearning.TensorFloat">
+      <summary>32 位元浮動張量物件。</summary>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.TensorFloat.Kind">
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.TensorFloat.Shape">
+      <summary>傳回每個維度的計數和大小。</summary>
+      <returns>每個維度的計數和大小。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.TensorFloat.TensorKind">
+      <summary>傳回張量的資料類型。</summary>
+      <returns>張量的資料類型。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorFloat.Close">
+      <summary>
+      </summary>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorFloat.Create">
+      <summary>建立 32 位元浮動張量物件，不配置緩衝區。</summary>
+      <returns>32 位元浮動張量物件。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorFloat.Create(Windows.Foundation.Collections.IIterable{System.Int64})">
+      <summary>建立 32 位元浮動張量物件，並配置大小為*圖形*的緩衝區。</summary>
+      <param name="shape">緩衝區的大小。</param>
+      <returns>32 位元浮動張量物件，具備特定大小的緩衝區。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorFloat.CreateFromArray(Windows.Foundation.Collections.IIterable{System.Int64},System.Single[])">
+      <summary>建立 32 位元浮動張量物件，並配置大小為*圖形*的緩衝區，複製所有*資料*進去。</summary>
+      <param name="shape">緩衝區的大小。</param>
+      <param name="data">複製到緩衝區的資料。</param>
+      <returns>32 位元浮動張量物件，具備內含特定資料的緩衝區。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorFloat.CreateFromBuffer(System.Int64[],Windows.Storage.Streams.IBuffer)">
+      <summary>建立浮點數張量物件，具備指定*圖形*，並使用*資料*中的基礎緩衝區來進行後續評估。</summary>
+      <param name="shape">緩衝區的大小。</param>
+      <param name="buffer">在評估期間使用的緩衝區。</param>
+      <returns>由緩衝區參考備份到所提供 IBuffer *資料*的浮點數張量物件。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorFloat.CreateFromIterable(Windows.Foundation.Collections.IIterable{System.Int64},Windows.Foundation.Collections.IIterable{System.Single})">
+      <summary>建立 32 位元浮動張量物件，並配置大小為*圖形*的緩衝區，複製所有*資料*進去。</summary>
+      <param name="shape">緩衝區的大小。</param>
+      <param name="data">複製到緩衝區的資料。</param>
+      <returns>32 位元浮動張量物件，具備內含特定資料的緩衝區。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorFloat.CreateFromShapeArrayAndDataArray(System.Int64[],System.Single[])">
+      <summary>建立 32 位元浮動張量物件，並配置大小為*圖形*的緩衝區，複製所有*資料*進去。</summary>
+      <param name="shape">緩衝區的大小。</param>
+      <param name="data">複製到緩衝區的資料。</param>
+      <returns>32 位元浮動張量物件，具備內含特定資料的緩衝區。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorFloat.CreateReference">
+      <summary>傳回備份 32 位元浮點張量物件之緩衝區的 IMemoryBufferReference 表示。</summary>
+      <returns>張量緩衝區的 IMemoryBufferReference 表示。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorFloat.GetAsVectorView">
+      <summary>傳回資料的唯讀檢視。</summary>
+      <returns>資料的唯讀檢視。</returns>
+    </member>
+    <member name="T:Windows.AI.MachineLearning.TensorFloat16Bit">
+      <summary>16 位元浮動張量物件。</summary>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.TensorFloat16Bit.Kind">
+      <summary>功能的種類。</summary>
+      <returns>功能的種類。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.TensorFloat16Bit.Shape">
+      <summary>傳回每個維度的計數和大小。</summary>
+      <returns>每個維度的計數和大小。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.TensorFloat16Bit.TensorKind">
+      <summary>傳回張量的資料類型。</summary>
+      <returns>張量的資料類型。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorFloat16Bit.Close">
+      <summary>如果沒有從此物件建立的未處理 IMemoryBufferReference 物件，**Close** 會處置物件並摧毀其相關資源。 否則，**Close** 會從其相關資源卸離本身，並在最後一個 IMemoryBufferReference 關閉時將它們摧毀。</summary>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorFloat16Bit.Create">
+      <summary>建立 16 位元浮動張量物件，不配置緩衝區。</summary>
+      <returns>16 位元浮動張量物件。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorFloat16Bit.Create(Windows.Foundation.Collections.IIterable{System.Int64})">
+      <summary>建立 16 位元浮動張量物件，並配置大小為*圖形*的緩衝區。</summary>
+      <param name="shape">緩衝區的大小。</param>
+      <returns>16 位元浮動張量物件，具備特定大小的緩衝區。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorFloat16Bit.CreateFromArray(Windows.Foundation.Collections.IIterable{System.Int64},System.Single[])">
+      <summary>建立 16 位元浮動張量物件，並配置大小為*圖形*的緩衝區，複製所有*資料*進去。</summary>
+      <param name="shape">緩衝區的大小。</param>
+      <param name="data">複製到緩衝區的資料。</param>
+      <returns>16 位元浮動張量物件，具備內含特定資料的緩衝區。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorFloat16Bit.CreateFromBuffer(System.Int64[],Windows.Storage.Streams.IBuffer)">
+      <summary>建立 16 位元浮點數張量物件，具備指定*圖形*，並使用*資料*中的基礎緩衝區來進行後續評估。</summary>
+      <param name="shape">緩衝區的大小。</param>
+      <param name="buffer">在評估期間使用的緩衝區。</param>
+      <returns>由緩衝區參考備份到所提供 IBuffer *資料*的 16 位元浮點數張量物件。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorFloat16Bit.CreateFromIterable(Windows.Foundation.Collections.IIterable{System.Int64},Windows.Foundation.Collections.IIterable{System.Single})">
+      <summary>建立 16 位元浮動張量物件，並配置大小為*圖形*的緩衝區，複製所有*資料*進去。</summary>
+      <param name="shape">緩衝區的大小。</param>
+      <param name="data">複製到緩衝區的資料。</param>
+      <returns>16 位元浮動張量物件，具備內含特定資料的緩衝區。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorFloat16Bit.CreateFromShapeArrayAndDataArray(System.Int64[],System.Single[])">
+      <summary>建立 16 位元浮動張量物件，並配置大小為*圖形*的緩衝區，複製所有*資料*進去。</summary>
+      <param name="shape">緩衝區的大小。</param>
+      <param name="data">複製到緩衝區的資料。</param>
+      <returns>16 位元浮動張量物件，具備內含特定資料的緩衝區。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorFloat16Bit.CreateReference">
+      <summary>傳回備份 16 位元浮點張量物件之緩衝區的 IMemoryBufferReference 表示。</summary>
+      <returns>張量緩衝區的 IMemoryBufferReference 表示。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorFloat16Bit.GetAsVectorView">
+      <summary>傳回資料的唯讀檢視。</summary>
+      <returns>資料的唯讀檢視。</returns>
+    </member>
+    <member name="T:Windows.AI.MachineLearning.TensorInt16Bit">
+      <summary>16 位元帶正負號整數的張量物件。</summary>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.TensorInt16Bit.Kind">
+      <summary>功能的種類。</summary>
+      <returns>功能的種類。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.TensorInt16Bit.Shape">
+      <summary>傳回每個維度的計數和大小。</summary>
+      <returns>每個維度的計數和大小。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.TensorInt16Bit.TensorKind">
+      <summary>傳回張量的資料類型。</summary>
+      <returns>張量的資料類型。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorInt16Bit.Close">
+      <summary>如果沒有從此物件建立的未處理 IMemoryBufferReference 物件，**Close** 會處置物件並摧毀其相關資源。 否則，**Close** 會從其相關資源卸離本身，並在最後一個 IMemoryBufferReference 關閉時將它們摧毀。</summary>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorInt16Bit.Create">
+      <summary>建立 16 位元帶正負號整數的張量物件，不配置緩衝區。</summary>
+      <returns>16 位元帶正負號整數的張量物件。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorInt16Bit.Create(Windows.Foundation.Collections.IIterable{System.Int64})">
+      <summary>建立 16 位元帶正負號整數的張量物件，並配置大小為*圖形*的緩衝區。</summary>
+      <param name="shape">緩衝區的大小。</param>
+      <returns>16 位元帶正負號整數張量物件，具備特定大小的緩衝區。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorInt16Bit.CreateFromArray(Windows.Foundation.Collections.IIterable{System.Int64},System.Int16[])">
+      <summary>建立 16 位元帶正負號整數的張量物件，並配置大小為*圖形*的緩衝區，複製所有*資料*進去。</summary>
+      <param name="shape">緩衝區的大小。</param>
+      <param name="data">複製到緩衝區的資料。</param>
+      <returns>16 位元帶正負號整數張量物件，具備含特定資料的緩衝區。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorInt16Bit.CreateFromBuffer(System.Int64[],Windows.Storage.Streams.IBuffer)">
+      <summary>建立 16 位元帶正負號整數張量物件，具備指定*圖形*，並使用*緩衝區*中的基礎緩衝區來進行後續評估。</summary>
+      <param name="shape">緩衝區的大小。</param>
+      <param name="buffer">在評估期間使用的緩衝區。</param>
+      <returns>由緩衝區參考備份到所提供 IBuffer *緩衝區*的 16 位元帶正負號整數張量物件。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorInt16Bit.CreateFromIterable(Windows.Foundation.Collections.IIterable{System.Int64},Windows.Foundation.Collections.IIterable{System.Int16})">
+      <summary>建立 16 位元帶正負號整數的張量物件，並配置大小為*圖形*的緩衝區，複製所有*資料*進去。</summary>
+      <param name="shape">緩衝區的大小。</param>
+      <param name="data">複製到緩衝區的資料。</param>
+      <returns>16 位元帶正負號整數張量物件，具備含特定資料的緩衝區。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorInt16Bit.CreateFromShapeArrayAndDataArray(System.Int64[],System.Int16[])">
+      <summary>建立 16 位元帶正負號整數的張量物件，並配置大小為*圖形*的緩衝區，複製所有*資料*進去。</summary>
+      <param name="shape">緩衝區的大小。</param>
+      <param name="data">複製到緩衝區的資料。</param>
+      <returns>16 位元帶正負號整數張量物件，具備含特定資料的緩衝區。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorInt16Bit.CreateReference">
+      <summary>傳回備份 16 位元帶正負號整數張量物件之緩衝區的 IMemoryBufferReference 表示。</summary>
+      <returns>張量緩衝區的 IMemoryBufferReference 表示。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorInt16Bit.GetAsVectorView">
+      <summary>傳回資料的唯讀檢視。</summary>
+      <returns>資料的唯讀檢視。</returns>
+    </member>
+    <member name="T:Windows.AI.MachineLearning.TensorInt32Bit">
+      <summary>32 位元帶正負號整數的張量物件。</summary>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.TensorInt32Bit.Kind">
+      <summary>功能的種類。</summary>
+      <returns>功能的種類。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.TensorInt32Bit.Shape">
+      <summary>傳回每個維度的計數和大小。</summary>
+      <returns>每個維度的計數和大小。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.TensorInt32Bit.TensorKind">
+      <summary>傳回張量的資料類型。</summary>
+      <returns>張量的資料類型。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorInt32Bit.Close">
+      <summary>如果沒有從此物件建立的未處理 IMemoryBufferReference 物件，**Close** 會處置物件並摧毀其相關資源。 否則，**Close** 會從其相關資源卸離本身，並在最後一個 IMemoryBufferReference 關閉時將它們摧毀。</summary>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorInt32Bit.Create">
+      <summary>建立 32 位元帶正負號整數的張量物件，不配置緩衝區。</summary>
+      <returns>32 位元帶正負號整數的張量物件。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorInt32Bit.Create(Windows.Foundation.Collections.IIterable{System.Int64})">
+      <summary>建立 32 位元帶正負號整數的張量物件，並配置大小為*圖形*的緩衝區。</summary>
+      <param name="shape">緩衝區的大小。</param>
+      <returns>32 位元帶正負號整數張量物件，具備特定大小的緩衝區。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorInt32Bit.CreateFromArray(Windows.Foundation.Collections.IIterable{System.Int64},System.Int32[])">
+      <summary>建立 32 位元帶正負號整數的張量物件，並配置大小為*圖形*的緩衝區，複製所有*資料*進去。</summary>
+      <param name="shape">緩衝區的大小。</param>
+      <param name="data">複製到緩衝區的資料。</param>
+      <returns>32 位元帶正負號整數張量物件，具備含特定資料的緩衝區。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorInt32Bit.CreateFromBuffer(System.Int64[],Windows.Storage.Streams.IBuffer)">
+      <summary>建立 32 位元帶正負號整數張量物件，具備指定*圖形*，並使用*緩衝區*中的基礎緩衝區來進行後續評估。</summary>
+      <param name="shape">緩衝區的大小。</param>
+      <param name="buffer">在評估期間使用的緩衝區。</param>
+      <returns>由緩衝區參考備份到所提供 IBuffer *緩衝區*的 32 位元帶正負號整數張量物件。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorInt32Bit.CreateFromIterable(Windows.Foundation.Collections.IIterable{System.Int64},Windows.Foundation.Collections.IIterable{System.Int32})">
+      <summary>建立 32 位元帶正負號整數的張量物件，並配置大小為*圖形*的緩衝區，複製所有*資料*進去。</summary>
+      <param name="shape">緩衝區的大小。</param>
+      <param name="data">複製到緩衝區的資料。</param>
+      <returns>32 位元帶正負號整數張量物件，具備含特定資料的緩衝區。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorInt32Bit.CreateFromShapeArrayAndDataArray(System.Int64[],System.Int32[])">
+      <summary>建立 32 位元帶正負號整數的張量物件，並配置大小為*圖形*的緩衝區，複製所有*資料*進去。</summary>
+      <param name="shape">緩衝區的大小。</param>
+      <param name="data">複製到緩衝區的資料。</param>
+      <returns>32 位元帶正負號整數張量物件，具備含特定資料的緩衝區。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorInt32Bit.CreateReference">
+      <summary>傳回備份 32 位元帶正負號整數張量物件之緩衝區的 IMemoryBufferReference 表示。</summary>
+      <returns>張量緩衝區的 IMemoryBufferReference 表示。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorInt32Bit.GetAsVectorView">
+      <summary>傳回資料的唯讀檢視。</summary>
+      <returns>資料的唯讀檢視。</returns>
+    </member>
+    <member name="T:Windows.AI.MachineLearning.TensorInt64Bit">
+      <summary>64 位元帶正負號整數的張量物件。</summary>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.TensorInt64Bit.Kind">
+      <summary>功能的種類。</summary>
+      <returns>功能的種類。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.TensorInt64Bit.Shape">
+      <summary>傳回每個維度的計數和大小。</summary>
+      <returns>每個維度的計數和大小。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.TensorInt64Bit.TensorKind">
+      <summary>傳回張量的資料類型。</summary>
+      <returns>張量的資料類型。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorInt64Bit.Close">
+      <summary>如果沒有從此物件建立的未處理 IMemoryBufferReference 物件，**Close** 會處置物件並摧毀其相關資源。 否則，**Close** 會從其相關資源卸離本身，並在最後一個 IMemoryBufferReference 關閉時將它們摧毀。</summary>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorInt64Bit.Create">
+      <summary>建立 64 位元帶正負號整數的張量物件，不配置緩衝區。</summary>
+      <returns>64 位元帶正負號整數的張量物件。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorInt64Bit.Create(Windows.Foundation.Collections.IIterable{System.Int64})">
+      <summary>建立 64 位元帶正負號整數的張量物件，並配置大小為*圖形*的緩衝區。</summary>
+      <param name="shape">緩衝區的大小。</param>
+      <returns>64 位元帶正負號整數張量物件，具備特定大小的緩衝區。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorInt64Bit.CreateFromArray(Windows.Foundation.Collections.IIterable{System.Int64},System.Int64[])">
+      <summary>建立 64 位元帶正負號整數的張量物件，並配置大小為*圖形*的緩衝區，複製所有*資料*進去。</summary>
+      <param name="shape">緩衝區的大小。</param>
+      <param name="data">複製到緩衝區的資料。</param>
+      <returns>64 位元帶正負號整數張量物件，具備含特定資料的緩衝區。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorInt64Bit.CreateFromBuffer(System.Int64[],Windows.Storage.Streams.IBuffer)">
+      <summary>建立 64 位元帶正負號整數張量物件，具備指定*圖形*，並使用*緩衝區*中的基礎緩衝區來進行後續評估。</summary>
+      <param name="shape">緩衝區的大小。</param>
+      <param name="buffer">在評估期間使用的緩衝區。</param>
+      <returns>由緩衝區參考備份到所提供 IBuffer *緩衝區*的 64 位元帶正負號整數張量物件。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorInt64Bit.CreateFromIterable(Windows.Foundation.Collections.IIterable{System.Int64},Windows.Foundation.Collections.IIterable{System.Int64})">
+      <summary>建立 64 位元帶正負號整數的張量物件，並配置大小為*圖形*的緩衝區，複製所有*資料*進去。</summary>
+      <param name="shape">緩衝區的大小。</param>
+      <param name="data">複製到緩衝區的資料。</param>
+      <returns>64 位元帶正負號整數張量物件，具備含特定資料的緩衝區。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorInt64Bit.CreateFromShapeArrayAndDataArray(System.Int64[],System.Int64[])">
+      <summary>建立 64 位元帶正負號整數的張量物件，並配置大小為*圖形*的緩衝區，複製所有*資料*進去。</summary>
+      <param name="shape">緩衝區的大小。</param>
+      <param name="data">複製到緩衝區的資料。</param>
+      <returns>64 位元帶正負號整數張量物件，具備含特定資料的緩衝區。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorInt64Bit.CreateReference">
+      <summary>傳回備份 64 位元帶正負號整數張量物件之緩衝區的 IMemoryBufferReference 表示。</summary>
+      <returns>張量緩衝區的 IMemoryBufferReference 表示。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorInt64Bit.GetAsVectorView">
+      <summary>傳回資料的唯讀檢視。</summary>
+      <returns>資料的唯讀檢視。</returns>
+    </member>
+    <member name="T:Windows.AI.MachineLearning.TensorInt8Bit">
+      <summary>8 位元帶正負號整數的張量物件。</summary>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.TensorInt8Bit.Kind">
+      <summary>功能的種類。</summary>
+      <returns>功能的種類。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.TensorInt8Bit.Shape">
+      <summary>傳回每個維度的計數和大小。</summary>
+      <returns>每個維度的計數和大小。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.TensorInt8Bit.TensorKind">
+      <summary>傳回張量的資料類型。</summary>
+      <returns>張量的資料類型。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorInt8Bit.Close">
+      <summary>如果沒有從此物件建立的未處理 IMemoryBufferReference 物件，**Close** 會處置物件並摧毀其相關資源。 否則，**Close** 會從其相關資源卸離本身，並在最後一個 IMemoryBufferReference 關閉時將它們摧毀。</summary>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorInt8Bit.Create">
+      <summary>建立 8 位元帶正負號整數的張量物件，不配置緩衝區。</summary>
+      <returns>8 位元帶正負號整數的張量物件。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorInt8Bit.Create(Windows.Foundation.Collections.IIterable{System.Int64})">
+      <summary>建立 8 位元帶正負號整數的張量物件，並配置大小為*圖形*的緩衝區。</summary>
+      <param name="shape">緩衝區的大小。</param>
+      <returns>8 位元帶正負號整數張量物件，具備特定大小的緩衝區。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorInt8Bit.CreateFromArray(Windows.Foundation.Collections.IIterable{System.Int64},System.Byte[])">
+      <summary>建立 8 位元帶正負號整數的張量物件，並配置大小為*圖形*的緩衝區，複製所有*資料*進去。</summary>
+      <param name="shape">緩衝區的大小。</param>
+      <param name="data">複製到緩衝區的資料。</param>
+      <returns>8 位元帶正負號整數張量物件，具備含特定資料的緩衝區。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorInt8Bit.CreateFromBuffer(System.Int64[],Windows.Storage.Streams.IBuffer)">
+      <summary>建立 8 位元帶正負號整數張量物件，具備指定*圖形*，並使用*緩衝區*中的基礎緩衝區來進行後續評估。</summary>
+      <param name="shape">緩衝區的大小。</param>
+      <param name="buffer">在評估期間使用的緩衝區。</param>
+      <returns>由緩衝區參考備份到所提供 IBuffer *緩衝區*的 8 位元帶正負號整數張量物件。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorInt8Bit.CreateFromIterable(Windows.Foundation.Collections.IIterable{System.Int64},Windows.Foundation.Collections.IIterable{System.Byte})">
+      <summary>建立 8 位元帶正負號整數的張量物件，並配置大小為*圖形*的緩衝區，複製所有*資料*進去。</summary>
+      <param name="shape">緩衝區的大小。</param>
+      <param name="data">複製到緩衝區的資料。</param>
+      <returns>8 位元帶正負號整數張量物件，具備含特定資料的緩衝區。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorInt8Bit.CreateFromShapeArrayAndDataArray(System.Int64[],System.Byte[])">
+      <summary>建立 8 位元帶正負號整數的張量物件，並配置大小為*圖形*的緩衝區，複製所有*資料*進去。</summary>
+      <param name="shape">緩衝區的大小。</param>
+      <param name="data">複製到緩衝區的資料。</param>
+      <returns>8 位元帶正負號整數張量物件，具備含特定資料的緩衝區。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorInt8Bit.CreateReference">
+      <summary>傳回備份 8 位元帶正負號整數張量物件之緩衝區的 IMemoryBufferReference 表示。</summary>
+      <returns>張量緩衝區的 IMemoryBufferReference 表示。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorInt8Bit.GetAsVectorView">
+      <summary>傳回資料的唯讀檢視。</summary>
+      <returns>資料的唯讀檢視。</returns>
+    </member>
+    <member name="T:Windows.AI.MachineLearning.TensorKind">
+      <summary>定義支援的張量資料類型清單。</summary>
+    </member>
+    <member name="F:Windows.AI.MachineLearning.TensorKind.Boolean">
+      <summary>張量類型為**布林值**。</summary>
+    </member>
+    <member name="F:Windows.AI.MachineLearning.TensorKind.Complex128">
+      <summary>無效的類型。</summary>
+    </member>
+    <member name="F:Windows.AI.MachineLearning.TensorKind.Complex64">
+      <summary>無效的類型。</summary>
+    </member>
+    <member name="F:Windows.AI.MachineLearning.TensorKind.Double">
+      <summary>張量類型是 64 位元浮點。</summary>
+    </member>
+    <member name="F:Windows.AI.MachineLearning.TensorKind.Float">
+      <summary>張量類型是 32 位元浮點。</summary>
+    </member>
+    <member name="F:Windows.AI.MachineLearning.TensorKind.Float16">
+      <summary>張量類型是 16 位元浮點。</summary>
+    </member>
+    <member name="F:Windows.AI.MachineLearning.TensorKind.Int16">
+      <summary>張量類型為 16 位元帶正負號的整數。</summary>
+    </member>
+    <member name="F:Windows.AI.MachineLearning.TensorKind.Int32">
+      <summary>張量類型為 32 位元帶正負號的整數。</summary>
+    </member>
+    <member name="F:Windows.AI.MachineLearning.TensorKind.Int64">
+      <summary>張量類型為 64 位元帶正負號的整數。</summary>
+    </member>
+    <member name="F:Windows.AI.MachineLearning.TensorKind.Int8">
+      <summary>張量類型為 8 位元帶正負號的整數。</summary>
+    </member>
+    <member name="F:Windows.AI.MachineLearning.TensorKind.String">
+      <summary>張量類型為**字串**。</summary>
+    </member>
+    <member name="F:Windows.AI.MachineLearning.TensorKind.UInt16">
+      <summary>張量類型為 16 位元不帶正負號的整數。</summary>
+    </member>
+    <member name="F:Windows.AI.MachineLearning.TensorKind.UInt32">
+      <summary>張量類型為 32 位元不帶正負號的整數。</summary>
+    </member>
+    <member name="F:Windows.AI.MachineLearning.TensorKind.UInt64">
+      <summary>張量類型為 64 位元不帶正負號的整數。</summary>
+    </member>
+    <member name="F:Windows.AI.MachineLearning.TensorKind.UInt8">
+      <summary>張量類型為 8 位元不帶正負號的整數。</summary>
+    </member>
+    <member name="F:Windows.AI.MachineLearning.TensorKind.Undefined">
+      <summary>無效的類型。</summary>
+    </member>
+    <member name="T:Windows.AI.MachineLearning.TensorString">
+      <summary>字串張量物件。</summary>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.TensorString.Kind">
+      <summary>功能的種類。</summary>
+      <returns>功能的種類。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.TensorString.Shape">
+      <summary>傳回每個維度的計數和大小。</summary>
+      <returns>每個維度的計數和大小。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.TensorString.TensorKind">
+      <summary>傳回張量的資料類型。</summary>
+      <returns>張量的資料類型。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorString.Close">
+      <summary>如果沒有從此物件建立的未處理 IMemoryBufferReference 物件，**Close** 會處置物件並摧毀其相關資源。 否則，**Close** 會從其相關資源卸離本身，並在最後一個 IMemoryBufferReference 關閉時將它們摧毀。</summary>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorString.Create">
+      <summary>建立字串張量物件，不配置緩衝區。</summary>
+      <returns>字串張量物件。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorString.Create(Windows.Foundation.Collections.IIterable{System.Int64})">
+      <summary>建立字串張量物件，並配置大小為*圖形*的緩衝區。</summary>
+      <param name="shape">緩衝區的大小。</param>
+      <returns>字串張量物件，具備特定大小的緩衝區。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorString.CreateFromArray(Windows.Foundation.Collections.IIterable{System.Int64},System.String[])">
+      <summary>建立字串張量物件，並配置大小為*圖形*的緩衝區，複製所有*資料*進去。</summary>
+      <param name="shape">緩衝區的大小。</param>
+      <param name="data">複製到緩衝區的資料。</param>
+      <returns>字串張量物件，具備內含特定資料的緩衝區。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorString.CreateFromIterable(Windows.Foundation.Collections.IIterable{System.Int64},Windows.Foundation.Collections.IIterable{System.String})">
+      <summary>建立字串張量物件，並配置大小為*圖形*的緩衝區，複製所有*資料*進去。</summary>
+      <param name="shape">緩衝區的大小。</param>
+      <param name="data">複製到緩衝區的資料。</param>
+      <returns>字串張量物件，具備內含特定資料的緩衝區。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorString.CreateFromShapeArrayAndDataArray(System.Int64[],System.String[])">
+      <summary>建立字串張量物件，並配置大小為*圖形*的緩衝區，複製所有*資料*進去。</summary>
+      <param name="shape">緩衝區的大小。</param>
+      <param name="data">複製到緩衝區的資料。</param>
+      <returns>字串張量物件，具備內含特定資料的緩衝區。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorString.CreateReference">
+      <summary>此方法不允許用在 TensorString 物件，也不應該使用。</summary>
+      <returns>傳回的 IMemoryBufferReference 一律是 **null**。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorString.GetAsVectorView">
+      <summary>傳回資料的唯讀檢視。</summary>
+      <returns>資料的唯讀檢視。</returns>
+    </member>
+    <member name="T:Windows.AI.MachineLearning.TensorUInt16Bit">
+      <summary>16 位元不帶正負號整數的張量物件。</summary>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.TensorUInt16Bit.Kind">
+      <summary>功能的種類。</summary>
+      <returns>功能的種類。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.TensorUInt16Bit.Shape">
+      <summary>傳回每個維度的計數和大小。</summary>
+      <returns>每個維度的計數和大小。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.TensorUInt16Bit.TensorKind">
+      <summary>傳回張量的資料類型。</summary>
+      <returns>張量的資料類型。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorUInt16Bit.Close">
+      <summary>如果沒有從此物件建立的未處理 IMemoryBufferReference 物件，**Close** 會處置物件並摧毀其相關資源。 否則，**Close** 會從其相關資源卸離本身，並在最後一個 IMemoryBufferReference 關閉時將它們摧毀。</summary>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorUInt16Bit.Create">
+      <summary>建立 16 位元不帶正負號整數的張量物件，不配置緩衝區。</summary>
+      <returns>16 位元不帶正負號整數的張量物件。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorUInt16Bit.Create(Windows.Foundation.Collections.IIterable{System.Int64})">
+      <summary>建立 16 位元不帶正負號整數的張量物件，並配置大小為*圖形*的緩衝區。</summary>
+      <param name="shape">緩衝區的大小。</param>
+      <returns>16 位元不帶正負號整數張量物件，具備特定大小的緩衝區。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorUInt16Bit.CreateFromArray(Windows.Foundation.Collections.IIterable{System.Int64},System.UInt16[])">
+      <summary>建立 16 位元不帶正負號整數的張量物件，並配置大小為*圖形*的緩衝區，複製所有*資料*進去。</summary>
+      <param name="shape">緩衝區的大小。</param>
+      <param name="data">複製到緩衝區的資料。</param>
+      <returns>16 位元不帶正負號整數張量物件，具備含特定資料的緩衝區。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorUInt16Bit.CreateFromBuffer(System.Int64[],Windows.Storage.Streams.IBuffer)">
+      <summary>建立 16 位元不帶正負號整數張量物件，具備指定*圖形*，並使用*緩衝區*中的基礎緩衝區來進行後續評估。</summary>
+      <param name="shape">緩衝區的大小。</param>
+      <param name="buffer">在評估期間使用的緩衝區。</param>
+      <returns>由緩衝區參考備份到所提供 IBuffer *緩衝區*的 16 位元不帶正負號整數張量物件。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorUInt16Bit.CreateFromIterable(Windows.Foundation.Collections.IIterable{System.Int64},Windows.Foundation.Collections.IIterable{System.UInt16})">
+      <summary>建立 16 位元不帶正負號整數的張量物件，並配置大小為*圖形*的緩衝區，複製所有*資料*進去。</summary>
+      <param name="shape">緩衝區的大小。</param>
+      <param name="data">複製到緩衝區的資料。</param>
+      <returns>16 位元不帶正負號整數張量物件，具備含特定資料的緩衝區。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorUInt16Bit.CreateFromShapeArrayAndDataArray(System.Int64[],System.UInt16[])">
+      <summary>建立 16 位元不帶正負號整數的張量物件，並配置大小為*圖形*的緩衝區，複製所有*資料*進去。</summary>
+      <param name="shape">緩衝區的大小。</param>
+      <param name="data">複製到緩衝區的資料。</param>
+      <returns>16 位元不帶正負號整數張量物件，具備含特定資料的緩衝區。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorUInt16Bit.CreateReference">
+      <summary>傳回備份 16 位元不帶正負號整數張量物件之緩衝區的 IMemoryBufferReference 表示。</summary>
+      <returns>張量緩衝區的 IMemoryBufferReference 表示。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorUInt16Bit.GetAsVectorView">
+      <summary>傳回資料的唯讀檢視。</summary>
+      <returns>資料的唯讀檢視。</returns>
+    </member>
+    <member name="T:Windows.AI.MachineLearning.TensorUInt32Bit">
+      <summary>32 位元不帶正負號整數的張量物件。</summary>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.TensorUInt32Bit.Kind">
+      <summary>功能的種類。</summary>
+      <returns>功能的種類。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.TensorUInt32Bit.Shape">
+      <summary>傳回每個維度的計數和大小。</summary>
+      <returns>每個維度的計數和大小。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.TensorUInt32Bit.TensorKind">
+      <summary>傳回張量的資料類型。</summary>
+      <returns>張量的資料類型。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorUInt32Bit.Close">
+      <summary>如果沒有從此物件建立的未處理 IMemoryBufferReference 物件，**Close** 會處置物件並摧毀其相關資源。 否則，**Close** 會從其相關資源卸離本身，並在最後一個 IMemoryBufferReference 關閉時將它們摧毀。</summary>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorUInt32Bit.Create">
+      <summary>建立 32 位元不帶正負號整數的張量物件，不配置緩衝區。</summary>
+      <returns>32 位元不帶正負號整數的張量物件。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorUInt32Bit.Create(Windows.Foundation.Collections.IIterable{System.Int64})">
+      <summary>建立 32 位元不帶正負號整數的張量物件，並配置大小為*圖形*的緩衝區。</summary>
+      <param name="shape">緩衝區的大小。</param>
+      <returns>32 位元不帶正負號整數張量物件，具備特定大小的緩衝區。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorUInt32Bit.CreateFromArray(Windows.Foundation.Collections.IIterable{System.Int64},System.UInt32[])">
+      <summary>建立 32 位元不帶正負號整數的張量物件，並配置大小為*圖形*的緩衝區，複製所有*資料*進去。</summary>
+      <param name="shape">緩衝區的大小。</param>
+      <param name="data">複製到緩衝區的資料。</param>
+      <returns>32 位元不帶正負號整數張量物件，具備含特定資料的緩衝區。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorUInt32Bit.CreateFromBuffer(System.Int64[],Windows.Storage.Streams.IBuffer)">
+      <summary>建立 32 位元不帶正負號整數張量物件，具備指定*圖形*，並使用*緩衝區*中的基礎緩衝區來進行後續評估。</summary>
+      <param name="shape">緩衝區的大小。</param>
+      <param name="buffer">在評估期間使用的緩衝區。</param>
+      <returns>由緩衝區參考備份到所提供 IBuffer *緩衝區*的 32 位元不帶正負號整數張量物件。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorUInt32Bit.CreateFromIterable(Windows.Foundation.Collections.IIterable{System.Int64},Windows.Foundation.Collections.IIterable{System.UInt32})">
+      <summary>建立 32 位元不帶正負號整數的張量物件，並配置大小為*圖形*的緩衝區，複製所有*資料*進去。</summary>
+      <param name="shape">緩衝區的大小。</param>
+      <param name="data">複製到緩衝區的資料。</param>
+      <returns>32 位元不帶正負號整數張量物件，具備含特定資料的緩衝區。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorUInt32Bit.CreateFromShapeArrayAndDataArray(System.Int64[],System.UInt32[])">
+      <summary>建立 32 位元不帶正負號整數的張量物件，並配置大小為*圖形*的緩衝區，複製所有*資料*進去。</summary>
+      <param name="shape">緩衝區的大小。</param>
+      <param name="data">複製到緩衝區的資料。</param>
+      <returns>32 位元不帶正負號整數張量物件，具備含特定資料的緩衝區。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorUInt32Bit.CreateReference">
+      <summary>傳回備份 32 位元不帶正負號整數張量物件之緩衝區的 IMemoryBufferReference 表示。</summary>
+      <returns>張量緩衝區的 IMemoryBufferReference 表示。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorUInt32Bit.GetAsVectorView">
+      <summary>傳回資料的唯讀檢視。</summary>
+      <returns>資料的唯讀檢視。</returns>
+    </member>
+    <member name="T:Windows.AI.MachineLearning.TensorUInt64Bit">
+      <summary>64 位元不帶正負號整數的張量物件。</summary>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.TensorUInt64Bit.Kind">
+      <summary>功能的種類。</summary>
+      <returns>功能的種類。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.TensorUInt64Bit.Shape">
+      <summary>傳回每個維度的計數和大小。</summary>
+      <returns>每個維度的計數和大小。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.TensorUInt64Bit.TensorKind">
+      <summary>傳回張量的資料類型。</summary>
+      <returns>張量的資料類型。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorUInt64Bit.Close">
+      <summary>如果沒有從此物件建立的未處理 IMemoryBufferReference 物件，**Close** 會處置物件並摧毀其相關資源。 否則，**Close** 會從其相關資源卸離本身，並在最後一個 IMemoryBufferReference 關閉時將它們摧毀。</summary>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorUInt64Bit.Create">
+      <summary>建立 64 位元不帶正負號整數的張量物件，不配置緩衝區。</summary>
+      <returns>64 位元不帶正負號整數的張量物件。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorUInt64Bit.Create(Windows.Foundation.Collections.IIterable{System.Int64})">
+      <summary>建立 64 位元不帶正負號整數的張量物件，並配置大小為*圖形*的緩衝區。</summary>
+      <param name="shape">緩衝區的大小。</param>
+      <returns>64 位元不帶正負號整數張量物件，具備特定大小的緩衝區。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorUInt64Bit.CreateFromArray(Windows.Foundation.Collections.IIterable{System.Int64},System.UInt64[])">
+      <summary>建立 64 位元不帶正負號整數的張量物件，並配置大小為*圖形*的緩衝區，複製所有*資料*進去。</summary>
+      <param name="shape">緩衝區的大小。</param>
+      <param name="data">要複製到緩衝區的資料。</param>
+      <returns>64 位元不帶正負號整數張量物件，具備含特定資料的緩衝區。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorUInt64Bit.CreateFromBuffer(System.Int64[],Windows.Storage.Streams.IBuffer)">
+      <summary>建立 64 位元不帶正負號整數張量物件，具備指定*圖形*，並使用*緩衝區*中的基礎緩衝區來進行後續評估。</summary>
+      <param name="shape">緩衝區的大小。</param>
+      <param name="buffer">在評估期間使用的緩衝區。</param>
+      <returns>由緩衝區參考備份到所提供 IBuffer *緩衝區*的 64 位元不帶正負號整數張量物件。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorUInt64Bit.CreateFromIterable(Windows.Foundation.Collections.IIterable{System.Int64},Windows.Foundation.Collections.IIterable{System.UInt64})">
+      <summary>建立 64 位元不帶正負號整數的張量物件，並配置大小為*圖形*的緩衝區，複製所有*資料*進去。</summary>
+      <param name="shape">緩衝區的大小。</param>
+      <param name="data">要複製到緩衝區的資料。</param>
+      <returns>64 位元不帶正負號整數張量物件，具備含特定資料的緩衝區。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorUInt64Bit.CreateFromShapeArrayAndDataArray(System.Int64[],System.UInt64[])">
+      <summary>建立 64 位元不帶正負號整數的張量物件，並配置大小為*圖形*的緩衝區，複製所有*資料*進去。</summary>
+      <param name="shape">緩衝區的大小。</param>
+      <param name="data">要複製到緩衝區的資料。</param>
+      <returns>64 位元不帶正負號整數張量物件，具備含特定資料的緩衝區。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorUInt64Bit.CreateReference">
+      <summary>傳回備份 64 位元不帶正負號整數張量物件之緩衝區的 IMemoryBufferReference 表示。</summary>
+      <returns>張量緩衝區的 IMemoryBufferReference 表示。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorUInt64Bit.GetAsVectorView">
+      <summary>傳回資料的唯讀檢視。</summary>
+      <returns>資料的唯讀檢視。</returns>
+    </member>
+    <member name="T:Windows.AI.MachineLearning.TensorUInt8Bit">
+      <summary>8 位元不帶正負號整數的張量物件。</summary>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.TensorUInt8Bit.Kind">
+      <summary>功能的種類。</summary>
+      <returns>功能的種類。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.TensorUInt8Bit.Shape">
+      <summary>傳回每個維度的計數和大小。</summary>
+      <returns>每個維度的計數和大小。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.TensorUInt8Bit.TensorKind">
+      <summary>傳回張量的資料類型。</summary>
+      <returns>張量的資料類型。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorUInt8Bit.Close">
+      <summary>如果沒有從此物件建立的未處理 IMemoryBufferReference 物件，**Close** 會處置物件並摧毀其相關資源。 否則，**Close** 會從其相關資源卸離本身，並在最後一個 IMemoryBufferReference 關閉時將它們摧毀。</summary>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorUInt8Bit.Create">
+      <summary>建立 8 位元不帶正負號整數的張量物件，不配置緩衝區。</summary>
+      <returns>8 位元不帶正負號整數的張量物件。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorUInt8Bit.Create(Windows.Foundation.Collections.IIterable{System.Int64})">
+      <summary>建立 8 位元不帶正負號整數的張量物件，並配置大小為*圖形*的緩衝區。</summary>
+      <param name="shape">緩衝區的大小。</param>
+      <returns>8 位元不帶正負號整數張量物件，具備特定大小的緩衝區。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorUInt8Bit.CreateFromArray(Windows.Foundation.Collections.IIterable{System.Int64},System.Byte[])">
+      <summary>建立 8 位元不帶正負號整數的張量物件，並配置大小為*圖形*的緩衝區，複製所有*資料*進去。</summary>
+      <param name="shape">緩衝區的大小。</param>
+      <param name="data">複製到緩衝區的資料。</param>
+      <returns>8 位元不帶正負號整數張量物件，具備含特定資料的緩衝區。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorUInt8Bit.CreateFromBuffer(System.Int64[],Windows.Storage.Streams.IBuffer)">
+      <summary>建立 8 位元不帶正負號整數張量物件，具備指定*圖形*，並使用*緩衝區*中的基礎緩衝區來進行後續評估。</summary>
+      <param name="shape">緩衝區的大小。</param>
+      <param name="buffer">在評估期間使用的緩衝區。</param>
+      <returns>由緩衝區參考備份到所提供 IBuffer *緩衝區*的 8 位元不帶正負號整數張量物件。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorUInt8Bit.CreateFromIterable(Windows.Foundation.Collections.IIterable{System.Int64},Windows.Foundation.Collections.IIterable{System.Byte})">
+      <summary>建立 8 位元不帶正負號整數的張量物件，並配置大小為*圖形*的緩衝區，複製所有*資料*進去。</summary>
+      <param name="shape">緩衝區的大小。</param>
+      <param name="data">複製到緩衝區的資料。</param>
+      <returns>8 位元不帶正負號整數張量物件，具備含特定資料的緩衝區。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorUInt8Bit.CreateFromShapeArrayAndDataArray(System.Int64[],System.Byte[])">
+      <summary>建立 8 位元不帶正負號整數的張量物件，並配置大小為*圖形*的緩衝區，複製所有*資料*進去。</summary>
+      <param name="shape">緩衝區的大小。</param>
+      <param name="data">複製到緩衝區的資料。</param>
+      <returns>8 位元不帶正負號整數張量物件，具備含特定資料的緩衝區。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorUInt8Bit.CreateReference">
+      <summary>傳回備份 8 位元不帶正負號張量物件之緩衝區的 IMemoryBufferReference 表示。</summary>
+      <returns>張量緩衝區的 IMemoryBufferReference 表示。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.TensorUInt8Bit.GetAsVectorView">
+      <summary>傳回資料的唯讀檢視。</summary>
+      <returns>資料的唯讀檢視。</returns>
+    </member>
+  </members>
+</doc>

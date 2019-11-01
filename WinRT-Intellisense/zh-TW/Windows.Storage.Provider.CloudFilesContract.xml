@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>Windows.Storage.Provider.CloudFilesContract</name>
+  </assembly>
+  <members>
+    <member name="T:Windows.Storage.Provider.CloudFilesContract">
+      <summary>
+      </summary>
+    </member>
+    <member name="T:Windows.Storage.Provider.IStorageProviderItemPropertySource">
+      <summary>提供從同步根目錄對儲存提供者項目屬性的存取。</summary>
+    </member>
+    <member name="M:Windows.Storage.Provider.IStorageProviderItemPropertySource.GetItemProperties(System.String)">
+      <summary>取得儲存提供者的項目屬性清單。</summary>
+      <param name="itemPath">儲存項目的路徑。</param>
+      <returns>來自儲存提供者的項目屬性清單。</returns>
+    </member>
+    <member name="T:Windows.Storage.Provider.IStorageProviderPropertyCapabilities">
+      <summary>提供同步根目錄支援之屬性功能的存取。</summary>
+    </member>
+    <member name="M:Windows.Storage.Provider.IStorageProviderPropertyCapabilities.IsPropertySupported(System.String)">
+      <summary>判斷同步根目錄是否支援該屬性。</summary>
+      <param name="propertyCanonicalName">屬性的名稱。 例如 "System.Photo.DateTaken"</param>
+      <returns>如果同步根目錄支援屬性，則為 **True**，否則為 **False**。</returns>
+    </member>
+    <member name="T:Windows.Storage.Provider.IStorageProviderUriSource">
+      <summary>取得內容 URI 路徑和資訊的介面。</summary>
+    </member>
+    <member name="M:Windows.Storage.Provider.IStorageProviderUriSource.GetContentInfoForPath(System.String,Windows.Storage.Provider.StorageProviderGetContentInfoForPathResult)">
+      <summary>取得指定之 URI 路徑的儲存提供者 URI 相關資訊。</summary>
+      <param name="path">儲存提供者 URI 的路徑。</param>
+      <param name="result">所提供儲存提供者 URI 的內容資訊。</param>
+    </member>
+    <member name="M:Windows.Storage.Provider.IStorageProviderUriSource.GetPathForContentUri(System.String,Windows.Storage.Provider.StorageProviderGetPathForContentUriResult)">
+      <summary>取得指定之 URI 名稱的內容 URI 路徑。</summary>
+      <param name="contentUri">內容 URI 的字串名稱。</param>
+      <param name="result">所提供內容 URI 的路徑。</param>
+    </member>
+    <member name="T:Windows.Storage.Provider.StorageProviderFileTypeInfo">
+      <summary>
+      </summary>
+    </member>
+    <member name="M:Windows.Storage.Provider.StorageProviderFileTypeInfo.#ctor(System.String,System.String)">
+      <summary>
+      </summary>
+      <param name="fileExtension">
+      </param>
+      <param name="iconResource">
+      </param>
+    </member>
+    <member name="P:Windows.Storage.Provider.StorageProviderFileTypeInfo.FileExtension">
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Storage.Provider.StorageProviderFileTypeInfo.IconResource">
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="T:Windows.Storage.Provider.StorageProviderGetContentInfoForPathResult">
+      <summary>提供方法來取得有關內容 URI 路徑的更多資訊。</summary>
+    </member>
+    <member name="M:Windows.Storage.Provider.StorageProviderGetContentInfoForPathResult.#ctor">
+      <summary>StorageProviderGetContentInfoForPathResult 預設建構函式。</summary>
+    </member>
+    <member name="P:Windows.Storage.Provider.StorageProviderGetContentInfoForPathResult.ContentId">
+      <summary>取得或設定 StorageProviderGetContentInfoForPathResult 相關聯的內容識別碼。</summary>
+      <returns>內容識別碼值。</returns>
+    </member>
+    <member name="P:Windows.Storage.Provider.StorageProviderGetContentInfoForPathResult.ContentUri">
+      <summary>取得或設定 StorageProviderGetContentInfoForPathResult 相關聯的內容 URI。</summary>
+      <returns>內容 URI 值。</returns>
+    </member>
+    <member name="P:Windows.Storage.Provider.StorageProviderGetContentInfoForPathResult.Status">
+      <summary>StorageProviderGetContentInfoForPathResult 相關聯的儲存提供者狀態。</summary>
+      <returns>StorageProviderUriSourceStatus 列舉值。</returns>
+    </member>
+    <member name="T:Windows.Storage.Provider.StorageProviderGetPathForContentUriResult">
+      <summary>提供方法來取得有關內容 URI 結果的更多資訊。</summary>
+    </member>
+    <member name="M:Windows.Storage.Provider.StorageProviderGetPathForContentUriResult.#ctor">
+      <summary>StorageProviderGetPathForContentUriResult 預設建構函式。</summary>
+    </member>
+    <member name="P:Windows.Storage.Provider.StorageProviderGetPathForContentUriResult.Path">
+      <summary>取得 StorageProviderGetPathForContentUriResult 物件的路徑。</summary>
+      <returns>內容 URI 路徑。</returns>
+    </member>
+    <member name="P:Windows.Storage.Provider.StorageProviderGetPathForContentUriResult.Status">
+      <summary>StorageProviderGetPathForContentUriResult 相關聯的儲存提供者狀態。</summary>
+      <returns>StorageProviderUriSourceStatus 列舉值。</returns>
+    </member>
+    <member name="T:Windows.Storage.Provider.StorageProviderHardlinkPolicy">
+      <summary>指定是否在預留位置檔案或資料夾上允許永久連結。 根據預設，預留位置上不允許永久連結。</summary>
+    </member>
+    <member name="F:Windows.Storage.Provider.StorageProviderHardlinkPolicy.Allowed">
+      <summary>相同同步根目錄中的預留位置上允許永久連結。</summary>
+    </member>
+    <member name="F:Windows.Storage.Provider.StorageProviderHardlinkPolicy.None">
+      <summary>不允許永久連結。</summary>
+    </member>
+    <member name="T:Windows.Storage.Provider.StorageProviderHydrationPolicy">
+      <summary>預留位置檔案的檔案序列化原則值列舉。 序列化原則允許同步根目錄自訂擷取預留位置檔案資料的行為。</summary>
+    </member>
+    <member name="F:Windows.Storage.Provider.StorageProviderHydrationPolicy.AlwaysFull">
+      <summary>如果選取此值但預留位置無法完全序列化，平台會失敗且出現：ERROR_CLOUD_FILE_INVALID_REQUEST。</summary>
+    </member>
+    <member name="F:Windows.Storage.Provider.StorageProviderHydrationPolicy.Full">
+      <summary>完整序列化已執行。 請確保預留位置在完成要求前能夠在本機上使用。</summary>
+    </member>
+    <member name="F:Windows.Storage.Provider.StorageProviderHydrationPolicy.Partial">
+      <summary>按照使用者的要求執行序列化。 序列化不會繼續在背景中進行。</summary>
+    </member>
+    <member name="F:Windows.Storage.Provider.StorageProviderHydrationPolicy.Progressive">
+      <summary>執行隨選安裝序列化。 如果序列化未完成，會繼續在背景中進行。</summary>
+    </member>
+    <member name="T:Windows.Storage.Provider.StorageProviderHydrationPolicyModifier">
+      <summary>提供與主要 StorageProviderHydrationPolicy 搭配使用的原則修飾詞。</summary>
+    </member>
+    <member name="F:Windows.Storage.Provider.StorageProviderHydrationPolicyModifier.AutoDehydrationAllowed">
+      <summary>允許自動凍結檔案。</summary>
+    </member>
+    <member name="F:Windows.Storage.Provider.StorageProviderHydrationPolicyModifier.None">
+      <summary>無修飾詞。</summary>
+    </member>
+    <member name="F:Windows.Storage.Provider.StorageProviderHydrationPolicyModifier.StreamingAllowed">
+      <summary>此修飾詞不允許平台儲存任何資料在同步提供者傳回的磁碟上。</summary>
+    </member>
+    <member name="F:Windows.Storage.Provider.StorageProviderHydrationPolicyModifier.ValidationRequired">
+      <summary>資料序列化至檔案後，將會加以驗證。</summary>
+    </member>
+    <member name="T:Windows.Storage.Provider.StorageProviderInSyncPolicy">
+      <summary>包含同步根目錄支援的檔案和目錄屬性。</summary>
+    </member>
+    <member name="F:Windows.Storage.Provider.StorageProviderInSyncPolicy.Default">
+      <summary>預設同步原則值。</summary>
+    </member>
+    <member name="F:Windows.Storage.Provider.StorageProviderInSyncPolicy.DirectoryCreationTime">
+      <summary>目錄建立時間。</summary>
+    </member>
+    <member name="F:Windows.Storage.Provider.StorageProviderInSyncPolicy.DirectoryHiddenAttribute">
+      <summary>目錄的隱藏屬性。</summary>
+    </member>
+    <member name="F:Windows.Storage.Provider.StorageProviderInSyncPolicy.DirectoryLastWriteTime">
+      <summary>目錄上的最後寫入時間。</summary>
+    </member>
+    <member name="F:Windows.Storage.Provider.StorageProviderInSyncPolicy.DirectoryReadOnlyAttribute">
+      <summary>目錄的唯讀屬性。</summary>
+    </member>
+    <member name="F:Windows.Storage.Provider.StorageProviderInSyncPolicy.DirectorySystemAttribute">
+      <summary>檔案的系統屬性。</summary>
+    </member>
+    <member name="F:Windows.Storage.Provider.StorageProviderInSyncPolicy.FileCreationTime">
+      <summary>檔案建立時間。</summary>
+    </member>
+    <member name="F:Windows.Storage.Provider.StorageProviderInSyncPolicy.FileHiddenAttribute">
+      <summary>檔案的隱藏屬性。</summary>
+    </member>
+    <member name="F:Windows.Storage.Provider.StorageProviderInSyncPolicy.FileLastWriteTime">
+      <summary>檔案上的最後寫入時間。</summary>
+    </member>
+    <member name="F:Windows.Storage.Provider.StorageProviderInSyncPolicy.FileReadOnlyAttribute">
+      <summary>檔案的唯讀屬性。</summary>
+    </member>
+    <member name="F:Windows.Storage.Provider.StorageProviderInSyncPolicy.FileSystemAttribute">
+      <summary>檔案的系統屬性。</summary>
+    </member>
+    <member name="F:Windows.Storage.Provider.StorageProviderInSyncPolicy.PreserveInsyncForSyncEngine">
+      <summary>同步引擎保留的值。</summary>
+    </member>
+    <member name="T:Windows.Storage.Provider.StorageProviderItemProperties">
+      <summary>提供雲端儲存提供者儲存項目 (例如檔案或資料夾) 之屬性的存取。</summary>
+    </member>
+    <member name="M:Windows.Storage.Provider.StorageProviderItemProperties.SetAsync(Windows.Storage.IStorageItem,Windows.Foundation.Collections.IIterable{Windows.Storage.Provider.StorageProviderItemProperty})">
+      <summary>設定儲存項目的自訂屬性值。</summary>
+      <param name="item">儲存區項目。</param>
+      <param name="itemProperties">儲存項目的可逐一查看 StorageProviderItemProperty 狀態的清單。</param>
+      <returns>非同步動作。 如果您使用非同步程式設計，傳回類型為 void。</returns>
+    </member>
+    <member name="T:Windows.Storage.Provider.StorageProviderItemProperty">
+      <summary>定義儲存項目 (例如檔案或資料夾) 的雲端儲存提供者屬性。</summary>
+    </member>
+    <member name="M:Windows.Storage.Provider.StorageProviderItemProperty.#ctor">
+      <summary>StorageProviderItemProperty 預設建構函式。</summary>
+    </member>
+    <member name="P:Windows.Storage.Provider.StorageProviderItemProperty.IconResource">
+      <summary>雲端儲存提供者屬性的圖示資源參考。</summary>
+      <returns>圖示資源參考的字串值。 例如 "SyncProviderResources.dll, -1234"</returns>
+    </member>
+    <member name="P:Windows.Storage.Provider.StorageProviderItemProperty.Id">
+      <summary>雲端儲存提供者提供的儲存項目識別碼。</summary>
+      <returns>儲存項目的識別碼。</returns>
+    </member>
+    <member name="P:Windows.Storage.Provider.StorageProviderItemProperty.Value">
+      <summary>儲存提供者儲存項目狀態的描述性文字。</summary>
+      <returns>文字的字串值。</returns>
+    </member>
+    <member name="T:Windows.Storage.Provider.StorageProviderItemPropertyDefinition">
+      <summary>定義來自雲端儲存提供者的項目屬性。</summary>
+    </member>
+    <member name="M:Windows.Storage.Provider.StorageProviderItemPropertyDefinition.#ctor">
+      <summary>StorageProviderItemPropertyDefinition 預設建構函式。</summary>
+    </member>
+    <member name="P:Windows.Storage.Provider.StorageProviderItemPropertyDefinition.DisplayNameResource">
+      <summary>取得或設定雲端儲存提供者狀態的顯示名稱。</summary>
+      <returns>狀態顯示名稱的字串值。</returns>
+    </member>
+    <member name="P:Windows.Storage.Provider.StorageProviderItemPropertyDefinition.Id">
+      <summary>註冊同步根目錄時，雲端儲存提供者提供之儲存項目的識別碼。</summary>
+      <returns>儲存項目的識別碼。</returns>
+    </member>
+    <member name="T:Windows.Storage.Provider.StorageProviderPopulationPolicy">
+      <summary>允許同步提供者控制預留位置檔案或目錄的方式</summary>
+    </member>
+    <member name="F:Windows.Storage.Provider.StorageProviderPopulationPolicy.AlwaysFull">
+      <summary>平台假設預留位置檔案和目錄始終能夠在本機上使用。</summary>
+    </member>
+    <member name="F:Windows.Storage.Provider.StorageProviderPopulationPolicy.Full">
+      <summary>如果預留位置檔案和目錄未完整填入，平台會要求同步提供者填入再完成使用者要求。</summary>
+    </member>
+    <member name="T:Windows.Storage.Provider.StorageProviderProtectionMode">
+      <summary>表示同步根目錄中所包含的資料類型。</summary>
+    </member>
+    <member name="F:Windows.Storage.Provider.StorageProviderProtectionMode.Personal">
+      <summary>同步根目錄應該只包含個人檔案，不包含加密的或業務相關檔案。</summary>
+    </member>
+    <member name="F:Windows.Storage.Provider.StorageProviderProtectionMode.Unknown">
+      <summary>同步根目錄可以包含任何類型的檔案。</summary>
+    </member>
+    <member name="T:Windows.Storage.Provider.StorageProviderSyncRootInfo">
+      <summary>包含要註冊於作業系統之雲端儲存提供者同步根目錄的屬性。</summary>
+    </member>
+    <member name="M:Windows.Storage.Provider.StorageProviderSyncRootInfo.#ctor">
+      <summary>StorageProviderSyncRootInfo 預設建構函式。</summary>
+    </member>
+    <member name="P:Windows.Storage.Provider.StorageProviderSyncRootInfo.AllowPinning">
+      <summary>啟用或停用可讓檔案供離線使用的功能。</summary>
+      <returns>如果關聯已啟用則為 **True**，否則為 **False**。</returns>
+    </member>
+    <member name="P:Windows.Storage.Provider.StorageProviderSyncRootInfo.Context">
+      <summary>包含同步根目錄身分識別資訊。</summary>
+      <returns>包含同步根目錄身分識別的緩衝區。</returns>
+    </member>
+    <member name="P:Windows.Storage.Provider.StorageProviderSyncRootInfo.DisplayNameResource">
+      <summary>對應於現有同步根目錄註冊的選擇性顯示名稱。</summary>
+      <returns>顯示名稱。</returns>
+    </member>
+    <member name="P:Windows.Storage.Provider.StorageProviderSyncRootInfo.FallbackFileTypeInfo">
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Storage.Provider.StorageProviderSyncRootInfo.HardlinkPolicy">
+      <summary>同步根目錄的永久連結原則。</summary>
+      <returns>定義的 StorageProviderHardlinkPolicy。</returns>
+    </member>
+    <member name="P:Windows.Storage.Provider.StorageProviderSyncRootInfo.HydrationPolicy">
+      <summary>同步根目錄註冊的序列化原則。</summary>
+      <returns>存放裝置提供者序列化原則列舉值。</returns>
+    </member>
+    <member name="P:Windows.Storage.Provider.StorageProviderSyncRootInfo.HydrationPolicyModifier">
+      <summary>同步根目錄註冊的序列化原則修飾詞。</summary>
+      <returns>存放裝置提供者序列化原則修飾詞列舉值。</returns>
+    </member>
+    <member name="P:Windows.Storage.Provider.StorageProviderSyncRootInfo.IconResource">
+      <summary>檔案或資料夾自訂狀態的圖示資源路徑。</summary>
+      <returns>資源圖示路徑，例如 "SyncProvider.dll,-100" 或 "SyncProvider.dll,-101"</returns>
+    </member>
+    <member name="P:Windows.Storage.Provider.StorageProviderSyncRootInfo.Id">
+      <summary>同步根目錄的識別碼。</summary>
+      <returns>識別碼，其格式：[Storage Provider ID]![Windows SID]![Account ID]</returns>
+    </member>
+    <member name="P:Windows.Storage.Provider.StorageProviderSyncRootInfo.InSyncPolicy">
+      <summary>提供對雲端儲存提供者之同步原則的存取。</summary>
+      <returns>同步原則值。</returns>
+    </member>
+    <member name="P:Windows.Storage.Provider.StorageProviderSyncRootInfo.Path">
+      <summary>表示雲端資料夾系統根目錄路徑的儲存資料夾。</summary>
+      <returns>儲存資料夾。</returns>
+    </member>
+    <member name="P:Windows.Storage.Provider.StorageProviderSyncRootInfo.PopulationPolicy">
+      <summary>同步根目錄註冊的填入原則。</summary>
+      <returns>填入原則列舉值。</returns>
+    </member>
+    <member name="P:Windows.Storage.Provider.StorageProviderSyncRootInfo.ProtectionMode">
+      <summary>同步根目錄註冊的保護模式。</summary>
+      <returns>保護模式列舉值。</returns>
+    </member>
+    <member name="P:Windows.Storage.Provider.StorageProviderSyncRootInfo.ProviderId">
+      <summary>取得或設定 GUID，代表存放裝置提供者的識別碼。</summary>
+      <returns>GUID，代表存放裝置提供者的識別碼。</returns>
+    </member>
+    <member name="P:Windows.Storage.Provider.StorageProviderSyncRootInfo.RecycleBinUri">
+      <summary>雲端儲存空間資源回收筒的 URI。</summary>
+      <returns>資源回收筒 URI。</returns>
+    </member>
+    <member name="P:Windows.Storage.Provider.StorageProviderSyncRootInfo.ShowSiblingsAsGroup">
+      <summary>在 [檔案總管] 的主要同步根目錄下顯示同層級同步根目錄。</summary>
+      <returns>如果顯示同層級同步根目錄，則為 **True**，否則為 **False**。</returns>
+    </member>
+    <member name="P:Windows.Storage.Provider.StorageProviderSyncRootInfo.StorageProviderItemPropertyDefinitions">
+      <summary>取得同步根目錄的 StorageProviderItemPropertyDefinition 資訊。</summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.Storage.Provider.StorageProviderSyncRootInfo.Version">
+      <summary>同步根目錄的版本號碼。</summary>
+      <returns>版本號碼的字串值。 例如 "1.0"</returns>
+    </member>
+    <member name="T:Windows.Storage.Provider.StorageProviderSyncRootManager">
+      <summary>提供可向作業系統註冊或取消註冊雲端儲存提供者同步根目錄的功能。</summary>
+    </member>
+    <member name="M:Windows.Storage.Provider.StorageProviderSyncRootManager.GetCurrentSyncRoots">
+      <summary>取得目前已註冊的所有同步根目錄。</summary>
+      <returns>目前已註冊同步根目錄的集合。</returns>
+    </member>
+    <member name="M:Windows.Storage.Provider.StorageProviderSyncRootManager.GetSyncRootInformationForFolder(Windows.Storage.IStorageFolder)">
+      <summary>傳回雲端儲存體提供者的同步根目錄 (指定儲存資料夾) 的屬性。</summary>
+      <param name="folder">同步根目錄的儲存資料夾。</param>
+      <returns>對於指定儲存資料夾，雲端儲存體提供者同步根目錄的屬性。</returns>
+    </member>
+    <member name="M:Windows.Storage.Provider.StorageProviderSyncRootManager.GetSyncRootInformationForId(System.String)">
+      <summary>傳回雲端儲存體提供者的同步根目錄 (指定同步根目錄識別碼) 的屬性。</summary>
+      <param name="id">同步根目錄識別碼的字串值。</param>
+      <returns>指定之同步根目錄的屬性。</returns>
+    </member>
+    <member name="M:Windows.Storage.Provider.StorageProviderSyncRootManager.IsSupported">
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Windows.Storage.Provider.StorageProviderSyncRootManager.Register(Windows.Storage.Provider.StorageProviderSyncRootInfo)">
+      <summary>向作業系統註冊同步根目錄。</summary>
+      <param name="syncRootInformation">要註冊的同步根目錄。</param>
+    </member>
+    <member name="M:Windows.Storage.Provider.StorageProviderSyncRootManager.Unregister(System.String)">
+      <summary>從作業系統取消註冊同步根目錄。</summary>
+      <param name="id">要取消註冊之同步根目錄的識別碼。</param>
+    </member>
+    <member name="T:Windows.Storage.Provider.StorageProviderUriSourceStatus">
+      <summary>列舉儲存提供者 URI 的狀態。</summary>
+    </member>
+    <member name="F:Windows.Storage.Provider.StorageProviderUriSourceStatus.FileNotFound">
+      <summary>同步提供者無法辨識 URI。</summary>
+    </member>
+    <member name="F:Windows.Storage.Provider.StorageProviderUriSourceStatus.NoSyncRoot">
+      <summary>沒有向 URI 來源註冊的同步根目錄。</summary>
+    </member>
+    <member name="F:Windows.Storage.Provider.StorageProviderUriSourceStatus.Success">
+      <summary>儲存提供者識別碼已存在。</summary>
+    </member>
+  </members>
+</doc>
