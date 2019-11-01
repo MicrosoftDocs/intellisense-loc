@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>Windows.Devices.Portable.PortableDeviceContract</name>
+  </assembly>
+  <members>
+    <member name="T:Windows.Devices.Portable.PortableDeviceContract">
+      <summary>
+      </summary>
+    </member>
+    <member name="T:Windows.Devices.Portable.ServiceDevice">
+      <summary>Fornisce metodi per l'identificazione di un servizio di dispositivo per un dispositivo portatile che supporta WPD (Windows Portable Devices).</summary>
+    </member>
+    <member name="M:Windows.Devices.Portable.ServiceDevice.GetDeviceSelector(Windows.Devices.Portable.ServiceDeviceType)">
+      <summary>Restituisce una stringa di sintassi di ricerca avanzata (AQS, Advanced Query Syntax) utilizzata per enumerare i servizi del dispositivo del ServiceDeviceType specificato. Questa stringa viene passata al metodo FindAllAsync o CreateWatcher.</summary>
+      <param name="serviceType">Tipo di servizio da identificare.</param>
+      <returns>Stringa AQS.</returns>
+    </member>
+    <member name="M:Windows.Devices.Portable.ServiceDevice.GetDeviceSelectorFromServiceId(System.Guid)">
+      <summary>Stringa della sintassi di ricerca avanzata (AQS, Advanced Query Syntax) per l'identificazione di un servizio del dispositivo in base ai relativi GUID. Questa stringa viene passata al metodo FindAllAsync o CreateWatcher.</summary>
+      <param name="serviceId">Identificatore di servizio.</param>
+      <returns>Stringa AQS.</returns>
+    </member>
+    <member name="T:Windows.Devices.Portable.ServiceDeviceType">
+      <summary>Indica il tipo di un servizio del dispositivo portatile.</summary>
+    </member>
+    <member name="F:Windows.Devices.Portable.ServiceDeviceType.CalendarService">
+      <summary>Un servizio che fornisce informazioni del calendario.</summary>
+    </member>
+    <member name="F:Windows.Devices.Portable.ServiceDeviceType.ContactsService">
+      <summary>Un servizio che tiene traccia dei contatti.</summary>
+    </member>
+    <member name="F:Windows.Devices.Portable.ServiceDeviceType.DeviceStatusService">
+      <summary>Un servizio di stato del dispositivo.</summary>
+    </member>
+    <member name="F:Windows.Devices.Portable.ServiceDeviceType.NotesService">
+      <summary>Un servizio per la gestione degli appunti.</summary>
+    </member>
+    <member name="F:Windows.Devices.Portable.ServiceDeviceType.RingtonesService">
+      <summary>Un servizio che fornisce le suonerie per un telefono.</summary>
+    </member>
+    <member name="F:Windows.Devices.Portable.ServiceDeviceType.SmsService">
+      <summary>Un servizio di messaggistica SMS.</summary>
+    </member>
+    <member name="F:Windows.Devices.Portable.ServiceDeviceType.TasksService">
+      <summary>Un servizio per il rilevamento delle attività.</summary>
+    </member>
+    <member name="T:Windows.Devices.Portable.StorageDevice">
+      <summary>Fornisce metodi per accedere alla funzionalità di archiviazione di un dispositivo portatile che supporta WPD. I dispositivi di archiviazione rimovibili includono:</summary>
+    </member>
+    <member name="M:Windows.Devices.Portable.StorageDevice.FromId(System.String)">
+      <summary>Ottiene un oggetto StorageFolder da un ID DeviceInformation per un dispositivo di archiviazione rimovibile.</summary>
+      <param name="deviceId">L'ID DeviceInformation che identifica il dispositivo di archiviazione rimovibile. Questo ID può essere recuperato dalla proprietà Windows.Devices.Enumeration o DeviceInformationId degli argomenti dell'evento del dispositivo AutoPlay. Per altre informazioni, vedere [Avvio rapido: Registrare un'app per un dispositivo AutoPlay](https://docs.microsoft.com/previous-versions/windows/apps/jj160497(v=win.10)). Per altre informazioni, vedere l'esempio di dispositivo di archiviazione rimovibile.</param>
+      <returns>Oggetto della cartella di archiviazione che rappresenta il dispositivo di archiviazione rimovibile e fornisce l'accesso al contenuto nel dispositivo.</returns>
+    </member>
+    <member name="M:Windows.Devices.Portable.StorageDevice.GetDeviceSelector">
+      <summary>Una stringa di Sintassi di ricerca avanzata per l'identificazione dei dispositivi di archiviazione rimovibili. Questa stringa viene passata al metodo FindAllAsync o CreateWatcher.</summary>
+      <returns>Una stringa di Sintassi di ricerca avanzata (AQS) per l'identificazione dei dispositivi di archiviazione.</returns>
+    </member>
+  </members>
+</doc>
