@@ -1,750 +1,523 @@
 <?xml version="1.0" encoding="utf-8"?>
 <doc>
   <assembly>
-    <name>Windows.Security.Isolation.IsolatedWindowsEnvironmentContract</name>
+    <name>Windows. Security. Isolation. Исолатедвиндовсенвиронментконтракт</name>
   </assembly>
   <members>
     <member name="T:Windows.Security.Isolation.IsolatedWindowsEnvironment">
-      <summary>
-      </summary>
+      <summary>Создавайте и управляйте изолированными средами на основе низкоуровневой оболочки для приложений, чтобы открывать и обрабатывать ненадежные данные в виртуализированной среде для защиты операционной системы узла от потенциально вредоносного содержимого в файле.</summary>
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironment.Id">
-      <summary>
-      </summary>
-      <returns>
-      </returns>
+      <summary>Возвращает идентификатор для изолированной среды Windows.</summary>
+      <returns>Строка идентификатора.</returns>
     </member>
     <member name="M:Windows.Security.Isolation.IsolatedWindowsEnvironment.CreateAsync(Windows.Security.Isolation.IsolatedWindowsEnvironmentOptions)">
-      <summary>
-      </summary>
-      <param name="options">
-      </param>
-      <returns>
-      </returns>
+      <summary>Асинхронное создание изолированной среды Windows.</summary>
+      <param name="options">Параметры конфигурации изолированной среды Windows, определяемые исолатедвиндовсенвиронментоптионс</param>
+      <returns>исолатедвиндовсенвиронменткреатересулт</returns>
     </member>
     <member name="M:Windows.Security.Isolation.IsolatedWindowsEnvironment.CreateAsync(Windows.Security.Isolation.IsolatedWindowsEnvironmentOptions,Windows.Security.Isolation.IsolatedWindowsEnvironmentTelemetryParameters)">
-      <summary>
-      </summary>
-      <param name="options">
-      </param>
-      <param name="telemetryParameters">
-      </param>
-      <returns>
-      </returns>
+      <summary>Асинхронное создание изолированной среды Windows и сопоставление с событиями телеметрии.</summary>
+      <param name="options">Параметры конфигурации изолированной среды Windows, определяемые исолатедвиндовсенвиронментоптионс</param>
+      <param name="telemetryParameters">Параметры телеметрии, определенные исолатедвиндовсенвиронменттелеметрипараметерс</param>
+      <returns>исолатедвиндовсенвиронменткреатересулт</returns>
     </member>
     <member name="M:Windows.Security.Isolation.IsolatedWindowsEnvironment.FindByOwnerId(System.String)">
-      <summary>
-      </summary>
-      <param name="environmentOwnerId">
-      </param>
-      <returns>
-      </returns>
+      <summary>Возвращает список изолированных сред Windows, зарегистрированных для конкретного владельца.</summary>
+      <param name="environmentOwnerId">Уникальный идентификатор владельца изолированной среды Windows.</param>
+      <returns>исолатедвиндовсенвиронмент</returns>
     </member>
     <member name="M:Windows.Security.Isolation.IsolatedWindowsEnvironment.GetById(System.String)">
-      <summary>
-      </summary>
-      <param name="environmentId">
-      </param>
-      <returns>
-      </returns>
+      <summary>Возвращает ссылку на изолированную среду Windows на основе идентификатора.</summary>
+      <param name="environmentId">Идентификатор, назначенный изолированной среде Windows.</param>
+      <returns>исолатедвиндовсенвиронмент</returns>
     </member>
     <member name="M:Windows.Security.Isolation.IsolatedWindowsEnvironment.LaunchFileWithUIAsync(System.String,System.String,System.String)">
-      <summary>
-      </summary>
-      <param name="appExePath">
-      </param>
-      <param name="argumentsTemplate">
-      </param>
-      <param name="filePath">
-      </param>
-      <returns>
-      </returns>
+      <summary>Позволяет приложениям открывать файлы в изолированной среде Windows.</summary>
+      <param name="appExePath">Строка пути выполнения приложения.</param>
+      <param name="argumentsTemplate">Строка, указывающая относительное расположение файла FilePath по отношению к другим передаваемым аргументам:</param>
+      <param name="filePath">Строка для пути к файлу, который должен быть открыт в изолированной среде Windows.</param>
+      <returns>исолатедвиндовсенвиронментлаунчфилересулт</returns>
     </member>
     <member name="M:Windows.Security.Isolation.IsolatedWindowsEnvironment.LaunchFileWithUIAsync(System.String,System.String,System.String,Windows.Security.Isolation.IsolatedWindowsEnvironmentTelemetryParameters)">
-      <summary>
-      </summary>
-      <param name="appExePath">
-      </param>
-      <param name="argumentsTemplate">
-      </param>
-      <param name="filePath">
-      </param>
-      <param name="telemetryParameters">
-      </param>
-      <returns>
-      </returns>
+      <summary>Позволяет приложениям открывать файлы в изолированной среде Windows с корреляцией телеметрии.</summary>
+      <param name="appExePath">Строка пути выполнения приложения.</param>
+      <param name="argumentsTemplate">Строка, указывающая относительное расположение файла FilePath по отношению к другим передаваемым аргументам:</param>
+      <param name="filePath">Строка для пути к файлу, который должен быть открыт в изолированной среде Windows</param>
+      <param name="telemetryParameters">Параметры телеметрии, определенные исолатедвиндовсенвиронменттелеметрипараметерс</param>
+      <returns>исолатедвиндовсенвиронментлаунчфилересулт</returns>
     </member>
     <member name="M:Windows.Security.Isolation.IsolatedWindowsEnvironment.RegisterMessageReceiver(System.Guid,Windows.Security.Isolation.MessageReceivedCallback)">
-      <summary>
-      </summary>
-      <param name="receiverId">
-      </param>
-      <param name="messageReceivedCallback">
-      </param>
+      <summary>Обратный вызов получателя сообщения.</summary>
+      <param name="receiverId">Идентификатор GUID получателя сообщения.</param>
+      <param name="messageReceivedCallback">Функция обратного вызова Мессажерецеиведкаллбакк</param>
     </member>
     <member name="M:Windows.Security.Isolation.IsolatedWindowsEnvironment.ShareFolderAsync(System.String,Windows.Security.Isolation.IsolatedWindowsEnvironmentShareFolderRequestOptions)">
-      <summary>
-      </summary>
-      <param name="hostFolder">
-      </param>
-      <param name="requestOptions">
-      </param>
-      <returns>
-      </returns>
+      <summary>Общий доступ к папке узла с изолированной средой Windows.</summary>
+      <param name="hostFolder">Имя папки узла.</param>
+      <param name="requestOptions">исолатедвиндовсенвиронментшарефолдеррекуестоптионс</param>
+      <returns>исолатедвиндовсенвиронментшарефолдерресулт</returns>
     </member>
     <member name="M:Windows.Security.Isolation.IsolatedWindowsEnvironment.ShareFolderAsync(System.String,Windows.Security.Isolation.IsolatedWindowsEnvironmentShareFolderRequestOptions,Windows.Security.Isolation.IsolatedWindowsEnvironmentTelemetryParameters)">
-      <summary>
-      </summary>
-      <param name="hostFolder">
-      </param>
-      <param name="requestOptions">
-      </param>
-      <param name="telemetryParameters">
-      </param>
-      <returns>
-      </returns>
+      <summary>Совместное использование папки узла с изолированной средой Windows с корреляцией телеметрии.</summary>
+      <param name="hostFolder">Строка имени папки узла.</param>
+      <param name="requestOptions">исолатедвиндовсенвиронментшарефолдеррекуестоптионс</param>
+      <param name="telemetryParameters">Параметры телеметрии, определенные исолатедвиндовсенвиронменттелеметрипараметерс</param>
+      <returns>исолатедвиндовсенвиронментшарефолдерресулт</returns>
     </member>
     <member name="M:Windows.Security.Isolation.IsolatedWindowsEnvironment.StartProcessSilentlyAsync(System.String,System.String,Windows.Security.Isolation.IsolatedWindowsEnvironmentActivator)">
-      <summary>
-      </summary>
-      <param name="hostExePath">
-      </param>
-      <param name="arguments">
-      </param>
-      <param name="activator">
-      </param>
-      <returns>
-      </returns>
+      <summary>Разрешает выполнение процессов внутри изолированной среды Windows.</summary>
+      <param name="hostExePath">Строка пути выполнения узла.</param>
+      <param name="arguments">String</param>
+      <param name="activator">исолатедвиндовсенвиронментактиватор</param>
+      <returns>исолатедвиндовсенвиронментстартпроцессресулт</returns>
     </member>
     <member name="M:Windows.Security.Isolation.IsolatedWindowsEnvironment.StartProcessSilentlyAsync(System.String,System.String,Windows.Security.Isolation.IsolatedWindowsEnvironmentActivator,Windows.Security.Isolation.IsolatedWindowsEnvironmentTelemetryParameters)">
-      <summary>
-      </summary>
-      <param name="hostExePath">
-      </param>
-      <param name="arguments">
-      </param>
-      <param name="activator">
-      </param>
-      <param name="telemetryParameters">
-      </param>
-      <returns>
-      </returns>
+      <summary>Разрешает выполнение процессов в изолированной среде Windows с корреляцией телеметрии.</summary>
+      <param name="hostExePath">Строка пути выполнения узла.</param>
+      <param name="arguments">String</param>
+      <param name="activator">исолатедвиндовсенвиронментактиватор</param>
+      <param name="telemetryParameters">Параметры телеметрии, определенные исолатедвиндовсенвиронменттелеметрипараметерс</param>
+      <returns>исолатедвиндовсенвиронментстартпроцессресулт</returns>
     </member>
     <member name="M:Windows.Security.Isolation.IsolatedWindowsEnvironment.TerminateAsync">
-      <summary>
-      </summary>
+      <summary>Асинхронное завершение изолированной среды Windows.</summary>
       <returns>
       </returns>
     </member>
     <member name="M:Windows.Security.Isolation.IsolatedWindowsEnvironment.TerminateAsync(Windows.Security.Isolation.IsolatedWindowsEnvironmentTelemetryParameters)">
-      <summary>
-      </summary>
-      <param name="telemetryParameters">
-      </param>
+      <summary>Асинхронное завершение изолированной среды Windows с помощью корреляции телеметрии.</summary>
+      <param name="telemetryParameters">Параметры телеметрии, определенные исолатедвиндовсенвиронменттелеметрипараметерс</param>
       <returns>
       </returns>
     </member>
     <member name="M:Windows.Security.Isolation.IsolatedWindowsEnvironment.UnregisterMessageReceiver(System.Guid)">
-      <summary>
-      </summary>
-      <param name="receiverId">
-      </param>
+      <summary>Отмена регистрации обратного вызова получателя сообщения.</summary>
+      <param name="receiverId">Идентификатор GUID получателя сообщения.</param>
     </member>
     <member name="T:Windows.Security.Isolation.IsolatedWindowsEnvironmentActivator">
-      <summary>
-      </summary>
+      <summary>Определяет, выполняется ли общий доступ к папке или процесс создания в качестве системы или пользователя.</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentActivator.System">
-      <summary>
-      </summary>
+      <summary>Исполнение в качестве системы</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentActivator.User">
-      <summary>
-      </summary>
+      <summary>Выполнен от имени пользователя</summary>
     </member>
     <member name="T:Windows.Security.Isolation.IsolatedWindowsEnvironmentAllowedClipboardFormats">
-      <summary>
-      </summary>
+      <summary>Определяет, какой тип содержимого разрешено копировать и вставлять в изолированную среду Windows.</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentAllowedClipboardFormats.Image">
-      <summary>
-      </summary>
+      <summary>Разрешить содержимое изображения</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentAllowedClipboardFormats.None">
-      <summary>
-      </summary>
+      <summary>Не допускает никакого содержимого</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentAllowedClipboardFormats.Text">
-      <summary>
-      </summary>
+      <summary>Разрешить текстовое содержимое</summary>
     </member>
     <member name="T:Windows.Security.Isolation.IsolatedWindowsEnvironmentAvailablePrinters">
-      <summary>
-      </summary>
+      <summary>Определяет, какие принтеры доступны в изолированной среде Windows.</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentAvailablePrinters.Local">
-      <summary>
-      </summary>
+      <summary>Разрешить локальный принтер</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentAvailablePrinters.Network">
-      <summary>
-      </summary>
+      <summary>Разрешить сетевой принтер</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentAvailablePrinters.None">
-      <summary>
-      </summary>
+      <summary>Не разрешает использовать принтеры в контейнере</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentAvailablePrinters.SystemPrintToPdf">
-      <summary>
-      </summary>
+      <summary>Разрешить печать в PDF</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentAvailablePrinters.SystemPrintToXps">
-      <summary>
-      </summary>
+      <summary>Разрешить печать в XPS</summary>
     </member>
     <member name="T:Windows.Security.Isolation.IsolatedWindowsEnvironmentClipboardCopyPasteDirections">
-      <summary>
-      </summary>
+      <summary>Определяет направление, в котором разрешено копирование содержимого: размещение в изолированной среде Windows или изолированное приложение Windows среды для размещения.</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentClipboardCopyPasteDirections.HostToIsolatedWindowsEnvironment">
-      <summary>
-      </summary>
+      <summary>Разрешить копирование и вставку с узла в изолированную среду Windows</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentClipboardCopyPasteDirections.IsolatedWindowsEnvironmentToHost">
-      <summary>
-      </summary>
+      <summary>Разрешить копирование и вставку из изолированной среды Windows на узел</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentClipboardCopyPasteDirections.None">
-      <summary>
-      </summary>
+      <summary>Не допускает копирование или вставку</summary>
     </member>
     <member name="T:Windows.Security.Isolation.IsolatedWindowsEnvironmentContract">
       <summary>
       </summary>
     </member>
     <member name="T:Windows.Security.Isolation.IsolatedWindowsEnvironmentCreateProgress">
-      <summary>
-      </summary>
+      <summary>Запросы на выполнение создания изолированной среды Windows</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentCreateProgress.PercentComplete">
-      <summary>
-      </summary>
+      <summary>UINT32 для процента завершения для изолированного создания среды Windows</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentCreateProgress.State">
-      <summary>
-      </summary>
+      <summary>исолатедвиндовсенвиронментпрогрессстате</summary>
     </member>
     <member name="T:Windows.Security.Isolation.IsolatedWindowsEnvironmentCreateResult">
-      <summary>
-      </summary>
+      <summary>Класс среды выполнения, который запрашивает результаты создания среды, такие как состояние и расширенные ошибки.</summary>
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentCreateResult.Environment">
-      <summary>
-      </summary>
-      <returns>
-      </returns>
+      <summary>Запросы для результата изолированного создания среды Windows.</summary>
+      <returns>Строка для идентификатора изолированной среды Windows.</returns>
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentCreateResult.ExtendedError">
-      <summary>
-      </summary>
-      <returns>
-      </returns>
+      <summary>Запросы на расширенные ошибки в случае сбоя при создании изолированной среды Windows.</summary>
+      <returns>HRESULT</returns>
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentCreateResult.Status">
-      <summary>
-      </summary>
-      <returns>
-      </returns>
+      <summary>Вызовы для исолатедвиндовсенвиронменткреатестатус</summary>
+      <returns>String</returns>
     </member>
     <member name="T:Windows.Security.Isolation.IsolatedWindowsEnvironmentCreateStatus">
-      <summary>
-      </summary>
+      <summary>Содержит фактические возвращаемые сведения о состоянии изолированного создания среды Windows.</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentCreateStatus.FailureByPolicy">
-      <summary>
-      </summary>
+      <summary>Не удалось создать изолированную среду Windows из-за конфигурации политики.</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentCreateStatus.Success">
-      <summary>
-      </summary>
+      <summary>Изолированное создание среды Windows установлено.</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentCreateStatus.UnknownFailure">
-      <summary>
-      </summary>
+      <summary>Сбой создания изолированной среды Windows с неизвестным сбоем.</summary>
     </member>
     <member name="T:Windows.Security.Isolation.IsolatedWindowsEnvironmentFile">
-      <summary>
-      </summary>
+      <summary>Класс среды выполнения, инкапсулирующий функции для запуска файла в изолированной среде Windows.</summary>
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentFile.HostPath">
-      <summary>
-      </summary>
-      <returns>
-      </returns>
+      <summary>Возвращает полное путь к узлу файла.</summary>
+      <returns>Строка для путь к узлу.</returns>
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentFile.Id">
-      <summary>
-      </summary>
-      <returns>
-      </returns>
+      <summary>Возвращает идентификатор, назначенный файлу узла.</summary>
+      <returns>Идентификатор GUID для файла.</returns>
     </member>
     <member name="M:Windows.Security.Isolation.IsolatedWindowsEnvironmentFile.Close">
-      <summary>
-      </summary>
+      <summary>Вызовите, чтобы закрыть файл в изолированной среде Windows.</summary>
     </member>
     <member name="T:Windows.Security.Isolation.IsolatedWindowsEnvironmentHost">
-      <summary>
-      </summary>
+      <summary>Класс, представляющий ведущее устройство для изолированной среды Windows.</summary>
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentHost.HostErrors">
-      <summary>
-      </summary>
-      <returns>
-      </returns>
+      <summary>IVectorView ошибок на узле, которые необходимо устранить, прежде чем можно будет создать изолированную среду Windows на узле.</summary>
+      <returns>IVectorView</returns>
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentHost.IsReady">
-      <summary>
-      </summary>
-      <returns>
-      </returns>
+      <summary>Логическое значение, которое указывает, правильно ли настроен узел и готов создать изолированную среду Windows.</summary>
+      <returns>Boolean</returns>
     </member>
     <member name="T:Windows.Security.Isolation.IsolatedWindowsEnvironmentHostError">
-      <summary>
-      </summary>
+      <summary>Перечислитель, представляющий возможный список ошибок, которые необходимо устранить перед созданием изолированной среды Windows на узле.</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentHostError.AdminPolicyIsDisabledOrNotPresent">
-      <summary>
-      </summary>
+      <summary>Политика администратора для компонента не настроена или отключена</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentHostError.FeatureNotInstalled">
-      <summary>
-      </summary>
+      <summary>Компонент не установлен на устройстве</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentHostError.HardwareRequirementsNotMet">
-      <summary>
-      </summary>
+      <summary>Устройство не соответствует требованиям к оборудованию</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentHostError.RebootRequired">
-      <summary>
-      </summary>
+      <summary>Требуется перезагрузка</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentHostError.UnknownError">
-      <summary>
-      </summary>
+      <summary>Неизвестная ошибка</summary>
     </member>
     <member name="T:Windows.Security.Isolation.IsolatedWindowsEnvironmentLaunchFileResult">
-      <summary>
-      </summary>
+      <summary>Класс среды выполнения, содержащий свойства результата для запуска файла в изолированной среде Windows.</summary>
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentLaunchFileResult.ExtendedError">
-      <summary>
-      </summary>
-      <returns>
-      </returns>
+      <summary>Возвращает код расширенной ошибки, если не удается запустить файл в изолированной среде Windows.</summary>
+      <returns>HRESULT</returns>
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentLaunchFileResult.File">
-      <summary>
-      </summary>
-      <returns>
-      </returns>
+      <summary>Создает экземпляр класса среды выполнения Исолатедвиндовсенвиронментфиле.</summary>
+      <returns>String</returns>
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentLaunchFileResult.Status">
-      <summary>
-      </summary>
-      <returns>
-      </returns>
+      <summary>Вызывает Исолатедвиндовсенвиронментлаунчфилестатус.</summary>
+      <returns>Перечисление</returns>
     </member>
     <member name="T:Windows.Security.Isolation.IsolatedWindowsEnvironmentLaunchFileStatus">
-      <summary>
-      </summary>
+      <summary>Перечисление значений для состояния запуска файла в изолированной среде Windows.</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentLaunchFileStatus.EnvironmentUnavailable">
-      <summary>
-      </summary>
+      <summary>Запуск файла в изолированной среде Windows из-за недоступности окружения</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentLaunchFileStatus.FileNotFound">
-      <summary>
-      </summary>
+      <summary>Запуск файла в изолированной среде Windows, так как файл не найден</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentLaunchFileStatus.Success">
-      <summary>
-      </summary>
+      <summary>Запуск файла в изолированной среде Windows прошел</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentLaunchFileStatus.TimedOut">
-      <summary>
-      </summary>
+      <summary>Истекло время ожидания при запуске файла в изолированной среде Windows</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentLaunchFileStatus.UnknownFailure">
-      <summary>
-      </summary>
+      <summary>При запуске файла в изолированной среде Windows истекло время ожидания неизвестного сбоя</summary>
     </member>
     <member name="T:Windows.Security.Isolation.IsolatedWindowsEnvironmentOptions">
-      <summary>
-      </summary>
+      <summary>Класс среды выполнения, который управляет различными атрибутами, применяемыми к изолированной среде Windows во время создания.</summary>
     </member>
     <member name="M:Windows.Security.Isolation.IsolatedWindowsEnvironmentOptions.#ctor">
-      <summary>
-      </summary>
+      <summary>Возвращает различные Исолатедвиндовсенвиронментоптионс для изолированной среды Windows.</summary>
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentOptions.AllowCameraAndMicrophoneAccess">
-      <summary>
-      </summary>
-      <returns>
-      </returns>
+      <summary>Логическое значение, указывающее, могут ли приложения, выполняемые в изолированной среде Windows, получить доступ к камере и микрофону устройства.</summary>
+      <returns>Boolean</returns>
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentOptions.AllowedClipboardFormats">
-      <summary>
-      </summary>
-      <returns>
-      </returns>
+      <summary>Перечисление форматов буфера обмена для изолированной среды Windows.</summary>
+      <returns>Перечисление</returns>
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentOptions.AllowGraphicsHardwareAcceleration">
-      <summary>
-      </summary>
-      <returns>
-      </returns>
+      <summary>Логическое значение, показывающее, визуализирует ли изолированная среда Windows график с помощью аппаратного или программного ускорения.</summary>
+      <returns>Boolean</returns>
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentOptions.AvailablePrinters">
-      <summary>
-      </summary>
-      <returns>
-      </returns>
+      <summary>Перечисление выбора принтера для изолированной среды Windows.</summary>
+      <returns>Перечисление</returns>
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentOptions.ClipboardCopyPasteDirections">
-      <summary>
-      </summary>
-      <returns>
-      </returns>
+      <summary>Перечисление параметров направления буфера обмена для изолированной среды Windows.</summary>
+      <returns>Перечисление</returns>
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentOptions.EnvironmentOwnerId">
-      <summary>
-      </summary>
-      <returns>
-      </returns>
+      <summary>Строка, идентифицирующая владельца каждой созданной изолированной среды Windows.</summary>
+      <returns>String</returns>
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentOptions.PersistUserProfile">
-      <summary>
-      </summary>
-      <returns>
-      </returns>
+      <summary>Разрешает сохранение профиля пользователя в изолированной среде Windows из сеанса в сеанс.</summary>
+      <returns>Boolean</returns>
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentOptions.SharedFolderNameInEnvironment">
-      <summary>
-      </summary>
-      <returns>
-      </returns>
+      <summary>Отображаемое имя папки, используемой для предоставления общего доступа к ненадежному элементу внутри изолированной среды Windows путем вызова Шарехостфолдерфорунтрустедитемс.</summary>
+      <returns>String</returns>
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentOptions.SharedHostFolderPath">
-      <summary>
-      </summary>
-      <returns>
-      </returns>
+      <summary>Путь к папке узла, которая является общей для изолированной среды Windows и узла для совместного использования непроверенных элементов, заданных путем вызова Шарехостфолдерфорунтрустедитемс.</summary>
+      <returns>String</returns>
     </member>
     <member name="M:Windows.Security.Isolation.IsolatedWindowsEnvironmentOptions.ShareHostFolderForUntrustedItems(System.String,System.String)">
-      <summary>
-      </summary>
-      <param name="SharedHostFolderPath">
-      </param>
-      <param name="ShareFolderNameInEnvironment">
-      </param>
+      <summary>Задает Шаредфолдернамеиненвиронмент и Шаредхостфолдерпас для настройки общей папки для совместного использования недоверенных элементов с изолированной средой Windows.</summary>
+      <param name="SharedHostFolderPath">Путь к общей папке узла.</param>
+      <param name="ShareFolderNameInEnvironment">Имя папки в изолированной среде Windows.</param>
     </member>
     <member name="T:Windows.Security.Isolation.IsolatedWindowsEnvironmentOwnerRegistration">
-      <summary>
-      </summary>
+      <summary>Класс времени выполнения, регистрирующий список атрибутов владельца изолированной среды Windows. Сюда входит имя владельца, общие папки с узла в изолированную среду Windows, процессы, работающие в качестве пользователя или системы, а также расширения межплатформенной активации.</summary>
     </member>
     <member name="M:Windows.Security.Isolation.IsolatedWindowsEnvironmentOwnerRegistration.Register(System.String,Windows.Security.Isolation.IsolatedWindowsEnvironmentOwnerRegistrationData)">
-      <summary>
-      </summary>
-      <param name="ownerName">
-      </param>
-      <param name="ownerRegistrationData">
-      </param>
-      <returns>
-      </returns>
+      <summary>Регистрирует владельца изолированной среды Windows.</summary>
+      <param name="ownerName">Имя владельца изолированной среды Windows.</param>
+      <param name="ownerRegistrationData">исолатедвиндовсенвиронментовнеррегистратиондата</param>
+      <returns>исолатедвиндовсенвиронментовнеррегистратионресулт</returns>
     </member>
     <member name="M:Windows.Security.Isolation.IsolatedWindowsEnvironmentOwnerRegistration.Unregister(System.String)">
-      <summary>
-      </summary>
-      <param name="ownerName">
-      </param>
+      <summary>Отмена регистрации владельца изолированной среды Windows.</summary>
+      <param name="ownerName">Строка для имени владельца изолированной среды Windows.</param>
     </member>
     <member name="T:Windows.Security.Isolation.IsolatedWindowsEnvironmentOwnerRegistrationData">
-      <summary>
-      </summary>
+      <summary>Класс, возвращающий все данные регистрации из исолатедвиндовсенвиронментовнеррегистратион.</summary>
     </member>
     <member name="M:Windows.Security.Isolation.IsolatedWindowsEnvironmentOwnerRegistrationData.#ctor">
-      <summary>
-      </summary>
+      <summary>Все атрибуты владельца, зарегистрированные в изолированной среде Windows.</summary>
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentOwnerRegistrationData.ActivationFileExtensions">
-      <summary>
-      </summary>
-      <returns>
-      </returns>
+      <summary>Расширения файлов, которые могут быть активированы в изолированной среде Windows.</summary>
+      <returns>IVector</returns>
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentOwnerRegistrationData.ProcessesRunnableAsSystem">
-      <summary>
-      </summary>
-      <returns>
-      </returns>
+      <summary>Процессы запуска от имени System.</summary>
+      <returns>IVector</returns>
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentOwnerRegistrationData.ProcessesRunnableAsUser">
-      <summary>
-      </summary>
-      <returns>
-      </returns>
+      <summary>Процессы запуска от имени пользователя.</summary>
+      <returns>IVector</returns>
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentOwnerRegistrationData.ShareableFolders">
-      <summary>
-      </summary>
-      <returns>
-      </returns>
+      <summary>Папки, к которым можно предоставить общий доступ из узла в изолированную среду Windows.</summary>
+      <returns>IVector</returns>
     </member>
     <member name="T:Windows.Security.Isolation.IsolatedWindowsEnvironmentOwnerRegistrationResult">
-      <summary>
-      </summary>
+      <summary>Класс времени выполнения, который возвращает результаты для исолатедвиндовсенвиронментовнеррегистратион.</summary>
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentOwnerRegistrationResult.ExtendedError">
-      <summary>
-      </summary>
-      <returns>
-      </returns>
+      <summary>Возвращает расширенную ошибку для исолатедвиндовсенвиронментовнеррегистратион.</summary>
+      <returns>HRESULT</returns>
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentOwnerRegistrationResult.Status">
-      <summary>
-      </summary>
-      <returns>
-      </returns>
+      <summary>Вызывает исолатедвиндовсенвиронментовнеррегистратионстатус.</summary>
+      <returns>Перечисление</returns>
     </member>
     <member name="T:Windows.Security.Isolation.IsolatedWindowsEnvironmentOwnerRegistrationStatus">
-      <summary>
-      </summary>
+      <summary>Состояние успеха или сбоя исолатедвиндовсенвиронментовнеррегистратион.</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentOwnerRegistrationStatus.AccessDenied">
-      <summary>
-      </summary>
+      <summary>Сбой регистрации владельца для изолированной среды Windows из-за отказа в доступе.</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentOwnerRegistrationStatus.InsufficientMemory">
-      <summary>
-      </summary>
+      <summary>Регистрация владельца изолированной среды Windows из-за нехватки памяти.</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentOwnerRegistrationStatus.InvalidArgument">
-      <summary>
-      </summary>
+      <summary>Регистрация владельца изолированной среды Windows завершилась сбоем из-за недопустимого атрибута.</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentOwnerRegistrationStatus.Success">
-      <summary>
-      </summary>
+      <summary>Регистрация владельца изолированной среды Windows прошла удачно.</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentOwnerRegistrationStatus.UnknownFailure">
-      <summary>
-      </summary>
+      <summary>Регистрация владельца изолированной среды Windows завершилась сбоем с неизвестным сбоем.</summary>
     </member>
     <member name="T:Windows.Security.Isolation.IsolatedWindowsEnvironmentProcess">
-      <summary>
-      </summary>
+      <summary>Класс, возвращающий объект по запуску процесса, который представляет процесс в изолированной среде Windows.</summary>
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentProcess.ExitCode">
-      <summary>
-      </summary>
-      <returns>
-      </returns>
+      <summary>Возвращает код выхода выполненного процесса.</summary>
+      <returns>UInt32</returns>
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentProcess.State">
-      <summary>
-      </summary>
-      <returns>
-      </returns>
+      <summary>Возвращает текущее состояние выполнения процесса.</summary>
+      <returns>Перечисление</returns>
     </member>
     <member name="M:Windows.Security.Isolation.IsolatedWindowsEnvironmentProcess.WaitForExit">
-      <summary>
-      </summary>
+      <summary>Позволяет вызывающему объекту ожидать завершения процесса.</summary>
     </member>
     <member name="M:Windows.Security.Isolation.IsolatedWindowsEnvironmentProcess.WaitForExitAsync">
-      <summary>
-      </summary>
-      <returns>
-      </returns>
+      <summary>Позволяет вызывающему объекту ожидать завершения процесса асинхронно.</summary>
+      <returns>HRESULT</returns>
     </member>
     <member name="M:Windows.Security.Isolation.IsolatedWindowsEnvironmentProcess.WaitForExitWithTimeout(System.UInt32)">
-      <summary>
-      </summary>
-      <param name="timeoutMilliseconds">
-      </param>
+      <summary>Позволяет вызывающей стороне указать время ожидания для завершения процесса.</summary>
+      <param name="timeoutMilliseconds">Разрешенное время до истечения времени ожидания.</param>
     </member>
     <member name="T:Windows.Security.Isolation.IsolatedWindowsEnvironmentProcessState">
-      <summary>
-      </summary>
+      <summary>Текущее состояние выполнения процесса в изолированной среде Windows.</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentProcessState.Aborted">
-      <summary>
-      </summary>
+      <summary>Процесс в изолированной среде Windows был прерван.</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentProcessState.Completed">
-      <summary>
-      </summary>
+      <summary>Процесс в изолированной среде Windows завершен.</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentProcessState.Running">
-      <summary>
-      </summary>
+      <summary>Процесс в изолированной среде Windows выполняется.</summary>
     </member>
     <member name="T:Windows.Security.Isolation.IsolatedWindowsEnvironmentProgressState">
-      <summary>
-      </summary>
+      <summary>Возврат во время изолированного создания среды Windows, представляющего состояние создания среды.</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentProgressState.Completed">
-      <summary>
-      </summary>
+      <summary>Создание изолированной среды Windows завершено.</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentProgressState.Processing">
-      <summary>
-      </summary>
+      <summary>Изолированное создание среды Windows обрабатывается.</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentProgressState.Queued">
-      <summary>
-      </summary>
+      <summary>Изолированное создание среды Windows поставлено в очередь.</summary>
     </member>
     <member name="T:Windows.Security.Isolation.IsolatedWindowsEnvironmentShareFolderRequestOptions">
-      <summary>
-      </summary>
+      <summary>Параметры для выполнения операции с общей папкой.</summary>
     </member>
     <member name="M:Windows.Security.Isolation.IsolatedWindowsEnvironmentShareFolderRequestOptions.#ctor">
-      <summary>
-      </summary>
+      <summary>Результаты Исолатедвиндовсенвиронментшарефолдеррекуестоптионс.</summary>
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentShareFolderRequestOptions.AllowWrite">
-      <summary>
-      </summary>
-      <returns>
-      </returns>
+      <summary>Определяет, могут ли приложения, выполняемые в изолированной среде Windows, записывать данные в общую папку.</summary>
+      <returns>Boolean</returns>
     </member>
     <member name="T:Windows.Security.Isolation.IsolatedWindowsEnvironmentShareFolderResult">
-      <summary>
-      </summary>
+      <summary>Объект, содержащий сведения о результате запроса общей папки.</summary>
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentShareFolderResult.ExtendedError">
-      <summary>
-      </summary>
-      <returns>
-      </returns>
+      <summary>Если возникает ошибка совместного использования папки, она будет содержать код ошибки, связанный с этим сбоем.</summary>
+      <returns>HRESULT</returns>
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentShareFolderResult.Status">
-      <summary>
-      </summary>
-      <returns>
-      </returns>
+      <summary>Состояние операции совместного использования папки: успешное или неуспешное выполнение.</summary>
+      <returns>Перечисление</returns>
     </member>
     <member name="T:Windows.Security.Isolation.IsolatedWindowsEnvironmentShareFolderStatus">
-      <summary>
-      </summary>
+      <summary>Перечисление возможных состояний, указывающих результат запроса общей папки.</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentShareFolderStatus.AccessDenied">
-      <summary>
-      </summary>
+      <summary>Доступ запрещен.</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentShareFolderStatus.EnvironmentUnavailable">
-      <summary>
-      </summary>
+      <summary>Изолированная среда Windows недоступна.</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentShareFolderStatus.FolderNotFound">
-      <summary>
-      </summary>
+      <summary>Папка не найдена.</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentShareFolderStatus.Success">
-      <summary>
-      </summary>
+      <summary>Успешно.</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentShareFolderStatus.UnknownFailure">
-      <summary>
-      </summary>
+      <summary>Неизвестный сбой.</summary>
     </member>
     <member name="T:Windows.Security.Isolation.IsolatedWindowsEnvironmentStartProcessResult">
-      <summary>
-      </summary>
+      <summary>Класс времени выполнения, который запрашивает результат процесса запуска в изолированной среде Windows.</summary>
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentStartProcessResult.ExtendedError">
-      <summary>
-      </summary>
-      <returns>
-      </returns>
+      <summary>Запросы на ошибки ексентед, если процесс запуска изолированной среды Windows завершается сбоем.</summary>
+      <returns>HRESULT</returns>
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentStartProcessResult.Process">
-      <summary>
-      </summary>
-      <returns>
-      </returns>
+      <summary>Представляет время существования процесса, выполняемого в изолированной среде Windows.</summary>
+      <returns>String</returns>
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentStartProcessResult.Status">
-      <summary>
-      </summary>
-      <returns>
-      </returns>
+      <summary>Запрашивает состояние выполнения процесса в изолированной среде Windows.</summary>
+      <returns>String</returns>
     </member>
     <member name="T:Windows.Security.Isolation.IsolatedWindowsEnvironmentStartProcessStatus">
-      <summary>
-      </summary>
+      <summary>Результаты запуска процесса в изолированной среде Windows.</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentStartProcessStatus.AppNotRegistered">
-      <summary>
-      </summary>
+      <summary>Не удалось запустить процесс в изолированной среде Windows, так как приложение не зарегистрировано.</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentStartProcessStatus.EnvironmentUnavailable">
-      <summary>
-      </summary>
+      <summary>Не удалось запустить процесс в изолированной среде Windows, так как окружение недоступно.</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentStartProcessStatus.FileNotFound">
-      <summary>
-      </summary>
+      <summary>Не удалось запустить процесс в изолированной среде Windows, так как файл не найден.</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentStartProcessStatus.Success">
-      <summary>
-      </summary>
+      <summary>Процесс запуска в изолированной среде Windows выполнен.</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentStartProcessStatus.UnknownFailure">
-      <summary>
-      </summary>
+      <summary>Не удалось запустить процесс в изолированной среде Windows. произошла неизвестная ошибка.</summary>
     </member>
     <member name="T:Windows.Security.Isolation.IsolatedWindowsEnvironmentTelemetryParameters">
-      <summary>
-      </summary>
+      <summary>Класс времени выполнения, инкапсулирующий CorrelationId.</summary>
     </member>
     <member name="M:Windows.Security.Isolation.IsolatedWindowsEnvironmentTelemetryParameters.#ctor">
-      <summary>
-      </summary>
+      <summary>Параметры, используемые в телеметрии Майкрософт для улучшения качества интерфейсов API.</summary>
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentTelemetryParameters.CorrelationId">
-      <summary>
-      </summary>
-      <returns>
-      </returns>
+      <summary>Идентификатор GUID, используемый в телеметрии Майкрософт для улучшения качества интерфейсов API.</summary>
+      <returns>GUID</returns>
     </member>
     <member name="T:Windows.Security.Isolation.IsolatedWindowsHostMessenger">
-      <summary>
-      </summary>
+      <summary>Класс среды выполнения для двух методов: Постмессажеторецеивиер и жетфилеид.</summary>
     </member>
     <member name="M:Windows.Security.Isolation.IsolatedWindowsHostMessenger.GetFileId(System.String)">
-      <summary>
-      </summary>
-      <param name="filePath">
-      </param>
-      <returns>
-      </returns>
+      <summary>Возвращает уникальный идентификатор файла, открытого в изолированной среде Windows.</summary>
+      <param name="filePath">Путь к файлу на узле.</param>
+      <returns>Guid</returns>
     </member>
     <member name="M:Windows.Security.Isolation.IsolatedWindowsHostMessenger.PostMessageToReceiver(System.Guid,Windows.Foundation.Collections.IVectorView{System.Object})">
-      <summary>
-      </summary>
-      <param name="receiverId">
-      </param>
-      <param name="message">
-      </param>
+      <summary>Публикация сообщения из изолированной среды Windows в приемник, зарегистрированный на стороне узла.</summary>
+      <param name="receiverId">Идентификатор GUID получателя сообщения.</param>
+      <param name="message">IVectorView</param>
     </member>
     <member name="T:Windows.Security.Isolation.MessageReceivedCallback">
-      <summary>
-      </summary>
-      <param name="receiverId">
-      </param>
-      <param name="message">
-      </param>
+      <summary>Функция обратного вызова, которая будет вызываться при отправке сообщения из изолированной среды Windows с помощью Постмессажеторецеивер.</summary>
+      <param name="receiverId">Идентификатор GUID получателя сообщения.</param>
+      <param name="message">IVectorView</param>
     </member>
   </members>
 </doc>
