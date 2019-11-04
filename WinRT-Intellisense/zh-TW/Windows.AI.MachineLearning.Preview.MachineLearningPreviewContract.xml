@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>MachineLearning. Preview. MachineLearningPreviewContract</name>
+  </assembly>
+  <members>
+    <member name="T:Windows.AI.MachineLearning.Preview.FeatureElementKindPreview">
+      <summary>* * 已淘汰。 * * 會定義支援的功能資料類型清單。</summary>
+      <deprecated type="deprecate">使用 TensorKind，而不是 FeatureElementKindPreview。如需詳細資訊，請參閱 MSDN。</deprecated>
+    </member>
+    <member name="F:Windows.AI.MachineLearning.Preview.FeatureElementKindPreview.Boolean">
+      <summary>Feature 元素的類型為 Boolean。</summary>
+    </member>
+    <member name="F:Windows.AI.MachineLearning.Preview.FeatureElementKindPreview.Complex128">
+      <summary>Feature 元素的類型為 Complex128。</summary>
+    </member>
+    <member name="F:Windows.AI.MachineLearning.Preview.FeatureElementKindPreview.Complex64">
+      <summary>Feature 元素的類型為 Complex64。</summary>
+    </member>
+    <member name="F:Windows.AI.MachineLearning.Preview.FeatureElementKindPreview.Double">
+      <summary>Feature 元素的類型為 Double。</summary>
+    </member>
+    <member name="F:Windows.AI.MachineLearning.Preview.FeatureElementKindPreview.Float">
+      <summary>Feature 元素的類型為 Float。</summary>
+    </member>
+    <member name="F:Windows.AI.MachineLearning.Preview.FeatureElementKindPreview.Float16">
+      <summary>Feature 元素的類型為 Float16。</summary>
+    </member>
+    <member name="F:Windows.AI.MachineLearning.Preview.FeatureElementKindPreview.Int16">
+      <summary>Feature 元素的類型為 Int16。</summary>
+    </member>
+    <member name="F:Windows.AI.MachineLearning.Preview.FeatureElementKindPreview.Int32">
+      <summary>Feature 元素的類型為 Int32。</summary>
+    </member>
+    <member name="F:Windows.AI.MachineLearning.Preview.FeatureElementKindPreview.Int64">
+      <summary>Feature 元素的類型為 Int64。</summary>
+    </member>
+    <member name="F:Windows.AI.MachineLearning.Preview.FeatureElementKindPreview.Int8">
+      <summary>Feature 元素屬於 Int8 類型。</summary>
+    </member>
+    <member name="F:Windows.AI.MachineLearning.Preview.FeatureElementKindPreview.String">
+      <summary>Feature 元素的類型為 String。</summary>
+    </member>
+    <member name="F:Windows.AI.MachineLearning.Preview.FeatureElementKindPreview.UInt16">
+      <summary>Feature 元素的類型為 UInt16。</summary>
+    </member>
+    <member name="F:Windows.AI.MachineLearning.Preview.FeatureElementKindPreview.UInt32">
+      <summary>Feature 元素的類型為 UInt32。</summary>
+    </member>
+    <member name="F:Windows.AI.MachineLearning.Preview.FeatureElementKindPreview.UInt64">
+      <summary>Feature 元素的類型為 UInt64。</summary>
+    </member>
+    <member name="F:Windows.AI.MachineLearning.Preview.FeatureElementKindPreview.UInt8">
+      <summary>Feature 元素的類型為 UInt8。</summary>
+    </member>
+    <member name="F:Windows.AI.MachineLearning.Preview.FeatureElementKindPreview.Undefined">
+      <summary>
+      </summary>
+    </member>
+    <member name="T:Windows.AI.MachineLearning.Preview.ILearningModelVariableDescriptorPreview">
+      <summary>* * 已被取代。 * * 表示變數描述元資訊。</summary>
+      <deprecated type="deprecate">使用 ILearningModelFeatureDescriptor，而不是 ILearningModelVariableDescriptorPreview。如需詳細資訊，請參閱 MSDN。</deprecated>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.Preview.ILearningModelVariableDescriptorPreview.Description">
+      <summary>* * 已淘汰。 * * 取得變數的描述。</summary>
+      <returns>變數的描述。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.Preview.ILearningModelVariableDescriptorPreview.IsRequired">
+      <summary>* * 已淘汰。 * * 可取得變數為必要或選擇性。</summary>
+      <returns>如果需要變數，則為 True;否則為 false。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.Preview.ILearningModelVariableDescriptorPreview.ModelFeatureKind">
+      <summary>* * 已淘汰。 * * 取得變數的資料類型。</summary>
+      <returns>變數的資料類型。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.Preview.ILearningModelVariableDescriptorPreview.Name">
+      <summary>* * 已淘汰。 * * 取得變數的名稱。</summary>
+      <returns>變數的名稱。</returns>
+    </member>
+    <member name="T:Windows.AI.MachineLearning.Preview.ImageVariableDescriptorPreview">
+      <summary>* * 已淘汰。 * * 代表映射描述項資訊。</summary>
+      <deprecated type="deprecate">使用 ImageFeatureDescriptor，而不是 ImageVariableDescriptorPreview。如需詳細資訊，請參閱 MSDN。</deprecated>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.Preview.ImageVariableDescriptorPreview.BitmapPixelFormat">
+      <summary>* * 已淘汰。 * * 取得影像的像素格式。</summary>
+      <returns>影像的像素格式。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.Preview.ImageVariableDescriptorPreview.Description">
+      <summary>* * 已淘汰。 * * 取得影像變數的描述。</summary>
+      <returns>影像變數的描述。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.Preview.ImageVariableDescriptorPreview.Height">
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.Preview.ImageVariableDescriptorPreview.IsRequired">
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.Preview.ImageVariableDescriptorPreview.ModelFeatureKind">
+      <summary>* * 已淘汰。 * * 取得變數的資料類型。</summary>
+      <returns>變數的資料類型。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.Preview.ImageVariableDescriptorPreview.Name">
+      <summary>* * 已淘汰。 * * 取得影像變數的名稱。</summary>
+      <returns>映射變數的名稱。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.Preview.ImageVariableDescriptorPreview.Width">
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="T:Windows.AI.MachineLearning.Preview.InferencingOptionsPreview">
+      <summary>* * 已被取代。 * * 表示用於控制模型評估的推斷選項。</summary>
+      <deprecated type="deprecate">使用 LearningModelSession，而不是 InferencingOptionsPreview。如需詳細資訊，請參閱 MSDN。</deprecated>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.Preview.InferencingOptionsPreview.IsTracingEnabled">
+      <summary>* * 已過時。 * * 取得或設定是否在模型評估期間啟用追蹤。</summary>
+      <returns>如果已啟用追蹤，則為 True;否則為 false。預設值為 false。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.Preview.InferencingOptionsPreview.MaxBatchSize">
+      <summary>* * 已淘汰。 * * 取得或設定模型評估的批次大小上限。</summary>
+      <returns>批次大小上限。預覽 API 僅支援批次大小1。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.Preview.InferencingOptionsPreview.MinimizeMemoryAllocation">
+      <summary>* * 已過時。 * * 取得或設定是否要在模型評估之後將記憶體配置降至最低。</summary>
+      <returns>如果在評估期間將記憶體配置降至最低，則為 True;否則為 false。預設值為 false。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.Preview.InferencingOptionsPreview.PreferredDeviceKind">
+      <summary>* * 已淘汰。 * * 取得或設定將執行評估的慣用裝置。</summary>
+      <returns>慣用的裝置。預設值為 LearningDeviceAny。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.Preview.InferencingOptionsPreview.ReclaimMemoryAfterEvaluation">
+      <summary>* * 已過時。 * * 取得或設定是否要在模型評估之後回收已配置的記憶體。</summary>
+      <returns>如果在評估之後回收配置的記憶體，則為 True;否則為 false。預設值為 false。</returns>
+    </member>
+    <member name="T:Windows.AI.MachineLearning.Preview.LearningModelBindingPreview">
+      <summary>* * 已被取代。 * * 代表模型輸入和變數實例之間的關聯。</summary>
+      <deprecated type="deprecate">使用 LearningModelBinding，而不是 LearningModelBindingPreview。如需詳細資訊，請參閱 MSDN。</deprecated>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.Preview.LearningModelBindingPreview.#ctor(Windows.AI.MachineLearning.Preview.LearningModelPreview)">
+      <summary>
+      </summary>
+      <deprecated type="deprecate">使用 ILearningModelBindingFactory，而不是 ILearningModelBindingPreviewFactory。如需詳細資訊，請參閱 MSDN。</deprecated>
+      <param name="model">
+      </param>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.Preview.LearningModelBindingPreview.Size">
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.Preview.LearningModelBindingPreview.Bind(System.String,System.Object)">
+      <summary>* * 已被取代。 * * 會將單一輸入或輸出功能系結至已定義的變數。</summary>
+      <deprecated type="deprecate">使用 ILearningModelBinding，而不是 ILearningModelBindingPreview。如需詳細資訊，請參閱 MSDN。</deprecated>
+      <param name="name">輸入/輸出功能的名稱。</param>
+      <param name="value">輸入/輸出功能的值。</param>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.Preview.LearningModelBindingPreview.Bind(System.String,System.Object,Windows.Foundation.Collections.IPropertySet)">
+      <summary>
+      </summary>
+      <deprecated type="deprecate">使用 ILearningModelBinding，而不是 ILearningModelBindingPreview。如需詳細資訊，請參閱 MSDN。</deprecated>
+      <param name="name">
+      </param>
+      <param name="value">
+      </param>
+      <param name="metadata">
+      </param>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.Preview.LearningModelBindingPreview.Clear">
+      <summary>* * 已被取代。 * * 會清除所有系結變數。</summary>
+      <deprecated type="deprecate">使用 ILearningModelBinding，而不是 ILearningModelBindingPreview。如需詳細資訊，請參閱 MSDN。</deprecated>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.Preview.LearningModelBindingPreview.First">
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.Preview.LearningModelBindingPreview.HasKey(System.String)">
+      <summary>
+      </summary>
+      <param name="key">
+      </param>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.Preview.LearningModelBindingPreview.Lookup(System.String)">
+      <summary>
+      </summary>
+      <param name="key">
+      </param>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.Preview.LearningModelBindingPreview.Split(Windows.Foundation.Collections.IMapView{System.String,System.Object}@,Windows.Foundation.Collections.IMapView{System.String,System.Object}@)">
+      <summary>
+      </summary>
+      <param name="first">
+      </param>
+      <param name="second">
+      </param>
+    </member>
+    <member name="T:Windows.AI.MachineLearning.Preview.LearningModelDescriptionPreview">
+      <summary>* * 已被取代。 * * 代表所提供模型的中繼資料和屬性描述。</summary>
+      <deprecated type="deprecate">使用 LearningModel，而不是 LearningModelDescriptionPreview。如需詳細資訊，請參閱 MSDN。</deprecated>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.Preview.LearningModelDescriptionPreview.Author">
+      <summary>* * 已淘汰。 * * 會從模型取得作者資訊。</summary>
+      <returns>來自模型的作者資訊。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.Preview.LearningModelDescriptionPreview.Description">
+      <summary>* * 已淘汰。 * * 取得模型的自訂描述。</summary>
+      <returns>模型的自訂描述。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.Preview.LearningModelDescriptionPreview.Domain">
+      <summary>* * 已淘汰。 * * 取得模型的網域資訊。</summary>
+      <returns>模型的網域資訊。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.Preview.LearningModelDescriptionPreview.InputFeatures">
+      <summary>* * 已淘汰。 * * 取得模型的輸入描述。</summary>
+      <returns>模型的輸入描述，以輸入的名稱做為索引鍵。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.Preview.LearningModelDescriptionPreview.Metadata">
+      <summary>* * 已被取代。 * * 會從模型取得中繼資料。</summary>
+      <returns>所提供模型的中繼資料。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.Preview.LearningModelDescriptionPreview.Name">
+      <summary>* * 已淘汰。 * * 取得模型的名稱。</summary>
+      <returns>模型的名稱。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.Preview.LearningModelDescriptionPreview.OutputFeatures">
+      <summary>* * 已淘汰。 * * 取得模型的輸出描述。</summary>
+      <returns>模型的輸出描述，以輸出的名稱做為索引鍵。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.Preview.LearningModelDescriptionPreview.Version">
+      <summary>* * 已淘汰。 * * 取得模型的版本資訊。</summary>
+      <returns>模型的版本資訊。</returns>
+    </member>
+    <member name="T:Windows.AI.MachineLearning.Preview.LearningModelDeviceKindPreview">
+      <summary>* * 已淘汰。 * * 會定義代表 Windows Machine Learning 支援裝置類型的常數清單。</summary>
+      <deprecated type="deprecate">使用 LearningModelDeviceKind，而不是 LearningModelDeviceKindPreview。如需詳細資訊，請參閱 MSDN。</deprecated>
+    </member>
+    <member name="F:Windows.AI.MachineLearning.Preview.LearningModelDeviceKindPreview.LearningDeviceAny">
+      <summary>預設值。任何裝置。</summary>
+    </member>
+    <member name="F:Windows.AI.MachineLearning.Preview.LearningModelDeviceKindPreview.LearningDeviceCpu">
+      <summary>中央處理器。</summary>
+    </member>
+    <member name="F:Windows.AI.MachineLearning.Preview.LearningModelDeviceKindPreview.LearningDeviceDsp">
+      <summary>數位信號 proccesor。</summary>
+    </member>
+    <member name="F:Windows.AI.MachineLearning.Preview.LearningModelDeviceKindPreview.LearningDeviceFpga">
+      <summary>可現場程式化閘道陣列。</summary>
+    </member>
+    <member name="F:Windows.AI.MachineLearning.Preview.LearningModelDeviceKindPreview.LearningDeviceGpu">
+      <summary>圖形處理器。</summary>
+    </member>
+    <member name="F:Windows.AI.MachineLearning.Preview.LearningModelDeviceKindPreview.LearningDeviceNpu">
+      <summary>類神經處理器。</summary>
+    </member>
+    <member name="T:Windows.AI.MachineLearning.Preview.LearningModelEvaluationResultPreview">
+      <summary>* * 已被取代。 * * 取得與模型評估相關聯的輸出預測與對應機率的集合。</summary>
+      <deprecated type="deprecate">使用 LearningModelEvaluationResult，而不是 LearningModelEvaluationResultPreview。如需詳細資訊，請參閱 MSDN。</deprecated>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.Preview.LearningModelEvaluationResultPreview.CorrelationId">
+      <summary>* * 已淘汰。 * * 取得值，以將輸出結果與評估呼叫相互關聯。</summary>
+      <returns>要將輸出結果與評估呼叫相互關聯的值。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.Preview.LearningModelEvaluationResultPreview.Outputs">
+      <summary>* * 已淘汰。 * * 取得一組功能，代表輸出預測以及機率。</summary>
+      <returns>表示輸出預測和機率的一組功能。</returns>
+    </member>
+    <member name="T:Windows.AI.MachineLearning.Preview.LearningModelFeatureKindPreview">
+      <summary>* * 已被取代。 * * 定義模型功能的資料類型清單</summary>
+      <deprecated type="deprecate">使用 LearningModelFeatureKind，而不是 LearningModelFeatureKindPreview。如需詳細資訊，請參閱 MSDN。</deprecated>
+    </member>
+    <member name="F:Windows.AI.MachineLearning.Preview.LearningModelFeatureKindPreview.Image">
+      <summary>功能類型為影像。</summary>
+    </member>
+    <member name="F:Windows.AI.MachineLearning.Preview.LearningModelFeatureKindPreview.Map">
+      <summary>功能類型為對應。</summary>
+    </member>
+    <member name="F:Windows.AI.MachineLearning.Preview.LearningModelFeatureKindPreview.Sequence">
+      <summary>「功能類型」是一種序列。</summary>
+    </member>
+    <member name="F:Windows.AI.MachineLearning.Preview.LearningModelFeatureKindPreview.Tensor">
+      <summary>功能類型為張量。</summary>
+    </member>
+    <member name="F:Windows.AI.MachineLearning.Preview.LearningModelFeatureKindPreview.Undefined">
+      <summary>未定義功能類型。</summary>
+    </member>
+    <member name="T:Windows.AI.MachineLearning.Preview.LearningModelPreview">
+      <summary>* * 已淘汰。 * * 代表機器學習模型。</summary>
+      <deprecated type="deprecate">使用 LearningModel，而不是 LearningModelPreview。如需詳細資訊，請參閱 MSDN。</deprecated>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.Preview.LearningModelPreview.Description">
+      <summary>* * 已淘汰。 * * 取得定型機器學習模型的描述性中繼資料。</summary>
+      <returns>機器學習模型的描述性中繼資料。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.Preview.LearningModelPreview.InferencingOptions">
+      <summary>* * 已淘汰。 * * 取得或設定用於評估模型的推斷選項。</summary>
+      <returns>用於評估模型的推斷選項。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.Preview.LearningModelPreview.EvaluateAsync(Windows.AI.MachineLearning.Preview.LearningModelBindingPreview,System.String)">
+      <summary>
+      </summary>
+      <deprecated type="deprecate">使用 ILearningModel，而不是 ILearningModelPreview。如需詳細資訊，請參閱 MSDN。</deprecated>
+      <param name="binding">
+      </param>
+      <param name="correlationId">
+      </param>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.Preview.LearningModelPreview.EvaluateFeaturesAsync(Windows.Foundation.Collections.IMap{System.String,System.Object},System.String)">
+      <summary>* * 已淘汰。 * * 以非同步方式評估名稱變數實例，做為模型的輸入和輸出。</summary>
+      <deprecated type="deprecate">使用 ILearningModel，而不是 ILearningModelPreview。如需詳細資訊，請參閱 MSDN。</deprecated>
+      <param name="features">要系結為輸入的功能。</param>
+      <param name="correlationId">要使評估與輸出結果相互關聯的值。</param>
+      <returns>評估結果。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.Preview.LearningModelPreview.LoadModelFromStorageFileAsync(Windows.Storage.IStorageFile)">
+      <summary>* * 已淘汰。 * * 以非同步方式從檔案儲存體載入模型。</summary>
+      <deprecated type="deprecate">使用 ILearningModelStatics，而不是 ILearningModelPreviewStatics。如需詳細資訊，請參閱 MSDN。</deprecated>
+      <param name="modelFile">模型檔案的位置。</param>
+      <returns>傳回 LearningModelPreview。</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.Preview.LearningModelPreview.LoadModelFromStreamAsync(Windows.Storage.Streams.IRandomAccessStreamReference)">
+      <summary>* * 已淘汰。 * * 以非同步方式從提供的資料流程載入模型。</summary>
+      <deprecated type="deprecate">使用 ILearningModelStatics，而不是 ILearningModelPreviewStatics。如需詳細資訊，請參閱 MSDN。</deprecated>
+      <param name="modelStream">模型的檔案資料流程。</param>
+      <returns>傳回 LearningModelPreview。</returns>
+    </member>
+    <member name="T:Windows.AI.MachineLearning.Preview.LearningModelVariableDescriptorPreview">
+      <summary>
+      </summary>
+      <deprecated type="deprecate">使用 ILearningModelFeatureDescriptor，而不是 LearningModelVariableDescriptorPreview。如需詳細資訊，請參閱 MSDN。</deprecated>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.Preview.LearningModelVariableDescriptorPreview.Description">
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.Preview.LearningModelVariableDescriptorPreview.IsRequired">
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.Preview.LearningModelVariableDescriptorPreview.ModelFeatureKind">
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.Preview.LearningModelVariableDescriptorPreview.Name">
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="T:Windows.AI.MachineLearning.Preview.MachineLearningPreviewContract">
+      <summary>
+      </summary>
+    </member>
+    <member name="T:Windows.AI.MachineLearning.Preview.MapVariableDescriptorPreview">
+      <summary>* * 已被取代。 * * 表示對應變數描述元資訊。</summary>
+      <deprecated type="deprecate">使用 MapFeatureDescriptor，而不是 MapVariableDescriptorPreview。如需詳細資訊，請參閱 MSDN。</deprecated>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.Preview.MapVariableDescriptorPreview.Description">
+      <summary>* * 已淘汰。 * * 取得描述地圖變數。</summary>
+      <returns>地圖變數的描述。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.Preview.MapVariableDescriptorPreview.Fields">
+      <summary>* * 已淘汰。 * * 取得地圖變數欄位的資料類型。</summary>
+      <returns>Map 變數欄位的資料類型。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.Preview.MapVariableDescriptorPreview.IsRequired">
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.Preview.MapVariableDescriptorPreview.KeyKind">
+      <summary>* * 已淘汰。 * * 取得地圖變數的索引鍵資料類型。</summary>
+      <returns>索引鍵的資料類型。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.Preview.MapVariableDescriptorPreview.ModelFeatureKind">
+      <summary>* * 已淘汰。 * * 取得變數的資料類型。</summary>
+      <returns>變數的資料類型。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.Preview.MapVariableDescriptorPreview.Name">
+      <summary>* * 已淘汰。 * * 取得地圖變數的名稱。</summary>
+      <returns>地圖變數的名稱。這在模型中的所有變數之間必須是唯一的。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.Preview.MapVariableDescriptorPreview.ValidIntegerKeys">
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.Preview.MapVariableDescriptorPreview.ValidStringKeys">
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="T:Windows.AI.MachineLearning.Preview.SequenceVariableDescriptorPreview">
+      <summary>* * 已被取代。 * * 代表序列變數的描述項資訊。</summary>
+      <deprecated type="deprecate">使用 SequenceFeatureDescriptor，而不是 SequenceVariableDescriptorPreview。如需詳細資訊，請參閱 MSDN。</deprecated>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.Preview.SequenceVariableDescriptorPreview.Description">
+      <summary>* * 已淘汰。 * * 取得序列變數的描述。</summary>
+      <returns>順序變數的描述。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.Preview.SequenceVariableDescriptorPreview.ElementType">
+      <summary>* * 已淘汰。 * * 取得序列變數的類型。</summary>
+      <returns>順序變數的類型。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.Preview.SequenceVariableDescriptorPreview.IsRequired">
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.Preview.SequenceVariableDescriptorPreview.ModelFeatureKind">
+      <summary>* * 已淘汰。 * * 取得變數的資料類型。</summary>
+      <returns>變數的資料類型。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.Preview.SequenceVariableDescriptorPreview.Name">
+      <summary>* * 已淘汰。 * * 取得序列變數的名稱。</summary>
+      <returns>順序變數的名稱。這在模型中的所有變數之間必須是唯一的。</returns>
+    </member>
+    <member name="T:Windows.AI.MachineLearning.Preview.TensorVariableDescriptorPreview">
+      <summary>* * 已淘汰。 * * 代表張量變數的描述項資訊。</summary>
+      <deprecated type="deprecate">使用 TensorFeatureDescriptor，而不是 TensorVariableDescriptorPreview。如需詳細資訊，請參閱 MSDN。</deprecated>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.Preview.TensorVariableDescriptorPreview.DataType">
+      <summary>* * 已淘汰。 * * 取得張量資料的類型。</summary>
+      <returns>張量資料的類型。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.Preview.TensorVariableDescriptorPreview.Description">
+      <summary>* * 已淘汰。 * * 取得張量的描述。</summary>
+      <returns>張量的描述。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.Preview.TensorVariableDescriptorPreview.IsRequired">
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.Preview.TensorVariableDescriptorPreview.ModelFeatureKind">
+      <summary>* * 已淘汰。 * * 取得變數的資料類型。</summary>
+      <returns>變數的資料類型。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.Preview.TensorVariableDescriptorPreview.Name">
+      <summary>* * 已淘汰。 * * 取得張量的名稱。</summary>
+      <returns>張量的名稱。這在模型中的所有變數之間必須是唯一的。</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.Preview.TensorVariableDescriptorPreview.Shape">
+      <summary>* * 已淘汰。 * * 會取得張量的 n 維圖形。</summary>
+      <returns>張量的 n 維圖形。</returns>
+    </member>
+  </members>
+</doc>

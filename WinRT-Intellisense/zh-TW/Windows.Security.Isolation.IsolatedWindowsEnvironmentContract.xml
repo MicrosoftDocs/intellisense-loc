@@ -1,750 +1,523 @@
 <?xml version="1.0" encoding="utf-8"?>
 <doc>
   <assembly>
-    <name>Windows.Security.Isolation.IsolatedWindowsEnvironmentContract</name>
+    <name>Windows. IsolatedWindowsEnvironmentContract</name>
   </assembly>
   <members>
     <member name="T:Windows.Security.Isolation.IsolatedWindowsEnvironment">
-      <summary>
-      </summary>
+      <summary>為應用程式建立和管理以虛擬機器為基礎的隔離環境，以在虛擬化環境中開啟和處理不受信任的資料，以保護主機作業系統免于檔案中可能存在的惡意內容。</summary>
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironment.Id">
-      <summary>
-      </summary>
-      <returns>
-      </returns>
+      <summary>傳回隔離 Windows 環境的識別碼。</summary>
+      <returns>識別碼的字串。</returns>
     </member>
     <member name="M:Windows.Security.Isolation.IsolatedWindowsEnvironment.CreateAsync(Windows.Security.Isolation.IsolatedWindowsEnvironmentOptions)">
-      <summary>
-      </summary>
-      <param name="options">
-      </param>
-      <returns>
-      </returns>
+      <summary>以非同步方式建立隔離的 Windows 環境。</summary>
+      <param name="options">Isolatedwindowsenvironmentoptions 所定義的隔離 Windows 環境設定選項</param>
+      <returns>IsolatedWindowsEnvironmentCreateResult</returns>
     </member>
     <member name="M:Windows.Security.Isolation.IsolatedWindowsEnvironment.CreateAsync(Windows.Security.Isolation.IsolatedWindowsEnvironmentOptions,Windows.Security.Isolation.IsolatedWindowsEnvironmentTelemetryParameters)">
-      <summary>
-      </summary>
-      <param name="options">
-      </param>
-      <param name="telemetryParameters">
-      </param>
-      <returns>
-      </returns>
+      <summary>以非同步方式建立隔離的 Windows 環境，並與遙測事件相互關聯。</summary>
+      <param name="options">Isolatedwindowsenvironmentoptions 所定義的隔離 Windows 環境設定選項</param>
+      <param name="telemetryParameters">Isolatedwindowsenvironmenttelemetryparameters 所定義的遙測參數</param>
+      <returns>IsolatedWindowsEnvironmentCreateResult</returns>
     </member>
     <member name="M:Windows.Security.Isolation.IsolatedWindowsEnvironment.FindByOwnerId(System.String)">
-      <summary>
-      </summary>
-      <param name="environmentOwnerId">
-      </param>
-      <returns>
-      </returns>
+      <summary>傳回已向特定擁有者註冊的隔離 Windows 環境清單。</summary>
+      <param name="environmentOwnerId">隔離 Windows 環境之擁有者的唯一識別碼。</param>
+      <returns>IsolatedWindowsEnvironment</returns>
     </member>
     <member name="M:Windows.Security.Isolation.IsolatedWindowsEnvironment.GetById(System.String)">
-      <summary>
-      </summary>
-      <param name="environmentId">
-      </param>
-      <returns>
-      </returns>
+      <summary>根據識別碼傳回隔離 Windows 環境的參考。</summary>
+      <param name="environmentId">指派給隔離 Windows 環境的識別碼。</param>
+      <returns>IsolatedWindowsEnvironment</returns>
     </member>
     <member name="M:Windows.Security.Isolation.IsolatedWindowsEnvironment.LaunchFileWithUIAsync(System.String,System.String,System.String)">
-      <summary>
-      </summary>
-      <param name="appExePath">
-      </param>
-      <param name="argumentsTemplate">
-      </param>
-      <param name="filePath">
-      </param>
-      <returns>
-      </returns>
+      <summary>允許應用程式在隔離的 Windows 環境中開啟檔案。</summary>
+      <param name="appExePath">應用程式執行路徑的字串。</param>
+      <param name="argumentsTemplate">字串，指定與要傳遞之其他引數相關的 filepath 相對位置：</param>
+      <param name="filePath">要在隔離的 Windows 環境中開啟之檔案路徑的字串。</param>
+      <returns>IsolatedWindowsEnvironmentLaunchFileResult</returns>
     </member>
     <member name="M:Windows.Security.Isolation.IsolatedWindowsEnvironment.LaunchFileWithUIAsync(System.String,System.String,System.String,Windows.Security.Isolation.IsolatedWindowsEnvironmentTelemetryParameters)">
-      <summary>
-      </summary>
-      <param name="appExePath">
-      </param>
-      <param name="argumentsTemplate">
-      </param>
-      <param name="filePath">
-      </param>
-      <param name="telemetryParameters">
-      </param>
-      <returns>
-      </returns>
+      <summary>允許應用程式在具有遙測相互關聯的隔離 Windows 環境中開啟檔案。</summary>
+      <param name="appExePath">應用程式執行路徑的字串。</param>
+      <param name="argumentsTemplate">字串，指定與要傳遞之其他引數相關的 filepath 相對位置：</param>
+      <param name="filePath">要在隔離的 Windows 環境中開啟之檔案路徑的字串</param>
+      <param name="telemetryParameters">Isolatedwindowsenvironmenttelemetryparameters 所定義的遙測參數</param>
+      <returns>IsolatedWindowsEnvironmentLaunchFileResult</returns>
     </member>
     <member name="M:Windows.Security.Isolation.IsolatedWindowsEnvironment.RegisterMessageReceiver(System.Guid,Windows.Security.Isolation.MessageReceivedCallback)">
-      <summary>
-      </summary>
-      <param name="receiverId">
-      </param>
-      <param name="messageReceivedCallback">
-      </param>
+      <summary>註冊訊息接收器回呼。</summary>
+      <param name="receiverId">訊息接收者的 GUID。</param>
+      <param name="messageReceivedCallback">回呼函式 messageReceivedCallback</param>
     </member>
     <member name="M:Windows.Security.Isolation.IsolatedWindowsEnvironment.ShareFolderAsync(System.String,Windows.Security.Isolation.IsolatedWindowsEnvironmentShareFolderRequestOptions)">
-      <summary>
-      </summary>
-      <param name="hostFolder">
-      </param>
-      <param name="requestOptions">
-      </param>
-      <returns>
-      </returns>
+      <summary>共用主機資料夾與隔離的 Windows 環境。</summary>
+      <param name="hostFolder">主機資料夾的名稱。</param>
+      <param name="requestOptions">isolatedwindowsenvironmentsharefolderrequestoptions</param>
+      <returns>IsolatedWindowsEnvironmentShareFolderResult</returns>
     </member>
     <member name="M:Windows.Security.Isolation.IsolatedWindowsEnvironment.ShareFolderAsync(System.String,Windows.Security.Isolation.IsolatedWindowsEnvironmentShareFolderRequestOptions,Windows.Security.Isolation.IsolatedWindowsEnvironmentTelemetryParameters)">
-      <summary>
-      </summary>
-      <param name="hostFolder">
-      </param>
-      <param name="requestOptions">
-      </param>
-      <param name="telemetryParameters">
-      </param>
-      <returns>
-      </returns>
+      <summary>與隔離的 Windows 環境共用具有遙測相互關聯的主機資料夾。</summary>
+      <param name="hostFolder">主機資料夾名稱的字串。</param>
+      <param name="requestOptions">isolatedwindowsenvironmentsharefolderrequestoptions</param>
+      <param name="telemetryParameters">Isolatedwindowsenvironmenttelemetryparameters 所定義的遙測參數</param>
+      <returns>IsolatedWindowsEnvironmentShareFolderResult</returns>
     </member>
     <member name="M:Windows.Security.Isolation.IsolatedWindowsEnvironment.StartProcessSilentlyAsync(System.String,System.String,Windows.Security.Isolation.IsolatedWindowsEnvironmentActivator)">
-      <summary>
-      </summary>
-      <param name="hostExePath">
-      </param>
-      <param name="arguments">
-      </param>
-      <param name="activator">
-      </param>
-      <returns>
-      </returns>
+      <summary>允許進程在隔離的 Windows 環境內執行。</summary>
+      <param name="hostExePath">主機執行路徑的字串。</param>
+      <param name="arguments">字串</param>
+      <param name="activator">IsolatedWindowsEnvironmentActivator</param>
+      <returns>IsolatedWindowsEnvironmentStartProcessResult</returns>
     </member>
     <member name="M:Windows.Security.Isolation.IsolatedWindowsEnvironment.StartProcessSilentlyAsync(System.String,System.String,Windows.Security.Isolation.IsolatedWindowsEnvironmentActivator,Windows.Security.Isolation.IsolatedWindowsEnvironmentTelemetryParameters)">
-      <summary>
-      </summary>
-      <param name="hostExePath">
-      </param>
-      <param name="arguments">
-      </param>
-      <param name="activator">
-      </param>
-      <param name="telemetryParameters">
-      </param>
-      <returns>
-      </returns>
+      <summary>允許在具有遙測相互關聯的隔離 Windows 環境內執行進程。</summary>
+      <param name="hostExePath">主機執行路徑的字串。</param>
+      <param name="arguments">字串</param>
+      <param name="activator">IsolatedWindowsEnvironmentActivator</param>
+      <param name="telemetryParameters">Isolatedwindowsenvironmenttelemetryparameters 所定義的遙測參數</param>
+      <returns>IsolatedWindowsEnvironmentStartProcessResult</returns>
     </member>
     <member name="M:Windows.Security.Isolation.IsolatedWindowsEnvironment.TerminateAsync">
-      <summary>
-      </summary>
+      <summary>非同步終止隔離的 Windows 環境。</summary>
       <returns>
       </returns>
     </member>
     <member name="M:Windows.Security.Isolation.IsolatedWindowsEnvironment.TerminateAsync(Windows.Security.Isolation.IsolatedWindowsEnvironmentTelemetryParameters)">
-      <summary>
-      </summary>
-      <param name="telemetryParameters">
-      </param>
+      <summary>使用遙測相互關聯非同步終止隔離的 Windows 環境。</summary>
+      <param name="telemetryParameters">Isolatedwindowsenvironmenttelemetryparameters 所定義的遙測參數</param>
       <returns>
       </returns>
     </member>
     <member name="M:Windows.Security.Isolation.IsolatedWindowsEnvironment.UnregisterMessageReceiver(System.Guid)">
-      <summary>
-      </summary>
-      <param name="receiverId">
-      </param>
+      <summary>取消註冊訊息接收器回呼。</summary>
+      <param name="receiverId">訊息接收者的 GUID。</param>
     </member>
     <member name="T:Windows.Security.Isolation.IsolatedWindowsEnvironmentActivator">
-      <summary>
-      </summary>
+      <summary>控制資料夾共用或建立進程是否以系統或使用者的身分執行。</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentActivator.System">
-      <summary>
-      </summary>
+      <summary>以系統身分執行</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentActivator.User">
-      <summary>
-      </summary>
+      <summary>以使用者身分執行</summary>
     </member>
     <member name="T:Windows.Security.Isolation.IsolatedWindowsEnvironmentAllowedClipboardFormats">
-      <summary>
-      </summary>
+      <summary>決定允許在隔離的 Windows 環境中複製和貼上的內容種類。</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentAllowedClipboardFormats.Image">
-      <summary>
-      </summary>
+      <summary>允許影像內容</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentAllowedClipboardFormats.None">
-      <summary>
-      </summary>
+      <summary>不允許任何內容</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentAllowedClipboardFormats.Text">
-      <summary>
-      </summary>
+      <summary>允許文字內容</summary>
     </member>
     <member name="T:Windows.Security.Isolation.IsolatedWindowsEnvironmentAvailablePrinters">
-      <summary>
-      </summary>
+      <summary>決定可從隔離的 Windows 環境中存取的印表機。</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentAvailablePrinters.Local">
-      <summary>
-      </summary>
+      <summary>允許本機印表機</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentAvailablePrinters.Network">
-      <summary>
-      </summary>
+      <summary>允許網路印表機</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentAvailablePrinters.None">
-      <summary>
-      </summary>
+      <summary>不允許容器中的任何印表機</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentAvailablePrinters.SystemPrintToPdf">
-      <summary>
-      </summary>
+      <summary>允許列印至 PDF</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentAvailablePrinters.SystemPrintToXps">
-      <summary>
-      </summary>
+      <summary>允許列印到 XPS</summary>
     </member>
     <member name="T:Windows.Security.Isolation.IsolatedWindowsEnvironmentClipboardCopyPasteDirections">
-      <summary>
-      </summary>
+      <summary>決定允許複製貼上內容的方向：主機到隔離的 Windows 環境或隔離的 Windows 環境到主機。</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentClipboardCopyPasteDirections.HostToIsolatedWindowsEnvironment">
-      <summary>
-      </summary>
+      <summary>允許從主機複製並貼到隔離的 Windows 環境</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentClipboardCopyPasteDirections.IsolatedWindowsEnvironmentToHost">
-      <summary>
-      </summary>
+      <summary>允許從隔離的 Windows 環境複製並貼到主機</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentClipboardCopyPasteDirections.None">
-      <summary>
-      </summary>
+      <summary>不允許複製或貼上</summary>
     </member>
     <member name="T:Windows.Security.Isolation.IsolatedWindowsEnvironmentContract">
       <summary>
       </summary>
     </member>
     <member name="T:Windows.Security.Isolation.IsolatedWindowsEnvironmentCreateProgress">
-      <summary>
-      </summary>
+      <summary>查詢建立隔離的 Windows 環境的進度</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentCreateProgress.PercentComplete">
-      <summary>
-      </summary>
+      <summary>針對隔離的 Windows 環境建立完成百分比的 UINT32</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentCreateProgress.State">
-      <summary>
-      </summary>
+      <summary>IsolatedWindowsEnvironmentProgressState</summary>
     </member>
     <member name="T:Windows.Security.Isolation.IsolatedWindowsEnvironmentCreateResult">
-      <summary>
-      </summary>
+      <summary>執行時間類別，可查詢環境建立的結果，例如狀態和擴充錯誤。</summary>
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentCreateResult.Environment">
-      <summary>
-      </summary>
-      <returns>
-      </returns>
+      <summary>針對隔離的 Windows 環境建立結果的查詢。</summary>
+      <returns>隔離 Windows 環境識別碼的字串。</returns>
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentCreateResult.ExtendedError">
-      <summary>
-      </summary>
-      <returns>
-      </returns>
+      <summary>查詢隔離的 Windows 環境建立失敗時的擴充錯誤。</summary>
+      <returns>HRESULT</returns>
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentCreateResult.Status">
-      <summary>
-      </summary>
-      <returns>
-      </returns>
+      <summary>Isolatedwindowsenvironmentcreatestatus 的呼叫</summary>
+      <returns>字串</returns>
     </member>
     <member name="T:Windows.Security.Isolation.IsolatedWindowsEnvironmentCreateStatus">
-      <summary>
-      </summary>
+      <summary>包含實際傳回的隔離 Windows 環境建立狀態。</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentCreateStatus.FailureByPolicy">
-      <summary>
-      </summary>
+      <summary>隔離的 Windows 環境建立失敗，因為原則設定。</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentCreateStatus.Success">
-      <summary>
-      </summary>
+      <summary>已成功建立隔離的 Windows 環境。</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentCreateStatus.UnknownFailure">
-      <summary>
-      </summary>
+      <summary>隔離的 Windows 環境建立失敗，發生未知的失敗。</summary>
     </member>
     <member name="T:Windows.Security.Isolation.IsolatedWindowsEnvironmentFile">
-      <summary>
-      </summary>
+      <summary>封裝函式的執行時間類別，用來在隔離的 Windows 環境中啟動檔案。</summary>
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentFile.HostPath">
-      <summary>
-      </summary>
-      <returns>
-      </returns>
+      <summary>取得檔案的完整主機路徑。</summary>
+      <returns>主機路徑的字串。</returns>
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentFile.Id">
-      <summary>
-      </summary>
-      <returns>
-      </returns>
+      <summary>取得指派給主機檔案的識別碼。</summary>
+      <returns>檔案的 GUID。</returns>
     </member>
     <member name="M:Windows.Security.Isolation.IsolatedWindowsEnvironmentFile.Close">
-      <summary>
-      </summary>
+      <summary>呼叫以在隔離的 Windows 環境中關閉檔案。</summary>
     </member>
     <member name="T:Windows.Security.Isolation.IsolatedWindowsEnvironmentHost">
-      <summary>
-      </summary>
+      <summary>代表隔離 Windows 環境之主機裝置的類別。</summary>
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentHost.HostErrors">
-      <summary>
-      </summary>
-      <returns>
-      </returns>
+      <summary>在主機上建立隔離的 Windows 環境之前，需要先解決的 IVectorView 錯誤。</summary>
+      <returns>IVectorView</returns>
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentHost.IsReady">
-      <summary>
-      </summary>
-      <returns>
-      </returns>
+      <summary>布林值，表示主機是否已正確設定，並準備好建立隔離的 Windows 環境。</summary>
+      <returns>布林值</returns>
     </member>
     <member name="T:Windows.Security.Isolation.IsolatedWindowsEnvironmentHostError">
-      <summary>
-      </summary>
+      <summary>表示可以在主機上建立隔離的 Windows 環境之前，所需解決的可能錯誤清單的列舉值。</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentHostError.AdminPolicyIsDisabledOrNotPresent">
-      <summary>
-      </summary>
+      <summary>未設定或停用功能的系統管理原則</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentHostError.FeatureNotInstalled">
-      <summary>
-      </summary>
+      <summary>尚未在裝置上安裝功能</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentHostError.HardwareRequirementsNotMet">
-      <summary>
-      </summary>
+      <summary>裝置不符合硬體需求</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentHostError.RebootRequired">
-      <summary>
-      </summary>
+      <summary>需要重新開機</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentHostError.UnknownError">
-      <summary>
-      </summary>
+      <summary>未知的錯誤</summary>
     </member>
     <member name="T:Windows.Security.Isolation.IsolatedWindowsEnvironmentLaunchFileResult">
-      <summary>
-      </summary>
+      <summary>執行時間類別包含檔案啟動到隔離 Windows 環境中的結果屬性。</summary>
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentLaunchFileResult.ExtendedError">
-      <summary>
-      </summary>
-      <returns>
-      </returns>
+      <summary>如果檔案無法在隔離的 Windows 環境中啟動，則取得擴充的錯誤碼。</summary>
+      <returns>HRESULT</returns>
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentLaunchFileResult.File">
-      <summary>
-      </summary>
-      <returns>
-      </returns>
+      <summary>具現化 IsolatedWindowsEnvironmentFile 執行時間類別。</summary>
+      <returns>字串</returns>
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentLaunchFileResult.Status">
-      <summary>
-      </summary>
-      <returns>
-      </returns>
+      <summary>呼叫 IsolatedWindowsEnvironmentLaunchFileStatus。</summary>
+      <returns>列舉</returns>
     </member>
     <member name="T:Windows.Security.Isolation.IsolatedWindowsEnvironmentLaunchFileStatus">
-      <summary>
-      </summary>
+      <summary>在隔離的 Windows 環境中啟動檔案狀態的列舉值。</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentLaunchFileStatus.EnvironmentUnavailable">
-      <summary>
-      </summary>
+      <summary>檔案啟動到隔離的 Windows 環境中，因為環境無法使用</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentLaunchFileStatus.FileNotFound">
-      <summary>
-      </summary>
+      <summary>因為找不到檔案，所以檔案啟動到隔離的 Windows 環境中</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentLaunchFileStatus.Success">
-      <summary>
-      </summary>
+      <summary>檔案啟動到隔離的 Windows 環境成功</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentLaunchFileStatus.TimedOut">
-      <summary>
-      </summary>
+      <summary>檔案啟動進入隔離的 Windows 環境超時</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentLaunchFileStatus.UnknownFailure">
-      <summary>
-      </summary>
+      <summary>檔案啟動進入隔離的 Windows 環境時超時，發生未知的失敗</summary>
     </member>
     <member name="T:Windows.Security.Isolation.IsolatedWindowsEnvironmentOptions">
-      <summary>
-      </summary>
+      <summary>控制在建立期間套用至隔離式 Windows 環境之各種屬性的執行時間類別。</summary>
     </member>
     <member name="M:Windows.Security.Isolation.IsolatedWindowsEnvironmentOptions.#ctor">
-      <summary>
-      </summary>
+      <summary>針對隔離的 Windows 環境傳回各種不同的 IsolatedWindowsEnvironmentOptions。</summary>
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentOptions.AllowCameraAndMicrophoneAccess">
-      <summary>
-      </summary>
-      <returns>
-      </returns>
+      <summary>布林值，指出在隔離的 Windows 環境內執行的應用程式是否可以存取裝置的相機和麥克風。</summary>
+      <returns>布林值</returns>
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentOptions.AllowedClipboardFormats">
-      <summary>
-      </summary>
-      <returns>
-      </returns>
+      <summary>隔離 Windows 環境的剪貼簿格式列舉。</summary>
+      <returns>列舉</returns>
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentOptions.AllowGraphicsHardwareAcceleration">
-      <summary>
-      </summary>
-      <returns>
-      </returns>
+      <summary>當隔離的 Windows 環境使用硬體或軟體加速呈現圖形時的布林值。</summary>
+      <returns>布林值</returns>
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentOptions.AvailablePrinters">
-      <summary>
-      </summary>
-      <returns>
-      </returns>
+      <summary>獨立 Windows 環境的印表機選擇列舉。</summary>
+      <returns>列舉</returns>
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentOptions.ClipboardCopyPasteDirections">
-      <summary>
-      </summary>
-      <returns>
-      </returns>
+      <summary>隔離的 Windows 環境之剪貼簿方向選項的列舉。</summary>
+      <returns>列舉</returns>
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentOptions.EnvironmentOwnerId">
-      <summary>
-      </summary>
-      <returns>
-      </returns>
+      <summary>字串，可識別所建立之每個隔離 Windows 環境的擁有者。</summary>
+      <returns>字串</returns>
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentOptions.PersistUserProfile">
-      <summary>
-      </summary>
-      <returns>
-      </returns>
+      <summary>允許使用者設定檔保存在隔離的 Windows 環境中，從會話到會話。</summary>
+      <returns>布林值</returns>
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentOptions.SharedFolderNameInEnvironment">
-      <summary>
-      </summary>
-      <returns>
-      </returns>
+      <summary>在隔離的 Windows 環境中，藉由呼叫 ShareHostFolderForUntrustedItems，用來共用不受信任專案的資料夾的顯示名稱。</summary>
+      <returns>字串</returns>
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentOptions.SharedHostFolderPath">
-      <summary>
-      </summary>
-      <returns>
-      </returns>
+      <summary>隔離的 Windows 環境與主機之間共用的主機資料夾路徑，可供呼叫 ShareHostFolderForUntrustedItems 來共用未受信任的專案集。</summary>
+      <returns>字串</returns>
     </member>
     <member name="M:Windows.Security.Isolation.IsolatedWindowsEnvironmentOptions.ShareHostFolderForUntrustedItems(System.String,System.String)">
-      <summary>
-      </summary>
-      <param name="SharedHostFolderPath">
-      </param>
-      <param name="ShareFolderNameInEnvironment">
-      </param>
+      <summary>同時設定 SharedFolderNameInEnvironment 和 SharedHostFolderPath，將資料夾設為共用，以便與隔離的 Windows 環境共用不受信任的專案。</summary>
+      <param name="SharedHostFolderPath">共用主機資料夾的路徑。</param>
+      <param name="ShareFolderNameInEnvironment">隔離的 Windows 環境中的資料夾名稱。</param>
     </member>
     <member name="T:Windows.Security.Isolation.IsolatedWindowsEnvironmentOwnerRegistration">
-      <summary>
-      </summary>
+      <summary>此執行時間類別會註冊隔離之 Windows 環境擁有者的屬性清單。這包括擁有者名稱、從主機到隔離 Windows 環境的可共用資料夾、以使用者或系統身分執行的進程，以及跨環境啟用延伸。</summary>
     </member>
     <member name="M:Windows.Security.Isolation.IsolatedWindowsEnvironmentOwnerRegistration.Register(System.String,Windows.Security.Isolation.IsolatedWindowsEnvironmentOwnerRegistrationData)">
-      <summary>
-      </summary>
-      <param name="ownerName">
-      </param>
-      <param name="ownerRegistrationData">
-      </param>
-      <returns>
-      </returns>
+      <summary>註冊隔離的 Windows 環境的擁有者。</summary>
+      <param name="ownerName">隔離式 Windows 環境的擁有者名稱。</param>
+      <param name="ownerRegistrationData">isolatedwindowsenvironmentownerregistrationdata</param>
+      <returns>IsolatedWindowsEnvironmentOwnerRegistrationResult</returns>
     </member>
     <member name="M:Windows.Security.Isolation.IsolatedWindowsEnvironmentOwnerRegistration.Unregister(System.String)">
-      <summary>
-      </summary>
-      <param name="ownerName">
-      </param>
+      <summary>取消註冊隔離的 Windows 環境的擁有者。</summary>
+      <param name="ownerName">隔離 Windows 環境之擁有者名稱的字串。</param>
     </member>
     <member name="T:Windows.Security.Isolation.IsolatedWindowsEnvironmentOwnerRegistrationData">
-      <summary>
-      </summary>
+      <summary>從 isolatedwindowsenvironmentownerregistration 傳回所有註冊資料的類別。</summary>
     </member>
     <member name="M:Windows.Security.Isolation.IsolatedWindowsEnvironmentOwnerRegistrationData.#ctor">
-      <summary>
-      </summary>
+      <summary>所有擁有者註冊到隔離 Windows 環境的屬性。</summary>
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentOwnerRegistrationData.ActivationFileExtensions">
-      <summary>
-      </summary>
-      <returns>
-      </returns>
+      <summary>可以在隔離的 Windows 環境中啟用的檔案延伸模組。</summary>
+      <returns>IVector</returns>
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentOwnerRegistrationData.ProcessesRunnableAsSystem">
-      <summary>
-      </summary>
-      <returns>
-      </returns>
+      <summary>進程會以系統的身分執行。</summary>
+      <returns>IVector</returns>
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentOwnerRegistrationData.ProcessesRunnableAsUser">
-      <summary>
-      </summary>
-      <returns>
-      </returns>
+      <summary>進程會以使用者身分執行。</summary>
+      <returns>IVector</returns>
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentOwnerRegistrationData.ShareableFolders">
-      <summary>
-      </summary>
-      <returns>
-      </returns>
+      <summary>可以從主機共用到隔離的 Windows 環境中的資料夾。</summary>
+      <returns>IVector</returns>
     </member>
     <member name="T:Windows.Security.Isolation.IsolatedWindowsEnvironmentOwnerRegistrationResult">
-      <summary>
-      </summary>
+      <summary>傳回 isolatedwindowsenvironmentownerregistration 結果的執行時間類別。</summary>
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentOwnerRegistrationResult.ExtendedError">
-      <summary>
-      </summary>
-      <returns>
-      </returns>
+      <summary>傳回 isolatedwindowsenvironmentownerregistration 的擴充錯誤。</summary>
+      <returns>HRESULT</returns>
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentOwnerRegistrationResult.Status">
-      <summary>
-      </summary>
-      <returns>
-      </returns>
+      <summary>呼叫 isolatedwindowsenvironmentownerregistrationstatus。</summary>
+      <returns>列舉</returns>
     </member>
     <member name="T:Windows.Security.Isolation.IsolatedWindowsEnvironmentOwnerRegistrationStatus">
-      <summary>
-      </summary>
+      <summary>Isolatedwindowsenvironmentownerregistration 的成功或失敗狀態。</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentOwnerRegistrationStatus.AccessDenied">
-      <summary>
-      </summary>
+      <summary>隔離的 Windows 環境的擁有者註冊失敗，因為存取被拒。</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentOwnerRegistrationStatus.InsufficientMemory">
-      <summary>
-      </summary>
+      <summary>因為記憶體不足，所以隔離的 Windows 環境的擁有者註冊。</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentOwnerRegistrationStatus.InvalidArgument">
-      <summary>
-      </summary>
+      <summary>隔離的 Windows 環境的擁有者註冊失敗，因為屬性無效。</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentOwnerRegistrationStatus.Success">
-      <summary>
-      </summary>
+      <summary>隔離的 Windows 環境的擁有者註冊成功。</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentOwnerRegistrationStatus.UnknownFailure">
-      <summary>
-      </summary>
+      <summary>隔離的 Windows 環境的擁有者註冊失敗，發生未知的失敗。</summary>
     </member>
     <member name="T:Windows.Security.Isolation.IsolatedWindowsEnvironmentProcess">
-      <summary>
-      </summary>
+      <summary>以啟動進程傳回物件的類別，其代表隔離的 Windows 環境中的處理常式。</summary>
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentProcess.ExitCode">
-      <summary>
-      </summary>
-      <returns>
-      </returns>
+      <summary>傳回已執行進程的結束代碼。</summary>
+      <returns>UInt32</returns>
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentProcess.State">
-      <summary>
-      </summary>
-      <returns>
-      </returns>
+      <summary>傳回進程執行的目前狀態。</summary>
+      <returns>列舉</returns>
     </member>
     <member name="M:Windows.Security.Isolation.IsolatedWindowsEnvironmentProcess.WaitForExit">
-      <summary>
-      </summary>
+      <summary>允許呼叫者等候進程完成。</summary>
     </member>
     <member name="M:Windows.Security.Isolation.IsolatedWindowsEnvironmentProcess.WaitForExitAsync">
-      <summary>
-      </summary>
-      <returns>
-      </returns>
+      <summary>允許呼叫端以非同步方式等候進程完成。</summary>
+      <returns>HRESULT</returns>
     </member>
     <member name="M:Windows.Security.Isolation.IsolatedWindowsEnvironmentProcess.WaitForExitWithTimeout(System.UInt32)">
-      <summary>
-      </summary>
-      <param name="timeoutMilliseconds">
-      </param>
+      <summary>允許呼叫者指定進程完成的超時。</summary>
+      <param name="timeoutMilliseconds">在超時前允許的時間量。</param>
     </member>
     <member name="T:Windows.Security.Isolation.IsolatedWindowsEnvironmentProcessState">
-      <summary>
-      </summary>
+      <summary>在隔離的 Windows 環境中，進程執行的目前狀態。</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentProcessState.Aborted">
-      <summary>
-      </summary>
+      <summary>隔離的 Windows 環境中的進程已中止。</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentProcessState.Completed">
-      <summary>
-      </summary>
+      <summary>隔離的 Windows 環境中的進程已完成。</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentProcessState.Running">
-      <summary>
-      </summary>
+      <summary>隔離的 Windows 環境中的進程正在執行。</summary>
     </member>
     <member name="T:Windows.Security.Isolation.IsolatedWindowsEnvironmentProgressState">
-      <summary>
-      </summary>
+      <summary>在隔離的 Windows 環境建立期間傳回，表示環境建立的狀態。</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentProgressState.Completed">
-      <summary>
-      </summary>
+      <summary>已完成隔離的 Windows 環境建立。</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentProgressState.Processing">
-      <summary>
-      </summary>
+      <summary>隔離的 Windows 環境建立正在處理中。</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentProgressState.Queued">
-      <summary>
-      </summary>
+      <summary>已將隔離的 Windows 環境建立排入佇列。</summary>
     </member>
     <member name="T:Windows.Security.Isolation.IsolatedWindowsEnvironmentShareFolderRequestOptions">
-      <summary>
-      </summary>
+      <summary>如何執行共用資料夾作業的選項。</summary>
     </member>
     <member name="M:Windows.Security.Isolation.IsolatedWindowsEnvironmentShareFolderRequestOptions.#ctor">
-      <summary>
-      </summary>
+      <summary>IsolatedWindowsEnvironmentShareFolderRequestOptions 的結果。</summary>
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentShareFolderRequestOptions.AllowWrite">
-      <summary>
-      </summary>
-      <returns>
-      </returns>
+      <summary>判斷在隔離的 Windows 環境內執行的應用程式是否可以將資料寫入此共用的資料夾。</summary>
+      <returns>布林值</returns>
     </member>
     <member name="T:Windows.Security.Isolation.IsolatedWindowsEnvironmentShareFolderResult">
-      <summary>
-      </summary>
+      <summary>物件，包含共用資料夾要求結果的相關資訊。</summary>
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentShareFolderResult.ExtendedError">
-      <summary>
-      </summary>
-      <returns>
-      </returns>
+      <summary>當無法共用資料夾時，會包含與該失敗相關聯的錯誤碼。</summary>
+      <returns>HRESULT</returns>
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentShareFolderResult.Status">
-      <summary>
-      </summary>
-      <returns>
-      </returns>
+      <summary>共用資料夾作業的狀態：成功或失敗。</summary>
+      <returns>列舉</returns>
     </member>
     <member name="T:Windows.Security.Isolation.IsolatedWindowsEnvironmentShareFolderStatus">
-      <summary>
-      </summary>
+      <summary>可能狀態的列舉，指出共用資料夾要求的結果。</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentShareFolderStatus.AccessDenied">
-      <summary>
-      </summary>
+      <summary>拒絕存取。</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentShareFolderStatus.EnvironmentUnavailable">
-      <summary>
-      </summary>
+      <summary>隔離的 Windows 環境無法使用。</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentShareFolderStatus.FolderNotFound">
-      <summary>
-      </summary>
+      <summary>找不到資料夾。</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentShareFolderStatus.Success">
-      <summary>
-      </summary>
+      <summary>均.</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentShareFolderStatus.UnknownFailure">
-      <summary>
-      </summary>
+      <summary>未知的失敗。</summary>
     </member>
     <member name="T:Windows.Security.Isolation.IsolatedWindowsEnvironmentStartProcessResult">
-      <summary>
-      </summary>
+      <summary>在隔離的 Windows 環境中查詢啟動進程結果的執行時間類別。</summary>
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentStartProcessResult.ExtendedError">
-      <summary>
-      </summary>
-      <returns>
-      </returns>
+      <summary>如果隔離的 Windows 環境的啟動程式失敗，則查詢 exented 錯誤。</summary>
+      <returns>HRESULT</returns>
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentStartProcessResult.Process">
-      <summary>
-      </summary>
-      <returns>
-      </returns>
+      <summary>表示在隔離的 Windows 環境中執行的進程存留期。</summary>
+      <returns>字串</returns>
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentStartProcessResult.Status">
-      <summary>
-      </summary>
-      <returns>
-      </returns>
+      <summary>在隔離的 Windows 環境中查詢進程執行的狀態。</summary>
+      <returns>字串</returns>
     </member>
     <member name="T:Windows.Security.Isolation.IsolatedWindowsEnvironmentStartProcessStatus">
-      <summary>
-      </summary>
+      <summary>在隔離的 Windows 環境中啟動程式的結果。</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentStartProcessStatus.AppNotRegistered">
-      <summary>
-      </summary>
+      <summary>隔離的 Windows 環境中的啟動進程失敗，因為應用程式尚未註冊。</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentStartProcessStatus.EnvironmentUnavailable">
-      <summary>
-      </summary>
+      <summary>隔離的 Windows 環境中的啟動進程失敗，因為環境無法使用。</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentStartProcessStatus.FileNotFound">
-      <summary>
-      </summary>
+      <summary>因為找不到檔案，所以隔離的 Windows 環境中的啟動進程失敗。</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentStartProcessStatus.Success">
-      <summary>
-      </summary>
+      <summary>隔離的 Windows 環境中的啟動程式成功。</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentStartProcessStatus.UnknownFailure">
-      <summary>
-      </summary>
+      <summary>隔離 Windows 環境中的啟動進程失敗，發生未知的錯誤。</summary>
     </member>
     <member name="T:Windows.Security.Isolation.IsolatedWindowsEnvironmentTelemetryParameters">
-      <summary>
-      </summary>
+      <summary>封裝 correlationid 的執行時間類別。</summary>
     </member>
     <member name="M:Windows.Security.Isolation.IsolatedWindowsEnvironmentTelemetryParameters.#ctor">
-      <summary>
-      </summary>
+      <summary>Microsoft 遙測中用來改善 Api 品質的參數。</summary>
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentTelemetryParameters.CorrelationId">
-      <summary>
-      </summary>
-      <returns>
-      </returns>
+      <summary>在 Microsoft 遙測中用來改善 Api 品質的 GUID。</summary>
+      <returns>GUID</returns>
     </member>
     <member name="T:Windows.Security.Isolation.IsolatedWindowsHostMessenger">
-      <summary>
-      </summary>
+      <summary>兩個方法的執行時間類別： PostMessageToReceivier 和 getfileid。</summary>
     </member>
     <member name="M:Windows.Security.Isolation.IsolatedWindowsHostMessenger.GetFileId(System.String)">
-      <summary>
-      </summary>
-      <param name="filePath">
-      </param>
-      <returns>
-      </returns>
+      <summary>取得在隔離的 Windows 環境中開啟之檔案的唯一識別碼。</summary>
+      <param name="filePath">主機上的檔案路徑。</param>
+      <returns>GUID</returns>
     </member>
     <member name="M:Windows.Security.Isolation.IsolatedWindowsHostMessenger.PostMessageToReceiver(System.Guid,Windows.Foundation.Collections.IVectorView{System.Object})">
-      <summary>
-      </summary>
-      <param name="receiverId">
-      </param>
-      <param name="message">
-      </param>
+      <summary>將訊息從隔離的 Windows 環境張貼到主機端上註冊的接收者。</summary>
+      <param name="receiverId">訊息接收者的 GUID。</param>
+      <param name="message">IVectorView</param>
     </member>
     <member name="T:Windows.Security.Isolation.MessageReceivedCallback">
-      <summary>
-      </summary>
-      <param name="receiverId">
-      </param>
-      <param name="message">
-      </param>
+      <summary>當使用 PostMessageToReceiver 從隔離的 Windows 環境傳送訊息時，所要叫用的回呼函式。</summary>
+      <param name="receiverId">訊息接收者的 GUID。</param>
+      <param name="message">IVectorView</param>
     </member>
   </members>
 </doc>
