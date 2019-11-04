@@ -1,750 +1,523 @@
 <?xml version="1.0" encoding="utf-8"?>
 <doc>
   <assembly>
-    <name>Windows.Security.Isolation.IsolatedWindowsEnvironmentContract</name>
+    <name>Windows. Security. Isolation. isolatedwindowsenvironmentcontract</name>
   </assembly>
   <members>
     <member name="T:Windows.Security.Isolation.IsolatedWindowsEnvironment">
-      <summary>
-      </summary>
+      <summary>Erstellen und verwalten Sie Hypervisor-basierte isolierte Umgebungen für Anwendungen, um nicht vertrauenswürdige Daten in einer virtualisierten Umgebung zu öffnen und zu verarbeiten, um das Host Betriebssystem vor potenziell bösartigen Inhalten in der Datei zu schützen.</summary>
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironment.Id">
-      <summary>
-      </summary>
-      <returns>
-      </returns>
+      <summary>Gibt die ID für die isolierte Windows-Umgebung zurück.</summary>
+      <returns>Eine Zeichenfolge mit der ID.</returns>
     </member>
     <member name="M:Windows.Security.Isolation.IsolatedWindowsEnvironment.CreateAsync(Windows.Security.Isolation.IsolatedWindowsEnvironmentOptions)">
-      <summary>
-      </summary>
-      <param name="options">
-      </param>
-      <returns>
-      </returns>
+      <summary>Erstellen Sie eine isolierte Windows-Umgebung asynchron.</summary>
+      <param name="options">Von isolatedwindowsenvironmentoptions definierte Konfigurationsoptionen für isolierte Windows-Umgebungen</param>
+      <returns>Isolatedwindowsenvironmentkreateresult</returns>
     </member>
     <member name="M:Windows.Security.Isolation.IsolatedWindowsEnvironment.CreateAsync(Windows.Security.Isolation.IsolatedWindowsEnvironmentOptions,Windows.Security.Isolation.IsolatedWindowsEnvironmentTelemetryParameters)">
-      <summary>
-      </summary>
-      <param name="options">
-      </param>
-      <param name="telemetryParameters">
-      </param>
-      <returns>
-      </returns>
+      <summary>Erstellen Sie asynchron eine isolierte Windows-Umgebung, und korrelieren Sie Sie mit telemetrieereignissen.</summary>
+      <param name="options">Von isolatedwindowsenvironmentoptions definierte Konfigurationsoptionen für isolierte Windows-Umgebungen</param>
+      <param name="telemetryParameters">Durch isolatedwindowsenvironmenttelemetryparameters definierte telemetrieparameter</param>
+      <returns>Isolatedwindowsenvironmentkreateresult</returns>
     </member>
     <member name="M:Windows.Security.Isolation.IsolatedWindowsEnvironment.FindByOwnerId(System.String)">
-      <summary>
-      </summary>
-      <param name="environmentOwnerId">
-      </param>
-      <returns>
-      </returns>
+      <summary>Gibt eine Liste isolierter Windows-Umgebungen zurück, die für einen bestimmten Besitzer registriert sind.</summary>
+      <param name="environmentOwnerId">Eindeutiger Bezeichner für den Besitzer der isolierten Windows-Umgebung.</param>
+      <returns>Isolatedwindowsenvironment</returns>
     </member>
     <member name="M:Windows.Security.Isolation.IsolatedWindowsEnvironment.GetById(System.String)">
-      <summary>
-      </summary>
-      <param name="environmentId">
-      </param>
-      <returns>
-      </returns>
+      <summary>Gibt einen Verweis auf die isolierte Windows-Umgebung basierend auf der ID zurück.</summary>
+      <param name="environmentId">Eine einer isolierten Windows-Umgebung zugewiesene ID.</param>
+      <returns>Isolatedwindowsenvironment</returns>
     </member>
     <member name="M:Windows.Security.Isolation.IsolatedWindowsEnvironment.LaunchFileWithUIAsync(System.String,System.String,System.String)">
-      <summary>
-      </summary>
-      <param name="appExePath">
-      </param>
-      <param name="argumentsTemplate">
-      </param>
-      <param name="filePath">
-      </param>
-      <returns>
-      </returns>
+      <summary>Ermöglicht Anwendungen das Öffnen von Dateien in einer isolierten Windows-Umgebung.</summary>
+      <param name="appExePath">Die Zeichenfolge des Ausführungs Pfads der Anwendung.</param>
+      <param name="argumentsTemplate">Zeichenfolge, die die relative Position von filePath in Bezug auf andere Argumente angibt, die übermittelt werden sollen:</param>
+      <param name="filePath">Zeichenfolge für den Pfad der Datei, die in der isolierten Windows-Umgebung geöffnet werden soll.</param>
+      <returns>Isolatedwindowsenvironmentlaunchfileresult</returns>
     </member>
     <member name="M:Windows.Security.Isolation.IsolatedWindowsEnvironment.LaunchFileWithUIAsync(System.String,System.String,System.String,Windows.Security.Isolation.IsolatedWindowsEnvironmentTelemetryParameters)">
-      <summary>
-      </summary>
-      <param name="appExePath">
-      </param>
-      <param name="argumentsTemplate">
-      </param>
-      <param name="filePath">
-      </param>
-      <param name="telemetryParameters">
-      </param>
-      <returns>
-      </returns>
+      <summary>Ermöglicht Anwendungen das Öffnen von Dateien in einer isolierten Windows-Umgebung mit telemetriekorrelation.</summary>
+      <param name="appExePath">Die Zeichenfolge des Ausführungs Pfads der Anwendung.</param>
+      <param name="argumentsTemplate">Zeichenfolge, die die relative Position von filePath in Bezug auf andere Argumente angibt, die übermittelt werden sollen:</param>
+      <param name="filePath">Zeichenfolge für den Pfad der Datei, die in einer isolierten Windows-Umgebung geöffnet werden soll</param>
+      <param name="telemetryParameters">Durch isolatedwindowsenvironmenttelemetryparameters definierte telemetrieparameter</param>
+      <returns>Isolatedwindowsenvironmentlaunchfileresult</returns>
     </member>
     <member name="M:Windows.Security.Isolation.IsolatedWindowsEnvironment.RegisterMessageReceiver(System.Guid,Windows.Security.Isolation.MessageReceivedCallback)">
-      <summary>
-      </summary>
-      <param name="receiverId">
-      </param>
-      <param name="messageReceivedCallback">
-      </param>
+      <summary>Registrieren des Nachrichtenempfänger Rückrufs.</summary>
+      <param name="receiverId">GUID für den Nachrichtenempfänger.</param>
+      <param name="messageReceivedCallback">Rückruffunktion messagereceivedcallback</param>
     </member>
     <member name="M:Windows.Security.Isolation.IsolatedWindowsEnvironment.ShareFolderAsync(System.String,Windows.Security.Isolation.IsolatedWindowsEnvironmentShareFolderRequestOptions)">
-      <summary>
-      </summary>
-      <param name="hostFolder">
-      </param>
-      <param name="requestOptions">
-      </param>
-      <returns>
-      </returns>
+      <summary>Freigeben des Host Ordners in einer isolierten Windows-Umgebung.</summary>
+      <param name="hostFolder">Der Name des Host Ordners.</param>
+      <param name="requestOptions">isolatedwindowsenvironmentsharefolderrequestoptions</param>
+      <returns>Isolatedwindowsenvironmentsharefolderresult</returns>
     </member>
     <member name="M:Windows.Security.Isolation.IsolatedWindowsEnvironment.ShareFolderAsync(System.String,Windows.Security.Isolation.IsolatedWindowsEnvironmentShareFolderRequestOptions,Windows.Security.Isolation.IsolatedWindowsEnvironmentTelemetryParameters)">
-      <summary>
-      </summary>
-      <param name="hostFolder">
-      </param>
-      <param name="requestOptions">
-      </param>
-      <param name="telemetryParameters">
-      </param>
-      <returns>
-      </returns>
+      <summary>Geben Sie einen Host Ordner mit einer isolierten Windows-Umgebung mit telemetriekorrelation frei.</summary>
+      <param name="hostFolder">Die Zeichenfolge des Host Ordner namens.</param>
+      <param name="requestOptions">isolatedwindowsenvironmentsharefolderrequestoptions</param>
+      <param name="telemetryParameters">Durch isolatedwindowsenvironmenttelemetryparameters definierte telemetrieparameter</param>
+      <returns>Isolatedwindowsenvironmentsharefolderresult</returns>
     </member>
     <member name="M:Windows.Security.Isolation.IsolatedWindowsEnvironment.StartProcessSilentlyAsync(System.String,System.String,Windows.Security.Isolation.IsolatedWindowsEnvironmentActivator)">
-      <summary>
-      </summary>
-      <param name="hostExePath">
-      </param>
-      <param name="arguments">
-      </param>
-      <param name="activator">
-      </param>
-      <returns>
-      </returns>
+      <summary>Ermöglicht die Ausführung von Prozessen innerhalb einer isolierten Windows-Umgebung.</summary>
+      <param name="hostExePath">Die Zeichenfolge des Host Ausführungs Pfades.</param>
+      <param name="arguments">Zeichenfolge</param>
+      <param name="activator">Isolatedwindowsenvironmentactivator</param>
+      <returns>Isolatedwindowsenvironmentstartprocessresult</returns>
     </member>
     <member name="M:Windows.Security.Isolation.IsolatedWindowsEnvironment.StartProcessSilentlyAsync(System.String,System.String,Windows.Security.Isolation.IsolatedWindowsEnvironmentActivator,Windows.Security.Isolation.IsolatedWindowsEnvironmentTelemetryParameters)">
-      <summary>
-      </summary>
-      <param name="hostExePath">
-      </param>
-      <param name="arguments">
-      </param>
-      <param name="activator">
-      </param>
-      <param name="telemetryParameters">
-      </param>
-      <returns>
-      </returns>
+      <summary>Ermöglicht die Ausführung von Prozessen innerhalb einer isolierten Windows-Umgebung mit telemetriekorrelation.</summary>
+      <param name="hostExePath">Die Zeichenfolge des Host Ausführungs Pfades.</param>
+      <param name="arguments">Zeichenfolge</param>
+      <param name="activator">Isolatedwindowsenvironmentactivator</param>
+      <param name="telemetryParameters">Durch isolatedwindowsenvironmenttelemetryparameters definierte telemetrieparameter</param>
+      <returns>Isolatedwindowsenvironmentstartprocessresult</returns>
     </member>
     <member name="M:Windows.Security.Isolation.IsolatedWindowsEnvironment.TerminateAsync">
-      <summary>
-      </summary>
+      <summary>Die isolierte Windows-Umgebung wird asynchron beendet.</summary>
       <returns>
       </returns>
     </member>
     <member name="M:Windows.Security.Isolation.IsolatedWindowsEnvironment.TerminateAsync(Windows.Security.Isolation.IsolatedWindowsEnvironmentTelemetryParameters)">
-      <summary>
-      </summary>
-      <param name="telemetryParameters">
-      </param>
+      <summary>Beenden Sie die isolierte Windows-Umgebung asynchron mit der telemetriekorrelation.</summary>
+      <param name="telemetryParameters">Durch isolatedwindowsenvironmenttelemetryparameters definierte telemetrieparameter</param>
       <returns>
       </returns>
     </member>
     <member name="M:Windows.Security.Isolation.IsolatedWindowsEnvironment.UnregisterMessageReceiver(System.Guid)">
-      <summary>
-      </summary>
-      <param name="receiverId">
-      </param>
+      <summary>Hebt die Registrierung des Nachrichtenempfänger Rückrufs auf.</summary>
+      <param name="receiverId">GUID für den Nachrichtenempfänger.</param>
     </member>
     <member name="T:Windows.Security.Isolation.IsolatedWindowsEnvironmentActivator">
-      <summary>
-      </summary>
+      <summary>Steuert, ob die Ordner Freigabe oder der Erstellungs Prozess als System oder Benutzer ausgeführt wird.</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentActivator.System">
-      <summary>
-      </summary>
+      <summary>Ausführen als System</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentActivator.User">
-      <summary>
-      </summary>
+      <summary>Ausführen als Benutzer</summary>
     </member>
     <member name="T:Windows.Security.Isolation.IsolatedWindowsEnvironmentAllowedClipboardFormats">
-      <summary>
-      </summary>
+      <summary>Bestimmt, welche Art von Inhalt kopiert und in eine isolierte Windows-Umgebung eingefügt werden darf.</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentAllowedClipboardFormats.Image">
-      <summary>
-      </summary>
+      <summary>Bildinhalt zulassen</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentAllowedClipboardFormats.None">
-      <summary>
-      </summary>
+      <summary>Keine Inhalte zulassen</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentAllowedClipboardFormats.Text">
-      <summary>
-      </summary>
+      <summary>Text Inhalt zulassen</summary>
     </member>
     <member name="T:Windows.Security.Isolation.IsolatedWindowsEnvironmentAvailablePrinters">
-      <summary>
-      </summary>
+      <summary>Bestimmt, auf welche Drucker innerhalb der isolierten Windows-Umgebung zugegriffen werden kann.</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentAvailablePrinters.Local">
-      <summary>
-      </summary>
+      <summary>Lokalen Drucker zulassen</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentAvailablePrinters.Network">
-      <summary>
-      </summary>
+      <summary>Netzwerkdrucker zulassen</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentAvailablePrinters.None">
-      <summary>
-      </summary>
+      <summary>Lässt keine Drucker im Container zu.</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentAvailablePrinters.SystemPrintToPdf">
-      <summary>
-      </summary>
+      <summary>Drucken in PDF zulassen</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentAvailablePrinters.SystemPrintToXps">
-      <summary>
-      </summary>
+      <summary>Drucken in XPS zulassen</summary>
     </member>
     <member name="T:Windows.Security.Isolation.IsolatedWindowsEnvironmentClipboardCopyPasteDirections">
-      <summary>
-      </summary>
+      <summary>Legt die Richtung fest, in der das Kopieren von Inhalten zulässig ist: Host in isolierte Windows-Umgebung oder isolierte Windows-Umgebung zum Hosten.</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentClipboardCopyPasteDirections.HostToIsolatedWindowsEnvironment">
-      <summary>
-      </summary>
+      <summary>Kopieren und Einfügen vom Host in die isolierte Windows-Umgebung zulassen</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentClipboardCopyPasteDirections.IsolatedWindowsEnvironmentToHost">
-      <summary>
-      </summary>
+      <summary>Kopieren und Einfügen aus der isolierten Windows-Umgebung auf den Host zulassen</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentClipboardCopyPasteDirections.None">
-      <summary>
-      </summary>
+      <summary>Kopier-oder Einfüge Vorgang nicht zulässig</summary>
     </member>
     <member name="T:Windows.Security.Isolation.IsolatedWindowsEnvironmentContract">
       <summary>
       </summary>
     </member>
     <member name="T:Windows.Security.Isolation.IsolatedWindowsEnvironmentCreateProgress">
-      <summary>
-      </summary>
+      <summary>Abfragen zum Fortschritt der Erstellung einer isolierten Windows-Umgebung</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentCreateProgress.PercentComplete">
-      <summary>
-      </summary>
+      <summary>UInt32 für den Abschluss der isolierten Windows-Umgebung in Prozent</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentCreateProgress.State">
-      <summary>
-      </summary>
+      <summary>Isolatedwindowsenvironmentprogressstate</summary>
     </member>
     <member name="T:Windows.Security.Isolation.IsolatedWindowsEnvironmentCreateResult">
-      <summary>
-      </summary>
+      <summary>Lauf Zeit Klasse, die Ergebnisse der Umgebungs Erstellung abfragt, z. b. Status und erweiterte Fehler.</summary>
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentCreateResult.Environment">
-      <summary>
-      </summary>
-      <returns>
-      </returns>
+      <summary>Abfragen für das Ergebnis der Erstellung einer isolierten Windows-Umgebung.</summary>
+      <returns>Zeichenfolge für die isolierte Windows-Umgebungs-ID.</returns>
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentCreateResult.ExtendedError">
-      <summary>
-      </summary>
-      <returns>
-      </returns>
+      <summary>Abfragen von erweiterten Fehlern bei einem Fehler bei der Erstellung isolierter Windows-Umgebungen.</summary>
+      <returns>HRESULT</returns>
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentCreateResult.Status">
-      <summary>
-      </summary>
-      <returns>
-      </returns>
+      <summary>Aufrufe für isolatedwindowsenvironmentkreatestatus</summary>
+      <returns>Zeichenfolge</returns>
     </member>
     <member name="T:Windows.Security.Isolation.IsolatedWindowsEnvironmentCreateStatus">
-      <summary>
-      </summary>
+      <summary>Enthält die tatsächlichen Rückgaben des Erstellungs Status der isolierten Windows-Umgebung.</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentCreateStatus.FailureByPolicy">
-      <summary>
-      </summary>
+      <summary>Fehler beim Erstellen der isolierten Windows-Umgebung aufgrund der Richtlinien Konfiguration.</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentCreateStatus.Success">
-      <summary>
-      </summary>
+      <summary>Die isolierte Windows-Umgebungs Erstellung war erfolgreich.</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentCreateStatus.UnknownFailure">
-      <summary>
-      </summary>
+      <summary>Unbekannter Fehler beim Erstellen der isolierten Windows-Umgebung.</summary>
     </member>
     <member name="T:Windows.Security.Isolation.IsolatedWindowsEnvironmentFile">
-      <summary>
-      </summary>
+      <summary>Lauf Zeit Klasse, die Funktionen zum Starten einer Datei in einer isolierten Windows-Umgebung kapselt.</summary>
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentFile.HostPath">
-      <summary>
-      </summary>
-      <returns>
-      </returns>
+      <summary>Ruft den vollständigen Hostpfad einer Datei ab.</summary>
+      <returns>Zeichenfolge für Hostpfad.</returns>
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentFile.Id">
-      <summary>
-      </summary>
-      <returns>
-      </returns>
+      <summary>Ruft die der Hostdatei zugewiesene ID ab.</summary>
+      <returns>GUID für die Datei.</returns>
     </member>
     <member name="M:Windows.Security.Isolation.IsolatedWindowsEnvironmentFile.Close">
-      <summary>
-      </summary>
+      <summary>Ruft auf, um eine Datei in der isolierten Windows-Umgebung zu schließen.</summary>
     </member>
     <member name="T:Windows.Security.Isolation.IsolatedWindowsEnvironmentHost">
-      <summary>
-      </summary>
+      <summary>Klasse, die das Hostgerät für die isolierte Windows-Umgebung darstellt.</summary>
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentHost.HostErrors">
-      <summary>
-      </summary>
-      <returns>
-      </returns>
+      <summary>IVector View der Fehler auf dem Host, die aufgelöst werden müssen, bevor eine isolierte Windows-Umgebung auf einem Host erstellt werden kann.</summary>
+      <returns>IVectorView</returns>
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentHost.IsReady">
-      <summary>
-      </summary>
-      <returns>
-      </returns>
+      <summary>Boolescher Wert, der angibt, ob ein Host ordnungsgemäß konfiguriert ist und bereit ist, eine isolierte Windows-Umgebung zu erstellen.</summary>
+      <returns>Boolesch</returns>
     </member>
     <member name="T:Windows.Security.Isolation.IsolatedWindowsEnvironmentHostError">
-      <summary>
-      </summary>
+      <summary>Enumerator, der eine mögliche Liste von Fehlern darstellt, die aufgelöst werden müssen, bevor eine isolierte Windows-Umgebung auf einem Host erstellt werden kann.</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentHostError.AdminPolicyIsDisabledOrNotPresent">
-      <summary>
-      </summary>
+      <summary>Die Administrator Richtlinie für das Feature ist nicht konfiguriert oder deaktiviert.</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentHostError.FeatureNotInstalled">
-      <summary>
-      </summary>
+      <summary>Das Feature wurde nicht auf dem Gerät installiert.</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentHostError.HardwareRequirementsNotMet">
-      <summary>
-      </summary>
+      <summary>Gerät erfüllt nicht die Hardwareanforderungen</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentHostError.RebootRequired">
-      <summary>
-      </summary>
+      <summary>Neustart erforderlich</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentHostError.UnknownError">
-      <summary>
-      </summary>
+      <summary>Unbekannter Fehler.</summary>
     </member>
     <member name="T:Windows.Security.Isolation.IsolatedWindowsEnvironmentLaunchFileResult">
-      <summary>
-      </summary>
+      <summary>Lauf Zeit Klasse mit Ergebnis Eigenschaften für den Datei Start in einer isolierten Windows-Umgebung.</summary>
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentLaunchFileResult.ExtendedError">
-      <summary>
-      </summary>
-      <returns>
-      </returns>
+      <summary>Ruft den erweiterten Fehlercode ab, wenn eine Datei nicht in einer isolierten Windows-Umgebung gestartet werden kann.</summary>
+      <returns>HRESULT</returns>
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentLaunchFileResult.File">
-      <summary>
-      </summary>
-      <returns>
-      </returns>
+      <summary>Instanziiert die isolatedwindowsenvironmentfile-Lauf Zeit Klasse.</summary>
+      <returns>Zeichenfolge</returns>
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentLaunchFileResult.Status">
-      <summary>
-      </summary>
-      <returns>
-      </returns>
+      <summary>Ruft den isolatedwindowsenvironmentlaunchfilestatus auf.</summary>
+      <returns>Enumeration</returns>
     </member>
     <member name="T:Windows.Security.Isolation.IsolatedWindowsEnvironmentLaunchFileStatus">
-      <summary>
-      </summary>
+      <summary>Enumerationswerte für den Status der Startdatei in eine isolierte Windows-Umgebung.</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentLaunchFileStatus.EnvironmentUnavailable">
-      <summary>
-      </summary>
+      <summary>Datei Start in einer isolierten Windows-Umgebung, da die Umgebung nicht verfügbar ist</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentLaunchFileStatus.FileNotFound">
-      <summary>
-      </summary>
+      <summary>Datei Start in einer isolierten Windows-Umgebung, da die Datei nicht gefunden wurde</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentLaunchFileStatus.Success">
-      <summary>
-      </summary>
+      <summary>Datei Start in einer isolierten Windows-Umgebung erfolgreich</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentLaunchFileStatus.TimedOut">
-      <summary>
-      </summary>
+      <summary>Timeout beim Starten der Datei in eine isolierte Windows-Umgebung.</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentLaunchFileStatus.UnknownFailure">
-      <summary>
-      </summary>
+      <summary>Beim Starten der Datei in eine isolierte Windows-Umgebung ist ein unbekannter Fehler aufgetreten.</summary>
     </member>
     <member name="T:Windows.Security.Isolation.IsolatedWindowsEnvironmentOptions">
-      <summary>
-      </summary>
+      <summary>Lauf Zeit Klasse, die verschiedene Attribute steuert, die während der Erstellung auf die isolierte Windows-Umgebung angewendet werden.</summary>
     </member>
     <member name="M:Windows.Security.Isolation.IsolatedWindowsEnvironmentOptions.#ctor">
-      <summary>
-      </summary>
+      <summary>Gibt die verschiedenen isolatedwindowsenvironmentoptions für die isolierte Windows-Umgebung zurück.</summary>
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentOptions.AllowCameraAndMicrophoneAccess">
-      <summary>
-      </summary>
-      <returns>
-      </returns>
+      <summary>Boolescher Wert, ob Anwendungen, die in einer isolierten Windows-Umgebung ausgeführt werden, auf die Kamera und das Mikrofon des Geräts zugreifen können</summary>
+      <returns>Boolesch</returns>
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentOptions.AllowedClipboardFormats">
-      <summary>
-      </summary>
-      <returns>
-      </returns>
+      <summary>Eine Aufzählung von Zwischenablage Formaten für isolierte Windows-Umgebungen.</summary>
+      <returns>Enumeration</returns>
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentOptions.AllowGraphicsHardwareAcceleration">
-      <summary>
-      </summary>
-      <returns>
-      </returns>
+      <summary>Boolescher Wert, ob die isolierte Windows-Umgebung Grafiken mithilfe von Hardware-oder Software Beschleunigung rendert.</summary>
+      <returns>Boolesch</returns>
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentOptions.AvailablePrinters">
-      <summary>
-      </summary>
-      <returns>
-      </returns>
+      <summary>Eine Aufzählung der Drucker Auswahl für eine isolierte Windows-Umgebung.</summary>
+      <returns>Enumeration</returns>
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentOptions.ClipboardCopyPasteDirections">
-      <summary>
-      </summary>
-      <returns>
-      </returns>
+      <summary>Die Aufzählung der Optionen für die Zwischenablage Richtung für isolierte Windows-Umgebungen.</summary>
+      <returns>Enumeration</returns>
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentOptions.EnvironmentOwnerId">
-      <summary>
-      </summary>
-      <returns>
-      </returns>
+      <summary>Zeichenfolge, die den Besitzer jeder erstellten isolierten Windows-Umgebung identifiziert.</summary>
+      <returns>Zeichenfolge</returns>
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentOptions.PersistUserProfile">
-      <summary>
-      </summary>
-      <returns>
-      </returns>
+      <summary>Ermöglicht, dass das Benutzerprofil in der isolierten Windows-Umgebung Zwischensitzung und Sitzung persistent gespeichert wird.</summary>
+      <returns>Boolesch</returns>
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentOptions.SharedFolderNameInEnvironment">
-      <summary>
-      </summary>
-      <returns>
-      </returns>
+      <summary>Anzeige Name des Ordners, der zum Freigeben von nicht vertrauenswürdigem Element innerhalb der isolierten Windows-Umgebung verwendet wird, indem sharehostfolderforuntreuditems aufgerufen wird.</summary>
+      <returns>Zeichenfolge</returns>
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentOptions.SharedHostFolderPath">
-      <summary>
-      </summary>
-      <returns>
-      </returns>
+      <summary>Der Pfad des Host Ordners, der von der isolierten Windows-Umgebung gemeinsam genutzt wird, und der Host für die Freigabe von nicht vertrauenswürdigen Elementen, die durch den Aufruf von sharehostfolderforuntreuditems fest</summary>
+      <returns>Zeichenfolge</returns>
     </member>
     <member name="M:Windows.Security.Isolation.IsolatedWindowsEnvironmentOptions.ShareHostFolderForUntrustedItems(System.String,System.String)">
-      <summary>
-      </summary>
-      <param name="SharedHostFolderPath">
-      </param>
-      <param name="ShareFolderNameInEnvironment">
-      </param>
+      <summary>Legt sowohl sharedfoldernameinenvironment als auch sharedhostfolderpath fest, um den Ordner zu konfigurieren, der für die Freigabe von nicht vertrauenswürdigen Elementen in der isolierten Windows-Umgebung freigegeben werden soll.</summary>
+      <param name="SharedHostFolderPath">Pfad des freigegebenen Host Ordners.</param>
+      <param name="ShareFolderNameInEnvironment">Name des Ordners in der isolierten Windows-Umgebung.</param>
     </member>
     <member name="T:Windows.Security.Isolation.IsolatedWindowsEnvironmentOwnerRegistration">
-      <summary>
-      </summary>
+      <summary>Lauf Zeit Klasse, mit der eine Liste der Attribute des Besitzers der isolierten Windows-Umgebung registriert wird. Dies umfasst den Namen des Besitzers, die Ordner, die in einer isolierten Windows-Umgebung für den Host angezeigt werden können, die Prozesse, die als Benutzer oder System ausgeführt werden, sowie die Umgebungs übergreifenden Aktivierungs Erweiterungen.</summary>
     </member>
     <member name="M:Windows.Security.Isolation.IsolatedWindowsEnvironmentOwnerRegistration.Register(System.String,Windows.Security.Isolation.IsolatedWindowsEnvironmentOwnerRegistrationData)">
-      <summary>
-      </summary>
-      <param name="ownerName">
-      </param>
-      <param name="ownerRegistrationData">
-      </param>
-      <returns>
-      </returns>
+      <summary>Registriert den Besitzer der isolierten Windows-Umgebung.</summary>
+      <param name="ownerName">Der Name des Besitzers der isolierten Windows-Umgebung.</param>
+      <param name="ownerRegistrationData">isolatedwindowsenvironmentbesitzregistrationdata</param>
+      <returns>Isolatedwindowsenvironmentbesitzregistrationresult</returns>
     </member>
     <member name="M:Windows.Security.Isolation.IsolatedWindowsEnvironmentOwnerRegistration.Unregister(System.String)">
-      <summary>
-      </summary>
-      <param name="ownerName">
-      </param>
+      <summary>Aufheben der Registrierung des Besitzers der isolierten Windows-Umgebung.</summary>
+      <param name="ownerName">Zeichenfolge für den Namen des Besitzers der isolierten Windows-Umgebung.</param>
     </member>
     <member name="T:Windows.Security.Isolation.IsolatedWindowsEnvironmentOwnerRegistrationData">
-      <summary>
-      </summary>
+      <summary>Klasse, die alle Registrierungsdaten von isolatedwindowsenvironmentbesitzregistration zurückgibt.</summary>
     </member>
     <member name="M:Windows.Security.Isolation.IsolatedWindowsEnvironmentOwnerRegistrationData.#ctor">
-      <summary>
-      </summary>
+      <summary>Alle Attribute für den Besitzer, die für eine isolierte Windows-Umgebung registriert sind.</summary>
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentOwnerRegistrationData.ActivationFileExtensions">
-      <summary>
-      </summary>
-      <returns>
-      </returns>
+      <summary>Erweiterungen von Dateien, die in der isolierten Windows-Umgebung aktiviert werden können.</summary>
+      <returns>IVector</returns>
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentOwnerRegistrationData.ProcessesRunnableAsSystem">
-      <summary>
-      </summary>
-      <returns>
-      </returns>
+      <summary>Prozesse, die als System ausgeführt werden.</summary>
+      <returns>IVector</returns>
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentOwnerRegistrationData.ProcessesRunnableAsUser">
-      <summary>
-      </summary>
-      <returns>
-      </returns>
+      <summary>Prozesse, die als Benutzer ausgeführt werden.</summary>
+      <returns>IVector</returns>
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentOwnerRegistrationData.ShareableFolders">
-      <summary>
-      </summary>
-      <returns>
-      </returns>
+      <summary>Ordner, die vom Host in der isolierten Windows-Umgebung freigegeben werden können.</summary>
+      <returns>IVector</returns>
     </member>
     <member name="T:Windows.Security.Isolation.IsolatedWindowsEnvironmentOwnerRegistrationResult">
-      <summary>
-      </summary>
+      <summary>Lauf Zeit Klasse, die die Ergebnisse für isolatedwindowsenvironmentbesitzregistration zurückgibt.</summary>
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentOwnerRegistrationResult.ExtendedError">
-      <summary>
-      </summary>
-      <returns>
-      </returns>
+      <summary>Gibt den erweiterten Fehler für isolatedwindowsenvironmentbesitzregistration zurück.</summary>
+      <returns>HRESULT</returns>
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentOwnerRegistrationResult.Status">
-      <summary>
-      </summary>
-      <returns>
-      </returns>
+      <summary>Ruft den isolatedwindowsenvironmentbesitzregistrationstatus auf.</summary>
+      <returns>Enumeration</returns>
     </member>
     <member name="T:Windows.Security.Isolation.IsolatedWindowsEnvironmentOwnerRegistrationStatus">
-      <summary>
-      </summary>
+      <summary>Erfolg oder Fehlerstatus von isolatedwindowsenvironmentbesitzregistration.</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentOwnerRegistrationStatus.AccessDenied">
-      <summary>
-      </summary>
+      <summary>Fehler bei der Besitzer Registrierung für die isolierte Windows-Umgebung, weil der Zugriff verweigert wurde.</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentOwnerRegistrationStatus.InsufficientMemory">
-      <summary>
-      </summary>
+      <summary>Besitzer Registrierung für isolierte Windows-Umgebung aufgrund von unzureichendem Arbeitsspeicher.</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentOwnerRegistrationStatus.InvalidArgument">
-      <summary>
-      </summary>
+      <summary>Fehler bei der Besitzer Registrierung für die isolierte Windows-Umgebung aufgrund eines ungültigen Attributs.</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentOwnerRegistrationStatus.Success">
-      <summary>
-      </summary>
+      <summary>Besitzer Registrierung für isolierte Windows-Umgebung erfolgreich.</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentOwnerRegistrationStatus.UnknownFailure">
-      <summary>
-      </summary>
+      <summary>Unbekannter Fehler bei der Besitzer Registrierung für die isolierte Windows-Umgebung.</summary>
     </member>
     <member name="T:Windows.Security.Isolation.IsolatedWindowsEnvironmentProcess">
-      <summary>
-      </summary>
+      <summary>Klasse, die das Objekt nach Startprozess zurückgibt, der den Prozess in der isolierten Windows-Umgebung darstellt.</summary>
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentProcess.ExitCode">
-      <summary>
-      </summary>
-      <returns>
-      </returns>
+      <summary>Gibt den Exitcode des ausgeführten Prozesses zurück.</summary>
+      <returns>UInt32</returns>
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentProcess.State">
-      <summary>
-      </summary>
-      <returns>
-      </returns>
+      <summary>Gibt den aktuellen Status der Prozess Ausführung zurück.</summary>
+      <returns>Enumeration</returns>
     </member>
     <member name="M:Windows.Security.Isolation.IsolatedWindowsEnvironmentProcess.WaitForExit">
-      <summary>
-      </summary>
+      <summary>Ermöglicht dem Aufrufer das warten auf den Abschluss des Prozesses</summary>
     </member>
     <member name="M:Windows.Security.Isolation.IsolatedWindowsEnvironmentProcess.WaitForExitAsync">
-      <summary>
-      </summary>
-      <returns>
-      </returns>
+      <summary>Ermöglicht dem Aufrufer das asynchrone warten auf den Abschluss des Prozesses.</summary>
+      <returns>HRESULT</returns>
     </member>
     <member name="M:Windows.Security.Isolation.IsolatedWindowsEnvironmentProcess.WaitForExitWithTimeout(System.UInt32)">
-      <summary>
-      </summary>
-      <param name="timeoutMilliseconds">
-      </param>
+      <summary>Ermöglicht dem Aufrufer, ein Timeout für den Abschluss des Prozesses anzugeben.</summary>
+      <param name="timeoutMilliseconds">Zulässige Zeitspanne vor dem Timeout.</param>
     </member>
     <member name="T:Windows.Security.Isolation.IsolatedWindowsEnvironmentProcessState">
-      <summary>
-      </summary>
+      <summary>Aktueller Status der Prozess Ausführung in der isolierten Windows-Umgebung.</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentProcessState.Aborted">
-      <summary>
-      </summary>
+      <summary>Der Prozess in der isolierten Windows-Umgebung wurde abgebrochen.</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentProcessState.Completed">
-      <summary>
-      </summary>
+      <summary>Der Prozess in der isolierten Windows-Umgebung wurde abgeschlossen.</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentProcessState.Running">
-      <summary>
-      </summary>
+      <summary>Der Prozess in der isolierten Windows-Umgebung wird ausgeführt.</summary>
     </member>
     <member name="T:Windows.Security.Isolation.IsolatedWindowsEnvironmentProgressState">
-      <summary>
-      </summary>
+      <summary>Rückgabe während der Erstellung einer isolierten Windows-Umgebung, die den Zustand der Umgebungs Erstellung darstellt.</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentProgressState.Completed">
-      <summary>
-      </summary>
+      <summary>Das Erstellen isolierter Windows-Umgebungen wurde abgeschlossen.</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentProgressState.Processing">
-      <summary>
-      </summary>
+      <summary>Die Erstellung isolierter Windows-Umgebungen wird verarbeitet.</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentProgressState.Queued">
-      <summary>
-      </summary>
+      <summary>Die isolierte Windows-Umgebung wird erstellt.</summary>
     </member>
     <member name="T:Windows.Security.Isolation.IsolatedWindowsEnvironmentShareFolderRequestOptions">
-      <summary>
-      </summary>
+      <summary>Optionen für die Ausführung des Vorgangs zum Freigeben von Ordnern.</summary>
     </member>
     <member name="M:Windows.Security.Isolation.IsolatedWindowsEnvironmentShareFolderRequestOptions.#ctor">
-      <summary>
-      </summary>
+      <summary>Ergebnisse von isolatedwindowsenvironmentsharefolderrequestoptions.</summary>
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentShareFolderRequestOptions.AllowWrite">
-      <summary>
-      </summary>
-      <returns>
-      </returns>
+      <summary>Bestimmt, ob in der isolierten Windows-Umgebung ausgelief Anwendungen Daten in diesen Ordner schreiben können, der freigegeben wird.</summary>
+      <returns>Boolesch</returns>
     </member>
     <member name="T:Windows.Security.Isolation.IsolatedWindowsEnvironmentShareFolderResult">
-      <summary>
-      </summary>
+      <summary>-Objekt, das Informationen über das Ergebnis der Freigabe Ordner Anforderung enthält.</summary>
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentShareFolderResult.ExtendedError">
-      <summary>
-      </summary>
-      <returns>
-      </returns>
+      <summary>Wenn ein Fehler beim Freigeben eines Ordners auftritt, enthält dieser den Fehlercode, der diesem Fehler zugeordnet ist.</summary>
+      <returns>HRESULT</returns>
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentShareFolderResult.Status">
-      <summary>
-      </summary>
-      <returns>
-      </returns>
+      <summary>Status des Freigabe Ordner Vorgangs: Erfolg oder Fehler.</summary>
+      <returns>Enumeration</returns>
     </member>
     <member name="T:Windows.Security.Isolation.IsolatedWindowsEnvironmentShareFolderStatus">
-      <summary>
-      </summary>
+      <summary>Eine Enumeration möglicher Status, die das Ergebnis einer Freigabe Ordner Anforderung angibt.</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentShareFolderStatus.AccessDenied">
-      <summary>
-      </summary>
+      <summary>Zugriff verweigert:</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentShareFolderStatus.EnvironmentUnavailable">
-      <summary>
-      </summary>
+      <summary>Isolierte Windows-Umgebung nicht verfügbar.</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentShareFolderStatus.FolderNotFound">
-      <summary>
-      </summary>
+      <summary>Der Ordner wurde nicht gefunden.</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentShareFolderStatus.Success">
-      <summary>
-      </summary>
+      <summary>Erfolgreich.</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentShareFolderStatus.UnknownFailure">
-      <summary>
-      </summary>
+      <summary>Unbekannter Fehler.</summary>
     </member>
     <member name="T:Windows.Security.Isolation.IsolatedWindowsEnvironmentStartProcessResult">
-      <summary>
-      </summary>
+      <summary>Lauf Zeit Klasse, die das Ergebnis des Start Prozesses in der isolierten Windows-Umgebung abfragt.</summary>
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentStartProcessResult.ExtendedError">
-      <summary>
-      </summary>
-      <returns>
-      </returns>
+      <summary>Fragt nach Fehlern mit Fehlern ab, wenn der Startprozess für die isolierte Windows-Umgebung fehlschlägt.</summary>
+      <returns>HRESULT</returns>
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentStartProcessResult.Process">
-      <summary>
-      </summary>
-      <returns>
-      </returns>
+      <summary>Stellt die Lebensdauer des Prozesses dar, der in der isolierten Windows-Umgebung ausgeführt wird.</summary>
+      <returns>Zeichenfolge</returns>
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentStartProcessResult.Status">
-      <summary>
-      </summary>
-      <returns>
-      </returns>
+      <summary>Fragt den Status der Prozess Ausführung in der isolierten Windows-Umgebung ab.</summary>
+      <returns>Zeichenfolge</returns>
     </member>
     <member name="T:Windows.Security.Isolation.IsolatedWindowsEnvironmentStartProcessStatus">
-      <summary>
-      </summary>
+      <summary>Ergebnisse des Start Prozesses in der isolierten Windows-Umgebung.</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentStartProcessStatus.AppNotRegistered">
-      <summary>
-      </summary>
+      <summary>Der Start Prozess in der isolierten Windows-Umgebung ist fehlgeschlagen, da die Anwendung nicht registriert ist.</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentStartProcessStatus.EnvironmentUnavailable">
-      <summary>
-      </summary>
+      <summary>Der Start Prozess in der isolierten Windows-Umgebung ist fehlgeschlagen, da die Umgebung nicht verfügbar ist.</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentStartProcessStatus.FileNotFound">
-      <summary>
-      </summary>
+      <summary>Fehler beim Starten des Prozesses in der isolierten Windows-Umgebung, weil eine Datei nicht gefunden wurde.</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentStartProcessStatus.Success">
-      <summary>
-      </summary>
+      <summary>Der Start Prozess in der isolierten Windows-Umgebung ist erfolgreich.</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentStartProcessStatus.UnknownFailure">
-      <summary>
-      </summary>
+      <summary>Unbekannter Fehler beim Start Prozess in der isolierten Windows-Umgebung.</summary>
     </member>
     <member name="T:Windows.Security.Isolation.IsolatedWindowsEnvironmentTelemetryParameters">
-      <summary>
-      </summary>
+      <summary>Lauf Zeit Klasse, die die CorrelationId kapselt.</summary>
     </member>
     <member name="M:Windows.Security.Isolation.IsolatedWindowsEnvironmentTelemetryParameters.#ctor">
-      <summary>
-      </summary>
+      <summary>Parameter, die in Microsoft-Telemetrie verwendet werden, um die Qualität der APIs zu verbessern.</summary>
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentTelemetryParameters.CorrelationId">
-      <summary>
-      </summary>
-      <returns>
-      </returns>
+      <summary>GUID, die in Microsoft-Telemetriedaten zur Verbesserung der Qualität von APIs verwendet wird.</summary>
+      <returns>GUID</returns>
     </member>
     <member name="T:Windows.Security.Isolation.IsolatedWindowsHostMessenger">
-      <summary>
-      </summary>
+      <summary>Lauf Zeit Klasse für zwei Methoden: postmessagetoreceivier und getfleid.</summary>
     </member>
     <member name="M:Windows.Security.Isolation.IsolatedWindowsHostMessenger.GetFileId(System.String)">
-      <summary>
-      </summary>
-      <param name="filePath">
-      </param>
-      <returns>
-      </returns>
+      <summary>Ruft einen eindeutigen Bezeichner der Datei ab, die in der isolierten Windows-Umgebung geöffnet ist.</summary>
+      <param name="filePath">Der Pfad der Datei auf dem Host.</param>
+      <returns>Guid</returns>
     </member>
     <member name="M:Windows.Security.Isolation.IsolatedWindowsHostMessenger.PostMessageToReceiver(System.Guid,Windows.Foundation.Collections.IVectorView{System.Object})">
-      <summary>
-      </summary>
-      <param name="receiverId">
-      </param>
-      <param name="message">
-      </param>
+      <summary>Senden Sie eine Nachricht aus der isolierten Windows-Umgebung an den Empfänger, der auf der Host Seite registriert ist.</summary>
+      <param name="receiverId">GUID für den Nachrichtenempfänger.</param>
+      <param name="message">IVectorView</param>
     </member>
     <member name="T:Windows.Security.Isolation.MessageReceivedCallback">
-      <summary>
-      </summary>
-      <param name="receiverId">
-      </param>
-      <param name="message">
-      </param>
+      <summary>Rückruffunktion, die aufgerufen wird, wenn eine Nachricht mithilfe von postmessagetoreceiver von der isolierten Windows-Umgebung gesendet wird.</summary>
+      <param name="receiverId">GUID für den Nachrichtenempfänger.</param>
+      <param name="message">IVectorView</param>
     </member>
   </members>
 </doc>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <doc>
   <assembly>
-    <name>Windows.Storage.Provider.CloudFilesContract</name>
+    <name>Windows. Storage. Provider. cloudfilescontract</name>
   </assembly>
   <members>
     <member name="T:Windows.Storage.Provider.CloudFilesContract">
@@ -9,33 +9,33 @@
       </summary>
     </member>
     <member name="T:Windows.Storage.Provider.IStorageProviderItemPropertySource">
-      <summary>Ermöglicht den Zugriff auf Speicheranbieter-Elementeigenschaften aus dem Synchronisierungsstamm.</summary>
+      <summary>Bietet Zugriff auf die Eigenschaften des Speicher Anbieter Elements aus dem Synchronisierungs Stamm.</summary>
     </member>
     <member name="M:Windows.Storage.Provider.IStorageProviderItemPropertySource.GetItemProperties(System.String)">
-      <summary>Ruft eine Liste der Elementeigenschaften für einen Speicheranbieter ab.</summary>
-      <param name="itemPath">Ein Pfad zu dem Speicherelement.</param>
-      <returns>Eine Liste der Eigenschaften des Elements vom Speicheranbieter.</returns>
+      <summary>Ruft eine Liste der Element Eigenschaften für einen Speicher Anbieter ab.</summary>
+      <param name="itemPath">Ein Pfad zum Speicher Element.</param>
+      <returns>Eine Liste der Element Eigenschaften des Speicher Anbieters.</returns>
     </member>
     <member name="T:Windows.Storage.Provider.IStorageProviderPropertyCapabilities">
-      <summary>Bietet Zugriff auf die Eigenschaftenfunktionen, die vom Synchronisierungsstamm unterstützt werden.</summary>
+      <summary>Bietet Zugriff auf die Eigenschaften Funktionen, die vom Synchronisierungs Stamm unterstützt werden.</summary>
     </member>
     <member name="M:Windows.Storage.Provider.IStorageProviderPropertyCapabilities.IsPropertySupported(System.String)">
-      <summary>Legt fest, ob eine Eigenschaft vom Synchronisierungsstamm unterstützt wird.</summary>
-      <param name="propertyCanonicalName">Der Name der Eigenschaft. Z. B. „System.Photo.DateTaken“</param>
-      <returns>**True**, wenn die Eigenschaft vom Synchronisierungsstamm unterstützt wird, andernfalls **False**</returns>
+      <summary>Bestimmt, ob eine Eigenschaft durch den Synchronisierungs Stamm unterstützt wird.</summary>
+      <param name="propertyCanonicalName">Der Name der Eigenschaft. Z. b. "System. Photo. DateTaken"</param>
+      <returns>* * True * *, wenn die Eigenschaft durch den Synchronisierungs Stamm unterstützt wird. * * False * * andernfalls</returns>
     </member>
     <member name="T:Windows.Storage.Provider.IStorageProviderUriSource">
-      <summary>Eine Oberfläche für den Abruf eines Inhalts-URI-Pfads und der zugehörigen Informationen.</summary>
+      <summary>Eine Schnittstelle zum erhalten eines Inhalts-URI-Pfads und von Informationen.</summary>
     </member>
     <member name="M:Windows.Storage.Provider.IStorageProviderUriSource.GetContentInfoForPath(System.String,Windows.Storage.Provider.StorageProviderGetContentInfoForPathResult)">
-      <summary>Ruft Informationen zu einem Speicheranbieter-URI anhand des URI-Pfads ab.</summary>
-      <param name="path">Der Pfad der Speicheranbieter-URI.</param>
-      <param name="result">Inhaltinformationen zu der bereitgestellten Speicheranbieter-URI.</param>
+      <summary>Ruft Informationen zu einem Speicher Anbieter-URI ab, wenn der URI-Pfad angegeben ist.</summary>
+      <param name="path">Der Pfad des Speicher Anbieter-URIs.</param>
+      <param name="result">Inhaltsinformationen über den bereitgestellten Speicher Anbieter-URI.</param>
     </member>
     <member name="M:Windows.Storage.Provider.IStorageProviderUriSource.GetPathForContentUri(System.String,Windows.Storage.Provider.StorageProviderGetPathForContentUriResult)">
-      <summary>Ruft den Pfad der Inhalts-URI auf der Grundlage des URI-Namens ab.</summary>
-      <param name="contentUri">Der Zeichenkettenname der Inhalts-URI.</param>
-      <param name="result">Der Pfad der bereitgestellten Inhalts-URI.</param>
+      <summary>Ruft den Pfad des Inhalts-URIs anhand des Namens des URIs ab.</summary>
+      <param name="contentUri">Der Zeichen folgen Name des Inhalts-URIs.</param>
+      <param name="result">Der Pfad des bereitgestellten Inhalts-URIs.</param>
     </member>
     <member name="T:Windows.Storage.Provider.StorageProviderFileTypeInfo">
       <summary>
@@ -62,191 +62,191 @@
       </returns>
     </member>
     <member name="T:Windows.Storage.Provider.StorageProviderGetContentInfoForPathResult">
-      <summary>Stellt Methoden zum Abrufen zusätzlicher Informationen über einen URI-Pfad bereit.</summary>
+      <summary>Stellt Methoden bereit, um zusätzliche Informationen über einen Inhalts-URI-Pfad zu erhalten.</summary>
     </member>
     <member name="M:Windows.Storage.Provider.StorageProviderGetContentInfoForPathResult.#ctor">
-      <summary>Ein StorageProviderGetContentInfoForPathResult-Standard-Konstruktor.</summary>
+      <summary>Ein storageprovidergetcontentinfoforpthresult-Standardkonstruktor.</summary>
     </member>
     <member name="P:Windows.Storage.Provider.StorageProviderGetContentInfoForPathResult.ContentId">
-      <summary>Ruft die mit dem StorageProviderGetContentInfoForPathResult verbundene Inhalts-ID ab oder richtet sie ein.</summary>
+      <summary>Ruft die Inhalts-ID ab, die dem storageprovidergetcontentinfoforpthresult zugeordnet ist, oder legt Sie fest.</summary>
       <returns>Der Wert der Inhalts-ID.</returns>
     </member>
     <member name="P:Windows.Storage.Provider.StorageProviderGetContentInfoForPathResult.ContentUri">
-      <summary>Ruft die mit dem StorageProviderGetContentInfoForPathResult verbundene Inhalts-URI ab oder richtet sie ein.</summary>
-      <returns>Der Wert der Inhalts-URI.</returns>
+      <summary>Ruft den Content-URI ab, der dem storageprovidergetcontentinfoforpthresult zugeordnet ist, oder legt ihn fest.</summary>
+      <returns>Der Wert des Inhalts-URIs.</returns>
     </member>
     <member name="P:Windows.Storage.Provider.StorageProviderGetContentInfoForPathResult.Status">
-      <summary>Der Status eines mit dem StorageProviderGetContentInfoForPathResult verbundenen Speicheranbieters.</summary>
-      <returns>Ein StorageProviderUriSourceStatus-Enumerationswert.</returns>
+      <summary>Der Status eines Speicher Anbieters, der dem storageprovidergetcontentinfoforblothresult zugeordnet ist.</summary>
+      <returns>Ein storageproviderurisourcestatus-Enumerationswert.</returns>
     </member>
     <member name="T:Windows.Storage.Provider.StorageProviderGetPathForContentUriResult">
-      <summary>Stellt Methoden zum Abrufen zusätzlicher Informationen über ein Inhalts-URI-Ergebnis bereit.</summary>
+      <summary>Stellt Methoden bereit, um zusätzliche Informationen über ein Inhalts-URI-Ergebnis zu erhalten.</summary>
     </member>
     <member name="M:Windows.Storage.Provider.StorageProviderGetPathForContentUriResult.#ctor">
-      <summary>Ein StorageProviderGetPathForContentUriResult-Standard-Konstruktor.</summary>
+      <summary>Ein storageprovidergetpathforcontenturiresult-Standardkonstruktor.</summary>
     </member>
     <member name="P:Windows.Storage.Provider.StorageProviderGetPathForContentUriResult.Path">
-      <summary>Ruft den Pfad des StorageProviderGetPathForContentUriResult-Objekts ab.</summary>
+      <summary>Ruft den Pfad des storageprovidergetpathforcontenturiresult-Objekts ab.</summary>
       <returns>Der Inhalts-URI-Pfad.</returns>
     </member>
     <member name="P:Windows.Storage.Provider.StorageProviderGetPathForContentUriResult.Status">
-      <summary>Der Status eines mit dem StorageProviderGetPathForContentUriResult verbundenen Speicheranbieters.</summary>
-      <returns>Ein StorageProviderUriSourceStatus-Enumerationswert.</returns>
+      <summary>Der Status eines Speicher Anbieters, der dem storageprovidergetpathforcontenturiresult zugeordnet ist.</summary>
+      <returns>Ein storageproviderurisourcestatus-Enumerationswert.</returns>
     </member>
     <member name="T:Windows.Storage.Provider.StorageProviderHardlinkPolicy">
-      <summary>Gibt an, ob feste Links auf eine Platzhalterdatei oder einen Ordner zulässig sind. Standardmäßig sind feste Links auf einen Platzhalter nicht zulässig.</summary>
+      <summary>Gibt an, ob feste Links für eine Platzhalter Datei oder einen Platzhalter Ordner zulässig sind. Standardmäßig sind feste Links für einen Platzhalter nicht zulässig.</summary>
     </member>
     <member name="F:Windows.Storage.Provider.StorageProviderHardlinkPolicy.Allowed">
-      <summary>Feste Links sind für einen Platzhalter innerhalb derselben synchronisieren Root zulässig.</summary>
+      <summary>Feste Links sind auf einem Platzhalter innerhalb desselben Synchronisierungs Stamms zulässig.</summary>
     </member>
     <member name="F:Windows.Storage.Provider.StorageProviderHardlinkPolicy.None">
-      <summary>Es sind keine festen Links erlaubt.</summary>
+      <summary>Feste Links sind nicht zulässig.</summary>
     </member>
     <member name="T:Windows.Storage.Provider.StorageProviderHydrationPolicy">
-      <summary>Eine Enumeration der Richtlinienwerte für die Dateiwiederaufnahme für eine Platzhalter-Datei. Die Wiederaufnahmerichtlinie ermöglicht es einem Synchronisierungsstamm, das Verhalten für das Abrufen von Daten für eine Platzhalterdatei anzupassen.</summary>
+      <summary>Eine Enumeration von dateiaktivierungs-Richtlinien Werten für eine Platzhalter Datei. Mithilfe der Aktivierungs Richtlinie kann ein Synchronisierungs Stamm das Verhalten für das Abrufen von Daten für eine Platzhalter Datei anpassen.</summary>
     </member>
     <member name="F:Windows.Storage.Provider.StorageProviderHydrationPolicy.AlwaysFull">
-      <summary>Wenn diese Option aktiviert ist und ein Platzhalter nicht vollständig hydriert werden kann, schlägt die Plattform fehl mit: ERROR_CLOUD_FILE_INVALID_REQUEST.</summary>
+      <summary>Wenn diese Option ausgewählt ist und ein Platzhalter nicht vollständig aktiviert werden kann, schlägt die Plattform mit: ERROR_CLOUD_FILE_INVALID_REQUEST fehl.</summary>
     </member>
     <member name="F:Windows.Storage.Provider.StorageProviderHydrationPolicy.Full">
-      <summary>Eine vollständige Wiederaufnahme wird ausgeführt. Stellt sicher, dass der Platzhalter lokal zur Verfügung steht vor dem Abschluss einer Anforderung.</summary>
+      <summary>Die vollständige Aktivierung wird durchgeführt. Stellt sicher, dass der Platzhalter lokal verfügbar ist, bevor eine Anforderung abgeschlossen wird.</summary>
     </member>
     <member name="F:Windows.Storage.Provider.StorageProviderHydrationPolicy.Partial">
-      <summary>Die Wiederaufnahme wird auf Anforderung des Benutzers ausgeführt. Die Wiederaufnahme wird nicht im Hintergrund fortgesetzt.</summary>
+      <summary>Die Aktivierung erfolgt bei der Anforderung des Benutzers. Der Aktivierungs Vorgang wird im Hintergrund nicht fortgesetzt.</summary>
     </member>
     <member name="F:Windows.Storage.Provider.StorageProviderHydrationPolicy.Progressive">
-      <summary>Wiederaufnahme wird auf Anforderung durchgeführt. Wenn die Wiederaufnahme nicht abgeschlossen ist, wird sie im Hintergrund fortgesetzt.</summary>
+      <summary>On-Demand-hyrdration wird ausgeführt. Wenn die Aktivierung nicht abgeschlossen ist, wird Sie im Hintergrund fortgesetzt.</summary>
     </member>
     <member name="T:Windows.Storage.Provider.StorageProviderHydrationPolicyModifier">
-      <summary>Enthält Richtlinienmodifizierer zur Verwendung mit der primären StorageProviderHydrationPolicy.</summary>
+      <summary>Stellt richtlinienmodifizierer bereit, die mit der primären storageproviderhydrationpolicy verwendet werden sollen.</summary>
     </member>
     <member name="F:Windows.Storage.Provider.StorageProviderHydrationPolicyModifier.AutoDehydrationAllowed">
-      <summary>Automatische Datei-Pause ist zulässig.</summary>
+      <summary>Das automatische pausieren von Dateien ist zulässig.</summary>
     </member>
     <member name="F:Windows.Storage.Provider.StorageProviderHydrationPolicyModifier.None">
       <summary>Keine Modifizierer.</summary>
     </member>
     <member name="F:Windows.Storage.Provider.StorageProviderHydrationPolicyModifier.StreamingAllowed">
-      <summary>Diese Modifizierer erlaubt der Plattform nicht das Speichern von Daten auf dem Datenträger, der von einem Synchronisierungsanbieter zurückgegeben wurde.</summary>
+      <summary>Dieser Modifizierer gestattet es der Plattform nicht, Daten auf der Festplatte zu speichern, die von einem Synchronisierungs Anbieter zurückgegeben wird.</summary>
     </member>
     <member name="F:Windows.Storage.Provider.StorageProviderHydrationPolicyModifier.ValidationRequired">
-      <summary>Sobald die Daten wieder in die Datei aufgenommen wurden, werden sie validiert.</summary>
+      <summary>Nachdem die Daten in die Datei eingegrenzt wurden, werden Sie überprüft.</summary>
     </member>
     <member name="T:Windows.Storage.Provider.StorageProviderInSyncPolicy">
-      <summary>Enthält die Datei und die vom Synchronisierungsstamm unterstützten Verzeichnisattribute.</summary>
+      <summary>Enthält die Datei-und Verzeichnis Attribute, die vom Synchronisierungs Stamm unterstützt werden.</summary>
     </member>
     <member name="F:Windows.Storage.Provider.StorageProviderInSyncPolicy.Default">
-      <summary>Der Standardwert der Synchronisierungsrichtlinie.</summary>
+      <summary>Der Standardwert für die Synchronisierungs Richtlinie.</summary>
     </member>
     <member name="F:Windows.Storage.Provider.StorageProviderInSyncPolicy.DirectoryCreationTime">
-      <summary>Die Erstellungszeit des Verzeichnisses.</summary>
+      <summary>Die Verzeichnis Erstellungszeit.</summary>
     </member>
     <member name="F:Windows.Storage.Provider.StorageProviderInSyncPolicy.DirectoryHiddenAttribute">
-      <summary>Ausgeblendetes Attribut eines Verzeichnisses.</summary>
+      <summary>Verborgenes Attribut eines Verzeichnisses.</summary>
     </member>
     <member name="F:Windows.Storage.Provider.StorageProviderInSyncPolicy.DirectoryLastWriteTime">
-      <summary>Der letzte Schreibzugriff auf ein Verzeichnis.</summary>
+      <summary>Die letzte Schreibzeit in einem Verzeichnis.</summary>
     </member>
     <member name="F:Windows.Storage.Provider.StorageProviderInSyncPolicy.DirectoryReadOnlyAttribute">
-      <summary>Schreibgeschütztes Attribut eines Verzeichnisses.</summary>
+      <summary>Schreib geschütztes Attribut eines Verzeichnisses.</summary>
     </member>
     <member name="F:Windows.Storage.Provider.StorageProviderInSyncPolicy.DirectorySystemAttribute">
-      <summary>Systemattribut einer Datei.</summary>
+      <summary>System Attribut einer Datei.</summary>
     </member>
     <member name="F:Windows.Storage.Provider.StorageProviderInSyncPolicy.FileCreationTime">
-      <summary>Die Erstellungszeit der Datei.</summary>
+      <summary>Der Zeitpunkt der Dateierstellung.</summary>
     </member>
     <member name="F:Windows.Storage.Provider.StorageProviderInSyncPolicy.FileHiddenAttribute">
       <summary>Ausgeblendetes Attribut einer Datei.</summary>
     </member>
     <member name="F:Windows.Storage.Provider.StorageProviderInSyncPolicy.FileLastWriteTime">
-      <summary>Der letzte Schreibzugriff auf eine Datei.</summary>
+      <summary>Der Zeitpunkt des letzten Schreibzugriffs auf eine Datei.</summary>
     </member>
     <member name="F:Windows.Storage.Provider.StorageProviderInSyncPolicy.FileReadOnlyAttribute">
-      <summary>Schreibgeschütztes Attribut einer Datei.</summary>
+      <summary>Schreib geschütztes Attribut einer Datei.</summary>
     </member>
     <member name="F:Windows.Storage.Provider.StorageProviderInSyncPolicy.FileSystemAttribute">
-      <summary>Systemattribut einer Datei.</summary>
+      <summary>System Attribut einer Datei.</summary>
     </member>
     <member name="F:Windows.Storage.Provider.StorageProviderInSyncPolicy.PreserveInsyncForSyncEngine">
-      <summary>Der für die Synchronisierungsengine reservierte Wert.</summary>
+      <summary>Für das Synchronisierungs Modul reservierter Wert.</summary>
     </member>
     <member name="T:Windows.Storage.Provider.StorageProviderItemProperties">
-      <summary>Bietet Zugriff auf die Eigenschaften eines Speicherelements eines Cloudspeicheranbieters (z. B. einer Datei oder eines Ordners).</summary>
+      <summary>Ermöglicht den Zugriff auf die Eigenschaften eines Speicher Elements eines cloudspeicheranbieters (z. b. eine Datei oder einen Ordner).</summary>
     </member>
     <member name="M:Windows.Storage.Provider.StorageProviderItemProperties.SetAsync(Windows.Storage.IStorageItem,Windows.Foundation.Collections.IIterable{Windows.Storage.Provider.StorageProviderItemProperty})">
-      <summary>Legt benutzerdefinierte Eigenschaftswerte eines Speicherelements fest.</summary>
-      <param name="item">Das Speicherelement.</param>
-      <param name="itemProperties">Eine iterierbare Liste der StorageProviderItemProperty-Zustände für das Storage-Element.</param>
-      <returns>Eine asynchrone Aktion. Wenn Sie asynchrone Programmierung verwenden, ist der Rückgabetyp ungültig.</returns>
+      <summary>Legt benutzerdefinierte Eigenschaftswerte für ein Speicher Element fest.</summary>
+      <param name="item">Das Speicher Element.</param>
+      <param name="itemProperties">Eine iterier Bare Liste der storageprovideritemproperty-Zustände für das Speicher Element.</param>
+      <returns>Eine asynchrone Aktion. Wenn Sie die asynchrone Programmierung verwenden, ist der Rückgabetyp "void".</returns>
     </member>
     <member name="T:Windows.Storage.Provider.StorageProviderItemProperty">
-      <summary>Definiert die Eigenschaft eines Cloudspeicheranbieters für ein Speicherelement (z. B. eine Datei oder einen Ordner).</summary>
+      <summary>Definiert eine Eigenschaft des cloudspeicheranbieters für ein Speicher Element (z. b. eine Datei oder einen Ordner).</summary>
     </member>
     <member name="M:Windows.Storage.Provider.StorageProviderItemProperty.#ctor">
-      <summary>Einen Standardkonstruktor für StorageProviderItemProperty.</summary>
+      <summary>Ein storageprovideritemproperty-Standardkonstruktor.</summary>
     </member>
     <member name="P:Windows.Storage.Provider.StorageProviderItemProperty.IconResource">
-      <summary>Ein Verweis auf eine Symbolressource für eine Cloudspeicheranbietereigenschaft.</summary>
-      <returns>Ein Zeichenfolgenwert eines Verweises auf eine Symbolressource. Z. B. „SyncProviderResources.dll,-1234”</returns>
+      <summary>Ein Verweis auf eine Symbol Ressource für eine Eigenschaft des cloudspeicheranbieters.</summary>
+      <returns>Ein Zeichen folgen Wert eines Verweises auf eine Symbol Ressource. Beispiel: "syncproviderresources. dll,-1234"</returns>
     </member>
     <member name="P:Windows.Storage.Provider.StorageProviderItemProperty.Id">
-      <summary>Die ID für ein vom Cloudspeicheranbieter bereitgestelltes Speicherelement.</summary>
-      <returns>Die ID für das Speicherelement.</returns>
+      <summary>Die ID für ein Speicher Element, das vom cloudspeicheranbieter bereitgestellt wird.</summary>
+      <returns>Die ID für das Speicher Element.</returns>
     </member>
     <member name="P:Windows.Storage.Provider.StorageProviderItemProperty.Value">
-      <summary>Beschreibungstext für den Zustand eines Speicherelements eines Speicheranbieters.</summary>
-      <returns>Der Zeichenfolgenwert des Texts.</returns>
+      <summary>Beschreibender Text für den Zustand eines Speicher Anbieter-Speicher Elements.</summary>
+      <returns>Der Zeichen folgen Wert des Texts.</returns>
     </member>
     <member name="T:Windows.Storage.Provider.StorageProviderItemPropertyDefinition">
-      <summary>Definiert die Eigenschaften eines Elements von einem Cloudspeicheranbieter.</summary>
+      <summary>Definiert die Eigenschaften eines Elements von einem cloudspeicheranbieter.</summary>
     </member>
     <member name="M:Windows.Storage.Provider.StorageProviderItemPropertyDefinition.#ctor">
-      <summary>Ein Standardkonstruktor für StorageProviderItemPropertyDefinition.</summary>
+      <summary>Ein storageprovideritempropertydefinition-Standardkonstruktor.</summary>
     </member>
     <member name="P:Windows.Storage.Provider.StorageProviderItemPropertyDefinition.DisplayNameResource">
-      <summary>Ruft den Anzeigenamen eines Cloudspeicheranbieterzustands ab oder legt diesen fest.</summary>
-      <returns>Ein Zeichenfolgenwert für den Anzeigenamenzustand.</returns>
+      <summary>Ruft den anzeigen amen des Zustands eines cloudspeicheranbieters ab oder legt ihn fest.</summary>
+      <returns>Ein Zeichen folgen Wert für den Statusanzeige Name.</returns>
     </member>
     <member name="P:Windows.Storage.Provider.StorageProviderItemPropertyDefinition.Id">
-      <summary>Eine ID für ein vom Cloudspeicheranbieter bei Registrierung des Synchronisierungsstamms bereitgestelltes Speicherelement.</summary>
-      <returns>Die ID-Nummer für das Speicherelement.</returns>
+      <summary>Eine ID für ein Speicher Element, das vom cloudspeicheranbieter bereitgestellt wird, wenn der Synchronisierungs Stamm registriert wird.</summary>
+      <returns>Die ID-Nummer für das Speicher Element.</returns>
     </member>
     <member name="T:Windows.Storage.Provider.StorageProviderPopulationPolicy">
-      <summary>Erlaubt einem Synchronisierungsanbieter, zu steuern, wie eine Platzhalterdatei oder das Verzeichnis</summary>
+      <summary>Hiermit kann ein Synchronisierungs Anbieter steuern, wie eine Platzhalter Datei oder ein Platzhalter Verzeichnis</summary>
     </member>
     <member name="F:Windows.Storage.Provider.StorageProviderPopulationPolicy.AlwaysFull">
-      <summary>Die Plattform nimmt an, dass die Platzhalterdateien und Verzeichnisse immer lokal verfügbar sind.</summary>
+      <summary>Die Plattform geht davon aus, dass Platzhalter Dateien und Verzeichnisse immer lokal verfügbar sind.</summary>
     </member>
     <member name="F:Windows.Storage.Provider.StorageProviderPopulationPolicy.Full">
-      <summary>Wenn die Platzhalterdateien oder Verzeichnisse nicht vollständig gefüllt sind, wird die Plattform den Synchronisierungsanbieter auffordern, sie vor dem Abschluss der Anforderung eines Benutzer aufzufüllen.</summary>
+      <summary>Wenn die Platzhalter Dateien oder-Verzeichnisse nicht vollständig aufgefüllt sind, fordert die Plattform auf, dass der Synchronisierungs Anbieter Sie vor dem Abschließen einer Benutzer Anforderung füllt.</summary>
     </member>
     <member name="T:Windows.Storage.Provider.StorageProviderProtectionMode">
-      <summary>Gibt den Typ der Daten im Synchronisierungsstamm an.</summary>
+      <summary>Gibt den Typ der Daten an, die im Synchronisierungs Stamm enthalten sind.</summary>
     </member>
     <member name="F:Windows.Storage.Provider.StorageProviderProtectionMode.Personal">
-      <summary>Der Synchronisierungsstamm sollte nur persönliche Dateien und keine verschlüsselten oder geschäftlichen Dateien enthalten.</summary>
+      <summary>Der Synchronisierungs Stamm darf nur persönliche Dateien enthalten, nicht verschlüsselte oder unternehmensbezogene Dateien.</summary>
     </member>
     <member name="F:Windows.Storage.Provider.StorageProviderProtectionMode.Unknown">
-      <summary>Der Synchronisierungsstamm kann jede Art von Datei enthalten.</summary>
+      <summary>Der Synchronisierungs Stamm kann beliebige Dateitypen enthalten.</summary>
     </member>
     <member name="T:Windows.Storage.Provider.StorageProviderSyncRootInfo">
-      <summary>Enthält die Eigenschaften des Synchronisierungsstamms eines Cloudspeicheranbieters, die mit dem Betriebssystem registriert werden müssen.</summary>
+      <summary>Enthält die Eigenschaften des Synchronisierungs Stamms eines cloudspeicheranbieters, das beim Betriebssystem registriert werden soll.</summary>
     </member>
     <member name="M:Windows.Storage.Provider.StorageProviderSyncRootInfo.#ctor">
-      <summary>Ein Standardkonstruktor für StorageProviderSyncRootInfo.</summary>
+      <summary>Ein storageprovidersyncrootinfo-Standardkonstruktor.</summary>
     </member>
     <member name="P:Windows.Storage.Provider.StorageProviderSyncRootInfo.AllowPinning">
-      <summary>Aktiviert oder deaktiviert die Möglichkeit, Dateien offline zur Verfügung zu stellen.</summary>
-      <returns>**True**, wenn Anheften aktiviert ist, andernfalls **False**.</returns>
+      <summary>Aktiviert oder deaktiviert die Möglichkeit, Dateien offline verfügbar zu machen.</summary>
+      <returns>* * True * *, wenn das Fixieren aktiviert ist. * * False * * andernfalls</returns>
     </member>
     <member name="P:Windows.Storage.Provider.StorageProviderSyncRootInfo.Context">
-      <summary>Enthält Identifikationsinformationen zum Synchronisierungsstamm.</summary>
-      <returns>Ein Puffer mit der Synchronisierungsstammidentität.</returns>
+      <summary>Enthält die Informationen zur Stamm Identität der Synchronisierung.</summary>
+      <returns>Ein Puffer, der die Stamm Identität der Synchronisierung enthält.</returns>
     </member>
     <member name="P:Windows.Storage.Provider.StorageProviderSyncRootInfo.DisplayNameResource">
-      <summary>Ein optionaler Anzeigename, der der vorhandenen Synchronisierungsstammregistrierung zugeordnet ist.</summary>
-      <returns>Der Anzeigename.</returns>
+      <summary>Ein optionaler Anzeige Name, der der vorhandenen Synchronisierungs Stamm Registrierung zugeordnet ist.</summary>
+      <returns>Der Anzeige Name.</returns>
     </member>
     <member name="P:Windows.Storage.Provider.StorageProviderSyncRootInfo.FallbackFileTypeInfo">
       <summary>
@@ -255,78 +255,78 @@
       </returns>
     </member>
     <member name="P:Windows.Storage.Provider.StorageProviderSyncRootInfo.HardlinkPolicy">
-      <summary>Die Richtlinie für feste Links des Synchronisierungsstamms.</summary>
-      <returns>Die definierte StorageProviderHardlinkPolicy.</returns>
+      <summary>Die hardlinkrichtlinie des Synchronisierungs Stamms.</summary>
+      <returns>Die definierte storageproviderhardlinkpolicy.</returns>
     </member>
     <member name="P:Windows.Storage.Provider.StorageProviderSyncRootInfo.HydrationPolicy">
-      <summary>Die Wiederaufnahmerichtlinie der Registrierung des Synchronisierungsstamms.</summary>
-      <returns>Ein Enumerationswert der Wiederaufnahmerichtlinie des Speicheranbieters.</returns>
+      <summary>Die Aktivierungs Richtlinie der Synchronisierungs Stamm Registrierung.</summary>
+      <returns>Ein Enumerationswert für eine Richtlinie für den Speicher Anbieter.</returns>
     </member>
     <member name="P:Windows.Storage.Provider.StorageProviderSyncRootInfo.HydrationPolicyModifier">
-      <summary>Der Modifizierer der Wiederaufnahmerichtlinie der Registrierung des Synchronisierungsstamms.</summary>
-      <returns>Ein Enumerationswert des Modifizierers der Wiederaufnahmerichtlinie des Speicheranbieters.</returns>
+      <summary>Der Bezeichner-richtlinienmodifizierer der Synchronisierungs Stamm Registrierung.</summary>
+      <returns>Ein-Enumerationswert für die Aktivierung von Speicheranbietern.</returns>
     </member>
     <member name="P:Windows.Storage.Provider.StorageProviderSyncRootInfo.IconResource">
-      <summary>Ein Pfad zu einer Symbolressource für den benutzerdefinierten Zustand einer Datei oder eines Ordners.</summary>
-      <returns>Der Pfad zur Symbolressource, z. B. „SyncProvider.dll,-100” oder „SyncProvider.dll,-101”</returns>
+      <summary>Ein Pfad zu einer Symbol Ressource für den benutzerdefinierten Zustand einer Datei oder eines Ordners.</summary>
+      <returns>Der Pfad zur Symbol Ressource, z. b. "SyncProvider. dll,-100" oder "SyncProvider. dll,-101".</returns>
     </member>
     <member name="P:Windows.Storage.Provider.StorageProviderSyncRootInfo.Id">
-      <summary>Ein Bezeichner für den Synchronisierungsstamm.</summary>
-      <returns>Ein Bezeichner in der Form: [Storage-Anbieter-ID]!</returns>
+      <summary>Ein Bezeichner für den Synchronisierungs Stamm.</summary>
+      <returns>Ein Bezeichner in der Form: [Speicher Anbieter-ID]! [Windows-SID]! [Konto-ID]</returns>
     </member>
     <member name="P:Windows.Storage.Provider.StorageProviderSyncRootInfo.InSyncPolicy">
-      <summary>Ermöglicht den Zugriff auf die Synchronisierungsrichtlinie für den Cloudspeicheranbieter.</summary>
-      <returns>Der Synchronisierungsrichtlinienwert.</returns>
+      <summary>Bietet Zugriff auf die Synchronisierungs Richtlinie für den cloudspeicheranbieter.</summary>
+      <returns>Der Wert der Synchronisierungs Richtlinie.</returns>
     </member>
     <member name="P:Windows.Storage.Provider.StorageProviderSyncRootInfo.Path">
-      <summary>Ein Speicherordner, der den Pfad zum Stamm des cloudbasierten Ordnersystems darstellt.</summary>
+      <summary>Ein Speicherordner, der den Pfad zum Stamm des cloudbasierten Ordner Systems darstellt.</summary>
       <returns>Ein Speicherordner.</returns>
     </member>
     <member name="P:Windows.Storage.Provider.StorageProviderSyncRootInfo.PopulationPolicy">
-      <summary>Die Auffüllungrichtlinie der Registrierung des Synchronisierungsstamms.</summary>
-      <returns>Ein Enumerationswert der Auffüllungsichtlinie.</returns>
+      <summary>Die auffüllungs Richtlinie für die Synchronisierungs Stamm Registrierung.</summary>
+      <returns>Enumerationsrichtlinienenumerationswert.</returns>
     </member>
     <member name="P:Windows.Storage.Provider.StorageProviderSyncRootInfo.ProtectionMode">
-      <summary>Der Schutzmodus der Synchronisierungsstammregistrierung.</summary>
-      <returns>Ein Enumerationswert des Schutzmodus.</returns>
+      <summary>Der Schutzmodus der Synchronisierungs Stamm Registrierung.</summary>
+      <returns>Ein Enumerationswert für den Schutzmodus.</returns>
     </member>
     <member name="P:Windows.Storage.Provider.StorageProviderSyncRootInfo.ProviderId">
-      <summary>Ruft eine GUID ab, die die ID des Speicheranbieters darstellt, oder legt sie fest.</summary>
-      <returns>Eine GUID, die die ID des Speicheranbieters darstellt.</returns>
+      <summary>Ruft eine GUID ab, die die ID des Speicher Anbieters darstellt, oder legt diese fest.</summary>
+      <returns>Eine GUID, die die ID des Speicher Anbieters darstellt.</returns>
     </member>
     <member name="P:Windows.Storage.Provider.StorageProviderSyncRootInfo.RecycleBinUri">
-      <summary>Ein URI für den Papierkorb des Cloudspeichers.</summary>
+      <summary>Ein URI zu einem cloudspeicher-Papierkorb.</summary>
       <returns>Der URI für den Papierkorb.</returns>
     </member>
     <member name="P:Windows.Storage.Provider.StorageProviderSyncRootInfo.ShowSiblingsAsGroup">
-      <summary>Zeigt den gleichgeordneten Synchronisierungsstamm an, der im Haupt-Synchronisierungstamm im Datei-Explorer aufgeführt ist.</summary>
-      <returns>**True**, wenn die gleichgeordneten Synchronisierungsstämme angezeigt werden, andernfalls **false**</returns>
+      <summary>Zeigt gleich geordnete Synchronisierungs Stämme an, die unter dem hauptsynchronisierungsstamm im Datei-Explorer aufgelistet sind.</summary>
+      <returns>* * True * * Wenn die gleich geordneten Synchronisierungs Stämme angezeigt werden, andernfalls * * false * *.</returns>
     </member>
     <member name="P:Windows.Storage.Provider.StorageProviderSyncRootInfo.StorageProviderItemPropertyDefinitions">
-      <summary>Ruft die StorageProviderItemPropertyDefinition-Informationen für einen Synchronisierungsstamm ab.</summary>
+      <summary>Ruft die storageprovideritempropertydefinition-Informationen für einen Synchronisierungs Stamm ab.</summary>
       <returns>
       </returns>
     </member>
     <member name="P:Windows.Storage.Provider.StorageProviderSyncRootInfo.Version">
-      <summary>Die Versionsnummer des Synchronisierungsstamms.</summary>
-      <returns>Ein Zeichenfolgenwert für die Versionsnummer. Bspw. „1.0”</returns>
+      <summary>Die Versionsnummer des Synchronisierungs Stamms.</summary>
+      <returns>Ein Zeichen folgen Wert für die Versionsnummer. Beispiel: "1,0"</returns>
     </member>
     <member name="T:Windows.Storage.Provider.StorageProviderSyncRootManager">
-      <summary>Bietet die Möglichkeit, den Synchronisierungsstamm eines Cloudspeicheranbieters mit dem Betriebssystem zu registrieren und diese Registrierung aufzuheben.</summary>
+      <summary>Bietet die Möglichkeit, einen cloudspeicheranbieter-Synchronisierungs Stamm beim Betriebssystem zu registrieren oder die Registrierung aufzuheben.</summary>
     </member>
     <member name="M:Windows.Storage.Provider.StorageProviderSyncRootManager.GetCurrentSyncRoots">
-      <summary>Ruft alle derzeit registrierten Synchronisierungsstämme ab.</summary>
-      <returns>Eine Auflistung der derzeit registrierten Synchronisierungsstämme.</returns>
+      <summary>Ruft alle aktuell registrierten Synchronisierungs Stämme ab.</summary>
+      <returns>Eine Auflistung der derzeit registrierten Synchronisierungs Stämme.</returns>
     </member>
     <member name="M:Windows.Storage.Provider.StorageProviderSyncRootManager.GetSyncRootInformationForFolder(Windows.Storage.IStorageFolder)">
-      <summary>Gibt die Eigenschaften des Synchronisierungsstamms eines Cloudspeicheranbieters für einen angegebenen Speicherordner zurück.</summary>
-      <param name="folder">Der Speicherordner für den Synchronisierungsstamm.</param>
-      <returns>Die Eigenschaften des Synchronisierungsstamms eines Cloudspeicheranbieters für den angegebenen Speicherordner.</returns>
+      <summary>Gibt die Eigenschaften des Synchronisierungs Stamms eines cloudspeicheranbieters bei Angabe eines Speicher Ordners zurück.</summary>
+      <param name="folder">Der Speicherordner für den Synchronisierungs Stamm.</param>
+      <returns>Die Eigenschaften des Synchronisierungs Stamms eines cloudspeicheranbieters für den angegebenen Speicherordner.</returns>
     </member>
     <member name="M:Windows.Storage.Provider.StorageProviderSyncRootManager.GetSyncRootInformationForId(System.String)">
-      <summary>Gibt die Eigenschaften des Synchronisierungsstamms eines Cloudspeicheranbieters für eine angegebene Synchronisierungsstamm-ID zurück.</summary>
-      <param name="id">Ein Zeichenfolgenwert der Synchronisierungsstamm-ID.</param>
-      <returns>Die Eigenschaften für den angegebenen Synchronisierungsstamm.</returns>
+      <summary>Gibt die Eigenschaften des Synchronisierungs Stamms eines cloudspeicheranbieters zurück, wenn eine Synchronisierungs Stamm-ID angegeben ist.</summary>
+      <param name="id">Ein Zeichen folgen Wert der Synchronisierungs Stamm-ID.</param>
+      <returns>Die Eigenschaften für den angegebenen Synchronisierungs Stamm.</returns>
     </member>
     <member name="M:Windows.Storage.Provider.StorageProviderSyncRootManager.IsSupported">
       <summary>
@@ -335,24 +335,24 @@
       </returns>
     </member>
     <member name="M:Windows.Storage.Provider.StorageProviderSyncRootManager.Register(Windows.Storage.Provider.StorageProviderSyncRootInfo)">
-      <summary>Registriert einen Synchronisierungsstamm mit dem Betriebssystem.</summary>
-      <param name="syncRootInformation">Der zu registrierende Synchronisierungsstamm.</param>
+      <summary>Registriert einen Synchronisierungs Stamm beim Betriebssystem.</summary>
+      <param name="syncRootInformation">Der zu Registrier-Synchronisierungs Stamm.</param>
     </member>
     <member name="M:Windows.Storage.Provider.StorageProviderSyncRootManager.Unregister(System.String)">
-      <summary>Hebt die Registrierung eines Synchronisierungsstamms mit dem Betriebssystem auf.</summary>
-      <param name="id">Die ID des Synchronisierungsstamms, dessen Registrierung aufgehoben werden soll.</param>
+      <summary>Hebt die Registrierung eines Synchronisierungs Stamms beim Betriebssystem auf.</summary>
+      <param name="id">Die ID des Synchronisierungs Stamms, dessen Registrierung aufgehoben werden soll.</param>
     </member>
     <member name="T:Windows.Storage.Provider.StorageProviderUriSourceStatus">
-      <summary>Enumeration des Status einer Speicheranbieter-URI.</summary>
+      <summary>Enumeration des Status eines Speicher Anbieter-URIs.</summary>
     </member>
     <member name="F:Windows.Storage.Provider.StorageProviderUriSourceStatus.FileNotFound">
-      <summary>Die URI wird vom Synchronisierungsanbieter nicht erkannt.</summary>
+      <summary>Der URI wird vom Synchronisierungs Anbieter nicht erkannt.</summary>
     </member>
     <member name="F:Windows.Storage.Provider.StorageProviderUriSourceStatus.NoSyncRoot">
-      <summary>Es ist kein Synchronisierungsstamm mit der URI-Quelle registriert.</summary>
+      <summary>Bei der URI-Quelle ist kein Synchronisierungs Stamm registriert.</summary>
     </member>
     <member name="F:Windows.Storage.Provider.StorageProviderUriSourceStatus.Success">
-      <summary>Die Speicheranbieter-ID ist vorhanden.</summary>
+      <summary>Die Speicher Anbieter-ID ist vorhanden.</summary>
     </member>
   </members>
 </doc>

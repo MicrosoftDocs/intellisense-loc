@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>Windows. ai. machinelearning. Preview. machinelearningpreviewcontract</name>
+  </assembly>
+  <members>
+    <member name="T:Windows.AI.MachineLearning.Preview.FeatureElementKindPreview">
+      <summary>* * Veraltet. * * definiert die Liste der unterstützten Funktions Datentypen.</summary>
+      <deprecated type="deprecate">Verwenden Sie tensorkind anstelle von featureelementkindpreview. Weitere Informationen finden Sie unter msdn.</deprecated>
+    </member>
+    <member name="F:Windows.AI.MachineLearning.Preview.FeatureElementKindPreview.Boolean">
+      <summary>Das Funktionselement ist vom Typ "Boolean".</summary>
+    </member>
+    <member name="F:Windows.AI.MachineLearning.Preview.FeatureElementKindPreview.Complex128">
+      <summary>Das Funktionselement ist vom Typ Complex128.</summary>
+    </member>
+    <member name="F:Windows.AI.MachineLearning.Preview.FeatureElementKindPreview.Complex64">
+      <summary>Das Funktionselement ist vom Typ Complex64.</summary>
+    </member>
+    <member name="F:Windows.AI.MachineLearning.Preview.FeatureElementKindPreview.Double">
+      <summary>Das Funktionselement ist vom Typ "Double".</summary>
+    </member>
+    <member name="F:Windows.AI.MachineLearning.Preview.FeatureElementKindPreview.Float">
+      <summary>Das Funktionselement ist vom Typ "float".</summary>
+    </member>
+    <member name="F:Windows.AI.MachineLearning.Preview.FeatureElementKindPreview.Float16">
+      <summary>Das Funktionselement ist vom Typ Float16.</summary>
+    </member>
+    <member name="F:Windows.AI.MachineLearning.Preview.FeatureElementKindPreview.Int16">
+      <summary>Das Funktionselement ist vom Typ Int16.</summary>
+    </member>
+    <member name="F:Windows.AI.MachineLearning.Preview.FeatureElementKindPreview.Int32">
+      <summary>Das Funktionselement ist vom Typ Int32.</summary>
+    </member>
+    <member name="F:Windows.AI.MachineLearning.Preview.FeatureElementKindPreview.Int64">
+      <summary>Das Funktionselement ist vom Typ Int64.</summary>
+    </member>
+    <member name="F:Windows.AI.MachineLearning.Preview.FeatureElementKindPreview.Int8">
+      <summary>Das Funktionselement ist vom Typ int8.</summary>
+    </member>
+    <member name="F:Windows.AI.MachineLearning.Preview.FeatureElementKindPreview.String">
+      <summary>Das Funktionselement ist vom Typ "String".</summary>
+    </member>
+    <member name="F:Windows.AI.MachineLearning.Preview.FeatureElementKindPreview.UInt16">
+      <summary>Das Funktionselement ist vom Typ UInt16.</summary>
+    </member>
+    <member name="F:Windows.AI.MachineLearning.Preview.FeatureElementKindPreview.UInt32">
+      <summary>Das Funktionselement ist vom Typ UInt32.</summary>
+    </member>
+    <member name="F:Windows.AI.MachineLearning.Preview.FeatureElementKindPreview.UInt64">
+      <summary>Das Funktionselement ist vom Typ UInt64.</summary>
+    </member>
+    <member name="F:Windows.AI.MachineLearning.Preview.FeatureElementKindPreview.UInt8">
+      <summary>Das Funktionselement ist vom Typ UInt8.</summary>
+    </member>
+    <member name="F:Windows.AI.MachineLearning.Preview.FeatureElementKindPreview.Undefined">
+      <summary>
+      </summary>
+    </member>
+    <member name="T:Windows.AI.MachineLearning.Preview.ILearningModelVariableDescriptorPreview">
+      <summary>* * Veraltet. * * stellt die Variablen Deskriptorinformationen dar.</summary>
+      <deprecated type="deprecate">Verwenden Sie ilearningmodelfeaturedescriptor anstelle von ilearningmodelvariabledescriptorpreview. Weitere Informationen finden Sie unter msdn.</deprecated>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.Preview.ILearningModelVariableDescriptorPreview.Description">
+      <summary>* * Veraltet. * * Ruft die Beschreibung der Variablen ab.</summary>
+      <returns>Die Beschreibung der Variablen.</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.Preview.ILearningModelVariableDescriptorPreview.IsRequired">
+      <summary>* * Veraltet. * * Ruft ab, ob die Variable erforderlich oder optional ist.</summary>
+      <returns>True, wenn die Variable erforderlich ist. andernfalls false.</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.Preview.ILearningModelVariableDescriptorPreview.ModelFeatureKind">
+      <summary>* * Veraltet. * * Ruft den Datentyp der Variablen ab.</summary>
+      <returns>Der Datentyp der Variablen.</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.Preview.ILearningModelVariableDescriptorPreview.Name">
+      <summary>* * Veraltet. * * Ruft den Namen der Variablen ab.</summary>
+      <returns>Der Name der Variablen.</returns>
+    </member>
+    <member name="T:Windows.AI.MachineLearning.Preview.ImageVariableDescriptorPreview">
+      <summary>* * Veraltet. * * stellt die Bild Deskriptorinformationen dar.</summary>
+      <deprecated type="deprecate">Verwenden Sie imagefeaturedescriptor anstelle von imagevariabledescriptorpreview. Weitere Informationen finden Sie unter msdn.</deprecated>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.Preview.ImageVariableDescriptorPreview.BitmapPixelFormat">
+      <summary>* * Veraltet. * * Ruft das Pixel Format des Bilds ab.</summary>
+      <returns>Das Pixel Format des Bilds.</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.Preview.ImageVariableDescriptorPreview.Description">
+      <summary>* * Veraltet. * * Ruft die Beschreibung der Bild Variablen ab.</summary>
+      <returns>Die Beschreibung der Bild Variablen.</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.Preview.ImageVariableDescriptorPreview.Height">
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.Preview.ImageVariableDescriptorPreview.IsRequired">
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.Preview.ImageVariableDescriptorPreview.ModelFeatureKind">
+      <summary>* * Veraltet. * * Ruft den Datentyp der Variablen ab.</summary>
+      <returns>Der Datentyp der Variablen.</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.Preview.ImageVariableDescriptorPreview.Name">
+      <summary>* * Veraltet. * * Ruft den Namen der Bild Variablen ab.</summary>
+      <returns>Der Name der Bild Variablen.</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.Preview.ImageVariableDescriptorPreview.Width">
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="T:Windows.AI.MachineLearning.Preview.InferencingOptionsPreview">
+      <summary>* * Veraltet. * * stellt die Inferenz Optionen zum Steuern der Auswertung eines Modells dar.</summary>
+      <deprecated type="deprecate">Verwenden Sie learningmodelsession anstelle von inferencingoptioningview. Weitere Informationen finden Sie unter msdn.</deprecated>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.Preview.InferencingOptionsPreview.IsTracingEnabled">
+      <summary>* * Veraltet. * * Ruft ab oder legt fest, ob die Ablauf Verfolgung während der Modell Auswertung aktiviert ist.</summary>
+      <returns>True, wenn die Ablauf Verfolgung aktiviert ist. andernfalls false. Der Standardwert ist false.</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.Preview.InferencingOptionsPreview.MaxBatchSize">
+      <summary>* * Veraltet. * * Ruft die maximale Batch Größe für die Modell Auswertung ab oder legt Sie fest.</summary>
+      <returns>Die maximale Batch Größe. Die Vorschau-API unterstützt nur die Batch Verarbeitungs Größe von 1.</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.Preview.InferencingOptionsPreview.MinimizeMemoryAllocation">
+      <summary>* * Veraltet. * * Ruft ab oder legt fest, ob die Speicher Belegung nach der Modell Auswertung minimiert werden soll.</summary>
+      <returns>True, wenn die Speicher Belegung während der Auswertung minimiert wird. andernfalls false. Der Standardwert ist false.</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.Preview.InferencingOptionsPreview.PreferredDeviceKind">
+      <summary>* * Veraltet. * * Ruft das bevorzugte Gerät ab, für das die Auswertung ausgeführt wird, oder legt es fest.</summary>
+      <returns>Das bevorzugte Gerät. Der Standardwert ist learningdeviceany.</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.Preview.InferencingOptionsPreview.ReclaimMemoryAfterEvaluation">
+      <summary>* * Veraltet. * * Ruft ab oder legt fest, ob zugeordneter Arbeitsspeicher nach der Modell Auswertung freigegeben werden soll.</summary>
+      <returns>True, wenn nach der Auswertung zugewiesener Speicher freigegeben wird. andernfalls false. Der Standardwert ist false.</returns>
+    </member>
+    <member name="T:Windows.AI.MachineLearning.Preview.LearningModelBindingPreview">
+      <summary>* * Veraltet. * * stellt die Zuordnungen zwischen Modell Eingaben und Variablen Instanzen dar.</summary>
+      <deprecated type="deprecate">Verwenden Sie learningmodelbinding anstelle von learningmodelbindingpreview. Weitere Informationen finden Sie unter msdn.</deprecated>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.Preview.LearningModelBindingPreview.#ctor(Windows.AI.MachineLearning.Preview.LearningModelPreview)">
+      <summary>
+      </summary>
+      <deprecated type="deprecate">Verwenden Sie ilearningmodelbindingfactory anstelle von ilearningmodelbindingpreviewfactory. Weitere Informationen finden Sie unter msdn.</deprecated>
+      <param name="model">
+      </param>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.Preview.LearningModelBindingPreview.Size">
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.Preview.LearningModelBindingPreview.Bind(System.String,System.Object)">
+      <summary>* * Veraltet. * * bindet eine einzelne Eingabe-oder Ausgabefunktion an eine definierte Variable.</summary>
+      <deprecated type="deprecate">Verwenden Sie ilearningmodelbinding anstelle von ilearningmodelbindingpreview. Weitere Informationen finden Sie unter msdn.</deprecated>
+      <param name="name">Der Name der Eingabe-/Ausgabefunktion.</param>
+      <param name="value">Der Wert der Eingabe-/Ausgabefunktion.</param>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.Preview.LearningModelBindingPreview.Bind(System.String,System.Object,Windows.Foundation.Collections.IPropertySet)">
+      <summary>
+      </summary>
+      <deprecated type="deprecate">Verwenden Sie ilearningmodelbinding anstelle von ilearningmodelbindingpreview. Weitere Informationen finden Sie unter msdn.</deprecated>
+      <param name="name">
+      </param>
+      <param name="value">
+      </param>
+      <param name="metadata">
+      </param>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.Preview.LearningModelBindingPreview.Clear">
+      <summary>* * Veraltet. * * löscht alle gebundenen Variablen.</summary>
+      <deprecated type="deprecate">Verwenden Sie ilearningmodelbinding anstelle von ilearningmodelbindingpreview. Weitere Informationen finden Sie unter msdn.</deprecated>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.Preview.LearningModelBindingPreview.First">
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.Preview.LearningModelBindingPreview.HasKey(System.String)">
+      <summary>
+      </summary>
+      <param name="key">
+      </param>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.Preview.LearningModelBindingPreview.Lookup(System.String)">
+      <summary>
+      </summary>
+      <param name="key">
+      </param>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.Preview.LearningModelBindingPreview.Split(Windows.Foundation.Collections.IMapView{System.String,System.Object}@,Windows.Foundation.Collections.IMapView{System.String,System.Object}@)">
+      <summary>
+      </summary>
+      <param name="first">
+      </param>
+      <param name="second">
+      </param>
+    </member>
+    <member name="T:Windows.AI.MachineLearning.Preview.LearningModelDescriptionPreview">
+      <summary>* * Veraltet. * * stellt die Metadaten und Eigenschafts Beschreibungen für das bereitgestellte Modell dar.</summary>
+      <deprecated type="deprecate">Verwenden Sie learningmodel anstelle von learningmodeldescriptionpreview. Weitere Informationen finden Sie unter msdn.</deprecated>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.Preview.LearningModelDescriptionPreview.Author">
+      <summary>* * Veraltet. * * Ruft die Autoreninformationen aus dem Modell ab.</summary>
+      <returns>Die Autor Informationen aus dem Modell.</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.Preview.LearningModelDescriptionPreview.Description">
+      <summary>* * Veraltet. * * Ruft die benutzerdefinierte Beschreibung des Modells ab.</summary>
+      <returns>Die benutzerdefinierte Beschreibung des Modells.</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.Preview.LearningModelDescriptionPreview.Domain">
+      <summary>* * Veraltet. * * Ruft die Domänen Informationen für das Modell ab.</summary>
+      <returns>Die Domänen Informationen für das Modell.</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.Preview.LearningModelDescriptionPreview.InputFeatures">
+      <summary>* * Veraltet. * * Ruft die Eingabe Beschreibungen für das Modell ab.</summary>
+      <returns>Die Eingabe Beschreibungen für das Modell, geordnet nach Name der Eingabe.</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.Preview.LearningModelDescriptionPreview.Metadata">
+      <summary>* * Veraltet. * * Ruft die Metadaten aus dem Modell ab.</summary>
+      <returns>Die Metadaten für das bereitgestellte Modell.</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.Preview.LearningModelDescriptionPreview.Name">
+      <summary>* * Veraltet. * * Ruft den Namen des Modells ab.</summary>
+      <returns>Der Name des Modells.</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.Preview.LearningModelDescriptionPreview.OutputFeatures">
+      <summary>* * Veraltet. * * Ruft die Ausgabe Beschreibungen des Modells ab.</summary>
+      <returns>Die Ausgabe Beschreibungen für das Modell, geordnet nach dem Namen der Ausgabe.</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.Preview.LearningModelDescriptionPreview.Version">
+      <summary>* * Veraltet. * * Ruft die Versionsinformationen des Modells ab.</summary>
+      <returns>Die Versionsinformationen des Modells.</returns>
+    </member>
+    <member name="T:Windows.AI.MachineLearning.Preview.LearningModelDeviceKindPreview">
+      <summary>* * Veraltet. * * definiert die Liste der Konstanten, die die von Windows Machine Learning unterstützten Geräte Arten darstellen.</summary>
+      <deprecated type="deprecate">Verwenden Sie learningmodeldevicekind anstelle von learningmodeldevicekindpreview. Weitere Informationen finden Sie unter msdn.</deprecated>
+    </member>
+    <member name="F:Windows.AI.MachineLearning.Preview.LearningModelDeviceKindPreview.LearningDeviceAny">
+      <summary>Der Wert für "Debug". Alle Geräte.</summary>
+    </member>
+    <member name="F:Windows.AI.MachineLearning.Preview.LearningModelDeviceKindPreview.LearningDeviceCpu">
+      <summary>Ein zentraler Prozessor.</summary>
+    </member>
+    <member name="F:Windows.AI.MachineLearning.Preview.LearningModelDeviceKindPreview.LearningDeviceDsp">
+      <summary>Ein digitales Signal proccesor.</summary>
+    </member>
+    <member name="F:Windows.AI.MachineLearning.Preview.LearningModelDeviceKindPreview.LearningDeviceFpga">
+      <summary>Ein Feld programmierbares Gate-Array.</summary>
+    </member>
+    <member name="F:Windows.AI.MachineLearning.Preview.LearningModelDeviceKindPreview.LearningDeviceGpu">
+      <summary>Ein Grafikprozessor.</summary>
+    </member>
+    <member name="F:Windows.AI.MachineLearning.Preview.LearningModelDeviceKindPreview.LearningDeviceNpu">
+      <summary>Ein neuronaler Prozessor.</summary>
+    </member>
+    <member name="T:Windows.AI.MachineLearning.Preview.LearningModelEvaluationResultPreview">
+      <summary>* * Veraltet. * * Ruft den Satz von Ausgabe Vorhersagen und zugehörige Wahrscheinlichkeiten ab, die mit der Modell Auswertung korreliert sind.</summary>
+      <deprecated type="deprecate">Verwenden Sie learningmodelevaluationresult anstelle von learningmodelevaluationresultpreview. Weitere Informationen finden Sie unter msdn.</deprecated>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.Preview.LearningModelEvaluationResultPreview.CorrelationId">
+      <summary>* * Veraltet. * * Ruft den Wert ab, um die Ausgabe Ergebnisse mit dem Auswertungs Befehl zu korrelieren.</summary>
+      <returns>Der Wert, mit dem die Ausgabe Ergebnisse mit dem Auswertungs Befehl korreliert werden.</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.Preview.LearningModelEvaluationResultPreview.Outputs">
+      <summary>* * Veraltet. * * Ruft den Satz von Funktionen ab, der die Ausgabe Vorhersage zusammen mit Wahrscheinlichkeiten darstellt.</summary>
+      <returns>Der Satz von Features, der die Ausgabe Vorhersage und Wahrscheinlichkeiten darstellt.</returns>
+    </member>
+    <member name="T:Windows.AI.MachineLearning.Preview.LearningModelFeatureKindPreview">
+      <summary>* * Veraltet. * * definiert die Liste der Datentypen für ein Modell Feature.</summary>
+      <deprecated type="deprecate">Verwenden Sie learningmodelfeaturekind anstelle von learningmodelfeaturekindpreview. Weitere Informationen finden Sie unter msdn.</deprecated>
+    </member>
+    <member name="F:Windows.AI.MachineLearning.Preview.LearningModelFeatureKindPreview.Image">
+      <summary>Der Funktionstyp ist ein Bild.</summary>
+    </member>
+    <member name="F:Windows.AI.MachineLearning.Preview.LearningModelFeatureKindPreview.Map">
+      <summary>Der Funktionstyp ist eine Karte.</summary>
+    </member>
+    <member name="F:Windows.AI.MachineLearning.Preview.LearningModelFeatureKindPreview.Sequence">
+      <summary>Der Funktionstyp ist eine Sequenz.</summary>
+    </member>
+    <member name="F:Windows.AI.MachineLearning.Preview.LearningModelFeatureKindPreview.Tensor">
+      <summary>Der Funktionstyp ist ein Tensor.</summary>
+    </member>
+    <member name="F:Windows.AI.MachineLearning.Preview.LearningModelFeatureKindPreview.Undefined">
+      <summary>Der Funktionstyp ist nicht definiert.</summary>
+    </member>
+    <member name="T:Windows.AI.MachineLearning.Preview.LearningModelPreview">
+      <summary>* * Veraltet. * * stellt ein Machine Learning-Modell dar.</summary>
+      <deprecated type="deprecate">Verwenden Sie learningmodel anstelle von learningmodelpreview. Weitere Informationen finden Sie unter msdn.</deprecated>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.Preview.LearningModelPreview.Description">
+      <summary>* * Veraltet. * * Ruft die beschreibenden Metadaten für das trainierte Machine Learning-Modell ab.</summary>
+      <returns>Die beschreibenden Metadaten für das Machine Learning-Modell.</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.Preview.LearningModelPreview.InferencingOptions">
+      <summary>* * Veraltet. * * Ruft die abherschluss Optionen für die Auswertung eines Modells ab oder legt Sie fest.</summary>
+      <returns>Die Rückschluss Optionen für die Auswertung eines Modells.</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.Preview.LearningModelPreview.EvaluateAsync(Windows.AI.MachineLearning.Preview.LearningModelBindingPreview,System.String)">
+      <summary>
+      </summary>
+      <deprecated type="deprecate">Verwenden Sie ilearningmodel anstelle von ilearningmodelpreview. Weitere Informationen finden Sie unter msdn.</deprecated>
+      <param name="binding">
+      </param>
+      <param name="correlationId">
+      </param>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.Preview.LearningModelPreview.EvaluateFeaturesAsync(Windows.Foundation.Collections.IMap{System.String,System.Object},System.String)">
+      <summary>* * Veraltet. * * wertet Namen Variablen Instanzen asynchron als Eingaben und Ausgaben für das Modell aus.</summary>
+      <deprecated type="deprecate">Verwenden Sie ilearningmodel anstelle von ilearningmodelpreview. Weitere Informationen finden Sie unter msdn.</deprecated>
+      <param name="features">Die Funktionen, die als Eingaben gebunden werden sollen.</param>
+      <param name="correlationId">Der Wert, mit dem die Auswertung mit den Ausgabe Ergebnissen korreliert wird.</param>
+      <returns>Das Auswertungs Ergebnis.</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.Preview.LearningModelPreview.LoadModelFromStorageFileAsync(Windows.Storage.IStorageFile)">
+      <summary>* * Veraltet. * * asynchron lädt ein Modell aus dem Dateispeicher.</summary>
+      <deprecated type="deprecate">Verwenden Sie ilearningmodelstatics anstelle von ilearningmodelpreviewstatics. Weitere Informationen finden Sie unter msdn.</deprecated>
+      <param name="modelFile">Der Speicherort der Modelldatei.</param>
+      <returns>Gibt eine learningmodelpreview zurück.</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.Preview.LearningModelPreview.LoadModelFromStreamAsync(Windows.Storage.Streams.IRandomAccessStreamReference)">
+      <summary>* * Veraltet. * * asynchron lädt ein Modell aus einem bereitgestellten Stream.</summary>
+      <deprecated type="deprecate">Verwenden Sie ilearningmodelstatics anstelle von ilearningmodelpreviewstatics. Weitere Informationen finden Sie unter msdn.</deprecated>
+      <param name="modelStream">Der Dateistream für das Modell.</param>
+      <returns>Gibt eine learningmodelpreview zurück.</returns>
+    </member>
+    <member name="T:Windows.AI.MachineLearning.Preview.LearningModelVariableDescriptorPreview">
+      <summary>
+      </summary>
+      <deprecated type="deprecate">Verwenden Sie ilearningmodelfeaturedescriptor anstelle von learningmodelvariabledescriptorpreview. Weitere Informationen finden Sie unter msdn.</deprecated>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.Preview.LearningModelVariableDescriptorPreview.Description">
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.Preview.LearningModelVariableDescriptorPreview.IsRequired">
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.Preview.LearningModelVariableDescriptorPreview.ModelFeatureKind">
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.Preview.LearningModelVariableDescriptorPreview.Name">
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="T:Windows.AI.MachineLearning.Preview.MachineLearningPreviewContract">
+      <summary>
+      </summary>
+    </member>
+    <member name="T:Windows.AI.MachineLearning.Preview.MapVariableDescriptorPreview">
+      <summary>* * Veraltet. * * stellt die Deskriptorinformationen der Karten Variablen dar.</summary>
+      <deprecated type="deprecate">Verwenden Sie mapfeaturedescriptor anstelle von mapvariabledescriptorpreview. Weitere Informationen finden Sie unter msdn.</deprecated>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.Preview.MapVariableDescriptorPreview.Description">
+      <summary>* * Veraltet. * * Ruft die Beschreibungs Karten Variable ab.</summary>
+      <returns>Die Beschreibung der Karten Variablen.</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.Preview.MapVariableDescriptorPreview.Fields">
+      <summary>* * Veraltet. * * Ruft den Datentyp des Felds der Karten Variablen ab.</summary>
+      <returns>Der Datentyp des Felds der Karten Variablen.</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.Preview.MapVariableDescriptorPreview.IsRequired">
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.Preview.MapVariableDescriptorPreview.KeyKind">
+      <summary>* * Veraltet. * * Ruft den Datentyp des Schlüssels für die Karten Variable ab.</summary>
+      <returns>Der Datentyp des Schlüssels.</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.Preview.MapVariableDescriptorPreview.ModelFeatureKind">
+      <summary>* * Veraltet. * * Ruft den Datentyp der Variablen ab.</summary>
+      <returns>Der Datentyp der Variablen.</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.Preview.MapVariableDescriptorPreview.Name">
+      <summary>* * Veraltet. * * Ruft den Namen der Karten Variablen ab.</summary>
+      <returns>Der Name der Karten Variablen. Dies muss in allen Variablen im Modell eindeutig sein.</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.Preview.MapVariableDescriptorPreview.ValidIntegerKeys">
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.Preview.MapVariableDescriptorPreview.ValidStringKeys">
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="T:Windows.AI.MachineLearning.Preview.SequenceVariableDescriptorPreview">
+      <summary>* * Veraltet. * * stellt die Deskriptorinformationen einer Sequenz Variablen dar.</summary>
+      <deprecated type="deprecate">Verwenden Sie sequencefeaturedescriptor anstelle von sequencevariabledescriptorpreview. Weitere Informationen finden Sie unter msdn.</deprecated>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.Preview.SequenceVariableDescriptorPreview.Description">
+      <summary>* * Veraltet. * * Ruft die Beschreibung der Sequenz Variablen ab.</summary>
+      <returns>Die Beschreibung der Sequenz Variablen.</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.Preview.SequenceVariableDescriptorPreview.ElementType">
+      <summary>* * Veraltet. * * Ruft den Typ der Sequenz Variablen ab.</summary>
+      <returns>Der Typ der Sequenz Variablen.</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.Preview.SequenceVariableDescriptorPreview.IsRequired">
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.Preview.SequenceVariableDescriptorPreview.ModelFeatureKind">
+      <summary>* * Veraltet. * * Ruft den Datentyp der Variablen ab.</summary>
+      <returns>Der Datentyp der Variablen.</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.Preview.SequenceVariableDescriptorPreview.Name">
+      <summary>* * Veraltet. * * Ruft den Namen der Sequenz Variablen ab.</summary>
+      <returns>Der Name der Sequenz Variablen. Dies muss in allen Variablen im Modell eindeutig sein.</returns>
+    </member>
+    <member name="T:Windows.AI.MachineLearning.Preview.TensorVariableDescriptorPreview">
+      <summary>* * Veraltet. * * stellt die Deskriptorinformationen einer Tensor-Variablen dar.</summary>
+      <deprecated type="deprecate">Verwenden Sie tensorfeaturedescriptor anstelle von tensorvariabledescriptorpreview. Weitere Informationen finden Sie unter msdn.</deprecated>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.Preview.TensorVariableDescriptorPreview.DataType">
+      <summary>* * Veraltet. * * Ruft den Typ der tensorflow-Daten ab.</summary>
+      <returns>Der Typ der tensorflow-Daten.</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.Preview.TensorVariableDescriptorPreview.Description">
+      <summary>* * Veraltet. * * Ruft die Beschreibung des Mandanten ab.</summary>
+      <returns>Die Beschreibung des Mandanten.</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.Preview.TensorVariableDescriptorPreview.IsRequired">
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.Preview.TensorVariableDescriptorPreview.ModelFeatureKind">
+      <summary>* * Veraltet. * * Ruft den Datentyp der Variablen ab.</summary>
+      <returns>Der Datentyp der Variablen.</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.Preview.TensorVariableDescriptorPreview.Name">
+      <summary>* * Veraltet. * * Ruft den Namen des Mandanten ab.</summary>
+      <returns>Der Name des Mandanten. Dies muss in allen Variablen im Modell eindeutig sein.</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.Preview.TensorVariableDescriptorPreview.Shape">
+      <summary>* * Veraltet. * * Ruft die n-dimensionale Form des Mandanten ab.</summary>
+      <returns>Die n-dimensionale Form des Mandanten.</returns>
+    </member>
+  </members>
+</doc>
