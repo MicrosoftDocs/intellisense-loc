@@ -1,30 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <doc>
   <assembly>
-    <name>Windows.AI.MachineLearning.MachineLearningContract</name>
+    <name>Windows. AI. MachineLearning. MachineLearningContract</name>
   </assembly>
   <members>
     <member name="T:Windows.AI.MachineLearning.ILearningModelFeatureDescriptor">
-      <summary>Décrit les propriétés communes à toutes les fonctionnalités.</summary>
+      <summary>Décrit les propriétés communes de toutes les fonctionnalités.</summary>
     </member>
     <member name="P:Windows.AI.MachineLearning.ILearningModelFeatureDescriptor.Description">
-      <summary>Une description de l'utilité de cette fonctionnalité dans le modèle.</summary>
-      <returns>Une description de l'utilité de cette fonctionnalité dans le modèle.</returns>
+      <summary>Description de l’utilisation de cette fonctionnalité dans le modèle.</summary>
+      <returns>Description de l’utilisation de cette fonctionnalité dans le modèle.</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.ILearningModelFeatureDescriptor.IsRequired">
-      <summary>Si la valeur est « true », vous devez lier une valeur à cette fonctionnalité avant d'appeler LearningModelSession.Evaluate.</summary>
-      <returns>Si la valeur est « true », vous devez lier une valeur à cette fonctionnalité avant d'appeler **LearningModelSession.Evaluate**.</returns>
+      <summary>Si la valeur est true, vous devez lier une valeur à cette fonctionnalité avant d’appeler LearningModelSession. Evaluate.</summary>
+      <returns>Si la valeur est true, vous devez lier une valeur à cette fonctionnalité avant d’appeler * * LearningModelSession. Evaluate * *.</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.ILearningModelFeatureDescriptor.Kind">
-      <summary>Type de fonctionnalité : permet de savoir quelle classe dérivée utiliser.</summary>
-      <returns>Type de fonctionnalité : permet de savoir quelle classe dérivée utiliser.</returns>
+      <summary>Type de fonctionnalité : utilisez cette fonction pour connaître la classe dérivée à utiliser.</summary>
+      <returns>Type de fonctionnalité : utilisez cette fonction pour connaître la classe dérivée à utiliser.</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.ILearningModelFeatureDescriptor.Name">
-      <summary>Le nom que vous utilisez pour lier des valeurs à cette fonctionnalité.</summary>
-      <returns>Le nom que vous utilisez pour lier des valeurs à cette fonctionnalité.</returns>
+      <summary>Nom que vous utilisez pour lier des valeurs à cette fonctionnalité.</summary>
+      <returns>Nom que vous utilisez pour lier des valeurs à cette fonctionnalité.</returns>
     </member>
     <member name="T:Windows.AI.MachineLearning.ILearningModelFeatureValue">
-      <summary>Valeur instanciée d'une fonctionnalité.</summary>
+      <summary>Valeur instanciée pour une fonctionnalité.</summary>
     </member>
     <member name="P:Windows.AI.MachineLearning.ILearningModelFeatureValue.Kind">
       <summary>Type de données de la fonctionnalité.</summary>
@@ -35,42 +35,42 @@
       </summary>
     </member>
     <member name="T:Windows.AI.MachineLearning.ImageFeatureDescriptor">
-      <summary>Décrit les propriétés de l’image prévues par le modèle.</summary>
+      <summary>Décrit les propriétés de l’image attendue par le modèle.</summary>
     </member>
     <member name="P:Windows.AI.MachineLearning.ImageFeatureDescriptor.BitmapAlphaMode">
-      <summary>Spécifie le mode alpha attendu de l'image.</summary>
-      <returns>Mode alpha de l'image.</returns>
+      <summary>Spécifie le mode Alpha attendu de l’image.</summary>
+      <returns>Mode Alpha de l’image.</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.ImageFeatureDescriptor.BitmapPixelFormat">
-      <summary>Spécifie le format de pixel attendu (classement du canal, profondeur de couleur et type de données).</summary>
-      <returns>Format de pixel de l'image.</returns>
+      <summary>Spécifie le format de pixel attendu (classement de canal, profondeur de bit et type de données).</summary>
+      <returns>Format de pixel de l’image.</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.ImageFeatureDescriptor.Description">
-      <summary>Une description de l'utilité de cette fonctionnalité dans le modèle.</summary>
-      <returns>Une description de l'utilité de cette fonctionnalité dans le modèle.</returns>
+      <summary>Description de l’utilisation de cette fonctionnalité dans le modèle.</summary>
+      <returns>Description de l’utilisation de cette fonctionnalité dans le modèle.</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.ImageFeatureDescriptor.Height">
-      <summary>La hauteur de l'image attendue.</summary>
-      <returns>La hauteur de l'image attendue.</returns>
+      <summary>Hauteur d’image attendue.</summary>
+      <returns>Hauteur d’image attendue.</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.ImageFeatureDescriptor.IsRequired">
-      <summary>Si la valeur est « true », vous devez lier une valeur à cette fonctionnalité avant d'appeler LearningModelSession.Evaluate.</summary>
-      <returns>True si vous devez lier une valeur à cette fonctionnalité avant d'appeler LearningModelSession.Evaluate ; sinon, false.</returns>
+      <summary>Si la valeur est true, vous devez lier une valeur à cette fonctionnalité avant d’appeler LearningModelSession. Evaluate.</summary>
+      <returns>True si vous devez lier une valeur à cette fonctionnalité avant d’appeler LearningModelSession. Evaluate, sinon false.</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.ImageFeatureDescriptor.Kind">
-      <summary>Type de fonctionnalité : permet de savoir quelle classe dérivée utiliser.</summary>
+      <summary>Type de fonctionnalité : utilisez cette fonction pour connaître la classe dérivée à utiliser.</summary>
       <returns>Type de fonctionnalité.</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.ImageFeatureDescriptor.Name">
-      <summary>Le nom que vous utilisez pour lier des valeurs à cette fonctionnalité.</summary>
-      <returns>Le nom que vous utilisez pour lier des valeurs à cette fonctionnalité.</returns>
+      <summary>Nom que vous utilisez pour lier des valeurs à cette fonctionnalité.</summary>
+      <returns>Nom que vous utilisez pour lier des valeurs à cette fonctionnalité.</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.ImageFeatureDescriptor.Width">
-      <summary>La largeur de l'image attendue.</summary>
-      <returns>La largeur de l'image attendue.</returns>
+      <summary>Largeur de l’image attendue.</summary>
+      <returns>Largeur de l’image attendue.</returns>
     </member>
     <member name="T:Windows.AI.MachineLearning.ImageFeatureValue">
-      <summary>Décrit les propriétés de l’image utilisée pour passer à un modèle.</summary>
+      <summary>Décrit les propriétés de l’image utilisée pour passer dans un modèle.</summary>
     </member>
     <member name="P:Windows.AI.MachineLearning.ImageFeatureValue.Kind">
       <summary>
@@ -79,297 +79,297 @@
       </returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.ImageFeatureValue.VideoFrame">
-      <summary>Obtient la trame vidéo.</summary>
-      <returns>Trame vidéo.</returns>
+      <summary>Obtient le frame vidéo.</summary>
+      <returns>Image vidéo.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.ImageFeatureValue.CreateFromVideoFrame(Windows.Media.VideoFrame)">
-      <summary>Crée un objet ImageFeatureValue à l'aide de la trame vidéo donnée.</summary>
-      <param name="image">Trame vidéo à utiliser pour créer l'objet *ImageFeatureValue**.</param>
-      <returns>Objet **ImageFeatureValue** créé à partir de la trame vidéo donnée.</returns>
+      <summary>Crée un ImageFeatureValue à l’aide de la trame vidéo donnée.</summary>
+      <param name="image">Image vidéo à utiliser pour créer le * * ImageFeatureValue * *.</param>
+      <returns>* * ImageFeatureValue * * créé à partir de la trame vidéo donnée.</returns>
     </member>
     <member name="T:Windows.AI.MachineLearning.ITensor">
-      <summary>Les tenseurs sont des valeurs multidimensionnelles.</summary>
+      <summary>Les dizaines sont des valeurs multidimensionnelles.</summary>
     </member>
     <member name="P:Windows.AI.MachineLearning.ITensor.Shape">
       <summary>Retourne le nombre et la taille de chaque dimension.</summary>
       <returns>Nombre et taille de chaque dimension du tenseur.</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.ITensor.TensorKind">
-      <summary>Retourne le type de données du tenseur.</summary>
-      <returns>Type de données du tenseur.</returns>
+      <summary>Retourne le type de données de tenseur.</summary>
+      <returns>Type de données de tenseur.</returns>
     </member>
     <member name="T:Windows.AI.MachineLearning.LearningModel">
-      <summary>Représente un modèle Machine Learning entraîné.</summary>
+      <summary>Représente un modèle de Machine Learning formé.</summary>
     </member>
     <member name="P:Windows.AI.MachineLearning.LearningModel.Author">
-      <summary>Le nom de l'auteur du modèle.</summary>
-      <returns>Le nom de l'auteur du modèle.</returns>
+      <summary>Nom de l’auteur du modèle.</summary>
+      <returns>Nom de l’auteur du modèle.</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.LearningModel.Description">
-      <summary>Une description du modèle.</summary>
-      <returns>Une description du modèle.</returns>
+      <summary>Description du modèle.</summary>
+      <returns>Description du modèle.</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.LearningModel.Domain">
-      <summary>Le domaine du modèle.</summary>
-      <returns>Le domaine du modèle.</returns>
+      <summary>Domaine du modèle.</summary>
+      <returns>Domaine du modèle.</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.LearningModel.InputFeatures">
-      <summary>Une liste des fonctionnalités de saisie du modèle.</summary>
-      <returns>Une liste des fonctionnalités de saisie du modèle.</returns>
+      <summary>Liste des fonctionnalités d’entrée du modèle.</summary>
+      <returns>Liste des fonctionnalités d’entrée du modèle.</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.LearningModel.Metadata">
-      <summary>Les métadonnées &lt;string,string&gt; brutes du modèle ONNX.</summary>
-      <returns>Les métadonnées &lt;string,string&gt; brutes du modèle ONNX.</returns>
+      <summary>Chaîne de &lt; brute, chaîne &gt; métadonnées du modèle ONNX.</summary>
+      <returns>Chaîne de &lt; brute, chaîne &gt; métadonnées du modèle ONNX.</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.LearningModel.Name">
       <summary>Nom du modèle.</summary>
       <returns>Nom du modèle.</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.LearningModel.OutputFeatures">
-      <summary>Une liste des fonctionnalités de sortie du modèle.</summary>
-      <returns>Une liste des fonctionnalités de sortie du modèle.</returns>
+      <summary>Liste des fonctionnalités de sortie du modèle.</summary>
+      <returns>Liste des fonctionnalités de sortie du modèle.</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.LearningModel.Version">
-      <summary>La version du modèle.</summary>
-      <returns>La version du modèle.</returns>
+      <summary>Version du modèle.</summary>
+      <returns>Version du modèle.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.LearningModel.Close">
-      <summary>Libère le modèle ONNX en mémoire. Après l'appel, vous ne pouvez pas créer d'autres objets LearningModelSession.</summary>
+      <summary>Libère le modèle ONNX en mémoire. Après avoir appelé, vous ne pouvez plus créer d’objets LearningModelSession.</summary>
     </member>
     <member name="M:Windows.AI.MachineLearning.LearningModel.LoadFromFilePath(System.String)">
-      <summary>Charge un modèle ONNX d'un fichier du disque.</summary>
-      <param name="filePath">Chemin du fichier de modèle ONNX sur disque.</param>
+      <summary>Charge un modèle ONNX à partir d’un fichier sur le disque.</summary>
+      <param name="filePath">Chemin d’accès au fichier de modèle ONNX sur le disque.</param>
       <returns>Objet représentant le modèle.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.LearningModel.LoadFromFilePath(System.String,Windows.AI.MachineLearning.ILearningModelOperatorProvider)">
-      <summary>Charge un modèle ONNX d'un fichier du disque.</summary>
-      <param name="filePath">Chemin du fichier de modèle ONNX sur disque.</param>
+      <summary>Charge un modèle ONNX à partir d’un fichier sur le disque.</summary>
+      <param name="filePath">Chemin d’accès au fichier de modèle ONNX sur le disque.</param>
       <param name="operatorProvider">
       </param>
       <returns>Objet représentant le modèle.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.LearningModel.LoadFromStorageFileAsync(Windows.Storage.IStorageFile)">
-      <summary>Charge un modèle ONNX à partir d'un objet IStorageFile de manière asynchrone.</summary>
+      <summary>Charge de façon asynchrone un modèle ONNX à partir d’un IStorageFile.</summary>
       <param name="modelFile">Emplacement du fichier de modèle.</param>
-      <returns>Objet LearningModel basé sur le fichier de modèle.</returns>
+      <returns>LearningModel basé sur le fichier de modèle.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.LearningModel.LoadFromStorageFileAsync(Windows.Storage.IStorageFile,Windows.AI.MachineLearning.ILearningModelOperatorProvider)">
-      <summary>Charge un modèle ONNX à partir d'un objet IStorageFile de manière asynchrone.</summary>
+      <summary>Charge de façon asynchrone un modèle ONNX à partir d’un IStorageFile.</summary>
       <param name="modelFile">Emplacement du fichier de modèle.</param>
       <param name="operatorProvider">
       </param>
-      <returns>Objet LearningModel basé sur le fichier de modèle.</returns>
+      <returns>LearningModel basé sur le fichier de modèle.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.LearningModel.LoadFromStream(Windows.Storage.Streams.IRandomAccessStreamReference)">
-      <summary>Charge un modèle ONNX à partir d'un flux.</summary>
+      <summary>Charge un modèle ONNX à partir d’un flux.</summary>
       <param name="modelStream">Flux à partir duquel charger le modèle.</param>
       <returns>Objet représentant le fichier de modèle.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.LearningModel.LoadFromStream(Windows.Storage.Streams.IRandomAccessStreamReference,Windows.AI.MachineLearning.ILearningModelOperatorProvider)">
-      <summary>Charge un modèle ONNX à partir d'un flux.</summary>
+      <summary>Charge un modèle ONNX à partir d’un flux.</summary>
       <param name="modelStream">Flux à partir duquel charger le modèle.</param>
       <param name="operatorProvider">
       </param>
       <returns>Objet représentant le fichier de modèle.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.LearningModel.LoadFromStreamAsync(Windows.Storage.Streams.IRandomAccessStreamReference)">
-      <summary>Charge un modèle ONNX à partir d'un flux de manière asynchrone.</summary>
+      <summary>Charge un modèle ONNX à partir d’un flux de manière asynchrone.</summary>
       <param name="modelStream">Flux à partir duquel charger le modèle.</param>
       <returns>Objet représentant le modèle.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.LearningModel.LoadFromStreamAsync(Windows.Storage.Streams.IRandomAccessStreamReference,Windows.AI.MachineLearning.ILearningModelOperatorProvider)">
-      <summary>Charge un modèle ONNX à partir d'un flux de manière asynchrone.</summary>
+      <summary>Charge un modèle ONNX à partir d’un flux de manière asynchrone.</summary>
       <param name="modelStream">Flux à partir duquel charger le modèle.</param>
       <param name="operatorProvider">
       </param>
       <returns>Objet représentant le modèle.</returns>
     </member>
     <member name="T:Windows.AI.MachineLearning.LearningModelBinding">
-      <summary>Permet de lier des valeurs à des fonctionnalités d'entrée et de sortie désignées.</summary>
+      <summary>Utilisé pour lier des valeurs à des fonctionnalités d’entrée et de sortie nommées.</summary>
     </member>
     <member name="M:Windows.AI.MachineLearning.LearningModelBinding.#ctor(Windows.AI.MachineLearning.LearningModelSession)">
-      <summary>Créer un objet LearningModelBinding à partir de l'objet LearningModelSession spécifié.</summary>
-      <param name="session">Objet **LearningModelSession** à partir duquel créer l'objet **LearningModelBinding**.</param>
+      <summary>Crée un LearningModelBinding à partir du LearningModelSession spécifié.</summary>
+      <param name="session">* * LearningModelSession * * à partir duquel créer le * * LearningModelBinding * *.</param>
     </member>
     <member name="P:Windows.AI.MachineLearning.LearningModelBinding.Size">
-      <summary>Obtient le nombre d'éléments du mappage.</summary>
-      <returns>Nombre d'éléments du Map.</returns>
+      <summary>Obtient le nombre d’éléments dans la classe Map.</summary>
+      <returns>Nombre d’éléments dans la classe Map.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.LearningModelBinding.Bind(System.String,System.Object)">
-      <summary>Lier une valeur à la fonctionnalité désignée.</summary>
+      <summary>Liez une valeur à la fonctionnalité nommée.</summary>
       <param name="name">Nom de la fonctionnalité.</param>
       <param name="value">Valeur à lier.</param>
     </member>
     <member name="M:Windows.AI.MachineLearning.LearningModelBinding.Bind(System.String,System.Object,Windows.Foundation.Collections.IPropertySet)">
-      <summary>Lier une valeur à la fonctionnalité désignée à l’aide des propriétés pour contrôler la liaison.</summary>
-      <param name="name">Nom de la fonctionnalité de liaison.</param>
+      <summary>Liez une valeur à la fonctionnalité nommée à l’aide des propriétés pour contrôler la liaison.</summary>
+      <param name="name">Nom de la fonctionnalité à lier.</param>
       <param name="value">Valeur à lier à la fonctionnalité.</param>
-      <param name="props">Propriétés de contrôle de la liaison.</param>
+      <param name="props">Propriétés pour contrôler la liaison.</param>
     </member>
     <member name="M:Windows.AI.MachineLearning.LearningModelBinding.Clear">
-      <summary>Supprimer toutes les liaisons.</summary>
+      <summary>Supprimez toutes les liaisons.</summary>
     </member>
     <member name="M:Windows.AI.MachineLearning.LearningModelBinding.First">
       <summary>Retourne un itérateur qui est initialisé au premier élément de la vue cartographique.</summary>
-      <returns>Itérateur qui est initialisé sur le premier élément de la vue de mappage.</returns>
+      <returns>Itérateur qui est initialisé au premier élément de la vue cartographique.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.LearningModelBinding.HasKey(System.String)">
-      <summary>Détermine si la vue de mappage contient la clé spécifiée.</summary>
-      <param name="key">Clé pour vérifier si elle est contenue dans la vue de mappage.</param>
-      <returns>True si la vue de mappage contient la clé spécifiée ; sinon, false.</returns>
+      <summary>Détermine si la vue cartographique contient la clé spécifiée.</summary>
+      <param name="key">Clé à vérifier si elle est contenue dans la vue cartographique.</param>
+      <returns>True si la vue cartographique contient la clé spécifiée ; Sinon, false.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.LearningModelBinding.Lookup(System.String)">
-      <summary>Retourne l'élément à la clé spécifiée dans la vue du mappage.</summary>
-      <param name="key">Clé de la vue de mappage à rechercher.</param>
-      <returns>Élément à la clé spécifiée dans la vue de mappage.</returns>
+      <summary>Retourne l’élément au niveau de la clé spécifiée dans la vue de la carte.</summary>
+      <param name="key">Clé de la vue cartographique à rechercher.</param>
+      <returns>Élément au niveau de la clé spécifiée dans la vue cartographique.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.LearningModelBinding.Split(Windows.Foundation.Collections.IMapView{System.String,System.Object}@,Windows.Foundation.Collections.IMapView{System.String,System.Object}@)">
-      <summary>Fractionne la vue de mappage en deux vues.</summary>
-      <param name="first">La moitié du mappage d'origine.</param>
-      <param name="second">Seconde moitié du mappage d'origine.</param>
+      <summary>Fractionne la vue cartographique en deux vues.</summary>
+      <param name="first">Une moitié de la carte d’origine.</param>
+      <param name="second">Deuxième moitié de la carte d’origine.</param>
     </member>
     <member name="T:Windows.AI.MachineLearning.LearningModelDevice">
-      <summary>Appareil utilisé pour évaluer le modèle Machine Learning.</summary>
+      <summary>Appareil utilisé pour évaluer le modèle de Machine Learning.</summary>
     </member>
     <member name="M:Windows.AI.MachineLearning.LearningModelDevice.#ctor(Windows.AI.MachineLearning.LearningModelDeviceKind)">
-      <summary>Créer un LearningModelDevice à partir du LearningModelDeviceKind spécifié.</summary>
-      <param name="deviceKind">Objet **LearningModelDeviceKind** spécifié sur lequel évaluer le modèle.</param>
+      <summary>Crée un LearningModelDevice à partir du LearningModelDeviceKind spécifié.</summary>
+      <param name="deviceKind">Le * * LearningModelDeviceKind * * spécifié pour évaluer le modèle sur.</param>
     </member>
     <member name="P:Windows.AI.MachineLearning.LearningModelDevice.AdapterId">
-      <summary>Renvoie l'identificateur unique du périphérique.</summary>
-      <returns>Identificateur unique du périphérique.</returns>
+      <summary>Retourne l’identificateur unique de l’appareil.</summary>
+      <returns>Identificateur unique de l’appareil.</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.LearningModelDevice.Direct3D11Device">
-      <summary>Renvoie l'objet IDirect3DDevice pour l'appareil.</summary>
-      <returns>Objet **IDirect3DDevice** pour l'appareil.</returns>
+      <summary>Retourne le IDirect3DDevice pour l’appareil.</summary>
+      <returns>* * IDirect3DDevice * * pour l’appareil.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.LearningModelDevice.CreateFromDirect3D11Device(Windows.Graphics.DirectX.Direct3D11.IDirect3DDevice)">
-      <summary>Créer un LearningModelDevice à partir de l'IDirect3DDevice spécifié.</summary>
-      <param name="device">Objet **IDirect3DDevice** à partir duquel créer un objet **LearningModelDevice**.</param>
-      <returns>Objet **LearningModelDevice** créé à partir de l'objet **IDirect3DDevice** spécifié.</returns>
+      <summary>Crée un LearningModelDevice à partir du IDirect3DDevice spécifié.</summary>
+      <param name="device">* * IDirect3DDevice * * à partir duquel créer un * * LearningModelDevice * *.</param>
+      <returns>Un * * LearningModelDevice * * créé à partir du * * IDirect3DDevice * * spécifié.</returns>
     </member>
     <member name="T:Windows.AI.MachineLearning.LearningModelDeviceKind">
-      <summary>Définit la liste des types d'appareils capables d'évaluer un modèle d'apprentissage automatique.</summary>
+      <summary>Définit la liste des genres d’appareils qui peuvent évaluer un modèle de Machine Learning.</summary>
     </member>
     <member name="F:Windows.AI.MachineLearning.LearningModelDeviceKind.Cpu">
-      <summary>Utilisez l'UC pour évaluer le modèle.</summary>
+      <summary>Utilisez le processeur pour évaluer le modèle.</summary>
     </member>
     <member name="F:Windows.AI.MachineLearning.LearningModelDeviceKind.Default">
-      <summary>Laissez le système décider du périphérique à utiliser.</summary>
+      <summary>Laissez le système décider quel appareil utiliser.</summary>
     </member>
     <member name="F:Windows.AI.MachineLearning.LearningModelDeviceKind.DirectX">
-      <summary>Utilisez une unité de traitement graphique ou un périphérique DirectX pour évaluer le modèle.</summary>
+      <summary>Utilisez un GPU ou tout autre périphérique DirectX pour évaluer le modèle.</summary>
     </member>
     <member name="F:Windows.AI.MachineLearning.LearningModelDeviceKind.DirectXHighPerformance">
       <summary>Utilisez le périphérique défini par la stratégie système pour des performances élevées.</summary>
     </member>
     <member name="F:Windows.AI.MachineLearning.LearningModelDeviceKind.DirectXMinPower">
-      <summary>Utilisez le périphérique défini par la stratégie système pour une puissance minimale.</summary>
+      <summary>Utilisez le périphérique défini par la stratégie système pour une alimentation minimale.</summary>
     </member>
     <member name="T:Windows.AI.MachineLearning.LearningModelEvaluationResult">
-      <summary>Obtient les résultats de l'évaluation.</summary>
+      <summary>Obtient les résultats de l’évaluation.</summary>
     </member>
     <member name="P:Windows.AI.MachineLearning.LearningModelEvaluationResult.CorrelationId">
-      <summary>Chaîne facultative qui a été transmise à LearningModelSession.Evaluate.</summary>
-      <returns>Chaîne facultative qui a été transmise à **LearningModelSession.Evaluate**.</returns>
+      <summary>Chaîne facultative qui a été passée à LearningModelSession. Evaluate.</summary>
+      <returns>Chaîne facultative transmise à * * LearningModelSession. Evaluate * *.</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.LearningModelEvaluationResult.ErrorStatus">
-      <summary>Si la version d’évaluation a échoué, renvoie un code d’erreur pour indiquer la cause de l’échec.</summary>
-      <returns>Code d'erreur pour indiquer la cause de l'échec.</returns>
+      <summary>Si l’évaluation a échoué, retourne un code d’erreur pour ce qui a provoqué l’échec.</summary>
+      <returns>Code d’erreur de ce qui a provoqué l’échec.</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.LearningModelEvaluationResult.Outputs">
       <summary>Obtient les fonctionnalités de sortie du modèle.</summary>
       <returns>Fonctionnalités de sortie du modèle.</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.LearningModelEvaluationResult.Succeeded">
-      <summary>True si l'évaluation s'est terminée correctement ; sinon, false.</summary>
-      <returns>True si l'évaluation s'est terminée correctement ; sinon, false.</returns>
+      <summary>True si l’évaluation s’est terminée avec succès ; Sinon, false.</summary>
+      <returns>True si l’évaluation s’est terminée avec succès ; Sinon, false.</returns>
     </member>
     <member name="T:Windows.AI.MachineLearning.LearningModelFeatureKind">
-      <summary>Types de fonctionnalité d'entrée et de sortie pour un modèle d'apprentissage automatique.</summary>
+      <summary>Types de fonctionnalités d’entrée et de sortie pour un modèle de Machine Learning.</summary>
     </member>
     <member name="F:Windows.AI.MachineLearning.LearningModelFeatureKind.Image">
-      <summary>La fonctionnalité est une image, utilisez ImageFeatureDescriptor.</summary>
+      <summary>La fonctionnalité étant une image, utilisez ImageFeatureDescriptor.</summary>
     </member>
     <member name="F:Windows.AI.MachineLearning.LearningModelFeatureKind.Map">
-      <summary>La fonctionnalité est une carte, utilisez MapFeatureDescriptor.</summary>
+      <summary>La fonctionnalité est une carte. Utilisez donc MapFeatureDescriptor.</summary>
     </member>
     <member name="F:Windows.AI.MachineLearning.LearningModelFeatureKind.Sequence">
-      <summary>La fonctionnalité est une séquence, utilisez SequenceFeatureDescriptor.</summary>
+      <summary>La fonctionnalité étant une séquence, utilisez SequenceFeatureDescriptor.</summary>
     </member>
     <member name="F:Windows.AI.MachineLearning.LearningModelFeatureKind.Tensor">
-      <summary>La fonctionnalité est un tenseur, utilisez TensorFeatureDescriptor.</summary>
+      <summary>La fonctionnalité étant un tenseur, utilisez TensorFeatureDescriptor.</summary>
     </member>
     <member name="T:Windows.AI.MachineLearning.LearningModelSession">
-      <summary>Utilisé pour évaluer les modèles d’apprentissage automatique.</summary>
+      <summary>Utilisé pour évaluer les modèles de Machine Learning.</summary>
     </member>
     <member name="M:Windows.AI.MachineLearning.LearningModelSession.#ctor(Windows.AI.MachineLearning.LearningModel)">
       <summary>Crée une session à l’aide de l’appareil par défaut.</summary>
-      <param name="model">Modèle Machine Learning entraîné pour cette session.</param>
+      <param name="model">Modèle de Machine Learning formé pour cette session.</param>
     </member>
     <member name="M:Windows.AI.MachineLearning.LearningModelSession.#ctor(Windows.AI.MachineLearning.LearningModel,Windows.AI.MachineLearning.LearningModelDevice)">
       <summary>Crée une session à l’aide de l’appareil spécifié.</summary>
-      <param name="model">Modèle Machine Learning entraîné pour cette session.</param>
-      <param name="deviceToRunOn">Périphérique d'évaluation de la session.</param>
+      <param name="model">Modèle de Machine Learning formé pour cette session.</param>
+      <param name="deviceToRunOn">L’appareil d’évaluation de la session.</param>
     </member>
     <member name="M:Windows.AI.MachineLearning.LearningModelSession.#ctor(Windows.AI.MachineLearning.LearningModel,Windows.AI.MachineLearning.LearningModelDevice,Windows.AI.MachineLearning.LearningModelSessionOptions)">
-      <summary>Crée une session à l'aide du périphérique spécifié et des options d'inférence supplémentaires.</summary>
-      <param name="model">Modèle Machine Learning entraîné pour cette session.</param>
-      <param name="deviceToRunOn">Périphérique d'évaluation de la session.</param>
-      <param name="learningModelSessionOptions">Options utilisées pour configurer la création et l'évaluation de la session.</param>
+      <summary>Crée une session à l’aide du périphérique spécifié et des options d’inférence supplémentaires.</summary>
+      <param name="model">Modèle de Machine Learning formé pour cette session.</param>
+      <param name="deviceToRunOn">L’appareil d’évaluation de la session.</param>
+      <param name="learningModelSessionOptions">Options utilisées pour configurer la création et l’évaluation d’une session.</param>
     </member>
     <member name="P:Windows.AI.MachineLearning.LearningModelSession.Device">
-      <summary>Renvoie le périphérique d’évaluation de la session.</summary>
-      <returns>Périphérique d'évaluation de la session.</returns>
+      <summary>Retourne l’appareil d’évaluation de la session.</summary>
+      <returns>L’appareil d’évaluation de la session.</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.LearningModelSession.EvaluationProperties">
-      <summary>Définit les propriétés qui contrôlent l’évaluation du modèle.</summary>
-      <returns>Définit les propriétés qui contrôlent l’évaluation du modèle.</returns>
+      <summary>Ensemble de propriétés qui contrôlent l’évaluation du modèle.</summary>
+      <returns>Ensemble de propriétés qui contrôlent l’évaluation du modèle.</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.LearningModelSession.Model">
-      <summary>Renvoie le modèle d’apprentissage automatique entraîné pour cette session.</summary>
-      <returns>Modèle Machine Learning entraîné pour cette session.</returns>
+      <summary>Retourne le modèle de Machine Learning formé pour cette session.</summary>
+      <returns>Modèle de Machine Learning formé pour cette session.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.LearningModelSession.Close">
       <summary>
       </summary>
     </member>
     <member name="M:Windows.AI.MachineLearning.LearningModelSession.Evaluate(Windows.AI.MachineLearning.LearningModelBinding,System.String)">
-      <summary>Évalue le modèle Machine Learning à l'aide des valeurs de fonctionnalité associées dans *bindings*.</summary>
-      <param name="bindings">Détenteur des associations entre les entrées de modèle et les instances de variable.</param>
-      <param name="correlationId">Chaîne facultative fournie par l'utilisateur pour connecter les résultats de sortie.</param>
-      <returns>Résultats de l'évaluation.</returns>
+      <summary>Évaluez le modèle de Machine Learning à l’aide des valeurs de fonctionnalité liées dans les * liaisons *.</summary>
+      <param name="bindings">Conteneur pour les associations entre les entrées de modèle et les instances de variable.</param>
+      <param name="correlationId">Chaîne facultative fournie par l’utilisateur pour connecter les résultats de sortie.</param>
+      <returns>Résultats de l’évaluation.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.LearningModelSession.EvaluateAsync(Windows.AI.MachineLearning.LearningModelBinding,System.String)">
-      <summary>Évalue de manière asynchrone le modèle Machine Learning à l'aide des valeurs de fonctionnalité déjà associées dans *bindings*.</summary>
-      <param name="bindings">Valeurs associées aux fonctionnalités d'entrée et de sortie désignées.</param>
-      <param name="correlationId">Chaîne facultative fournie par l'utilisateur pour connecter les résultats de sortie.</param>
-      <returns>Objet LearningModelEvaluationResult de l'évaluation.</returns>
+      <summary>Évaluez de manière asynchrone le modèle de Machine Learning à l’aide des valeurs de fonctionnalité déjà liées dans * liaisons *.</summary>
+      <param name="bindings">Valeurs liées aux fonctionnalités d’entrée et de sortie nommées.</param>
+      <param name="correlationId">Chaîne facultative fournie par l’utilisateur pour connecter les résultats de sortie.</param>
+      <returns>LearningModelEvaluationResult de l’évaluation.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.LearningModelSession.EvaluateFeatures(Windows.Foundation.Collections.IMap{System.String,System.Object},System.String)">
-      <summary>Évalue le modèle Machine Learning à l'aide des valeurs de fonctionnalité dans *features*.</summary>
-      <param name="features">Mappage des fonctionnalités avec lesquelles évaluer le modèle.</param>
-      <param name="correlationId">Chaîne facultative fournie par l'utilisateur pour connecter les résultats de sortie.</param>
-      <returns>Résultat de l'évaluation.</returns>
+      <summary>Évaluez le modèle de Machine Learning à l’aide des valeurs de fonctionnalité dans * fonctionnalités *.</summary>
+      <param name="features">Une carte des fonctionnalités avec lesquelles évaluer le modèle.</param>
+      <param name="correlationId">Chaîne facultative fournie par l’utilisateur pour connecter les résultats de sortie.</param>
+      <returns>Résultat de l’évaluation.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.LearningModelSession.EvaluateFeaturesAsync(Windows.Foundation.Collections.IMap{System.String,System.Object},System.String)">
-      <summary>Évalue de façon asynchrone le modèle Machine Learning à l'aide des valeurs de fonctionnalité dans *features*.</summary>
-      <param name="features">Mappage des fonctionnalités avec lesquelles évaluer le modèle.</param>
-      <param name="correlationId">Chaîne facultative fournie par l'utilisateur pour connecter les résultats de sortie.</param>
-      <returns>Résultat de l'évaluation.</returns>
+      <summary>Évaluez de manière asynchrone le modèle de Machine Learning à l’aide des valeurs de fonctionnalités dans * fonctionnalités *.</summary>
+      <param name="features">Une carte des fonctionnalités avec lesquelles évaluer le modèle.</param>
+      <param name="correlationId">Chaîne facultative fournie par l’utilisateur pour connecter les résultats de sortie.</param>
+      <returns>Résultat de l’évaluation.</returns>
     </member>
     <member name="T:Windows.AI.MachineLearning.LearningModelSessionOptions">
-      <summary>Décrit les options d'inférence utilisées lors de la création d'objets LearningModelSession.</summary>
+      <summary>Décrit les options d’inférence utilisées lors de la création d’objets LearningModelSession.</summary>
     </member>
     <member name="M:Windows.AI.MachineLearning.LearningModelSessionOptions.#ctor">
-      <summary>Crée des options pour configurer la création d'un objet LearningModelSession.</summary>
+      <summary>Crée des options pour configurer la création d’un LearningModelSession.</summary>
     </member>
     <member name="P:Windows.AI.MachineLearning.LearningModelSessionOptions.BatchSizeOverride">
-      <summary>Valeur numérique qui spécifie une valeur de remplacement de la taille de lot constante pour le modèle cible.</summary>
-      <returns>Taille de lot constante pour les valeurs de la fonctionnalité d'entrée de modèle attendues par les appels à Bind. La valeur par défaut de **BatchSizeOverride** sera 1 pour indiquer une taille de lot statique de 1.</returns>
+      <summary>Valeur numérique qui spécifie une valeur de remplacement de taille de lot constante pour le modèle cible.</summary>
+      <returns>La taille de lot constante pour les entrées de modèle est une valeur attendue par les appels à bind. La valeur par défaut pour * * BatchSizeOverride * * sera 1 indiquant une taille de lot statique de 1.</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.LearningModelSessionOptions.CloseModelOnSessionCreation">
-      <summary>Spécifie si une LearningModelSession doit fermer le modèle d'apprentissage associé lors de sa création.</summary>
+      <summary>Spécifie si un LearningModelSession doit fermer le modèle d’apprentissage associé lors de sa création.</summary>
       <returns>Indique si le modèle doit être fermé lors de la création de la session.</returns>
     </member>
     <member name="T:Windows.AI.MachineLearning.MachineLearningContract">
@@ -377,202 +377,202 @@
       </summary>
     </member>
     <member name="T:Windows.AI.MachineLearning.MapFeatureDescriptor">
-      <summary>Une carte est une collection de paires (clé, valeur).</summary>
+      <summary>Un mappage est une collection de paires (clé, valeur).</summary>
     </member>
     <member name="P:Windows.AI.MachineLearning.MapFeatureDescriptor.Description">
-      <summary>Une description de l'utilité de cette fonctionnalité dans le modèle.</summary>
-      <returns>Une description de l'utilité de cette fonctionnalité dans le modèle.</returns>
+      <summary>Description de l’utilisation de cette fonctionnalité dans le modèle.</summary>
+      <returns>Description de l’utilisation de cette fonctionnalité dans le modèle.</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.MapFeatureDescriptor.IsRequired">
-      <summary>Si la valeur est « true », vous devez lier une valeur à cette fonctionnalité avant d'appeler LearningModelSession.Evaluate.</summary>
-      <returns>True si vous devez lier une valeur à cette fonctionnalité avant d'appeler **LearningModelSession.Evaluate** ; sinon, false.</returns>
+      <summary>Si la valeur est true, vous devez lier une valeur à cette fonctionnalité avant d’appeler LearningModelSession. Evaluate.</summary>
+      <returns>True si vous devez lier une valeur à cette fonctionnalité avant d’appeler * * LearningModelSession. Evaluate * *; Sinon, false.</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.MapFeatureDescriptor.KeyKind">
-      <summary>Les clés de carte peuvent être des types de tenseur.</summary>
-      <returns>Type du tenseur de cette clé de carte.</returns>
+      <summary>Les clés de carte peuvent être des types tenseur.</summary>
+      <returns>Type de tenseur de cette clé de carte.</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.MapFeatureDescriptor.Kind">
-      <summary>Type de fonctionnalité : permet de savoir quelle classe dérivée utiliser.</summary>
+      <summary>Type de fonctionnalité ; Utilisez-le pour connaître la classe dérivée à utiliser.</summary>
       <returns>Type de fonctionnalité.</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.MapFeatureDescriptor.Name">
-      <summary>Le nom que vous utilisez pour lier des valeurs à cette fonctionnalité.</summary>
-      <returns>Le nom que vous utilisez pour lier des valeurs à cette fonctionnalité.</returns>
+      <summary>Nom que vous utilisez pour lier des valeurs à cette fonctionnalité.</summary>
+      <returns>Nom que vous utilisez pour lier des valeurs à cette fonctionnalité.</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.MapFeatureDescriptor.ValueDescriptor">
-      <summary>Les valeurs de carte peuvent être des types de fonctionnalité.</summary>
-      <returns>Fonctionnalité pour cette valeur de carte.</returns>
+      <summary>Les valeurs de mappage peuvent être des genres de caractéristiques.</summary>
+      <returns>Fonctionnalité pour cette valeur de mappage.</returns>
     </member>
     <member name="T:Windows.AI.MachineLearning.SequenceFeatureDescriptor">
       <summary>Une séquence est un tableau d’éléments.</summary>
     </member>
     <member name="P:Windows.AI.MachineLearning.SequenceFeatureDescriptor.Description">
-      <summary>Une description de l'utilité de cette fonctionnalité dans le modèle.</summary>
-      <returns>Une description de l'utilité de cette fonctionnalité dans le modèle.</returns>
+      <summary>Description de l’utilisation de cette fonctionnalité dans le modèle.</summary>
+      <returns>Description de l’utilisation de cette fonctionnalité dans le modèle.</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.SequenceFeatureDescriptor.ElementDescriptor">
-      <summary>Les éléments de séquence peuvent être des types de fonctionnalité.</summary>
+      <summary>Les éléments de séquence peuvent être des genres de caractéristiques.</summary>
       <returns>Descripteur de fonctionnalité pour cet élément de séquence.</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.SequenceFeatureDescriptor.IsRequired">
-      <summary>Si la valeur est « true », vous devez lier une valeur à cette fonctionnalité avant d'appeler LearningModelSession.Evaluate.</summary>
-      <returns>True si vous devez lier une valeur à cette fonctionnalité avant d'appeler **LearningModelSession.Evaluate** ; sinon, false.</returns>
+      <summary>Si la valeur est true, vous devez lier une valeur à cette fonctionnalité avant d’appeler LearningModelSession. Evaluate.</summary>
+      <returns>True si vous devez lier une valeur à cette fonctionnalité avant d’appeler * * LearningModelSession. Evaluate * *; Sinon, false.</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.SequenceFeatureDescriptor.Kind">
-      <summary>Type de fonctionnalité : permet de savoir quelle classe dérivée utiliser.</summary>
+      <summary>Type de fonctionnalité ; Utilisez-le pour connaître la classe dérivée à utiliser.</summary>
       <returns>Type de fonctionnalité.</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.SequenceFeatureDescriptor.Name">
-      <summary>Le nom que vous utilisez pour lier des valeurs à cette fonctionnalité.</summary>
-      <returns>Le nom que vous utilisez pour lier des valeurs à cette fonctionnalité.</returns>
+      <summary>Nom que vous utilisez pour lier des valeurs à cette fonctionnalité.</summary>
+      <returns>Nom que vous utilisez pour lier des valeurs à cette fonctionnalité.</returns>
     </member>
     <member name="T:Windows.AI.MachineLearning.TensorBoolean">
-      <summary>Un objet de tenseur booléen.</summary>
+      <summary>Objet booléen tenseur.</summary>
     </member>
     <member name="P:Windows.AI.MachineLearning.TensorBoolean.Kind">
-      <summary>Le type de la fonctionnalité.</summary>
-      <returns>Le type de la fonctionnalité.</returns>
+      <summary>Type de la fonctionnalité.</summary>
+      <returns>Type de la fonctionnalité.</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.TensorBoolean.Shape">
       <summary>Retourne le nombre et la taille de chaque dimension.</summary>
       <returns>Nombre et taille de chaque dimension.</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.TensorBoolean.TensorKind">
-      <summary>Retourne le type de données du tenseur.</summary>
-      <returns>Type de données du tenseur.</returns>
+      <summary>Retourne le type de données de tenseur.</summary>
+      <returns>Type de données de tenseur.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorBoolean.Close">
-      <summary>Si aucun objet IMemoryBufferReference en attente n'est créé à partir de cet objet, **Close** supprimera l'objet et détruira ses ressources associées. Sinon, **Close** se détachera de ses ressources associées qui seront détruites lors de la fermeture du dernier objet IMemoryBufferReference.</summary>
+      <summary>S’il n’existe aucun objet IMemoryBufferReference en attente créé à partir de cet objet, * * Close * * supprime l’objet et détruit ses ressources associées. Dans le cas contraire, * * fermer * * se détachera de ses ressources associées et sera détruit lorsque le dernier IMemoryBufferReference sera fermé.</summary>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorBoolean.Create">
-      <summary>Crée un objet de tenseur booléen sans allouer de tampon.</summary>
-      <returns>Un objet de tenseur booléen.</returns>
+      <summary>Crée un objet tenseur booléen sans allouer de mémoire tampon.</summary>
+      <returns>Objet booléen tenseur.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorBoolean.Create(Windows.Foundation.Collections.IIterable{System.Int64})">
-      <summary>Crée un objet de tenseur de type booléen et alloue un tampon de taille *shape*.</summary>
+      <summary>Crée un objet tenseur booléen et alloue une mémoire tampon de taille * forme *.</summary>
       <param name="shape">Taille de la mémoire tampon.</param>
-      <returns>Objet de tenseur de type booléen avec un tampon de la taille donnée.</returns>
+      <returns>Objet tenseur booléen avec une mémoire tampon de la taille donnée.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorBoolean.CreateFromArray(Windows.Foundation.Collections.IIterable{System.Int64},System.Boolean[])">
-      <summary>Crée un objet de tenseur de type booléen, alloue un tampon de taille *shape* et copie toutes les *data* à l'intérieur.</summary>
+      <summary>Crée un objet tenseur booléen, alloue une mémoire tampon de taille * forme * et copie tous les * données * dans celui-ci.</summary>
       <param name="shape">Taille de la mémoire tampon.</param>
-      <param name="data">Données à copier dans le tampon.</param>
-      <returns>Objet de tenseur de type booléen avec un tampon contenant les données fournies.</returns>
+      <param name="data">Données à copier dans la mémoire tampon.</param>
+      <returns>Objet tenseur booléen avec une mémoire tampon contenant les données spécifiées.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorBoolean.CreateFromBuffer(System.Int64[],Windows.Storage.Streams.IBuffer)">
-      <summary>Crée un objet de tenseur de type booléen avec l'objet *shape* donné et utilise le tampon sous-jacent dans *data* pour l'évaluation ultérieure.</summary>
+      <summary>Crée un objet tenseur booléen avec la forme * donnée * et utilise la mémoire tampon sous-jacente dans * Data * pour une évaluation ultérieure.</summary>
       <param name="shape">Taille de la mémoire tampon.</param>
-      <param name="buffer">Tampon à utiliser lors de l'évaluation.</param>
-      <returns>Objet de tenseur de type booléen avec une référence tampon aux *data* IBuffer fournies.</returns>
+      <param name="buffer">Mémoire tampon à utiliser pendant l’évaluation.</param>
+      <returns>Objet tenseur booléen sauvegardé par une référence de mémoire tampon aux données IBuffer * fournies *.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorBoolean.CreateFromIterable(Windows.Foundation.Collections.IIterable{System.Int64},Windows.Foundation.Collections.IIterable{System.Boolean})">
-      <summary>Crée un objet de tenseur de type booléen, alloue un tampon de taille *shape* et copie toutes les *data* à l'intérieur.</summary>
+      <summary>Crée un objet tenseur booléen, alloue une mémoire tampon de taille * forme * et copie tous les * données * dans celui-ci.</summary>
       <param name="shape">Taille de la mémoire tampon.</param>
-      <param name="data">Données à copier dans le tampon.</param>
-      <returns>Objet de tenseur de type booléen avec un tampon contenant les données fournies.</returns>
+      <param name="data">Données à copier dans la mémoire tampon.</param>
+      <returns>Objet tenseur booléen avec une mémoire tampon contenant les données spécifiées.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorBoolean.CreateFromShapeArrayAndDataArray(System.Int64[],System.Boolean[])">
-      <summary>Crée un objet de tenseur de type booléen, alloue un tampon de taille *shape* et copie toutes les *data* à l'intérieur.</summary>
+      <summary>Crée un objet tenseur booléen, alloue une mémoire tampon de taille * forme * et copie tous les * données * dans celui-ci.</summary>
       <param name="shape">Taille de la mémoire tampon.</param>
-      <param name="data">Données à copier dans le tampon.</param>
-      <returns>Objet de tenseur de type booléen avec un tampon contenant les données fournies.</returns>
+      <param name="data">Données à copier dans la mémoire tampon.</param>
+      <returns>Objet tenseur booléen avec une mémoire tampon contenant les données spécifiées.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorBoolean.CreateReference">
-      <summary>Renvoie une représentation IMemoryBufferReference du tampon qui stocke l'objet de tenseur de type booléen.</summary>
-      <returns>Représentation IMemoryBufferReference du tampon d'un tenseur.</returns>
+      <summary>Retourne une représentation IMemoryBufferReference de la mémoire tampon qui stocke l’objet Boolean tenseur.</summary>
+      <returns>Représentation IMemoryBufferReference d’une mémoire tampon tenseur.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorBoolean.GetAsVectorView">
-      <summary>Renvoie une vue en lecture seule des données.</summary>
+      <summary>Retourne une vue en lecture seule des données.</summary>
       <returns>Vue en lecture seule des données.</returns>
     </member>
     <member name="T:Windows.AI.MachineLearning.TensorDouble">
-      <summary>Objet de tenseur de type flottant 64 bits.</summary>
+      <summary>Objet tenseur float 64 bits.</summary>
     </member>
     <member name="P:Windows.AI.MachineLearning.TensorDouble.Kind">
-      <summary>Le type de la fonctionnalité.</summary>
-      <returns>Le type de la fonctionnalité.</returns>
+      <summary>Type de la fonctionnalité.</summary>
+      <returns>Type de la fonctionnalité.</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.TensorDouble.Shape">
       <summary>Retourne le nombre et la taille de chaque dimension.</summary>
       <returns>Nombre et taille de chaque dimension.</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.TensorDouble.TensorKind">
-      <summary>Retourne le type de données du tenseur.</summary>
-      <returns>Type de données du tenseur.</returns>
+      <summary>Retourne le type de données de tenseur.</summary>
+      <returns>Type de données de tenseur.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorDouble.Close">
-      <summary>Si aucun objet IMemoryBufferReference en attente n'est créé à partir de cet objet, **Close** supprimera l'objet et détruira ses ressources associées. Sinon, **Close** se détachera de ses ressources associées qui seront détruites lors de la fermeture du dernier objet IMemoryBufferReference.</summary>
+      <summary>S’il n’existe aucun objet IMemoryBufferReference en attente créé à partir de cet objet, * * Close * * supprime l’objet et détruit ses ressources associées. Dans le cas contraire, * * fermer * * se détachera de ses ressources associées et sera détruit lorsque le dernier IMemoryBufferReference sera fermé.</summary>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorDouble.Create">
-      <summary>Crée un objet de tenseur de type flottant 64 bits sans allouer de tampon.</summary>
-      <returns>Objet de tenseur de type flottant 64 bits.</returns>
+      <summary>Crée un objet tenseur flottant 64 bits sans allouer de mémoire tampon.</summary>
+      <returns>Objet tenseur float 64 bits.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorDouble.Create(Windows.Foundation.Collections.IIterable{System.Int64})">
-      <summary>Crée un objet de tenseur de type flottant 64 bits et alloue un tampon de taille *shape*.</summary>
+      <summary>Crée un objet tenseur flottant 64 bits et alloue une mémoire tampon de taille * forme *.</summary>
       <param name="shape">Taille de la mémoire tampon.</param>
-      <returns>Objet de tenseur de type flottant 64 bits avec un tampon de la taille donnée.</returns>
+      <returns>Objet tenseur flottant 64 bits avec une mémoire tampon de la taille donnée.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorDouble.CreateFromArray(Windows.Foundation.Collections.IIterable{System.Int64},System.Double[])">
-      <summary>Crée un objet de tenseur de type flottant 64 bits, alloue un tampon de taille *shape* et copie toutes les *data* à l'intérieur.</summary>
+      <summary>Crée un objet tenseur float 64 bits, alloue une mémoire tampon de taille * forme * et copie tous les * données * dans celui-ci.</summary>
       <param name="shape">Taille de la mémoire tampon.</param>
-      <param name="data">Données à copier dans le tampon.</param>
-      <returns>Objet de tenseur de type flottant 64 bits avec un tampon contenant les données fournies.</returns>
+      <param name="data">Données à copier dans la mémoire tampon.</param>
+      <returns>Objet tenseur flottant 64 bits avec une mémoire tampon contenant les données spécifiées.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorDouble.CreateFromBuffer(System.Int64[],Windows.Storage.Streams.IBuffer)">
-      <summary>Crée un objet de tenseur de type double avec l'objet *shape* donné et utilise le tampon sous-jacent dans *data* pour l'évaluation ultérieure.</summary>
+      <summary>Crée un objet double tenseur avec la forme * donnée * et utilise la mémoire tampon sous-jacente dans * Data * pour une évaluation ultérieure.</summary>
       <param name="shape">Taille de la mémoire tampon.</param>
-      <param name="buffer">Tampon à utiliser lors de l'évaluation.</param>
-      <returns>Objet de tenseur de type double avec une référence tampon aux *data* IBuffer fournies.</returns>
+      <param name="buffer">Mémoire tampon à utiliser pendant l’évaluation.</param>
+      <returns>Objet double tenseur qui est stocké par une référence de mémoire tampon aux données IBuffer * fournies *.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorDouble.CreateFromIterable(Windows.Foundation.Collections.IIterable{System.Int64},Windows.Foundation.Collections.IIterable{System.Double})">
-      <summary>Crée un objet de tenseur de type flottant 64 bits, alloue un tampon de taille *shape* et copie toutes les *data* à l'intérieur.</summary>
+      <summary>Crée un objet tenseur float 64 bits, alloue une mémoire tampon de taille * forme * et copie tous les * données * dans celui-ci.</summary>
       <param name="shape">Taille de la mémoire tampon.</param>
-      <param name="data">Données à copier dans le tampon.</param>
-      <returns>Objet de tenseur de type flottant 64 bits avec un tampon contenant les données fournies.</returns>
+      <param name="data">Données à copier dans la mémoire tampon.</param>
+      <returns>Objet tenseur flottant 64 bits avec une mémoire tampon contenant les données spécifiées.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorDouble.CreateFromShapeArrayAndDataArray(System.Int64[],System.Double[])">
-      <summary>Crée un objet de tenseur de type flottant 64 bits, alloue un tampon de taille *shape* et copie toutes les *data* à l'intérieur.</summary>
+      <summary>Crée un objet tenseur float 64 bits, alloue une mémoire tampon de taille * forme * et copie tous les * données * dans celui-ci.</summary>
       <param name="shape">Taille de la mémoire tampon.</param>
-      <param name="data">Données à copier dans le tampon.</param>
-      <returns>Objet de tenseur de type flottant 64 bits avec un tampon contenant les données fournies.</returns>
+      <param name="data">Données à copier dans la mémoire tampon.</param>
+      <returns>Objet tenseur flottant 64 bits avec une mémoire tampon contenant les données spécifiées.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorDouble.CreateReference">
-      <summary>Renvoie une représentation IMemoryBufferReference du tampon qui stocke l'objet de tenseur de type double.</summary>
-      <returns>Représentation IMemoryBufferReference du tampon d'un tenseur.</returns>
+      <summary>Retourne une représentation IMemoryBufferReference de la mémoire tampon qui stocke l’objet double tenseur.</summary>
+      <returns>Représentation IMemoryBufferReference d’une mémoire tampon tenseur.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorDouble.GetAsVectorView">
-      <summary>Renvoie une vue en lecture seule des données.</summary>
+      <summary>Retourne une vue en lecture seule des données.</summary>
       <returns>Vue en lecture seule des données.</returns>
     </member>
     <member name="T:Windows.AI.MachineLearning.TensorFeatureDescriptor">
-      <summary>Les tenseurs sont des tableaux de valeurs multidimensionnelles.</summary>
+      <summary>Les dizaines sont des tableaux multidimensionnels de valeurs.</summary>
     </member>
     <member name="P:Windows.AI.MachineLearning.TensorFeatureDescriptor.Description">
-      <summary>Une description de l'utilité de cette fonctionnalité dans le modèle.</summary>
-      <returns>Une description de l'utilité de cette fonctionnalité dans le modèle.</returns>
+      <summary>Description de l’utilisation de cette fonctionnalité dans le modèle.</summary>
+      <returns>Description de l’utilisation de cette fonctionnalité dans le modèle.</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.TensorFeatureDescriptor.IsRequired">
-      <summary>Si la valeur est « true », vous devez lier une valeur à cette fonctionnalité avant d'appeler LearningModelSession.Evaluate.</summary>
-      <returns>True si vous devez lier une valeur à cette fonctionnalité avant d'appeler **LearningModelSession.Evaluate** ; sinon, false.</returns>
+      <summary>Si la valeur est true, vous devez lier une valeur à cette fonctionnalité avant d’appeler LearningModelSession. Evaluate.</summary>
+      <returns>True si vous devez lier une valeur à cette fonctionnalité avant d’appeler * * LearningModelSession. Evaluate * *; Sinon, false.</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.TensorFeatureDescriptor.Kind">
-      <summary>Type de fonctionnalité : permet de savoir quelle classe dérivée utiliser.</summary>
+      <summary>Type de fonctionnalité ; Utilisez-le pour connaître la classe dérivée à utiliser.</summary>
       <returns>Type de fonctionnalité.</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.TensorFeatureDescriptor.Name">
-      <summary>Le nom que vous utilisez pour lier des valeurs à cette fonctionnalité.</summary>
-      <returns>Le nom que vous utilisez pour lier des valeurs à cette fonctionnalité.</returns>
+      <summary>Nom que vous utilisez pour lier des valeurs à cette fonctionnalité.</summary>
+      <returns>Nom que vous utilisez pour lier des valeurs à cette fonctionnalité.</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.TensorFeatureDescriptor.Shape">
       <summary>Retourne le nombre et la taille de chaque dimension.</summary>
       <returns>Nombre et taille de chaque dimension.</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.TensorFeatureDescriptor.TensorKind">
-      <summary>Retourne le type de données du tenseur.</summary>
-      <returns>Type de données du tenseur.</returns>
+      <summary>Retourne le type de données de tenseur.</summary>
+      <returns>Type de données de tenseur.</returns>
     </member>
     <member name="T:Windows.AI.MachineLearning.TensorFloat">
-      <summary>Objet de tenseur de type flottant 32 bits.</summary>
+      <summary>Objet tenseur float 32 bits.</summary>
     </member>
     <member name="P:Windows.AI.MachineLearning.TensorFloat.Kind">
       <summary>
@@ -585,687 +585,687 @@
       <returns>Nombre et taille de chaque dimension.</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.TensorFloat.TensorKind">
-      <summary>Retourne le type de données du tenseur.</summary>
-      <returns>Type de données du tenseur.</returns>
+      <summary>Retourne le type de données de tenseur.</summary>
+      <returns>Type de données de tenseur.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorFloat.Close">
       <summary>
       </summary>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorFloat.Create">
-      <summary>Crée un objet de tenseur de type flottant 32 bits sans allouer de tampon.</summary>
-      <returns>Objet de tenseur de type flottant 32 bits.</returns>
+      <summary>Crée un objet tenseur flottant 32 bits sans allouer de mémoire tampon.</summary>
+      <returns>Objet tenseur float 32 bits.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorFloat.Create(Windows.Foundation.Collections.IIterable{System.Int64})">
-      <summary>Crée un objet de tenseur de type flottant 32 bits et alloue un tampon de taille *shape*.</summary>
+      <summary>Crée un objet tenseur flottant 32 bits et alloue une mémoire tampon de taille * forme *.</summary>
       <param name="shape">Taille de la mémoire tampon.</param>
-      <returns>Objet de tenseur de type flottant 32 bits avec un tampon de la taille donnée.</returns>
+      <returns>Objet tenseur flottant 32 bits avec une mémoire tampon de la taille donnée.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorFloat.CreateFromArray(Windows.Foundation.Collections.IIterable{System.Int64},System.Single[])">
-      <summary>Crée un objet de tenseur de type flottant 32 bits, alloue un tampon de taille *shape* et copie toutes les *data* à l'intérieur.</summary>
+      <summary>Crée un objet tenseur float 32 bits, alloue une mémoire tampon de taille * forme * et copie tous les * données * dans celui-ci.</summary>
       <param name="shape">Taille de la mémoire tampon.</param>
-      <param name="data">Données à copier dans le tampon.</param>
-      <returns>Objet de tenseur de type flottant 32 bits avec un tampon contenant les données fournies.</returns>
+      <param name="data">Données à copier dans la mémoire tampon.</param>
+      <returns>Objet tenseur flottant 32 bits avec une mémoire tampon contenant les données spécifiées.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorFloat.CreateFromBuffer(System.Int64[],Windows.Storage.Streams.IBuffer)">
-      <summary>Crée un objet de tenseur de type flottant avec l'objet *shape* donné et utilise le tampon sous-jacent dans *data* pour l'évaluation ultérieure.</summary>
+      <summary>Crée un objet float tenseur avec la forme * donnée * et utilise la mémoire tampon sous-jacente dans * Data * pour une évaluation ultérieure.</summary>
       <param name="shape">Taille de la mémoire tampon.</param>
-      <param name="buffer">Tampon à utiliser lors de l'évaluation.</param>
-      <returns>Objet de tenseur de type flottant avec une référence tampon aux *data* IBuffer fournies.</returns>
+      <param name="buffer">Mémoire tampon à utiliser pendant l’évaluation.</param>
+      <returns>Objet tenseur float sauvegardé par une référence de mémoire tampon aux données IBuffer * fournies *.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorFloat.CreateFromIterable(Windows.Foundation.Collections.IIterable{System.Int64},Windows.Foundation.Collections.IIterable{System.Single})">
-      <summary>Crée un objet de tenseur de type flottant 32 bits, alloue un tampon de taille *shape* et copie toutes les *data* à l'intérieur.</summary>
+      <summary>Crée un objet tenseur float 32 bits, alloue une mémoire tampon de taille * forme * et copie tous les * données * dans celui-ci.</summary>
       <param name="shape">Taille de la mémoire tampon.</param>
-      <param name="data">Données à copier dans le tampon.</param>
-      <returns>Objet de tenseur de type flottant 32 bits avec un tampon contenant les données fournies.</returns>
+      <param name="data">Données à copier dans la mémoire tampon.</param>
+      <returns>Objet tenseur flottant 32 bits avec une mémoire tampon contenant les données spécifiées.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorFloat.CreateFromShapeArrayAndDataArray(System.Int64[],System.Single[])">
-      <summary>Crée un objet de tenseur de type flottant 32 bits, alloue un tampon de taille *shape* et copie toutes les *data* à l'intérieur.</summary>
+      <summary>Crée un objet tenseur float 32 bits, alloue une mémoire tampon de taille * forme * et copie tous les * données * dans celui-ci.</summary>
       <param name="shape">Taille de la mémoire tampon.</param>
-      <param name="data">Données à copier dans le tampon.</param>
-      <returns>Objet de tenseur de type flottant 32 bits avec un tampon contenant les données fournies.</returns>
+      <param name="data">Données à copier dans la mémoire tampon.</param>
+      <returns>Objet tenseur flottant 32 bits avec une mémoire tampon contenant les données spécifiées.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorFloat.CreateReference">
-      <summary>Renvoie une représentation IMemoryBufferReference du tampon qui stocke l'objet de tenseur de type flottant 32 bits.</summary>
-      <returns>Représentation IMemoryBufferReference du tampon d'un tenseur.</returns>
+      <summary>Retourne une représentation IMemoryBufferReference de la mémoire tampon qui stocke l’objet tenseur float 32 bits.</summary>
+      <returns>Représentation IMemoryBufferReference d’une mémoire tampon tenseur.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorFloat.GetAsVectorView">
-      <summary>Renvoie une vue en lecture seule des données.</summary>
+      <summary>Retourne une vue en lecture seule des données.</summary>
       <returns>Vue en lecture seule des données.</returns>
     </member>
     <member name="T:Windows.AI.MachineLearning.TensorFloat16Bit">
-      <summary>Objet de tenseur de type flottant 16 bits.</summary>
+      <summary>Objet tenseur flottant 16 bits.</summary>
     </member>
     <member name="P:Windows.AI.MachineLearning.TensorFloat16Bit.Kind">
-      <summary>Le type de la fonctionnalité.</summary>
-      <returns>Le type de la fonctionnalité.</returns>
+      <summary>Type de la fonctionnalité.</summary>
+      <returns>Type de la fonctionnalité.</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.TensorFloat16Bit.Shape">
       <summary>Retourne le nombre et la taille de chaque dimension.</summary>
       <returns>Nombre et taille de chaque dimension.</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.TensorFloat16Bit.TensorKind">
-      <summary>Retourne le type de données du tenseur.</summary>
-      <returns>Type de données du tenseur.</returns>
+      <summary>Retourne le type de données de tenseur.</summary>
+      <returns>Type de données de tenseur.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorFloat16Bit.Close">
-      <summary>Si aucun objet IMemoryBufferReference en attente n'est créé à partir de cet objet, **Close** supprimera l'objet et détruira ses ressources associées. Sinon, **Close** se détachera de ses ressources associées qui seront détruites lors de la fermeture du dernier objet IMemoryBufferReference.</summary>
+      <summary>S’il n’existe aucun objet IMemoryBufferReference en attente créé à partir de cet objet, * * Close * * supprime l’objet et détruit ses ressources associées. Dans le cas contraire, * * fermer * * se détachera de ses ressources associées et sera détruit lorsque le dernier IMemoryBufferReference sera fermé.</summary>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorFloat16Bit.Create">
-      <summary>Crée un objet de tenseur de type flottant 16 bits sans allouer de tampon.</summary>
-      <returns>Objet de tenseur de type flottant 16 bits.</returns>
+      <summary>Crée un objet tenseur flottant 16 bits sans allouer de mémoire tampon.</summary>
+      <returns>Objet tenseur flottant 16 bits.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorFloat16Bit.Create(Windows.Foundation.Collections.IIterable{System.Int64})">
-      <summary>Crée un objet de tenseur de type flottant 16 bits et alloue un tampon de taille *shape*.</summary>
+      <summary>Crée un objet tenseur flottant 16 bits et alloue une mémoire tampon de taille * forme *.</summary>
       <param name="shape">Taille de la mémoire tampon.</param>
-      <returns>Objet de tenseur de type flottant 16 bits avec un tampon de la taille donnée.</returns>
+      <returns>Objet tenseur flottant de 16 bits avec une mémoire tampon de la taille donnée.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorFloat16Bit.CreateFromArray(Windows.Foundation.Collections.IIterable{System.Int64},System.Single[])">
-      <summary>Crée un objet de tenseur de type flottant 16 bits, alloue un tampon de taille *shape* et copie toutes les *data* à l'intérieur.</summary>
+      <summary>Crée un objet tenseur float 16 bits, alloue une mémoire tampon de taille * forme * et copie tous les * données * dans celui-ci.</summary>
       <param name="shape">Taille de la mémoire tampon.</param>
-      <param name="data">Données à copier dans le tampon.</param>
-      <returns>Objet de tenseur de type flottant 16 bits avec un tampon contenant les données fournies.</returns>
+      <param name="data">Données à copier dans la mémoire tampon.</param>
+      <returns>Objet tenseur flottant 16 bits avec une mémoire tampon contenant les données spécifiées.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorFloat16Bit.CreateFromBuffer(System.Int64[],Windows.Storage.Streams.IBuffer)">
-      <summary>Crée un objet de tenseur de type flottant 16 bits avec l'objet *shape* donné et utilise le tampon sous-jacent dans *data* pour l'évaluation ultérieure.</summary>
+      <summary>Crée un objet tenseur flottant de 16 bits avec la forme * donnée * et utilise la mémoire tampon sous-jacente dans * Data * pour une évaluation ultérieure.</summary>
       <param name="shape">Taille de la mémoire tampon.</param>
-      <param name="buffer">Tampon à utiliser lors de l'évaluation.</param>
-      <returns>Objet de tenseur de type flottant 16 bits avec une référence tampon aux *data* IBuffer fournies.</returns>
+      <param name="buffer">Mémoire tampon à utiliser pendant l’évaluation.</param>
+      <returns>Objet tenseur float 16 bits sauvegardé par une référence de mémoire tampon aux données IBuffer * fournies *.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorFloat16Bit.CreateFromIterable(Windows.Foundation.Collections.IIterable{System.Int64},Windows.Foundation.Collections.IIterable{System.Single})">
-      <summary>Crée un objet de tenseur de type flottant 16 bits, alloue un tampon de taille *shape* et copie toutes les *data* à l'intérieur.</summary>
+      <summary>Crée un objet tenseur float 16 bits, alloue une mémoire tampon de taille * forme * et copie tous les * données * dans celui-ci.</summary>
       <param name="shape">Taille de la mémoire tampon.</param>
-      <param name="data">Données à copier dans le tampon.</param>
-      <returns>Objet de tenseur de type flottant 16 bits avec un tampon contenant les données fournies.</returns>
+      <param name="data">Données à copier dans la mémoire tampon.</param>
+      <returns>Objet tenseur flottant 16 bits avec une mémoire tampon contenant les données spécifiées.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorFloat16Bit.CreateFromShapeArrayAndDataArray(System.Int64[],System.Single[])">
-      <summary>Crée un objet de tenseur de type flottant 16 bits, alloue un tampon de taille *shape* et copie toutes les *data* à l'intérieur.</summary>
+      <summary>Crée un objet tenseur float 16 bits, alloue une mémoire tampon de taille * forme * et copie tous les * données * dans celui-ci.</summary>
       <param name="shape">Taille de la mémoire tampon.</param>
-      <param name="data">Données à copier dans le tampon.</param>
-      <returns>Objet de tenseur de type flottant 16 bits avec un tampon contenant les données fournies.</returns>
+      <param name="data">Données à copier dans la mémoire tampon.</param>
+      <returns>Objet tenseur flottant 16 bits avec une mémoire tampon contenant les données spécifiées.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorFloat16Bit.CreateReference">
-      <summary>Renvoie une représentation IMemoryBufferReference du tampon qui stocke l'objet de tenseur de type flottant 16 bits.</summary>
-      <returns>Représentation IMemoryBufferReference du tampon d'un tenseur.</returns>
+      <summary>Retourne une représentation IMemoryBufferReference de la mémoire tampon qui stocke l’objet tenseur float 16 bits.</summary>
+      <returns>Représentation IMemoryBufferReference d’une mémoire tampon tenseur.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorFloat16Bit.GetAsVectorView">
-      <summary>Renvoie une vue en lecture seule des données.</summary>
+      <summary>Retourne une vue en lecture seule des données.</summary>
       <returns>Vue en lecture seule des données.</returns>
     </member>
     <member name="T:Windows.AI.MachineLearning.TensorInt16Bit">
-      <summary>Objet de tenseur de type entier signé 16 bits.</summary>
+      <summary>Objet tenseur entier signé 16 bits.</summary>
     </member>
     <member name="P:Windows.AI.MachineLearning.TensorInt16Bit.Kind">
-      <summary>Le type de la fonctionnalité.</summary>
-      <returns>Le type de la fonctionnalité.</returns>
+      <summary>Type de la fonctionnalité.</summary>
+      <returns>Type de la fonctionnalité.</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.TensorInt16Bit.Shape">
       <summary>Retourne le nombre et la taille de chaque dimension.</summary>
       <returns>Nombre et taille de chaque dimension.</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.TensorInt16Bit.TensorKind">
-      <summary>Retourne le type de données du tenseur.</summary>
-      <returns>Type de données du tenseur.</returns>
+      <summary>Retourne le type de données de tenseur.</summary>
+      <returns>Type de données de tenseur.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorInt16Bit.Close">
-      <summary>Si aucun objet IMemoryBufferReference en attente n'est créé à partir de cet objet, **Close** supprimera l'objet et détruira ses ressources associées. Sinon, **Close** se détachera de ses ressources associées qui seront détruites lors de la fermeture du dernier objet IMemoryBufferReference.</summary>
+      <summary>S’il n’existe aucun objet IMemoryBufferReference en attente créé à partir de cet objet, * * Close * * supprime l’objet et détruit ses ressources associées. Dans le cas contraire, * * fermer * * se détachera de ses ressources associées et sera détruit lorsque le dernier IMemoryBufferReference sera fermé.</summary>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorInt16Bit.Create">
-      <summary>Crée un objet de tenseur de type entier signé 16 bits sans allouer de tampon.</summary>
-      <returns>Objet de tenseur de type entier signé 16 bits.</returns>
+      <summary>Crée un objet tenseur entier signé 16 bits sans allouer de mémoire tampon.</summary>
+      <returns>Objet tenseur entier signé 16 bits.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorInt16Bit.Create(Windows.Foundation.Collections.IIterable{System.Int64})">
-      <summary>Crée un objet de tenseur de type entier signé 16 bits et alloue un tampon de taille *shape*.</summary>
+      <summary>Crée un objet tenseur entier signé 16 bits et alloue une mémoire tampon de taille * forme *.</summary>
       <param name="shape">Taille de la mémoire tampon.</param>
-      <returns>Objet de tenseur de type entier signé 16 bits avec un tampon de la taille donnée.</returns>
+      <returns>Objet tenseur entier signé 16 bits avec une mémoire tampon de la taille donnée.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorInt16Bit.CreateFromArray(Windows.Foundation.Collections.IIterable{System.Int64},System.Int16[])">
-      <summary>Crée un objet de tenseur de type entier signé 16 bits, alloue un tampon de taille *shape* et copie toutes les *data* à l'intérieur.</summary>
+      <summary>Crée un objet tenseur entier signé 16 bits, alloue une mémoire tampon de taille * forme * et copie tous les * données * dans celui-ci.</summary>
       <param name="shape">Taille de la mémoire tampon.</param>
-      <param name="data">Données à copier dans le tampon.</param>
-      <returns>Objet de tenseur de type entier signé 16 bits avec un tampon contenant les données fournies.</returns>
+      <param name="data">Données à copier dans la mémoire tampon.</param>
+      <returns>Objet tenseur entier signé 16 bits avec une mémoire tampon contenant les données spécifiées.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorInt16Bit.CreateFromBuffer(System.Int64[],Windows.Storage.Streams.IBuffer)">
-      <summary>Crée un objet de tenseur de type entier signé 16 bits avec l'objet *shape* donné et utilise le tampon sous-jacent dans *buffer* pour l'évaluation ultérieure.</summary>
+      <summary>Crée un objet tenseur entier signé 16 bits avec la forme * donnée * et utilise la mémoire tampon sous-jacente dans * buffer * pour une évaluation ultérieure.</summary>
       <param name="shape">Taille de la mémoire tampon.</param>
-      <param name="buffer">Tampon à utiliser lors de l'évaluation.</param>
-      <returns>Objet de tenseur de type entier signé 16 bits avec une référence tampon à la *buffer* IBuffer fournie.</returns>
+      <param name="buffer">Mémoire tampon à utiliser pendant l’évaluation.</param>
+      <returns>Objet tenseur entier signé 16 bits pris en compte par une référence de mémoire tampon à la mémoire tampon IBuffer * fournie *.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorInt16Bit.CreateFromIterable(Windows.Foundation.Collections.IIterable{System.Int64},Windows.Foundation.Collections.IIterable{System.Int16})">
-      <summary>Crée un objet de tenseur de type entier signé 16 bits, alloue un tampon de taille *shape* et copie toutes les *data* à l'intérieur.</summary>
+      <summary>Crée un objet tenseur entier signé 16 bits, alloue une mémoire tampon de taille * forme * et copie tous les * données * dans celui-ci.</summary>
       <param name="shape">Taille de la mémoire tampon.</param>
-      <param name="data">Données à copier dans le tampon.</param>
-      <returns>Objet de tenseur de type entier signé 16 bits avec un tampon contenant les données fournies.</returns>
+      <param name="data">Données à copier dans la mémoire tampon.</param>
+      <returns>Objet tenseur entier signé 16 bits avec une mémoire tampon contenant les données spécifiées.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorInt16Bit.CreateFromShapeArrayAndDataArray(System.Int64[],System.Int16[])">
-      <summary>Crée un objet de tenseur de type entier signé 16 bits, alloue un tampon de taille *shape* et copie toutes les *data* à l'intérieur.</summary>
+      <summary>Crée un objet tenseur entier signé 16 bits, alloue une mémoire tampon de taille * forme * et copie tous les * données * dans celui-ci.</summary>
       <param name="shape">Taille de la mémoire tampon.</param>
-      <param name="data">Données à copier dans le tampon.</param>
-      <returns>Objet de tenseur de type entier signé 16 bits avec un tampon contenant les données fournies.</returns>
+      <param name="data">Données à copier dans la mémoire tampon.</param>
+      <returns>Objet tenseur entier signé 16 bits avec une mémoire tampon contenant les données spécifiées.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorInt16Bit.CreateReference">
-      <summary>Renvoie une représentation IMemoryBufferReference du tampon qui stocke l'objet de tenseur de type entier signé 16 bits.</summary>
-      <returns>Représentation IMemoryBufferReference du tampon d'un tenseur.</returns>
+      <summary>Retourne une représentation IMemoryBufferReference de la mémoire tampon qui stocke l’objet tenseur entier signé 16 bits.</summary>
+      <returns>Représentation IMemoryBufferReference d’une mémoire tampon tenseur.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorInt16Bit.GetAsVectorView">
-      <summary>Renvoie une vue en lecture seule des données.</summary>
+      <summary>Retourne une vue en lecture seule des données.</summary>
       <returns>Vue en lecture seule des données.</returns>
     </member>
     <member name="T:Windows.AI.MachineLearning.TensorInt32Bit">
-      <summary>Objet de tenseur de type entier signé 32 bits.</summary>
+      <summary>Objet tenseur entier signé 32 bits.</summary>
     </member>
     <member name="P:Windows.AI.MachineLearning.TensorInt32Bit.Kind">
-      <summary>Le type de la fonctionnalité.</summary>
-      <returns>Le type de la fonctionnalité.</returns>
+      <summary>Type de la fonctionnalité.</summary>
+      <returns>Type de la fonctionnalité.</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.TensorInt32Bit.Shape">
       <summary>Retourne le nombre et la taille de chaque dimension.</summary>
       <returns>Nombre et taille de chaque dimension.</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.TensorInt32Bit.TensorKind">
-      <summary>Retourne le type de données du tenseur.</summary>
-      <returns>Type de données du tenseur.</returns>
+      <summary>Retourne le type de données de tenseur.</summary>
+      <returns>Type de données de tenseur.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorInt32Bit.Close">
-      <summary>Si aucun objet IMemoryBufferReference en attente n'est créé à partir de cet objet, **Close** supprimera l'objet et détruira ses ressources associées. Sinon, **Close** se détachera de ses ressources associées qui seront détruites lors de la fermeture du dernier objet IMemoryBufferReference.</summary>
+      <summary>S’il n’existe aucun objet IMemoryBufferReference en attente créé à partir de cet objet, * * Close * * supprime l’objet et détruit ses ressources associées. Dans le cas contraire, * * fermer * * se détachera de ses ressources associées et sera détruit lorsque le dernier IMemoryBufferReference sera fermé.</summary>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorInt32Bit.Create">
-      <summary>Crée un objet de tenseur de type entier signé 32 bits sans allouer de tampon.</summary>
-      <returns>Objet de tenseur de type entier signé 32 bits.</returns>
+      <summary>Crée un objet tenseur entier signé 32 bits sans allouer de mémoire tampon.</summary>
+      <returns>Objet tenseur entier signé 32 bits.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorInt32Bit.Create(Windows.Foundation.Collections.IIterable{System.Int64})">
-      <summary>Crée un objet de tenseur de type entier signé 32 bits et alloue un tampon de taille *shape*.</summary>
+      <summary>Crée un objet tenseur entier signé 32 bits et alloue une mémoire tampon de taille * forme *.</summary>
       <param name="shape">Taille de la mémoire tampon.</param>
-      <returns>Objet de tenseur de type entier signé 32 bits avec un tampon de la taille donnée.</returns>
+      <returns>Objet tenseur entier signé 32 bits avec une mémoire tampon de la taille donnée.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorInt32Bit.CreateFromArray(Windows.Foundation.Collections.IIterable{System.Int64},System.Int32[])">
-      <summary>Crée un objet de tenseur de type entier signé 32 bits, alloue un tampon de taille *shape* et copie toutes les *data* à l'intérieur.</summary>
+      <summary>Crée un objet tenseur entier signé 32 bits, alloue une mémoire tampon de taille * forme * et copie tous les * données * dans celui-ci.</summary>
       <param name="shape">Taille de la mémoire tampon.</param>
-      <param name="data">Données à copier dans le tampon.</param>
-      <returns>Objet de tenseur de type entier signé 32 bits avec un tampon contenant les données fournies.</returns>
+      <param name="data">Données à copier dans la mémoire tampon.</param>
+      <returns>Objet tenseur entier signé 32 bits avec une mémoire tampon contenant les données spécifiées.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorInt32Bit.CreateFromBuffer(System.Int64[],Windows.Storage.Streams.IBuffer)">
-      <summary>Crée un objet de tenseur de type entier signé 32 bits avec l'objet *shape* donné et utilise le tampon sous-jacent dans *buffer* pour l'évaluation ultérieure.</summary>
+      <summary>Crée un objet tenseur entier signé 32 bits avec la forme * donnée * et utilise la mémoire tampon sous-jacente dans * buffer * pour une évaluation ultérieure.</summary>
       <param name="shape">Taille de la mémoire tampon.</param>
-      <param name="buffer">Tampon à utiliser lors de l'évaluation.</param>
-      <returns>Objet de tenseur de type entier signé 32 bits avec une référence tampon à la *buffer* IBuffer fournie.</returns>
+      <param name="buffer">Mémoire tampon à utiliser pendant l’évaluation.</param>
+      <returns>Objet tenseur entier signé 32 bits, avec une référence de mémoire tampon à la mémoire tampon IBuffer * fournie *.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorInt32Bit.CreateFromIterable(Windows.Foundation.Collections.IIterable{System.Int64},Windows.Foundation.Collections.IIterable{System.Int32})">
-      <summary>Crée un objet de tenseur de type entier signé 32 bits, alloue un tampon de taille *shape* et copie toutes les *data* à l'intérieur.</summary>
+      <summary>Crée un objet tenseur entier signé 32 bits, alloue une mémoire tampon de taille * forme * et copie tous les * données * dans celui-ci.</summary>
       <param name="shape">Taille de la mémoire tampon.</param>
-      <param name="data">Données à copier dans le tampon.</param>
-      <returns>Objet de tenseur de type entier signé 32 bits avec un tampon contenant les données fournies.</returns>
+      <param name="data">Données à copier dans la mémoire tampon.</param>
+      <returns>Objet tenseur entier signé 32 bits avec une mémoire tampon contenant les données spécifiées.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorInt32Bit.CreateFromShapeArrayAndDataArray(System.Int64[],System.Int32[])">
-      <summary>Crée un objet de tenseur de type entier signé 32 bits, alloue un tampon de taille *shape* et copie toutes les *data* à l'intérieur.</summary>
+      <summary>Crée un objet tenseur entier signé 32 bits, alloue une mémoire tampon de taille * forme * et copie tous les * données * dans celui-ci.</summary>
       <param name="shape">Taille de la mémoire tampon.</param>
-      <param name="data">Données à copier dans le tampon.</param>
-      <returns>Objet de tenseur de type entier signé 32 bits avec un tampon contenant les données fournies.</returns>
+      <param name="data">Données à copier dans la mémoire tampon.</param>
+      <returns>Objet tenseur entier signé 32 bits avec une mémoire tampon contenant les données spécifiées.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorInt32Bit.CreateReference">
-      <summary>Renvoie une représentation IMemoryBufferReference du tampon qui stocke l'objet de tenseur de type entier signé 32 bits.</summary>
-      <returns>Représentation IMemoryBufferReference du tampon d'un tenseur.</returns>
+      <summary>Retourne une représentation IMemoryBufferReference de la mémoire tampon qui stocke l’objet tenseur entier signé 32 bits.</summary>
+      <returns>Représentation IMemoryBufferReference d’une mémoire tampon tenseur.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorInt32Bit.GetAsVectorView">
-      <summary>Renvoie une vue en lecture seule des données.</summary>
+      <summary>Retourne une vue en lecture seule des données.</summary>
       <returns>Vue en lecture seule des données.</returns>
     </member>
     <member name="T:Windows.AI.MachineLearning.TensorInt64Bit">
-      <summary>Objet de tenseur de type entier signé 64 bits.</summary>
+      <summary>Objet tenseur entier signé 64 bits.</summary>
     </member>
     <member name="P:Windows.AI.MachineLearning.TensorInt64Bit.Kind">
-      <summary>Le type de la fonctionnalité.</summary>
-      <returns>Le type de la fonctionnalité.</returns>
+      <summary>Type de la fonctionnalité.</summary>
+      <returns>Type de la fonctionnalité.</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.TensorInt64Bit.Shape">
       <summary>Retourne le nombre et la taille de chaque dimension.</summary>
       <returns>Nombre et taille de chaque dimension.</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.TensorInt64Bit.TensorKind">
-      <summary>Retourne le type de données du tenseur.</summary>
-      <returns>Type de données du tenseur.</returns>
+      <summary>Retourne le type de données de tenseur.</summary>
+      <returns>Type de données de tenseur.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorInt64Bit.Close">
-      <summary>Si aucun objet IMemoryBufferReference en attente n'est créé à partir de cet objet, **Close** supprimera l'objet et détruira ses ressources associées. Sinon, **Close** se détachera de ses ressources associées qui seront détruites lors de la fermeture du dernier objet IMemoryBufferReference.</summary>
+      <summary>S’il n’existe aucun objet IMemoryBufferReference en attente créé à partir de cet objet, * * Close * * supprime l’objet et détruit ses ressources associées. Dans le cas contraire, * * fermer * * se détachera de ses ressources associées et sera détruit lorsque le dernier IMemoryBufferReference sera fermé.</summary>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorInt64Bit.Create">
-      <summary>Crée un objet de tenseur de type entier signé 64 bits sans allouer de tampon.</summary>
-      <returns>Objet de tenseur de type entier signé 64 bits.</returns>
+      <summary>Crée un objet tenseur entier signé 64 bits sans allouer de mémoire tampon.</summary>
+      <returns>Objet tenseur entier signé 64 bits.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorInt64Bit.Create(Windows.Foundation.Collections.IIterable{System.Int64})">
-      <summary>Crée un objet de tenseur de type entier signé 64 bits et alloue un tampon de taille *shape*.</summary>
+      <summary>Crée un objet tenseur entier signé 64 bits et alloue une mémoire tampon de taille * forme *.</summary>
       <param name="shape">Taille de la mémoire tampon.</param>
-      <returns>Objet de tenseur de type entier signé 64 bits avec un tampon de la taille donnée.</returns>
+      <returns>Objet tenseur entier signé 64 bits avec une mémoire tampon de la taille donnée.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorInt64Bit.CreateFromArray(Windows.Foundation.Collections.IIterable{System.Int64},System.Int64[])">
-      <summary>Crée un objet de tenseur de type entier signé 64 bits, alloue un tampon de taille *shape* et copie toutes les *data* à l'intérieur.</summary>
+      <summary>Crée un objet tenseur entier signé 64 bits, alloue une mémoire tampon de taille * forme * et copie tous les * données * dans celui-ci.</summary>
       <param name="shape">Taille de la mémoire tampon.</param>
-      <param name="data">Données à copier dans le tampon.</param>
-      <returns>Objet de tenseur de type entier signé 64 bits avec un tampon contenant les données fournies.</returns>
+      <param name="data">Données à copier dans la mémoire tampon.</param>
+      <returns>Objet tenseur entier signé 64 bits avec une mémoire tampon contenant les données spécifiées.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorInt64Bit.CreateFromBuffer(System.Int64[],Windows.Storage.Streams.IBuffer)">
-      <summary>Crée un objet de tenseur de type entier signé 64 bits avec l'objet *shape* donné et utilise le tampon sous-jacent dans *buffer* pour l'évaluation ultérieure.</summary>
+      <summary>Crée un objet tenseur entier signé 64 bits avec la forme * donnée * et utilise la mémoire tampon sous-jacente dans * buffer * pour une évaluation ultérieure.</summary>
       <param name="shape">Taille de la mémoire tampon.</param>
-      <param name="buffer">Tampon à utiliser lors de l'évaluation.</param>
-      <returns>Objet de tenseur de type entier signé 64 bits avec une référence tampon à la *buffer* IBuffer fournie.</returns>
+      <param name="buffer">Mémoire tampon à utiliser pendant l’évaluation.</param>
+      <returns>Objet tenseur entier signé 64 bits, avec une référence de mémoire tampon à la mémoire tampon IBuffer * fournie *.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorInt64Bit.CreateFromIterable(Windows.Foundation.Collections.IIterable{System.Int64},Windows.Foundation.Collections.IIterable{System.Int64})">
-      <summary>Crée un objet de tenseur de type entier signé 64 bits, alloue un tampon de taille *shape* et copie toutes les *data* à l'intérieur.</summary>
+      <summary>Crée un objet tenseur entier signé 64 bits, alloue une mémoire tampon de taille * forme * et copie tous les * données * dans celui-ci.</summary>
       <param name="shape">Taille de la mémoire tampon.</param>
-      <param name="data">Données à copier dans le tampon.</param>
-      <returns>Objet de tenseur de type entier signé 64 bits avec un tampon contenant les données fournies.</returns>
+      <param name="data">Données à copier dans la mémoire tampon.</param>
+      <returns>Objet tenseur entier signé 64 bits avec une mémoire tampon contenant les données spécifiées.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorInt64Bit.CreateFromShapeArrayAndDataArray(System.Int64[],System.Int64[])">
-      <summary>Crée un objet de tenseur de type entier signé 64 bits, alloue un tampon de taille *shape* et copie toutes les *data* à l'intérieur.</summary>
+      <summary>Crée un objet tenseur entier signé 64 bits, alloue une mémoire tampon de taille * forme * et copie tous les * données * dans celui-ci.</summary>
       <param name="shape">Taille de la mémoire tampon.</param>
-      <param name="data">Données à copier dans le tampon.</param>
-      <returns>Objet de tenseur de type entier signé 64 bits avec un tampon contenant les données fournies.</returns>
+      <param name="data">Données à copier dans la mémoire tampon.</param>
+      <returns>Objet tenseur entier signé 64 bits avec une mémoire tampon contenant les données spécifiées.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorInt64Bit.CreateReference">
-      <summary>Renvoie une représentation IMemoryBufferReference du tampon qui stocke l'objet de tenseur de type entier signé 64 bits.</summary>
-      <returns>Représentation IMemoryBufferReference du tampon d'un tenseur.</returns>
+      <summary>Retourne une représentation IMemoryBufferReference de la mémoire tampon qui stocke l’objet tenseur entier signé 64 bits.</summary>
+      <returns>Représentation IMemoryBufferReference d’une mémoire tampon tenseur.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorInt64Bit.GetAsVectorView">
-      <summary>Renvoie une vue en lecture seule des données.</summary>
+      <summary>Retourne une vue en lecture seule des données.</summary>
       <returns>Vue en lecture seule des données.</returns>
     </member>
     <member name="T:Windows.AI.MachineLearning.TensorInt8Bit">
-      <summary>Objet de tenseur de type entier signé 8 bits.</summary>
+      <summary>Objet tenseur entier signé 8 bits.</summary>
     </member>
     <member name="P:Windows.AI.MachineLearning.TensorInt8Bit.Kind">
-      <summary>Le type de la fonctionnalité.</summary>
-      <returns>Le type de la fonctionnalité.</returns>
+      <summary>Type de la fonctionnalité.</summary>
+      <returns>Type de la fonctionnalité.</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.TensorInt8Bit.Shape">
       <summary>Retourne le nombre et la taille de chaque dimension.</summary>
       <returns>Nombre et taille de chaque dimension.</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.TensorInt8Bit.TensorKind">
-      <summary>Retourne le type de données du tenseur.</summary>
-      <returns>Type de données du tenseur.</returns>
+      <summary>Retourne le type de données de tenseur.</summary>
+      <returns>Type de données de tenseur.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorInt8Bit.Close">
-      <summary>Si aucun objet IMemoryBufferReference en attente n'est créé à partir de cet objet, **Close** supprimera l'objet et détruira ses ressources associées. Sinon, **Close** se détachera de ses ressources associées qui seront détruites lors de la fermeture du dernier objet IMemoryBufferReference.</summary>
+      <summary>S’il n’existe aucun objet IMemoryBufferReference en attente créé à partir de cet objet, * * Close * * supprime l’objet et détruit ses ressources associées. Dans le cas contraire, * * fermer * * se détachera de ses ressources associées et sera détruit lorsque le dernier IMemoryBufferReference sera fermé.</summary>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorInt8Bit.Create">
-      <summary>Crée un objet de tenseur de type entier signé 8 bits sans allouer de tampon.</summary>
-      <returns>Objet de tenseur de type entier signé 8 bits.</returns>
+      <summary>Crée un objet tenseur avec un entier signé 8 bits sans allouer de mémoire tampon.</summary>
+      <returns>Objet tenseur entier signé 8 bits.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorInt8Bit.Create(Windows.Foundation.Collections.IIterable{System.Int64})">
-      <summary>Crée un objet de tenseur de type entier signé 8 bits et alloue un tampon de taille *shape*.</summary>
+      <summary>Crée un objet tenseur avec un entier signé 8 bits et alloue une mémoire tampon de taille * forme *.</summary>
       <param name="shape">Taille de la mémoire tampon.</param>
-      <returns>Objet de tenseur de type entier signé 8 bits avec un tampon de la taille donnée.</returns>
+      <returns>Objet tenseur entier signé 8 bits avec une mémoire tampon de la taille donnée.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorInt8Bit.CreateFromArray(Windows.Foundation.Collections.IIterable{System.Int64},System.Byte[])">
-      <summary>Crée un objet de tenseur de type entier signé 8 bits, alloue un tampon de taille *shape* et copie toutes les *data* à l'intérieur.</summary>
+      <summary>Crée un objet tenseur avec un entier signé 8 bits, alloue une mémoire tampon de taille * forme * et copie tous les * données * dans celui-ci.</summary>
       <param name="shape">Taille de la mémoire tampon.</param>
-      <param name="data">Données à copier dans le tampon.</param>
-      <returns>Objet de tenseur de type entier signé 8 bits avec un tampon contenant les données fournies.</returns>
+      <param name="data">Données à copier dans la mémoire tampon.</param>
+      <returns>Objet tenseur entier signé 8 bits avec une mémoire tampon contenant les données spécifiées.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorInt8Bit.CreateFromBuffer(System.Int64[],Windows.Storage.Streams.IBuffer)">
-      <summary>Crée un objet de tenseur de type entier signé 8 bits avec l'objet *shape* donné et utilise le tampon sous-jacent dans *buffer* pour l'évaluation ultérieure.</summary>
+      <summary>Crée un objet tenseur avec un entier signé 8 bits avec la forme * donnée * et utilise la mémoire tampon sous-jacente dans * buffer * pour une évaluation ultérieure.</summary>
       <param name="shape">Taille de la mémoire tampon.</param>
-      <param name="buffer">Tampon à utiliser lors de l'évaluation.</param>
-      <returns>Objet de tenseur de type entier signé 8 bits avec une référence tampon à la *buffer* IBuffer fournie.</returns>
+      <param name="buffer">Mémoire tampon à utiliser pendant l’évaluation.</param>
+      <returns>Objet tenseur d’entier signé 8 bits pris en compte par une référence de mémoire tampon à la mémoire tampon IBuffer * fournie *.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorInt8Bit.CreateFromIterable(Windows.Foundation.Collections.IIterable{System.Int64},Windows.Foundation.Collections.IIterable{System.Byte})">
-      <summary>Crée un objet de tenseur de type entier signé 8 bits, alloue un tampon de taille *shape* et copie toutes les *data* à l'intérieur.</summary>
+      <summary>Crée un objet tenseur avec un entier signé 8 bits, alloue une mémoire tampon de taille * forme * et copie tous les * données * dans celui-ci.</summary>
       <param name="shape">Taille de la mémoire tampon.</param>
-      <param name="data">Données à copier dans le tampon.</param>
-      <returns>Objet de tenseur de type entier signé 8 bits avec un tampon contenant les données fournies.</returns>
+      <param name="data">Données à copier dans la mémoire tampon.</param>
+      <returns>Objet tenseur entier signé 8 bits avec une mémoire tampon contenant les données spécifiées.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorInt8Bit.CreateFromShapeArrayAndDataArray(System.Int64[],System.Byte[])">
-      <summary>Crée un objet de tenseur de type entier signé 8 bits, alloue un tampon de taille *shape* et copie toutes les *data* à l'intérieur.</summary>
+      <summary>Crée un objet tenseur avec un entier signé 8 bits, alloue une mémoire tampon de taille * forme * et copie tous les * données * dans celui-ci.</summary>
       <param name="shape">Taille de la mémoire tampon.</param>
-      <param name="data">Données à copier dans le tampon.</param>
-      <returns>Objet de tenseur de type entier signé 8 bits avec un tampon contenant les données fournies.</returns>
+      <param name="data">Données à copier dans la mémoire tampon.</param>
+      <returns>Objet tenseur entier signé 8 bits avec une mémoire tampon contenant les données spécifiées.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorInt8Bit.CreateReference">
-      <summary>Renvoie une représentation IMemoryBufferReference du tampon qui stocke l'objet de tenseur de type entier signé 8 bits.</summary>
-      <returns>Représentation IMemoryBufferReference du tampon d'un tenseur.</returns>
+      <summary>Retourne une représentation IMemoryBufferReference de la mémoire tampon qui stocke l’objet tenseur de l’entier signé 8 bits.</summary>
+      <returns>Représentation IMemoryBufferReference d’une mémoire tampon tenseur.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorInt8Bit.GetAsVectorView">
-      <summary>Renvoie une vue en lecture seule des données.</summary>
+      <summary>Retourne une vue en lecture seule des données.</summary>
       <returns>Vue en lecture seule des données.</returns>
     </member>
     <member name="T:Windows.AI.MachineLearning.TensorKind">
-      <summary>Définit la liste des types de données de tenseur pris en charge.</summary>
+      <summary>Définit la liste des types de données tenseur pris en charge.</summary>
     </member>
     <member name="F:Windows.AI.MachineLearning.TensorKind.Boolean">
-      <summary>Le type du tenseur est **Boolean**.</summary>
+      <summary>Le type tenseur est * * booléen * *.</summary>
     </member>
     <member name="F:Windows.AI.MachineLearning.TensorKind.Complex128">
-      <summary>Type non valide</summary>
+      <summary>Type non valide.</summary>
     </member>
     <member name="F:Windows.AI.MachineLearning.TensorKind.Complex64">
-      <summary>Type non valide</summary>
+      <summary>Type non valide.</summary>
     </member>
     <member name="F:Windows.AI.MachineLearning.TensorKind.Double">
-      <summary>Le type du tenseur est une virgule flottante 64 bits.</summary>
+      <summary>Le type tenseur est un point à virgule flottante de 64 bits.</summary>
     </member>
     <member name="F:Windows.AI.MachineLearning.TensorKind.Float">
-      <summary>Le type du tenseur est une virgule flottante 32 bits.</summary>
+      <summary>Le type tenseur est un point à virgule flottante de 32 bits.</summary>
     </member>
     <member name="F:Windows.AI.MachineLearning.TensorKind.Float16">
-      <summary>Le type du tenseur est une virgule flottante 16 bits.</summary>
+      <summary>Le type tenseur est à virgule flottante de 16 bits.</summary>
     </member>
     <member name="F:Windows.AI.MachineLearning.TensorKind.Int16">
-      <summary>Le type du tenseur est un entier signé 16 bits.</summary>
+      <summary>Le type tenseur est un entier signé 16 bits.</summary>
     </member>
     <member name="F:Windows.AI.MachineLearning.TensorKind.Int32">
-      <summary>Le type du tenseur est un entier signé 32 bits.</summary>
+      <summary>Le type tenseur est un entier signé 32 bits.</summary>
     </member>
     <member name="F:Windows.AI.MachineLearning.TensorKind.Int64">
-      <summary>Le type du tenseur est un entier signé 64 bits.</summary>
+      <summary>Le type tenseur est un entier signé 64 bits.</summary>
     </member>
     <member name="F:Windows.AI.MachineLearning.TensorKind.Int8">
-      <summary>Le type du tenseur est un entier signé 8 bits.</summary>
+      <summary>Le type tenseur est un entier signé 8 bits.</summary>
     </member>
     <member name="F:Windows.AI.MachineLearning.TensorKind.String">
-      <summary>Le type du tenseur est **String**.</summary>
+      <summary>Le type tenseur est * * chaîne * *.</summary>
     </member>
     <member name="F:Windows.AI.MachineLearning.TensorKind.UInt16">
-      <summary>Le type du tenseur est un entier non signé 16 bits.</summary>
+      <summary>Le type tenseur est un entier non signé 16 bits.</summary>
     </member>
     <member name="F:Windows.AI.MachineLearning.TensorKind.UInt32">
-      <summary>Le type du tenseur est un entier non signé 32 bits.</summary>
+      <summary>Le type tenseur est un entier non signé 32 bits.</summary>
     </member>
     <member name="F:Windows.AI.MachineLearning.TensorKind.UInt64">
-      <summary>Le type du tenseur est un entier non signé 64 bits.</summary>
+      <summary>Le type tenseur est un entier non signé 64 bits.</summary>
     </member>
     <member name="F:Windows.AI.MachineLearning.TensorKind.UInt8">
-      <summary>Le type du tenseur est un entier non signé 8 bits.</summary>
+      <summary>Le type tenseur est un entier non signé 8 bits.</summary>
     </member>
     <member name="F:Windows.AI.MachineLearning.TensorKind.Undefined">
-      <summary>Type non valide</summary>
+      <summary>Type non valide.</summary>
     </member>
     <member name="T:Windows.AI.MachineLearning.TensorString">
-      <summary>Un objet de tenseur de chaîne.</summary>
+      <summary>Objet String tenseur.</summary>
     </member>
     <member name="P:Windows.AI.MachineLearning.TensorString.Kind">
-      <summary>Le type de la fonctionnalité.</summary>
-      <returns>Le type de la fonctionnalité.</returns>
+      <summary>Type de la fonctionnalité.</summary>
+      <returns>Type de la fonctionnalité.</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.TensorString.Shape">
       <summary>Retourne le nombre et la taille de chaque dimension.</summary>
       <returns>Nombre et taille de chaque dimension.</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.TensorString.TensorKind">
-      <summary>Retourne le type de données du tenseur.</summary>
-      <returns>Type de données du tenseur.</returns>
+      <summary>Retourne le type de données de tenseur.</summary>
+      <returns>Type de données de tenseur.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorString.Close">
-      <summary>Si aucun objet IMemoryBufferReference en attente n'est créé à partir de cet objet, **Close** supprimera l'objet et détruira ses ressources associées. Sinon, **Close** se détachera de ses ressources associées qui seront détruites lors de la fermeture du dernier objet IMemoryBufferReference.</summary>
+      <summary>S’il n’existe aucun objet IMemoryBufferReference en attente créé à partir de cet objet, * * Close * * supprime l’objet et détruit ses ressources associées. Dans le cas contraire, * * fermer * * se détachera de ses ressources associées et sera détruit lorsque le dernier IMemoryBufferReference sera fermé.</summary>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorString.Create">
-      <summary>Crée un objet de tenseur de chaîne sans allouer de tampon.</summary>
-      <returns>Un objet de tenseur de chaîne.</returns>
+      <summary>Crée un objet String tenseur sans allouer de mémoire tampon.</summary>
+      <returns>Objet String tenseur.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorString.Create(Windows.Foundation.Collections.IIterable{System.Int64})">
-      <summary>Crée un objet de tenseur de type chaîne et alloue un tampon de taille *shape*.</summary>
+      <summary>Crée un objet String tenseur et alloue une mémoire tampon de taille * forme *.</summary>
       <param name="shape">Taille de la mémoire tampon.</param>
-      <returns>Objet de tenseur de type chaîne avec un tampon de la taille donnée.</returns>
+      <returns>Objet tenseur String avec une mémoire tampon de la taille donnée.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorString.CreateFromArray(Windows.Foundation.Collections.IIterable{System.Int64},System.String[])">
-      <summary>Crée un objet de tenseur de chaîne, alloue un tampon de taille *shape* et copie toutes les *data* à l'intérieur.</summary>
+      <summary>Crée un objet String tenseur, alloue une mémoire tampon de taille * Shape * et copie tous les * données * dans celui-ci.</summary>
       <param name="shape">Taille de la mémoire tampon.</param>
-      <param name="data">Données à copier dans le tampon.</param>
-      <returns>Objet de tenseur de type chaîne avec un tampon contenant les données fournies.</returns>
+      <param name="data">Données à copier dans la mémoire tampon.</param>
+      <returns>Objet tenseur String avec une mémoire tampon contenant les données spécifiées.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorString.CreateFromIterable(Windows.Foundation.Collections.IIterable{System.Int64},Windows.Foundation.Collections.IIterable{System.String})">
-      <summary>Crée un objet de tenseur de chaîne, alloue un tampon de taille *shape* et copie toutes les *data* à l'intérieur.</summary>
+      <summary>Crée un objet String tenseur, alloue une mémoire tampon de taille * Shape * et copie tous les * données * dans celui-ci.</summary>
       <param name="shape">Taille de la mémoire tampon.</param>
-      <param name="data">Données à copier dans le tampon.</param>
-      <returns>Objet de tenseur de type chaîne avec un tampon contenant les données fournies.</returns>
+      <param name="data">Données à copier dans la mémoire tampon.</param>
+      <returns>Objet tenseur String avec une mémoire tampon contenant les données spécifiées.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorString.CreateFromShapeArrayAndDataArray(System.Int64[],System.String[])">
-      <summary>Crée un objet de tenseur de chaîne, alloue un tampon de taille *shape* et copie toutes les *data* à l'intérieur.</summary>
+      <summary>Crée un objet String tenseur, alloue une mémoire tampon de taille * Shape * et copie tous les * données * dans celui-ci.</summary>
       <param name="shape">Taille de la mémoire tampon.</param>
-      <param name="data">Données à copier dans le tampon.</param>
-      <returns>Objet de tenseur de type chaîne avec un tampon contenant les données fournies.</returns>
+      <param name="data">Données à copier dans la mémoire tampon.</param>
+      <returns>Objet tenseur String avec une mémoire tampon contenant les données spécifiées.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorString.CreateReference">
-      <summary>Cette méthode n'est pas autorisée sur les objets TensorString et ne doit pas être utilisée.</summary>
-      <returns>L'objet IMemoryBufferReference renvoyé a toujours la valeur **null**.</returns>
+      <summary>Cette méthode n’est pas autorisée sur les objets TensorString et ne doit pas être utilisée.</summary>
+      <returns>Le IMemoryBufferReference retourné est toujours * * null * *.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorString.GetAsVectorView">
-      <summary>Renvoie une vue en lecture seule des données.</summary>
+      <summary>Retourne une vue en lecture seule des données.</summary>
       <returns>Vue en lecture seule des données.</returns>
     </member>
     <member name="T:Windows.AI.MachineLearning.TensorUInt16Bit">
-      <summary>Objet de tenseur de type entier non signé 16 bits.</summary>
+      <summary>Objet tenseur entier non signé 16 bits.</summary>
     </member>
     <member name="P:Windows.AI.MachineLearning.TensorUInt16Bit.Kind">
-      <summary>Le type de la fonctionnalité.</summary>
-      <returns>Le type de la fonctionnalité.</returns>
+      <summary>Type de la fonctionnalité.</summary>
+      <returns>Type de la fonctionnalité.</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.TensorUInt16Bit.Shape">
       <summary>Retourne le nombre et la taille de chaque dimension.</summary>
       <returns>Nombre et taille de chaque dimension.</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.TensorUInt16Bit.TensorKind">
-      <summary>Retourne le type de données du tenseur.</summary>
-      <returns>Type de données du tenseur.</returns>
+      <summary>Retourne le type de données de tenseur.</summary>
+      <returns>Type de données de tenseur.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorUInt16Bit.Close">
-      <summary>Si aucun objet IMemoryBufferReference en attente n'est créé à partir de cet objet, **Close** supprimera l'objet et détruira ses ressources associées. Sinon, **Close** se détachera de ses ressources associées qui seront détruites lors de la fermeture du dernier objet IMemoryBufferReference.</summary>
+      <summary>S’il n’existe aucun objet IMemoryBufferReference en attente créé à partir de cet objet, * * Close * * supprime l’objet et détruit ses ressources associées. Dans le cas contraire, * * fermer * * se détachera de ses ressources associées et sera détruit lorsque le dernier IMemoryBufferReference sera fermé.</summary>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorUInt16Bit.Create">
-      <summary>Crée un objet de tenseur de type entier non signé 16 bits sans allouer de tampon.</summary>
-      <returns>Objet de tenseur de type entier non signé 16 bits.</returns>
+      <summary>Crée un objet tenseur d’entier non signé 16 bits sans allouer de mémoire tampon.</summary>
+      <returns>Objet tenseur entier non signé 16 bits.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorUInt16Bit.Create(Windows.Foundation.Collections.IIterable{System.Int64})">
-      <summary>Crée un objet de tenseur de type entier non signé 16 bits et alloue un tampon de taille *shape*.</summary>
+      <summary>Crée un objet tenseur d’entier non signé 16 bits et alloue une mémoire tampon de taille * forme *.</summary>
       <param name="shape">Taille de la mémoire tampon.</param>
-      <returns>Objet de tenseur de type entier non signé 16 bits avec un tampon de la taille donnée.</returns>
+      <returns>Objet tenseur entier non signé 16 bits avec une mémoire tampon de la taille donnée.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorUInt16Bit.CreateFromArray(Windows.Foundation.Collections.IIterable{System.Int64},System.UInt16[])">
-      <summary>Crée un objet de tenseur de type entier non signé 16 bits, alloue un tampon de taille *shape* et copie toutes les *data* à l'intérieur.</summary>
+      <summary>Crée un objet tenseur d’entier non signé 16 bits, alloue une mémoire tampon de taille * forme * et copie tous les * données * dans celui-ci.</summary>
       <param name="shape">Taille de la mémoire tampon.</param>
-      <param name="data">Données à copier dans le tampon.</param>
-      <returns>Objet de tenseur de type entier non signé 16 bits avec un tampon contenant les données fournies.</returns>
+      <param name="data">Données à copier dans la mémoire tampon.</param>
+      <returns>Objet tenseur entier non signé 16 bits avec une mémoire tampon contenant les données spécifiées.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorUInt16Bit.CreateFromBuffer(System.Int64[],Windows.Storage.Streams.IBuffer)">
-      <summary>Crée un objet de tenseur de type entier non signé 16 bits avec l'objet *shape* donné et utilise le tampon sous-jacent dans *buffer* pour l'évaluation ultérieure.</summary>
+      <summary>Crée un objet tenseur d’entier non signé 16 bits avec la forme * donnée * et utilise la mémoire tampon sous-jacente dans * buffer * pour une évaluation ultérieure.</summary>
       <param name="shape">Taille de la mémoire tampon.</param>
-      <param name="buffer">Tampon à utiliser lors de l'évaluation.</param>
-      <returns>Objet de tenseur de type entier non signé 16 bits avec une référence tampon à la *buffer* IBuffer fournie.</returns>
+      <param name="buffer">Mémoire tampon à utiliser pendant l’évaluation.</param>
+      <returns>Objet tenseur entier non signé 16 bits sauvegardé par une référence de mémoire tampon à la mémoire tampon IBuffer * fournie.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorUInt16Bit.CreateFromIterable(Windows.Foundation.Collections.IIterable{System.Int64},Windows.Foundation.Collections.IIterable{System.UInt16})">
-      <summary>Crée un objet de tenseur de type entier non signé 16 bits, alloue un tampon de taille *shape* et copie toutes les *data* à l'intérieur.</summary>
+      <summary>Crée un objet tenseur d’entier non signé 16 bits, alloue une mémoire tampon de taille * forme * et copie tous les * données * dans celui-ci.</summary>
       <param name="shape">Taille de la mémoire tampon.</param>
-      <param name="data">Données à copier dans le tampon.</param>
-      <returns>Objet de tenseur de type entier non signé 16 bits avec un tampon contenant les données fournies.</returns>
+      <param name="data">Données à copier dans la mémoire tampon.</param>
+      <returns>Objet tenseur entier non signé 16 bits avec une mémoire tampon contenant les données spécifiées.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorUInt16Bit.CreateFromShapeArrayAndDataArray(System.Int64[],System.UInt16[])">
-      <summary>Crée un objet de tenseur de type entier non signé 16 bits, alloue un tampon de taille *shape* et copie toutes les *data* à l'intérieur.</summary>
+      <summary>Crée un objet tenseur d’entier non signé 16 bits, alloue une mémoire tampon de taille * forme * et copie tous les * données * dans celui-ci.</summary>
       <param name="shape">Taille de la mémoire tampon.</param>
-      <param name="data">Données à copier dans le tampon.</param>
-      <returns>Objet de tenseur de type entier non signé 16 bits avec un tampon contenant les données fournies.</returns>
+      <param name="data">Données à copier dans la mémoire tampon.</param>
+      <returns>Objet tenseur entier non signé 16 bits avec une mémoire tampon contenant les données spécifiées.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorUInt16Bit.CreateReference">
-      <summary>Renvoie une représentation IMemoryBufferReference du tampon qui stocke l'objet de tenseur de type entier non signé 16 bits.</summary>
-      <returns>Représentation IMemoryBufferReference du tampon d'un tenseur.</returns>
+      <summary>Retourne une représentation IMemoryBufferReference de la mémoire tampon qui stocke l’objet tenseur entier non signé 16 bits.</summary>
+      <returns>Représentation IMemoryBufferReference d’une mémoire tampon tenseur.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorUInt16Bit.GetAsVectorView">
-      <summary>Renvoie une vue en lecture seule des données.</summary>
+      <summary>Retourne une vue en lecture seule des données.</summary>
       <returns>Vue en lecture seule des données.</returns>
     </member>
     <member name="T:Windows.AI.MachineLearning.TensorUInt32Bit">
-      <summary>Objet de tenseur de type entier non signé 32 bits.</summary>
+      <summary>Objet tenseur entier non signé 32 bits.</summary>
     </member>
     <member name="P:Windows.AI.MachineLearning.TensorUInt32Bit.Kind">
-      <summary>Le type de la fonctionnalité.</summary>
-      <returns>Le type de la fonctionnalité.</returns>
+      <summary>Type de la fonctionnalité.</summary>
+      <returns>Type de la fonctionnalité.</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.TensorUInt32Bit.Shape">
       <summary>Retourne le nombre et la taille de chaque dimension.</summary>
       <returns>Nombre et taille de chaque dimension.</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.TensorUInt32Bit.TensorKind">
-      <summary>Retourne le type de données du tenseur.</summary>
-      <returns>Type de données du tenseur.</returns>
+      <summary>Retourne le type de données de tenseur.</summary>
+      <returns>Type de données de tenseur.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorUInt32Bit.Close">
-      <summary>Si aucun objet IMemoryBufferReference en attente n'est créé à partir de cet objet, **Close** supprimera l'objet et détruira ses ressources associées. Sinon, **Close** se détachera de ses ressources associées qui seront détruites lors de la fermeture du dernier objet IMemoryBufferReference.</summary>
+      <summary>S’il n’existe aucun objet IMemoryBufferReference en attente créé à partir de cet objet, * * Close * * supprime l’objet et détruit ses ressources associées. Dans le cas contraire, * * fermer * * se détachera de ses ressources associées et sera détruit lorsque le dernier IMemoryBufferReference sera fermé.</summary>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorUInt32Bit.Create">
-      <summary>Crée un objet de tenseur de type entier non signé 32 bits sans allouer de tampon.</summary>
-      <returns>Objet de tenseur de type entier non signé 32 bits.</returns>
+      <summary>Crée un objet tenseur d’entier non signé 32 bits sans allouer de mémoire tampon.</summary>
+      <returns>Objet tenseur entier non signé 32 bits.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorUInt32Bit.Create(Windows.Foundation.Collections.IIterable{System.Int64})">
-      <summary>Crée un objet de tenseur de type entier non signé 32 bits et alloue un tampon de taille *shape*.</summary>
+      <summary>Crée un objet tenseur d’entier non signé 32 bits et alloue une mémoire tampon de taille * forme *.</summary>
       <param name="shape">Taille de la mémoire tampon.</param>
-      <returns>Objet de tenseur de type entier non signé 32 bits avec un tampon de la taille donnée.</returns>
+      <returns>Objet tenseur entier non signé 32 bits avec une mémoire tampon de la taille donnée.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorUInt32Bit.CreateFromArray(Windows.Foundation.Collections.IIterable{System.Int64},System.UInt32[])">
-      <summary>Crée un objet de tenseur de type entier non signé 32 bits, alloue un tampon de taille *shape* et copie toutes les *data* à l'intérieur.</summary>
+      <summary>Crée un objet tenseur d’entier non signé 32 bits, alloue une mémoire tampon de taille * forme * et copie tous les * données * dans celui-ci.</summary>
       <param name="shape">Taille de la mémoire tampon.</param>
-      <param name="data">Données à copier dans le tampon.</param>
-      <returns>Objet de tenseur de type entier non signé 32 bits avec un tampon contenant les données fournies.</returns>
+      <param name="data">Données à copier dans la mémoire tampon.</param>
+      <returns>Objet tenseur entier non signé 32 bits avec une mémoire tampon contenant les données spécifiées.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorUInt32Bit.CreateFromBuffer(System.Int64[],Windows.Storage.Streams.IBuffer)">
-      <summary>Crée un objet de tenseur de type entier non signé 32 bits avec l'objet *shape* donné et utilise le tampon sous-jacent dans *buffer* pour l'évaluation ultérieure.</summary>
+      <summary>Crée un objet tenseur d’entier non signé 32 bits avec la forme * donnée * et utilise la mémoire tampon sous-jacente dans * buffer * pour une évaluation ultérieure.</summary>
       <param name="shape">Taille de la mémoire tampon.</param>
-      <param name="buffer">Tampon à utiliser lors de l'évaluation.</param>
-      <returns>Objet de tenseur de type entier non signé 32 bits avec une référence tampon à la *buffer* IBuffer fournie.</returns>
+      <param name="buffer">Mémoire tampon à utiliser pendant l’évaluation.</param>
+      <returns>Objet tenseur d’entier non signé 32 bits sauvegardé par une référence de mémoire tampon à la mémoire tampon IBuffer * fournie *.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorUInt32Bit.CreateFromIterable(Windows.Foundation.Collections.IIterable{System.Int64},Windows.Foundation.Collections.IIterable{System.UInt32})">
-      <summary>Crée un objet de tenseur de type entier non signé 32 bits, alloue un tampon de taille *shape* et copie toutes les *data* à l'intérieur.</summary>
+      <summary>Crée un objet tenseur d’entier non signé 32 bits, alloue une mémoire tampon de taille * forme * et copie tous les * données * dans celui-ci.</summary>
       <param name="shape">Taille de la mémoire tampon.</param>
-      <param name="data">Données à copier dans le tampon.</param>
-      <returns>Objet de tenseur de type entier non signé 32 bits avec un tampon contenant les données fournies.</returns>
+      <param name="data">Données à copier dans la mémoire tampon.</param>
+      <returns>Objet tenseur entier non signé 32 bits avec une mémoire tampon contenant les données spécifiées.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorUInt32Bit.CreateFromShapeArrayAndDataArray(System.Int64[],System.UInt32[])">
-      <summary>Crée un objet de tenseur de type entier non signé 32 bits, alloue un tampon de taille *shape* et copie toutes les *data* à l'intérieur.</summary>
+      <summary>Crée un objet tenseur d’entier non signé 32 bits, alloue une mémoire tampon de taille * forme * et copie tous les * données * dans celui-ci.</summary>
       <param name="shape">Taille de la mémoire tampon.</param>
-      <param name="data">Données à copier dans le tampon.</param>
-      <returns>Objet de tenseur de type entier non signé 32 bits avec un tampon contenant les données fournies.</returns>
+      <param name="data">Données à copier dans la mémoire tampon.</param>
+      <returns>Objet tenseur entier non signé 32 bits avec une mémoire tampon contenant les données spécifiées.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorUInt32Bit.CreateReference">
-      <summary>Renvoie une représentation IMemoryBufferReference du tampon qui stocke l'objet de tenseur de type entier non signé 32 bits.</summary>
-      <returns>Représentation IMemoryBufferReference du tampon d'un tenseur.</returns>
+      <summary>Retourne une représentation IMemoryBufferReference de la mémoire tampon qui stocke l’objet tenseur de l’entier non signé 32 bits.</summary>
+      <returns>Représentation IMemoryBufferReference d’une mémoire tampon tenseur.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorUInt32Bit.GetAsVectorView">
-      <summary>Renvoie une vue en lecture seule des données.</summary>
+      <summary>Retourne une vue en lecture seule des données.</summary>
       <returns>Vue en lecture seule des données.</returns>
     </member>
     <member name="T:Windows.AI.MachineLearning.TensorUInt64Bit">
-      <summary>Objet de tenseur de type entier non signé 64 bits.</summary>
+      <summary>Objet tenseur entier non signé 64 bits.</summary>
     </member>
     <member name="P:Windows.AI.MachineLearning.TensorUInt64Bit.Kind">
-      <summary>Le type de la fonctionnalité.</summary>
-      <returns>Le type de la fonctionnalité.</returns>
+      <summary>Type de la fonctionnalité.</summary>
+      <returns>Type de la fonctionnalité.</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.TensorUInt64Bit.Shape">
       <summary>Retourne le nombre et la taille de chaque dimension.</summary>
       <returns>Nombre et taille de chaque dimension.</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.TensorUInt64Bit.TensorKind">
-      <summary>Retourne le type de données du tenseur.</summary>
-      <returns>Type de données du tenseur.</returns>
+      <summary>Retourne le type de données de tenseur.</summary>
+      <returns>Type de données de tenseur.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorUInt64Bit.Close">
-      <summary>Si aucun objet IMemoryBufferReference en attente n'est créé à partir de cet objet, **Close** supprimera l'objet et détruira ses ressources associées. Sinon, **Close** se détachera de ses ressources associées qui seront détruites lors de la fermeture du dernier objet IMemoryBufferReference.</summary>
+      <summary>S’il n’existe aucun objet IMemoryBufferReference en attente créé à partir de cet objet, * * Close * * supprime l’objet et détruit ses ressources associées. Dans le cas contraire, * * fermer * * se détachera de ses ressources associées et sera détruit lorsque le dernier IMemoryBufferReference sera fermé.</summary>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorUInt64Bit.Create">
-      <summary>Crée un objet de tenseur de type entier non signé 64 bits sans allouer de tampon.</summary>
-      <returns>Objet de tenseur de type entier non signé 64 bits.</returns>
+      <summary>Crée un objet tenseur d’entier non signé 64 bits sans allouer de mémoire tampon.</summary>
+      <returns>Objet tenseur entier non signé 64 bits.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorUInt64Bit.Create(Windows.Foundation.Collections.IIterable{System.Int64})">
-      <summary>Crée un objet de tenseur de type entier non signé 64 bits et alloue un tampon de taille *shape*.</summary>
+      <summary>Crée un objet tenseur d’entier non signé 64 bits et alloue une mémoire tampon de taille * forme *.</summary>
       <param name="shape">Taille de la mémoire tampon.</param>
-      <returns>Objet de tenseur de type entier non signé 64 bits avec un tampon de la taille donnée.</returns>
+      <returns>Objet tenseur entier non signé 64 bits avec une mémoire tampon de la taille donnée.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorUInt64Bit.CreateFromArray(Windows.Foundation.Collections.IIterable{System.Int64},System.UInt64[])">
-      <summary>Crée un objet de tenseur de type entier non signé 64 bits, alloue un tampon de taille *shape* et copie toutes les *data* à l'intérieur.</summary>
+      <summary>Crée un objet tenseur d’entier non signé 64 bits, alloue une mémoire tampon de taille * forme * et copie tous les * données * dans celui-ci.</summary>
       <param name="shape">Taille de la mémoire tampon.</param>
-      <param name="data">Données à copier dans le tampon.</param>
-      <returns>Objet de tenseur de type entier non signé 64 bits avec un tampon contenant les données fournies.</returns>
+      <param name="data">Données à copier dans la mémoire tampon.</param>
+      <returns>Objet tenseur entier non signé 64 bits avec une mémoire tampon contenant les données spécifiées.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorUInt64Bit.CreateFromBuffer(System.Int64[],Windows.Storage.Streams.IBuffer)">
-      <summary>Crée un objet de tenseur de type entier non signé 64 bits avec l'objet *shape* donné et utilise le tampon sous-jacent dans *buffer* pour l'évaluation ultérieure.</summary>
+      <summary>Crée un objet tenseur d’entier non signé 64 bits avec la forme * donnée * et utilise la mémoire tampon sous-jacente dans * buffer * pour une évaluation ultérieure.</summary>
       <param name="shape">Taille de la mémoire tampon.</param>
-      <param name="buffer">Tampon à utiliser lors de l'évaluation.</param>
-      <returns>Objet de tenseur de type entier non signé 64 bits avec une référence tampon à la *buffer* IBuffer fournie.</returns>
+      <param name="buffer">Mémoire tampon à utiliser pendant l’évaluation.</param>
+      <returns>Objet tenseur d’entier non signé 64 bits sauvegardé par une référence de mémoire tampon à la mémoire tampon IBuffer * fournie *.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorUInt64Bit.CreateFromIterable(Windows.Foundation.Collections.IIterable{System.Int64},Windows.Foundation.Collections.IIterable{System.UInt64})">
-      <summary>Crée un objet de tenseur de type entier non signé 64 bits, alloue un tampon de taille *shape* et copie toutes les *data* à l'intérieur.</summary>
+      <summary>Crée un objet tenseur d’entier non signé 64 bits, alloue une mémoire tampon de taille * forme * et copie tous les * données * dans celui-ci.</summary>
       <param name="shape">Taille de la mémoire tampon.</param>
-      <param name="data">Données à copier dans le tampon.</param>
-      <returns>Objet de tenseur de type entier non signé 64 bits avec un tampon contenant les données fournies.</returns>
+      <param name="data">Données à copier dans la mémoire tampon.</param>
+      <returns>Objet tenseur entier non signé 64 bits avec une mémoire tampon contenant les données spécifiées.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorUInt64Bit.CreateFromShapeArrayAndDataArray(System.Int64[],System.UInt64[])">
-      <summary>Crée un objet de tenseur de type entier non signé 64 bits, alloue un tampon de taille *shape* et copie toutes les *data* à l'intérieur.</summary>
+      <summary>Crée un objet tenseur d’entier non signé 64 bits, alloue une mémoire tampon de taille * forme * et copie tous les * données * dans celui-ci.</summary>
       <param name="shape">Taille de la mémoire tampon.</param>
-      <param name="data">Données à copier dans le tampon.</param>
-      <returns>Objet de tenseur de type entier non signé 64 bits avec un tampon contenant les données fournies.</returns>
+      <param name="data">Données à copier dans la mémoire tampon.</param>
+      <returns>Objet tenseur entier non signé 64 bits avec une mémoire tampon contenant les données spécifiées.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorUInt64Bit.CreateReference">
-      <summary>Renvoie une représentation IMemoryBufferReference du tampon qui stocke l'objet de tenseur de type entier non signé 64 bits.</summary>
-      <returns>Représentation IMemoryBufferReference du tampon d'un tenseur.</returns>
+      <summary>Retourne une représentation IMemoryBufferReference de la mémoire tampon qui stocke l’objet tenseur de l’entier non signé 64 bits.</summary>
+      <returns>Représentation IMemoryBufferReference d’une mémoire tampon tenseur.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorUInt64Bit.GetAsVectorView">
-      <summary>Renvoie une vue en lecture seule des données.</summary>
+      <summary>Retourne une vue en lecture seule des données.</summary>
       <returns>Vue en lecture seule des données.</returns>
     </member>
     <member name="T:Windows.AI.MachineLearning.TensorUInt8Bit">
-      <summary>Objet de tenseur de type entier non signé 8 bits.</summary>
+      <summary>Objet tenseur entier non signé 8 bits.</summary>
     </member>
     <member name="P:Windows.AI.MachineLearning.TensorUInt8Bit.Kind">
-      <summary>Le type de la fonctionnalité.</summary>
-      <returns>Le type de la fonctionnalité.</returns>
+      <summary>Type de la fonctionnalité.</summary>
+      <returns>Type de la fonctionnalité.</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.TensorUInt8Bit.Shape">
       <summary>Retourne le nombre et la taille de chaque dimension.</summary>
       <returns>Nombre et taille de chaque dimension.</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.TensorUInt8Bit.TensorKind">
-      <summary>Retourne le type de données du tenseur.</summary>
-      <returns>Type de données du tenseur.</returns>
+      <summary>Retourne le type de données de tenseur.</summary>
+      <returns>Type de données de tenseur.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorUInt8Bit.Close">
-      <summary>Si aucun objet IMemoryBufferReference en attente n'est créé à partir de cet objet, **Close** supprimera l'objet et détruira ses ressources associées. Sinon, **Close** se détachera de ses ressources associées qui seront détruites lors de la fermeture du dernier objet IMemoryBufferReference.</summary>
+      <summary>S’il n’existe aucun objet IMemoryBufferReference en attente créé à partir de cet objet, * * Close * * supprime l’objet et détruit ses ressources associées. Dans le cas contraire, * * fermer * * se détachera de ses ressources associées et sera détruit lorsque le dernier IMemoryBufferReference sera fermé.</summary>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorUInt8Bit.Create">
-      <summary>Crée un objet de tenseur de type entier non signé 8 bits sans allouer de tampon.</summary>
-      <returns>Objet de tenseur de type entier non signé 8 bits.</returns>
+      <summary>Crée un objet tenseur d’entier non signé 8 bits sans allouer de mémoire tampon.</summary>
+      <returns>Objet tenseur entier non signé 8 bits.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorUInt8Bit.Create(Windows.Foundation.Collections.IIterable{System.Int64})">
-      <summary>Crée un objet de tenseur de type entier non signé 8 bits et alloue un tampon de taille *shape*.</summary>
+      <summary>Crée un objet tenseur d’entier non signé 8 bits et alloue une mémoire tampon de taille * forme *.</summary>
       <param name="shape">Taille de la mémoire tampon.</param>
-      <returns>Objet de tenseur de type entier non signé 8 bits avec un tampon de la taille donnée.</returns>
+      <returns>Objet tenseur entier 8 bits non signé avec une mémoire tampon de la taille donnée.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorUInt8Bit.CreateFromArray(Windows.Foundation.Collections.IIterable{System.Int64},System.Byte[])">
-      <summary>Crée un objet de tenseur de type entier non signé 8 bits, alloue un tampon de taille *shape* et copie toutes les *data* à l'intérieur.</summary>
+      <summary>Crée un objet tenseur d’entier non signé 8 bits, alloue une mémoire tampon de taille * forme * et copie tous les * données * dans celui-ci.</summary>
       <param name="shape">Taille de la mémoire tampon.</param>
-      <param name="data">Données à copier dans le tampon.</param>
-      <returns>Objet de tenseur de type entier non signé 8 bits avec un tampon contenant les données fournies.</returns>
+      <param name="data">Données à copier dans la mémoire tampon.</param>
+      <returns>Objet tenseur entier 8 bits non signé avec une mémoire tampon contenant les données spécifiées.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorUInt8Bit.CreateFromBuffer(System.Int64[],Windows.Storage.Streams.IBuffer)">
-      <summary>Crée un objet de tenseur de type entier non signé 8 bits avec l'objet *shape* donné et utilise le tampon sous-jacent dans *buffer* pour l'évaluation ultérieure.</summary>
+      <summary>Crée un objet tenseur d’entier non signé 8 bits avec la forme * donnée * et utilise la mémoire tampon sous-jacente dans * buffer * pour une évaluation ultérieure.</summary>
       <param name="shape">Taille de la mémoire tampon.</param>
-      <param name="buffer">Tampon à utiliser lors de l'évaluation.</param>
-      <returns>Objet de tenseur de type entier non signé 8 bits avec une référence tampon à la *buffer* IBuffer fournie.</returns>
+      <param name="buffer">Mémoire tampon à utiliser pendant l’évaluation.</param>
+      <returns>Objet tenseur d’entier non signé 8 bits sauvegardé par une référence de mémoire tampon à la mémoire tampon IBuffer * fournie *.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorUInt8Bit.CreateFromIterable(Windows.Foundation.Collections.IIterable{System.Int64},Windows.Foundation.Collections.IIterable{System.Byte})">
-      <summary>Crée un objet de tenseur de type entier non signé 8 bits, alloue un tampon de taille *shape* et copie toutes les *data* à l'intérieur.</summary>
+      <summary>Crée un objet tenseur d’entier non signé 8 bits, alloue une mémoire tampon de taille * forme * et copie tous les * données * dans celui-ci.</summary>
       <param name="shape">Taille de la mémoire tampon.</param>
-      <param name="data">Données à copier dans le tampon.</param>
-      <returns>Objet de tenseur de type entier non signé 8 bits avec un tampon contenant les données fournies.</returns>
+      <param name="data">Données à copier dans la mémoire tampon.</param>
+      <returns>Objet tenseur entier 8 bits non signé avec une mémoire tampon contenant les données spécifiées.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorUInt8Bit.CreateFromShapeArrayAndDataArray(System.Int64[],System.Byte[])">
-      <summary>Crée un objet de tenseur de type entier non signé 8 bits, alloue un tampon de taille *shape* et copie toutes les *data* à l'intérieur.</summary>
+      <summary>Crée un objet tenseur d’entier non signé 8 bits, alloue une mémoire tampon de taille * forme * et copie tous les * données * dans celui-ci.</summary>
       <param name="shape">Taille de la mémoire tampon.</param>
-      <param name="data">Données à copier dans le tampon.</param>
-      <returns>Objet de tenseur de type entier non signé 8 bits avec un tampon contenant les données fournies.</returns>
+      <param name="data">Données à copier dans la mémoire tampon.</param>
+      <returns>Objet tenseur entier 8 bits non signé avec une mémoire tampon contenant les données spécifiées.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorUInt8Bit.CreateReference">
-      <summary>Renvoie une représentation IMemoryBufferReference du tampon qui stocke l'objet de tenseur de type entier non signé 8 bits.</summary>
-      <returns>Représentation IMemoryBufferReference du tampon d'un tenseur.</returns>
+      <summary>Retourne une représentation IMemoryBufferReference de la mémoire tampon qui stocke l’objet tenseur 8 bits non signé.</summary>
+      <returns>Représentation IMemoryBufferReference d’une mémoire tampon tenseur.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorUInt8Bit.GetAsVectorView">
-      <summary>Renvoie une vue en lecture seule des données.</summary>
+      <summary>Retourne une vue en lecture seule des données.</summary>
       <returns>Vue en lecture seule des données.</returns>
     </member>
   </members>

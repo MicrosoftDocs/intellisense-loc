@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <doc>
   <assembly>
-    <name>Windows.UI.Xaml.Core.Direct.XamlDirectContract</name>
+    <name>Windows. UI. Xaml. Core. direct. XamlDirectContract</name>
   </assembly>
   <members>
     <member name="T:Windows.UI.Xaml.Core.Direct.IXamlDirectObject">
-      <summary>Représente le type d'objet principal qui participe à l'ensemble d'API XamlDirect.</summary>
+      <summary>Représente le type d’objet principal qui participe à l’ensemble d’API XamlDirect.</summary>
     </member>
     <member name="T:Windows.UI.Xaml.Core.Direct.XamlDirect">
-      <summary>Représente la classe de base de toutes les API XamlDirect. Toutes les API XamlDirect sont des méthodes d'instance de cette classe.</summary>
+      <summary>Représente la classe de base pour toutes les API XamlDirect. Toutes les API XamlDirect sont des méthodes d’instance de cette classe.</summary>
     </member>
     <member name="M:Windows.UI.Xaml.Core.Direct.XamlDirect.AddEventHandler(Windows.UI.Xaml.Core.Direct.IXamlDirectObject,Windows.UI.Xaml.Core.Direct.XamlEventIndex,System.Object)">
-      <summary>Ajoute le gestionnaire d'événements spécifié pour un événement spécifié à l'aide de XamlEventIndex, en ajoutant le gestionnaire à la collection de gestionnaires de l'élément IXamlDirectObject actuel.</summary>
-      <param name="xamlDirectObject">Référence à l'élément IXamlDirectObject actuel.</param>
-      <param name="eventIndex">Identificateur de l'événement à gérer par le biais de l'énumération XamlEventIndex.</param>
-      <param name="handler">Référence à l'implémentation de gestionnaire spécifiée.</param>
+      <summary>Ajoute le gestionnaire d’événements spécifié pour un événement spécifié à l’aide de XamlEventIndex, en ajoutant le gestionnaire à la collection de gestionnaires sur le IXamlDirectObject actuel.</summary>
+      <param name="xamlDirectObject">Référence au IXamlDirectObject actuel.</param>
+      <param name="eventIndex">Identificateur de l’événement à traiter spécifié par le biais de l’énumération XamlEventIndex.</param>
+      <param name="handler">Référence à l’implémentation du gestionnaire spécifié.</param>
     </member>
     <member name="M:Windows.UI.Xaml.Core.Direct.XamlDirect.AddEventHandler(Windows.UI.Xaml.Core.Direct.IXamlDirectObject,Windows.UI.Xaml.Core.Direct.XamlEventIndex,System.Object,System.Boolean)">
-      <summary>Ajoute le gestionnaire d'événements spécifié pour un événement spécifié à l'aide de XamlEventIndex, en ajoutant le gestionnaire à la collection de gestionnaires de l'élément IXamlDirectObject actuel. Spécifiez *handledEventsToo* comme true pour faire appeler le gestionnaire fourni, même si l'événement est géré ailleurs.</summary>
-      <param name="xamlDirectObject">Référence à l'élément IXamlDirectObject actuel.</param>
-      <param name="eventIndex">Identificateur de l'événement à gérer par le biais de l'énumération XamlEventIndex.</param>
-      <param name="handler">Référence à l'implémentation de gestionnaire spécifiée.</param>
-      <param name="handledEventsToo">**true** pour inscrire le gestionnaire de sorte qu'il soit appelé même lorsque l'événement routé est marqué comme géré dans les données d'événement.</param>
+      <summary>Ajoute le gestionnaire d’événements spécifié pour un événement spécifié à l’aide de XamlEventIndex, en ajoutant le gestionnaire à la collection de gestionnaires sur le IXamlDirectObject actuel. Spécifiez * handledEventsToo * comme true pour que le gestionnaire fourni soit appelé même si l’événement est géré ailleurs.</summary>
+      <param name="xamlDirectObject">Référence au IXamlDirectObject actuel.</param>
+      <param name="eventIndex">Identificateur de l’événement à traiter spécifié par le biais de l’énumération XamlEventIndex.</param>
+      <param name="handler">Référence à l’implémentation du gestionnaire spécifié.</param>
+      <param name="handledEventsToo">* * true * * pour inscrire le gestionnaire de manière à ce qu’il soit appelé même quand l’événement routé est marqué comme géré dans ses données d’événement.</param>
     </member>
     <member name="M:Windows.UI.Xaml.Core.Direct.XamlDirect.AddToCollection(Windows.UI.Xaml.Core.Direct.IXamlDirectObject,Windows.UI.Xaml.Core.Direct.IXamlDirectObject)">
       <summary>Ajoute une valeur à la collection IXamlDirectObject spécifiée.</summary>
@@ -33,291 +33,291 @@
       <param name="xamlDirectObject">Fait référence à la collection IXamlDirectObject spécifique.</param>
     </member>
     <member name="M:Windows.UI.Xaml.Core.Direct.XamlDirect.ClearProperty(Windows.UI.Xaml.Core.Direct.IXamlDirectObject,Windows.UI.Xaml.Core.Direct.XamlPropertyIndex)">
-      <summary>Efface la valeur de la propriété spécifiée d'un élément IXamlDirectObject donné.</summary>
-      <param name="xamlDirectObject">Référence à l'élément IXamlDirectObject spécifique.</param>
-      <param name="propertyIndex">Référence à la propriété à effacer de la liste des propriétés prises en charge dans l'énumération XamlPropertyIndex.</param>
+      <summary>Efface la valeur de la propriété spécifiée sur un IXamlDirectObject donné.</summary>
+      <param name="xamlDirectObject">Référence au IXamlDirectObject spécifique.</param>
+      <param name="propertyIndex">Référence à la propriété à effacer de la liste des propriétés prises en charge dans l’énumération XamlPropertyIndex.</param>
     </member>
     <member name="M:Windows.UI.Xaml.Core.Direct.XamlDirect.CreateInstance(Windows.UI.Xaml.Core.Direct.XamlTypeIndex)">
       <summary>Crée une instance IXamlDirectObject du type spécifié par le paramètre XamlTypeIndex.</summary>
-      <param name="typeIndex">Fait référence au type XAML spécifique de l'ensemble des types pris en charge répertoriés dans l'énumération XamlTypeIndex.</param>
-      <returns>Retourne l'instance IXamlDirectObject.</returns>
+      <param name="typeIndex">Fait référence au type XAML spécifique de l’ensemble des types pris en charge figurant dans l’énumération XamlTypeIndex.</param>
+      <returns>Retourne l’instance IXamlDirectObject.</returns>
     </member>
     <member name="M:Windows.UI.Xaml.Core.Direct.XamlDirect.GetBooleanProperty(Windows.UI.Xaml.Core.Direct.IXamlDirectObject,Windows.UI.Xaml.Core.Direct.XamlPropertyIndex)">
-      <summary>Obtient la valeur d'une propriété _Boolean_ pour un élément IXamlDirectObject spécifique.</summary>
-      <param name="xamlDirectObject">Référence à l'élément IXamlDirectObject spécifique.</param>
-      <param name="propertyIndex">Référence à la propriété _Boolean_ dont la valeur doit être obtenue à partir de la liste des propriétés prises en charge dans l'énumération XamlPropertyIndex.</param>
+      <summary>Obtient la valeur d’une propriété _Boolean_ pour un IXamlDirectObject spécifique.</summary>
+      <param name="xamlDirectObject">Référence au IXamlDirectObject spécifique.</param>
+      <param name="propertyIndex">Référence à la propriété _Boolean_ pour obtenir la valeur de dans la liste des propriétés prises en charge dans l’énumération XamlPropertyIndex.</param>
       <returns>Valeur _Boolean_ de la propriété spécifiée.</returns>
     </member>
     <member name="M:Windows.UI.Xaml.Core.Direct.XamlDirect.GetCollectionCount(Windows.UI.Xaml.Core.Direct.IXamlDirectObject)">
-      <summary>Retourne le nombre d'éléments dans la collection IXamlDirectObject spécifiée.</summary>
+      <summary>Retourne le nombre d’éléments dans la collection IXamlDirectObject spécifiée.</summary>
       <param name="xamlDirectObject">Fait référence à la collection IXamlDirectObject spécifique.</param>
-      <returns>Nombre d'éléments.</returns>
+      <returns>Nombre d’éléments.</returns>
     </member>
     <member name="M:Windows.UI.Xaml.Core.Direct.XamlDirect.GetColorProperty(Windows.UI.Xaml.Core.Direct.IXamlDirectObject,Windows.UI.Xaml.Core.Direct.XamlPropertyIndex)">
-      <summary>Obtient la valeur d'une propriété Color pour un élément IXamlDirectObject spécifique.</summary>
-      <param name="xamlDirectObject">Référence à l'élément IXamlDirectObject spécifique.</param>
-      <param name="propertyIndex">Référence à la propriété Color dont la valeur doit être obtenue à partir de la liste des propriétés prises en charge dans l'énumération XamlPropertyIndex.</param>
-      <returns>Valeur Color de la propriété spécifiée.</returns>
+      <summary>Obtient la valeur d’une propriété de couleur pour un IXamlDirectObject spécifique.</summary>
+      <param name="xamlDirectObject">Référence au IXamlDirectObject spécifique.</param>
+      <param name="propertyIndex">Référence à la propriété Color pour obtenir la valeur de dans la liste des propriétés prises en charge dans l’énumération XamlPropertyIndex.</param>
+      <returns>Valeur de couleur de la propriété spécifiée.</returns>
     </member>
     <member name="M:Windows.UI.Xaml.Core.Direct.XamlDirect.GetCornerRadiusProperty(Windows.UI.Xaml.Core.Direct.IXamlDirectObject,Windows.UI.Xaml.Core.Direct.XamlPropertyIndex)">
-      <summary>Obtient la valeur d'une propriété CornerRadius pour un élément IXamlDirectObject spécifique.</summary>
-      <param name="xamlDirectObject">Référence à l'élément IXamlDirectObject spécifique.</param>
-      <param name="propertyIndex">Référence à la propriété CornerRadius dont la valeur doit être obtenue à partir de la liste des propriétés prises en charge dans l'énumération XamlPropertyIndex.</param>
+      <summary>Obtient la valeur d’une propriété CornerRadius pour un IXamlDirectObject spécifique.</summary>
+      <param name="xamlDirectObject">Référence au IXamlDirectObject spécifique.</param>
+      <param name="propertyIndex">Référence à la propriété CornerRadius pour obtenir la valeur de dans la liste des propriétés prises en charge dans l’énumération XamlPropertyIndex.</param>
       <returns>Valeur CornerRadius de la propriété spécifiée.</returns>
     </member>
     <member name="M:Windows.UI.Xaml.Core.Direct.XamlDirect.GetDateTimeProperty(Windows.UI.Xaml.Core.Direct.IXamlDirectObject,Windows.UI.Xaml.Core.Direct.XamlPropertyIndex)">
-      <summary>Obtient la valeur d'une propriété _DateTimeOffset_ pour un élément IXamlDirectObject spécifique.</summary>
-      <param name="xamlDirectObject">Référence à l'élément IXamlDirectObject spécifique.</param>
-      <param name="propertyIndex">Référence à la propriété _DateTimeOffset_ dont la valeur doit être obtenue à partir de la liste des propriétés prises en charge dans l'énumération XamlPropertyIndex.</param>
+      <summary>Obtient la valeur d’une propriété _DateTimeOffset_ pour un IXamlDirectObject spécifique.</summary>
+      <param name="xamlDirectObject">Référence au IXamlDirectObject spécifique.</param>
+      <param name="propertyIndex">Référence à la propriété _DateTimeOffset_ pour obtenir la valeur de dans la liste des propriétés prises en charge dans l’énumération XamlPropertyIndex.</param>
       <returns>Valeur _DateTimeOffset_ de la propriété spécifiée.</returns>
     </member>
     <member name="M:Windows.UI.Xaml.Core.Direct.XamlDirect.GetDefault">
-      <summary>Retourne l'instance XamlDirect actuelle.</summary>
+      <summary>Retourne l’instance XamlDirect actuelle.</summary>
       <returns>XamlDirect</returns>
     </member>
     <member name="M:Windows.UI.Xaml.Core.Direct.XamlDirect.GetDoubleProperty(Windows.UI.Xaml.Core.Direct.IXamlDirectObject,Windows.UI.Xaml.Core.Direct.XamlPropertyIndex)">
-      <summary>Obtient la valeur d'une propriété _Double_ pour un élément IXamlDirectObject spécifique.</summary>
-      <param name="xamlDirectObject">Référence à l'élément IXamlDirectObject spécifique.</param>
-      <param name="propertyIndex">Référence à la propriété _Double_ dont la valeur doit être obtenue à partir de la liste des propriétés prises en charge dans l'énumération XamlPropertyIndex.</param>
+      <summary>Obtient la valeur d’une propriété _Double_ pour un IXamlDirectObject spécifique.</summary>
+      <param name="xamlDirectObject">Référence au IXamlDirectObject spécifique.</param>
+      <param name="propertyIndex">Référence à la propriété _Double_ pour obtenir la valeur de dans la liste des propriétés prises en charge dans l’énumération XamlPropertyIndex.</param>
       <returns>Valeur _Double_ de la propriété spécifiée.</returns>
     </member>
     <member name="M:Windows.UI.Xaml.Core.Direct.XamlDirect.GetDurationProperty(Windows.UI.Xaml.Core.Direct.IXamlDirectObject,Windows.UI.Xaml.Core.Direct.XamlPropertyIndex)">
-      <summary>Obtient la valeur d'une propriété _Duration_ pour un élément IXamlDirectObject spécifique.</summary>
-      <param name="xamlDirectObject">Référence à l'élément IXamlDirectObject spécifique.</param>
-      <param name="propertyIndex">Référence à la propriété _Duration_ dont la valeur doit être obtenue à partir de la liste des propriétés prises en charge dans l'énumération XamlPropertyIndex.</param>
+      <summary>Obtient la valeur d’une propriété _Duration_ pour un IXamlDirectObject spécifique.</summary>
+      <param name="xamlDirectObject">Référence au IXamlDirectObject spécifique.</param>
+      <param name="propertyIndex">Référence à la propriété _Duration_ pour obtenir la valeur de dans la liste des propriétés prises en charge dans l’énumération XamlPropertyIndex.</param>
       <returns>Valeur _Duration_ de la propriété spécifiée.</returns>
     </member>
     <member name="M:Windows.UI.Xaml.Core.Direct.XamlDirect.GetEnumProperty(Windows.UI.Xaml.Core.Direct.IXamlDirectObject,Windows.UI.Xaml.Core.Direct.XamlPropertyIndex)">
-      <summary>Obtient la valeur d'une propriété _Enum_ pour un élément IXamlDirectObject spécifique.</summary>
-      <param name="xamlDirectObject">Référence à l'élément IXamlDirectObject spécifique.</param>
-      <param name="propertyIndex">Référence à la propriété _Enum_ dont la valeur doit être obtenue à partir de la liste des propriétés prises en charge dans l'énumération XamlPropertyIndex.</param>
-      <returns>Valeur _UInt32_ de la propriété spécifiée qui peut être convertie en un type _Enum_ souhaité.</returns>
+      <summary>Obtient la valeur d’une propriété _Enum_ pour un IXamlDirectObject spécifique.</summary>
+      <param name="xamlDirectObject">Référence au IXamlDirectObject spécifique.</param>
+      <param name="propertyIndex">Référence à la propriété _Enum_ pour obtenir la valeur de dans la liste des propriétés prises en charge dans l’énumération XamlPropertyIndex.</param>
+      <returns>Valeur _UInt32_ de la propriété spécifiée qui peut être convertie vers le type _Enum_ souhaité.</returns>
     </member>
     <member name="M:Windows.UI.Xaml.Core.Direct.XamlDirect.GetGridLengthProperty(Windows.UI.Xaml.Core.Direct.IXamlDirectObject,Windows.UI.Xaml.Core.Direct.XamlPropertyIndex)">
-      <summary>Obtient la valeur d'une propriété GridLength pour un élément IXamlDirectObject spécifique.</summary>
-      <param name="xamlDirectObject">Référence à l'élément IXamlDirectObject spécifique.</param>
-      <param name="propertyIndex">Référence à la propriété GridLength dont la valeur doit être obtenue à partir de la liste des propriétés prises en charge dans l'énumération XamlPropertyIndex.</param>
+      <summary>Obtient la valeur d’une propriété GridLength pour un IXamlDirectObject spécifique.</summary>
+      <param name="xamlDirectObject">Référence au IXamlDirectObject spécifique.</param>
+      <param name="propertyIndex">Référence à la propriété GridLength pour obtenir la valeur de dans la liste des propriétés prises en charge dans l’énumération XamlPropertyIndex.</param>
       <returns>Valeur GridLength de la propriété spécifiée.</returns>
     </member>
     <member name="M:Windows.UI.Xaml.Core.Direct.XamlDirect.GetInt32Property(Windows.UI.Xaml.Core.Direct.IXamlDirectObject,Windows.UI.Xaml.Core.Direct.XamlPropertyIndex)">
-      <summary>Obtient la valeur d'une propriété _Int32_ pour un élément IXamlDirectObject spécifique.</summary>
-      <param name="xamlDirectObject">Référence à l'élément IXamlDirectObject spécifique.</param>
-      <param name="propertyIndex">Référence à la propriété _Int32_ dont la valeur doit être obtenue à partir de la liste des propriétés prises en charge dans l'énumération XamlPropertyIndex.</param>
+      <summary>Obtient la valeur d’une propriété _Int32_ pour un IXamlDirectObject spécifique.</summary>
+      <param name="xamlDirectObject">Référence au IXamlDirectObject spécifique.</param>
+      <param name="propertyIndex">Référence à la propriété _Int32_ pour obtenir la valeur de dans la liste des propriétés prises en charge dans l’énumération XamlPropertyIndex.</param>
       <returns>Valeur _Int32_ de la propriété spécifiée.</returns>
     </member>
     <member name="M:Windows.UI.Xaml.Core.Direct.XamlDirect.GetMatrix3DProperty(Windows.UI.Xaml.Core.Direct.IXamlDirectObject,Windows.UI.Xaml.Core.Direct.XamlPropertyIndex)">
-      <summary>Obtient la valeur d'une propriété Matrix3D pour un élément IXamlDirectObject spécifique.</summary>
-      <param name="xamlDirectObject">Référence à l'élément IXamlDirectObject spécifique.</param>
-      <param name="propertyIndex">Référence à la propriété Matrix3D dont la valeur doit être obtenue à partir de la liste des propriétés prises en charge dans l'énumération XamlPropertyIndex.</param>
+      <summary>Obtient la valeur d’une propriété Matrix3D pour un IXamlDirectObject spécifique.</summary>
+      <param name="xamlDirectObject">Référence au IXamlDirectObject spécifique.</param>
+      <param name="propertyIndex">Référence à la propriété Matrix3D pour obtenir la valeur de dans la liste des propriétés prises en charge dans l’énumération XamlPropertyIndex.</param>
       <returns>Valeur Matrix3D de la propriété spécifiée.</returns>
     </member>
     <member name="M:Windows.UI.Xaml.Core.Direct.XamlDirect.GetMatrixProperty(Windows.UI.Xaml.Core.Direct.IXamlDirectObject,Windows.UI.Xaml.Core.Direct.XamlPropertyIndex)">
-      <summary>Obtient la valeur d'une propriété Matrix pour un élément IXamlDirectObject spécifique.</summary>
-      <param name="xamlDirectObject">Référence à l'élément IXamlDirectObject spécifique.</param>
-      <param name="propertyIndex">Référence à la propriété Matrix dont la valeur doit être obtenue à partir de la liste des propriétés prises en charge dans l'énumération XamlPropertyIndex.</param>
-      <returns>Valeur Matrix de la propriété spécifiée.</returns>
+      <summary>Obtient la valeur d’une propriété de matrice pour un IXamlDirectObject spécifique.</summary>
+      <param name="xamlDirectObject">Référence au IXamlDirectObject spécifique.</param>
+      <param name="propertyIndex">Référence à la propriété de matrice pour obtenir la valeur de dans la liste des propriétés prises en charge dans l’énumération XamlPropertyIndex.</param>
+      <returns>Valeur de matrice de la propriété spécifiée.</returns>
     </member>
     <member name="M:Windows.UI.Xaml.Core.Direct.XamlDirect.GetObject(Windows.UI.Xaml.Core.Direct.IXamlDirectObject)">
-      <summary>Obtient (et crée si nécessaire) l'instance en tant que type XAML complet de l'élément IXamlDirectObject spécifié.</summary>
-      <param name="xamlDirectObject">Fait référence à l'élément IXamlDirectObject spécifique.</param>
-      <returns>Retourne l'instance du type XAML complet (généralement, mais pas toujours, un élément DependencyObject).</returns>
+      <summary>Obtient (et crée si nécessaire) l’instance en tant que type XAML complet du IXamlDirectObject spécifié.</summary>
+      <param name="xamlDirectObject">Fait référence au IXamlDirectObject spécifique.</param>
+      <returns>Retourne l’instance du type XAML complet (généralement, mais pas toujours, un DependencyObject).</returns>
     </member>
     <member name="M:Windows.UI.Xaml.Core.Direct.XamlDirect.GetObjectProperty(Windows.UI.Xaml.Core.Direct.IXamlDirectObject,Windows.UI.Xaml.Core.Direct.XamlPropertyIndex)">
-      <summary>Obtient la valeur d'une propriété _object_ pour un élément IXamlDirectObject spécifique.</summary>
-      <param name="xamlDirectObject">Référence à l'élément IXamlDirectObject spécifique.</param>
-      <param name="propertyIndex">Référence à la propriété _object_ dont la valeur doit être obtenue à partir de la liste des propriétés prises en charge dans l'énumération XamlPropertyIndex.</param>
-      <returns>Valeur _object_ de la propriété spécifiée.</returns>
+      <summary>Obtient la valeur d’une propriété _object_ pour un IXamlDirectObject spécifique.</summary>
+      <param name="xamlDirectObject">Référence au IXamlDirectObject spécifique.</param>
+      <param name="propertyIndex">Référence à la propriété _object_ pour obtenir la valeur de dans la liste des propriétés prises en charge dans l’énumération XamlPropertyIndex.</param>
+      <returns>valeur _object_ de la propriété spécifiée.</returns>
     </member>
     <member name="M:Windows.UI.Xaml.Core.Direct.XamlDirect.GetPointProperty(Windows.UI.Xaml.Core.Direct.IXamlDirectObject,Windows.UI.Xaml.Core.Direct.XamlPropertyIndex)">
-      <summary>Obtient la valeur d'une propriété Point pour un élément IXamlDirectObject spécifique.</summary>
-      <param name="xamlDirectObject">Référence à l'élément IXamlDirectObject spécifique.</param>
-      <param name="propertyIndex">Référence à la propriété Point dont la valeur doit être obtenue à partir de la liste des propriétés prises en charge dans l'énumération XamlPropertyIndex.</param>
-      <returns>Valeur Point de la propriété spécifiée.</returns>
+      <summary>Obtient la valeur d’une propriété point pour un IXamlDirectObject spécifique.</summary>
+      <param name="xamlDirectObject">Référence au IXamlDirectObject spécifique.</param>
+      <param name="propertyIndex">Référence à la propriété point pour obtenir la valeur de dans la liste des propriétés prises en charge dans l’énumération XamlPropertyIndex.</param>
+      <returns>Valeur de point de la propriété spécifiée.</returns>
     </member>
     <member name="M:Windows.UI.Xaml.Core.Direct.XamlDirect.GetRectProperty(Windows.UI.Xaml.Core.Direct.IXamlDirectObject,Windows.UI.Xaml.Core.Direct.XamlPropertyIndex)">
-      <summary>Obtient la valeur d'une propriété Rect pour un élément IXamlDirectObject spécifique.</summary>
-      <param name="xamlDirectObject">Référence à l'élément IXamlDirectObject spécifique.</param>
-      <param name="propertyIndex">Référence à la propriété Rect dont la valeur doit être obtenue à partir de la liste des propriétés prises en charge dans l'énumération XamlPropertyIndex.</param>
+      <summary>Obtient la valeur d’une propriété Rect pour un IXamlDirectObject spécifique.</summary>
+      <param name="xamlDirectObject">Référence au IXamlDirectObject spécifique.</param>
+      <param name="propertyIndex">Référence à la propriété Rect pour obtenir la valeur de dans la liste des propriétés prises en charge dans l’énumération XamlPropertyIndex.</param>
       <returns>Valeur Rect de la propriété spécifiée.</returns>
     </member>
     <member name="M:Windows.UI.Xaml.Core.Direct.XamlDirect.GetSizeProperty(Windows.UI.Xaml.Core.Direct.IXamlDirectObject,Windows.UI.Xaml.Core.Direct.XamlPropertyIndex)">
-      <summary>Obtient la valeur d'une propriété Size pour un élément IXamlDirectObject spécifique.</summary>
-      <param name="xamlDirectObject">Référence à l'élément IXamlDirectObject spécifique.</param>
-      <param name="propertyIndex">Référence à la propriété Size dont la valeur doit être obtenue à partir de la liste des propriétés prises en charge dans l'énumération XamlPropertyIndex.</param>
-      <returns>Valeur Size de la propriété spécifiée.</returns>
+      <summary>Obtient la valeur d’une propriété de taille pour un IXamlDirectObject spécifique.</summary>
+      <param name="xamlDirectObject">Référence au IXamlDirectObject spécifique.</param>
+      <param name="propertyIndex">Référence à la propriété Size pour obtenir la valeur de dans la liste des propriétés prises en charge dans l’énumération XamlPropertyIndex.</param>
+      <returns>Valeur de taille de la propriété spécifiée.</returns>
     </member>
     <member name="M:Windows.UI.Xaml.Core.Direct.XamlDirect.GetStringProperty(Windows.UI.Xaml.Core.Direct.IXamlDirectObject,Windows.UI.Xaml.Core.Direct.XamlPropertyIndex)">
-      <summary>Obtient la valeur d'une propriété _string_ pour un élément IXamlDirectObject spécifique.</summary>
-      <param name="xamlDirectObject">Référence à l'élément IXamlDirectObject spécifique.</param>
-      <param name="propertyIndex">Référence à la propriété _string_ dont la valeur doit être obtenue à partir de la liste des propriétés prises en charge dans l'énumération XamlPropertyIndex.</param>
-      <returns>Valeur _string_ de la propriété spécifiée.</returns>
+      <summary>Obtient la valeur d’une propriété _string_ pour un IXamlDirectObject spécifique.</summary>
+      <param name="xamlDirectObject">Référence au IXamlDirectObject spécifique.</param>
+      <param name="propertyIndex">Référence à la propriété _string_ pour obtenir la valeur de dans la liste des propriétés prises en charge dans l’énumération XamlPropertyIndex.</param>
+      <returns>valeur _string_ de la propriété spécifiée.</returns>
     </member>
     <member name="M:Windows.UI.Xaml.Core.Direct.XamlDirect.GetThicknessProperty(Windows.UI.Xaml.Core.Direct.IXamlDirectObject,Windows.UI.Xaml.Core.Direct.XamlPropertyIndex)">
-      <summary>Obtient la valeur d'une propriété Thickness pour un élément IXamlDirectObject spécifique.</summary>
-      <param name="xamlDirectObject">Référence à l'élément IXamlDirectObject spécifique.</param>
-      <param name="propertyIndex">Référence à la propriété Thickness dont la valeur doit être obtenue à partir de la liste des propriétés prises en charge dans l'énumération XamlPropertyIndex.</param>
-      <returns>Valeur Thickness de la propriété spécifiée.</returns>
+      <summary>Obtient la valeur d’une propriété d’épaisseur pour un IXamlDirectObject spécifique.</summary>
+      <param name="xamlDirectObject">Référence au IXamlDirectObject spécifique.</param>
+      <param name="propertyIndex">Référence à la propriété Thickness pour obtenir la valeur de dans la liste des propriétés prises en charge dans l’énumération XamlPropertyIndex.</param>
+      <returns>Valeur d’épaisseur de la propriété spécifiée.</returns>
     </member>
     <member name="M:Windows.UI.Xaml.Core.Direct.XamlDirect.GetTimeSpanProperty(Windows.UI.Xaml.Core.Direct.IXamlDirectObject,Windows.UI.Xaml.Core.Direct.XamlPropertyIndex)">
-      <summary>Obtient la valeur d'une propriété _TimeSpan_ pour un élément IXamlDirectObject spécifique.</summary>
-      <param name="xamlDirectObject">Référence à l'élément IXamlDirectObject spécifique.</param>
-      <param name="propertyIndex">Référence à la propriété _TimeSpan_ dont la valeur doit être obtenue à partir de la liste des propriétés prises en charge dans l'énumération XamlPropertyIndex.</param>
+      <summary>Obtient la valeur d’une propriété _TimeSpan_ pour un IXamlDirectObject spécifique.</summary>
+      <param name="xamlDirectObject">Référence au IXamlDirectObject spécifique.</param>
+      <param name="propertyIndex">Référence à la propriété _TimeSpan_ pour obtenir la valeur de dans la liste des propriétés prises en charge dans l’énumération XamlPropertyIndex.</param>
       <returns>Valeur _TimeSpan_ de la propriété spécifiée.</returns>
     </member>
     <member name="M:Windows.UI.Xaml.Core.Direct.XamlDirect.GetXamlDirectObject(System.Object)">
-      <summary>Obtient l'instance en tant qu'élément IXamlDirectObject pour un type XAML donné.</summary>
+      <summary>Obtient l’instance en tant que IXamlDirectObject pour un type XAML donné.</summary>
       <param name="@object">
       </param>
-      <returns>Retourne l'instance IXamlDirectObject.</returns>
+      <returns>Retourne l’instance IXamlDirectObject.</returns>
     </member>
     <member name="M:Windows.UI.Xaml.Core.Direct.XamlDirect.GetXamlDirectObjectFromCollectionAt(Windows.UI.Xaml.Core.Direct.IXamlDirectObject,System.UInt32)">
-      <summary>Retourne l’élément IXamlDirectObject à l'index spécifié dans la collection IXamlDirectObject spécifiée.</summary>
+      <summary>Retourne l’élément IXamlDirectObject à l’index spécifié à partir de la collection IXamlDirectObject spécifiée.</summary>
       <param name="xamlDirectObject">Fait référence à la collection IXamlDirectObject spécifique.</param>
-      <param name="index">Fait référence à l'index dans la collection de l'élément à obtenir.</param>
-      <returns>Retourne l'élément IXamlDirectObject à l'index spécifié de la collection.</returns>
+      <param name="index">Fait référence à l’index dans la collection de l’élément à récupérer.</param>
+      <returns>Retourne l’élément IXamlDirectObject à l’index spécifié de la collection.</returns>
     </member>
     <member name="M:Windows.UI.Xaml.Core.Direct.XamlDirect.GetXamlDirectObjectProperty(Windows.UI.Xaml.Core.Direct.IXamlDirectObject,Windows.UI.Xaml.Core.Direct.XamlPropertyIndex)">
-      <summary>Obtient la valeur d'une propriété IXamlDirectObject pour un élément IXamlDirectObject spécifique.</summary>
-      <param name="xamlDirectObject">Référence à l'élément IXamlDirectObject spécifique.</param>
-      <param name="propertyIndex">Référence à la propriété IXamlDirectObject dont la valeur doit être obtenue à partir de la liste des propriétés prises en charge dans l'énumération XamlPropertyIndex.</param>
+      <summary>Obtient la valeur d’une propriété IXamlDirectObject pour un IXamlDirectObject spécifique.</summary>
+      <param name="xamlDirectObject">Référence au IXamlDirectObject spécifique.</param>
+      <param name="propertyIndex">Référence à la propriété IXamlDirectObject pour obtenir la valeur de dans la liste des propriétés prises en charge dans l’énumération XamlPropertyIndex.</param>
       <returns>Valeur IXamlDirectObject de la propriété spécifiée.</returns>
     </member>
     <member name="M:Windows.UI.Xaml.Core.Direct.XamlDirect.InsertIntoCollectionAt(Windows.UI.Xaml.Core.Direct.IXamlDirectObject,System.UInt32,Windows.UI.Xaml.Core.Direct.IXamlDirectObject)">
-      <summary>Insère une valeur dans la collection IXamlDirectObject spécifiée à l'index spécifié.</summary>
+      <summary>Insère une valeur dans la collection IXamlDirectObject spécifiée à l’index spécifié.</summary>
       <param name="xamlDirectObject">Fait référence à la collection IXamlDirectObject spécifique.</param>
-      <param name="index">Fait référence à l'index dans la collection où la valeur spécifiée doit être insérée.</param>
+      <param name="index">Fait référence à l’index dans la collection où la valeur spécifiée doit être insérée.</param>
       <param name="value">Fait référence à la valeur IXamlDirectObject à ajouter à la collection.</param>
     </member>
     <member name="M:Windows.UI.Xaml.Core.Direct.XamlDirect.RemoveEventHandler(Windows.UI.Xaml.Core.Direct.IXamlDirectObject,Windows.UI.Xaml.Core.Direct.XamlEventIndex,System.Object)">
-      <summary>Supprime le gestionnaire d'événements spécifié de cet élément IXamlDirectObject. En général, le gestionnaire en question a été ajouté par XamlDirect.AddEventHandler.</summary>
-      <param name="xamlDirectObject">Référence à l'élément IXamlDirectObject actuel.</param>
-      <param name="eventIndex">Identificateur de l'événement dont le handle doit être supprimé par le biais de l'énumération XamlEventIndex.</param>
-      <param name="handler">Référence à l'implémentation de gestionnaire spécifiée.</param>
+      <summary>Supprime le gestionnaire d’événements spécifié de ce IXamlDirectObject. En règle générale, le gestionnaire en question a été ajouté par XamlDirect. AddEventHandler.</summary>
+      <param name="xamlDirectObject">Référence au IXamlDirectObject actuel.</param>
+      <param name="eventIndex">Identificateur de l’événement pour lequel supprimer le handle spécifié par le biais de l’énumération XamlEventIndex.</param>
+      <param name="handler">Référence à l’implémentation du gestionnaire spécifié.</param>
     </member>
     <member name="M:Windows.UI.Xaml.Core.Direct.XamlDirect.RemoveFromCollection(Windows.UI.Xaml.Core.Direct.IXamlDirectObject,Windows.UI.Xaml.Core.Direct.IXamlDirectObject)">
       <summary>Tente de supprimer une valeur de la collection IXamlDirectObject spécifiée.</summary>
       <param name="xamlDirectObject">Fait référence à la collection IXamlDirectObject spécifique.</param>
       <param name="value">Fait référence à la valeur IXamlDirectObject à supprimer de la collection.</param>
-      <returns>**true** si la valeur était présente.</returns>
+      <returns>* * true * * si la valeur était présente.</returns>
     </member>
     <member name="M:Windows.UI.Xaml.Core.Direct.XamlDirect.RemoveFromCollectionAt(Windows.UI.Xaml.Core.Direct.IXamlDirectObject,System.UInt32)">
-      <summary>Tente de supprimer une valeur de la collection IXamlDirectObject à l'index spécifié.</summary>
+      <summary>Tente de supprimer une valeur de la collection IXamlDirectObject à l’index spécifié.</summary>
       <param name="xamlDirectObject">Fait référence à la collection IXamlDirectObject spécifique.</param>
-      <param name="index">Fait référence à l'index dans la collection où la valeur doit être supprimée.</param>
+      <param name="index">Fait référence à l’index dans la collection où la valeur doit être supprimée.</param>
     </member>
     <member name="M:Windows.UI.Xaml.Core.Direct.XamlDirect.SetBooleanProperty(Windows.UI.Xaml.Core.Direct.IXamlDirectObject,Windows.UI.Xaml.Core.Direct.XamlPropertyIndex,System.Boolean)">
-      <summary>Définit la valeur d'une propriété _Boolean_ pour un élément IXamlDirectObject spécifique.</summary>
-      <param name="xamlDirectObject">Référence à l'élément IXamlDirectObject spécifique.</param>
-      <param name="propertyIndex">Référence à la propriété _Boolean_ dont la valeur doit être définie à partir de la liste des propriétés prises en charge dans l'énumération XamlPropertyIndex.</param>
+      <summary>Définit la valeur d’une propriété _Boolean_ pour un IXamlDirectObject spécifique.</summary>
+      <param name="xamlDirectObject">Référence au IXamlDirectObject spécifique.</param>
+      <param name="propertyIndex">Référence à la propriété _Boolean_ pour définir la valeur de dans la liste des propriétés prises en charge dans l’énumération XamlPropertyIndex.</param>
       <param name="value">Valeur _Boolean_ à définir pour la propriété spécifiée.</param>
     </member>
     <member name="M:Windows.UI.Xaml.Core.Direct.XamlDirect.SetColorProperty(Windows.UI.Xaml.Core.Direct.IXamlDirectObject,Windows.UI.Xaml.Core.Direct.XamlPropertyIndex,Windows.UI.Color)">
-      <summary>Définit la valeur d'une propriété Color pour un élément IXamlDirectObject spécifique.</summary>
-      <param name="xamlDirectObject">Référence à l'élément IXamlDirectObject spécifique.</param>
-      <param name="propertyIndex">Référence à la propriété Color dont la valeur doit être définie à partir de la liste des propriétés prises en charge dans l'énumération XamlPropertyIndex.</param>
-      <param name="value">Valeur Color à définir pour la propriété spécifiée.</param>
+      <summary>Définit la valeur d’une propriété de couleur pour un IXamlDirectObject spécifique.</summary>
+      <param name="xamlDirectObject">Référence au IXamlDirectObject spécifique.</param>
+      <param name="propertyIndex">Référence à la propriété Color pour définir la valeur de dans la liste des propriétés prises en charge dans l’énumération XamlPropertyIndex.</param>
+      <param name="value">Valeur de couleur à affecter à la propriété spécifiée.</param>
     </member>
     <member name="M:Windows.UI.Xaml.Core.Direct.XamlDirect.SetCornerRadiusProperty(Windows.UI.Xaml.Core.Direct.IXamlDirectObject,Windows.UI.Xaml.Core.Direct.XamlPropertyIndex,Windows.UI.Xaml.CornerRadius)">
-      <summary>Définit la valeur d'une propriété CornerRadius pour un élément IXamlDirectObject spécifique.</summary>
-      <param name="xamlDirectObject">Référence à l'élément IXamlDirectObject spécifique.</param>
-      <param name="propertyIndex">Référence à la propriété CornerRadius dont la valeur doit être définie à partir de la liste des propriétés prises en charge dans l'énumération XamlPropertyIndex.</param>
-      <param name="value">Valeur CornerRadius à définir pour la propriété spécifiée.</param>
+      <summary>Définit la valeur d’une propriété CornerRadius pour un IXamlDirectObject spécifique.</summary>
+      <param name="xamlDirectObject">Référence au IXamlDirectObject spécifique.</param>
+      <param name="propertyIndex">Référence à la propriété CornerRadius pour définir la valeur de dans la liste des propriétés prises en charge dans l’énumération XamlPropertyIndex.</param>
+      <param name="value">Valeur CornerRadius à affecter à la propriété spécifiée.</param>
     </member>
     <member name="M:Windows.UI.Xaml.Core.Direct.XamlDirect.SetDateTimeProperty(Windows.UI.Xaml.Core.Direct.IXamlDirectObject,Windows.UI.Xaml.Core.Direct.XamlPropertyIndex,Windows.Foundation.DateTime)">
-      <summary>Définit la valeur d'une propriété _DateTimeOffset_ pour un élément IXamlDirectObject spécifique.</summary>
-      <param name="xamlDirectObject">Référence à l'élément IXamlDirectObject spécifique.</param>
-      <param name="propertyIndex">Référence à la propriété _DateTimeOffset_ dont la valeur doit être définie à partir de la liste des propriétés prises en charge dans l'énumération XamlPropertyIndex.</param>
-      <param name="value">Valeur _DateTimeOffset_ à définir pour la propriété spécifiée.</param>
+      <summary>Définit la valeur d’une propriété _DateTimeOffset_ pour un IXamlDirectObject spécifique.</summary>
+      <param name="xamlDirectObject">Référence au IXamlDirectObject spécifique.</param>
+      <param name="propertyIndex">Référence à la propriété _DateTimeOffset_ pour définir la valeur de dans la liste des propriétés prises en charge dans l’énumération XamlPropertyIndex.</param>
+      <param name="value">Valeur _DateTimeOffset_ à affecter à la propriété spécifiée.</param>
     </member>
     <member name="M:Windows.UI.Xaml.Core.Direct.XamlDirect.SetDoubleProperty(Windows.UI.Xaml.Core.Direct.IXamlDirectObject,Windows.UI.Xaml.Core.Direct.XamlPropertyIndex,System.Double)">
-      <summary>Définit la valeur d'une propriété _Double_ pour un élément IXamlDirectObject spécifique.</summary>
-      <param name="xamlDirectObject">Référence à l'élément IXamlDirectObject spécifique.</param>
-      <param name="propertyIndex">Référence à la propriété _Double_ dont la valeur doit être définie à partir de la liste des propriétés prises en charge dans l'énumération XamlPropertyIndex.</param>
-      <param name="value">Valeur _Double_ à définir pour la propriété spécifiée.</param>
+      <summary>Définit la valeur d’une propriété _Double_ pour un IXamlDirectObject spécifique.</summary>
+      <param name="xamlDirectObject">Référence au IXamlDirectObject spécifique.</param>
+      <param name="propertyIndex">Référence à la propriété _Double_ pour définir la valeur de dans la liste des propriétés prises en charge dans l’énumération XamlPropertyIndex.</param>
+      <param name="value">Valeur _Double_ à affecter à la propriété spécifiée.</param>
     </member>
     <member name="M:Windows.UI.Xaml.Core.Direct.XamlDirect.SetDurationProperty(Windows.UI.Xaml.Core.Direct.IXamlDirectObject,Windows.UI.Xaml.Core.Direct.XamlPropertyIndex,Windows.UI.Xaml.Duration)">
-      <summary>Définit la valeur d'une propriété _Duration_ pour un élément IXamlDirectObject spécifique.</summary>
-      <param name="xamlDirectObject">Référence à l'élément IXamlDirectObject spécifique.</param>
-      <param name="propertyIndex">Référence à la propriété _Duration_ dont la valeur doit être définie à partir de la liste des propriétés prises en charge dans l'énumération XamlPropertyIndex.</param>
-      <param name="value">Valeur _Duration_ à définir pour la propriété spécifiée.</param>
+      <summary>Définit la valeur d’une propriété _Duration_ pour un IXamlDirectObject spécifique.</summary>
+      <param name="xamlDirectObject">Référence au IXamlDirectObject spécifique.</param>
+      <param name="propertyIndex">Référence à la propriété _Duration_ pour définir la valeur de dans la liste des propriétés prises en charge dans l’énumération XamlPropertyIndex.</param>
+      <param name="value">Valeur _Duration_ à affecter à la propriété spécifiée.</param>
     </member>
     <member name="M:Windows.UI.Xaml.Core.Direct.XamlDirect.SetEnumProperty(Windows.UI.Xaml.Core.Direct.IXamlDirectObject,Windows.UI.Xaml.Core.Direct.XamlPropertyIndex,System.UInt32)">
-      <summary>Définit la valeur d'une propriété _Enum_ pour un élément IXamlDirectObject spécifique.</summary>
-      <param name="xamlDirectObject">Référence à l'élément IXamlDirectObject spécifique.</param>
-      <param name="propertyIndex">Référence à la propriété _Enum_ dont la valeur doit être définie à partir de la liste des propriétés prises en charge dans l'énumération XamlPropertyIndex.</param>
-      <param name="value">Convertissez la valeur _Enum_ souhaitée en _UInt32_ à définir pour la propriété spécifiée.</param>
+      <summary>Définit la valeur d’une propriété _Enum_ pour un IXamlDirectObject spécifique.</summary>
+      <param name="xamlDirectObject">Référence au IXamlDirectObject spécifique.</param>
+      <param name="propertyIndex">Référence à la propriété _Enum_ pour définir la valeur de dans la liste des propriétés prises en charge dans l’énumération XamlPropertyIndex.</param>
+      <param name="value">Effectuez un cast de la valeur _Enum_ souhaitée en _UInt32_ pour définir la propriété spécifiée.</param>
     </member>
     <member name="M:Windows.UI.Xaml.Core.Direct.XamlDirect.SetGridLengthProperty(Windows.UI.Xaml.Core.Direct.IXamlDirectObject,Windows.UI.Xaml.Core.Direct.XamlPropertyIndex,Windows.UI.Xaml.GridLength)">
-      <summary>Définit la valeur d'une propriété GridLength pour un élément IXamlDirectObject spécifique.</summary>
-      <param name="xamlDirectObject">Référence à l'élément IXamlDirectObject spécifique.</param>
-      <param name="propertyIndex">Référence à la propriété GridLength dont la valeur doit être définie à partir de la liste des propriétés prises en charge dans l'énumération XamlPropertyIndex.</param>
-      <param name="value">Valeur GridLength à définir pour la propriété spécifiée.</param>
+      <summary>Définit la valeur d’une propriété GridLength pour un IXamlDirectObject spécifique.</summary>
+      <param name="xamlDirectObject">Référence au IXamlDirectObject spécifique.</param>
+      <param name="propertyIndex">Référence à la propriété GridLength pour définir la valeur de dans la liste des propriétés prises en charge dans l’énumération XamlPropertyIndex.</param>
+      <param name="value">Valeur GridLength à affecter à la propriété spécifiée.</param>
     </member>
     <member name="M:Windows.UI.Xaml.Core.Direct.XamlDirect.SetInt32Property(Windows.UI.Xaml.Core.Direct.IXamlDirectObject,Windows.UI.Xaml.Core.Direct.XamlPropertyIndex,System.Int32)">
-      <summary>Définit la valeur d'une propriété _Int32_ pour un élément IXamlDirectObject spécifique.</summary>
-      <param name="xamlDirectObject">Référence à l'élément IXamlDirectObject spécifique.</param>
-      <param name="propertyIndex">Référence à la propriété _Int32_ dont la valeur doit être définie à partir de la liste des propriétés prises en charge dans l'énumération XamlPropertyIndex.</param>
-      <param name="value">Valeur _Int32_ à définir pour la propriété spécifiée.</param>
+      <summary>Définit la valeur d’une propriété _Int32_ pour un IXamlDirectObject spécifique.</summary>
+      <param name="xamlDirectObject">Référence au IXamlDirectObject spécifique.</param>
+      <param name="propertyIndex">Référence à la propriété _Int32_ pour définir la valeur de dans la liste des propriétés prises en charge dans l’énumération XamlPropertyIndex.</param>
+      <param name="value">Valeur _Int32_ à affecter à la propriété spécifiée.</param>
     </member>
     <member name="M:Windows.UI.Xaml.Core.Direct.XamlDirect.SetMatrix3DProperty(Windows.UI.Xaml.Core.Direct.IXamlDirectObject,Windows.UI.Xaml.Core.Direct.XamlPropertyIndex,Windows.UI.Xaml.Media.Media3D.Matrix3D)">
-      <summary>Définit la valeur d'une propriété Matrix3D pour un élément IXamlDirectObject spécifique.</summary>
-      <param name="xamlDirectObject">Référence à l'élément IXamlDirectObject spécifique.</param>
-      <param name="propertyIndex">Référence à la propriété Matrix3D dont la valeur doit être définie à partir de la liste des propriétés prises en charge dans l'énumération XamlPropertyIndex.</param>
-      <param name="value">Valeur Matrix3D à définir pour la propriété spécifiée.</param>
+      <summary>Définit la valeur d’une propriété Matrix3D pour un IXamlDirectObject spécifique.</summary>
+      <param name="xamlDirectObject">Référence au IXamlDirectObject spécifique.</param>
+      <param name="propertyIndex">Référence à la propriété Matrix3D pour définir la valeur de dans la liste des propriétés prises en charge dans l’énumération XamlPropertyIndex.</param>
+      <param name="value">Valeur Matrix3D à affecter à la propriété spécifiée.</param>
     </member>
     <member name="M:Windows.UI.Xaml.Core.Direct.XamlDirect.SetMatrixProperty(Windows.UI.Xaml.Core.Direct.IXamlDirectObject,Windows.UI.Xaml.Core.Direct.XamlPropertyIndex,Windows.UI.Xaml.Media.Matrix)">
-      <summary>Définit la valeur d'une propriété Matrix pour un élément IXamlDirectObject spécifique.</summary>
-      <param name="xamlDirectObject">Référence à l'élément IXamlDirectObject spécifique.</param>
-      <param name="propertyIndex">Référence à la propriété Matrix dont la valeur doit être définie à partir de la liste des propriétés prises en charge dans l'énumération XamlPropertyIndex.</param>
-      <param name="value">Valeur Matrix à définir pour la propriété spécifiée.</param>
+      <summary>Définit la valeur d’une propriété de matrice pour un IXamlDirectObject spécifique.</summary>
+      <param name="xamlDirectObject">Référence au IXamlDirectObject spécifique.</param>
+      <param name="propertyIndex">Référence à la propriété de la matrice pour définir la valeur de dans la liste des propriétés prises en charge dans l’énumération XamlPropertyIndex.</param>
+      <param name="value">Valeur de matrice à affecter à la propriété spécifiée.</param>
     </member>
     <member name="M:Windows.UI.Xaml.Core.Direct.XamlDirect.SetObjectProperty(Windows.UI.Xaml.Core.Direct.IXamlDirectObject,Windows.UI.Xaml.Core.Direct.XamlPropertyIndex,System.Object)">
-      <summary>Définit la valeur d'une propriété _object_ pour un élément IXamlDirectObject spécifique.</summary>
-      <param name="xamlDirectObject">Référence à l'élément IXamlDirectObject spécifique.</param>
-      <param name="propertyIndex">Référence à la propriété _object_ dont la valeur doit être définie à partir de la liste des propriétés prises en charge dans l'énumération XamlPropertyIndex.</param>
-      <param name="value">Valeur _object_ à définir pour la propriété spécifiée.</param>
+      <summary>Définit la valeur d’une propriété _object_ pour un IXamlDirectObject spécifique.</summary>
+      <param name="xamlDirectObject">Référence au IXamlDirectObject spécifique.</param>
+      <param name="propertyIndex">Référence à la propriété _object_ pour définir la valeur de dans la liste des propriétés prises en charge dans l’énumération XamlPropertyIndex.</param>
+      <param name="value">valeur _object_ à affecter à la propriété spécifiée.</param>
     </member>
     <member name="M:Windows.UI.Xaml.Core.Direct.XamlDirect.SetPointProperty(Windows.UI.Xaml.Core.Direct.IXamlDirectObject,Windows.UI.Xaml.Core.Direct.XamlPropertyIndex,Windows.Foundation.Point)">
-      <summary>Définit la valeur d'une propriété Point pour un élément IXamlDirectObject spécifique.</summary>
-      <param name="xamlDirectObject">Référence à l'élément IXamlDirectObject spécifique.</param>
-      <param name="propertyIndex">Référence à la propriété Point dont la valeur doit être définie à partir de la liste des propriétés prises en charge dans l'énumération XamlPropertyIndex.</param>
-      <param name="value">Valeur Point à définir pour la propriété spécifiée.</param>
+      <summary>Définit la valeur d’une propriété point pour un IXamlDirectObject spécifique.</summary>
+      <param name="xamlDirectObject">Référence au IXamlDirectObject spécifique.</param>
+      <param name="propertyIndex">Référence à la propriété point pour définir la valeur de dans la liste des propriétés prises en charge dans l’énumération XamlPropertyIndex.</param>
+      <param name="value">Valeur de point à affecter à la propriété spécifiée.</param>
     </member>
     <member name="M:Windows.UI.Xaml.Core.Direct.XamlDirect.SetRectProperty(Windows.UI.Xaml.Core.Direct.IXamlDirectObject,Windows.UI.Xaml.Core.Direct.XamlPropertyIndex,Windows.Foundation.Rect)">
-      <summary>Définit la valeur d'une propriété Rect pour un élément IXamlDirectObject spécifique.</summary>
-      <param name="xamlDirectObject">Référence à l'élément IXamlDirectObject spécifique.</param>
-      <param name="propertyIndex">Référence à la propriété Rect dont la valeur doit être définie à partir de la liste des propriétés prises en charge dans l'énumération XamlPropertyIndex.</param>
-      <param name="value">Valeur Rect à définir pour la propriété spécifiée.</param>
+      <summary>Définit la valeur d’une propriété Rect pour un IXamlDirectObject spécifique.</summary>
+      <param name="xamlDirectObject">Référence au IXamlDirectObject spécifique.</param>
+      <param name="propertyIndex">Référence à la propriété Rect pour définir la valeur de dans la liste des propriétés prises en charge dans l’énumération XamlPropertyIndex.</param>
+      <param name="value">Valeur Rect à affecter à la propriété spécifiée.</param>
     </member>
     <member name="M:Windows.UI.Xaml.Core.Direct.XamlDirect.SetSizeProperty(Windows.UI.Xaml.Core.Direct.IXamlDirectObject,Windows.UI.Xaml.Core.Direct.XamlPropertyIndex,Windows.Foundation.Size)">
-      <summary>Définit la valeur d'une propriété Size pour un élément IXamlDirectObject spécifique.</summary>
-      <param name="xamlDirectObject">Référence à l'élément IXamlDirectObject spécifique.</param>
-      <param name="propertyIndex">Référence à la propriété Size dont la valeur doit être définie à partir de la liste des propriétés prises en charge dans l'énumération XamlPropertyIndex.</param>
-      <param name="value">Valeur Size à définir pour la propriété spécifiée.</param>
+      <summary>Définit la valeur d’une propriété Size pour un IXamlDirectObject spécifique.</summary>
+      <param name="xamlDirectObject">Référence au IXamlDirectObject spécifique.</param>
+      <param name="propertyIndex">Référence à la propriété Size pour définir la valeur de dans la liste des propriétés prises en charge dans l’énumération XamlPropertyIndex.</param>
+      <param name="value">Valeur de taille à affecter à la propriété spécifiée.</param>
     </member>
     <member name="M:Windows.UI.Xaml.Core.Direct.XamlDirect.SetStringProperty(Windows.UI.Xaml.Core.Direct.IXamlDirectObject,Windows.UI.Xaml.Core.Direct.XamlPropertyIndex,System.String)">
-      <summary>Définit la valeur d'une propriété _string_ pour un élément IXamlDirectObject spécifique.</summary>
-      <param name="xamlDirectObject">Référence à l'élément IXamlDirectObject spécifique.</param>
-      <param name="propertyIndex">Référence à la propriété _string_ dont la valeur doit être définie à partir de la liste des propriétés prises en charge dans l'énumération XamlPropertyIndex.</param>
-      <param name="value">Valeur _string_ à définir pour la propriété spécifiée.</param>
+      <summary>Définit la valeur d’une propriété _string_ pour un IXamlDirectObject spécifique.</summary>
+      <param name="xamlDirectObject">Référence au IXamlDirectObject spécifique.</param>
+      <param name="propertyIndex">Référence à la propriété _string_ pour définir la valeur de dans la liste des propriétés prises en charge dans l’énumération XamlPropertyIndex.</param>
+      <param name="value">valeur _string_ à affecter à la propriété spécifiée.</param>
     </member>
     <member name="M:Windows.UI.Xaml.Core.Direct.XamlDirect.SetThicknessProperty(Windows.UI.Xaml.Core.Direct.IXamlDirectObject,Windows.UI.Xaml.Core.Direct.XamlPropertyIndex,Windows.UI.Xaml.Thickness)">
-      <summary>Définit la valeur d'une propriété Thickness pour un élément IXamlDirectObject spécifique.</summary>
-      <param name="xamlDirectObject">Référence à l'élément IXamlDirectObject spécifique.</param>
-      <param name="propertyIndex">Référence à la propriété Thickness dont la valeur doit être définie à partir de la liste des propriétés prises en charge dans l'énumération XamlPropertyIndex.</param>
-      <param name="value">Valeur Thickness à définir pour la propriété spécifiée.</param>
+      <summary>Définit la valeur d’une propriété d’épaisseur pour un IXamlDirectObject spécifique.</summary>
+      <param name="xamlDirectObject">Référence au IXamlDirectObject spécifique.</param>
+      <param name="propertyIndex">Référence à la propriété Thickness pour définir la valeur de dans la liste des propriétés prises en charge dans l’énumération XamlPropertyIndex.</param>
+      <param name="value">Valeur d’épaisseur à affecter à la propriété spécifiée.</param>
     </member>
     <member name="M:Windows.UI.Xaml.Core.Direct.XamlDirect.SetTimeSpanProperty(Windows.UI.Xaml.Core.Direct.IXamlDirectObject,Windows.UI.Xaml.Core.Direct.XamlPropertyIndex,Windows.Foundation.TimeSpan)">
-      <summary>Définit la valeur d'une propriété _TimeSpan_ pour un élément IXamlDirectObject spécifique.</summary>
-      <param name="xamlDirectObject">Référence à l'élément IXamlDirectObject spécifique.</param>
-      <param name="propertyIndex">Référence à la propriété _TimeSpan_ dont la valeur doit être définie à partir de la liste des propriétés prises en charge dans l'énumération XamlPropertyIndex.</param>
-      <param name="value">Valeur _TimeSpan_ à définir pour la propriété spécifiée.</param>
+      <summary>Définit la valeur d’une propriété _TimeSpan_ pour un IXamlDirectObject spécifique.</summary>
+      <param name="xamlDirectObject">Référence au IXamlDirectObject spécifique.</param>
+      <param name="propertyIndex">Référence à la propriété _TimeSpan_ pour définir la valeur de dans la liste des propriétés prises en charge dans l’énumération XamlPropertyIndex.</param>
+      <param name="value">Valeur _TimeSpan_ à affecter à la propriété spécifiée.</param>
     </member>
     <member name="M:Windows.UI.Xaml.Core.Direct.XamlDirect.SetXamlDirectObjectProperty(Windows.UI.Xaml.Core.Direct.IXamlDirectObject,Windows.UI.Xaml.Core.Direct.XamlPropertyIndex,Windows.UI.Xaml.Core.Direct.IXamlDirectObject)">
-      <summary>Définit la valeur d'une propriété IXamlDirectObject pour un élément IXamlDirectObject spécifique.</summary>
-      <param name="xamlDirectObject">Référence à l'élément IXamlDirectObject spécifique.</param>
-      <param name="propertyIndex">Référence à la propriété IXamlDirectObject dont la valeur doit être définie à partir de la liste des propriétés prises en charge dans l'énumération XamlPropertyIndex.</param>
-      <param name="value">Valeur IXamlDirectObject à définir pour la propriété spécifiée.</param>
+      <summary>Définit la valeur d’une propriété IXamlDirectObject pour un IXamlDirectObject spécifique.</summary>
+      <param name="xamlDirectObject">Référence au IXamlDirectObject spécifique.</param>
+      <param name="propertyIndex">Référence à la propriété IXamlDirectObject pour définir la valeur de dans la liste des propriétés prises en charge dans l’énumération XamlPropertyIndex.</param>
+      <param name="value">Valeur IXamlDirectObject à affecter à la propriété spécifiée.</param>
     </member>
     <member name="T:Windows.UI.Xaml.Core.Direct.XamlDirectContract">
       <summary>
@@ -375,10 +375,10 @@
       <summary>Événement _VerticalSnapPointsChanged_ pour le type CarouselPanel.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlEventIndex.ComboBox_DropDownClosed">
-      <summary>Événement _DropDownClosed_ pour le type ComboBox.</summary>
+      <summary>Événement _DropDownClosed_ pour le type de zone de liste déroulante.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlEventIndex.ComboBox_DropDownOpened">
-      <summary>Événement _DropDownOpened_ pour le type ComboBox.</summary>
+      <summary>Événement _DropDownOpened_ pour le type de zone de liste déroulante.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlEventIndex.CommandBar_DynamicOverflowItemsChanging">
       <summary>Événement _DynamicOverflowItemsChanging_ pour le type CommandBar.</summary>
@@ -402,10 +402,10 @@
       <summary>Événement _SecondaryButtonClick_ pour le type ContentDialog.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlEventIndex.Control_FocusDisengaged">
-      <summary>Événement _FocusDisengaged_ pour le type Control.</summary>
+      <summary>Événement _FocusDisengaged_ pour le type de contrôle.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlEventIndex.Control_FocusEngaged">
-      <summary>Événement _FocusEngaged_ pour le type Control.</summary>
+      <summary>Événement _FocusEngaged_ pour le type de contrôle.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlEventIndex.DatePicker_DateChanged">
       <summary>Événement _DateChanged_ pour le type DatePicker.</summary>
@@ -414,16 +414,16 @@
       <summary>Événement _SelectedDateChanged_ pour le type DatePicker.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlEventIndex.Frame_Navigated">
-      <summary>Événement _Navigated_ pour le type Frame.</summary>
+      <summary>Événement _Navigated_ pour le type de trame.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlEventIndex.Frame_Navigating">
-      <summary>Événement _Navigating_ pour le type Frame.</summary>
+      <summary>Événement _Navigating_ pour le type de trame.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlEventIndex.Frame_NavigationFailed">
-      <summary>Événement _NavigationFailed_ pour le type Frame.</summary>
+      <summary>Événement _NavigationFailed_ pour le type de trame.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlEventIndex.Frame_NavigationStopped">
-      <summary>Événement _NavigationStopped_ pour le type Frame.</summary>
+      <summary>Événement _NavigationStopped_ pour le type de trame.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlEventIndex.FrameworkElement_DataContextChanged">
       <summary>Événement _DataContextChanged_ pour le type FrameworkElement.</summary>
@@ -435,10 +435,10 @@
       <summary>Événement _SizeChanged_ pour le type FrameworkElement.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlEventIndex.Hub_SectionHeaderClick">
-      <summary>Événement _SectionHeaderClick_ pour le type Hub.</summary>
+      <summary>Événement _SectionHeaderClick_ pour le type de concentrateur.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlEventIndex.Hub_SectionsInViewChanged">
-      <summary>Événement _SectionsInViewChanged_ pour le type Hub.</summary>
+      <summary>Événement _SectionsInViewChanged_ pour le type de concentrateur.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlEventIndex.ItemsPresenter_HorizontalSnapPointsChanged">
       <summary>Événement _HorizontalSnapPointsChanged_ pour le type ItemsPresenter.</summary>
@@ -516,7 +516,7 @@
       <summary>Événement _SuggestionsRequested_ pour le type SearchBox.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlEventIndex.Selector_SelectionChanged">
-      <summary>Événement _SelectionChanged_ pour le type Selector.</summary>
+      <summary>Événement _SelectionChanged_ pour le type de sélecteur.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlEventIndex.SemanticZoom_ViewChangeCompleted">
       <summary>Événement _ViewChangeCompleted_ pour le type SemanticZoom.</summary>
@@ -561,10 +561,10 @@
       <summary>Événement _Toggled_ pour le type ToggleSwitch.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlEventIndex.ToolTip_Closed">
-      <summary>Événement _Closed_ pour le type ToolTip.</summary>
+      <summary>Événement _Closed_ pour le type d’info-bulle.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlEventIndex.ToolTip_Opened">
-      <summary>Événement _Opened_ pour le type ToolTip.</summary>
+      <summary>Événement _Opened_ pour le type d’info-bulle.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlEventIndex.UIElement_BringIntoViewRequested">
       <summary>Événement _BringIntoViewRequested_ pour le type UIElement.</summary>
@@ -681,7 +681,7 @@
       <summary>Événement _CleanUpVirtualizedItemEvent_ pour le type VirtualizingStackPanel.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlEventIndex.WebView_ContainsFullScreenElementChanged">
-      <summary>Événement ContainsFullScreenElementChanged pour le type WebView.</summary>
+      <summary>Événement _ContainsFullScreenElementChanged_ pour le type WebView.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlEventIndex.WebView_ContentLoading">
       <summary>Événement _ContentLoading_ pour le type WebView.</summary>
@@ -1029,7 +1029,7 @@
       <summary>Propriété _Reason_ pour le type AutoSuggestBoxTextChangedEventArgs.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.BackEase_Amplitude">
-      <summary>Propriété _Amplitude_ pour le type BackEase.</summary>
+      <summary>Propriété _Amplitude_ pour le type d’accélération.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.BeginStoryboard_Storyboard">
       <summary>Propriété _Storyboard_ pour le type BeginStoryboard.</summary>
@@ -1044,37 +1044,37 @@
       <summary>Propriété _Point3_ pour le type BezierSegment.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Binding_Converter">
-      <summary>Propriété _Converter_ pour le type Binding.</summary>
+      <summary>Propriété _Converter_ pour le type de liaison.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Binding_ConverterLanguage">
-      <summary>Propriété _ConverterLanguage_ pour le type Binding.</summary>
+      <summary>Propriété _ConverterLanguage_ pour le type de liaison.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Binding_ConverterParameter">
-      <summary>Propriété _ConverterParameter_ pour le type Binding.</summary>
+      <summary>Propriété _ConverterParameter_ pour le type de liaison.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Binding_ElementName">
-      <summary>Propriété _ElementName_ pour le type Binding.</summary>
+      <summary>Propriété _ElementName_ pour le type de liaison.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Binding_FallbackValue">
-      <summary>Propriété _FallbackValue_ pour le type Binding.</summary>
+      <summary>Propriété _FallbackValue_ pour le type de liaison.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Binding_Mode">
-      <summary>Propriété _Mode_ pour le type Binding.</summary>
+      <summary>Propriété _Mode_ pour le type de liaison.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Binding_Path">
-      <summary>Propriété _Path_ pour le type Binding.</summary>
+      <summary>Propriété _Path_ pour le type de liaison.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Binding_RelativeSource">
-      <summary>Propriété _RelativeSource_ pour le type Binding.</summary>
+      <summary>Propriété _RelativeSource_ pour le type de liaison.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Binding_Source">
-      <summary>Propriété _Source_ pour le type Binding.</summary>
+      <summary>Propriété _Source_ pour le type de liaison.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Binding_TargetNullValue">
-      <summary>Propriété _TargetNullValue_ pour le type Binding.</summary>
+      <summary>Propriété _TargetNullValue_ pour le type de liaison.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Binding_UpdateSourceTrigger">
-      <summary>Propriété _UpdateSourceTrigger_ pour le type Binding.</summary>
+      <summary>Propriété _UpdateSourceTrigger_ pour le type de liaison.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.BitmapIcon_ShowAsMonochrome">
       <summary>Propriété _ShowAsMonochrome_ pour le type BitmapIcon.</summary>
@@ -1119,46 +1119,46 @@
       <summary>Propriété _PixelWidth_ pour le type BitmapSource.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Block_HorizontalTextAlignment">
-      <summary>Propriété _HorizontalTextAlignment_ pour le type Block.</summary>
+      <summary>Propriété _HorizontalTextAlignment_ pour le type de bloc.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Block_LineHeight">
-      <summary>Propriété _LineHeight_ pour le type Block.</summary>
+      <summary>Propriété _LineHeight_ pour le type de bloc.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Block_LineStackingStrategy">
-      <summary>Propriété _LineStackingStrategy_ pour le type Block.</summary>
+      <summary>Propriété _LineStackingStrategy_ pour le type de bloc.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Block_Margin">
-      <summary>Propriété _Margin_ pour le type Block.</summary>
+      <summary>Propriété _Margin_ pour le type de bloc.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Block_TextAlignment">
-      <summary>Propriété _TextAlignment_ pour le type Block.</summary>
+      <summary>Propriété _TextAlignment_ pour le type de bloc.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Border_Background">
-      <summary>Propriété _Background_ pour le type Border.</summary>
+      <summary>Propriété _Background_ pour le type de bordure.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Border_BackgroundSizing">
-      <summary>Propriété _BackgroundSizing_ pour le type Border.</summary>
+      <summary>Propriété _BackgroundSizing_ pour le type de bordure.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Border_BackgroundTransition">
-      <summary>Propriété _BackgroundTransition_ pour le type Border.</summary>
+      <summary>Propriété _BackgroundTransition_ pour le type de bordure.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Border_BorderBrush">
-      <summary>Propriété _BorderBrush_ pour le type Border.</summary>
+      <summary>Propriété _BorderBrush_ pour le type de bordure.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Border_BorderThickness">
-      <summary>Propriété _BorderThickness_ pour le type Border.</summary>
+      <summary>Propriété _BorderThickness_ pour le type de bordure.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Border_Child">
-      <summary>Propriété _Child_ pour le type Border.</summary>
+      <summary>Propriété _Child_ pour le type de bordure.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Border_ChildTransitions">
-      <summary>Propriété _ChildTransitions_ pour le type Border.</summary>
+      <summary>Propriété _ChildTransitions_ pour le type de bordure.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Border_CornerRadius">
-      <summary>Propriété _CornerRadius_ pour le type Border.</summary>
+      <summary>Propriété _CornerRadius_ pour le type de bordure.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Border_Padding">
-      <summary>Propriété _Padding_ pour le type Border.</summary>
+      <summary>Propriété _Padding_ pour le type de bordure.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.BounceEase_Bounces">
       <summary>Propriété _Bounces_ pour le type BounceEase.</summary>
@@ -1167,19 +1167,19 @@
       <summary>Propriété _Bounciness_ pour le type BounceEase.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Brush_Opacity">
-      <summary>Propriété _Opacity_ pour le type Brush.</summary>
+      <summary>Propriété _Opacity_ pour le type de pinceau.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Brush_RelativeTransform">
-      <summary>Propriété _RelativeTransform_ pour le type Brush.</summary>
+      <summary>Propriété _RelativeTransform_ pour le type de pinceau.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Brush_Transform">
-      <summary>Propriété _Transform_ pour le type Brush.</summary>
+      <summary>Propriété _Transform_ pour le type de pinceau.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.BrushTransition_Duration">
       <summary>Propriété _Duration_ pour le type BrushTransition.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Button_Flyout">
-      <summary>Propriété _Flyout_ pour le type Button.</summary>
+      <summary>Propriété _Flyout_ pour le type de bouton.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.ButtonBase_ClickMode">
       <summary>Propriété _ClickMode_ pour le type ButtonBase.</summary>
@@ -1602,55 +1602,55 @@
       <summary>Propriété _Width_ pour le type ColumnDefinition.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.ComboBox_Description">
-      <summary>Propriété _Description_ pour le type ComboBox.</summary>
+      <summary>Propriété _Description_ pour le type de zone de liste déroulante.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.ComboBox_Header">
-      <summary>Propriété _Header_ pour le type ComboBox.</summary>
+      <summary>Propriété _Header_ pour le type de zone de liste déroulante.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.ComboBox_HeaderTemplate">
-      <summary>Propriété _HeaderTemplate_ pour le type ComboBox.</summary>
+      <summary>Propriété _HeaderTemplate_ pour le type de zone de liste déroulante.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.ComboBox_IsDropDownOpen">
-      <summary>Propriété _IsDropDownOpen_ pour le type ComboBox.</summary>
+      <summary>Propriété _IsDropDownOpen_ pour le type de zone de liste déroulante.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.ComboBox_IsEditable">
-      <summary>Propriété _IsEditable_ pour le type ComboBox.</summary>
+      <summary>Propriété _IsEditable_ pour le type de zone de liste déroulante.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.ComboBox_IsSelectionBoxHighlighted">
-      <summary>Propriété _IsSelectionBoxHighlighted_ pour le type ComboBox.</summary>
+      <summary>Propriété _IsSelectionBoxHighlighted_ pour le type de zone de liste déroulante.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.ComboBox_IsTextSearchEnabled">
-      <summary>Propriété _IsTextSearchEnabled_ pour le type ComboBox.</summary>
+      <summary>Propriété _IsTextSearchEnabled_ pour le type de zone de liste déroulante.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.ComboBox_LightDismissOverlayMode">
-      <summary>Propriété _LightDismissOverlayMode_ pour le type ComboBox.</summary>
+      <summary>Propriété _LightDismissOverlayMode_ pour le type de zone de liste déroulante.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.ComboBox_MaxDropDownHeight">
-      <summary>Propriété _MaxDropDownHeight_ pour le type ComboBox.</summary>
+      <summary>Propriété _MaxDropDownHeight_ pour le type de zone de liste déroulante.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.ComboBox_PlaceholderForeground">
-      <summary>Propriété _PlaceholderForeground_ pour le type ComboBox.</summary>
+      <summary>Propriété _PlaceholderForeground_ pour le type de zone de liste déroulante.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.ComboBox_PlaceholderText">
-      <summary>Propriété _PlaceholderText_ pour le type ComboBox.</summary>
+      <summary>Propriété _PlaceholderText_ pour le type de zone de liste déroulante.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.ComboBox_SelectionBoxItem">
-      <summary>Propriété _SelectionBoxItem_ pour le type ComboBox.</summary>
+      <summary>Propriété _SelectionBoxItem_ pour le type de zone de liste déroulante.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.ComboBox_SelectionBoxItemTemplate">
-      <summary>Propriété _SelectionBoxItemTemplate_ pour le type ComboBox.</summary>
+      <summary>Propriété _SelectionBoxItemTemplate_ pour le type de zone de liste déroulante.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.ComboBox_SelectionChangedTrigger">
-      <summary>Propriété _SelectionChangedTrigger_ pour le type ComboBox.</summary>
+      <summary>Propriété _SelectionChangedTrigger_ pour le type de zone de liste déroulante.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.ComboBox_TemplateSettings">
-      <summary>Propriété _TemplateSettings_ pour le type ComboBox.</summary>
+      <summary>Propriété _TemplateSettings_ pour le type de zone de liste déroulante.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.ComboBox_Text">
-      <summary>Propriété _Text_ pour le type ComboBox.</summary>
+      <summary>Propriété _Text_ pour le type de zone de liste déroulante.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.ComboBox_TextBoxStyle">
-      <summary>Propriété _TextBoxStyle_ pour le type ComboBox.</summary>
+      <summary>Propriété _TextBoxStyle_ pour le type de zone de liste déroulante.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.ComboBoxTemplateSettings_DropDownClosedHeight">
       <summary>Propriété _DropDownClosedHeight_ pour le type ComboBoxTemplateSettings.</summary>
@@ -1983,106 +1983,106 @@
       <summary>Propriété _VerticalOffset_ pour le type ContentThemeTransition.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Control_Background">
-      <summary>Propriété _Background_ pour le type Control.</summary>
+      <summary>Propriété _Background_ pour le type de contrôle.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Control_BackgroundSizing">
-      <summary>Propriété _BackgroundSizing_ pour le type Control.</summary>
+      <summary>Propriété _BackgroundSizing_ pour le type de contrôle.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Control_BorderBrush">
-      <summary>Propriété _BorderBrush_ pour le type Control.</summary>
+      <summary>Propriété _BorderBrush_ pour le type de contrôle.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Control_BorderThickness">
-      <summary>Propriété _BorderThickness_ pour le type Control.</summary>
+      <summary>Propriété _BorderThickness_ pour le type de contrôle.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Control_CharacterSpacing">
-      <summary>Propriété _CharacterSpacing_ pour le type Control.</summary>
+      <summary>Propriété _CharacterSpacing_ pour le type de contrôle.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Control_CornerRadius">
-      <summary>Propriété _CornerRadius_ pour le type Control.</summary>
+      <summary>Propriété _CornerRadius_ pour le type de contrôle.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Control_DefaultStyleResourceUri">
-      <summary>Propriété _DefaultStyleResourceUri_ pour le type Control.</summary>
+      <summary>Propriété _DefaultStyleResourceUri_ pour le type de contrôle.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Control_ElementSoundMode">
-      <summary>Propriété _ElementSoundMode_ pour le type Control.</summary>
+      <summary>Propriété _ElementSoundMode_ pour le type de contrôle.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Control_FocusState">
-      <summary>Propriété _FocusState_ pour le type Control.</summary>
+      <summary>Propriété _FocusState_ pour le type de contrôle.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Control_FontFamily">
-      <summary>Propriété _FontFamily_ pour le type Control.</summary>
+      <summary>Propriété _FontFamily_ pour le type de contrôle.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Control_FontSize">
-      <summary>Propriété _FontSize_ pour le type Control.</summary>
+      <summary>Propriété _FontSize_ pour le type de contrôle.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Control_FontStretch">
-      <summary>Propriété _FontStretch_ pour le type Control.</summary>
+      <summary>Propriété _FontStretch_ pour le type de contrôle.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Control_FontStyle">
-      <summary>Propriété _FontStyle_ pour le type Control.</summary>
+      <summary>Propriété _FontStyle_ pour le type de contrôle.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Control_FontWeight">
-      <summary>Propriété _FontWeight_ pour le type Control.</summary>
+      <summary>Propriété _FontWeight_ pour le type de contrôle.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Control_Foreground">
-      <summary>Propriété _Foreground_ pour le type Control.</summary>
+      <summary>Propriété _Foreground_ pour le type de contrôle.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Control_HorizontalContentAlignment">
-      <summary>Propriété _HorizontalContentAlignment_ pour le type Control.</summary>
+      <summary>Propriété _HorizontalContentAlignment_ pour le type de contrôle.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Control_IsEnabled">
-      <summary>Propriété _IsEnabled_ pour le type Control.</summary>
+      <summary>Propriété _IsEnabled_ pour le type de contrôle.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Control_IsFocusEngaged">
-      <summary>Propriété _IsFocusEngaged_ pour le type Control.</summary>
+      <summary>Propriété _IsFocusEngaged_ pour le type de contrôle.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Control_IsFocusEngagementEnabled">
-      <summary>Propriété _IsFocusEngagementEnabled_ pour le type Control.</summary>
+      <summary>Propriété _IsFocusEngagementEnabled_ pour le type de contrôle.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Control_IsTabStop">
-      <summary>Propriété _IsTabStop_ pour le type Control.</summary>
+      <summary>Propriété _IsTabStop_ pour le type de contrôle.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Control_IsTemplateFocusTarget">
-      <summary>Propriété _IsTemplateFocusTarget_ pour le type Control.</summary>
+      <summary>Propriété _IsTemplateFocusTarget_ pour le type de contrôle.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Control_IsTemplateKeyTipTarget">
-      <summary>Propriété _IsTemplateKeyTipTarget_ pour le type Control.</summary>
+      <summary>Propriété _IsTemplateKeyTipTarget_ pour le type de contrôle.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Control_IsTextScaleFactorEnabled">
-      <summary>Propriété _IsTextScaleFactorEnabled_ pour le type Control.</summary>
+      <summary>Propriété _IsTextScaleFactorEnabled_ pour le type de contrôle.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Control_Padding">
-      <summary>Propriété _Padding_ pour le type Control.</summary>
+      <summary>Propriété _Padding_ pour le type de contrôle.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Control_RequiresPointer">
-      <summary>Propriété _RequiresPointer_ pour le type Control.</summary>
+      <summary>Propriété _RequiresPointer_ pour le type de contrôle.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Control_TabIndex">
-      <summary>Propriété _TabIndex_ pour le type Control.</summary>
+      <summary>Propriété _TabIndex_ pour le type de contrôle.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Control_TabNavigation">
-      <summary>Propriété _TabNavigation_ pour le type Control.</summary>
+      <summary>Propriété _TabNavigation_ pour le type de contrôle.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Control_Template">
-      <summary>Propriété _Template_ pour le type Control.</summary>
+      <summary>Propriété _Template_ pour le type de contrôle.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Control_UseSystemFocusVisuals">
-      <summary>Propriété _UseSystemFocusVisuals_ pour le type Control.</summary>
+      <summary>Propriété _UseSystemFocusVisuals_ pour le type de contrôle.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Control_VerticalContentAlignment">
-      <summary>Propriété _VerticalContentAlignment_ pour le type Control.</summary>
+      <summary>Propriété _VerticalContentAlignment_ pour le type de contrôle.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Control_XYFocusDown">
-      <summary>Propriété _XYFocusDown_ pour le type Control.</summary>
+      <summary>Propriété _XYFocusDown_ pour le type de contrôle.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Control_XYFocusLeft">
-      <summary>Propriété _XYFocusLeft_ pour le type Control.</summary>
+      <summary>Propriété _XYFocusLeft_ pour le type de contrôle.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Control_XYFocusRight">
-      <summary>Propriété _XYFocusRight_ pour le type Control.</summary>
+      <summary>Propriété _XYFocusRight_ pour le type de contrôle.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Control_XYFocusUp">
-      <summary>Propriété _XYFocusUp_ pour le type Control.</summary>
+      <summary>Propriété _XYFocusUp_ pour le type de contrôle.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.ControlTemplate_TargetType">
       <summary>Propriété _TargetType_ pour le type ControlTemplate.</summary>
@@ -2262,10 +2262,10 @@
       <summary>Propriété _UseTouchAnimationsForAllNavigation_ pour le type FlipView.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Flyout_Content">
-      <summary>Propriété _Content_ pour le type Flyout.</summary>
+      <summary>Propriété _Content_ pour le type de menu volant.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Flyout_FlyoutPresenterStyle">
-      <summary>Propriété _FlyoutPresenterStyle_ pour le type Flyout.</summary>
+      <summary>Propriété _FlyoutPresenterStyle_ pour le type de menu volant.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.FlyoutBase_AllowFocusOnInteraction">
       <summary>Propriété _AllowFocusOnInteraction_ pour le type FlyoutBase.</summary>
@@ -2352,31 +2352,31 @@
       <summary>Propriété _MirroredWhenRightToLeft_ pour le type FontIconSource.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Frame_BackStack">
-      <summary>Propriété _BackStack_ pour le type Frame.</summary>
+      <summary>Propriété _BackStack_ pour le type de frame.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Frame_BackStackDepth">
-      <summary>Propriété _BackStackDepth_ pour le type Frame.</summary>
+      <summary>Propriété _BackStackDepth_ pour le type de frame.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Frame_CacheSize">
-      <summary>Propriété _CacheSize_ pour le type Frame.</summary>
+      <summary>Propriété _CacheSize_ pour le type de frame.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Frame_CanGoBack">
-      <summary>Propriété _CanGoBack_ pour le type Frame.</summary>
+      <summary>Propriété _CanGoBack_ pour le type de frame.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Frame_CanGoForward">
-      <summary>Propriété _CanGoForward_ pour le type Frame.</summary>
+      <summary>Propriété _CanGoForward_ pour le type de frame.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Frame_CurrentSourcePageType">
-      <summary>Propriété _CurrentSourcePageType_ pour le type Frame.</summary>
+      <summary>Propriété _CurrentSourcePageType_ pour le type de frame.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Frame_ForwardStack">
-      <summary>Propriété _ForwardStack_ pour le type Frame.</summary>
+      <summary>Propriété _ForwardStack_ pour le type de frame.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Frame_IsNavigationStackEnabled">
-      <summary>Propriété IsNavigationStackEnabled pour le type Frame.</summary>
+      <summary>Propriété _IsNavigationStackEnabled_ pour le type de frame.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Frame_SourcePageType">
-      <summary>Propriété _SourcePageType_ pour le type Frame.</summary>
+      <summary>Propriété _SourcePageType_ pour le type de frame.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.FrameworkElement_ActualHeight">
       <summary>Propriété _ActualHeight_ pour le type FrameworkElement.</summary>
@@ -2526,43 +2526,43 @@
       <summary>Propriété _Offset_ pour le type GradientStop.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Grid_BackgroundSizing">
-      <summary>Propriété _BackgroundSizing_ pour le type Grid.</summary>
+      <summary>Propriété _BackgroundSizing_ pour le type de grille.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Grid_BorderBrush">
-      <summary>Propriété _BorderBrush_ pour le type Grid.</summary>
+      <summary>Propriété _BorderBrush_ pour le type de grille.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Grid_BorderThickness">
-      <summary>Propriété _BorderThickness_ pour le type Grid.</summary>
+      <summary>Propriété _BorderThickness_ pour le type de grille.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Grid_Column">
-      <summary>Propriété _Column_ pour le type Grid.</summary>
+      <summary>Propriété _Column_ pour le type de grille.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Grid_ColumnDefinitions">
-      <summary>Propriété _ColumnDefinitions_ pour le type Grid.</summary>
+      <summary>Propriété _ColumnDefinitions_ pour le type de grille.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Grid_ColumnSpacing">
-      <summary>Propriété _ColumnSpacing_ pour le type Grid.</summary>
+      <summary>Propriété _ColumnSpacing_ pour le type de grille.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Grid_ColumnSpan">
-      <summary>Propriété _ColumnSpan_ pour le type Grid.</summary>
+      <summary>Propriété _ColumnSpan_ pour le type de grille.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Grid_CornerRadius">
-      <summary>Propriété _CornerRadius_ pour le type Grid.</summary>
+      <summary>Propriété _CornerRadius_ pour le type de grille.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Grid_Padding">
-      <summary>Propriété _Padding_ pour le type Grid.</summary>
+      <summary>Propriété _Padding_ pour le type de grille.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Grid_Row">
-      <summary>Propriété _Row_ pour le type Grid.</summary>
+      <summary>Propriété _Row_ pour le type de grille.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Grid_RowDefinitions">
-      <summary>Propriété _RowDefinitions_ pour le type Grid.</summary>
+      <summary>Propriété _RowDefinitions_ pour le type de grille.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Grid_RowSpacing">
-      <summary>Propriété _RowSpacing_ pour le type Grid.</summary>
+      <summary>Propriété _RowSpacing_ pour le type de grille.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Grid_RowSpan">
-      <summary>Propriété _RowSpan_ pour le type Grid.</summary>
+      <summary>Propriété _RowSpan_ pour le type de grille.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.GridViewItem_TemplateSettings">
       <summary>Propriété _TemplateSettings_ pour le type GridViewItem.</summary>
@@ -2637,25 +2637,25 @@
       <summary>Propriété _DragItemsCount_ pour le type GridViewItemTemplateSettings.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.GroupStyle_ContainerStyle">
-      <summary>Propriété _ContainerStyle_ pour le type GroupStyle.</summary>
+      <summary>Propriété _ContainerStyle_ pour le type le GroupStyle.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.GroupStyle_ContainerStyleSelector">
-      <summary>Propriété _ContainerStyleSelector_ pour le type GroupStyle.</summary>
+      <summary>Propriété _ContainerStyleSelector_ pour le type le GroupStyle.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.GroupStyle_HeaderContainerStyle">
-      <summary>Propriété _HeaderContainerStyle_ pour le type GroupStyle.</summary>
+      <summary>Propriété _HeaderContainerStyle_ pour le type le GroupStyle.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.GroupStyle_HeaderTemplate">
-      <summary>Propriété _HeaderTemplate_ pour le type GroupStyle.</summary>
+      <summary>Propriété _HeaderTemplate_ pour le type le GroupStyle.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.GroupStyle_HeaderTemplateSelector">
-      <summary>Propriété _HeaderTemplateSelector_ pour le type GroupStyle.</summary>
+      <summary>Propriété _HeaderTemplateSelector_ pour le type le GroupStyle.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.GroupStyle_HidesIfEmpty">
-      <summary>Propriété _HidesIfEmpty_ pour le type GroupStyle.</summary>
+      <summary>Propriété _HidesIfEmpty_ pour le type le GroupStyle.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.GroupStyle_Panel">
-      <summary>Propriété _Panel_ pour le type GroupStyle.</summary>
+      <summary>Propriété _Panel_ pour le type le GroupStyle.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.HandwritingView_AreCandidatesEnabled">
       <summary>Propriété _AreCandidatesEnabled_ pour le type HandwritingView.</summary>
@@ -2670,34 +2670,34 @@
       <summary>Propriété _PlacementTarget_ pour le type HandwritingView.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Hub_DefaultSectionIndex">
-      <summary>Propriété _DefaultSectionIndex_ pour le type Hub.</summary>
+      <summary>Propriété _DefaultSectionIndex_ pour le type de concentrateur.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Hub_Header">
-      <summary>Propriété _Header_ pour le type Hub.</summary>
+      <summary>Propriété _Header_ pour le type de concentrateur.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Hub_HeaderTemplate">
-      <summary>Propriété _HeaderTemplate_ pour le type Hub.</summary>
+      <summary>Propriété _HeaderTemplate_ pour le type de concentrateur.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Hub_IsActiveView">
-      <summary>Propriété _IsActiveView_ pour le type Hub.</summary>
+      <summary>Propriété _IsActiveView_ pour le type de concentrateur.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Hub_IsZoomedInView">
-      <summary>Propriété _IsZoomedInView_ pour le type Hub.</summary>
+      <summary>Propriété _IsZoomedInView_ pour le type de concentrateur.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Hub_Orientation">
-      <summary>Propriété _Orientation_ pour le type Hub.</summary>
+      <summary>Propriété _Orientation_ pour le type de concentrateur.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Hub_SectionHeaders">
-      <summary>Propriété _SectionHeaders_ pour le type Hub.</summary>
+      <summary>Propriété _SectionHeaders_ pour le type de concentrateur.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Hub_Sections">
-      <summary>Propriété _Sections_ pour le type Hub.</summary>
+      <summary>Propriété _Sections_ pour le type de concentrateur.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Hub_SectionsInView">
-      <summary>Propriété _SectionsInView_ pour le type Hub.</summary>
+      <summary>Propriété _SectionsInView_ pour le type de concentrateur.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Hub_SemanticZoomOwner">
-      <summary>Propriété _SemanticZoomOwner_ pour le type Hub.</summary>
+      <summary>Propriété _SemanticZoomOwner_ pour le type de concentrateur.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.HubSection_ContentTemplate">
       <summary>Propriété _ContentTemplate_ pour le type HubSection.</summary>
@@ -2712,46 +2712,46 @@
       <summary>Propriété _IsHeaderInteractive_ pour le type HubSection.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Hyperlink_ElementSoundMode">
-      <summary>Propriété _ElementSoundMode_ pour le type Hyperlink.</summary>
+      <summary>Propriété _ElementSoundMode_ pour le type de lien hypertexte.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Hyperlink_FocusState">
-      <summary>Propriété _FocusState_ pour le type Hyperlink.</summary>
+      <summary>Propriété _FocusState_ pour le type de lien hypertexte.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Hyperlink_IsTabStop">
-      <summary>Propriété _IsTabStop_ pour le type Hyperlink.</summary>
+      <summary>Propriété _IsTabStop_ pour le type de lien hypertexte.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Hyperlink_NavigateUri">
-      <summary>Propriété _NavigateUri_ pour le type Hyperlink.</summary>
+      <summary>Propriété _NavigateUri_ pour le type de lien hypertexte.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Hyperlink_TabIndex">
-      <summary>Propriété _TabIndex_ pour le type Hyperlink.</summary>
+      <summary>Propriété _TabIndex_ pour le type de lien hypertexte.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Hyperlink_UnderlineStyle">
-      <summary>Propriété _UnderlineStyle_ pour le type Hyperlink.</summary>
+      <summary>Propriété _UnderlineStyle_ pour le type de lien hypertexte.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Hyperlink_XYFocusDown">
-      <summary>Propriété _XYFocusDown_ pour le type Hyperlink.</summary>
+      <summary>Propriété _XYFocusDown_ pour le type de lien hypertexte.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Hyperlink_XYFocusDownNavigationStrategy">
-      <summary>Propriété _XYFocusDownNavigationStrategy_ pour le type Hyperlink.</summary>
+      <summary>Propriété _XYFocusDownNavigationStrategy_ pour le type de lien hypertexte.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Hyperlink_XYFocusLeft">
-      <summary>Propriété _XYFocusLeft_ pour le type Hyperlink.</summary>
+      <summary>Propriété _XYFocusLeft_ pour le type de lien hypertexte.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Hyperlink_XYFocusLeftNavigationStrategy">
-      <summary>Propriété _XYFocusLeftNavigationStrategy_ pour le type Hyperlink.</summary>
+      <summary>Propriété _XYFocusLeftNavigationStrategy_ pour le type de lien hypertexte.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Hyperlink_XYFocusRight">
-      <summary>Propriété _XYFocusRight_ pour le type Hyperlink.</summary>
+      <summary>Propriété _XYFocusRight_ pour le type de lien hypertexte.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Hyperlink_XYFocusRightNavigationStrategy">
-      <summary>Propriété _XYFocusRightNavigationStrategy_ pour le type Hyperlink.</summary>
+      <summary>Propriété _XYFocusRightNavigationStrategy_ pour le type de lien hypertexte.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Hyperlink_XYFocusUp">
-      <summary>Propriété _XYFocusUp_ pour le type Hyperlink.</summary>
+      <summary>Propriété _XYFocusUp_ pour le type de lien hypertexte.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Hyperlink_XYFocusUpNavigationStrategy">
-      <summary>Propriété _XYFocusUpNavigationStrategy_ pour le type Hyperlink.</summary>
+      <summary>Propriété _XYFocusUpNavigationStrategy_ pour le type de lien hypertexte.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.HyperlinkButton_NavigateUri">
       <summary>Propriété _NavigateUri_ pour le type HyperlinkButton.</summary>
@@ -2766,28 +2766,28 @@
       <summary>Propriété _IconSource_ pour le type IconSourceElement.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Image_NineGrid">
-      <summary>Propriété _NineGrid_ pour le type Image.</summary>
+      <summary>Propriété _NineGrid_ pour le type d’image.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Image_PlayToSource">
-      <summary>Propriété _PlayToSource_ pour le type Image.</summary>
+      <summary>Propriété _PlayToSource_ pour le type d’image.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Image_Source">
-      <summary>Propriété _Source_ pour le type Image.</summary>
+      <summary>Propriété _Source_ pour le type d’image.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Image_Stretch">
-      <summary>Propriété _Stretch_ pour le type Image.</summary>
+      <summary>Propriété _Stretch_ pour le type d’image.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.ImageBrush_ImageSource">
       <summary>Propriété _ImageSource_ pour le type ImageBrush.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.InertiaExpansionBehavior_DesiredDeceleration">
-      <summary>Propriété DesiredDeceleration pour le type InertiaExpansionBehavior.</summary>
+      <summary>Propriété _DesiredDeceleration_ pour le type InertiaExpansionBehavior.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.InertiaExpansionBehavior_DesiredExpansion">
       <summary>Propriété _DesiredExpansion_ pour le type InertiaExpansionBehavior.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.InertiaRotationBehavior_DesiredDeceleration">
-      <summary>Propriété DesiredDeceleration pour le type InertiaRotationBehavior.</summary>
+      <summary>Propriété _DesiredDeceleration_ pour le type InertiaRotationBehavior.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.InertiaRotationBehavior_DesiredRotation">
       <summary>Propriété _DesiredRotation_ pour le type InertiaRotationBehavior.</summary>
@@ -2931,16 +2931,16 @@
       <summary>Propriété _ControlPoint2_ pour le type KeySpline.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Line_X1">
-      <summary>Propriété _X1_ pour le type Line.</summary>
+      <summary>Propriété _X1_ pour le type de ligne.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Line_X2">
-      <summary>Propriété _X2_ pour le type Line.</summary>
+      <summary>Propriété _X2_ pour le type de ligne.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Line_Y1">
-      <summary>Propriété _Y1_ pour le type Line.</summary>
+      <summary>Propriété _Y1_ pour le type de ligne.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Line_Y2">
-      <summary>Propriété _Y2_ pour le type Line.</summary>
+      <summary>Propriété _Y2_ pour le type de ligne.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.LinearGradientBrush_EndPoint">
       <summary>Propriété _EndPoint_ pour le type LinearGradientBrush.</summary>
@@ -3456,43 +3456,43 @@
       <summary>Propriété _Value_ pour le type ObjectKeyFrame.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Page_BottomAppBar">
-      <summary>Propriété _BottomAppBar_ pour le type Page.</summary>
+      <summary>Propriété _BottomAppBar_ pour le type de page.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Page_Frame">
-      <summary>Propriété _Frame_ pour le type Page.</summary>
+      <summary>Propriété _Frame_ pour le type de page.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Page_NavigationCacheMode">
-      <summary>Propriété _NavigationCacheMode_ pour le type Page.</summary>
+      <summary>Propriété _NavigationCacheMode_ pour le type de page.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Page_TopAppBar">
-      <summary>Propriété _TopAppBar_ pour le type Page.</summary>
+      <summary>Propriété _TopAppBar_ pour le type de page.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.PageStackEntry_SourcePageType">
       <summary>Propriété _SourcePageType_ pour le type PageStackEntry.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Panel_Background">
-      <summary>Propriété _Background_ pour le type Panel.</summary>
+      <summary>Propriété _Background_ pour le type de panneau.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Panel_BackgroundTransition">
-      <summary>Propriété _BackgroundTransition_ pour le type Panel.</summary>
+      <summary>Propriété _BackgroundTransition_ pour le type de panneau.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Panel_Children">
-      <summary>Propriété _Children_ pour le type Panel.</summary>
+      <summary>Propriété _Children_ pour le type de panneau.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Panel_ChildrenTransitions">
-      <summary>Propriété _ChildrenTransitions_ pour le type Panel.</summary>
+      <summary>Propriété _ChildrenTransitions_ pour le type de panneau.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Panel_IsItemsHost">
-      <summary>Propriété _IsItemsHost_ pour le type Panel.</summary>
+      <summary>Propriété _IsItemsHost_ pour le type de panneau.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.PaneThemeTransition_Edge">
       <summary>Propriété _Edge_ pour le type PaneThemeTransition.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Paragraph_Inlines">
-      <summary>Propriété _Inlines_ pour le type Paragraph.</summary>
+      <summary>Propriété _Inlines_ pour le type de paragraphe.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Paragraph_TextIndent">
-      <summary>Propriété _TextIndent_ pour le type Paragraph.</summary>
+      <summary>Propriété _TextIndent_ pour le type de paragraphe.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.PasswordBox_CanPasteClipboardContent">
       <summary>Propriété _CanPasteClipboardContent_ pour le type PasswordBox.</summary>
@@ -3540,10 +3540,10 @@
       <summary>Propriété _TextReadingOrder_ pour le type PasswordBox.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Path_Data">
-      <summary>Propriété _Data_ pour le type Path.</summary>
+      <summary>Propriété _Data_ pour le type de chemin d’accès.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.PathFigure_IsClosed">
-      <summary>Propriété _IsFilled_ pour le type PathFigure.</summary>
+      <summary>Propriété _IsClosed_ pour le type PathFigure.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.PathFigure_IsFilled">
       <summary>Propriété _IsFilled_ pour le type PathFigure.</summary>
@@ -3636,16 +3636,16 @@
       <summary>Propriété _KeyFrames_ pour le type PointAnimationUsingKeyFrames.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Pointer_IsInContact">
-      <summary>Propriété _IsInContact_ pour le type Pointer.</summary>
+      <summary>Propriété _IsInContact_ pour le type de pointeur.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Pointer_IsInRange">
-      <summary>Propriété _IsInRange_ pour le type Pointer.</summary>
+      <summary>Propriété _IsInRange_ pour le type de pointeur.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Pointer_PointerDeviceType">
-      <summary>Propriété _PointerDeviceType_ pour le type Pointer.</summary>
+      <summary>Propriété _PointerDeviceType_ pour le type de pointeur.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Pointer_PointerId">
-      <summary>Propriété _PointerId_ pour le type Pointer.</summary>
+      <summary>Propriété _PointerId_ pour le type de pointeur.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.PointerDownThemeAnimation_TargetName">
       <summary>Propriété _TargetName_ pour le type PointerDownThemeAnimation.</summary>
@@ -3669,10 +3669,10 @@
       <summary>Propriété _Points_ pour le type Polygon.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Polyline_FillRule">
-      <summary>Propriété _FillRule_ pour le type Polyline.</summary>
+      <summary>Propriété _FillRule_ pour le type de polyligne.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Polyline_Points">
-      <summary>Propriété _Points_ pour le type Polyline.</summary>
+      <summary>Propriété _Points_ pour le type de polyligne.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.PolyLineSegment_Points">
       <summary>Propriété _Points_ pour le type PolyLineSegment.</summary>
@@ -3693,28 +3693,28 @@
       <summary>Propriété _TargetName_ pour le type PopOutThemeAnimation.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Popup_Child">
-      <summary>Propriété _Child_ pour le type Popup.</summary>
+      <summary>Propriété _Child_ pour le type popup.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Popup_ChildTransitions">
-      <summary>Propriété _ChildTransitions_ pour le type Popup.</summary>
+      <summary>Propriété _ChildTransitions_ pour le type popup.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Popup_HorizontalOffset">
-      <summary>Propriété _HorizontalOffset_ pour le type Popup.</summary>
+      <summary>Propriété _HorizontalOffset_ pour le type popup.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Popup_IsLightDismissEnabled">
-      <summary>Propriété _IsLightDismissEnabled_ pour le type Popup.</summary>
+      <summary>Propriété _IsLightDismissEnabled_ pour le type popup.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Popup_IsOpen">
-      <summary>Propriété _IsOpen_ pour le type Popup.</summary>
+      <summary>Propriété _IsOpen_ pour le type popup.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Popup_LightDismissOverlayMode">
-      <summary>Propriété _LightDismissOverlayMode_ pour le type Popup.</summary>
+      <summary>Propriété _LightDismissOverlayMode_ pour le type popup.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Popup_ShouldConstrainToRootBounds">
-      <summary>Propriété _ShouldConstrainToRootBounds_ pour le type Popup.</summary>
+      <summary>Propriété _ShouldConstrainToRootBounds_ pour le type popup.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Popup_VerticalOffset">
-      <summary>Propriété _VerticalOffset_ pour le type Popup.</summary>
+      <summary>Propriété _VerticalOffset_ pour le type popup.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.PopupThemeTransition_FromHorizontalOffset">
       <summary>Propriété _FromHorizontalOffset_ pour le type PopupThemeTransition.</summary>
@@ -3804,10 +3804,10 @@
       <summary>Propriété _Value_ pour le type RangeBase.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Rectangle_RadiusX">
-      <summary>Propriété _RadiusX_ pour le type Rectangle.</summary>
+      <summary>Propriété _RadiusX_ pour le type de rectangle.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Rectangle_RadiusY">
-      <summary>Propriété _RadiusY_ pour le type Rectangle.</summary>
+      <summary>Propriété _RadiusY_ pour le type de rectangle.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.RectangleGeometry_Rect">
       <summary>Propriété _Rect_ pour le type RectangleGeometry.</summary>
@@ -4128,10 +4128,10 @@
       <summary>Propriété _MinHeight_ pour le type RowDefinition.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Run_FlowDirection">
-      <summary>Propriété _FlowDirection_ pour le type Run.</summary>
+      <summary>Propriété _FlowDirection_ pour le type d’exécution.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Run_Text">
-      <summary>Propriété _Text_ pour le type Run.</summary>
+      <summary>Propriété _Text_ pour le type d’exécution.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.ScalarTransition_Duration">
       <summary>Propriété _Duration_ pour le type ScalarTransition.</summary>
@@ -4302,19 +4302,19 @@
       <summary>Propriété _SearchHistoryEnabled_ pour le type SearchBox.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Selector_IsSynchronizedWithCurrentItem">
-      <summary>Propriété _IsSynchronizedWithCurrentItem_ pour le type Selector.</summary>
+      <summary>Propriété _IsSynchronizedWithCurrentItem_ pour le type de sélecteur.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Selector_SelectedIndex">
-      <summary>Propriété _SelectedIndex_ pour le type Selector.</summary>
+      <summary>Propriété _SelectedIndex_ pour le type de sélecteur.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Selector_SelectedItem">
-      <summary>Propriété _SelectedItem_ pour le type Selector.</summary>
+      <summary>Propriété _SelectedItem_ pour le type de sélecteur.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Selector_SelectedValue">
-      <summary>Propriété _SelectedValue_ pour le type Selector.</summary>
+      <summary>Propriété _SelectedValue_ pour le type de sélecteur.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Selector_SelectedValuePath">
-      <summary>Propriété _SelectedValuePath_ pour le type Selector.</summary>
+      <summary>Propriété _SelectedValuePath_ pour le type de sélecteur.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.SelectorItem_IsSelected">
       <summary>Propriété _IsSelected_ pour le type SelectorItem.</summary>
@@ -4383,40 +4383,40 @@
       <summary>Propriété _IconSource_ pour le type SettingsFlyoutTemplateSettings.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Shape_Fill">
-      <summary>Propriété _Fill_ pour le type Shape.</summary>
+      <summary>Propriété _Fill_ pour le type de forme.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Shape_GeometryTransform">
-      <summary>Propriété _GeometryTransform_ pour le type Shape.</summary>
+      <summary>Propriété _GeometryTransform_ pour le type de forme.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Shape_Stretch">
-      <summary>Propriété _Stretch_ pour le type Shape.</summary>
+      <summary>Propriété _Stretch_ pour le type de forme.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Shape_Stroke">
-      <summary>Propriété _Stroke_ pour le type Shape.</summary>
+      <summary>Propriété _Stroke_ pour le type de forme.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Shape_StrokeDashArray">
-      <summary>Propriété _StrokeDashArray_ pour le type Shape.</summary>
+      <summary>Propriété _StrokeDashArray_ pour le type de forme.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Shape_StrokeDashCap">
-      <summary>Propriété _StrokeDashCap_ pour le type Shape.</summary>
+      <summary>Propriété _StrokeDashCap_ pour le type de forme.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Shape_StrokeDashOffset">
-      <summary>Propriété _StrokeDashOffset_ pour le type Shape.</summary>
+      <summary>Propriété _StrokeDashOffset_ pour le type de forme.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Shape_StrokeEndLineCap">
-      <summary>Propriété _StrokeEndLineCap_ pour le type Shape.</summary>
+      <summary>Propriété _StrokeEndLineCap_ pour le type de forme.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Shape_StrokeLineJoin">
-      <summary>Propriété _StrokeLineJoin_ pour le type Shape.</summary>
+      <summary>Propriété _StrokeLineJoin_ pour le type de forme.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Shape_StrokeMiterLimit">
-      <summary>Propriété _StrokeMiterLimit_ pour le type Shape.</summary>
+      <summary>Propriété _StrokeMiterLimit_ pour le type de forme.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Shape_StrokeStartLineCap">
-      <summary>Propriété _StrokeStartLineCap_ pour le type Shape.</summary>
+      <summary>Propriété _StrokeStartLineCap_ pour le type de forme.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Shape_StrokeThickness">
-      <summary>Propriété _StrokeThickness_ pour le type Shape.</summary>
+      <summary>Propriété _StrokeThickness_ pour le type de forme.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.SkewTransform_AngleX">
       <summary>Propriété _AngleX_ pour le type SkewTransform.</summary>
@@ -4431,43 +4431,43 @@
       <summary>Propriété _CenterY_ pour le type SkewTransform.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Slider_Header">
-      <summary>Propriété _Header_ pour le type Slider.</summary>
+      <summary>Propriété _Header_ pour le type de curseur.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Slider_HeaderTemplate">
-      <summary>Propriété _HeaderTemplate_ pour le type Slider.</summary>
+      <summary>Propriété _HeaderTemplate_ pour le type de curseur.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Slider_IntermediateValue">
-      <summary>Propriété _IntermediateValue_ pour le type Slider.</summary>
+      <summary>Propriété _IntermediateValue_ pour le type de curseur.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Slider_IsDirectionReversed">
-      <summary>Propriété _IsDirectionReversed_ pour le type Slider.</summary>
+      <summary>Propriété _IsDirectionReversed_ pour le type de curseur.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Slider_IsThumbToolTipEnabled">
-      <summary>Propriété _IsThumbToolTipEnabled_ pour le type Slider.</summary>
+      <summary>Propriété _IsThumbToolTipEnabled_ pour le type de curseur.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Slider_Orientation">
-      <summary>Propriété _Orientation_ pour le type Slider.</summary>
+      <summary>Propriété _Orientation_ pour le type de curseur.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Slider_SnapsTo">
-      <summary>Propriété _SnapsTo_ pour le type Slider.</summary>
+      <summary>Propriété _SnapsTo_ pour le type de curseur.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Slider_StepFrequency">
-      <summary>Propriété _StepFrequency_ pour le type Slider.</summary>
+      <summary>Propriété _StepFrequency_ pour le type de curseur.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Slider_ThumbToolTipValueConverter">
-      <summary>Propriété _ThumbToolTipValueConverter_ pour le type Slider.</summary>
+      <summary>Propriété _ThumbToolTipValueConverter_ pour le type de curseur.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Slider_TickFrequency">
-      <summary>Propriété _TickFrequency_ pour le type Slider.</summary>
+      <summary>Propriété _TickFrequency_ pour le type de curseur.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Slider_TickPlacement">
-      <summary>Propriété _TickPlacement_ pour le type Slider.</summary>
+      <summary>Propriété _TickPlacement_ pour le type de curseur.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.SolidColorBrush_Color">
       <summary>Propriété _Color_ pour le type SolidColorBrush.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Span_Inlines">
-      <summary>Propriété _Inlines_ pour le type Span.</summary>
+      <summary>Propriété _Inlines_ pour le type d’étendue.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.SplineColorKeyFrame_KeySpline">
       <summary>Propriété _KeySpline_ pour le type SplineColorKeyFrame.</summary>
@@ -4623,25 +4623,25 @@
       <summary>Propriété _IsActive_ pour le type StateTrigger.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Storyboard_Children">
-      <summary>Propriété _Children_ pour le type Storyboard.</summary>
+      <summary>Propriété _Children_ pour le type de Storyboard.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Storyboard_TargetName">
-      <summary>Propriété _TargetName_ pour le type Storyboard.</summary>
+      <summary>Propriété _TargetName_ pour le type de Storyboard.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Storyboard_TargetProperty">
-      <summary>Propriété _TargetProperty_ pour le type Storyboard.</summary>
+      <summary>Propriété _TargetProperty_ pour le type de Storyboard.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Style_BasedOn">
-      <summary>Propriété _BasedOn_ pour le type Style.</summary>
+      <summary>Propriété _BasedOn_ pour le type de style.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Style_IsSealed">
-      <summary>Propriété _IsSealed_ pour le type Style.</summary>
+      <summary>Propriété _IsSealed_ pour le type de style.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Style_Setters">
-      <summary>Propriété _Setters_ pour le type Style.</summary>
+      <summary>Propriété _Setters_ pour le type de style.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Style_TargetType">
-      <summary>Propriété _TargetType_ pour le type Style.</summary>
+      <summary>Propriété _TargetType_ pour le type de style.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.SvgImageSource_RasterizePixelHeight">
       <summary>Propriété _RasterizePixelHeight_ pour le type SvgImageSource.</summary>
@@ -4776,100 +4776,100 @@
       <summary>Propriété _TextWrapping_ pour le type TextBlock.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.TextBox_AcceptsReturn">
-      <summary>Propriété _AcceptsReturn_ pour le type TextBox.</summary>
+      <summary>Propriété _AcceptsReturn_ pour le type de zone de texte.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.TextBox_CanPasteClipboardContent">
-      <summary>Propriété _CanPasteClipboardContent_ pour le type TextBox.</summary>
+      <summary>Propriété _CanPasteClipboardContent_ pour le type de zone de texte.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.TextBox_CanRedo">
-      <summary>Propriété _CanRedo_ pour le type TextBox.</summary>
+      <summary>Propriété _CanRedo_ pour le type de zone de texte.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.TextBox_CanUndo">
-      <summary>Propriété _CanUndo_ pour le type TextBox.</summary>
+      <summary>Propriété _CanUndo_ pour le type de zone de texte.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.TextBox_CharacterCasing">
-      <summary>Propriété _CharacterCasing_ pour le type TextBox.</summary>
+      <summary>Propriété _CharacterCasing_ pour le type de zone de texte.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.TextBox_Description">
-      <summary>Propriété _Description_ pour le type TextBox.</summary>
+      <summary>Propriété _Description_ pour le type de zone de texte.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.TextBox_DesiredCandidateWindowAlignment">
-      <summary>Propriété _DesiredCandidateWindowAlignment_ pour le type TextBox.</summary>
+      <summary>Propriété _DesiredCandidateWindowAlignment_ pour le type de zone de texte.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.TextBox_HandwritingView">
-      <summary>Propriété _HandwritingView_ pour le type TextBox.</summary>
+      <summary>Propriété _HandwritingView_ pour le type de zone de texte.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.TextBox_Header">
-      <summary>Propriété _Header_ pour le type TextBox.</summary>
+      <summary>Propriété _Header_ pour le type de zone de texte.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.TextBox_HeaderTemplate">
-      <summary>Propriété _HeaderTemplate_ pour le type TextBox.</summary>
+      <summary>Propriété _HeaderTemplate_ pour le type de zone de texte.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.TextBox_HorizontalTextAlignment">
-      <summary>Propriété _HorizontalTextAlignment_ pour le type TextBox.</summary>
+      <summary>Propriété _HorizontalTextAlignment_ pour le type de zone de texte.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.TextBox_InputScope">
-      <summary>Propriété _InputScope_ pour le type TextBox.</summary>
+      <summary>Propriété _InputScope_ pour le type de zone de texte.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.TextBox_IsColorFontEnabled">
-      <summary>Propriété _IsColorFontEnabled_ pour le type TextBox.</summary>
+      <summary>Propriété _IsColorFontEnabled_ pour le type de zone de texte.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.TextBox_IsHandwritingViewEnabled">
-      <summary>Propriété _IsHandwritingViewEnabled_ pour le type TextBox.</summary>
+      <summary>Propriété _IsHandwritingViewEnabled_ pour le type de zone de texte.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.TextBox_IsReadOnly">
-      <summary>Propriété _IsReadOnly_ pour le type TextBox.</summary>
+      <summary>Propriété _IsReadOnly_ pour le type de zone de texte.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.TextBox_IsSpellCheckEnabled">
-      <summary>Propriété _IsSpellCheckEnabled_ pour le type TextBox.</summary>
+      <summary>Propriété _IsSpellCheckEnabled_ pour le type de zone de texte.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.TextBox_IsTextPredictionEnabled">
-      <summary>Propriété _IsTextPredictionEnabled_ pour le type TextBox.</summary>
+      <summary>Propriété _IsTextPredictionEnabled_ pour le type de zone de texte.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.TextBox_MaxLength">
-      <summary>Propriété _MaxLength_ pour le type TextBox.</summary>
+      <summary>Propriété _MaxLength_ pour le type de zone de texte.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.TextBox_PlaceholderForeground">
-      <summary>Propriété _PlaceholderForeground_ pour le type TextBox.</summary>
+      <summary>Propriété _PlaceholderForeground_ pour le type de zone de texte.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.TextBox_PlaceholderText">
-      <summary>Propriété _PlaceholderText_ pour le type TextBox.</summary>
+      <summary>Propriété _PlaceholderText_ pour le type de zone de texte.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.TextBox_PreventKeyboardDisplayOnProgrammaticFocus">
-      <summary>Propriété _PreventKeyboardDisplayOnProgrammaticFocus_ pour le type TextBox.</summary>
+      <summary>Propriété _PreventKeyboardDisplayOnProgrammaticFocus_ pour le type de zone de texte.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.TextBox_ProofingMenuFlyout">
-      <summary>Propriété _ProofingMenuFlyout_ pour le type TextBox.</summary>
+      <summary>Propriété _ProofingMenuFlyout_ pour le type de zone de texte.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.TextBox_SelectedText">
-      <summary>Propriété _SelectedText_ pour le type TextBox.</summary>
+      <summary>Propriété _SelectedText_ pour le type de zone de texte.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.TextBox_SelectionFlyout">
-      <summary>Propriété _SelectionFlyout_ pour le type TextBox.</summary>
+      <summary>Propriété _SelectionFlyout_ pour le type de zone de texte.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.TextBox_SelectionHighlightColor">
-      <summary>Propriété _SelectionHighlightColor_ pour le type TextBox.</summary>
+      <summary>Propriété _SelectionHighlightColor_ pour le type de zone de texte.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.TextBox_SelectionHighlightColorWhenNotFocused">
-      <summary>Propriété _SelectionHighlightColorWhenNotFocused_ pour le type TextBox.</summary>
+      <summary>Propriété _SelectionHighlightColorWhenNotFocused_ pour le type de zone de texte.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.TextBox_SelectionLength">
-      <summary>Propriété _SelectionLength_ pour le type TextBox.</summary>
+      <summary>Propriété _SelectionLength_ pour le type de zone de texte.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.TextBox_SelectionStart">
-      <summary>Propriété _SelectionStart_ pour le type TextBox.</summary>
+      <summary>Propriété _SelectionStart_ pour le type de zone de texte.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.TextBox_Text">
-      <summary>Propriété _Text_ pour le type TextBox.</summary>
+      <summary>Propriété _Text_ pour le type de zone de texte.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.TextBox_TextAlignment">
-      <summary>Propriété _TextAlignment_ pour le type TextBox.</summary>
+      <summary>Propriété _TextAlignment_ pour le type de zone de texte.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.TextBox_TextReadingOrder">
-      <summary>Propriété _TextReadingOrder_ pour le type TextBox.</summary>
+      <summary>Propriété _TextReadingOrder_ pour le type de zone de texte.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.TextBox_TextWrapping">
-      <summary>Propriété _TextWrapping_ pour le type TextBox.</summary>
+      <summary>Propriété _TextWrapping_ pour le type de zone de texte.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.TextElement_AccessKey">
       <summary>Propriété _AccessKey_ pour le type TextElement.</summary>
@@ -4953,22 +4953,22 @@
       <summary>Propriété _Stretch_ pour le type TileBrush.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Timeline_AutoReverse">
-      <summary>Propriété _AutoReverse_ pour le type Timeline.</summary>
+      <summary>Propriété _AutoReverse_ pour le type de chronologie.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Timeline_BeginTime">
-      <summary>Propriété _BeginTime_ pour le type Timeline.</summary>
+      <summary>Propriété _BeginTime_ pour le type de chronologie.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Timeline_Duration">
-      <summary>Propriété _Duration_ pour le type Timeline.</summary>
+      <summary>Propriété _Duration_ pour le type de chronologie.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Timeline_FillBehavior">
-      <summary>Propriété _FillBehavior_ pour le type Timeline.</summary>
+      <summary>Propriété _FillBehavior_ pour le type de chronologie.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Timeline_RepeatBehavior">
-      <summary>Propriété _RepeatBehavior_ pour le type Timeline.</summary>
+      <summary>Propriété _RepeatBehavior_ pour le type de chronologie.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Timeline_SpeedRatio">
-      <summary>Propriété _SpeedRatio_ pour le type Timeline.</summary>
+      <summary>Propriété _SpeedRatio_ pour le type de chronologie.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.TimelineMarker_Text">
       <summary>Propriété _Text_ pour le type TimelineMarker.</summary>
@@ -5058,25 +5058,25 @@
       <summary>Propriété _KnobOnToOffOffset_ pour le type ToggleSwitchTemplateSettings.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.ToolTip_HorizontalOffset">
-      <summary>Propriété _HorizontalOffset_ pour le type ToolTip.</summary>
+      <summary>Propriété _HorizontalOffset_ pour le type d’info-bulle.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.ToolTip_IsOpen">
-      <summary>Propriété _IsOpen_ pour le type ToolTip.</summary>
+      <summary>Propriété _IsOpen_ pour le type d’info-bulle.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.ToolTip_Placement">
-      <summary>Propriété _Placement_ pour le type ToolTip.</summary>
+      <summary>Propriété _Placement_ pour le type d’info-bulle.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.ToolTip_PlacementRect">
-      <summary>Propriété _PlacementRect_ pour le type ToolTip.</summary>
+      <summary>Propriété _PlacementRect_ pour le type d’info-bulle.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.ToolTip_PlacementTarget">
-      <summary>Propriété _PlacementTarget_ pour le type ToolTip.</summary>
+      <summary>Propriété _PlacementTarget_ pour le type d’info-bulle.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.ToolTip_TemplateSettings">
-      <summary>Propriété _TemplateSettings_ pour le type ToolTip.</summary>
+      <summary>Propriété _TemplateSettings_ pour le type d’info-bulle.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.ToolTip_VerticalOffset">
-      <summary>Propriété _VerticalOffset_ pour le type ToolTip.</summary>
+      <summary>Propriété _VerticalOffset_ pour le type d’info-bulle.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.ToolTipService_Placement">
       <summary>Propriété _Placement_ pour le type ToolTipService.</summary>
@@ -5106,133 +5106,133 @@
       <summary>Propriété _Y_ pour le type TranslateTransform.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Typography_AnnotationAlternates">
-      <summary>Propriété _AnnotationAlternates_ pour le type Typography.</summary>
+      <summary>Propriété _AnnotationAlternates_ pour le type de typographie.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Typography_Capitals">
-      <summary>Propriété _Capitals_ pour le type Typography.</summary>
+      <summary>Propriété _Capitals_ pour le type de typographie.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Typography_CapitalSpacing">
-      <summary>Propriété _CapitalSpacing_ pour le type Typography.</summary>
+      <summary>Propriété _CapitalSpacing_ pour le type de typographie.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Typography_CaseSensitiveForms">
-      <summary>Propriété _CaseSensitiveForms_ pour le type Typography.</summary>
+      <summary>Propriété _CaseSensitiveForms_ pour le type de typographie.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Typography_ContextualAlternates">
-      <summary>Propriété _ContextualAlternates_ pour le type Typography.</summary>
+      <summary>Propriété _ContextualAlternates_ pour le type de typographie.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Typography_ContextualLigatures">
-      <summary>Propriété _ContextualLigatures_ pour le type Typography.</summary>
+      <summary>Propriété _ContextualLigatures_ pour le type de typographie.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Typography_ContextualSwashes">
-      <summary>Propriété _ContextualSwashes_ pour le type Typography.</summary>
+      <summary>Propriété _ContextualSwashes_ pour le type de typographie.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Typography_DiscretionaryLigatures">
-      <summary>Propriété _DiscretionaryLigatures_ pour le type Typography.</summary>
+      <summary>Propriété _DiscretionaryLigatures_ pour le type de typographie.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Typography_EastAsianExpertForms">
-      <summary>Propriété _EastAsianExpertForms_ pour le type Typography.</summary>
+      <summary>Propriété _EastAsianExpertForms_ pour le type de typographie.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Typography_EastAsianLanguage">
-      <summary>Propriété _EastAsianLanguage_ pour le type Typography.</summary>
+      <summary>Propriété _EastAsianLanguage_ pour le type de typographie.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Typography_EastAsianWidths">
-      <summary>Propriété _EastAsianWidths_ pour le type Typography.</summary>
+      <summary>Propriété _EastAsianWidths_ pour le type de typographie.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Typography_Fraction">
-      <summary>Propriété _Fraction_ pour le type Typography.</summary>
+      <summary>Propriété _Fraction_ pour le type de typographie.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Typography_HistoricalForms">
-      <summary>Propriété _HistoricalForms_ pour le type Typography.</summary>
+      <summary>Propriété _HistoricalForms_ pour le type de typographie.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Typography_HistoricalLigatures">
-      <summary>Propriété _HistoricalLigatures_ pour le type Typography.</summary>
+      <summary>Propriété _HistoricalLigatures_ pour le type de typographie.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Typography_Kerning">
-      <summary>Propriété _Kerning_ pour le type Typography.</summary>
+      <summary>Propriété _Kerning_ pour le type de typographie.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Typography_MathematicalGreek">
-      <summary>Propriété _MathematicalGreek_ pour le type Typography.</summary>
+      <summary>Propriété _MathematicalGreek_ pour le type de typographie.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Typography_NumeralAlignment">
-      <summary>Propriété _NumeralAlignment_ pour le type Typography.</summary>
+      <summary>Propriété _NumeralAlignment_ pour le type de typographie.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Typography_NumeralStyle">
-      <summary>Propriété _NumeralStyle_ pour le type Typography.</summary>
+      <summary>Propriété _NumeralStyle_ pour le type de typographie.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Typography_SlashedZero">
-      <summary>Propriété _SlashedZero_ pour le type Typography.</summary>
+      <summary>Propriété _SlashedZero_ pour le type de typographie.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Typography_StandardLigatures">
-      <summary>Propriété _StandardLigatures_ pour le type Typography.</summary>
+      <summary>Propriété _StandardLigatures_ pour le type de typographie.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Typography_StandardSwashes">
-      <summary>Propriété _StandardSwashes_ pour le type Typography.</summary>
+      <summary>Propriété _StandardSwashes_ pour le type de typographie.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Typography_StylisticAlternates">
-      <summary>Propriété _StylisticAlternates_ pour le type Typography.</summary>
+      <summary>Propriété _StylisticAlternates_ pour le type de typographie.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Typography_StylisticSet1">
-      <summary>Propriété _StylisticSet1_ pour le type Typography.</summary>
+      <summary>Propriété _StylisticSet1_ pour le type de typographie.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Typography_StylisticSet10">
-      <summary>Propriété _StylisticSet10_ pour le type Typography.</summary>
+      <summary>Propriété _StylisticSet10_ pour le type de typographie.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Typography_StylisticSet11">
-      <summary>Propriété _StylisticSet11_ pour le type Typography.</summary>
+      <summary>Propriété _StylisticSet11_ pour le type de typographie.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Typography_StylisticSet12">
-      <summary>Propriété _StylisticSet12_ pour le type Typography.</summary>
+      <summary>Propriété _StylisticSet12_ pour le type de typographie.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Typography_StylisticSet13">
-      <summary>Propriété _StylisticSet13_ pour le type Typography.</summary>
+      <summary>Propriété _StylisticSet13_ pour le type de typographie.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Typography_StylisticSet14">
-      <summary>Propriété _StylisticSet14_ pour le type Typography.</summary>
+      <summary>Propriété _StylisticSet14_ pour le type de typographie.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Typography_StylisticSet15">
-      <summary>Propriété _StylisticSet15_ pour le type Typography.</summary>
+      <summary>Propriété _StylisticSet15_ pour le type de typographie.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Typography_StylisticSet16">
-      <summary>Propriété _StylisticSet16_ pour le type Typography.</summary>
+      <summary>Propriété _StylisticSet16_ pour le type de typographie.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Typography_StylisticSet17">
-      <summary>Propriété _StylisticSet17_ pour le type Typography.</summary>
+      <summary>Propriété _StylisticSet17_ pour le type de typographie.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Typography_StylisticSet18">
-      <summary>Propriété _StylisticSet18_ pour le type Typography.</summary>
+      <summary>Propriété _StylisticSet18_ pour le type de typographie.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Typography_StylisticSet19">
-      <summary>Propriété _StylisticSet19_ pour le type Typography.</summary>
+      <summary>Propriété _StylisticSet19_ pour le type de typographie.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Typography_StylisticSet2">
-      <summary>Propriété _StylisticSet2_ pour le type Typography.</summary>
+      <summary>Propriété _StylisticSet2_ pour le type de typographie.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Typography_StylisticSet20">
-      <summary>Propriété _StylisticSet20_ pour le type Typography.</summary>
+      <summary>Propriété _StylisticSet20_ pour le type de typographie.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Typography_StylisticSet3">
-      <summary>Propriété _StylisticSet3_ pour le type Typography.</summary>
+      <summary>Propriété _StylisticSet3_ pour le type de typographie.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Typography_StylisticSet4">
-      <summary>Propriété _StylisticSet4_ pour le type Typography.</summary>
+      <summary>Propriété _StylisticSet4_ pour le type de typographie.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Typography_StylisticSet5">
-      <summary>Propriété _StylisticSet5_ pour le type Typography.</summary>
+      <summary>Propriété _StylisticSet5_ pour le type de typographie.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Typography_StylisticSet6">
-      <summary>Propriété _StylisticSet6_ pour le type Typography.</summary>
+      <summary>Propriété _StylisticSet6_ pour le type de typographie.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Typography_StylisticSet7">
-      <summary>Propriété _StylisticSet7_ pour le type Typography.</summary>
+      <summary>Propriété _StylisticSet7_ pour le type de typographie.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Typography_StylisticSet8">
-      <summary>Propriété _StylisticSet8_ pour le type Typography.</summary>
+      <summary>Propriété _StylisticSet8_ pour le type de typographie.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Typography_StylisticSet9">
-      <summary>Propriété _StylisticSet9_ pour le type Typography.</summary>
+      <summary>Propriété _StylisticSet9_ pour le type de typographie.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Typography_Variants">
-      <summary>Propriété _Variants_ pour le type Typography.</summary>
+      <summary>Propriété _Variants_ pour le type de typographie.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.UIElement_AccessKey">
       <summary>Propriété _AccessKey_ pour le type UIElement.</summary>
@@ -5625,7 +5625,7 @@
       <summary>Type AutoSuggestBoxTextChangedEventArgs.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.BackEase">
-      <summary>Type BackEase.</summary>
+      <summary>Type d’accélération.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.BeginStoryboard">
       <summary>Type BeginStoryboard.</summary>
@@ -5652,16 +5652,16 @@
       <summary>Type BitmapImage.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.Bold">
-      <summary>Type Bold.</summary>
+      <summary>Type gras.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.Border">
-      <summary>Type Border.</summary>
+      <summary>Type de bordure.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.BounceEase">
       <summary>Type BounceEase.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.Button">
-      <summary>Type Button.</summary>
+      <summary>Type de bouton.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.CalendarDatePicker">
       <summary>Type CalendarDatePicker.</summary>
@@ -5676,7 +5676,7 @@
       <summary>Type CalendarViewDayItem.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.Canvas">
-      <summary>Type Canvas.</summary>
+      <summary>Type de canevas.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.CaptureElement">
       <summary>Type CaptureElement.</summary>
@@ -5685,13 +5685,13 @@
       <summary>Type CarouselPanel.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.CheckBox">
-      <summary>Type CheckBox.</summary>
+      <summary>Type de case à cocher.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.CircleEase">
       <summary>Type CircleEase.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.CollectionViewSource">
-      <summary>Type CollectionViewSource</summary>
+      <summary>Type CollectionViewSource.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.ColorAnimation">
       <summary>Type ColorAnimation.</summary>
@@ -5706,7 +5706,7 @@
       <summary>Type ColumnDefinition.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.ComboBox">
-      <summary>Type ComboBox.</summary>
+      <summary>Type de zone de liste déroulante.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.ComboBoxItem">
       <summary>Type ComboBoxItem.</summary>
@@ -5772,7 +5772,7 @@
       <summary>Type DoubleAnimationUsingKeyFrames.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.DragItemThemeAnimation">
-      <summary>Type DragItemThemeAnimation</summary>
+      <summary>Type DragItemThemeAnimation.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.DragOverThemeAnimation">
       <summary>Type DragOverThemeAnimation.</summary>
@@ -5796,13 +5796,13 @@
       <summary>Type EasingPointKeyFrame.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.EdgeUIThemeTransition">
-      <summary>Type EdgeUIThemeTransition</summary>
+      <summary>Type EdgeUIThemeTransition.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.ElasticEase">
       <summary>Type ElasticEase.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.Ellipse">
-      <summary>Type Ellipse.</summary>
+      <summary>Type d’ellipse.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.EllipseGeometry">
       <summary>Type EllipseGeometry.</summary>
@@ -5829,7 +5829,7 @@
       <summary>Type FlipViewItem.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.Flyout">
-      <summary>Type Flyout.</summary>
+      <summary>Type de menu volant.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.FlyoutPresenter">
       <summary>Type FlyoutPresenter.</summary>
@@ -5841,19 +5841,19 @@
       <summary>Type FontIconSource.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.Frame">
-      <summary>Type Frame.</summary>
+      <summary>Type de frame.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.GeometryGroup">
       <summary>Type GeometryGroup.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.Glyphs">
-      <summary>Type Glyphs.</summary>
+      <summary>Type de glyphes.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.GradientStop">
       <summary>Type GradientStop.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.Grid">
-      <summary>Type Grid.</summary>
+      <summary>Type de grille.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.GridView">
       <summary>Type GridView.</summary>
@@ -5874,13 +5874,13 @@
       <summary>Type HandwritingView.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.Hub">
-      <summary>Type Hub.</summary>
+      <summary>Type de concentrateur.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.HubSection">
       <summary>Type HubSection.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.Hyperlink">
-      <summary>Type Hyperlink.</summary>
+      <summary>Type de lien hypertexte.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.HyperlinkButton">
       <summary>Type HyperlinkButton.</summary>
@@ -5889,7 +5889,7 @@
       <summary>Type IconSourceElement.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.Image">
-      <summary>Type Image.</summary>
+      <summary>Type d’image.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.ImageBrush">
       <summary>Type ImageBrush.</summary>
@@ -5907,7 +5907,7 @@
       <summary>Type InputScopeName.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.Italic">
-      <summary>Type Italic.</summary>
+      <summary>Type italique.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.ItemsControl">
       <summary>Type ItemsControl.</summary>
@@ -5931,7 +5931,7 @@
       <summary>Type KeySpline.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.Line">
-      <summary>Type Line.</summary>
+      <summary>Type de ligne.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.LinearColorKeyFrame">
       <summary>Type LinearColorKeyFrame.</summary>
@@ -6009,19 +6009,19 @@
       <summary>Type ObjectAnimationUsingKeyFrames.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.Page">
-      <summary>Type Page.</summary>
+      <summary>Type de page.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.PaneThemeTransition">
       <summary>Type PaneThemeTransition.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.Paragraph">
-      <summary>Type Paragraph.</summary>
+      <summary>Type de paragraphe.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.PasswordBox">
       <summary>Type PasswordBox.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.Path">
-      <summary>Type Path.</summary>
+      <summary>Type de chemin d’accès.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.PathFigure">
       <summary>Type PathFigure.</summary>
@@ -6057,10 +6057,10 @@
       <summary>Type PolyBezierSegment.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.Polygon">
-      <summary>Type Polygon.</summary>
+      <summary>Type de polygone.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.Polyline">
-      <summary>Type Polyline.</summary>
+      <summary>Type de polyligne.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.PolyLineSegment">
       <summary>Type PolyLineSegment.</summary>
@@ -6075,7 +6075,7 @@
       <summary>Type PopOutThemeAnimation.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.Popup">
-      <summary>Type Popup.</summary>
+      <summary>Type de fenêtre contextuelle.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.PopupThemeTransition">
       <summary>Type PopupThemeTransition.</summary>
@@ -6108,7 +6108,7 @@
       <summary>Type RadioButton.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.Rectangle">
-      <summary>Type Rectangle.</summary>
+      <summary>Type de rectangle.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.RectangleGeometry">
       <summary>Type RectangleGeometry.</summary>
@@ -6120,7 +6120,7 @@
       <summary>Type RelativeSource.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.RenderTargetBitmap">
-      <summary>Type RenderTargetBitmap.</summary>
+      <summary>Type de RenderTargetBitmap.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.ReorderThemeTransition">
       <summary>Type ReorderThemeTransition.</summary>
@@ -6153,13 +6153,13 @@
       <summary>Type RowDefinition.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.Run">
-      <summary>Type Run.</summary>
+      <summary>Type d’exécution.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.ScaleTransform">
       <summary>Type ScaleTransform.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.ScrollBar">
-      <summary>Type ScrollBar.</summary>
+      <summary>Type de barre de défilement.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.ScrollContentPresenter">
       <summary>Type ScrollContentPresenter.</summary>
@@ -6174,7 +6174,7 @@
       <summary>Type SemanticZoom.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.Setter">
-      <summary>Type Setter.</summary>
+      <summary>Type d’accesseur Set.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.SettingsFlyout">
       <summary>Type SettingsFlyout.</summary>
@@ -6186,7 +6186,7 @@
       <summary>Type SkewTransform.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.Slider">
-      <summary>Type Slider.</summary>
+      <summary>Type de curseur.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.SoftwareBitmapSource">
       <summary>Type SoftwareBitmapSource.</summary>
@@ -6195,7 +6195,7 @@
       <summary>Type SolidColorBrush.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.Span">
-      <summary>Type Span.</summary>
+      <summary>Type d’étendue.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.SplineColorKeyFrame">
       <summary>Type SplineColorKeyFrame.</summary>
@@ -6225,10 +6225,10 @@
       <summary>Type StateTrigger.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.Storyboard">
-      <summary>Type Storyboard.</summary>
+      <summary>Type de Storyboard.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.Style">
-      <summary>Type Style.</summary>
+      <summary>Type de style.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.SvgImageSource">
       <summary>Type SvgImageSource.</summary>
@@ -6255,7 +6255,7 @@
       <summary>Type TextBlock.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.TextBox">
-      <summary>Type TextBox.</summary>
+      <summary>Type de zone de texte.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.ThemeShadow">
       <summary>Type ThemeShadow.</summary>
@@ -6282,7 +6282,7 @@
       <summary>Type ToggleSwitch.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.ToolTip">
-      <summary>Type ToolTip.</summary>
+      <summary>Type d’info-bulle.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.TransformGroup">
       <summary>Type TransformGroup.</summary>
@@ -6291,7 +6291,7 @@
       <summary>Type TranslateTransform.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.Underline">
-      <summary>Type Underline.</summary>
+      <summary>Type de soulignement.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.UserControl">
       <summary>Type UserControl.</summary>
@@ -6312,7 +6312,7 @@
       <summary>Type VisualStateGroup.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.VisualStateManager">
-      <summary>Type VisualStateManager.</summary>
+      <summary>Type de VisualStateManager.</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.VisualTransition">
       <summary>Type VisualTransition.</summary>

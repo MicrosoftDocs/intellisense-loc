@@ -1,37 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <doc>
   <assembly>
-    <name>Windows.Foundation.FoundationContract</name>
+    <name>Windows. Foundation. FoundationContract</name>
   </assembly>
   <members>
     <member name="T:Windows.Foundation.AsyncActionCompletedHandler">
-      <summary>Représente une méthode qui gère l'événement terminé d'une action asynchrone.</summary>
+      <summary>Représente une méthode qui gère l’événement terminé d’une action asynchrone.</summary>
       <param name="asyncInfo">Action asynchrone.</param>
-      <param name="asyncStatus">Une des valeurs de l'énumération.</param>
+      <param name="asyncStatus">L’une des valeurs d’énumération.</param>
     </member>
     <member name="T:Windows.Foundation.AsyncActionProgressHandler`1">
-      <summary>Représente une méthode qui gère des événements de mise à jour de progression d'une action asynchrone qui fournit des mises à jour de progression.</summary>
+      <summary>Représente une méthode qui gère les événements de mise à jour de progression d’une action asynchrone qui fournit des mises à jour de progression.</summary>
       <typeparam name="TProgress">
       </typeparam>
       <param name="asyncInfo">Action asynchrone.</param>
       <param name="progressInfo">Informations de progression.</param>
     </member>
     <member name="T:Windows.Foundation.AsyncActionWithProgressCompletedHandler`1">
-      <summary>Représente une méthode qui gère l'événement terminé d'une action asynchrone qui fournit des mises à jour de progression.</summary>
+      <summary>Représente une méthode qui gère l’événement terminé d’une action asynchrone qui fournit des mises à jour de progression.</summary>
       <typeparam name="TProgress">
       </typeparam>
       <param name="asyncInfo">Action asynchrone.</param>
-      <param name="asyncStatus">Une des valeurs de l'énumération.</param>
+      <param name="asyncStatus">L’une des valeurs d’énumération.</param>
     </member>
     <member name="T:Windows.Foundation.AsyncOperationCompletedHandler`1">
-      <summary>Représente une méthode qui gère l'événement terminé d'une opération asynchrone.</summary>
+      <summary>Représente une méthode qui gère l’événement terminé d’une opération asynchrone.</summary>
       <typeparam name="TResult">
       </typeparam>
       <param name="asyncInfo">Opération asynchrone.</param>
-      <param name="asyncStatus">Une des valeurs de l'énumération.</param>
+      <param name="asyncStatus">L’une des valeurs d’énumération.</param>
     </member>
     <member name="T:Windows.Foundation.AsyncOperationProgressHandler`2">
-      <summary>Représente une méthode qui gère des événements de mise à jour de progression d'une opération asynchrone qui fournit des mises à jour de progression.</summary>
+      <summary>Représente une méthode qui gère les événements de mise à jour de progression d’une opération asynchrone qui fournit des mises à jour de progression.</summary>
       <typeparam name="TResult">
       </typeparam>
       <typeparam name="TProgress">
@@ -40,60 +40,60 @@
       <param name="progressInfo">Informations de progression.</param>
     </member>
     <member name="T:Windows.Foundation.AsyncOperationWithProgressCompletedHandler`2">
-      <summary>Représente une méthode qui gère l'événement terminé d'une opération asynchrone qui fournit des mises à jour de progression.</summary>
+      <summary>Représente une méthode qui gère l’événement terminé d’une opération asynchrone qui fournit des mises à jour de progression.</summary>
       <typeparam name="TResult">
       </typeparam>
       <typeparam name="TProgress">
       </typeparam>
       <param name="asyncInfo">Opération asynchrone.</param>
-      <param name="asyncStatus">Une des valeurs de l'énumération.</param>
+      <param name="asyncStatus">L’une des valeurs d’énumération.</param>
     </member>
     <member name="T:Windows.Foundation.AsyncStatus">
-      <summary>Spécifie l'état d'une opération asynchrone.</summary>
+      <summary>Spécifie l’état d’une opération asynchrone.</summary>
     </member>
     <member name="F:Windows.Foundation.AsyncStatus.Canceled">
       <summary>L'opération a été annulée.</summary>
     </member>
     <member name="F:Windows.Foundation.AsyncStatus.Completed">
-      <summary>L'opération s'est terminée.</summary>
+      <summary>L’opération est terminée.</summary>
     </member>
     <member name="F:Windows.Foundation.AsyncStatus.Error">
-      <summary>L'opération a rencontré une erreur.</summary>
+      <summary>L’opération a rencontré une erreur.</summary>
     </member>
     <member name="F:Windows.Foundation.AsyncStatus.Started">
-      <summary>L'opération a commencé.</summary>
+      <summary>L’opération a démarré.</summary>
     </member>
     <member name="T:Windows.Foundation.DateTime">
-      <summary>Représente un instant, généralement exprimé sous la forme d'une date et d'une heure.</summary>
+      <summary>Représente un instant, généralement exprimé sous la forme d’une date et d’une heure.</summary>
     </member>
     <member name="F:Windows.Foundation.DateTime.UniversalTime">
-      <summary>Entier signé de 64 bits représentant un point dans le temps comme le nombre d'intervalles de 100 nanosecondes antérieur ou postérieur au 1er janvier 1601 à minuit (selon le calendrier grégorien).</summary>
+      <summary>Entier signé 64 bits qui représente un point dans le temps en tant que nombre d’intervalles de 100 nanosecondes avant ou après minuit le 1er janvier 1601 (selon le calendrier grégorien).</summary>
     </member>
     <member name="T:Windows.Foundation.Deferral">
-      <summary>Enregistre un objet DeferralCompletedHandler à appeler à l'achèvement du différé et qui manipule l'état du différé.</summary>
+      <summary>Stocke un DeferralCompletedHandler à appeler à la fin du report et manipule l’état du report.</summary>
     </member>
     <member name="M:Windows.Foundation.Deferral.#ctor(Windows.Foundation.DeferralCompletedHandler)">
-      <summary>Initialise un objet Deferral et spécifie un objet DeferralCompletedHandler à appeler à l'achèvement du différé.</summary>
-      <param name="handler">Objet DeferralCompletedHandler à appeler à l'achèvement du différé.</param>
+      <summary>Initialise un nouvel objet Report et spécifie un DeferralCompletedHandler à appeler à l’achèvement du report.</summary>
+      <param name="handler">DeferralCompletedHandler à appeler à l’achèvement du report.</param>
     </member>
     <member name="M:Windows.Foundation.Deferral.Close">
-      <summary>Si l'objet DeferralCompletedHandler n'a pas encore été appelé, cela aura pour effet de l'appeler et de passer la référence au délégué.</summary>
+      <summary>Si le DeferralCompletedHandler n’a pas encore été appelé, il l’appellera et supprimera la référence au délégué.</summary>
     </member>
     <member name="M:Windows.Foundation.Deferral.Complete">
-      <summary>Si l'objet DeferralCompletedHandler n'a pas encore été appelé, cela aura pour effet de l'appeler et de passer la référence au délégué.</summary>
+      <summary>Si le DeferralCompletedHandler n’a pas encore été appelé, il l’appellera et supprimera la référence au délégué.</summary>
     </member>
     <member name="T:Windows.Foundation.DeferralCompletedHandler">
-      <summary>Représente une méthode qui gère l'événement terminé d'une action différée.</summary>
+      <summary>Représente une méthode qui gère l’événement terminé d’une action différée.</summary>
     </member>
     <member name="T:Windows.Foundation.EventHandler`1">
       <summary>Représente une méthode qui gère les événements généraux.</summary>
       <typeparam name="T">
       </typeparam>
-      <param name="sender">Source de l'événement.</param>
-      <param name="args">Données d'événement.</param>
+      <param name="sender">Source de l’événement.</param>
+      <param name="args">Données d’événement.</param>
     </member>
     <member name="T:Windows.Foundation.EventRegistrationToken">
-      <summary>Représente une référence à un délégué qui reçoit des notifications de modifications.</summary>
+      <summary>Représente une référence à un délégué qui reçoit des notifications de modification.</summary>
     </member>
     <member name="F:Windows.Foundation.EventRegistrationToken.Value">
       <summary>Référence au délégué.</summary>
@@ -103,197 +103,197 @@
       </summary>
     </member>
     <member name="T:Windows.Foundation.HResult">
-      <summary>Représente une erreur Windows Runtime.</summary>
+      <summary>Représente une erreur de Windows Runtime.</summary>
     </member>
     <member name="F:Windows.Foundation.HResult.Value">
       <summary>Entier qui décrit une erreur.</summary>
     </member>
     <member name="T:Windows.Foundation.IAsyncAction">
-      <summary>Représente une action asynchrone. C'est le type de retour pour de nombreuses méthodes asynchrones Windows Runtime qui n'ont pas d'objet résultat et qui ne signalent pas la progression en cours.</summary>
+      <summary>Représente une action asynchrone. Il s’agit du type de retour pour de nombreux Windows Runtime méthodes asynchrones qui n’ont pas d’objet de résultat, et ne signalent pas la progression en cours.</summary>
     </member>
     <member name="P:Windows.Foundation.IAsyncAction.Completed">
-      <summary>Obtient ou définit la méthode qui gère la notification d'action terminée.</summary>
+      <summary>Obtient ou définit la méthode qui gère la notification d’action terminée.</summary>
       <returns>Méthode qui gère la notification.</returns>
     </member>
     <member name="M:Windows.Foundation.IAsyncAction.GetResults">
-      <summary>Retourne les résultats de l'action.</summary>
+      <summary>Retourne les résultats de l’action.</summary>
     </member>
     <member name="T:Windows.Foundation.IAsyncActionWithProgress`1">
-      <summary>Représente une action asynchrone qui peut signaler la progression aux appelants. C'est le type de retour pour toutes les méthodes asynchrones Windows Runtime qui n'ont pas d'objet résultat mais qui signalent la progression aux auditeurs du rappel.</summary>
+      <summary>Représente une action asynchrone qui peut signaler des mises à jour de progression aux appelants. Il s’agit du type de retour pour tous les Windows Runtime méthodes asynchrones qui n’ont pas d’objet de résultat, mais signalent la progression aux écouteurs de rappel.</summary>
       <typeparam name="TProgress">
       </typeparam>
     </member>
     <member name="P:Windows.Foundation.IAsyncActionWithProgress`1.Completed">
-      <summary>Obtient ou définit la méthode qui gère la notification d'action terminée.</summary>
+      <summary>Obtient ou définit la méthode qui gère la notification d’action terminée.</summary>
       <returns>Méthode qui gère la notification.</returns>
     </member>
     <member name="P:Windows.Foundation.IAsyncActionWithProgress`1.Progress">
       <summary>Obtient ou définit la méthode de rappel qui reçoit la notification de progression.</summary>
-      <returns>Référence à la méthode de rappel qui gère les notifications de progression. Implémentez le délégué d'AsyncActionProgressHandler (TProgress) pour définir votre rappel. *TProgress* définit le type d'unité de progression, lequel varie selon l'implémentation de la méthode.</returns>
+      <returns>Référence à la méthode de rappel qui gère les notifications de progression. Implémentez le délégué AsyncActionProgressHandler (TProgress) pour définir votre rappel. * TProgress * définit le type d’unité de progression, qui varie en fonction de l’implémentation de la méthode.</returns>
     </member>
     <member name="M:Windows.Foundation.IAsyncActionWithProgress`1.GetResults">
-      <summary>Retourne les résultats de l'action.</summary>
+      <summary>Retourne les résultats de l’action.</summary>
     </member>
     <member name="T:Windows.Foundation.IAsyncInfo">
-      <summary>Prend en charge les actions et les opérations asynchrones. IAsyncInfo est une interface de base pour IAsyncAction, IAsyncActionWithProgress&lt;TProgress&gt;, IAsyncOperation&lt;TResult&gt; et IAsyncOperationWithProgress&lt;TResult,TProgress&gt;, qui prennent en charge les combinaisons de type de retour et progression pour une méthode asynchrone.</summary>
+      <summary>Prend en charge les opérations et actions asynchrones. IAsyncInfo est une interface de base pour IAsyncAction, IAsyncActionWithProgress &lt; TProgress &gt;, IAsyncOperation &lt; TResult &gt; et IAsyncOperationWithProgress &lt; TResult, TProgress &gt;, qui prennent en charge des combinaisons de type de retour et de progression pour une méthode asynchrone.</summary>
     </member>
     <member name="P:Windows.Foundation.IAsyncInfo.ErrorCode">
-      <summary>Obtient une chaîne qui décrit une condition d'erreur de l'opération asynchrone.</summary>
-      <returns>Chaîne d'erreur.</returns>
+      <summary>Obtient une chaîne qui décrit une condition d’erreur de l’opération asynchrone.</summary>
+      <returns>Chaîne d’erreur.</returns>
     </member>
     <member name="P:Windows.Foundation.IAsyncInfo.Id">
-      <summary>Obtient le handle de l'opération asynchrone.</summary>
-      <returns>Descripteur de l'opération asynchrone.</returns>
+      <summary>Obtient le handle de l’opération asynchrone.</summary>
+      <returns>Handle de l’opération asynchrone.</returns>
     </member>
     <member name="P:Windows.Foundation.IAsyncInfo.Status">
-      <summary>Obtient une valeur qui indique l'état de l'opération asynchrone.</summary>
-      <returns>État de l'exécution, comme valeur de l'énumération. La valeur **Completed** indique que la méthode a retourné des résultats. La valeur **Started** représente un état de transition avant l'un des 3 résultats finaux (**Completed**, **Error**, **Canceled**) qui peut être déterminé par l'invocation de la méthode.</returns>
+      <summary>Obtient une valeur qui indique l’état de l’opération asynchrone.</summary>
+      <returns>État de l’opération, en tant que valeur de l’énumération. La valeur * * Completed * * indique que la méthode a été retournée. La valeur * * Started * * représente un état de transition avant l’un des 3 autres résultats finaux (* * Completed * *, * * erreur * *, * * Canceled * *) peut être déterminé par l’appel de la méthode.</returns>
     </member>
     <member name="M:Windows.Foundation.IAsyncInfo.Cancel">
-      <summary>Annule l'opération asynchrone.</summary>
+      <summary>Annule l’opération asynchrone.</summary>
     </member>
     <member name="M:Windows.Foundation.IAsyncInfo.Close">
-      <summary>Ferme l'opération asynchrone.</summary>
+      <summary>Ferme l’opération asynchrone.</summary>
     </member>
     <member name="T:Windows.Foundation.IAsyncOperation`1">
-      <summary>Représente une opération asynchrone qui retourne un résultat une fois qu'elle est terminée. C'est le type de retour pour de nombreuses méthodes Windows Runtime asynchrones qui donnent des résultats mais ne signalent pas leur progression.</summary>
+      <summary>Représente une opération asynchrone qui retourne un résultat à l’achèvement. Il s’agit du type de retour pour de nombreux Windows Runtime méthodes asynchrones qui ont des résultats, mais qui ne signalent pas la progression.</summary>
       <typeparam name="TResult">
       </typeparam>
     </member>
     <member name="P:Windows.Foundation.IAsyncOperation`1.Completed">
-      <summary>Obtient ou définit la méthode qui gère la notification d'opération terminée.</summary>
+      <summary>Obtient ou définit la méthode qui gère la notification d’opération terminée.</summary>
       <returns>Méthode qui gère la notification.</returns>
     </member>
     <member name="M:Windows.Foundation.IAsyncOperation`1.GetResults">
-      <summary>Retourne les résultats de l'opération.</summary>
-      <returns>Résultats de l'opération.</returns>
+      <summary>Retourne les résultats de l’opération.</summary>
+      <returns>Résultats de l’opération.</returns>
     </member>
     <member name="T:Windows.Foundation.IAsyncOperationWithProgress`2">
-      <summary>Représente une opération asynchrone qui peut signaler la progression aux appelants. C'est le type de retour pour de nombreuses méthodes Windows Runtime asynchrones qui donnent des résultats et signalent leur progression.</summary>
+      <summary>Représente une opération asynchrone qui peut signaler des mises à jour de progression aux appelants. Il s’agit du type de retour pour de nombreux Windows Runtime méthodes asynchrones qui ont des résultats et signalent également la progression.</summary>
       <typeparam name="TResult">
       </typeparam>
       <typeparam name="TProgress">
       </typeparam>
     </member>
     <member name="P:Windows.Foundation.IAsyncOperationWithProgress`2.Completed">
-      <summary>Obtient ou définit la méthode qui gère la notification d'opération terminée.</summary>
+      <summary>Obtient ou définit la méthode qui gère la notification d’opération terminée.</summary>
       <returns>Méthode qui gère la notification.</returns>
     </member>
     <member name="P:Windows.Foundation.IAsyncOperationWithProgress`2.Progress">
       <summary>Obtient ou définit la méthode qui gère les notifications de progression.</summary>
-      <returns>Référence à la méthode de rappel qui gère les notifications de progression. Implémentez le délégué d'AsyncOperationProgressHandler&lt;TResult, TProgress&gt; pour définir votre rappel. *TProgress* définit le type d'unité de progression, lequel varie selon l'implémentation de la méthode.</returns>
+      <returns>Référence à la méthode de rappel qui gère les notifications de progression. Implémentez AsyncOperationProgressHandler &lt; TResult, TProgress &gt; délégué pour définir votre rappel. * TProgress * définit le type d’unité de progression, qui varie en fonction de l’implémentation de la méthode.</returns>
     </member>
     <member name="M:Windows.Foundation.IAsyncOperationWithProgress`2.GetResults">
-      <summary>Retourne les résultats de l'opération.</summary>
-      <returns>Résultats de l'opération.</returns>
+      <summary>Retourne les résultats de l’opération.</summary>
+      <returns>Résultats de l’opération.</returns>
     </member>
     <member name="T:Windows.Foundation.IClosable">
       <summary>Définit une méthode pour libérer des ressources allouées.</summary>
     </member>
     <member name="M:Windows.Foundation.IClosable.Close">
-      <summary>Libère les ressources système qui sont exposées par un objet Windows Runtime.</summary>
+      <summary>Libère les ressources système qui sont exposées par un objet Windows Runtime.</summary>
     </member>
     <member name="T:Windows.Foundation.IPropertyValue">
-      <summary>Représente une valeur dans un magasin de propriétés. Vous ne pouvez pas implémenter cette interface, consultez la section Notes.</summary>
+      <summary>Représente une valeur dans une banque de propriétés. Vous ne pouvez pas implémenter cette interface, consultez la section Notes.</summary>
     </member>
     <member name="P:Windows.Foundation.IPropertyValue.IsNumericScalar">
       <summary>Obtient une valeur qui indique si la valeur de propriété est une valeur scalaire.</summary>
-      <returns>True si la valeur est scalaire ; sinon, false.</returns>
+      <returns>True si la valeur est scalaire ; Sinon, false.</returns>
     </member>
     <member name="P:Windows.Foundation.IPropertyValue.Type">
-      <summary>Retourne le type stocké dans la valeur de propriété.</summary>
-      <returns>Type stocké dans la valeur de propriété.</returns>
+      <summary>Retourne le type stocké dans la valeur de la propriété.</summary>
+      <returns>Type stocké dans la valeur de la propriété.</returns>
     </member>
     <member name="M:Windows.Foundation.IPropertyValue.GetBoolean">
       <summary>Retourne la valeur booléenne stockée en tant que valeur de propriété.</summary>
-      <returns>La valeur.</returns>
+      <returns>Valeur.</returns>
     </member>
     <member name="M:Windows.Foundation.IPropertyValue.GetBooleanArray(System.Boolean[]@)">
-      <summary>Retourne le tableau de valeurs booléennes stockées en tant que valeur de propriété.</summary>
+      <summary>Retourne le tableau de valeurs booléennes stockées sous la forme d’une valeur de propriété.</summary>
       <param name="value">Tableau de valeurs.</param>
     </member>
     <member name="M:Windows.Foundation.IPropertyValue.GetChar16">
       <summary>Retourne le caractère Unicode stocké en tant que valeur de propriété.</summary>
-      <returns>La valeur.</returns>
+      <returns>Valeur.</returns>
     </member>
     <member name="M:Windows.Foundation.IPropertyValue.GetChar16Array(System.Char[]@)">
       <summary>Retourne le tableau de caractères Unicode stocké en tant que valeur de propriété.</summary>
       <param name="value">Tableau de valeurs.</param>
     </member>
     <member name="M:Windows.Foundation.IPropertyValue.GetDateTime">
-      <summary>Retourne la valeur de date et d'heure signalée en tant que valeur de propriété.</summary>
-      <returns>La valeur.</returns>
+      <summary>Retourne la valeur de date et d’heure stockée sous la forme d’une valeur de propriété.</summary>
+      <returns>Valeur.</returns>
     </member>
     <member name="M:Windows.Foundation.IPropertyValue.GetDateTimeArray(Windows.Foundation.DateTime[]@)">
-      <summary>Retourne le tableau de valeurs de date et d'heure stockées en tant que valeur de propriété.</summary>
+      <summary>Retourne le tableau de valeurs de date et d’heure stockées sous la forme d’une valeur de propriété.</summary>
       <param name="value">Tableau de valeurs.</param>
     </member>
     <member name="M:Windows.Foundation.IPropertyValue.GetDouble">
       <summary>Retourne la valeur à virgule flottante stockée en tant que valeur de propriété.</summary>
-      <returns>La valeur.</returns>
+      <returns>Valeur.</returns>
     </member>
     <member name="M:Windows.Foundation.IPropertyValue.GetDoubleArray(System.Double[]@)">
-      <summary>Retourne le tableau de valeurs à virgule flottante stockées en tant que valeur de propriété.</summary>
+      <summary>Retourne le tableau de valeurs à virgule flottante stocké en tant que valeur de propriété.</summary>
       <param name="value">Tableau de valeurs.</param>
     </member>
     <member name="M:Windows.Foundation.IPropertyValue.GetGuid">
-      <summary>Retourne la valeur de GUID stockée en tant que valeur de propriété.</summary>
-      <returns>La valeur.</returns>
+      <summary>Retourne la valeur GUID stockée en tant que valeur de propriété.</summary>
+      <returns>Valeur.</returns>
     </member>
     <member name="M:Windows.Foundation.IPropertyValue.GetGuidArray(System.Guid[]@)">
-      <summary>Retourne le tableau de valeurs GUID stocké en tant que valeur de propriété.</summary>
+      <summary>Retourne le tableau de valeurs GUID stockées sous la forme d’une valeur de propriété.</summary>
       <param name="value">Tableau de valeurs.</param>
     </member>
     <member name="M:Windows.Foundation.IPropertyValue.GetInspectableArray(System.Object[]@)">
-      <summary>Retourne le tableau d'objets vérifiables stocké en tant que valeur de propriété.</summary>
-      <param name="value">Tableau d'objets .</param>
+      <summary>Retourne le tableau d’objets inspectables stocké en tant que valeur de propriété.</summary>
+      <param name="value">Tableau d’objets.</param>
     </member>
     <member name="M:Windows.Foundation.IPropertyValue.GetInt16">
-      <summary>Retourne la valeur entière en tant que valeur de propriété.</summary>
-      <returns>La valeur.</returns>
+      <summary>Retourne la valeur entière stockée en tant que valeur de propriété.</summary>
+      <returns>Valeur.</returns>
     </member>
     <member name="M:Windows.Foundation.IPropertyValue.GetInt16Array(System.Int16[]@)">
-      <summary>Retourne le tableau de valeurs entières stocké en tant que valeur de propriété.</summary>
+      <summary>Retourne le tableau de valeurs entières stockées sous la forme d’une valeur de propriété.</summary>
       <param name="value">Tableau de valeurs.</param>
     </member>
     <member name="M:Windows.Foundation.IPropertyValue.GetInt32">
-      <summary>Retourne la valeur entière en tant que valeur de propriété.</summary>
-      <returns>La valeur.</returns>
+      <summary>Retourne la valeur entière stockée en tant que valeur de propriété.</summary>
+      <returns>Valeur.</returns>
     </member>
     <member name="M:Windows.Foundation.IPropertyValue.GetInt32Array(System.Int32[]@)">
-      <summary>Retourne le tableau de valeurs entières stocké en tant que valeur de propriété.</summary>
+      <summary>Retourne le tableau de valeurs entières stockées sous la forme d’une valeur de propriété.</summary>
       <param name="value">Tableau de valeurs.</param>
     </member>
     <member name="M:Windows.Foundation.IPropertyValue.GetInt64">
-      <summary>Retourne la valeur entière en tant que valeur de propriété.</summary>
-      <returns>La valeur.</returns>
+      <summary>Retourne la valeur entière stockée en tant que valeur de propriété.</summary>
+      <returns>Valeur.</returns>
     </member>
     <member name="M:Windows.Foundation.IPropertyValue.GetInt64Array(System.Int64[]@)">
-      <summary>Retourne le tableau de valeurs entières stocké en tant que valeur de propriété.</summary>
+      <summary>Retourne le tableau de valeurs entières stockées sous la forme d’une valeur de propriété.</summary>
       <param name="value">Tableau de valeurs.</param>
     </member>
     <member name="M:Windows.Foundation.IPropertyValue.GetPoint">
-      <summary>Retourne la structure de point stockée en tant que valeur de propriété.</summary>
+      <summary>Retourne la structure de points stockée en tant que valeur de propriété.</summary>
       <returns>Structure.</returns>
     </member>
     <member name="M:Windows.Foundation.IPropertyValue.GetPointArray(Windows.Foundation.Point[]@)">
-      <summary>Retourne le tableau de structures de point stocké en tant que valeur de propriété.</summary>
+      <summary>Retourne le tableau de structures point stocké en tant que valeur de propriété.</summary>
       <param name="value">Tableau de structures.</param>
     </member>
     <member name="M:Windows.Foundation.IPropertyValue.GetRect">
-      <summary>Retourne la structure de rectangle stockée en tant que valeur de propriété.</summary>
+      <summary>Retourne la structure du rectangle stockée en tant que valeur de propriété.</summary>
       <returns>Structure.</returns>
     </member>
     <member name="M:Windows.Foundation.IPropertyValue.GetRectArray(Windows.Foundation.Rect[]@)">
-      <summary>Retourne le tableau de structures de rectangle stocké en tant que valeur de propriété.</summary>
+      <summary>Retourne le tableau de structures de rectangles stocké en tant que valeur de propriété.</summary>
       <param name="value">Tableau de structures.</param>
     </member>
     <member name="M:Windows.Foundation.IPropertyValue.GetSingle">
       <summary>Retourne la valeur à virgule flottante stockée en tant que valeur de propriété.</summary>
-      <returns>La valeur.</returns>
+      <returns>Valeur.</returns>
     </member>
     <member name="M:Windows.Foundation.IPropertyValue.GetSingleArray(System.Single[]@)">
-      <summary>Retourne le tableau de valeurs à virgule flottante stockées en tant que valeur de propriété.</summary>
+      <summary>Retourne le tableau de valeurs à virgule flottante stocké en tant que valeur de propriété.</summary>
       <param name="value">Tableau de valeurs.</param>
     </member>
     <member name="M:Windows.Foundation.IPropertyValue.GetSize">
@@ -305,80 +305,80 @@
       <param name="value">Tableau de structures.</param>
     </member>
     <member name="M:Windows.Foundation.IPropertyValue.GetString">
-      <summary>Retourne la valeur de chaîne en tant que valeur de propriété.</summary>
-      <returns>La valeur.</returns>
+      <summary>Retourne la valeur de chaîne stockée en tant que valeur de propriété.</summary>
+      <returns>Valeur.</returns>
     </member>
     <member name="M:Windows.Foundation.IPropertyValue.GetStringArray(System.String[]@)">
-      <summary>Retourne le tableau de valeurs de type chaîne stocké en tant que valeur de propriété.</summary>
+      <summary>Retourne le tableau de valeurs de chaîne stocké en tant que valeur de propriété.</summary>
       <param name="value">Tableau de valeurs.</param>
     </member>
     <member name="M:Windows.Foundation.IPropertyValue.GetTimeSpan">
-      <summary>Retourne la valeur d'intervalle de temps stockée en tant que valeur de propriété.</summary>
-      <returns>La valeur.</returns>
+      <summary>Retourne la valeur d’intervalle de temps stockée en tant que valeur de propriété.</summary>
+      <returns>Valeur.</returns>
     </member>
     <member name="M:Windows.Foundation.IPropertyValue.GetTimeSpanArray(Windows.Foundation.TimeSpan[]@)">
-      <summary>Retourne le tableau de valeurs d'intervalle de temps stocké en tant que valeur de propriété.</summary>
+      <summary>Retourne le tableau de valeurs d’intervalle de temps stockées en tant que valeur de propriété.</summary>
       <param name="value">Tableau de valeurs.</param>
     </member>
     <member name="M:Windows.Foundation.IPropertyValue.GetUInt16">
       <summary>Retourne la valeur entière non signée stockée en tant que valeur de propriété.</summary>
-      <returns>La valeur.</returns>
+      <returns>Valeur.</returns>
     </member>
     <member name="M:Windows.Foundation.IPropertyValue.GetUInt16Array(System.UInt16[]@)">
-      <summary>Retourne le tableau de valeurs entières non signées stocké en tant que valeur de propriété.</summary>
+      <summary>Retourne le tableau de valeurs entières non signées stockées en tant que valeur de propriété.</summary>
       <param name="value">Tableau de valeurs.</param>
     </member>
     <member name="M:Windows.Foundation.IPropertyValue.GetUInt32">
       <summary>Retourne la valeur entière non signée stockée en tant que valeur de propriété.</summary>
-      <returns>La valeur.</returns>
+      <returns>Valeur.</returns>
     </member>
     <member name="M:Windows.Foundation.IPropertyValue.GetUInt32Array(System.UInt32[]@)">
-      <summary>Retourne le tableau de valeurs entières non signées stocké en tant que valeur de propriété.</summary>
+      <summary>Retourne le tableau de valeurs entières non signées stockées en tant que valeur de propriété.</summary>
       <param name="value">Tableau de valeurs.</param>
     </member>
     <member name="M:Windows.Foundation.IPropertyValue.GetUInt64">
       <summary>Retourne la valeur entière non signée stockée en tant que valeur de propriété.</summary>
-      <returns>La valeur.</returns>
+      <returns>Valeur.</returns>
     </member>
     <member name="M:Windows.Foundation.IPropertyValue.GetUInt64Array(System.UInt64[]@)">
-      <summary>Retourne le tableau de valeurs entières non signées stocké en tant que valeur de propriété.</summary>
+      <summary>Retourne le tableau de valeurs entières non signées stockées en tant que valeur de propriété.</summary>
       <param name="value">Tableau de valeurs.</param>
     </member>
     <member name="M:Windows.Foundation.IPropertyValue.GetUInt8">
-      <summary>Retourne la valeur d'octet stockée en tant que valeur de propriété.</summary>
-      <returns>La valeur.</returns>
+      <summary>Retourne la valeur d’octet stockée en tant que valeur de propriété.</summary>
+      <returns>Valeur.</returns>
     </member>
     <member name="M:Windows.Foundation.IPropertyValue.GetUInt8Array(System.Byte[]@)">
-      <summary>Retourne le tableau de valeurs d'octets stockées en tant que valeur de propriété.</summary>
+      <summary>Retourne le tableau de valeurs d’octets stocké en tant que valeur de propriété.</summary>
       <param name="value">Tableau de valeurs.</param>
     </member>
     <member name="T:Windows.Foundation.IReference`1">
-      <summary>Permet d'utiliser les types d'énumérations arbitraires, de structures et de délégué comme des valeurs de propriété.</summary>
+      <summary>Permet d’utiliser des énumérations, des structures et des types délégués arbitraires comme valeurs de propriété.</summary>
       <typeparam name="T">
       </typeparam>
     </member>
     <member name="P:Windows.Foundation.IReference`1.Value">
-      <summary>Obtient le type qui est représenté sous la forme d'un IPropertyValue.</summary>
+      <summary>Obtient le type représenté en tant que IPropertyValue.</summary>
       <returns>Type.</returns>
     </member>
     <member name="T:Windows.Foundation.IReferenceArray`1">
-      <summary>Permet d'utiliser les énumérations arbitraires, les structures et les types comme un tableau de valeurs de propriété. Vous ne pouvez pas implémenter cette interface, consultez la section Notes.</summary>
+      <summary>Permet d’utiliser des énumérations, des structures et des types délégués arbitraires en tant que tableau de valeurs de propriété. Vous ne pouvez pas implémenter cette interface, consultez la section Notes.</summary>
       <typeparam name="T">
       </typeparam>
     </member>
     <member name="P:Windows.Foundation.IReferenceArray`1.Value">
-      <summary>Obtient le type qui est représenté sous la forme d'un tableau IPropertyValue.</summary>
+      <summary>Obtient le type représenté en tant que tableau IPropertyValue.</summary>
       <returns>Type.</returns>
     </member>
     <member name="T:Windows.Foundation.IStringable">
-      <summary>Permet de représenter l'objet actif sous forme de chaîne.</summary>
+      <summary>Fournit un moyen de représenter l’objet actuel sous forme de chaîne.</summary>
     </member>
     <member name="M:Windows.Foundation.IStringable.ToString">
-      <summary>Obtient une chaîne qui représente l'objet actif.</summary>
-      <returns>Chaîne qui représente l'objet actuel.</returns>
+      <summary>Obtient une chaîne qui représente l’objet actuel.</summary>
+      <returns>Chaîne qui représente l’objet actuel.</returns>
     </member>
     <member name="T:Windows.Foundation.Point">
-      <summary>Représente une paire de coordonnées x et y qui définissent un point dans un plan à deux dimensions.</summary>
+      <summary>Représente les valeurs des coordonnées x et y qui définissent un point dans un plan à deux dimensions.</summary>
     </member>
     <member name="F:Windows.Foundation.Point.X">
       <summary>Position horizontale du point.</summary>
@@ -387,46 +387,46 @@
       <summary>Position verticale du point.</summary>
     </member>
     <member name="T:Windows.Foundation.PropertyType">
-      <summary>Spécifie les types des valeurs de propriété.</summary>
+      <summary>Spécifie les types de valeur de propriété.</summary>
     </member>
     <member name="F:Windows.Foundation.PropertyType.Boolean">
-      <summary>Une valeur pouvant être uniquement true ou false.</summary>
+      <summary>Valeur qui peut être uniquement true ou false.</summary>
     </member>
     <member name="F:Windows.Foundation.PropertyType.BooleanArray">
       <summary>Tableau de valeurs booléennes.</summary>
     </member>
     <member name="F:Windows.Foundation.PropertyType.Char16">
-      <summary>Un code de caractère (2 octets) non signé de 16 bits.</summary>
+      <summary>Point de code non signé 16 bits (2 octets).</summary>
     </member>
     <member name="F:Windows.Foundation.PropertyType.Char16Array">
-      <summary>Tableau de valeurs Char.</summary>
+      <summary>Tableau de valeurs char.</summary>
     </member>
     <member name="F:Windows.Foundation.PropertyType.DateTime">
-      <summary>Instant, généralement exprimé sous la forme d'une date ou d'une heure.</summary>
+      <summary>Un instant, généralement exprimé sous la forme d’une date et d’une heure.</summary>
     </member>
     <member name="F:Windows.Foundation.PropertyType.DateTimeArray">
       <summary>Tableau de valeurs DateTime.</summary>
     </member>
     <member name="F:Windows.Foundation.PropertyType.Double">
-      <summary>Nombre à virgule flottante signé de 64 bits (8 octets).</summary>
+      <summary>Nombre à virgule flottante 64 bits (8 octets) signé.</summary>
     </member>
     <member name="F:Windows.Foundation.PropertyType.DoubleArray">
-      <summary>Tableau de valeurs Double.</summary>
+      <summary>Tableau de valeurs de type double.</summary>
     </member>
     <member name="F:Windows.Foundation.PropertyType.Empty">
-      <summary>Aucun type n'est spécifié.</summary>
+      <summary>Aucun type n’est spécifié.</summary>
     </member>
     <member name="F:Windows.Foundation.PropertyType.Guid">
       <summary>Identificateur global unique.</summary>
     </member>
     <member name="F:Windows.Foundation.PropertyType.GuidArray">
-      <summary>Tableau de valeurs Guid.</summary>
+      <summary>Tableau de valeurs GUID.</summary>
     </member>
     <member name="F:Windows.Foundation.PropertyType.Inspectable">
-      <summary>Un objet qui implémente l'interface d'IInspectable.</summary>
+      <summary>Objet implémentant l’interface IInspectable.</summary>
     </member>
     <member name="F:Windows.Foundation.PropertyType.InspectableArray">
-      <summary>Tableau de valeurs **Inspectable**.</summary>
+      <summary>Tableau de valeurs * * inspectables * *.</summary>
     </member>
     <member name="F:Windows.Foundation.PropertyType.Int16">
       <summary>Entier signé de 16 bits (2 octets).</summary>
@@ -435,52 +435,52 @@
       <summary>Tableau de valeurs Int16.</summary>
     </member>
     <member name="F:Windows.Foundation.PropertyType.Int32">
-      <summary>Entier signé de 32 bits (4 octets).</summary>
+      <summary>Entier signé 32 bits (4 octets).</summary>
     </member>
     <member name="F:Windows.Foundation.PropertyType.Int32Array">
       <summary>Tableau de valeurs Int32.</summary>
     </member>
     <member name="F:Windows.Foundation.PropertyType.Int64">
-      <summary>Entier signé de 64 bits (8 octets).</summary>
+      <summary>Entier signé 64 bits (8 octets).</summary>
     </member>
     <member name="F:Windows.Foundation.PropertyType.Int64Array">
       <summary>Tableau de valeurs Int64.</summary>
     </member>
     <member name="F:Windows.Foundation.PropertyType.OtherType">
-      <summary>Un type non spécifié dans cette énumération.</summary>
+      <summary>Type non spécifié dans cette énumération.</summary>
     </member>
     <member name="F:Windows.Foundation.PropertyType.OtherTypeArray">
-      <summary>Un tableau d'un type non spécifié.</summary>
+      <summary>Tableau d’un type non spécifié.</summary>
     </member>
     <member name="F:Windows.Foundation.PropertyType.Point">
       <summary>Paire ordonnée de coordonnées x et y à virgule flottante qui définit un point dans un plan à deux dimensions.</summary>
     </member>
     <member name="F:Windows.Foundation.PropertyType.PointArray">
-      <summary>Un tableau de structures Point.</summary>
+      <summary>Tableau de structures de points.</summary>
     </member>
     <member name="F:Windows.Foundation.PropertyType.Rect">
-      <summary>Ensemble de quatre nombres à virgule flottante représentant l’emplacement et la taille d’un rectangle.</summary>
+      <summary>Ensemble de quatre nombres à virgule flottante qui représentent l’emplacement et la taille d’un rectangle.</summary>
     </member>
     <member name="F:Windows.Foundation.PropertyType.RectArray">
-      <summary>Un tableau de structures Rect.</summary>
+      <summary>Tableau de structures Rect.</summary>
     </member>
     <member name="F:Windows.Foundation.PropertyType.Single">
-      <summary>Un nombre à virgule flottante signé de 32 bits (4 octets).</summary>
+      <summary>Nombre à virgule flottante 32 bits (4 octets) signé.</summary>
     </member>
     <member name="F:Windows.Foundation.PropertyType.SingleArray">
-      <summary>Tableau de valeurs Single.</summary>
+      <summary>Tableau de valeurs uniques.</summary>
     </member>
     <member name="F:Windows.Foundation.PropertyType.Size">
-      <summary>Une paire ordonnée de nombres à virgule flottante qui spécifient une hauteur et une largeur.</summary>
+      <summary>Paire ordonnée de nombres à virgule flottante qui spécifient une hauteur et une largeur.</summary>
     </member>
     <member name="F:Windows.Foundation.PropertyType.SizeArray">
-      <summary>Un tableau de structures Size.</summary>
+      <summary>Tableau de structures de taille.</summary>
     </member>
     <member name="F:Windows.Foundation.PropertyType.String">
-      <summary>HSTRING Windows Runtime.</summary>
+      <summary>Windows Runtime HSTRING.</summary>
     </member>
     <member name="F:Windows.Foundation.PropertyType.StringArray">
-      <summary>Tableau de valeurs String.</summary>
+      <summary>Tableau de valeurs de chaîne.</summary>
     </member>
     <member name="F:Windows.Foundation.PropertyType.TimeSpan">
       <summary>Intervalle de temps.</summary>
@@ -507,52 +507,52 @@
       <summary>Tableau de valeurs UInt64.</summary>
     </member>
     <member name="F:Windows.Foundation.PropertyType.UInt8">
-      <summary>Un octet.</summary>
+      <summary>Octet.</summary>
     </member>
     <member name="F:Windows.Foundation.PropertyType.UInt8Array">
-      <summary>Tableau de valeurs Byte.</summary>
+      <summary>Tableau de valeurs d’octets.</summary>
     </member>
     <member name="T:Windows.Foundation.PropertyValue">
-      <summary>Représente une valeur dans une banque de propriétés (comme une instance PropertySet).</summary>
+      <summary>Représente une valeur dans un magasin de propriétés (par exemple, une instance de PropertySet).</summary>
     </member>
     <member name="M:Windows.Foundation.PropertyValue.CreateBoolean(System.Boolean)">
-      <summary>Crée une valeur de propriété d'une valeur booléenne.</summary>
-      <param name="value">Valeur à stocker dans la valeur de propriété.</param>
+      <summary>Crée une valeur de propriété à partir d’une valeur booléenne.</summary>
+      <param name="value">Valeur à stocker dans la valeur de la propriété.</param>
       <returns>Valeur de la propriété.</returns>
     </member>
     <member name="M:Windows.Foundation.PropertyValue.CreateBooleanArray(System.Boolean[])">
-      <summary>Crée une valeur de propriété à partir d'un tableau de valeurs booléennes.</summary>
-      <param name="value">Tableau à stocker dans la valeur de propriété.</param>
+      <summary>Crée une valeur de propriété à partir d’un tableau de valeurs booléennes.</summary>
+      <param name="value">Tableau à stocker dans la valeur de la propriété.</param>
       <returns>Valeur de la propriété.</returns>
     </member>
     <member name="M:Windows.Foundation.PropertyValue.CreateChar16(System.Char)">
-      <summary>Crée une valeur de propriété à partir d'un caractère Unicode.</summary>
-      <param name="value">Valeur à stocker dans la valeur de propriété.</param>
+      <summary>Crée une valeur de propriété à partir d’un caractère Unicode.</summary>
+      <param name="value">Valeur à stocker dans la valeur de la propriété.</param>
       <returns>Valeur de la propriété.</returns>
     </member>
     <member name="M:Windows.Foundation.PropertyValue.CreateChar16Array(System.Char[])">
-      <summary>Crée une valeur de propriété à partir d'un tableau de caractères Unicode.</summary>
-      <param name="value">Tableau à stocker dans la valeur de propriété.</param>
+      <summary>Crée une valeur de propriété à partir d’un tableau de caractères Unicode.</summary>
+      <param name="value">Tableau à stocker dans la valeur de la propriété.</param>
       <returns>Valeur de la propriété.</returns>
     </member>
     <member name="M:Windows.Foundation.PropertyValue.CreateDateTime(Windows.Foundation.DateTime)">
-      <summary>Crée une valeur de propriété à partir d'une valeur de date et d'heure.</summary>
-      <param name="value">Valeur à stocker dans la valeur de propriété.</param>
+      <summary>Crée une valeur de propriété à partir d’une valeur de date et d’heure.</summary>
+      <param name="value">Valeur à stocker dans la valeur de la propriété.</param>
       <returns>Valeur de la propriété.</returns>
     </member>
     <member name="M:Windows.Foundation.PropertyValue.CreateDateTimeArray(Windows.Foundation.DateTime[])">
-      <summary>Crée une valeur de propriété à partir d'un tableau de valeurs de date et d'heure.</summary>
-      <param name="value">Tableau à stocker dans la valeur de propriété.</param>
+      <summary>Crée une valeur de propriété à partir d’un tableau de valeurs de date et d’heure.</summary>
+      <param name="value">Tableau à stocker dans la valeur de la propriété.</param>
       <returns>Valeur de la propriété.</returns>
     </member>
     <member name="M:Windows.Foundation.PropertyValue.CreateDouble(System.Double)">
-      <summary>Crée une valeur de propriété à partir d'une valeur à virgule flottante.</summary>
-      <param name="value">Valeur à stocker dans la valeur de propriété.</param>
+      <summary>Crée une valeur de propriété à partir d’une valeur à virgule flottante.</summary>
+      <param name="value">Valeur à stocker dans la valeur de la propriété.</param>
       <returns>Valeur de la propriété.</returns>
     </member>
     <member name="M:Windows.Foundation.PropertyValue.CreateDoubleArray(System.Double[])">
-      <summary>Crée une valeur de propriété à partir d'un tableau de valeurs à virgule flottante.</summary>
-      <param name="value">Tableau à stocker dans la valeur de propriété.</param>
+      <summary>Crée une valeur de propriété à partir d’un tableau de valeurs à virgule flottante.</summary>
+      <param name="value">Tableau à stocker dans la valeur de la propriété.</param>
       <returns>Valeur de la propriété.</returns>
     </member>
     <member name="M:Windows.Foundation.PropertyValue.CreateEmpty">
@@ -560,157 +560,157 @@
       <returns>Valeur de la propriété.</returns>
     </member>
     <member name="M:Windows.Foundation.PropertyValue.CreateGuid(System.Guid)">
-      <summary>Crée une valeur de propriété à partir d'un GUID.</summary>
-      <param name="value">Valeur à stocker dans la valeur de propriété.</param>
+      <summary>Crée une valeur de propriété à partir d’un GUID.</summary>
+      <param name="value">Valeur à stocker dans la valeur de la propriété.</param>
       <returns>Valeur de la propriété.</returns>
     </member>
     <member name="M:Windows.Foundation.PropertyValue.CreateGuidArray(System.Guid[])">
-      <summary>Crée une valeur de propriété à partir d'un tableau de GUID.</summary>
-      <param name="value">Tableau à stocker dans la valeur de propriété.</param>
+      <summary>Crée une valeur de propriété à partir d’un tableau de GUID.</summary>
+      <param name="value">Tableau à stocker dans la valeur de la propriété.</param>
       <returns>Valeur de la propriété.</returns>
     </member>
     <member name="M:Windows.Foundation.PropertyValue.CreateInspectable(System.Object)">
-      <summary>Fournit la représentation de la valeur de la propriété d'un objet vérifiable. Dans la mesure où un objet est un type de référence, il constitue également une valeur de propriété valide et n'a pas besoin d'être converti. Au lieu de cela, cette méthode retourne l'objet fourni sans modification. Un objet peut être défini comme une valeur de propriété sans appel préalable de cette méthode.</summary>
-      <param name="value">Objet à stocker dans la valeur de propriété. La valeur doit être non null.</param>
+      <summary>Fournit la représentation de la valeur de propriété d’un objet inspectable. Étant donné qu’un objet est un type référence, il s’agit également d’une valeur de propriété valide qui n’a pas besoin d’être boxed. Au lieu de cela, cette méthode retourne l’objet fourni sans modification. Un objet peut être défini en tant que valeur de propriété sans appeler d’abord cette méthode.</summary>
+      <param name="value">Objet à stocker dans la valeur de la propriété. La valeur doit être non null.</param>
       <returns>Valeur de la propriété.</returns>
     </member>
     <member name="M:Windows.Foundation.PropertyValue.CreateInspectableArray(System.Object[])">
-      <summary>Crée une valeur de propriété à partir d'un tableau d'objets vérifiables.</summary>
-      <param name="value">Tableau à stocker dans la valeur de propriété.</param>
+      <summary>Crée une valeur de propriété à partir d’un tableau d’objets inspectables.</summary>
+      <param name="value">Tableau à stocker dans la valeur de la propriété.</param>
       <returns>Valeur de la propriété.</returns>
     </member>
     <member name="M:Windows.Foundation.PropertyValue.CreateInt16(System.Int16)">
-      <summary>Crée une valeur de propriété à partir d'un entier.</summary>
-      <param name="value">Valeur à stocker dans la valeur de propriété.</param>
+      <summary>Crée une valeur de propriété à partir d’un entier.</summary>
+      <param name="value">Valeur à stocker dans la valeur de la propriété.</param>
       <returns>Valeur de la propriété.</returns>
     </member>
     <member name="M:Windows.Foundation.PropertyValue.CreateInt16Array(System.Int16[])">
-      <summary>Crée une valeur de propriété à partir d'un tableau d'entiers.</summary>
-      <param name="value">Tableau à stocker dans la valeur de propriété.</param>
+      <summary>Crée une valeur de propriété à partir d’un tableau d’entiers.</summary>
+      <param name="value">Tableau à stocker dans la valeur de la propriété.</param>
       <returns>Valeur de la propriété.</returns>
     </member>
     <member name="M:Windows.Foundation.PropertyValue.CreateInt32(System.Int32)">
-      <summary>Crée une valeur de propriété à partir d'un entier.</summary>
-      <param name="value">Valeur à stocker dans la valeur de propriété.</param>
+      <summary>Crée une valeur de propriété à partir d’un entier.</summary>
+      <param name="value">Valeur à stocker dans la valeur de la propriété.</param>
       <returns>Valeur de la propriété.</returns>
     </member>
     <member name="M:Windows.Foundation.PropertyValue.CreateInt32Array(System.Int32[])">
-      <summary>Crée une valeur de propriété à partir d'un tableau d'entiers.</summary>
-      <param name="value">Tableau à stocker dans la valeur de propriété.</param>
+      <summary>Crée une valeur de propriété à partir d’un tableau d’entiers.</summary>
+      <param name="value">Tableau à stocker dans la valeur de la propriété.</param>
       <returns>Valeur de la propriété.</returns>
     </member>
     <member name="M:Windows.Foundation.PropertyValue.CreateInt64(System.Int64)">
-      <summary>Crée une valeur de propriété à partir d'un entier.</summary>
-      <param name="value">Valeur à stocker dans la valeur de propriété.</param>
+      <summary>Crée une valeur de propriété à partir d’un entier.</summary>
+      <param name="value">Valeur à stocker dans la valeur de la propriété.</param>
       <returns>Valeur de la propriété.</returns>
     </member>
     <member name="M:Windows.Foundation.PropertyValue.CreateInt64Array(System.Int64[])">
-      <summary>Crée une valeur de propriété à partir d'un tableau d'entiers.</summary>
-      <param name="value">Tableau à stocker dans la valeur de propriété.</param>
+      <summary>Crée une valeur de propriété à partir d’un tableau d’entiers.</summary>
+      <param name="value">Tableau à stocker dans la valeur de la propriété.</param>
       <returns>Valeur de la propriété.</returns>
     </member>
     <member name="M:Windows.Foundation.PropertyValue.CreatePoint(Windows.Foundation.Point)">
-      <summary>Crée une valeur de propriété à partir d'une structure de point.</summary>
-      <param name="value">Structure à stocker dans la valeur de propriété.</param>
+      <summary>Crée une valeur de propriété à partir d’une structure de points.</summary>
+      <param name="value">Structure à stocker dans la valeur de la propriété.</param>
       <returns>Valeur de la propriété.</returns>
     </member>
     <member name="M:Windows.Foundation.PropertyValue.CreatePointArray(Windows.Foundation.Point[])">
-      <summary>Crée une valeur de propriété à partir d'un tableau de structures de point.</summary>
-      <param name="value">Tableau à stocker dans la valeur de propriété.</param>
+      <summary>Crée une valeur de propriété à partir d’un tableau de structures de points.</summary>
+      <param name="value">Tableau à stocker dans la valeur de la propriété.</param>
       <returns>Valeur de la propriété.</returns>
     </member>
     <member name="M:Windows.Foundation.PropertyValue.CreateRect(Windows.Foundation.Rect)">
-      <summary>Crée une valeur de propriété à partir d'une structure de rectangle.</summary>
-      <param name="value">Structure à stocker dans la valeur de propriété.</param>
+      <summary>Crée une valeur de propriété à partir d’une structure Rectangle.</summary>
+      <param name="value">Structure à stocker dans la valeur de la propriété.</param>
       <returns>Valeur de la propriété.</returns>
     </member>
     <member name="M:Windows.Foundation.PropertyValue.CreateRectArray(Windows.Foundation.Rect[])">
-      <summary>Crée une valeur de propriété à partir d'un tableau de structures de rectangle.</summary>
-      <param name="value">Tableau à stocker dans la valeur de propriété.</param>
+      <summary>Crée une valeur de propriété à partir d’un tableau de structures de rectangles.</summary>
+      <param name="value">Tableau à stocker dans la valeur de la propriété.</param>
       <returns>Valeur de la propriété.</returns>
     </member>
     <member name="M:Windows.Foundation.PropertyValue.CreateSingle(System.Single)">
-      <summary>Crée une valeur de propriété à partir d'une valeur à virgule flottante.</summary>
-      <param name="value">Valeur à stocker dans la valeur de propriété.</param>
+      <summary>Crée une valeur de propriété à partir d’une valeur à virgule flottante.</summary>
+      <param name="value">Valeur à stocker dans la valeur de la propriété.</param>
       <returns>Valeur de la propriété.</returns>
     </member>
     <member name="M:Windows.Foundation.PropertyValue.CreateSingleArray(System.Single[])">
-      <summary>Crée une valeur de propriété à partir d'un tableau de valeurs à virgule flottante.</summary>
-      <param name="value">Tableau à stocker dans la valeur de propriété.</param>
+      <summary>Crée une valeur de propriété à partir d’un tableau de valeurs à virgule flottante.</summary>
+      <param name="value">Tableau à stocker dans la valeur de la propriété.</param>
       <returns>Valeur de la propriété.</returns>
     </member>
     <member name="M:Windows.Foundation.PropertyValue.CreateSize(Windows.Foundation.Size)">
-      <summary>Crée une valeur de propriété à partir d'une structure de taille.</summary>
-      <param name="value">Structure à stocker dans la valeur de propriété.</param>
+      <summary>Crée une valeur de propriété à partir d’une structure de taille.</summary>
+      <param name="value">Structure à stocker dans la valeur de la propriété.</param>
       <returns>Valeur de la propriété.</returns>
     </member>
     <member name="M:Windows.Foundation.PropertyValue.CreateSizeArray(Windows.Foundation.Size[])">
-      <summary>Crée une valeur de propriété à partir d'un tableau de structures de taille.</summary>
-      <param name="value">Tableau à stocker dans la valeur de propriété.</param>
+      <summary>Crée une valeur de propriété à partir d’un tableau de structures de taille.</summary>
+      <param name="value">Tableau à stocker dans la valeur de la propriété.</param>
       <returns>Valeur de la propriété.</returns>
     </member>
     <member name="M:Windows.Foundation.PropertyValue.CreateString(System.String)">
-      <summary>Crée une valeur de propriété à partir d'une chaîne.</summary>
-      <param name="value">Chaîne à stocker dans la valeur de propriété.</param>
+      <summary>Crée une valeur de propriété à partir d’une chaîne.</summary>
+      <param name="value">Chaîne à stocker dans la valeur de la propriété.</param>
       <returns>Valeur de la propriété.</returns>
     </member>
     <member name="M:Windows.Foundation.PropertyValue.CreateStringArray(System.String[])">
-      <summary>Crée une valeur de propriété à partir d'un tableau de chaînes.</summary>
-      <param name="value">Tableau à stocker dans la valeur de propriété.</param>
+      <summary>Crée une valeur de propriété à partir d’un tableau de chaînes.</summary>
+      <param name="value">Tableau à stocker dans la valeur de la propriété.</param>
       <returns>Valeur de la propriété.</returns>
     </member>
     <member name="M:Windows.Foundation.PropertyValue.CreateTimeSpan(Windows.Foundation.TimeSpan)">
-      <summary>Crée une valeur de propriété à partir d'un intervalle de temps.</summary>
-      <param name="value">Intervalle de temps pour stocker dans la valeur de propriété.</param>
+      <summary>Crée une valeur de propriété à partir d’un intervalle de temps.</summary>
+      <param name="value">Intervalle de temps à stocker dans la valeur de la propriété.</param>
       <returns>Valeur de la propriété.</returns>
     </member>
     <member name="M:Windows.Foundation.PropertyValue.CreateTimeSpanArray(Windows.Foundation.TimeSpan[])">
-      <summary>Crée une valeur de propriété à partir d'un tableau d'intervalles de temps.</summary>
-      <param name="value">Tableau à stocker dans la valeur de propriété.</param>
+      <summary>Crée une valeur de propriété à partir d’un tableau d’intervalles de temps.</summary>
+      <param name="value">Tableau à stocker dans la valeur de la propriété.</param>
       <returns>Valeur de la propriété.</returns>
     </member>
     <member name="M:Windows.Foundation.PropertyValue.CreateUInt16(System.UInt16)">
-      <summary>Crée une valeur de propriété à partir d'un entier non signé.</summary>
-      <param name="value">Valeur à stocker dans la valeur de propriété.</param>
+      <summary>Crée une valeur de propriété à partir d’un entier non signé.</summary>
+      <param name="value">Valeur à stocker dans la valeur de la propriété.</param>
       <returns>Valeur de la propriété.</returns>
     </member>
     <member name="M:Windows.Foundation.PropertyValue.CreateUInt16Array(System.UInt16[])">
-      <summary>Crée une valeur de propriété à partir d'un tableau d'entiers non signés.</summary>
-      <param name="value">Tableau à stocker dans la valeur de propriété.</param>
+      <summary>Crée une valeur de propriété à partir d’un tableau d’entiers non signés.</summary>
+      <param name="value">Tableau à stocker dans la valeur de la propriété.</param>
       <returns>Valeur de la propriété.</returns>
     </member>
     <member name="M:Windows.Foundation.PropertyValue.CreateUInt32(System.UInt32)">
-      <summary>Crée une valeur de propriété à partir d'un entier non signé.</summary>
-      <param name="value">Valeur à stocker dans la valeur de propriété.</param>
+      <summary>Crée une valeur de propriété à partir d’un entier non signé.</summary>
+      <param name="value">Valeur à stocker dans la valeur de la propriété.</param>
       <returns>Valeur de la propriété.</returns>
     </member>
     <member name="M:Windows.Foundation.PropertyValue.CreateUInt32Array(System.UInt32[])">
-      <summary>Crée une valeur de propriété à partir d'un tableau d'entiers non signés.</summary>
-      <param name="value">Tableau à stocker dans la valeur de propriété.</param>
+      <summary>Crée une valeur de propriété à partir d’un tableau d’entiers non signés.</summary>
+      <param name="value">Tableau à stocker dans la valeur de la propriété.</param>
       <returns>Valeur de la propriété.</returns>
     </member>
     <member name="M:Windows.Foundation.PropertyValue.CreateUInt64(System.UInt64)">
-      <summary>Crée une valeur de propriété à partir d'un entier non signé.</summary>
-      <param name="value">Valeur à stocker dans la valeur de propriété.</param>
+      <summary>Crée une valeur de propriété à partir d’un entier non signé.</summary>
+      <param name="value">Valeur à stocker dans la valeur de la propriété.</param>
       <returns>Valeur de la propriété.</returns>
     </member>
     <member name="M:Windows.Foundation.PropertyValue.CreateUInt64Array(System.UInt64[])">
-      <summary>Crée une valeur de propriété à partir d'un tableau d'entiers non signés.</summary>
-      <param name="value">Tableau à stocker dans la valeur de propriété.</param>
+      <summary>Crée une valeur de propriété à partir d’un tableau d’entiers non signés.</summary>
+      <param name="value">Tableau à stocker dans la valeur de la propriété.</param>
       <returns>Valeur de la propriété.</returns>
     </member>
     <member name="M:Windows.Foundation.PropertyValue.CreateUInt8(System.Byte)">
-      <summary>Crée une valeur de propriété d'un octet.</summary>
-      <param name="value">Valeur à stocker dans la valeur de propriété.</param>
+      <summary>Crée une valeur de propriété à partir d’un octet.</summary>
+      <param name="value">Valeur à stocker dans la valeur de la propriété.</param>
       <returns>Valeur de la propriété.</returns>
     </member>
     <member name="M:Windows.Foundation.PropertyValue.CreateUInt8Array(System.Byte[])">
-      <summary>Crée une valeur de propriété à partir d'un tableau d'octets.</summary>
-      <param name="value">Tableau à stocker dans la valeur de propriété.</param>
+      <summary>Crée une valeur de propriété à partir d’un tableau d’octets.</summary>
+      <param name="value">Tableau à stocker dans la valeur de la propriété.</param>
       <returns>Valeur de la propriété.</returns>
     </member>
     <member name="T:Windows.Foundation.Rect">
-      <summary>Contient les valeurs numériques représentant l'emplacement et la taille d'un rectangle.</summary>
+      <summary>Contient des valeurs numériques qui représentent l’emplacement et la taille d’un rectangle.</summary>
     </member>
     <member name="F:Windows.Foundation.Rect.Height">
       <summary>Hauteur du rectangle, en pixels.</summary>
@@ -719,13 +719,13 @@
       <summary>Largeur du rectangle, en pixels.</summary>
     </member>
     <member name="F:Windows.Foundation.Rect.X">
-      <summary>Coordonnée x du coin supérieur gauche du rectangle.</summary>
+      <summary>Coordonnée x de l’angle supérieur gauche du rectangle.</summary>
     </member>
     <member name="F:Windows.Foundation.Rect.Y">
-      <summary>Coordonnée y du coin supérieur gauche du rectangle.</summary>
+      <summary>Coordonnée y de l’angle supérieur gauche du rectangle.</summary>
     </member>
     <member name="T:Windows.Foundation.Size">
-      <summary>Représente les valeurs numériques qui spécifient une hauteur et une largeur.</summary>
+      <summary>Représente des valeurs numériques qui spécifient une hauteur et une largeur.</summary>
     </member>
     <member name="F:Windows.Foundation.Size.Height">
       <summary>Hauteur.</summary>
@@ -734,10 +734,10 @@
       <summary>Largeur.</summary>
     </member>
     <member name="T:Windows.Foundation.TimeSpan">
-      <summary>Représente un intervalle de temps sous la forme d'une valeur entière 64 bits signée.</summary>
+      <summary>Représente un intervalle de temps sous la forme d’une valeur entière 64 bits signée.</summary>
     </member>
     <member name="F:Windows.Foundation.TimeSpan.Duration">
-      <summary>Période exprimée en unités de 100 nanosecondes.</summary>
+      <summary>Période exprimée en unités de 100 nanosecondes.</summary>
     </member>
     <member name="T:Windows.Foundation.TypedEventHandler`2">
       <summary>Représente une méthode qui gère les événements généraux.</summary>
@@ -745,11 +745,11 @@
       </typeparam>
       <typeparam name="TResult">
       </typeparam>
-      <param name="sender">Source de l'événement.</param>
-      <param name="args">Données d'événement. S'il n'y a pas de données d'événement, ce paramètre prend la valeur NULL.</param>
+      <param name="sender">Source de l’événement.</param>
+      <param name="args">Données d’événement. S’il n’y a aucune donnée d’événement, ce paramètre a la valeur null.</param>
     </member>
     <member name="T:Windows.Foundation.Collections.CollectionChange">
-      <summary>Décrit l'action qui entraîne une modification dans une collection.</summary>
+      <summary>Décrit l’action qui provoque une modification d’une collection.</summary>
     </member>
     <member name="F:Windows.Foundation.Collections.CollectionChange.ItemChanged">
       <summary>Un élément est modifié dans la collection.</summary>
@@ -764,7 +764,7 @@
       <summary>La collection est modifiée.</summary>
     </member>
     <member name="T:Windows.Foundation.Collections.IIterable`1">
-      <summary>Expose un itérateur qui prend en charge l'itération simple sur une collection d'un type spécifié.</summary>
+      <summary>Expose un itérateur qui prend en charge une itération simple sur une collection d’un type spécifié.</summary>
       <typeparam name="T">
       </typeparam>
     </member>
@@ -773,29 +773,29 @@
       <returns>Itérateur.</returns>
     </member>
     <member name="T:Windows.Foundation.Collections.IIterator`1">
-      <summary>Prend en charge l'itération simple sur une collection.</summary>
+      <summary>Prend en charge une itération simple sur une collection.</summary>
       <typeparam name="T">
       </typeparam>
     </member>
     <member name="P:Windows.Foundation.Collections.IIterator`1.Current">
-      <summary>Obtient l'élément en cours dans la collection.</summary>
-      <returns>Élément  actuel dans la collection.</returns>
+      <summary>Obtient l’élément actuel dans la collection.</summary>
+      <returns>Élément actuel dans la collection.</returns>
     </member>
     <member name="P:Windows.Foundation.Collections.IIterator`1.HasCurrent">
-      <summary>Obtient une valeur qui indique si l'itérateur fait référence à un élément actuel ou se trouve à la fin de la collection.</summary>
-      <returns>True si l'itérateur fait référence à un élément valide de la collection. Sinon, false.</returns>
+      <summary>Obtient une valeur qui indique si l’itérateur fait référence à un élément en cours ou se trouve à la fin de la collection.</summary>
+      <returns>True si l’itérateur fait référence à un élément valide dans la collection ; Sinon, false.</returns>
     </member>
     <member name="M:Windows.Foundation.Collections.IIterator`1.GetMany(`0[])">
       <summary>Récupère tous les éléments de la collection.</summary>
       <param name="items">Éléments de la collection.</param>
-      <returns>Nombre d’éléments dans la collection</returns>
+      <returns>Nombre d’éléments dans la collection.</returns>
     </member>
     <member name="M:Windows.Foundation.Collections.IIterator`1.MoveNext">
-      <summary>Avance l'itérateur vers l'élément suivant de la collection.</summary>
-      <returns>True si l'itérateur fait référence à un élément valide de la collection. False si l'itérateur transmet la fin de la collection.</returns>
+      <summary>Avance l’itérateur à l’élément suivant dans la collection.</summary>
+      <returns>True si l’itérateur fait référence à un élément valide dans la collection ; false si l’itérateur passe la fin de la collection.</returns>
     </member>
     <member name="T:Windows.Foundation.Collections.IKeyValuePair`2">
-      <summary>Représente une paire clé-valeur. Cela est généralement utilisé comme type de contrainte lorsque vous devez encapsuler deux paramètres de type en un seul pour satisfaire les contraintes d'une autre interface générique.</summary>
+      <summary>Représente une paire clé-valeur. Il est généralement utilisé comme type de contrainte lorsque vous devez encapsuler deux paramètres de type en un pour satisfaire aux contraintes d’une autre interface générique.</summary>
       <typeparam name="K">
       </typeparam>
       <typeparam name="V">
@@ -803,118 +803,118 @@
     </member>
     <member name="P:Windows.Foundation.Collections.IKeyValuePair`2.Key">
       <summary>Obtient la clé de la paire clé-valeur.</summary>
-      <returns>Clé.</returns>
+      <returns>La clé.</returns>
     </member>
     <member name="P:Windows.Foundation.Collections.IKeyValuePair`2.Value">
-      <summary>Obtient la valeur d'une paire clé/valeur.</summary>
-      <returns>La valeur.</returns>
+      <summary>Obtient la valeur de la paire clé-valeur.</summary>
+      <returns>Valeur.</returns>
     </member>
     <member name="T:Windows.Foundation.Collections.IMap`2">
-      <summary>Représente une collection associative, également appelée un mappage ou un dictionnaire.</summary>
+      <summary>Représente une collection associative, également appelée Map ou dictionary.</summary>
       <typeparam name="K">
       </typeparam>
       <typeparam name="V">
       </typeparam>
     </member>
     <member name="P:Windows.Foundation.Collections.IMap`2.Size">
-      <summary>Obtient le nombre d'éléments du mappage.</summary>
-      <returns>Nombre d'éléments du mappage.</returns>
+      <summary>Obtient le nombre d’éléments dans la classe Map.</summary>
+      <returns>Nombre d’éléments dans la carte.</returns>
     </member>
     <member name="M:Windows.Foundation.Collections.IMap`2.Clear">
-      <summary>Supprime tous les éléments du mappage.</summary>
+      <summary>Supprime tous les éléments de la carte.</summary>
     </member>
     <member name="M:Windows.Foundation.Collections.IMap`2.GetView">
-      <summary>Retourne une vue immuable du mappage.</summary>
-      <returns>Vue du mappage.</returns>
+      <summary>Retourne une vue immuable de la carte.</summary>
+      <returns>Vue de la carte.</returns>
     </member>
     <member name="M:Windows.Foundation.Collections.IMap`2.HasKey(`0)">
-      <summary>Détermine si le mappage contient la clé spécifique.</summary>
-      <param name="key">Clé associée à l'élément à trouver.</param>
-      <returns>True si la clé est trouvée ; sinon, false.</returns>
+      <summary>Détermine si le mappage contient la clé spécifiée.</summary>
+      <param name="key">Clé associée à l’élément à localiser.</param>
+      <returns>True si la clé est trouvée ; Sinon, false.</returns>
     </member>
     <member name="M:Windows.Foundation.Collections.IMap`2.Insert(`0,`1)">
-      <summary>Insère ou remplace un élément dans le mappage.</summary>
-      <param name="key">Clé associée à l'élément à insérer.</param>
+      <summary>Insère ou remplace un élément dans la classe Map.</summary>
+      <param name="key">Clé associée à l’élément à insérer.</param>
       <param name="value">Élément à insérer.</param>
-      <returns>**true** si un élément avec la clé spécifiée est un élément existant qui a été remplacé. Sinon, **false**.</returns>
+      <returns>True si un élément avec la clé spécifiée est un élément existant qui a été remplacé ; Sinon, false.</returns>
     </member>
     <member name="M:Windows.Foundation.Collections.IMap`2.Lookup(`0)">
-      <summary>Retourne l'élément à la clé spécifiée dans le mappage.</summary>
-      <param name="key">Clé associée à l'élément à trouver.</param>
-      <returns>Valeur s'il existe un élément avec la clé spécifiée. Utilisez la méthode **HasKey** pour déterminer si la clé existe.</returns>
+      <summary>Retourne l’élément au niveau de la clé spécifiée dans la classe Map.</summary>
+      <param name="key">Clé associée à l’élément à localiser.</param>
+      <returns>Valeur, si un élément avec la clé spécifiée existe. Utilisez la méthode * * Haskey, * * pour déterminer si la clé existe.</returns>
     </member>
     <member name="M:Windows.Foundation.Collections.IMap`2.Remove(`0)">
-      <summary>Supprime un élément du mappage.</summary>
-      <param name="key">Clé associée à l'élément à supprimer.</param>
+      <summary>Supprime un élément de la carte.</summary>
+      <param name="key">Clé associée à l’élément à supprimer.</param>
     </member>
     <member name="T:Windows.Foundation.Collections.IMapChangedEventArgs`1">
-      <summary>Fournit des données pour l'événement modifié d'une collection de mappages.</summary>
+      <summary>Fournit des données pour l’événement Changed d’une collection de mappages.</summary>
       <typeparam name="K">
       </typeparam>
     </member>
     <member name="P:Windows.Foundation.Collections.IMapChangedEventArgs`1.CollectionChange">
-      <summary>Obtient le type de modification qui s'est produite dans le mappage.</summary>
-      <returns>Type de modification du mappage.</returns>
+      <summary>Obtient le type de modification qui s’est produite dans la classe Map.</summary>
+      <returns>Type de modification de la carte.</returns>
     </member>
     <member name="P:Windows.Foundation.Collections.IMapChangedEventArgs`1.Key">
-      <summary>Obtient la clé de l'élément qui a changé.</summary>
-      <returns>Clé de l'élément qui a changé.</returns>
+      <summary>Obtient la clé de l’élément qui a été modifié.</summary>
+      <returns>Clé de l’élément qui a changé.</returns>
     </member>
     <member name="T:Windows.Foundation.Collections.IMapView`2">
-      <summary>Représente une vue immuable dans une carte.</summary>
+      <summary>Représente une vue immuable dans une classe Map.</summary>
       <typeparam name="K">
       </typeparam>
       <typeparam name="V">
       </typeparam>
     </member>
     <member name="P:Windows.Foundation.Collections.IMapView`2.Size">
-      <summary>Obtient le nombre d'éléments du mappage.</summary>
-      <returns>Nombre d'éléments du Map.</returns>
+      <summary>Obtient le nombre d’éléments dans la classe Map.</summary>
+      <returns>Nombre d’éléments dans la classe Map.</returns>
     </member>
     <member name="M:Windows.Foundation.Collections.IMapView`2.HasKey(`0)">
-      <summary>Détermine si la vue de mappage contient la clé spécifiée.</summary>
-      <param name="key">Clé à rechercher la vue de mappage.</param>
-      <returns>True si la clé est trouvée ; sinon, false.</returns>
+      <summary>Détermine si la vue cartographique contient la clé spécifiée.</summary>
+      <param name="key">Clé à rechercher dans la vue cartographique.</param>
+      <returns>True si la clé est trouvée ; Sinon, false.</returns>
     </member>
     <member name="M:Windows.Foundation.Collections.IMapView`2.Lookup(`0)">
-      <summary>Retourne l'élément à la clé spécifiée dans la vue du mappage.</summary>
-      <param name="key">Clé à rechercher la vue de mappage.</param>
-      <returns>Valeur s'il existe un élément avec la clé spécifiée. Utilisez la méthode **HasKey** pour déterminer si la clé existe.</returns>
+      <summary>Retourne l’élément au niveau de la clé spécifiée dans la vue de la carte.</summary>
+      <param name="key">Clé à rechercher dans la vue cartographique.</param>
+      <returns>Valeur, si un élément avec la clé spécifiée existe. Utilisez la méthode * * Haskey, * * pour déterminer si la clé existe.</returns>
     </member>
     <member name="M:Windows.Foundation.Collections.IMapView`2.Split(Windows.Foundation.Collections.IMapView{`0,`1}@,Windows.Foundation.Collections.IMapView{`0,`1}@)">
-      <summary>Fractionne la vue de mappage en deux vues.</summary>
-      <param name="first">La moitié du mappage d'origine.</param>
-      <param name="second">Seconde moitié du mappage d'origine.</param>
+      <summary>Fractionne la vue cartographique en deux vues.</summary>
+      <param name="first">Une moitié de la carte d’origine.</param>
+      <param name="second">Deuxième moitié de la carte d’origine.</param>
     </member>
     <member name="T:Windows.Foundation.Collections.IObservableMap`2">
-      <summary>Indique aux écouteurs les modifications dynamiques appliquées à un mappage, par exemple lorsque des éléments sont ajoutés ou supprimés.</summary>
+      <summary>Notifie des écouteurs de modifications dynamiques apportées à un mappage, par exemple lorsque des éléments sont ajoutés ou supprimés.</summary>
       <typeparam name="K">
       </typeparam>
       <typeparam name="V">
       </typeparam>
     </member>
     <member name="E:Windows.Foundation.Collections.IObservableMap`2.MapChanged">
-      <summary>Se produit lorsque l'objet Map est modifié.</summary>
+      <summary>Se produit lorsque l’image est modifiée.</summary>
     </member>
     <member name="T:Windows.Foundation.Collections.IObservableVector`1">
-      <summary>Indique aux écouteurs les modifications appliquées au vecteur.</summary>
+      <summary>Avertit les écouteurs des modifications apportées au vecteur.</summary>
       <typeparam name="T">
       </typeparam>
     </member>
     <member name="E:Windows.Foundation.Collections.IObservableVector`1.VectorChanged">
-      <summary>Se produit lorsque le Vector est modifié.</summary>
+      <summary>Se produit lorsque le vecteur change.</summary>
     </member>
     <member name="T:Windows.Foundation.Collections.IPropertySet">
-      <summary>Représente une collection de paires clé-valeur qui met en corrélation plusieurs autres interfaces de collection.</summary>
+      <summary>Représente une collection de paires clé-valeur, en mettant en corrélation plusieurs autres interfaces de collection.</summary>
     </member>
     <member name="T:Windows.Foundation.Collections.IVector`1">
-      <summary>Représente une collection d'accès aléatoire d'éléments.</summary>
+      <summary>Représente une collection d’éléments à accès aléatoire.</summary>
       <typeparam name="T">
       </typeparam>
     </member>
     <member name="P:Windows.Foundation.Collections.IVector`1.Size">
-      <summary>Obtient le nombre d'éléments du vecteur.</summary>
-      <returns>Nombre d'éléments du vecteur.</returns>
+      <summary>Obtient le nombre d’éléments dans le vecteur.</summary>
+      <returns>Nombre d’éléments dans le vecteur.</returns>
     </member>
     <member name="M:Windows.Foundation.Collections.IVector`1.Append(`0)">
       <summary>Ajoute un élément à la fin du vecteur.</summary>
@@ -924,25 +924,25 @@
       <summary>Supprime tous les éléments du vecteur.</summary>
     </member>
     <member name="M:Windows.Foundation.Collections.IVector`1.GetAt(System.UInt32)">
-      <summary>Retourne l'élément à l'index spécifié dans le vecteur.</summary>
-      <param name="index">Index de base zéro de l'élément.</param>
-      <returns>Élément situé à l'index spécifié.</returns>
+      <summary>Retourne l’élément à l’index spécifié dans le vecteur.</summary>
+      <param name="index">Index de base zéro de l’élément.</param>
+      <returns>Élément à l’index spécifié.</returns>
     </member>
     <member name="M:Windows.Foundation.Collections.IVector`1.GetMany(System.UInt32,`0[])">
-      <summary>Obtient une collection d'éléments du vecteur à partir de l'index spécifié.</summary>
-      <param name="startIndex">Index de base zéro à partir duquel démarrer.</param>
+      <summary>Obtient une collection d’éléments du vecteur commençant à l’index donné.</summary>
+      <param name="startIndex">Index de base zéro à partir duquel commencer.</param>
       <param name="items">Tableau dans lequel copier les éléments.</param>
-      <returns>Code d'état indiquant le résultat de l'opération.</returns>
+      <returns>Code d’état indiquant le résultat de l’opération.</returns>
     </member>
     <member name="M:Windows.Foundation.Collections.IVector`1.GetView">
       <summary>Retourne une vue immuable du vecteur.</summary>
       <returns>Vue du vecteur.</returns>
     </member>
     <member name="M:Windows.Foundation.Collections.IVector`1.IndexOf(`0,System.UInt32@)">
-      <summary>Récupère l'index d'un élément spécifié dans le vecteur.</summary>
+      <summary>Récupère l’index d’un élément spécifié dans le vecteur.</summary>
       <param name="value">Élément à rechercher dans le vecteur.</param>
-      <param name="index">Si l'élément est trouvé, il s'agit de l'index de base zéro de l'élément ; autrement, ce paramètre est égal à 0.</param>
-      <returns>**true** si l'élément est trouvé ; sinon, **false**.</returns>
+      <param name="index">Si l’élément est trouvé, il s’agit de l’index de base zéro de l’élément. dans le cas contraire, ce paramètre a la valeur 0.</param>
+      <returns>* * true * * si l’élément est trouvé ; dans le cas contraire, * * false * *.</returns>
     </member>
     <member name="M:Windows.Foundation.Collections.IVector`1.InsertAt(System.UInt32,`0)">
       <summary>Insère un élément à un index spécifié dans le vecteur.</summary>
@@ -950,31 +950,31 @@
       <param name="value">Élément à insérer.</param>
     </member>
     <member name="M:Windows.Foundation.Collections.IVector`1.RemoveAt(System.UInt32)">
-      <summary>Supprime l'élément à l'index spécifié dans le vecteur.</summary>
-      <param name="index">Index de base zéro de l'élément de vecteur à supprimer.</param>
+      <summary>Supprime l’élément à l’index spécifié dans le vecteur.</summary>
+      <param name="index">Index de base zéro de l’élément de vecteur à supprimer.</param>
     </member>
     <member name="M:Windows.Foundation.Collections.IVector`1.RemoveAtEnd">
       <summary>Supprime le dernier élément du vecteur.</summary>
     </member>
     <member name="M:Windows.Foundation.Collections.IVector`1.ReplaceAll(`0[])">
       <summary>Remplace tous les éléments du vecteur par les éléments spécifiés.</summary>
-      <param name="items">Collection d'éléments à ajouter au vecteur.</param>
+      <param name="items">Collection d’éléments à ajouter au vecteur.</param>
     </member>
     <member name="M:Windows.Foundation.Collections.IVector`1.SetAt(System.UInt32,`0)">
-      <summary>Définit la valeur au niveau de l'index spécifié dans le vecteur.</summary>
+      <summary>Définit la valeur à l’index spécifié dans le vecteur.</summary>
       <param name="index">Index de base zéro au niveau duquel définir la valeur.</param>
       <param name="value">Élément à définir.</param>
     </member>
     <member name="T:Windows.Foundation.Collections.IVectorChangedEventArgs">
-      <summary>Fournit des données pour l'événement modifié d'un vecteur.</summary>
+      <summary>Fournit des données pour l’événement modifié d’un vecteur.</summary>
     </member>
     <member name="P:Windows.Foundation.Collections.IVectorChangedEventArgs.CollectionChange">
-      <summary>Obtient le type de modification qui s'est produite dans le vecteur.</summary>
-      <returns>Type de modification du vecteur.</returns>
+      <summary>Obtient le type de modification qui s’est produite dans le vecteur.</summary>
+      <returns>Type de modification dans le vecteur.</returns>
     </member>
     <member name="P:Windows.Foundation.Collections.IVectorChangedEventArgs.Index">
-      <summary>Obtient la position où la modification s'est produite dans le vecteur.</summary>
-      <returns>Position de base zéro où la modification s'est produite dans le vecteur, le cas échéant.</returns>
+      <summary>Obtient la position à laquelle la modification s’est produite dans le vecteur.</summary>
+      <returns>Position de base zéro où la modification s’est produite dans le vecteur, le cas échéant.</returns>
     </member>
     <member name="T:Windows.Foundation.Collections.IVectorView`1">
       <summary>Représente une vue immuable dans un vecteur.</summary>
@@ -982,28 +982,28 @@
       </typeparam>
     </member>
     <member name="P:Windows.Foundation.Collections.IVectorView`1.Size">
-      <summary>Obtient le nombre d'éléments de la vue vectorielle.</summary>
-      <returns>Nombre d'éléments de la vue vectorielle.</returns>
+      <summary>Obtient le nombre d’éléments dans la vue vectorielle.</summary>
+      <returns>Nombre d’éléments dans la vue vectorielle.</returns>
     </member>
     <member name="M:Windows.Foundation.Collections.IVectorView`1.GetAt(System.UInt32)">
-      <summary>Retourne l'élément à l'index spécifié dans la vue vectorielle.</summary>
-      <param name="index">Index de base zéro de l'élément.</param>
-      <returns>Élément situé à l'index spécifié.</returns>
+      <summary>Retourne l’élément à l’index spécifié dans la vue vectorielle.</summary>
+      <param name="index">Index de base zéro de l’élément.</param>
+      <returns>Élément à l’index spécifié.</returns>
     </member>
     <member name="M:Windows.Foundation.Collections.IVectorView`1.GetMany(System.UInt32,`0[])">
-      <summary>Obtient une collection d'éléments de la vue vectorielle à partir de l'index spécifié.</summary>
-      <param name="startIndex">Index de base zéro à partir duquel démarrer.</param>
+      <summary>Obtient une collection d’éléments à partir de la vue vectorielle en commençant à l’index donné.</summary>
+      <param name="startIndex">Index de base zéro à partir duquel commencer.</param>
       <param name="items">Tableau dans lequel copier les éléments.</param>
-      <returns>Code d'état indiquant le résultat de l'opération.</returns>
+      <returns>Code d’état indiquant le résultat de l’opération.</returns>
     </member>
     <member name="M:Windows.Foundation.Collections.IVectorView`1.IndexOf(`0,System.UInt32@)">
-      <summary>Récupère l'index d'un élément spécifié dans la vue vectorielle.</summary>
+      <summary>Récupère l’index d’un élément spécifié dans la vue vectorielle.</summary>
       <param name="value">Élément à rechercher dans la vue vectorielle.</param>
-      <param name="index">Si l'élément est trouvé, il s'agit de l'index de base zéro de l'élément ; autrement, ce paramètre est égal à 0.</param>
-      <returns>**true** si l'élément est trouvé ; sinon, **false**.</returns>
+      <param name="index">Si l’élément est trouvé, il s’agit de l’index de base zéro de l’élément. dans le cas contraire, ce paramètre a la valeur 0.</param>
+      <returns>* * true * * si l’élément est trouvé ; dans le cas contraire, * * false * *.</returns>
     </member>
     <member name="T:Windows.Foundation.Collections.MapChangedEventHandler`2">
-      <summary>Représente la méthode qui gère l'événement de modification d'un mappage observable.</summary>
+      <summary>Représente la méthode qui gère l’événement modifié d’un mappage observable.</summary>
       <typeparam name="K">
       </typeparam>
       <typeparam name="V">
@@ -1013,14 +1013,14 @@
       </param>
     </member>
     <member name="T:Windows.Foundation.Collections.PropertySet">
-      <summary>Représenté un jeu de propriétés qui est un jeu d'objets PropertyValue avec des chaînes clés.</summary>
+      <summary>Représente un jeu de propriétés, qui est un ensemble d’objets PropertyValue avec des clés de chaîne.</summary>
     </member>
     <member name="M:Windows.Foundation.Collections.PropertySet.#ctor">
-      <summary>Crée et initialise une nouvelle instance du jeu de propriétés.</summary>
+      <summary>Crée et Initialise une nouvelle instance du jeu de propriétés.</summary>
     </member>
     <member name="P:Windows.Foundation.Collections.PropertySet.Size">
-      <summary>Obtient le nombre d'éléments contenus dans le jeu de propriétés.</summary>
-      <returns>Nombre d'éléments du jeu de propriétés.</returns>
+      <summary>Obtient le nombre d’éléments contenus dans le jeu de propriétés.</summary>
+      <returns>Nombre d’éléments dans le jeu de propriétés.</returns>
     </member>
     <member name="E:Windows.Foundation.Collections.PropertySet.MapChanged">
       <summary>Se produit lorsque le mappage observable a changé.</summary>
@@ -1030,122 +1030,122 @@
     </member>
     <member name="M:Windows.Foundation.Collections.PropertySet.First">
       <summary>Retourne un itérateur pour énumérer les éléments dans le jeu de propriétés.</summary>
-      <returns>Itérateur. La position actuelle de l'itérateur est l'index 0, ou la fin du jeu de propriétés si celui-ci est vide.</returns>
+      <returns>Itérateur. La position actuelle de l’itérateur est l’index 0, ou la fin de la propriété définie si le jeu de propriétés est vide.</returns>
     </member>
     <member name="M:Windows.Foundation.Collections.PropertySet.GetView">
-      <summary>Obtient une vue immuable de l'ensemble de propriétés.</summary>
+      <summary>Obtient une vue immuable du jeu de propriétés.</summary>
       <returns>Vue immuable.</returns>
     </member>
     <member name="M:Windows.Foundation.Collections.PropertySet.HasKey(System.String)">
-      <summary>Indique si le jeu de propriétés contient un élément avec la clé spécifiée.</summary>
-      <param name="key">Clé.</param>
-      <returns>True si le jeu de propriétés contient un élément avec la clé spécifiée ; sinon, false.</returns>
+      <summary>Indique si le jeu de propriétés a un élément avec la clé spécifiée.</summary>
+      <param name="key">La clé.</param>
+      <returns>True si le jeu de propriétés a un élément avec la clé spécifiée ; Sinon, false.</returns>
     </member>
     <member name="M:Windows.Foundation.Collections.PropertySet.Insert(System.String,System.Object)">
       <summary>Ajoute un élément au jeu de propriétés.</summary>
       <param name="key">Clé à insérer.</param>
       <param name="value">Valeur à insérer.</param>
-      <returns>True si la méthode remplace une valeur qui existe déjà pour la clé. False s'il s'agit d'une nouvelle clé.</returns>
+      <returns>True si la méthode remplace une valeur qui existe déjà pour la clé ; false s’il s’agit d’une nouvelle clé.</returns>
     </member>
     <member name="M:Windows.Foundation.Collections.PropertySet.Lookup(System.String)">
-      <summary>Récupère la valeur de la clé spécifiée.</summary>
-      <param name="key">Clé.</param>
-      <returns>Valeur s'il existe un élément avec la clé spécifiée. Utilisez la méthode **HasKey** pour déterminer si la clé existe.</returns>
+      <summary>Récupère la valeur pour la clé spécifiée.</summary>
+      <param name="key">La clé.</param>
+      <returns>Valeur, si un élément avec la clé spécifiée existe. Utilisez la méthode * * Haskey, * * pour déterminer si la clé existe.</returns>
     </member>
     <member name="M:Windows.Foundation.Collections.PropertySet.Remove(System.String)">
       <summary>Supprime un élément du jeu de propriétés.</summary>
-      <param name="key">Clé.</param>
+      <param name="key">La clé.</param>
     </member>
     <member name="T:Windows.Foundation.Collections.StringMap">
-      <summary>Une collection associative, également appelée mappage ou dictionnaire.</summary>
+      <summary>Collection associative, également appelée Map ou dictionary.</summary>
     </member>
     <member name="M:Windows.Foundation.Collections.StringMap.#ctor">
-      <summary>Crée et initialise une nouvelle instance de StringMap.</summary>
+      <summary>Crée et Initialise une nouvelle instance de StringMap.</summary>
     </member>
     <member name="P:Windows.Foundation.Collections.StringMap.Size">
-      <summary>Obtient le nombre d'éléments du mappage.</summary>
-      <returns>Nombre d'éléments du mappage.</returns>
+      <summary>Obtient le nombre d’éléments dans la classe Map.</summary>
+      <returns>Nombre d’éléments dans la carte.</returns>
     </member>
     <member name="E:Windows.Foundation.Collections.StringMap.MapChanged">
-      <summary>Se produit lorsque le contenu du mappage change.</summary>
+      <summary>Se produit lorsque le contenu de la table est modifié.</summary>
     </member>
     <member name="M:Windows.Foundation.Collections.StringMap.Clear">
-      <summary>Supprime tous les éléments du mappage.</summary>
+      <summary>Supprime tous les éléments de la carte.</summary>
     </member>
     <member name="M:Windows.Foundation.Collections.StringMap.First">
       <summary>Retourne un itérateur contenant les éléments de la collection.</summary>
       <returns>Éléments de la collection.</returns>
     </member>
     <member name="M:Windows.Foundation.Collections.StringMap.GetView">
-      <summary>Retourne une vue immuable du mappage.</summary>
-      <returns>Vue du mappage.</returns>
+      <summary>Retourne une vue immuable de la carte.</summary>
+      <returns>Vue de la carte.</returns>
     </member>
     <member name="M:Windows.Foundation.Collections.StringMap.HasKey(System.String)">
-      <summary>Détermine si le mappage contient la clé spécifique.</summary>
-      <param name="key">Clé associée à l'élément à trouver.</param>
-      <returns>True si la clé est trouvée ; sinon, false.</returns>
+      <summary>Détermine si le mappage contient la clé spécifiée.</summary>
+      <param name="key">Clé associée à l’élément à localiser.</param>
+      <returns>True si la clé est trouvée ; Sinon, false.</returns>
     </member>
     <member name="M:Windows.Foundation.Collections.StringMap.Insert(System.String,System.String)">
-      <summary>Insère ou remplace un élément dans le mappage.</summary>
-      <param name="key">Clé associée à l'élément à insérer.</param>
+      <summary>Insère ou remplace un élément dans la classe Map.</summary>
+      <param name="key">Clé associée à l’élément à insérer.</param>
       <param name="value">Élément à insérer.</param>
-      <returns>**true** si un élément avec la clé spécifiée est un élément existant qui a été remplacé. Sinon, **false**.</returns>
+      <returns>True si un élément avec la clé spécifiée est un élément existant qui a été remplacé ; Sinon, false.</returns>
     </member>
     <member name="M:Windows.Foundation.Collections.StringMap.Lookup(System.String)">
-      <summary>Retourne l'élément à la clé spécifiée dans le mappage.</summary>
-      <param name="key">Clé associée à l'élément à trouver.</param>
-      <returns>Valeur s'il existe un élément avec la clé spécifiée. Utilisez la méthode **HasKey** pour déterminer si la clé existe.</returns>
+      <summary>Retourne l’élément au niveau de la clé spécifiée dans la classe Map.</summary>
+      <param name="key">Clé associée à l’élément à localiser.</param>
+      <returns>Valeur, si un élément avec la clé spécifiée existe. Utilisez la méthode * * Haskey, * * pour déterminer si la clé existe.</returns>
     </member>
     <member name="M:Windows.Foundation.Collections.StringMap.Remove(System.String)">
-      <summary>Supprime un élément du mappage.</summary>
-      <param name="key">Clé associée à l'élément à supprimer.</param>
+      <summary>Supprime un élément de la carte.</summary>
+      <param name="key">Clé associée à l’élément à supprimer.</param>
     </member>
     <member name="T:Windows.Foundation.Collections.ValueSet">
-      <summary>Implémente une carte avec des clés de type **String** et des valeurs de type Object. Cette classe empêche les types non sérialisables d'être intégrés dans le mappage.</summary>
+      <summary>Implémente une classe Map avec des clés de type * * String * * et des valeurs de type Object. Cette classe empêche les types non sérialisables d’être placés dans le mappage.</summary>
     </member>
     <member name="M:Windows.Foundation.Collections.ValueSet.#ctor">
-      <summary>Crée et initialise une nouvelle instance du jeu de propriétés.</summary>
+      <summary>Crée et Initialise une nouvelle instance du jeu de propriétés.</summary>
     </member>
     <member name="P:Windows.Foundation.Collections.ValueSet.Size">
-      <summary>Obtient le nombre d'éléments contenus dans le jeu de valeurs.</summary>
-      <returns>Nombre d'éléments du jeu de valeurs.</returns>
+      <summary>Obtient le nombre d’éléments contenus dans la valeur définie.</summary>
+      <returns>Nombre d’éléments dans la valeur définie.</returns>
     </member>
     <member name="E:Windows.Foundation.Collections.ValueSet.MapChanged">
       <summary>Se produit lorsque le mappage observable a changé.</summary>
     </member>
     <member name="M:Windows.Foundation.Collections.ValueSet.Clear">
-      <summary>Supprime tous les éléments du jeu de valeurs.</summary>
+      <summary>Supprime tous les éléments de la valeur définie.</summary>
     </member>
     <member name="M:Windows.Foundation.Collections.ValueSet.First">
-      <summary>Retourne un itérateur pour énumérer les éléments dans le jeu de valeurs.</summary>
-      <returns>Itérateur. La position actuelle de l'itérateur est l'index 0, ou la fin du jeu de valeurs si celui-ci est vide.</returns>
+      <summary>Retourne un itérateur pour énumérer les éléments de la valeur définie.</summary>
+      <returns>Itérateur. La position actuelle de l’itérateur est l’index 0 ou la fin de la valeur définie si la valeur définie est vide.</returns>
     </member>
     <member name="M:Windows.Foundation.Collections.ValueSet.GetView">
-      <summary>Obtient une vue immuable du jeu de valeurs.</summary>
+      <summary>Obtient une vue immuable de la valeur définie.</summary>
       <returns>Vue immuable.</returns>
     </member>
     <member name="M:Windows.Foundation.Collections.ValueSet.HasKey(System.String)">
-      <summary>Indique si le jeu de valeurs contient un élément avec la clé spécifiée.</summary>
-      <param name="key">Clé.</param>
-      <returns>True si le jeu de valeurs contient un élément avec la clé spécifiée ; sinon, false.</returns>
+      <summary>Indique si la valeur définie a un élément avec la clé spécifiée.</summary>
+      <param name="key">La clé.</param>
+      <returns>True si l’ensemble de valeurs a un élément avec la clé spécifiée ; Sinon, false.</returns>
     </member>
     <member name="M:Windows.Foundation.Collections.ValueSet.Insert(System.String,System.Object)">
-      <summary>Ajoute un élément au jeu de valeurs.</summary>
+      <summary>Ajoute un élément à l’ensemble de valeurs.</summary>
       <param name="key">Clé à insérer.</param>
       <param name="value">Valeur à insérer.</param>
-      <returns>True si la méthode remplace une valeur qui existe déjà pour la clé. False s'il s'agit d'une nouvelle clé.</returns>
+      <returns>True si la méthode remplace une valeur qui existe déjà pour la clé ; false s’il s’agit d’une nouvelle clé.</returns>
     </member>
     <member name="M:Windows.Foundation.Collections.ValueSet.Lookup(System.String)">
-      <summary>Récupère la valeur de la clé spécifiée.</summary>
-      <param name="key">Clé.</param>
-      <returns>Valeur s'il existe un élément avec la clé spécifiée. Utilisez la méthode **HasKey** pour déterminer si la clé existe.</returns>
+      <summary>Récupère la valeur pour la clé spécifiée.</summary>
+      <param name="key">La clé.</param>
+      <returns>Valeur, si un élément avec la clé spécifiée existe. Utilisez la méthode * * Haskey, * * pour déterminer si la clé existe.</returns>
     </member>
     <member name="M:Windows.Foundation.Collections.ValueSet.Remove(System.String)">
-      <summary>Supprime un élément du jeu de valeurs.</summary>
-      <param name="key">Clé.</param>
+      <summary>Supprime un élément de la valeur définie.</summary>
+      <param name="key">La clé.</param>
     </member>
     <member name="T:Windows.Foundation.Collections.VectorChangedEventHandler`1">
-      <summary>Représente la méthode qui gère l'événement de modification d'un vecteur observable.</summary>
+      <summary>Représente la méthode qui gère l’événement modifié d’un vecteur observable.</summary>
       <typeparam name="T">
       </typeparam>
       <param name="sender">Vecteur observable qui a changé.</param>
@@ -1153,269 +1153,269 @@
       </param>
     </member>
     <member name="T:Windows.Foundation.Metadata.ActivatableAttribute">
-      <summary>Indique que la classe est une classe d'exécution pouvant être activée.</summary>
+      <summary>Indique que la classe est une classe de Runtime activable.</summary>
     </member>
     <member name="M:Windows.Foundation.Metadata.ActivatableAttribute.#ctor(System.Type,System.UInt32)">
-      <summary>Indique que la classe Runtime peut être activée avec des paramètres, à partir d'une version particulière.</summary>
-      <param name="type">Type de l'interface utilisée pour activer des objets.</param>
-      <param name="version">Version minimale pouvant activer la classe Runtime avec l'interface spécifiée.</param>
+      <summary>Indique que la classe Runtime peut être activée avec des paramètres, en commençant par une version particulière.</summary>
+      <param name="type">Type de l’interface utilisée pour activer les objets.</param>
+      <param name="version">Version minimale qui peut activer la classe d’exécution avec l’interface spécifiée.</param>
     </member>
     <member name="M:Windows.Foundation.Metadata.ActivatableAttribute.#ctor(System.Type,System.UInt32,System.String)">
-      <summary>Indique que la classe Runtime peut être activée avec des paramètres, à partir d'une version particulière d'un contrat API particulier.</summary>
-      <param name="type">Type de l'interface utilisée pour activer des objets.</param>
-      <param name="version">Version minimale du contrat API pouvant activer la classe Runtime avec l'interface spécifiée. La version majeure est dans les 16 bits d'ordre haut et la version mineure dans les 16 bits d'ordre bas.</param>
-      <param name="contractName">Nom du contrat API pouvant activer la classe Runtime avec l'interface spécifiée.</param>
+      <summary>Indique que la classe Runtime peut être activée avec des paramètres, en commençant par une version particulière d’un contrat d’API particulier.</summary>
+      <param name="type">Type de l’interface utilisée pour activer les objets.</param>
+      <param name="version">Version minimale du contrat d’API qui peut activer la classe d’exécution avec l’interface spécifiée. La version principale est dans les 16 bits de poids fort et la version mineure est dans les 16 bits de poids faible.</param>
+      <param name="contractName">Nom du contrat d’API qui peut activer la classe d’exécution avec l’interface spécifiée.</param>
     </member>
     <member name="M:Windows.Foundation.Metadata.ActivatableAttribute.#ctor(System.Type,System.UInt32,Windows.Foundation.Metadata.Platform)">
-      <summary>Indique que la classe Runtime peut être activée avec des paramètres, à partir d'une version particulière d'une plateforme particulière.</summary>
-      <param name="type">Type de l'interface utilisée pour activer des objets.</param>
-      <param name="version">Version de la plateforme pouvant activer la classe Runtime avec l'interface spécifiée.</param>
-      <param name="platform">Plateforme pouvant activer la classe Runtime avec l'interface spécifiée.</param>
+      <summary>Indique que la classe Runtime peut être activée avec des paramètres, en commençant par une version particulière d’une plateforme particulière.</summary>
+      <param name="type">Type de l’interface utilisée pour activer les objets.</param>
+      <param name="version">Version de la plateforme qui peut activer la classe d’exécution avec l’interface spécifiée.</param>
+      <param name="platform">Plateforme qui peut activer la classe d’exécution avec l’interface spécifiée.</param>
     </member>
     <member name="M:Windows.Foundation.Metadata.ActivatableAttribute.#ctor(System.UInt32)">
-      <summary>Indique que la classe Runtime peut être activée sans paramètres, à partir d'une version particulière.</summary>
-      <param name="version">Version minimale pouvant activer la classe Runtime sans paramètres.</param>
+      <summary>Indique que la classe Runtime peut être activée sans paramètres, en commençant par une version particulière.</summary>
+      <param name="version">Version minimale qui peut activer la classe Runtime sans paramètres.</param>
     </member>
     <member name="M:Windows.Foundation.Metadata.ActivatableAttribute.#ctor(System.UInt32,System.String)">
-      <summary>Indique que la classe Runtime peut être activée sans paramètres, à partir d'une version particulière d'un contrat API particulier.</summary>
-      <param name="version">Version du contrat API pouvant activer la classe Runtime sans paramètres. La version majeure est dans les 16 bits d'ordre haut et la version mineure dans les 16 bits d'ordre bas.</param>
-      <param name="type">Nom du contrat API pouvant activer la classe Runtime sans paramètres.</param>
+      <summary>Indique que la classe Runtime peut être activée sans paramètres, en commençant par une version particulière d’un contrat d’API particulier.</summary>
+      <param name="version">Version du contrat d’API qui peut activer la classe d’exécution sans paramètres. La version principale est dans les 16 bits de poids fort et la version mineure est dans les 16 bits de poids faible.</param>
+      <param name="type">Nom du contrat d’API qui peut activer la classe d’exécution sans paramètres.</param>
     </member>
     <member name="M:Windows.Foundation.Metadata.ActivatableAttribute.#ctor(System.UInt32,Windows.Foundation.Metadata.Platform)">
-      <summary>Indique que la classe Runtime peut être activée sans paramètres, à partir d'une version particulière d'une plateforme particulière.</summary>
-      <param name="version">Version minimale de la plateforme pouvant activer la classe Runtime sans paramètres.</param>
-      <param name="platform">Plateforme pouvant activer la classe Runtime sans paramètres.</param>
+      <summary>Indique que la classe Runtime peut être activée sans paramètres, en commençant par une version particulière d’une plateforme particulière.</summary>
+      <param name="version">Version minimale de la plateforme qui peut activer la classe Runtime sans paramètres.</param>
+      <param name="platform">Plateforme qui peut activer la classe Runtime sans paramètres.</param>
     </member>
     <member name="T:Windows.Foundation.Metadata.AllowForWebAttribute">
-      <summary>Permet aux développeurs d'exposer un objet de Plateforme Windows universelle (UWP) natif comme paramètre global dans le contexte du document de niveau supérieur à l'intérieur d'un WebView. Pour qu'un objet de Plateforme Windows universelle (UWP) soit projeté, il doit implémenter IAgileObject et comporter l'attribut AllowForWebAttribute.</summary>
+      <summary>Permet aux développeurs d’exposer un objet plateforme Windows universelle natif (UWP) en tant que paramètre global dans le contexte du document de niveau supérieur dans une WebView. Pour qu’un objet plateforme Windows universelle (UWP) soit projeté, il doit implémenter IAgileObject et être décoré avec l’attribut AllowForWebAttribute.</summary>
     </member>
     <member name="M:Windows.Foundation.Metadata.AllowForWebAttribute.#ctor">
-      <summary>Crée et initialise une nouvelle instance de l'attribut.</summary>
+      <summary>Crée et Initialise une nouvelle instance de l’attribut.</summary>
     </member>
     <member name="T:Windows.Foundation.Metadata.AllowMultipleAttribute">
-      <summary>Indique que les instances multiples d'un attribut personnalisé peuvent s'appliquer à une cible.</summary>
+      <summary>Indique que plusieurs instances d’un attribut personnalisé peuvent être appliquées à une cible.</summary>
     </member>
     <member name="M:Windows.Foundation.Metadata.AllowMultipleAttribute.#ctor">
-      <summary>Crée et initialise une nouvelle instance de l'attribut.</summary>
+      <summary>Crée et Initialise une nouvelle instance de l’attribut.</summary>
     </member>
     <member name="T:Windows.Foundation.Metadata.ApiContractAttribute">
-      <summary>Spécifie que le type représente un contrat d'API.</summary>
+      <summary>Spécifie que le type représente un contrat d’API.</summary>
     </member>
     <member name="M:Windows.Foundation.Metadata.ApiContractAttribute.#ctor">
-      <summary>Crée et initialise une nouvelle instance de l'attribut.</summary>
+      <summary>Crée et Initialise une nouvelle instance de l’attribut.</summary>
     </member>
     <member name="T:Windows.Foundation.Metadata.ApiInformation">
-      <summary>Permet de détecter si un membre, un type, ou un contrat d'API spécifié est présent, de sorte de pouvoir sans risque effectuer des appels d'API sur des périphériques différents.</summary>
+      <summary>Vous permet de détecter si un membre, un type ou un contrat d’API spécifié est présent afin que vous puissiez effectuer des appels d’API en toute sécurité sur divers appareils.</summary>
     </member>
     <member name="M:Windows.Foundation.Metadata.ApiInformation.IsApiContractPresent(System.String,System.UInt16)">
-      <summary>Retourne True ou False pour indiquer si le contrat d'API avec le nom et le numéro de version principale spécifiés est présent.</summary>
-      <param name="contractName">Nom du contrat d'API.</param>
-      <param name="majorVersion">Numéro de version principale du contrat d'API.</param>
-      <returns>**True** si le contrat d'API spécifié est présent ; sinon **false**.</returns>
+      <summary>Retourne true ou false pour indiquer si le contrat d’API avec le nom et le numéro de version principale spécifiés est présent.</summary>
+      <param name="contractName">Nom du contrat d’API.</param>
+      <param name="majorVersion">Numéro de version principale du contrat d’API.</param>
+      <returns>* * True * * si le contrat d’API spécifié est présent ; dans le cas contraire, * * false * *.</returns>
     </member>
     <member name="M:Windows.Foundation.Metadata.ApiInformation.IsApiContractPresent(System.String,System.UInt16,System.UInt16)">
-      <summary>Retourne True ou False pour indiquer si le contrat d'API avec le nom et le numéro de version principale et secondaire spécifiés est présent.</summary>
-      <param name="contractName">Nom du contrat d'API.</param>
-      <param name="majorVersion">Numéro de version principale du contrat d'API.</param>
-      <param name="minorVersion">Numéro de version secondaire du contrat d'API.</param>
-      <returns>**True** si le contrat d'API spécifié est présent ; sinon **false**.</returns>
+      <summary>Retourne true ou false pour indiquer si le contrat d’API avec le nom spécifié et le numéro de version principale et secondaire est présent.</summary>
+      <param name="contractName">Nom du contrat d’API.</param>
+      <param name="majorVersion">Numéro de version principale du contrat d’API.</param>
+      <param name="minorVersion">Numéro de version mineure du contrat d’API.</param>
+      <returns>* * True * * si le contrat d’API spécifié est présent ; dans le cas contraire, * * false * *.</returns>
     </member>
     <member name="M:Windows.Foundation.Metadata.ApiInformation.IsEnumNamedValuePresent(System.String,System.String)">
-      <summary>Retourne True ou False pour indiquer si une constante de nom spécifié est présente pour une énumération spécifiée.</summary>
-      <param name="enumTypeName">Nom qualifié dans un espace de noms du type.</param>
+      <summary>Retourne true ou false pour indiquer si une constante nommée spécifiée est présente pour une énumération spécifiée.</summary>
+      <param name="enumTypeName">Nom qualifié par un espace de noms du type.</param>
       <param name="valueName">Nom de la constante.</param>
-      <returns>**True** si la constante spécifiée est présente ; sinon **false**.</returns>
+      <returns>* * True * * si la constante spécifiée est présente ; dans le cas contraire, * * false * *.</returns>
     </member>
     <member name="M:Windows.Foundation.Metadata.ApiInformation.IsEventPresent(System.String,System.String)">
-      <summary>Retourne True ou False pour indiquer si un événement spécifié est présent pour un type spécifié.</summary>
-      <param name="typeName">Nom qualifié dans un espace de noms du type.</param>
+      <summary>Retourne true ou false pour indiquer si un événement spécifié est présent pour un type spécifié.</summary>
+      <param name="typeName">Nom qualifié par un espace de noms du type.</param>
       <param name="eventName">Nom de l’événement.</param>
-      <returns>**True** si l'événement spécifié est présent pour le type ; sinon **false**.</returns>
+      <returns>* * True * * si l’événement spécifié est présent pour le type ; dans le cas contraire, * * false * *.</returns>
     </member>
     <member name="M:Windows.Foundation.Metadata.ApiInformation.IsMethodPresent(System.String,System.String)">
-      <summary>Retourne True ou False pour indiquer si une méthode spécifiée est présente pour un type spécifié.</summary>
-      <param name="typeName">Nom qualifié dans un espace de noms du type.</param>
+      <summary>Retourne true ou false pour indiquer si une méthode spécifiée est présente pour un type spécifié.</summary>
+      <param name="typeName">Nom qualifié par un espace de noms du type.</param>
       <param name="methodName">Nom de la méthode.</param>
-      <returns>**True** si la méthode spécifiée est présente pour le type ; sinon **false**.</returns>
+      <returns>* * True * * si la méthode spécifiée est présente pour le type ; dans le cas contraire, * * false * *.</returns>
     </member>
     <member name="M:Windows.Foundation.Metadata.ApiInformation.IsMethodPresent(System.String,System.String,System.UInt32)">
-      <summary>Retourne True ou False pour indiquer si une surcharge de méthode spécifiée avec le nombre spécifié de paramètres d'entrée est présente pour un type spécifié.</summary>
-      <param name="typeName">Nom qualifié dans un espace de noms du type.</param>
+      <summary>Retourne true ou false pour indiquer si une surcharge de méthode spécifiée avec le nombre spécifié de paramètres d’entrée est présente pour un type spécifié.</summary>
+      <param name="typeName">Nom qualifié par un espace de noms du type.</param>
       <param name="methodName">Nom de la méthode.</param>
-      <param name="inputParameterCount">Nombre de paramètres d'entrée pour la surcharge.</param>
-      <returns>**True** si la méthode spécifiée est présente pour le type ; sinon **false**.</returns>
+      <param name="inputParameterCount">Nombre de paramètres d’entrée pour la surcharge.</param>
+      <returns>* * True * * si la méthode spécifiée est présente pour le type ; dans le cas contraire, * * false * *.</returns>
     </member>
     <member name="M:Windows.Foundation.Metadata.ApiInformation.IsPropertyPresent(System.String,System.String)">
-      <summary>Retourne True ou False pour indiquer si une propriété spécifiée (accessible en écriture ou en lecture seule) est présente pour un type spécifié.</summary>
-      <param name="typeName">Nom qualifié dans un espace de noms du type.</param>
+      <summary>Retourne true ou false pour indiquer si une propriété spécifiée (accessible en écriture ou en lecture seule) est présente pour un type spécifié.</summary>
+      <param name="typeName">Nom qualifié par un espace de noms du type.</param>
       <param name="propertyName">Nom de la propriété.</param>
-      <returns>**True** si la propriété spécifiée est présente pour le type ; sinon **false**.</returns>
+      <returns>* * True * * si la propriété spécifiée est présente pour le type ; dans le cas contraire, * * false * *.</returns>
     </member>
     <member name="M:Windows.Foundation.Metadata.ApiInformation.IsReadOnlyPropertyPresent(System.String,System.String)">
-      <summary>Retourne True ou False pour indiquer si une propriété spécifiée en lecture seule est présente pour un type spécifié.</summary>
-      <param name="typeName">Nom qualifié dans un espace de noms du type.</param>
+      <summary>Retourne true ou false pour indiquer si une propriété en lecture seule spécifiée est présente pour un type spécifié.</summary>
+      <param name="typeName">Nom qualifié par un espace de noms du type.</param>
       <param name="propertyName">Nom de la propriété.</param>
-      <returns>**True** si la propriété spécifiée est présente pour le type ; sinon **false**.</returns>
+      <returns>* * True * * si la propriété spécifiée est présente pour le type ; dans le cas contraire, * * false * *.</returns>
     </member>
     <member name="M:Windows.Foundation.Metadata.ApiInformation.IsTypePresent(System.String)">
-      <summary>Retourne True ou False pour indiquer si un type spécifié est présent.</summary>
-      <param name="typeName">Nom qualifié dans un espace de noms du type.</param>
-      <returns>**True** si le type spécifié est présent ; sinon **false**.</returns>
+      <summary>Retourne true ou false pour indiquer si un type spécifié est présent.</summary>
+      <param name="typeName">Nom qualifié par un espace de noms du type.</param>
+      <returns>* * True * * si le type spécifié est présent ; dans le cas contraire, * * false * *.</returns>
     </member>
     <member name="M:Windows.Foundation.Metadata.ApiInformation.IsWriteablePropertyPresent(System.String,System.String)">
-      <summary>Retourne True ou False pour indiquer si une propriété spécifiée accessible en écriture est présente pour un type spécifié.</summary>
-      <param name="typeName">Nom qualifié dans un espace de noms du type.</param>
+      <summary>Retourne true ou false pour indiquer si une propriété inscriptible spécifiée est présente pour un type spécifié.</summary>
+      <param name="typeName">Nom qualifié par un espace de noms du type.</param>
       <param name="propertyName">Nom de la propriété.</param>
-      <returns>**True** si la propriété spécifiée est présente pour le type ; sinon **false**.</returns>
+      <returns>* * True * * si la propriété spécifiée est présente pour le type ; dans le cas contraire, * * false * *.</returns>
     </member>
     <member name="T:Windows.Foundation.Metadata.AttributeNameAttribute">
-      <summary>Indique le nom de l'attribut</summary>
+      <summary>Indique le nom de l’attribut</summary>
     </member>
     <member name="M:Windows.Foundation.Metadata.AttributeNameAttribute.#ctor(System.String)">
-      <summary>Crée et initialise une nouvelle instance de l'attribut.</summary>
-      <param name="A_0">Une ou plusieurs des valeurs d'énumération.</param>
+      <summary>Crée et Initialise une nouvelle instance de l’attribut.</summary>
+      <param name="A_0">Une ou plusieurs des valeurs d’énumération.</param>
     </member>
     <member name="T:Windows.Foundation.Metadata.AttributeTargets">
-      <summary>Spécifie la construction de programmation à laquelle s'applique un attribut.</summary>
+      <summary>Spécifie la construction de programmation à laquelle un attribut s’applique.</summary>
     </member>
     <member name="F:Windows.Foundation.Metadata.AttributeTargets.All">
-      <summary>L'attribut s'applique à toutes les constructions de programmation.</summary>
+      <summary>L’attribut s’applique à toutes les constructions de programmation.</summary>
     </member>
     <member name="F:Windows.Foundation.Metadata.AttributeTargets.ApiContract">
-      <summary>L'attribut s'applique à un contrat d'API.</summary>
+      <summary>L’attribut s’applique à un contrat d’API.</summary>
     </member>
     <member name="F:Windows.Foundation.Metadata.AttributeTargets.Delegate">
-      <summary>L'attribut s'applique à un délégué.</summary>
+      <summary>L’attribut s’applique à un délégué.</summary>
     </member>
     <member name="F:Windows.Foundation.Metadata.AttributeTargets.Enum">
-      <summary>L'attribut s'applique à une énumération.</summary>
+      <summary>L’attribut s’applique à une énumération.</summary>
     </member>
     <member name="F:Windows.Foundation.Metadata.AttributeTargets.Event">
-      <summary>L'attribut s'applique à un événement.</summary>
+      <summary>L’attribut s’applique à un événement.</summary>
     </member>
     <member name="F:Windows.Foundation.Metadata.AttributeTargets.Field">
-      <summary>L'attribut s'applique à un champ.</summary>
+      <summary>L’attribut s’applique à un champ.</summary>
     </member>
     <member name="F:Windows.Foundation.Metadata.AttributeTargets.Interface">
-      <summary>L'attribut s'applique à une interface.</summary>
+      <summary>L’attribut s’applique à une interface.</summary>
     </member>
     <member name="F:Windows.Foundation.Metadata.AttributeTargets.InterfaceImpl">
-      <summary>L'attribut s'applique à une implémentation d'une interface.</summary>
+      <summary>L’attribut s’applique à une implémentation d’une interface.</summary>
     </member>
     <member name="F:Windows.Foundation.Metadata.AttributeTargets.Method">
-      <summary>L'attribut s'applique à une méthode.</summary>
+      <summary>L’attribut s’applique à une méthode.</summary>
     </member>
     <member name="F:Windows.Foundation.Metadata.AttributeTargets.Parameter">
-      <summary>L'attribut s'applique à un paramètre.</summary>
+      <summary>L’attribut s’applique à un paramètre.</summary>
     </member>
     <member name="F:Windows.Foundation.Metadata.AttributeTargets.Property">
-      <summary>L'attribut s'applique à une propriété.</summary>
+      <summary>L’attribut s’applique à une propriété.</summary>
     </member>
     <member name="F:Windows.Foundation.Metadata.AttributeTargets.RuntimeClass">
-      <summary>L'attribut s'applique à une classe runtime.</summary>
+      <summary>L’attribut s’applique à une classe d’exécution.</summary>
     </member>
     <member name="F:Windows.Foundation.Metadata.AttributeTargets.Struct">
-      <summary>L'attribut s'applique à une structure.</summary>
+      <summary>L’attribut s’applique à un struct.</summary>
     </member>
     <member name="T:Windows.Foundation.Metadata.AttributeUsageAttribute">
-      <summary>Spécifie l'utilisation d'un autre attribut.</summary>
+      <summary>Spécifie l’utilisation d’un autre attribut.</summary>
     </member>
     <member name="M:Windows.Foundation.Metadata.AttributeUsageAttribute.#ctor(Windows.Foundation.Metadata.AttributeTargets)">
-      <summary>Crée et initialise une nouvelle instance de l'attribut.</summary>
-      <param name="A_0">Une ou plusieurs des valeurs d'énumération.</param>
+      <summary>Crée et Initialise une nouvelle instance de l’attribut.</summary>
+      <param name="A_0">Une ou plusieurs des valeurs d’énumération.</param>
     </member>
     <member name="T:Windows.Foundation.Metadata.ComposableAttribute">
-      <summary>Indique comment un élément de programmation est composé.</summary>
+      <summary>Indique la façon dont un élément de programmation est composé.</summary>
     </member>
     <member name="M:Windows.Foundation.Metadata.ComposableAttribute.#ctor(System.Type,Windows.Foundation.Metadata.CompositionType,System.UInt32)">
-      <summary>Crée et initialise une nouvelle instance de l'attribut.</summary>
-      <param name="type">Type de l'objet de fabrique utilisé pour créer l'élément de programmation.</param>
-      <param name="compositionType">Une des valeurs de l'énumération.</param>
+      <summary>Crée et Initialise une nouvelle instance de l’attribut.</summary>
+      <param name="type">Type de l’objet de fabrique utilisé pour créer l’élément de programmation.</param>
+      <param name="compositionType">L’une des valeurs d’énumération.</param>
       <param name="version">Version.</param>
     </member>
     <member name="M:Windows.Foundation.Metadata.ComposableAttribute.#ctor(System.Type,Windows.Foundation.Metadata.CompositionType,System.UInt32,System.String)">
-      <summary>Crée et initialise une nouvelle instance de l'attribut.</summary>
-      <param name="type">Type de l'objet de fabrique utilisé pour créer l'élément de programmation.</param>
-      <param name="compositionType">Une des valeurs de l'énumération.</param>
-      <param name="version">La version de contrat d'API dans laquelle la fabrique de composition a été ajoutée à la fabrique de lancement de la classe d'exécution.</param>
-      <param name="contract">Chaîne représentant le type de contrat d'API qui implémente la classe.</param>
+      <summary>Crée et Initialise une nouvelle instance de l’attribut.</summary>
+      <param name="type">Type de l’objet de fabrique utilisé pour créer l’élément de programmation.</param>
+      <param name="compositionType">L’une des valeurs d’énumération.</param>
+      <param name="version">Version du contrat d’API dans lequel la fabrique de composition a été ajoutée à la fabrique d’activation de la classe d’exécution.</param>
+      <param name="contract">Chaîne représentant le type du contrat d’API qui implémente la classe.</param>
     </member>
     <member name="M:Windows.Foundation.Metadata.ComposableAttribute.#ctor(System.Type,Windows.Foundation.Metadata.CompositionType,System.UInt32,Windows.Foundation.Metadata.Platform)">
-      <summary>Crée et initialise une nouvelle instance de l'attribut.</summary>
-      <param name="type">Type de l'objet de fabrique utilisé pour créer l'élément de programmation.</param>
-      <param name="compositionType">Une des valeurs de l'énumération.</param>
+      <summary>Crée et Initialise une nouvelle instance de l’attribut.</summary>
+      <param name="type">Type de l’objet de fabrique utilisé pour créer l’élément de programmation.</param>
+      <param name="compositionType">L’une des valeurs d’énumération.</param>
       <param name="version">Version.</param>
-      <param name="platform">Valeur de l'énumération. La valeur par défaut est **Windows**.</param>
+      <param name="platform">Valeur de l’énumération. La valeur par défaut est * * Windows * *.</param>
     </member>
     <member name="T:Windows.Foundation.Metadata.CompositionType">
-      <summary>Spécifie la visibilité d'un élément de programmation pour lequel l'attribut composable est appliqué.</summary>
+      <summary>Spécifie la visibilité d’un élément de programmation pour lequel l’attribut composable est appliqué.</summary>
     </member>
     <member name="F:Windows.Foundation.Metadata.CompositionType.Protected">
-      <summary>Indique que l'accès à l'élément de programmation est limité à d'autres éléments dans la classe conteneur ou les types dérivés de la classe conteneur.</summary>
+      <summary>Indique que l’accès à l’élément de programmation est limité aux autres éléments de la classe conteneur ou aux types dérivés de la classe conteneur.</summary>
     </member>
     <member name="F:Windows.Foundation.Metadata.CompositionType.Public">
-      <summary>Indique que l'accès à l'élément de programmation n'est pas limité.</summary>
+      <summary>Indique que l’accès à l’élément de programmation n’est pas limité.</summary>
     </member>
     <member name="T:Windows.Foundation.Metadata.ContractVersionAttribute">
-      <summary>Indique la version du contrat d'API.</summary>
+      <summary>Indique la version du contrat d’API.</summary>
     </member>
     <member name="M:Windows.Foundation.Metadata.ContractVersionAttribute.#ctor(System.String,System.UInt32)">
-      <summary>Crée et initialise une nouvelle instance de l'attribut.</summary>
-      <param name="contract">Type à associer au contrat d'API.</param>
-      <param name="version">Version du contrat d'API</param>
+      <summary>Crée et Initialise une nouvelle instance de l’attribut.</summary>
+      <param name="contract">Type à associer au contrat d’API.</param>
+      <param name="version">Version du contrat d’API.</param>
     </member>
     <member name="M:Windows.Foundation.Metadata.ContractVersionAttribute.#ctor(System.Type,System.UInt32)">
-      <summary>Crée et initialise une nouvelle instance de l'attribut.</summary>
-      <param name="contract">Type à associer au contrat d'API.</param>
-      <param name="version">Version du contrat d'API</param>
+      <summary>Crée et Initialise une nouvelle instance de l’attribut.</summary>
+      <param name="contract">Type à associer au contrat d’API.</param>
+      <param name="version">Version du contrat d’API.</param>
     </member>
     <member name="M:Windows.Foundation.Metadata.ContractVersionAttribute.#ctor(System.UInt32)">
-      <summary>Crée et initialise une nouvelle instance de l'attribut.</summary>
-      <param name="version">Version du contrat d'API</param>
+      <summary>Crée et Initialise une nouvelle instance de l’attribut.</summary>
+      <param name="version">Version du contrat d’API.</param>
     </member>
     <member name="T:Windows.Foundation.Metadata.DefaultAttribute">
-      <summary>Indique l'interface par défaut pour une classe d'exécution.</summary>
+      <summary>Indique l’interface par défaut pour une classe d’exécution.</summary>
     </member>
     <member name="M:Windows.Foundation.Metadata.DefaultAttribute.#ctor">
-      <summary>Crée et initialise une nouvelle instance de l'attribut.</summary>
+      <summary>Crée et Initialise une nouvelle instance de l’attribut.</summary>
     </member>
     <member name="T:Windows.Foundation.Metadata.DefaultOverloadAttribute">
-      <summary>Indique qu'une méthode est la méthode de surcharge par défaut. Cet attribut doit être utilisé avec OverloadAttribute.</summary>
+      <summary>Indique qu’une méthode est la méthode de surcharge par défaut. Cet attribut doit être utilisé avec OverloadAttribute.</summary>
     </member>
     <member name="M:Windows.Foundation.Metadata.DefaultOverloadAttribute.#ctor">
-      <summary>Crée et initialise une nouvelle instance de l'attribut.</summary>
+      <summary>Crée et Initialise une nouvelle instance de l’attribut.</summary>
     </member>
     <member name="T:Windows.Foundation.Metadata.DeprecatedAttribute">
-      <summary>Indique qu'un type ou un membre doit être marqué dans les métadonnées comme désapprouvé. Les compilateurs et autres outils de développement peuvent lire cet attribut et fournir des informations à l'utilisateur à propos du type de désapprobation et des remplaçants possibles.</summary>
+      <summary>Indique qu’un type ou un membre doit être marqué dans les métadonnées comme dépréciées. Les compilateurs et d’autres outils de développement peuvent lire cet attribut et fournir des informations à l’utilisateur sur le type de désapprobation et les alternatives possibles.</summary>
     </member>
     <member name="M:Windows.Foundation.Metadata.DeprecatedAttribute.#ctor(System.String,Windows.Foundation.Metadata.DeprecationType,System.UInt32)">
-      <summary>Crée et initialise une nouvelle instance de l'attribut.</summary>
-      <param name="message">Message de chaîne pouvant être utilisé par les compilateurs et d'autres outils de développeur pour expliquer la désapprobation et fournir les noms de chaîne d'autres API.</param>
-      <param name="type">Valeur de l'énumération. La valeur par défaut est **Deprecate**.</param>
-      <param name="version">Constante qui indique la version à laquelle la désapprobation s'applique.</param>
+      <summary>Crée et Initialise une nouvelle instance de l’attribut.</summary>
+      <param name="message">Message de type chaîne qui peut être utilisé par les compilateurs et d’autres outils de développement pour expliquer la désapprobation et fournir les noms de chaîne de l’API de remplacement.</param>
+      <param name="type">Valeur de l’énumération. La valeur par défaut est * * Deprecated * *.</param>
+      <param name="version">Constante qui indique la version à laquelle s’applique la désapprobation.</param>
     </member>
     <member name="M:Windows.Foundation.Metadata.DeprecatedAttribute.#ctor(System.String,Windows.Foundation.Metadata.DeprecationType,System.UInt32,System.String)">
-      <summary>Crée et initialise une nouvelle instance de l'attribut.</summary>
-      <param name="message">Message de chaîne pouvant être utilisé par les compilateurs et d'autres outils de développeur pour expliquer la désapprobation et fournir les noms de chaîne d'autres API.</param>
-      <param name="type">Valeur de l'énumération. La valeur par défaut est **Deprecate**.</param>
-      <param name="version">Constante qui indique la version à laquelle la désapprobation s'applique.</param>
-      <param name="contract">Chaîne représentant le type de contrat d'API qui implémente le type ou le membre déconseillé.</param>
+      <summary>Crée et Initialise une nouvelle instance de l’attribut.</summary>
+      <param name="message">Message de type chaîne qui peut être utilisé par les compilateurs et d’autres outils de développement pour expliquer la désapprobation et fournir les noms de chaîne de l’API de remplacement.</param>
+      <param name="type">Valeur de l’énumération. La valeur par défaut est * * Deprecated * *.</param>
+      <param name="version">Constante qui indique la version à laquelle s’applique la désapprobation.</param>
+      <param name="contract">Chaîne représentant le type du contrat d’API implémentant le type ou le membre déconseillé.</param>
     </member>
     <member name="M:Windows.Foundation.Metadata.DeprecatedAttribute.#ctor(System.String,Windows.Foundation.Metadata.DeprecationType,System.UInt32,Windows.Foundation.Metadata.Platform)">
-      <summary>Crée et initialise une nouvelle instance de l'attribut, y compris une valeur Platform pour le ciblage.</summary>
-      <param name="message">Message de chaîne pouvant être utilisé par les compilateurs et d'autres outils de développeur pour expliquer la désapprobation et fournir les noms de chaîne d'autres API.</param>
-      <param name="type">Valeur de l'énumération. La valeur par défaut est **Deprecate**.</param>
-      <param name="version">Constante qui indique la version à laquelle la désapprobation s'applique.</param>
-      <param name="platform">Valeur de l'énumération. La valeur par défaut est **Windows**.</param>
+      <summary>Crée et Initialise une nouvelle instance de l’attribut, y compris une valeur de plateforme pour le ciblage.</summary>
+      <param name="message">Message de type chaîne qui peut être utilisé par les compilateurs et d’autres outils de développement pour expliquer la désapprobation et fournir les noms de chaîne de l’API de remplacement.</param>
+      <param name="type">Valeur de l’énumération. La valeur par défaut est * * Deprecated * *.</param>
+      <param name="version">Constante qui indique la version à laquelle s’applique la désapprobation.</param>
+      <param name="platform">Valeur de l’énumération. La valeur par défaut est * * Windows * *.</param>
     </member>
     <member name="T:Windows.Foundation.Metadata.DeprecationType">
-      <summary>Indique une désapprobation comme **Deprecate** ou **Remove**.</summary>
+      <summary>Indique une désapprobation comme * * Deprecated * * ou * * Remove * *.</summary>
     </member>
     <member name="F:Windows.Foundation.Metadata.DeprecationType.Deprecate">
-      <summary>Les compilateurs et autres outils doivent traiter l'entité comme déconseillée. Il s'agit de la valeur par défaut.</summary>
+      <summary>Les compilateurs et d’autres outils doivent traiter l’entité comme étant déconseillée. Il s’agit de la valeur par défaut.</summary>
     </member>
     <member name="F:Windows.Foundation.Metadata.DeprecationType.Remove">
-      <summary>Les compilateurs et autres outils doivent traiter l'entité comme supprimée.</summary>
+      <summary>Les compilateurs et d’autres outils doivent traiter l’entité comme étant supprimée.</summary>
     </member>
     <member name="T:Windows.Foundation.Metadata.DualApiPartitionAttribute">
       <summary>Indique que le type est pris en charge dans les applications de bureau et dans les applications UWP.</summary>
@@ -1425,50 +1425,50 @@
       </summary>
     </member>
     <member name="M:Windows.Foundation.Metadata.DualApiPartitionAttribute.#ctor">
-      <summary>Crée et initialise une nouvelle instance de l'attribut.</summary>
+      <summary>Crée et Initialise une nouvelle instance de l’attribut.</summary>
     </member>
     <member name="T:Windows.Foundation.Metadata.ExclusiveToAttribute">
       <summary>Indique que le type spécifié est exclusif à ce type.</summary>
     </member>
     <member name="M:Windows.Foundation.Metadata.ExclusiveToAttribute.#ctor(System.Type)">
-      <summary>Crée et initialise une nouvelle instance de l'attribut.</summary>
+      <summary>Crée et Initialise une nouvelle instance de l’attribut.</summary>
       <param name="typeName">Nom du type.</param>
     </member>
     <member name="T:Windows.Foundation.Metadata.ExperimentalAttribute">
-      <summary>Indique qu'un type ou un membre doit être marqué dans les métadonnées comme expérimental, et par conséquent peut ne pas être présent dans la dernière version finale d'un Kit de développement logiciel ou d'une bibliothèque.</summary>
+      <summary>Indique qu’un type ou un membre doit être marqué dans les métadonnées comme expérimentales et, par conséquent, ne pas être présent dans la version finale et publiée d’un kit de développement logiciel (SDK) ou d’une bibliothèque.</summary>
     </member>
     <member name="M:Windows.Foundation.Metadata.ExperimentalAttribute.#ctor">
-      <summary>Crée et initialise une nouvelle instance de l'attribut.</summary>
+      <summary>Crée et Initialise une nouvelle instance de l’attribut.</summary>
     </member>
     <member name="T:Windows.Foundation.Metadata.FastAbiAttribute">
-      <summary>Indique si le type prend en charge un ABI rapide.</summary>
+      <summary>Indique si le type prend en charge l’ABI rapide.</summary>
     </member>
     <member name="M:Windows.Foundation.Metadata.FastAbiAttribute.#ctor(System.UInt32)">
-      <summary>Crée et initialise une nouvelle instance de l'attribut.</summary>
-      <param name="version">Numéro de version de l'ABI.</param>
+      <summary>Crée et Initialise une nouvelle instance de l’attribut.</summary>
+      <param name="version">Numéro de version ABI.</param>
     </member>
     <member name="M:Windows.Foundation.Metadata.FastAbiAttribute.#ctor(System.UInt32,System.String)">
       <summary>
       </summary>
-      <param name="version">Numéro de version de l'ABI.</param>
-      <param name="contractName">Nom de contrat de l'ABI.</param>
+      <param name="version">Numéro de version ABI.</param>
+      <param name="contractName">ContractName ABI.</param>
     </member>
     <member name="M:Windows.Foundation.Metadata.FastAbiAttribute.#ctor(System.UInt32,Windows.Foundation.Metadata.Platform)">
       <summary>
       </summary>
-      <param name="version">Numéro de version de l'ABI.</param>
-      <param name="platform">Nom de la plateforme de l'ABI.</param>
+      <param name="version">Numéro de version ABI.</param>
+      <param name="platform">Nom de la plateforme ABI.</param>
     </member>
     <member name="T:Windows.Foundation.Metadata.FeatureAttribute">
-      <summary>Indique l'état de la fonctionnalité Windows Runtime associée à un type Windows Runtime.</summary>
+      <summary>Exprime l’état de la fonctionnalité de Windows Runtime associée à un type de Windows Runtime.</summary>
     </member>
     <member name="M:Windows.Foundation.Metadata.FeatureAttribute.#ctor(Windows.Foundation.Metadata.FeatureStage,System.Boolean)">
-      <summary>Crée et initialise une nouvelle instance de l'attribut.</summary>
+      <summary>Crée et Initialise une nouvelle instance de l’attribut.</summary>
       <param name="featureStage">Spécifie si la fonctionnalité nommée est activée ou désactivée.</param>
-      <param name="validInAllBranches">Valeur booléenne indiquant si la fonctionnalité nommée est valide dans toutes les branches.</param>
+      <param name="validInAllBranches">Valeur booléenne qui indique si la fonctionnalité nommée est valide dans toutes les branches.</param>
     </member>
     <member name="T:Windows.Foundation.Metadata.FeatureStage">
-      <summary>Valeurs indiquant si une fonctionnalité Windows est activée ou désactivée.</summary>
+      <summary>Valeurs qui indiquent si une fonctionnalité Windows est activée ou désactivée.</summary>
     </member>
     <member name="F:Windows.Foundation.Metadata.FeatureStage.AlwaysDisabled">
       <summary>La fonctionnalité est toujours désactivée.</summary>
@@ -1483,35 +1483,35 @@
       <summary>La fonctionnalité est activée par défaut.</summary>
     </member>
     <member name="T:Windows.Foundation.Metadata.GCPressureAmount">
-      <summary>Réservé à un usage interne Microsoft.</summary>
+      <summary>Usage interne de Microsoft uniquement.</summary>
     </member>
     <member name="F:Windows.Foundation.Metadata.GCPressureAmount.High">
-      <summary>Sur 100k de sollicitation de la mémoire.</summary>
+      <summary>Plus de 100 000 de sollicitation de la mémoire.</summary>
     </member>
     <member name="F:Windows.Foundation.Metadata.GCPressureAmount.Low">
-      <summary>Moins de 10k de sollicitation de la mémoire.</summary>
+      <summary>Moins de 10 Ko de sollicitation de la mémoire.</summary>
     </member>
     <member name="F:Windows.Foundation.Metadata.GCPressureAmount.Medium">
-      <summary>Entre 10k et 100k de sollicitation de la mémoire.</summary>
+      <summary>La sollicitation de la mémoire est comprise entre 10 000 et 100 Ko.</summary>
     </member>
     <member name="T:Windows.Foundation.Metadata.GCPressureAttribute">
-      <summary>Réservé à un usage interne Microsoft.</summary>
+      <summary>Usage interne de Microsoft uniquement.</summary>
     </member>
     <member name="F:Windows.Foundation.Metadata.GCPressureAttribute.amount">
       <summary>
       </summary>
     </member>
     <member name="M:Windows.Foundation.Metadata.GCPressureAttribute.#ctor">
-      <summary>Crée et initialise une nouvelle instance de l'attribut.</summary>
+      <summary>Crée et Initialise une nouvelle instance de l’attribut.</summary>
     </member>
     <member name="T:Windows.Foundation.Metadata.GuidAttribute">
-      <summary>Indique le GUID pour l'interface ou le délégué.</summary>
+      <summary>Indique le GUID de l’interface ou du délégué.</summary>
     </member>
     <member name="M:Windows.Foundation.Metadata.GuidAttribute.#ctor(System.UInt32,System.UInt16,System.UInt16,System.Byte,System.Byte,System.Byte,System.Byte,System.Byte,System.Byte,System.Byte,System.Byte)">
-      <summary>Crée et initialise une nouvelle instance de l'attribut.</summary>
-      <param name="a">Quatre premiers octets du GUID.</param>
-      <param name="b">Deux octets suivants du GUID.</param>
-      <param name="c">Deux octets suivants du GUID.</param>
+      <summary>Crée et Initialise une nouvelle instance de l’attribut.</summary>
+      <param name="a">Les 4 premiers octets du GUID.</param>
+      <param name="b">2 octets suivants du GUID.</param>
+      <param name="c">2 octets suivants du GUID.</param>
       <param name="d">Octet suivant du GUID.</param>
       <param name="e">Octet suivant du GUID.</param>
       <param name="f">Octet suivant du GUID.</param>
@@ -1522,36 +1522,36 @@
       <param name="k">Octet suivant du GUID.</param>
     </member>
     <member name="T:Windows.Foundation.Metadata.HasVariantAttribute">
-      <summary>Indique que le type est une instance d'une variante **IInspectable**. S'applique aux classes runtime, interfaces et interfaces paramétrées.</summary>
+      <summary>Indique que le type est une instance d’un variant * * IInspectable * *. S’applique aux classes de Runtime, aux interfaces et aux interfaces paramétrables.</summary>
     </member>
     <member name="M:Windows.Foundation.Metadata.HasVariantAttribute.#ctor">
-      <summary>Crée et initialise une nouvelle instance de l'attribut.</summary>
+      <summary>Crée et Initialise une nouvelle instance de l’attribut.</summary>
     </member>
     <member name="T:Windows.Foundation.Metadata.InternalAttribute">
-      <summary>Indique qu'un type ou un membre doit être marqué dans les métadonnées comme interne au Kit de développement logiciel ou à l'infrastructure, et pour son utilisation par des composants système uniquement.</summary>
+      <summary>Indique qu’un type ou un membre doit être marqué dans les métadonnées comme internes au kit de développement logiciel (SDK) ou à l’infrastructure, et pour une utilisation par les composants système uniquement.</summary>
     </member>
     <member name="M:Windows.Foundation.Metadata.InternalAttribute.#ctor">
-      <summary>Crée et initialise une nouvelle instance de l'attribut.</summary>
+      <summary>Crée et Initialise une nouvelle instance de l’attribut.</summary>
     </member>
     <member name="T:Windows.Foundation.Metadata.LengthIsAttribute">
-      <summary>Indique le nombre d'éléments du tableau.</summary>
+      <summary>Indique le nombre d’éléments du tableau.</summary>
     </member>
     <member name="M:Windows.Foundation.Metadata.LengthIsAttribute.#ctor(System.Int32)">
-      <summary>Crée et initialise une nouvelle instance de l'attribut.</summary>
-      <param name="indexLengthParameter">Nombre d'éléments du tableau.</param>
+      <summary>Crée et Initialise une nouvelle instance de l’attribut.</summary>
+      <param name="indexLengthParameter">Nombre d’éléments de tableau.</param>
     </member>
     <member name="T:Windows.Foundation.Metadata.MarshalingBehaviorAttribute">
-      <summary>Indique le comportement de marshaling d'un composant Windows Runtime.</summary>
+      <summary>Indique le comportement de marshaling d’un composant Windows Runtime.</summary>
     </member>
     <member name="M:Windows.Foundation.Metadata.MarshalingBehaviorAttribute.#ctor(Windows.Foundation.Metadata.MarshalingType)">
-      <summary>Crée et initialise une nouvelle instance de l'attribut.</summary>
-      <param name="behavior">Une des valeurs de l'énumération.</param>
+      <summary>Crée et Initialise une nouvelle instance de l’attribut.</summary>
+      <param name="behavior">L’une des valeurs d’énumération.</param>
     </member>
     <member name="T:Windows.Foundation.Metadata.MarshalingType">
       <summary>Spécifie le type de marshaling pour la classe.</summary>
     </member>
     <member name="F:Windows.Foundation.Metadata.MarshalingType.Agile">
-      <summary>La classe marshale et démarshale à la même valeur de pointeur sur toutes les interfaces.</summary>
+      <summary>La classe marshale et démarshale la même valeur de pointeur sur toutes les interfaces.</summary>
     </member>
     <member name="F:Windows.Foundation.Metadata.MarshalingType.InvalidMarshaling">
       <summary>La classe ne peut pas être marshalée.</summary>
@@ -1560,160 +1560,160 @@
       <summary>La classe empêche le marshaling sur toutes les interfaces.</summary>
     </member>
     <member name="F:Windows.Foundation.Metadata.MarshalingType.Standard">
-      <summary>La classe n'implémente pas IMarshal ou ne transfère pas à CoGetStandardMarshal sur toutes les interfaces.</summary>
+      <summary>La classe n’implémente pas IMarshal ou est transférée à CoGetStandardMarshal sur toutes les interfaces.</summary>
     </member>
     <member name="T:Windows.Foundation.Metadata.MetadataMarshalAttribute">
-      <summary>Indique que les outils doivent créer une entrée pour une interface en créant un package d'application.</summary>
+      <summary>Indique que les outils doivent créer une entrée pour une interface lors de la création d’un package d’application.</summary>
     </member>
     <member name="M:Windows.Foundation.Metadata.MetadataMarshalAttribute.#ctor">
-      <summary>Crée et initialise une nouvelle instance de l'attribut.</summary>
+      <summary>Crée et Initialise une nouvelle instance de l’attribut.</summary>
     </member>
     <member name="T:Windows.Foundation.Metadata.MuseAttribute">
-      <summary>Indique qu'une classe runtime est compatible avec les applications UWP qui sont des navigateurs Web.</summary>
+      <summary>Indique qu’une classe d’exécution est compatible avec les applications UWP qui sont des navigateurs Web.</summary>
     </member>
     <member name="F:Windows.Foundation.Metadata.MuseAttribute.Version">
       <summary>
       </summary>
     </member>
     <member name="M:Windows.Foundation.Metadata.MuseAttribute.#ctor">
-      <summary>Crée et initialise une nouvelle instance de l'attribut.</summary>
+      <summary>Crée et Initialise une nouvelle instance de l’attribut.</summary>
     </member>
     <member name="T:Windows.Foundation.Metadata.NoExceptionAttribute">
       <summary>Indique si le type lève des exceptions.</summary>
     </member>
     <member name="M:Windows.Foundation.Metadata.NoExceptionAttribute.#ctor">
-      <summary>Crée et initialise une nouvelle instance de l'attribut.</summary>
+      <summary>Crée et Initialise une nouvelle instance de l’attribut.</summary>
     </member>
     <member name="T:Windows.Foundation.Metadata.OverloadAttribute">
-      <summary>Identifie la méthode comme surcharge dans un langage qui prend en charge la surcharge.</summary>
+      <summary>Identifie la méthode comme une surcharge dans un langage qui prend en charge la surcharge.</summary>
     </member>
     <member name="M:Windows.Foundation.Metadata.OverloadAttribute.#ctor(System.String)">
-      <summary>Crée et initialise une nouvelle instance de l'attribut.</summary>
+      <summary>Crée et Initialise une nouvelle instance de l’attribut.</summary>
       <param name="method">Nom qui représente la méthode dans le langage projeté.</param>
     </member>
     <member name="T:Windows.Foundation.Metadata.OverridableAttribute">
-      <summary>Indique que l'interface contient des méthodes substituables.</summary>
+      <summary>Indique que l’interface contient des méthodes substituables.</summary>
     </member>
     <member name="M:Windows.Foundation.Metadata.OverridableAttribute.#ctor">
-      <summary>Crée et initialise une nouvelle instance de l'attribut.</summary>
+      <summary>Crée et Initialise une nouvelle instance de l’attribut.</summary>
     </member>
     <member name="T:Windows.Foundation.Metadata.Platform">
-      <summary>Spécifie les plateformes dans lesquelles un type spécifié doit être pris en charge, utilisées par les attributs et les métadonnées Windows Runtime.</summary>
+      <summary>Spécifie les plateformes dans lesquelles un type spécifié doit être pris en charge, tel qu’il est utilisé par Windows Runtime attributs et les métadonnées.</summary>
     </member>
     <member name="F:Windows.Foundation.Metadata.Platform.Windows">
-      <summary>Pour une utilisation avec les métadonnées Windows.</summary>
+      <summary>Pour une utilisation par les métadonnées Windows.</summary>
     </member>
     <member name="F:Windows.Foundation.Metadata.Platform.WindowsPhone">
-      <summary>Pour une utilisation avec les métadonnées Windows Phone.</summary>
+      <summary>Pour une utilisation par Windows Phone métadonnées.</summary>
     </member>
     <member name="T:Windows.Foundation.Metadata.PlatformAttribute">
-      <summary>Déclare la plate-forme sur laquelle un type doit être pris en charge, lorsque les métadonnées spécifiques à la plate-forme sont produites.</summary>
+      <summary>Déclare la plateforme dans laquelle un type doit être pris en charge, lorsque les métadonnées spécifiques à la plateforme sont produites.</summary>
     </member>
     <member name="M:Windows.Foundation.Metadata.PlatformAttribute.#ctor(Windows.Foundation.Metadata.Platform)">
-      <summary>Crée et initialise une nouvelle instance de l'attribut.</summary>
-      <param name="platform">Valeur de l'énumération. La valeur par défaut est **Windows**.</param>
+      <summary>Crée et Initialise une nouvelle instance de l’attribut.</summary>
+      <param name="platform">Valeur de l’énumération. La valeur par défaut est * * Windows * *.</param>
     </member>
     <member name="T:Windows.Foundation.Metadata.PreviousContractVersionAttribute">
-      <summary>Indique que le type a été précédemment associé à un autre contrat d'API.</summary>
+      <summary>Indique que le type a été précédemment associé à un autre contrat d’API.</summary>
     </member>
     <member name="M:Windows.Foundation.Metadata.PreviousContractVersionAttribute.#ctor(System.String,System.UInt32,System.UInt32)">
-      <summary>Crée et initialise une nouvelle instance de l'attribut.</summary>
+      <summary>Crée et Initialise une nouvelle instance de l’attribut.</summary>
       <param name="contract">Nom du contrat précédent.</param>
       <param name="versionLow">Première version du contrat précédent auquel le type a été associé.</param>
       <param name="versionHigh">Dernière version du contrat précédent auquel le type a été associé.</param>
     </member>
     <member name="M:Windows.Foundation.Metadata.PreviousContractVersionAttribute.#ctor(System.String,System.UInt32,System.UInt32,System.String)">
-      <summary>Crée et initialise une nouvelle instance de l'attribut.</summary>
+      <summary>Crée et Initialise une nouvelle instance de l’attribut.</summary>
       <param name="contract">Nom du contrat précédent.</param>
       <param name="versionLow">Première version du contrat précédent auquel le type a été associé.</param>
       <param name="versionHigh">Dernière version du contrat précédent auquel le type a été associé.</param>
       <param name="newContract">Nom du nouveau contrat auquel le type est associé.</param>
     </member>
     <member name="T:Windows.Foundation.Metadata.ProtectedAttribute">
-      <summary>Indique que l'interface contient des méthodes protégées.</summary>
+      <summary>Indique que l’interface contient des méthodes protégées.</summary>
     </member>
     <member name="M:Windows.Foundation.Metadata.ProtectedAttribute.#ctor">
-      <summary>Crée et initialise une nouvelle instance de l'attribut.</summary>
+      <summary>Crée et Initialise une nouvelle instance de l’attribut.</summary>
     </member>
     <member name="T:Windows.Foundation.Metadata.RangeAttribute">
-      <summary>Indique les contraintes de plages numériques pour la valeur d'un champ de données.</summary>
+      <summary>Indique les contraintes de plage numérique pour la valeur d’un champ de données.</summary>
     </member>
     <member name="M:Windows.Foundation.Metadata.RangeAttribute.#ctor(System.Int32,System.Int32)">
-      <summary>Crée et initialise une nouvelle instance de l'attribut avec les valeurs minimales et maximales spécifiées.</summary>
+      <summary>Crée et Initialise une nouvelle instance de l’attribut avec les valeurs minimale et maximale spécifiées.</summary>
       <param name="minValue">Valeur minimale autorisée.</param>
       <param name="maxValue">Valeur maximale autorisée.</param>
     </member>
     <member name="T:Windows.Foundation.Metadata.RemoteAsyncAttribute">
-      <summary>Indique qu'une interface peut être livrée avec un formulaire asynchrone du modèle Async.</summary>
+      <summary>Indique qu’une interface peut être fournie à l’aide d’une forme asynchrone du modèle asynchrone.</summary>
     </member>
     <member name="M:Windows.Foundation.Metadata.RemoteAsyncAttribute.#ctor">
-      <summary>Crée et initialise une nouvelle instance de l'attribut.</summary>
+      <summary>Crée et Initialise une nouvelle instance de l’attribut.</summary>
     </member>
     <member name="T:Windows.Foundation.Metadata.StaticAttribute">
       <summary>Indique une interface qui contient uniquement des méthodes statiques.</summary>
     </member>
     <member name="M:Windows.Foundation.Metadata.StaticAttribute.#ctor(System.Type,System.UInt32)">
-      <summary>Crée et initialise une nouvelle instance de l'attribut.</summary>
-      <param name="type">Type qui contient les méthodes statiques pour la classe d'exécution.</param>
-      <param name="version">Version dans laquelle l'interface statique a été ajoutée.</param>
+      <summary>Crée et Initialise une nouvelle instance de l’attribut.</summary>
+      <param name="type">Type qui contient les méthodes statiques pour la classe Runtime.</param>
+      <param name="version">Version dans laquelle l’interface statique a été ajoutée.</param>
     </member>
     <member name="M:Windows.Foundation.Metadata.StaticAttribute.#ctor(System.Type,System.UInt32,System.String)">
-      <summary>Crée et initialise une nouvelle instance de l'attribut.</summary>
-      <param name="type">Type qui contient les méthodes statiques pour la classe d'exécution.</param>
-      <param name="version">La version de contrat d'API dans laquelle la fabrique statique a été ajoutée à la fabrique de lancement de la classe d'exécution.</param>
-      <param name="contractName">Chaîne représentant le type de contrat d'API qui implémente la classe.</param>
+      <summary>Crée et Initialise une nouvelle instance de l’attribut.</summary>
+      <param name="type">Type qui contient les méthodes statiques pour la classe Runtime.</param>
+      <param name="version">Version du contrat d’API dans lequel la fabrique statique a été ajoutée à la fabrique d’activation de la classe d’exécution.</param>
+      <param name="contractName">Chaîne représentant le type du contrat d’API qui implémente la classe.</param>
     </member>
     <member name="M:Windows.Foundation.Metadata.StaticAttribute.#ctor(System.Type,System.UInt32,Windows.Foundation.Metadata.Platform)">
-      <summary>Crée et initialise une nouvelle instance de l'attribut.</summary>
-      <param name="type">Type qui contient les méthodes statiques pour la classe d'exécution.</param>
-      <param name="version">Version dans laquelle l'interface statique a été ajoutée.</param>
-      <param name="platform">Valeur de l'énumération. La valeur par défaut est **Windows**.</param>
+      <summary>Crée et Initialise une nouvelle instance de l’attribut.</summary>
+      <param name="type">Type qui contient les méthodes statiques pour la classe Runtime.</param>
+      <param name="version">Version dans laquelle l’interface statique a été ajoutée.</param>
+      <param name="platform">Valeur de l’énumération. La valeur par défaut est * * Windows * *.</param>
     </member>
     <member name="T:Windows.Foundation.Metadata.ThreadingAttribute">
-      <summary>Indique le modèle de thread d'un composant Windows Runtime.</summary>
+      <summary>Indique le modèle de thread d’un composant Windows Runtime.</summary>
     </member>
     <member name="M:Windows.Foundation.Metadata.ThreadingAttribute.#ctor(Windows.Foundation.Metadata.ThreadingModel)">
-      <summary>Crée et initialise une nouvelle instance de l'attribut.</summary>
-      <param name="model">Une des valeurs de l'énumération.</param>
+      <summary>Crée et Initialise une nouvelle instance de l’attribut.</summary>
+      <param name="model">L’une des valeurs d’énumération.</param>
     </member>
     <member name="T:Windows.Foundation.Metadata.ThreadingModel">
       <summary>Spécifie le modèle de thread.</summary>
     </member>
     <member name="F:Windows.Foundation.Metadata.ThreadingModel.Both">
-      <summary>Threads et multithreads cloisonnés.</summary>
+      <summary>Les cloisonnements à thread unique et multithread.</summary>
     </member>
     <member name="F:Windows.Foundation.Metadata.ThreadingModel.InvalidThreading">
-      <summary>Aucun modèle de thread valide ne s'applique.</summary>
+      <summary>Aucun modèle de thread valide n’est appliqué.</summary>
     </member>
     <member name="F:Windows.Foundation.Metadata.ThreadingModel.MTA">
-      <summary>Multithread cloisonné (MTA, Multithreaded Apartment).</summary>
+      <summary>Multithread cloisonné.</summary>
     </member>
     <member name="F:Windows.Foundation.Metadata.ThreadingModel.STA">
-      <summary>Thread cloisonné (STA, Single-Threaded Apartment).</summary>
+      <summary>Cloisonnement à thread unique.</summary>
     </member>
     <member name="T:Windows.Foundation.Metadata.VariantAttribute">
-      <summary>Indique que l'élément est une instance d'une variante **IInspectable**. S'applique aux paramètres de méthode, propriétés et valeurs de retour des types.</summary>
+      <summary>Indique que l’élément est une instance d’un variant * * IInspectable * *. S’applique aux paramètres de méthode, aux propriétés et aux valeurs de retour de types.</summary>
     </member>
     <member name="M:Windows.Foundation.Metadata.VariantAttribute.#ctor">
-      <summary>Crée et initialise une nouvelle instance de l'attribut.</summary>
+      <summary>Crée et Initialise une nouvelle instance de l’attribut.</summary>
     </member>
     <member name="T:Windows.Foundation.Metadata.VersionAttribute">
       <summary>Indique la version du type.</summary>
     </member>
     <member name="M:Windows.Foundation.Metadata.VersionAttribute.#ctor(System.UInt32)">
-      <summary>Crée et initialise une nouvelle instance de l'attribut.</summary>
-      <param name="version">Version à associer à l'objet marqué.</param>
+      <summary>Crée et Initialise une nouvelle instance de l’attribut.</summary>
+      <param name="version">Version à associer à l’objet marqué.</param>
     </member>
     <member name="M:Windows.Foundation.Metadata.VersionAttribute.#ctor(System.UInt32,Windows.Foundation.Metadata.Platform)">
-      <summary>Crée et initialise une nouvelle instance de l'attribut.</summary>
-      <param name="version">Version à associer à l'objet marqué.</param>
-      <param name="platform">Valeur de l'énumération. La valeur par défaut est **Windows**.</param>
+      <summary>Crée et Initialise une nouvelle instance de l’attribut.</summary>
+      <param name="version">Version à associer à l’objet marqué.</param>
+      <param name="platform">Valeur de l’énumération. La valeur par défaut est * * Windows * *.</param>
     </member>
     <member name="T:Windows.Foundation.Metadata.WebHostHiddenAttribute">
-      <summary>Identifie le type comme n'ayant pas de fonctionnalité projetée dans la langue cible spécifiée.</summary>
+      <summary>Identifie le type comme un type dont la fonctionnalité n’est pas projetée dans le langage cible spécifié.</summary>
     </member>
     <member name="M:Windows.Foundation.Metadata.WebHostHiddenAttribute.#ctor">
-      <summary>Crée et initialise une nouvelle instance de l'attribut.</summary>
+      <summary>Crée et Initialise une nouvelle instance de l’attribut.</summary>
     </member>
   </members>
 </doc>
