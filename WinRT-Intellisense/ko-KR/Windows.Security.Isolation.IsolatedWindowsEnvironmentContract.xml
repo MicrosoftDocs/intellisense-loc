@@ -1,750 +1,523 @@
 <?xml version="1.0" encoding="utf-8"?>
 <doc>
   <assembly>
-    <name>Windows.Security.Isolation.IsolatedWindowsEnvironmentContract</name>
+    <name>IsolatedWindowsEnvironmentContract.</name>
   </assembly>
   <members>
     <member name="T:Windows.Security.Isolation.IsolatedWindowsEnvironment">
-      <summary>
-      </summary>
+      <summary>가상화 된 환경에서 신뢰할 수 없는 데이터를 열고 처리 하는 응용 프로그램에 대 한 하이퍼바이저 기반의 격리 된 환경을 만들고 관리 하 여 잠재적으로 악의적인 콘텐츠에서 파일의 호스트 운영 체제를 보호 합니다.</summary>
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironment.Id">
-      <summary>
-      </summary>
-      <returns>
-      </returns>
+      <summary>격리 된 Windows 환경에 대 한 ID를 반환 합니다.</summary>
+      <returns>Id의 문자열입니다.</returns>
     </member>
     <member name="M:Windows.Security.Isolation.IsolatedWindowsEnvironment.CreateAsync(Windows.Security.Isolation.IsolatedWindowsEnvironmentOptions)">
-      <summary>
-      </summary>
-      <param name="options">
-      </param>
-      <returns>
-      </returns>
+      <summary>격리 된 Windows 환경을 비동기적으로 만듭니다.</summary>
+      <param name="options">Isolatedwindowsenvironmentoptions에서 정의 된 격리 된 Windows 환경 구성 옵션</param>
+      <returns>IsolatedWindowsEnvironmentCreateResult</returns>
     </member>
     <member name="M:Windows.Security.Isolation.IsolatedWindowsEnvironment.CreateAsync(Windows.Security.Isolation.IsolatedWindowsEnvironmentOptions,Windows.Security.Isolation.IsolatedWindowsEnvironmentTelemetryParameters)">
-      <summary>
-      </summary>
-      <param name="options">
-      </param>
-      <param name="telemetryParameters">
-      </param>
-      <returns>
-      </returns>
+      <summary>격리 된 Windows 환경을 비동기적으로 만들고 원격 분석 이벤트와 상호 연결 합니다.</summary>
+      <param name="options">Isolatedwindowsenvironmentoptions에서 정의 된 격리 된 Windows 환경 구성 옵션</param>
+      <param name="telemetryParameters">Isolatedwindowsenvironmenttelemetryparameters에 의해 정의 된 원격 분석 매개 변수</param>
+      <returns>IsolatedWindowsEnvironmentCreateResult</returns>
     </member>
     <member name="M:Windows.Security.Isolation.IsolatedWindowsEnvironment.FindByOwnerId(System.String)">
-      <summary>
-      </summary>
-      <param name="environmentOwnerId">
-      </param>
-      <returns>
-      </returns>
+      <summary>특정 소유자에 등록 된 격리 된 Windows 환경 목록을 반환 합니다.</summary>
+      <param name="environmentOwnerId">격리 된 Windows 환경의 소유자에 대 한 고유 식별자입니다.</param>
+      <returns>IsolatedWindowsEnvironment</returns>
     </member>
     <member name="M:Windows.Security.Isolation.IsolatedWindowsEnvironment.GetById(System.String)">
-      <summary>
-      </summary>
-      <param name="environmentId">
-      </param>
-      <returns>
-      </returns>
+      <summary>ID를 기반으로 격리 된 Windows 환경에 대 한 참조를 반환 합니다.</summary>
+      <param name="environmentId">격리 된 Windows 환경에 할당 된 ID입니다.</param>
+      <returns>IsolatedWindowsEnvironment</returns>
     </member>
     <member name="M:Windows.Security.Isolation.IsolatedWindowsEnvironment.LaunchFileWithUIAsync(System.String,System.String,System.String)">
-      <summary>
-      </summary>
-      <param name="appExePath">
-      </param>
-      <param name="argumentsTemplate">
-      </param>
-      <param name="filePath">
-      </param>
-      <returns>
-      </returns>
+      <summary>응용 프로그램이 격리 된 Windows 환경에서 파일을 열 수 있도록 허용 합니다.</summary>
+      <param name="appExePath">응용 프로그램 실행 경로 문자열입니다.</param>
+      <param name="argumentsTemplate">전달할 다른 인수와 관련 하 여 filepath의 상대 위치를 지정 하는 문자열입니다.</param>
+      <param name="filePath">격리 된 Windows 환경에서 열 파일의 경로에 대 한 문자열입니다.</param>
+      <returns>IsolatedWindowsEnvironmentLaunchFileResult</returns>
     </member>
     <member name="M:Windows.Security.Isolation.IsolatedWindowsEnvironment.LaunchFileWithUIAsync(System.String,System.String,System.String,Windows.Security.Isolation.IsolatedWindowsEnvironmentTelemetryParameters)">
-      <summary>
-      </summary>
-      <param name="appExePath">
-      </param>
-      <param name="argumentsTemplate">
-      </param>
-      <param name="filePath">
-      </param>
-      <param name="telemetryParameters">
-      </param>
-      <returns>
-      </returns>
+      <summary>응용 프로그램이 원격 분석 상관 관계를 사용 하 여 격리 된 Windows 환경에서 파일을 열 수 있도록 합니다.</summary>
+      <param name="appExePath">응용 프로그램 실행 경로 문자열입니다.</param>
+      <param name="argumentsTemplate">전달할 다른 인수와 관련 하 여 filepath의 상대 위치를 지정 하는 문자열입니다.</param>
+      <param name="filePath">격리 된 Windows 환경에서 열 파일의 경로에 대 한 문자열입니다.</param>
+      <param name="telemetryParameters">Isolatedwindowsenvironmenttelemetryparameters에 의해 정의 된 원격 분석 매개 변수</param>
+      <returns>IsolatedWindowsEnvironmentLaunchFileResult</returns>
     </member>
     <member name="M:Windows.Security.Isolation.IsolatedWindowsEnvironment.RegisterMessageReceiver(System.Guid,Windows.Security.Isolation.MessageReceivedCallback)">
-      <summary>
-      </summary>
-      <param name="receiverId">
-      </param>
-      <param name="messageReceivedCallback">
-      </param>
+      <summary>메시지 수신자 콜백을 등록 합니다.</summary>
+      <param name="receiverId">메시지 받는 사람에 대 한 GUID입니다.</param>
+      <param name="messageReceivedCallback">콜백 함수 messageReceivedCallback</param>
     </member>
     <member name="M:Windows.Security.Isolation.IsolatedWindowsEnvironment.ShareFolderAsync(System.String,Windows.Security.Isolation.IsolatedWindowsEnvironmentShareFolderRequestOptions)">
-      <summary>
-      </summary>
-      <param name="hostFolder">
-      </param>
-      <param name="requestOptions">
-      </param>
-      <returns>
-      </returns>
+      <summary>격리 된 Windows 환경에서 호스트 폴더를 공유 합니다.</summary>
+      <param name="hostFolder">호스트 폴더의 이름입니다.</param>
+      <param name="requestOptions">isolatedwindowsenvironmentsharefolderrequestoptions</param>
+      <returns>IsolatedWindowsEnvironmentShareFolderResult</returns>
     </member>
     <member name="M:Windows.Security.Isolation.IsolatedWindowsEnvironment.ShareFolderAsync(System.String,Windows.Security.Isolation.IsolatedWindowsEnvironmentShareFolderRequestOptions,Windows.Security.Isolation.IsolatedWindowsEnvironmentTelemetryParameters)">
-      <summary>
-      </summary>
-      <param name="hostFolder">
-      </param>
-      <param name="requestOptions">
-      </param>
-      <param name="telemetryParameters">
-      </param>
-      <returns>
-      </returns>
+      <summary>원격 분석 상관 관계를 사용 하 여 격리 된 Windows 환경과 호스트 폴더를 공유 합니다.</summary>
+      <param name="hostFolder">호스트 폴더 이름의 문자열입니다.</param>
+      <param name="requestOptions">isolatedwindowsenvironmentsharefolderrequestoptions</param>
+      <param name="telemetryParameters">Isolatedwindowsenvironmenttelemetryparameters에 의해 정의 된 원격 분석 매개 변수</param>
+      <returns>IsolatedWindowsEnvironmentShareFolderResult</returns>
     </member>
     <member name="M:Windows.Security.Isolation.IsolatedWindowsEnvironment.StartProcessSilentlyAsync(System.String,System.String,Windows.Security.Isolation.IsolatedWindowsEnvironmentActivator)">
-      <summary>
-      </summary>
-      <param name="hostExePath">
-      </param>
-      <param name="arguments">
-      </param>
-      <param name="activator">
-      </param>
-      <returns>
-      </returns>
+      <summary>격리 된 Windows 환경 내에서 프로세스를 실행할 수 있습니다.</summary>
+      <param name="hostExePath">호스트 실행 경로 문자열입니다.</param>
+      <param name="arguments">문자열</param>
+      <param name="activator">IsolatedWindowsEnvironmentActivator</param>
+      <returns>IsolatedWindowsEnvironmentStartProcessResult</returns>
     </member>
     <member name="M:Windows.Security.Isolation.IsolatedWindowsEnvironment.StartProcessSilentlyAsync(System.String,System.String,Windows.Security.Isolation.IsolatedWindowsEnvironmentActivator,Windows.Security.Isolation.IsolatedWindowsEnvironmentTelemetryParameters)">
-      <summary>
-      </summary>
-      <param name="hostExePath">
-      </param>
-      <param name="arguments">
-      </param>
-      <param name="activator">
-      </param>
-      <param name="telemetryParameters">
-      </param>
-      <returns>
-      </returns>
+      <summary>원격 분석 상관 관계가 있는 격리 된 Windows 환경 내에서 프로세스를 실행할 수 있습니다.</summary>
+      <param name="hostExePath">호스트 실행 경로 문자열입니다.</param>
+      <param name="arguments">문자열</param>
+      <param name="activator">IsolatedWindowsEnvironmentActivator</param>
+      <param name="telemetryParameters">Isolatedwindowsenvironmenttelemetryparameters에 의해 정의 된 원격 분석 매개 변수</param>
+      <returns>IsolatedWindowsEnvironmentStartProcessResult</returns>
     </member>
     <member name="M:Windows.Security.Isolation.IsolatedWindowsEnvironment.TerminateAsync">
-      <summary>
-      </summary>
+      <summary>격리 된 Windows 환경을 비동기적으로 종료 합니다.</summary>
       <returns>
       </returns>
     </member>
     <member name="M:Windows.Security.Isolation.IsolatedWindowsEnvironment.TerminateAsync(Windows.Security.Isolation.IsolatedWindowsEnvironmentTelemetryParameters)">
-      <summary>
-      </summary>
-      <param name="telemetryParameters">
-      </param>
+      <summary>원격 분석 상관 관계를 사용 하 여 격리 된 Windows 환경을 비동기적으로 종료 합니다.</summary>
+      <param name="telemetryParameters">Isolatedwindowsenvironmenttelemetryparameters에 의해 정의 된 원격 분석 매개 변수</param>
       <returns>
       </returns>
     </member>
     <member name="M:Windows.Security.Isolation.IsolatedWindowsEnvironment.UnregisterMessageReceiver(System.Guid)">
-      <summary>
-      </summary>
-      <param name="receiverId">
-      </param>
+      <summary>메시지 수신자 콜백의 등록을 취소 합니다.</summary>
+      <param name="receiverId">메시지 받는 사람에 대 한 GUID입니다.</param>
     </member>
     <member name="T:Windows.Security.Isolation.IsolatedWindowsEnvironmentActivator">
-      <summary>
-      </summary>
+      <summary>폴더 공유 또는 생성 프로세스를 시스템 또는 사용자로 실행할지 여부를 제어 합니다.</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentActivator.System">
-      <summary>
-      </summary>
+      <summary>시스템으로 실행</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentActivator.User">
-      <summary>
-      </summary>
+      <summary>사용자로 실행</summary>
     </member>
     <member name="T:Windows.Security.Isolation.IsolatedWindowsEnvironmentAllowedClipboardFormats">
-      <summary>
-      </summary>
+      <summary>격리 된 Windows 환경에서 복사 하 여 붙여 넣을 수 있는 콘텐츠의 종류를 결정 합니다.</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentAllowedClipboardFormats.Image">
-      <summary>
-      </summary>
+      <summary>이미지 내용 허용</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentAllowedClipboardFormats.None">
-      <summary>
-      </summary>
+      <summary>콘텐츠를 허용 하지 않습니다.</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentAllowedClipboardFormats.Text">
-      <summary>
-      </summary>
+      <summary>텍스트 내용 허용</summary>
     </member>
     <member name="T:Windows.Security.Isolation.IsolatedWindowsEnvironmentAvailablePrinters">
-      <summary>
-      </summary>
+      <summary>격리 된 Windows 환경에서 액세스할 수 있는 프린터를 결정 합니다.</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentAvailablePrinters.Local">
-      <summary>
-      </summary>
+      <summary>로컬 프린터 허용</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentAvailablePrinters.Network">
-      <summary>
-      </summary>
+      <summary>네트워크 프린터 허용</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentAvailablePrinters.None">
-      <summary>
-      </summary>
+      <summary>컨테이너의 모든 프린터를 허용 하지 않습니다.</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentAvailablePrinters.SystemPrintToPdf">
-      <summary>
-      </summary>
+      <summary>PDF로 인쇄 허용</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentAvailablePrinters.SystemPrintToXps">
-      <summary>
-      </summary>
+      <summary>XPS로 인쇄 허용</summary>
     </member>
     <member name="T:Windows.Security.Isolation.IsolatedWindowsEnvironmentClipboardCopyPasteDirections">
-      <summary>
-      </summary>
+      <summary>콘텐츠를 복사 하는 데 사용할 수 있는 방향을 결정 합니다. 호스트에서 격리 된 Windows 환경 또는 Isolated Windows 환경를 호스트 합니다.</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentClipboardCopyPasteDirections.HostToIsolatedWindowsEnvironment">
-      <summary>
-      </summary>
+      <summary>호스트에서 격리 된 Windows 환경으로 복사 및 붙여넣기 허용</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentClipboardCopyPasteDirections.IsolatedWindowsEnvironmentToHost">
-      <summary>
-      </summary>
+      <summary>격리 된 Windows 환경에서 호스트로 복사 및 붙여넣기 허용</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentClipboardCopyPasteDirections.None">
-      <summary>
-      </summary>
+      <summary>복사 또는 붙여넣기를 허용 하지 않습니다.</summary>
     </member>
     <member name="T:Windows.Security.Isolation.IsolatedWindowsEnvironmentContract">
       <summary>
       </summary>
     </member>
     <member name="T:Windows.Security.Isolation.IsolatedWindowsEnvironmentCreateProgress">
-      <summary>
-      </summary>
+      <summary>격리 된 Windows 환경의 생성 진행률 쿼리</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentCreateProgress.PercentComplete">
-      <summary>
-      </summary>
+      <summary>UINT32-격리 된 Windows 환경 만들기에 대 한 완료율</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentCreateProgress.State">
-      <summary>
-      </summary>
+      <summary>IsolatedWindowsEnvironmentProgressState</summary>
     </member>
     <member name="T:Windows.Security.Isolation.IsolatedWindowsEnvironmentCreateResult">
-      <summary>
-      </summary>
+      <summary>상태 및 확장 오류와 같은 환경 생성 결과를 쿼리 하는 런타임 클래스입니다.</summary>
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentCreateResult.Environment">
-      <summary>
-      </summary>
-      <returns>
-      </returns>
+      <summary>격리 된 Windows 환경 만들기의 결과를 쿼리 합니다.</summary>
+      <returns>격리 된 Windows 환경 ID의 문자열입니다.</returns>
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentCreateResult.ExtendedError">
-      <summary>
-      </summary>
-      <returns>
-      </returns>
+      <summary>격리 된 Windows 환경 만들기 실패 시 확장 오류를 쿼리 합니다.</summary>
+      <returns>HRESULT</returns>
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentCreateResult.Status">
-      <summary>
-      </summary>
-      <returns>
-      </returns>
+      <summary>Isolatedwindowsenvironmentcreatestatus에 대 한 호출</summary>
+      <returns>문자열</returns>
     </member>
     <member name="T:Windows.Security.Isolation.IsolatedWindowsEnvironmentCreateStatus">
-      <summary>
-      </summary>
+      <summary>격리 된 Windows 환경 만들기 상태의 실제 반환 값을 포함 합니다.</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentCreateStatus.FailureByPolicy">
-      <summary>
-      </summary>
+      <summary>정책 구성 때문에 격리 된 Windows 환경을 만들지 못했습니다.</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentCreateStatus.Success">
-      <summary>
-      </summary>
+      <summary>격리 된 Windows 환경을 만들지 했습니다.</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentCreateStatus.UnknownFailure">
-      <summary>
-      </summary>
+      <summary>알 수 없는 오류로 인해 격리 된 Windows 환경을 만들지 못했습니다.</summary>
     </member>
     <member name="T:Windows.Security.Isolation.IsolatedWindowsEnvironmentFile">
-      <summary>
-      </summary>
+      <summary>격리 된 Windows 환경에서 파일을 시작 하기 위한 함수를 캡슐화 하는 런타임 클래스입니다.</summary>
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentFile.HostPath">
-      <summary>
-      </summary>
-      <returns>
-      </returns>
+      <summary>파일의 전체 호스트 경로를 가져옵니다.</summary>
+      <returns>호스트 경로 문자열입니다.</returns>
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentFile.Id">
-      <summary>
-      </summary>
-      <returns>
-      </returns>
+      <summary>호스트 파일에 할당 된 ID를 가져옵니다.</summary>
+      <returns>파일의 GUID입니다.</returns>
     </member>
     <member name="M:Windows.Security.Isolation.IsolatedWindowsEnvironmentFile.Close">
-      <summary>
-      </summary>
+      <summary>을 호출 하 여 격리 된 Windows 환경에서 파일을 닫습니다.</summary>
     </member>
     <member name="T:Windows.Security.Isolation.IsolatedWindowsEnvironmentHost">
-      <summary>
-      </summary>
+      <summary>격리 된 Windows 환경에 대 한 호스트 장치를 나타내는 클래스입니다.</summary>
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentHost.HostErrors">
-      <summary>
-      </summary>
-      <returns>
-      </returns>
+      <summary>호스트에서 격리 된 Windows 환경을 만들 수 있으려면 먼저 확인 해야 하는 호스트의 오류에 대 한 IVectorView입니다.</summary>
+      <returns>Ivectorview&lt;t&gt;</returns>
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentHost.IsReady">
-      <summary>
-      </summary>
-      <returns>
-      </returns>
+      <summary>호스트가 올바르게 구성 되어 있고 격리 된 Windows 환경을 만들 준비가 되었는지 여부를 나타내는 부울 값입니다.</summary>
+      <returns>부울</returns>
     </member>
     <member name="T:Windows.Security.Isolation.IsolatedWindowsEnvironmentHostError">
-      <summary>
-      </summary>
+      <summary>호스트에서 격리 된 Windows 환경을 만들기 전에 해결 해야 하는 오류 목록을 나타내는 열거자입니다.</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentHostError.AdminPolicyIsDisabledOrNotPresent">
-      <summary>
-      </summary>
+      <summary>기능에 대 한 관리 정책이 구성 되지 않았거나 사용 하지 않도록 설정 되어 있습니다.</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentHostError.FeatureNotInstalled">
-      <summary>
-      </summary>
+      <summary>기능이 장치에 설치 되지 않았습니다.</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentHostError.HardwareRequirementsNotMet">
-      <summary>
-      </summary>
+      <summary>장치가 하드웨어 요구 사항을 충족 하지 않습니다.</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentHostError.RebootRequired">
-      <summary>
-      </summary>
+      <summary>다시 부팅 필요</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentHostError.UnknownError">
-      <summary>
-      </summary>
+      <summary>알 수 없는 오류</summary>
     </member>
     <member name="T:Windows.Security.Isolation.IsolatedWindowsEnvironmentLaunchFileResult">
-      <summary>
-      </summary>
+      <summary>격리 된 Windows 환경으로 파일을 시작 하기 위한 결과 속성을 포함 하는 런타임 클래스입니다.</summary>
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentLaunchFileResult.ExtendedError">
-      <summary>
-      </summary>
-      <returns>
-      </returns>
+      <summary>격리 된 Windows 환경에서 파일을 시작 하지 못할 경우 확장 오류 코드를 가져옵니다.</summary>
+      <returns>HRESULT</returns>
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentLaunchFileResult.File">
-      <summary>
-      </summary>
-      <returns>
-      </returns>
+      <summary>IsolatedWindowsEnvironmentFile runtime 클래스를 인스턴스화합니다.</summary>
+      <returns>문자열</returns>
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentLaunchFileResult.Status">
-      <summary>
-      </summary>
-      <returns>
-      </returns>
+      <summary>IsolatedWindowsEnvironmentLaunchFileStatus를 호출 합니다.</summary>
+      <returns>Enum</returns>
     </member>
     <member name="T:Windows.Security.Isolation.IsolatedWindowsEnvironmentLaunchFileStatus">
-      <summary>
-      </summary>
+      <summary>시작 파일의 상태에 대 한 값을 격리 된 Windows 환경으로 열거 합니다.</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentLaunchFileStatus.EnvironmentUnavailable">
-      <summary>
-      </summary>
+      <summary>환경을 사용할 수 없어 격리 된 Windows 환경으로 파일을 시작 합니다.</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentLaunchFileStatus.FileNotFound">
-      <summary>
-      </summary>
+      <summary>파일을 찾을 수 없어 격리 된 Windows 환경으로 파일을 시작 합니다.</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentLaunchFileStatus.Success">
-      <summary>
-      </summary>
+      <summary>격리 된 Windows 환경으로 파일을 시작 했습니다.</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentLaunchFileStatus.TimedOut">
-      <summary>
-      </summary>
+      <summary>격리 된 Windows 환경으로 파일을 시작 하는 시간이 초과 되었습니다.</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentLaunchFileStatus.UnknownFailure">
-      <summary>
-      </summary>
+      <summary>격리 된 Windows 환경에서 파일을 시작 하는 동안 알 수 없는 오류가 발생 했습니다.</summary>
     </member>
     <member name="T:Windows.Security.Isolation.IsolatedWindowsEnvironmentOptions">
-      <summary>
-      </summary>
+      <summary>생성 중에 격리 된 Windows 환경에 적용 되는 다양 한 특성을 제어 하는 런타임 클래스입니다.</summary>
     </member>
     <member name="M:Windows.Security.Isolation.IsolatedWindowsEnvironmentOptions.#ctor">
-      <summary>
-      </summary>
+      <summary>격리 된 Windows 환경에 대 한 다양 한 IsolatedWindowsEnvironmentOptions을 반환 합니다.</summary>
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentOptions.AllowCameraAndMicrophoneAccess">
-      <summary>
-      </summary>
-      <returns>
-      </returns>
+      <summary>격리 된 Windows 환경 내에서 실행 되는 응용 프로그램에서 장치의 카메라와 마이크에 액세스할 수 있는지 여부를 나타내는 부울입니다.</summary>
+      <returns>부울</returns>
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentOptions.AllowedClipboardFormats">
-      <summary>
-      </summary>
-      <returns>
-      </returns>
+      <summary>격리 된 Windows 환경에 대 한 클립보드 형식의 열거형입니다.</summary>
+      <returns>Enum</returns>
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentOptions.AllowGraphicsHardwareAcceleration">
-      <summary>
-      </summary>
-      <returns>
-      </returns>
+      <summary>격리 된 Windows 환경이 하드웨어 또는 소프트웨어 가속을 사용 하 여 그래픽을 렌더링 하는지 여부를 나타내는 부울입니다.</summary>
+      <returns>부울</returns>
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentOptions.AvailablePrinters">
-      <summary>
-      </summary>
-      <returns>
-      </returns>
+      <summary>격리 된 Windows 환경에 대 한 프린터 선택 항목의 열거형입니다.</summary>
+      <returns>Enum</returns>
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentOptions.ClipboardCopyPasteDirections">
-      <summary>
-      </summary>
-      <returns>
-      </returns>
+      <summary>격리 된 Windows 환경에 대 한 클립보드 방향 옵션의 열거형입니다.</summary>
+      <returns>Enum</returns>
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentOptions.EnvironmentOwnerId">
-      <summary>
-      </summary>
-      <returns>
-      </returns>
+      <summary>만든 각 격리 된 Windows 환경의 소유자를 식별 하는 문자열입니다.</summary>
+      <returns>문자열</returns>
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentOptions.PersistUserProfile">
-      <summary>
-      </summary>
-      <returns>
-      </returns>
+      <summary>사용자 프로필이 격리 된 Windows 환경에서 세션 간에 유지 되도록 허용 합니다.</summary>
+      <returns>부울</returns>
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentOptions.SharedFolderNameInEnvironment">
-      <summary>
-      </summary>
-      <returns>
-      </returns>
+      <summary>ShareHostFolderForUntrustedItems를 호출 하 여 설정 된 격리 된 Windows 환경에서 신뢰할 수 없는 항목을 공유 하는 데 사용 되는 폴더의 표시 이름입니다.</summary>
+      <returns>문자열</returns>
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentOptions.SharedHostFolderPath">
-      <summary>
-      </summary>
-      <returns>
-      </returns>
+      <summary>ShareHostFolderForUntrustedItems를 호출 하 여 신뢰할 수 없는 항목을 공유할 수 있도록 격리 된 Windows 환경과 호스트 간에 공유 되는 호스트 폴더의 경로입니다.</summary>
+      <returns>문자열</returns>
     </member>
     <member name="M:Windows.Security.Isolation.IsolatedWindowsEnvironmentOptions.ShareHostFolderForUntrustedItems(System.String,System.String)">
-      <summary>
-      </summary>
-      <param name="SharedHostFolderPath">
-      </param>
-      <param name="ShareFolderNameInEnvironment">
-      </param>
+      <summary>는 SharedFolderNameInEnvironment와 SharedHostFolderPath를 모두 설정 하 여 신뢰할 수 없는 항목을 격리 된 Windows 환경과 공유 하도록 폴더를 구성 합니다.</summary>
+      <param name="SharedHostFolderPath">공유 호스트 폴더의 경로입니다.</param>
+      <param name="ShareFolderNameInEnvironment">격리 된 Windows 환경의 폴더 이름입니다.</param>
     </member>
     <member name="T:Windows.Security.Isolation.IsolatedWindowsEnvironmentOwnerRegistration">
-      <summary>
-      </summary>
+      <summary>격리 된 Windows 환경의 소유자 특성 목록을 등록 하는 런타임 클래스입니다. 여기에는 소유자 이름, 호스트에서 격리 된 Windows 환경에서 공유할 수 있는 폴더, 사용자 또는 시스템으로 실행 되는 프로세스, 환경 간 활성화 docs.ms 포함 됩니다.</summary>
     </member>
     <member name="M:Windows.Security.Isolation.IsolatedWindowsEnvironmentOwnerRegistration.Register(System.String,Windows.Security.Isolation.IsolatedWindowsEnvironmentOwnerRegistrationData)">
-      <summary>
-      </summary>
-      <param name="ownerName">
-      </param>
-      <param name="ownerRegistrationData">
-      </param>
-      <returns>
-      </returns>
+      <summary>격리 된 Windows 환경의 소유자를 등록 합니다.</summary>
+      <param name="ownerName">격리 된 Windows 환경의 소유자 이름입니다.</param>
+      <param name="ownerRegistrationData">isolatedwindowsenvironmentownerregistrationdata</param>
+      <returns>IsolatedWindowsEnvironmentOwnerRegistrationResult</returns>
     </member>
     <member name="M:Windows.Security.Isolation.IsolatedWindowsEnvironmentOwnerRegistration.Unregister(System.String)">
-      <summary>
-      </summary>
-      <param name="ownerName">
-      </param>
+      <summary>격리 된 Windows 환경의 소유자 등록을 취소 합니다.</summary>
+      <param name="ownerName">격리 된 Windows 환경의 소유자 이름에 대 한 문자열입니다.</param>
     </member>
     <member name="T:Windows.Security.Isolation.IsolatedWindowsEnvironmentOwnerRegistrationData">
-      <summary>
-      </summary>
+      <summary>Isolatedwindowsenvironmentownerregistration의 모든 등록 데이터를 반환 하는 클래스입니다.</summary>
     </member>
     <member name="M:Windows.Security.Isolation.IsolatedWindowsEnvironmentOwnerRegistrationData.#ctor">
-      <summary>
-      </summary>
+      <summary>Isolated Windows 환경에 등록 된 소유자의 모든 특성입니다.</summary>
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentOwnerRegistrationData.ActivationFileExtensions">
-      <summary>
-      </summary>
-      <returns>
-      </returns>
+      <summary>격리 된 Windows 환경에서 활성화할 수 있는 파일의 확장명입니다.</summary>
+      <returns>IVector</returns>
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentOwnerRegistrationData.ProcessesRunnableAsSystem">
-      <summary>
-      </summary>
-      <returns>
-      </returns>
+      <summary>시스템으로 실행을 처리 합니다.</summary>
+      <returns>IVector</returns>
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentOwnerRegistrationData.ProcessesRunnableAsUser">
-      <summary>
-      </summary>
-      <returns>
-      </returns>
+      <summary>사용자로 실행을 처리 합니다.</summary>
+      <returns>IVector</returns>
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentOwnerRegistrationData.ShareableFolders">
-      <summary>
-      </summary>
-      <returns>
-      </returns>
+      <summary>호스트에서 격리 된 Windows 환경으로 공유할 수 있는 폴더입니다.</summary>
+      <returns>IVector</returns>
     </member>
     <member name="T:Windows.Security.Isolation.IsolatedWindowsEnvironmentOwnerRegistrationResult">
-      <summary>
-      </summary>
+      <summary>Isolatedwindowsenvironmentownerregistration에 대 한 결과를 반환 하는 런타임 클래스입니다.</summary>
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentOwnerRegistrationResult.ExtendedError">
-      <summary>
-      </summary>
-      <returns>
-      </returns>
+      <summary>Isolatedwindowsenvironmentownerregistration에 대 한 확장 오류를 반환 합니다.</summary>
+      <returns>HRESULT</returns>
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentOwnerRegistrationResult.Status">
-      <summary>
-      </summary>
-      <returns>
-      </returns>
+      <summary>Isolatedwindowsenvironmentownerregistrationstatus에 대 한를 호출 합니다.</summary>
+      <returns>Enum</returns>
     </member>
     <member name="T:Windows.Security.Isolation.IsolatedWindowsEnvironmentOwnerRegistrationStatus">
-      <summary>
-      </summary>
+      <summary>Isolatedwindowsenvironmentownerregistration의 성공 또는 실패 상태입니다.</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentOwnerRegistrationStatus.AccessDenied">
-      <summary>
-      </summary>
+      <summary>액세스가 거부 되어 격리 된 Windows 환경에 대 한 소유자 등록이 실패 했습니다.</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentOwnerRegistrationStatus.InsufficientMemory">
-      <summary>
-      </summary>
+      <summary>메모리가 부족 하 여 격리 된 Windows 환경에 대 한 소유자 등록</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentOwnerRegistrationStatus.InvalidArgument">
-      <summary>
-      </summary>
+      <summary>잘못 된 특성으로 인해 격리 된 Windows 환경에 대 한 소유자 등록이 실패 했습니다.</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentOwnerRegistrationStatus.Success">
-      <summary>
-      </summary>
+      <summary>격리 된 Windows 환경에 대 한 소유자 등록에 성공 했습니다.</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentOwnerRegistrationStatus.UnknownFailure">
-      <summary>
-      </summary>
+      <summary>알 수 없는 오류로 인해 격리 된 Windows 환경의 소유자 등록이 실패 했습니다.</summary>
     </member>
     <member name="T:Windows.Security.Isolation.IsolatedWindowsEnvironmentProcess">
-      <summary>
-      </summary>
+      <summary>격리 된 Windows 환경에서 프로세스를 나타내는 시작 프로세스에서 개체를 반환 하는 클래스입니다.</summary>
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentProcess.ExitCode">
-      <summary>
-      </summary>
-      <returns>
-      </returns>
+      <summary>실행 된 프로세스의 종료 코드를 반환 합니다.</summary>
+      <returns>UInt32</returns>
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentProcess.State">
-      <summary>
-      </summary>
-      <returns>
-      </returns>
+      <summary>프로세스 실행의 현재 상태를 반환 합니다.</summary>
+      <returns>Enum</returns>
     </member>
     <member name="M:Windows.Security.Isolation.IsolatedWindowsEnvironmentProcess.WaitForExit">
-      <summary>
-      </summary>
+      <summary>호출자가 프로세스 완료를 기다릴 수 있도록 허용 합니다.</summary>
     </member>
     <member name="M:Windows.Security.Isolation.IsolatedWindowsEnvironmentProcess.WaitForExitAsync">
-      <summary>
-      </summary>
-      <returns>
-      </returns>
+      <summary>호출자가 프로세스 완료를 비동기적으로 기다릴 수 있도록 허용 합니다.</summary>
+      <returns>HRESULT</returns>
     </member>
     <member name="M:Windows.Security.Isolation.IsolatedWindowsEnvironmentProcess.WaitForExitWithTimeout(System.UInt32)">
-      <summary>
-      </summary>
-      <param name="timeoutMilliseconds">
-      </param>
+      <summary>호출자가 프로세스 완료에 대 한 제한 시간을 지정할 수 있습니다.</summary>
+      <param name="timeoutMilliseconds">제한 시간 이전에 허용 되는 시간입니다.</param>
     </member>
     <member name="T:Windows.Security.Isolation.IsolatedWindowsEnvironmentProcessState">
-      <summary>
-      </summary>
+      <summary>격리 된 Windows 환경에서 프로세스 실행의 현재 상태입니다.</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentProcessState.Aborted">
-      <summary>
-      </summary>
+      <summary>격리 된 Windows 환경의 프로세스가 중단 되었습니다.</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentProcessState.Completed">
-      <summary>
-      </summary>
+      <summary>격리 된 Windows 환경의 프로세스가 완료 되었습니다.</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentProcessState.Running">
-      <summary>
-      </summary>
+      <summary>격리 된 Windows 환경의 프로세스가 실행 되 고 있습니다.</summary>
     </member>
     <member name="T:Windows.Security.Isolation.IsolatedWindowsEnvironmentProgressState">
-      <summary>
-      </summary>
+      <summary>환경 만들기 상태를 나타내는 격리 된 Windows 환경 생성 중에 반환 됩니다.</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentProgressState.Completed">
-      <summary>
-      </summary>
+      <summary>격리 된 Windows 환경 만들기가 완료 되었습니다.</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentProgressState.Processing">
-      <summary>
-      </summary>
+      <summary>격리 된 Windows 환경 만들기를 처리 하는 중입니다.</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentProgressState.Queued">
-      <summary>
-      </summary>
+      <summary>격리 된 Windows 환경 만들기가 대기 중입니다.</summary>
     </member>
     <member name="T:Windows.Security.Isolation.IsolatedWindowsEnvironmentShareFolderRequestOptions">
-      <summary>
-      </summary>
+      <summary>폴더 공유 작업을 수행 하는 방법에 대 한 옵션입니다.</summary>
     </member>
     <member name="M:Windows.Security.Isolation.IsolatedWindowsEnvironmentShareFolderRequestOptions.#ctor">
-      <summary>
-      </summary>
+      <summary>IsolatedWindowsEnvironmentShareFolderRequestOptions의 결과입니다.</summary>
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentShareFolderRequestOptions.AllowWrite">
-      <summary>
-      </summary>
-      <returns>
-      </returns>
+      <summary>격리 된 Windows 환경 내에서 실행 되는 응용 프로그램에서 공유 되는이 폴더에 데이터를 쓸 수 있는지 여부를 결정 합니다.</summary>
+      <returns>부울</returns>
     </member>
     <member name="T:Windows.Security.Isolation.IsolatedWindowsEnvironmentShareFolderResult">
-      <summary>
-      </summary>
+      <summary>폴더 공유 요청의 결과에 대 한 정보를 포함 하는 개체입니다.</summary>
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentShareFolderResult.ExtendedError">
-      <summary>
-      </summary>
-      <returns>
-      </returns>
+      <summary>폴더를 공유 하지 못할 경우이 오류와 연결 된 오류 코드가 포함 됩니다.</summary>
+      <returns>HRESULT</returns>
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentShareFolderResult.Status">
-      <summary>
-      </summary>
-      <returns>
-      </returns>
+      <summary>폴더 공유 작업의 상태: 성공 또는 실패입니다.</summary>
+      <returns>Enum</returns>
     </member>
     <member name="T:Windows.Security.Isolation.IsolatedWindowsEnvironmentShareFolderStatus">
-      <summary>
-      </summary>
+      <summary>공유 폴더 요청 결과를 나타내는 가능한 상태를 열거 합니다.</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentShareFolderStatus.AccessDenied">
-      <summary>
-      </summary>
+      <summary>액세스가 거부되었습니다.</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentShareFolderStatus.EnvironmentUnavailable">
-      <summary>
-      </summary>
+      <summary>격리 된 Windows 환경을 사용할 수 없습니다.</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentShareFolderStatus.FolderNotFound">
-      <summary>
-      </summary>
+      <summary>폴더를 찾을 수 없습니다.</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentShareFolderStatus.Success">
-      <summary>
-      </summary>
+      <summary>열었습니다.</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentShareFolderStatus.UnknownFailure">
-      <summary>
-      </summary>
+      <summary>알 수 없는 오류입니다.</summary>
     </member>
     <member name="T:Windows.Security.Isolation.IsolatedWindowsEnvironmentStartProcessResult">
-      <summary>
-      </summary>
+      <summary>격리 된 Windows 환경에서 시작 프로세스의 결과를 쿼리 하는 런타임 클래스입니다.</summary>
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentStartProcessResult.ExtendedError">
-      <summary>
-      </summary>
-      <returns>
-      </returns>
+      <summary>격리 된 Windows 환경에 대 한 시작 프로세스가 실패 하는 경우 exented 오류에 대 한 쿼리입니다.</summary>
+      <returns>HRESULT</returns>
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentStartProcessResult.Process">
-      <summary>
-      </summary>
-      <returns>
-      </returns>
+      <summary>격리 된 Windows 환경에서 실행 중인 프로세스의 수명을 나타냅니다.</summary>
+      <returns>문자열</returns>
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentStartProcessResult.Status">
-      <summary>
-      </summary>
-      <returns>
-      </returns>
+      <summary>격리 된 Windows 환경에서 프로세스 실행 상태를 쿼리 합니다.</summary>
+      <returns>문자열</returns>
     </member>
     <member name="T:Windows.Security.Isolation.IsolatedWindowsEnvironmentStartProcessStatus">
-      <summary>
-      </summary>
+      <summary>격리 된 Windows 환경에서 시작 프로세스의 결과입니다.</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentStartProcessStatus.AppNotRegistered">
-      <summary>
-      </summary>
+      <summary>응용 프로그램이 등록 되지 않았기 때문에 격리 된 Windows 환경에서 프로세스를 시작 하지 못했습니다.</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentStartProcessStatus.EnvironmentUnavailable">
-      <summary>
-      </summary>
+      <summary>환경을 사용할 수 없어 격리 된 Windows 환경에서 프로세스를 시작 하지 못했습니다.</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentStartProcessStatus.FileNotFound">
-      <summary>
-      </summary>
+      <summary>파일을 찾을 수 없기 때문에 격리 된 Windows 환경에서 프로세스를 시작 하지 못했습니다.</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentStartProcessStatus.Success">
-      <summary>
-      </summary>
+      <summary>격리 된 Windows 환경의 시작 프로세스가 성공 했습니다.</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentStartProcessStatus.UnknownFailure">
-      <summary>
-      </summary>
+      <summary>알 수 없는 오류로 인해 격리 된 Windows 환경에서 프로세스를 시작 하지 못했습니다.</summary>
     </member>
     <member name="T:Windows.Security.Isolation.IsolatedWindowsEnvironmentTelemetryParameters">
-      <summary>
-      </summary>
+      <summary>Correlationid를 캡슐화 하는 런타임 클래스입니다.</summary>
     </member>
     <member name="M:Windows.Security.Isolation.IsolatedWindowsEnvironmentTelemetryParameters.#ctor">
-      <summary>
-      </summary>
+      <summary>Api의 품질을 향상 시키기 위해 Microsoft 원격 분석에 사용 되는 매개 변수입니다.</summary>
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentTelemetryParameters.CorrelationId">
-      <summary>
-      </summary>
-      <returns>
-      </returns>
+      <summary>Api의 품질을 향상 시키기 위해 Microsoft 원격 분석에 사용 되는 GUID입니다.</summary>
+      <returns>GUID</returns>
     </member>
     <member name="T:Windows.Security.Isolation.IsolatedWindowsHostMessenger">
-      <summary>
-      </summary>
+      <summary>PostMessageToReceivier 및 getfileid의 두 메서드에 대 한 런타임 클래스입니다.</summary>
     </member>
     <member name="M:Windows.Security.Isolation.IsolatedWindowsHostMessenger.GetFileId(System.String)">
-      <summary>
-      </summary>
-      <param name="filePath">
-      </param>
-      <returns>
-      </returns>
+      <summary>격리 된 Windows 환경에서 열린 파일의 고유 식별자를 가져옵니다.</summary>
+      <param name="filePath">호스트의 파일 경로입니다.</param>
+      <returns>Guid</returns>
     </member>
     <member name="M:Windows.Security.Isolation.IsolatedWindowsHostMessenger.PostMessageToReceiver(System.Guid,Windows.Foundation.Collections.IVectorView{System.Object})">
-      <summary>
-      </summary>
-      <param name="receiverId">
-      </param>
-      <param name="message">
-      </param>
+      <summary>격리 된 Windows 환경에서 호스트 쪽에 등록 된 받는 사람에 게 메시지를 게시 합니다.</summary>
+      <param name="receiverId">메시지 받는 사람에 대 한 GUID입니다.</param>
+      <param name="message">Ivectorview&lt;t&gt;</param>
     </member>
     <member name="T:Windows.Security.Isolation.MessageReceivedCallback">
-      <summary>
-      </summary>
-      <param name="receiverId">
-      </param>
-      <param name="message">
-      </param>
+      <summary>PostMessageToReceiver를 사용 하 여 격리 된 Windows 환경에서 메시지를 보낼 때 호출 되는 콜백 함수입니다.</summary>
+      <param name="receiverId">메시지 받는 사람에 대 한 GUID입니다.</param>
+      <param name="message">Ivectorview&lt;t&gt;</param>
     </member>
   </members>
 </doc>

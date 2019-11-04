@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>MachineLearning. MachineLearningPreviewContract</name>
+  </assembly>
+  <members>
+    <member name="T:Windows.AI.MachineLearning.Preview.FeatureElementKindPreview">
+      <summary>* * 사용 되지 않습니다. * * 지원 되는 기능 데이터 형식의 목록을 정의 합니다.</summary>
+      <deprecated type="deprecate">FeatureElementKindPreview 대신 TensorKind를 사용 합니다. 자세한 내용은 MSDN을 참조 하십시오.</deprecated>
+    </member>
+    <member name="F:Windows.AI.MachineLearning.Preview.FeatureElementKindPreview.Boolean">
+      <summary>Feature 요소는 부울 형식입니다.</summary>
+    </member>
+    <member name="F:Windows.AI.MachineLearning.Preview.FeatureElementKindPreview.Complex128">
+      <summary>Feature 요소의 형식은 Complex128입니다.</summary>
+    </member>
+    <member name="F:Windows.AI.MachineLearning.Preview.FeatureElementKindPreview.Complex64">
+      <summary>Feature 요소의 형식은 Complex64입니다.</summary>
+    </member>
+    <member name="F:Windows.AI.MachineLearning.Preview.FeatureElementKindPreview.Double">
+      <summary>Feature 요소는 Double 형식입니다.</summary>
+    </member>
+    <member name="F:Windows.AI.MachineLearning.Preview.FeatureElementKindPreview.Float">
+      <summary>Feature 요소는 Float 형식입니다.</summary>
+    </member>
+    <member name="F:Windows.AI.MachineLearning.Preview.FeatureElementKindPreview.Float16">
+      <summary>Feature 요소의 형식은 Float16입니다.</summary>
+    </member>
+    <member name="F:Windows.AI.MachineLearning.Preview.FeatureElementKindPreview.Int16">
+      <summary>Feature 요소는 Int16 형식입니다.</summary>
+    </member>
+    <member name="F:Windows.AI.MachineLearning.Preview.FeatureElementKindPreview.Int32">
+      <summary>Feature 요소는 Int32 형식입니다.</summary>
+    </member>
+    <member name="F:Windows.AI.MachineLearning.Preview.FeatureElementKindPreview.Int64">
+      <summary>Feature 요소는 Int64 유형입니다.</summary>
+    </member>
+    <member name="F:Windows.AI.MachineLearning.Preview.FeatureElementKindPreview.Int8">
+      <summary>Feature 요소는 Int8 유형입니다.</summary>
+    </member>
+    <member name="F:Windows.AI.MachineLearning.Preview.FeatureElementKindPreview.String">
+      <summary>Feature 요소는 문자열 형식입니다.</summary>
+    </member>
+    <member name="F:Windows.AI.MachineLearning.Preview.FeatureElementKindPreview.UInt16">
+      <summary>Feature 요소는 UInt16 형식입니다.</summary>
+    </member>
+    <member name="F:Windows.AI.MachineLearning.Preview.FeatureElementKindPreview.UInt32">
+      <summary>Feature 요소는 UInt32 유형입니다.</summary>
+    </member>
+    <member name="F:Windows.AI.MachineLearning.Preview.FeatureElementKindPreview.UInt64">
+      <summary>Feature 요소는 UInt64 형식입니다.</summary>
+    </member>
+    <member name="F:Windows.AI.MachineLearning.Preview.FeatureElementKindPreview.UInt8">
+      <summary>Feature 요소의 형식은 UInt8입니다.</summary>
+    </member>
+    <member name="F:Windows.AI.MachineLearning.Preview.FeatureElementKindPreview.Undefined">
+      <summary>
+      </summary>
+    </member>
+    <member name="T:Windows.AI.MachineLearning.Preview.ILearningModelVariableDescriptorPreview">
+      <summary>* * 사용 되지 않습니다. * * 변수 설명자 정보를 나타냅니다.</summary>
+      <deprecated type="deprecate">ILearningModelVariableDescriptorPreview 대신 ILearningModelFeatureDescriptor를 사용 합니다. 자세한 내용은 MSDN을 참조 하십시오.</deprecated>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.Preview.ILearningModelVariableDescriptorPreview.Description">
+      <summary>* * 사용 되지 않습니다. * * 변수에 대 한 설명을 가져옵니다.</summary>
+      <returns>변수에 대 한 설명입니다.</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.Preview.ILearningModelVariableDescriptorPreview.IsRequired">
+      <summary>* * 사용 되지 않습니다. * * 변수가 필수 또는 선택 사항 인지 여부를 가져옵니다.</summary>
+      <returns>변수가 필요 하면 True이 고, 그렇지 않으면 false입니다.</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.Preview.ILearningModelVariableDescriptorPreview.ModelFeatureKind">
+      <summary>* * 사용 되지 않습니다. * * 변수의 데이터 형식을 가져옵니다.</summary>
+      <returns>변수의 데이터 형식입니다.</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.Preview.ILearningModelVariableDescriptorPreview.Name">
+      <summary>* * 사용 되지 않습니다. * * 변수의 이름을 가져옵니다.</summary>
+      <returns>변수의 이름입니다.</returns>
+    </member>
+    <member name="T:Windows.AI.MachineLearning.Preview.ImageVariableDescriptorPreview">
+      <summary>* * 사용 되지 않습니다. * * 이미지 설명자 정보를 나타냅니다.</summary>
+      <deprecated type="deprecate">ImageVariableDescriptorPreview 대신 ImageFeatureDescriptor를 사용 합니다. 자세한 내용은 MSDN을 참조 하십시오.</deprecated>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.Preview.ImageVariableDescriptorPreview.BitmapPixelFormat">
+      <summary>* * 사용 되지 않습니다. * * 이미지의 픽셀 형식을 가져옵니다.</summary>
+      <returns>이미지의 픽셀 형식입니다.</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.Preview.ImageVariableDescriptorPreview.Description">
+      <summary>* * 사용 되지 않습니다. * * 이미지 변수에 대 한 설명을 가져옵니다.</summary>
+      <returns>이미지 변수에 대 한 설명입니다.</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.Preview.ImageVariableDescriptorPreview.Height">
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.Preview.ImageVariableDescriptorPreview.IsRequired">
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.Preview.ImageVariableDescriptorPreview.ModelFeatureKind">
+      <summary>* * 사용 되지 않습니다. * * 변수의 데이터 형식을 가져옵니다.</summary>
+      <returns>변수의 데이터 형식입니다.</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.Preview.ImageVariableDescriptorPreview.Name">
+      <summary>* * 사용 되지 않습니다. * * 이미지 변수의 이름을 가져옵니다.</summary>
+      <returns>이미지 변수의 이름입니다.</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.Preview.ImageVariableDescriptorPreview.Width">
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="T:Windows.AI.MachineLearning.Preview.InferencingOptionsPreview">
+      <summary>* * 사용 되지 않습니다. * * 모델의 계산을 제어 하기 위한 유추 옵션을 나타냅니다.</summary>
+      <deprecated type="deprecate">InferencingOptionsPreview 대신 LearningModelSession를 사용 합니다. 자세한 내용은 MSDN을 참조 하십시오.</deprecated>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.Preview.InferencingOptionsPreview.IsTracingEnabled">
+      <summary>* * 사용 되지 않습니다. * * 모델을 평가 하는 동안 추적을 사용할 수 있는지 여부를 가져오거나 설정 합니다.</summary>
+      <returns>추적을 사용할 수 있으면 True이 고, 그렇지 않으면 false입니다. 기본값은 false입니다.</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.Preview.InferencingOptionsPreview.MaxBatchSize">
+      <summary>* * 사용 되지 않습니다. * * 모델 평가의 최대 일괄 처리 크기를 가져오거나 설정 합니다.</summary>
+      <returns>최대 일괄 처리 크기입니다. Preview API는 일괄 처리 크기인 1만 지원 합니다.</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.Preview.InferencingOptionsPreview.MinimizeMemoryAllocation">
+      <summary>* * 사용 되지 않습니다. * * 모델 평가 후 메모리 할당을 최소화할 지 여부를 가져오거나 설정 합니다.</summary>
+      <returns>평가 하는 동안 메모리 할당을 최소화 하는 경우 True입니다. 그렇지 않으면 false입니다. 기본값은 false입니다.</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.Preview.InferencingOptionsPreview.PreferredDeviceKind">
+      <summary>* * 사용 되지 않습니다. * * 평가를 수행할 기본 설정 된 장치를 가져오거나 설정 합니다.</summary>
+      <returns>기본 설정 장치입니다. 기본값은 LearningDeviceAny입니다.</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.Preview.InferencingOptionsPreview.ReclaimMemoryAfterEvaluation">
+      <summary>* * 사용 되지 않습니다. * * 모델 평가 후 할당 된 메모리를 회수할 지 여부를 가져오거나 설정 합니다.</summary>
+      <returns>평가 후 할당 된 메모리를 회수 하는 경우 True입니다. 그렇지 않으면 false입니다. 기본값은 false입니다.</returns>
+    </member>
+    <member name="T:Windows.AI.MachineLearning.Preview.LearningModelBindingPreview">
+      <summary>* * 사용 되지 않습니다. * * 모델 입력 및 변수 인스턴스 간의 연결을 나타냅니다.</summary>
+      <deprecated type="deprecate">LearningModelBindingPreview 대신 LearningModelBinding를 사용 합니다. 자세한 내용은 MSDN을 참조 하십시오.</deprecated>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.Preview.LearningModelBindingPreview.#ctor(Windows.AI.MachineLearning.Preview.LearningModelPreview)">
+      <summary>
+      </summary>
+      <deprecated type="deprecate">ILearningModelBindingPreviewFactory 대신 ILearningModelBindingFactory를 사용 합니다. 자세한 내용은 MSDN을 참조 하십시오.</deprecated>
+      <param name="model">
+      </param>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.Preview.LearningModelBindingPreview.Size">
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.Preview.LearningModelBindingPreview.Bind(System.String,System.Object)">
+      <summary>* * 사용 되지 않습니다. * * 단일 입력 또는 출력 기능을 정의 된 변수에 바인딩합니다.</summary>
+      <deprecated type="deprecate">ILearningModelBindingPreview 대신 ILearningModelBinding를 사용 합니다. 자세한 내용은 MSDN을 참조 하십시오.</deprecated>
+      <param name="name">입/출력 기능의 이름입니다.</param>
+      <param name="value">입/출력 기능의 값입니다.</param>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.Preview.LearningModelBindingPreview.Bind(System.String,System.Object,Windows.Foundation.Collections.IPropertySet)">
+      <summary>
+      </summary>
+      <deprecated type="deprecate">ILearningModelBindingPreview 대신 ILearningModelBinding를 사용 합니다. 자세한 내용은 MSDN을 참조 하십시오.</deprecated>
+      <param name="name">
+      </param>
+      <param name="value">
+      </param>
+      <param name="metadata">
+      </param>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.Preview.LearningModelBindingPreview.Clear">
+      <summary>* * 사용 되지 않습니다. * * 바인딩된 변수를 모두 지웁니다.</summary>
+      <deprecated type="deprecate">ILearningModelBindingPreview 대신 ILearningModelBinding를 사용 합니다. 자세한 내용은 MSDN을 참조 하십시오.</deprecated>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.Preview.LearningModelBindingPreview.First">
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.Preview.LearningModelBindingPreview.HasKey(System.String)">
+      <summary>
+      </summary>
+      <param name="key">
+      </param>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.Preview.LearningModelBindingPreview.Lookup(System.String)">
+      <summary>
+      </summary>
+      <param name="key">
+      </param>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.Preview.LearningModelBindingPreview.Split(Windows.Foundation.Collections.IMapView{System.String,System.Object}@,Windows.Foundation.Collections.IMapView{System.String,System.Object}@)">
+      <summary>
+      </summary>
+      <param name="first">
+      </param>
+      <param name="second">
+      </param>
+    </member>
+    <member name="T:Windows.AI.MachineLearning.Preview.LearningModelDescriptionPreview">
+      <summary>* * 사용 되지 않습니다. * * 제공 된 모델에 대 한 메타 데이터 및 속성 설명을 나타냅니다.</summary>
+      <deprecated type="deprecate">LearningModelDescriptionPreview 대신 LearningModel를 사용 합니다. 자세한 내용은 MSDN을 참조 하십시오.</deprecated>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.Preview.LearningModelDescriptionPreview.Author">
+      <summary>* * 사용 되지 않습니다. * * 모델에서 작성자 정보를 가져옵니다.</summary>
+      <returns>모델의 작성자 정보입니다.</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.Preview.LearningModelDescriptionPreview.Description">
+      <summary>* * 사용 되지 않습니다. * * 모델의 사용자 지정 설명을 가져옵니다.</summary>
+      <returns>모델에 대 한 사용자 지정 설명입니다.</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.Preview.LearningModelDescriptionPreview.Domain">
+      <summary>* * 사용 되지 않습니다. * * 모델에 대 한 도메인 정보를 가져옵니다.</summary>
+      <returns>모델에 대 한 도메인 정보입니다.</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.Preview.LearningModelDescriptionPreview.InputFeatures">
+      <summary>* * 사용 되지 않습니다. * * 모델에 대 한 입력 설명을 가져옵니다.</summary>
+      <returns>입력 이름으로 키가 지정 된 모델에 대 한 입력 설명입니다.</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.Preview.LearningModelDescriptionPreview.Metadata">
+      <summary>* * 사용 되지 않습니다. * * 모델에서 메타 데이터를 가져옵니다.</summary>
+      <returns>제공 된 모델의 메타 데이터입니다.</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.Preview.LearningModelDescriptionPreview.Name">
+      <summary>* * 사용 되지 않습니다. * * 모델의 이름을 가져옵니다.</summary>
+      <returns>모델의 이름입니다.</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.Preview.LearningModelDescriptionPreview.OutputFeatures">
+      <summary>* * 사용 되지 않습니다. * * 모델의 출력 설명을 가져옵니다.</summary>
+      <returns>출력 이름으로 키가 지정 된 모델에 대 한 출력 설명입니다.</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.Preview.LearningModelDescriptionPreview.Version">
+      <summary>* * 사용 되지 않습니다. * * 모델의 버전 정보를 가져옵니다.</summary>
+      <returns>모델의 버전 정보입니다.</returns>
+    </member>
+    <member name="T:Windows.AI.MachineLearning.Preview.LearningModelDeviceKindPreview">
+      <summary>* * 사용 되지 않습니다. * * Windows Machine Learning 지원 되는 장치 종류를 나타내는 상수 목록을 정의 합니다.</summary>
+      <deprecated type="deprecate">LearningModelDeviceKindPreview 대신 LearningModelDeviceKind를 사용 합니다. 자세한 내용은 MSDN을 참조 하십시오.</deprecated>
+    </member>
+    <member name="F:Windows.AI.MachineLearning.Preview.LearningModelDeviceKindPreview.LearningDeviceAny">
+      <summary>기본값 값입니다. 모든 장치.</summary>
+    </member>
+    <member name="F:Windows.AI.MachineLearning.Preview.LearningModelDeviceKindPreview.LearningDeviceCpu">
+      <summary>중앙 프로세서.</summary>
+    </member>
+    <member name="F:Windows.AI.MachineLearning.Preview.LearningModelDeviceKindPreview.LearningDeviceDsp">
+      <summary>디지털 신호 proccesor.</summary>
+    </member>
+    <member name="F:Windows.AI.MachineLearning.Preview.LearningModelDeviceKindPreview.LearningDeviceFpga">
+      <summary>필드 프로그래밍 가능 게이트 배열입니다.</summary>
+    </member>
+    <member name="F:Windows.AI.MachineLearning.Preview.LearningModelDeviceKindPreview.LearningDeviceGpu">
+      <summary>그래픽 프로세서입니다.</summary>
+    </member>
+    <member name="F:Windows.AI.MachineLearning.Preview.LearningModelDeviceKindPreview.LearningDeviceNpu">
+      <summary>신경망입니다.</summary>
+    </member>
+    <member name="T:Windows.AI.MachineLearning.Preview.LearningModelEvaluationResultPreview">
+      <summary>* * 사용 되지 않습니다. * * 출력 예측 집합과 모델 평가에 상관 관계가 지정 된 해당 확률을 가져옵니다.</summary>
+      <deprecated type="deprecate">LearningModelEvaluationResultPreview 대신 LearningModelEvaluationResult를 사용 합니다. 자세한 내용은 MSDN을 참조 하십시오.</deprecated>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.Preview.LearningModelEvaluationResultPreview.CorrelationId">
+      <summary>* * 사용 되지 않습니다. * * 출력 결과를 계산 호출과 상호 연결 하는 값을 가져옵니다.</summary>
+      <returns>출력 결과와 계산 호출의 상관 관계를 나타내는 값입니다.</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.Preview.LearningModelEvaluationResultPreview.Outputs">
+      <summary>* * 사용 되지 않습니다. * * 확률과 함께 출력 예측을 나타내는 기능 집합을 가져옵니다.</summary>
+      <returns>출력 예측 및 확률을 나타내는 기능 집합입니다.</returns>
+    </member>
+    <member name="T:Windows.AI.MachineLearning.Preview.LearningModelFeatureKindPreview">
+      <summary>* * 사용 되지 않습니다. * * 모델 기능의 데이터 형식 목록을 정의 합니다.</summary>
+      <deprecated type="deprecate">LearningModelFeatureKindPreview 대신 LearningModelFeatureKind를 사용 합니다. 자세한 내용은 MSDN을 참조 하십시오.</deprecated>
+    </member>
+    <member name="F:Windows.AI.MachineLearning.Preview.LearningModelFeatureKindPreview.Image">
+      <summary>기능 유형이 이미지입니다.</summary>
+    </member>
+    <member name="F:Windows.AI.MachineLearning.Preview.LearningModelFeatureKindPreview.Map">
+      <summary>기능 유형이 Map입니다.</summary>
+    </member>
+    <member name="F:Windows.AI.MachineLearning.Preview.LearningModelFeatureKindPreview.Sequence">
+      <summary>기능 유형이 시퀀스입니다.</summary>
+    </member>
+    <member name="F:Windows.AI.MachineLearning.Preview.LearningModelFeatureKindPreview.Tensor">
+      <summary>기능 유형은 텐서입니다.</summary>
+    </member>
+    <member name="F:Windows.AI.MachineLearning.Preview.LearningModelFeatureKindPreview.Undefined">
+      <summary>기능 유형이 정의 되지 않았습니다.</summary>
+    </member>
+    <member name="T:Windows.AI.MachineLearning.Preview.LearningModelPreview">
+      <summary>* * 사용 되지 않습니다. * * machine learning 모델을 나타냅니다.</summary>
+      <deprecated type="deprecate">LearningModelPreview 대신 LearningModel를 사용 합니다. 자세한 내용은 MSDN을 참조 하십시오.</deprecated>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.Preview.LearningModelPreview.Description">
+      <summary>* * 사용 되지 않습니다. * * 학습 된 기계 학습 모델에 대 한 설명 메타 데이터를 가져옵니다.</summary>
+      <returns>Machine learning 모델에 대 한 설명이 포함 된 메타 데이터입니다.</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.Preview.LearningModelPreview.InferencingOptions">
+      <summary>* * 사용 되지 않습니다. * * 모델 계산에 대 한 추론 옵션을 가져오거나 설정 합니다.</summary>
+      <returns>모델 평가를 위한 추론 옵션입니다.</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.Preview.LearningModelPreview.EvaluateAsync(Windows.AI.MachineLearning.Preview.LearningModelBindingPreview,System.String)">
+      <summary>
+      </summary>
+      <deprecated type="deprecate">ILearningModelPreview 대신 ILearningModel를 사용 합니다. 자세한 내용은 MSDN을 참조 하십시오.</deprecated>
+      <param name="binding">
+      </param>
+      <param name="correlationId">
+      </param>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.Preview.LearningModelPreview.EvaluateFeaturesAsync(Windows.Foundation.Collections.IMap{System.String,System.Object},System.String)">
+      <summary>* * 사용 되지 않습니다. * * 이름 변수 인스턴스를 모델에 대 한 입력 및 출력으로 비동기적으로 평가 합니다.</summary>
+      <deprecated type="deprecate">ILearningModelPreview 대신 ILearningModel를 사용 합니다. 자세한 내용은 MSDN을 참조 하십시오.</deprecated>
+      <param name="features">입력으로 바인딩할 기능입니다.</param>
+      <param name="correlationId">결과와 결과의 상관 관계를 계산 하는 값입니다.</param>
+      <returns>평가 결과입니다.</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.Preview.LearningModelPreview.LoadModelFromStorageFileAsync(Windows.Storage.IStorageFile)">
+      <summary>* * 사용 되지 않습니다. * * 파일 저장소에서 모델을 비동기적으로 로드 합니다.</summary>
+      <deprecated type="deprecate">ILearningModelPreviewStatics 대신 ILearningModelStatics를 사용 합니다. 자세한 내용은 MSDN을 참조 하십시오.</deprecated>
+      <param name="modelFile">모델 파일의 위치입니다.</param>
+      <returns>LearningModelPreview를 반환 합니다.</returns>
+    </member>
+    <member name="M:Windows.AI.MachineLearning.Preview.LearningModelPreview.LoadModelFromStreamAsync(Windows.Storage.Streams.IRandomAccessStreamReference)">
+      <summary>* * 사용 되지 않습니다. * * 제공 된 스트림에서 모델을 비동기적으로 로드 합니다.</summary>
+      <deprecated type="deprecate">ILearningModelPreviewStatics 대신 ILearningModelStatics를 사용 합니다. 자세한 내용은 MSDN을 참조 하십시오.</deprecated>
+      <param name="modelStream">모델에 대 한 파일 스트림입니다.</param>
+      <returns>LearningModelPreview를 반환 합니다.</returns>
+    </member>
+    <member name="T:Windows.AI.MachineLearning.Preview.LearningModelVariableDescriptorPreview">
+      <summary>
+      </summary>
+      <deprecated type="deprecate">LearningModelVariableDescriptorPreview 대신 ILearningModelFeatureDescriptor를 사용 합니다. 자세한 내용은 MSDN을 참조 하십시오.</deprecated>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.Preview.LearningModelVariableDescriptorPreview.Description">
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.Preview.LearningModelVariableDescriptorPreview.IsRequired">
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.Preview.LearningModelVariableDescriptorPreview.ModelFeatureKind">
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.Preview.LearningModelVariableDescriptorPreview.Name">
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="T:Windows.AI.MachineLearning.Preview.MachineLearningPreviewContract">
+      <summary>
+      </summary>
+    </member>
+    <member name="T:Windows.AI.MachineLearning.Preview.MapVariableDescriptorPreview">
+      <summary>* * 사용 되지 않습니다. * *는 맵 변수 설명자 정보를 나타냅니다.</summary>
+      <deprecated type="deprecate">MapVariableDescriptorPreview 대신 MapFeatureDescriptor를 사용 합니다. 자세한 내용은 MSDN을 참조 하십시오.</deprecated>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.Preview.MapVariableDescriptorPreview.Description">
+      <summary>* * 사용 되지 않습니다. * * description map 변수를 가져옵니다.</summary>
+      <returns>지도 변수에 대 한 설명입니다.</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.Preview.MapVariableDescriptorPreview.Fields">
+      <summary>* * 사용 되지 않습니다. * * map 변수 필드의 데이터 형식을 가져옵니다.</summary>
+      <returns>Map 변수 필드의 데이터 형식입니다.</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.Preview.MapVariableDescriptorPreview.IsRequired">
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.Preview.MapVariableDescriptorPreview.KeyKind">
+      <summary>* * 사용 되지 않습니다. * * map 변수에 대 한 키의 데이터 형식을 가져옵니다.</summary>
+      <returns>키의 데이터 형식입니다.</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.Preview.MapVariableDescriptorPreview.ModelFeatureKind">
+      <summary>* * 사용 되지 않습니다. * * 변수의 데이터 형식을 가져옵니다.</summary>
+      <returns>변수의 데이터 형식입니다.</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.Preview.MapVariableDescriptorPreview.Name">
+      <summary>* * 사용 되지 않습니다. * * map 변수의 이름을 가져옵니다.</summary>
+      <returns>지도 변수의 이름입니다. 이는 모델의 모든 변수에 대해 고유 해야 합니다.</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.Preview.MapVariableDescriptorPreview.ValidIntegerKeys">
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.Preview.MapVariableDescriptorPreview.ValidStringKeys">
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="T:Windows.AI.MachineLearning.Preview.SequenceVariableDescriptorPreview">
+      <summary>* * 사용 되지 않습니다. * * 시퀀스 변수의 설명자 정보를 나타냅니다.</summary>
+      <deprecated type="deprecate">SequenceVariableDescriptorPreview 대신 SequenceFeatureDescriptor를 사용 합니다. 자세한 내용은 MSDN을 참조 하십시오.</deprecated>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.Preview.SequenceVariableDescriptorPreview.Description">
+      <summary>* * 사용 되지 않습니다. * * 시퀀스 변수에 대 한 설명을 가져옵니다.</summary>
+      <returns>시퀀스 변수에 대 한 설명입니다.</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.Preview.SequenceVariableDescriptorPreview.ElementType">
+      <summary>* * 사용 되지 않습니다. * * 시퀀스 변수의 형식을 가져옵니다.</summary>
+      <returns>시퀀스 변수의 형식입니다.</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.Preview.SequenceVariableDescriptorPreview.IsRequired">
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.Preview.SequenceVariableDescriptorPreview.ModelFeatureKind">
+      <summary>* * 사용 되지 않습니다. * * 변수의 데이터 형식을 가져옵니다.</summary>
+      <returns>변수의 데이터 형식입니다.</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.Preview.SequenceVariableDescriptorPreview.Name">
+      <summary>* * 사용 되지 않습니다. * * 시퀀스 변수의 이름을 가져옵니다.</summary>
+      <returns>시퀀스 변수의 이름입니다. 이는 모델의 모든 변수에 대해 고유 해야 합니다.</returns>
+    </member>
+    <member name="T:Windows.AI.MachineLearning.Preview.TensorVariableDescriptorPreview">
+      <summary>* * 사용 되지 않습니다. * * 텐서 변수의 설명자 정보를 나타냅니다.</summary>
+      <deprecated type="deprecate">TensorVariableDescriptorPreview 대신 TensorFeatureDescriptor를 사용 합니다. 자세한 내용은 MSDN을 참조 하십시오.</deprecated>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.Preview.TensorVariableDescriptorPreview.DataType">
+      <summary>* * 사용 되지 않습니다. * * 텐서 데이터의 유형을 가져옵니다.</summary>
+      <returns>텐서 데이터의 형식입니다.</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.Preview.TensorVariableDescriptorPreview.Description">
+      <summary>* * 사용 되지 않습니다. * * 텐서에 대 한 설명을 가져옵니다.</summary>
+      <returns>텐서에 대 한 설명입니다.</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.Preview.TensorVariableDescriptorPreview.IsRequired">
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.Preview.TensorVariableDescriptorPreview.ModelFeatureKind">
+      <summary>* * 사용 되지 않습니다. * * 변수의 데이터 형식을 가져옵니다.</summary>
+      <returns>변수의 데이터 형식입니다.</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.Preview.TensorVariableDescriptorPreview.Name">
+      <summary>* * 사용 되지 않습니다. * * 텐서의 이름을 가져옵니다.</summary>
+      <returns>텐서의 이름입니다. 이는 모델의 모든 변수에 대해 고유 해야 합니다.</returns>
+    </member>
+    <member name="P:Windows.AI.MachineLearning.Preview.TensorVariableDescriptorPreview.Shape">
+      <summary>* * 사용 되지 않습니다. * * 텐서의 n 차원 셰이프를 가져옵니다.</summary>
+      <returns>텐서의 n 차원 셰이프입니다.</returns>
+    </member>
+  </members>
+</doc>
