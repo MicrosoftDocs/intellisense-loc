@@ -1,74 +1,74 @@
 <?xml version="1.0" encoding="utf-8"?>
 <doc>
   <assembly>
-    <name>Windows.UI.Xaml.Core.Direct.XamlDirectContract</name>
+    <name>XamlDirectContract （&amp; e）</name>
   </assembly>
   <members>
     <member name="T:Windows.UI.Xaml.Core.Direct.IXamlDirectObject">
-      <summary>表示参与 API 的 XamlDirect 集的主要对象类型。</summary>
+      <summary>表示参与 XamlDirect Api 集的主要对象类型。</summary>
     </member>
     <member name="T:Windows.UI.Xaml.Core.Direct.XamlDirect">
-      <summary>表示所有 XamlDirect API 的基类。 所有 XamlDirect API 都是此类的实例方法。</summary>
+      <summary>表示所有 XamlDirect Api 的基类。所有 XamlDirect Api 都是此类的实例方法。</summary>
     </member>
     <member name="M:Windows.UI.Xaml.Core.Direct.XamlDirect.AddEventHandler(Windows.UI.Xaml.Core.Direct.IXamlDirectObject,Windows.UI.Xaml.Core.Direct.XamlEventIndex,System.Object)">
-      <summary>使用 XamlEventIndex 为指定事件添加指定事件处理程序，并将该处理程序添加到当前 IXamlDirectObject 的处理程序集合中。</summary>
+      <summary>使用 XamlEventIndex 为指定的事件添加指定的事件处理程序，并将该处理程序添加到当前 IXamlDirectObject 上的处理程序集合。</summary>
       <param name="xamlDirectObject">对当前 IXamlDirectObject 的引用。</param>
-      <param name="eventIndex">通过 XamlEventIndex 枚举指定的要处理事件的标识符。</param>
-      <param name="handler">对指定处理程序实现的引用。</param>
+      <param name="eventIndex">要通过 XamlEventIndex 枚举指定的事件的标识符。</param>
+      <param name="handler">对指定的处理程序实现的引用。</param>
     </member>
     <member name="M:Windows.UI.Xaml.Core.Direct.XamlDirect.AddEventHandler(Windows.UI.Xaml.Core.Direct.IXamlDirectObject,Windows.UI.Xaml.Core.Direct.XamlEventIndex,System.Object,System.Boolean)">
-      <summary>使用 XamlEventIndex 为指定事件添加指定事件处理程序，并将该处理程序添加到当前 IXamlDirectObject 的处理程序集合中。 如果将 *handledEventsToo* 指定为 true，则即使在其他位置处理事件，也将调用提供的处理程序。</summary>
+      <summary>使用 XamlEventIndex 为指定的事件添加指定的事件处理程序，并将该处理程序添加到当前 IXamlDirectObject 上的处理程序集合。将 * handledEventsToo * 指定为 true，以便调用所提供的处理程序，即使在其他位置处理了该事件也是如此。</summary>
       <param name="xamlDirectObject">对当前 IXamlDirectObject 的引用。</param>
-      <param name="eventIndex">通过 XamlEventIndex 枚举指定的要处理事件的标识符。</param>
-      <param name="handler">对指定处理程序实现的引用。</param>
-      <param name="handledEventsToo">若为 **true**，将注册处理程序，从而即使在该路由事件在其事件数据中标记为已处理时也会调用该处理程序。</param>
+      <param name="eventIndex">要通过 XamlEventIndex 枚举指定的事件的标识符。</param>
+      <param name="handler">对指定的处理程序实现的引用。</param>
+      <param name="handledEventsToo">* * true * * 用于注册处理程序，以便即使在其事件数据中将路由事件标记为已处理，也会调用该处理程序。</param>
     </member>
     <member name="M:Windows.UI.Xaml.Core.Direct.XamlDirect.AddToCollection(Windows.UI.Xaml.Core.Direct.IXamlDirectObject,Windows.UI.Xaml.Core.Direct.IXamlDirectObject)">
-      <summary>向指定的 IXamlDirectObject 集合添加值。</summary>
+      <summary>向指定的 IXamlDirectObject 集合添加一个值。</summary>
       <param name="xamlDirectObject">引用特定的 IXamlDirectObject 集合。</param>
-      <param name="value">引用要添加到集合中的 IXamlDirectObject 值。</param>
+      <param name="value">引用要添加到集合的 IXamlDirectObject 值。</param>
     </member>
     <member name="M:Windows.UI.Xaml.Core.Direct.XamlDirect.ClearCollection(Windows.UI.Xaml.Core.Direct.IXamlDirectObject)">
       <summary>删除指定 IXamlDirectObject 集合中的所有项。</summary>
       <param name="xamlDirectObject">引用特定的 IXamlDirectObject 集合。</param>
     </member>
     <member name="M:Windows.UI.Xaml.Core.Direct.XamlDirect.ClearProperty(Windows.UI.Xaml.Core.Direct.IXamlDirectObject,Windows.UI.Xaml.Core.Direct.XamlPropertyIndex)">
-      <summary>清除给定 IXamlDirectObject 上的指定属性的值。</summary>
+      <summary>清除给定 IXamlDirectObject 上指定属性的值。</summary>
       <param name="xamlDirectObject">对特定 IXamlDirectObject 的引用。</param>
-      <param name="propertyIndex">对要从 XamlPropertyIndex 枚举中的受支持属性列表中清除的属性的引用。</param>
+      <param name="propertyIndex">要从 XamlPropertyIndex 枚举中支持的属性列表中清除的属性的引用。</param>
     </member>
     <member name="M:Windows.UI.Xaml.Core.Direct.XamlDirect.CreateInstance(Windows.UI.Xaml.Core.Direct.XamlTypeIndex)">
-      <summary>创建 XamlTypeIndex 参数指定的类型的 IXamlDirectObject 实例。</summary>
-      <param name="typeIndex">从在 XamlTypeIndex 枚举中列出的受支持类型集中引用特定 XAML 类型。</param>
+      <summary>创建由 XamlTypeIndex 参数指定的类型的 IXamlDirectObject 实例。</summary>
+      <param name="typeIndex">引用 XamlTypeIndex 枚举中列出的一组受支持类型中的特定 XAML 类型。</param>
       <returns>返回 IXamlDirectObject 实例。</returns>
     </member>
     <member name="M:Windows.UI.Xaml.Core.Direct.XamlDirect.GetBooleanProperty(Windows.UI.Xaml.Core.Direct.IXamlDirectObject,Windows.UI.Xaml.Core.Direct.XamlPropertyIndex)">
       <summary>获取特定 IXamlDirectObject 的 _Boolean_ 属性的值。</summary>
       <param name="xamlDirectObject">对特定 IXamlDirectObject 的引用。</param>
-      <param name="propertyIndex">对要从 XamlPropertyIndex 枚举中的受支持属性列表中获取值的 _Boolean_ 属性的引用。</param>
+      <param name="propertyIndex">对 _Boolean_ 属性的引用，用于从 XamlPropertyIndex 枚举中支持的属性列表中获取的值。</param>
       <returns>指定属性的 _Boolean_ 值。</returns>
     </member>
     <member name="M:Windows.UI.Xaml.Core.Direct.XamlDirect.GetCollectionCount(Windows.UI.Xaml.Core.Direct.IXamlDirectObject)">
-      <summary>返回指定 IXamlDirectObject 集合中的项计数。</summary>
+      <summary>返回指定 IXamlDirectObject 集合中的项的计数。</summary>
       <param name="xamlDirectObject">引用特定的 IXamlDirectObject 集合。</param>
-      <returns>项计数。</returns>
+      <returns>项的计数。</returns>
     </member>
     <member name="M:Windows.UI.Xaml.Core.Direct.XamlDirect.GetColorProperty(Windows.UI.Xaml.Core.Direct.IXamlDirectObject,Windows.UI.Xaml.Core.Direct.XamlPropertyIndex)">
-      <summary>获取特定 IXamlDirectObject 的 Color 属性的值。</summary>
+      <summary>获取特定 IXamlDirectObject 的颜色属性的值。</summary>
       <param name="xamlDirectObject">对特定 IXamlDirectObject 的引用。</param>
-      <param name="propertyIndex">对要从 XamlPropertyIndex 枚举中的受支持属性列表中获取值的 Color 属性的引用。</param>
-      <returns>指定属性的 Color 值。</returns>
+      <param name="propertyIndex">对从 XamlPropertyIndex 枚举中支持的属性列表中的值获取颜色属性的引用。</param>
+      <returns>指定属性的颜色值。</returns>
     </member>
     <member name="M:Windows.UI.Xaml.Core.Direct.XamlDirect.GetCornerRadiusProperty(Windows.UI.Xaml.Core.Direct.IXamlDirectObject,Windows.UI.Xaml.Core.Direct.XamlPropertyIndex)">
       <summary>获取特定 IXamlDirectObject 的 CornerRadius 属性的值。</summary>
       <param name="xamlDirectObject">对特定 IXamlDirectObject 的引用。</param>
-      <param name="propertyIndex">对要从 XamlPropertyIndex 枚举中的受支持属性列表中获取值的 CornerRadius 属性的引用。</param>
+      <param name="propertyIndex">对 CornerRadius 属性的引用，用于从 XamlPropertyIndex 枚举中支持的属性列表中获取的值。</param>
       <returns>指定属性的 CornerRadius 值。</returns>
     </member>
     <member name="M:Windows.UI.Xaml.Core.Direct.XamlDirect.GetDateTimeProperty(Windows.UI.Xaml.Core.Direct.IXamlDirectObject,Windows.UI.Xaml.Core.Direct.XamlPropertyIndex)">
       <summary>获取特定 IXamlDirectObject 的 _DateTimeOffset_ 属性的值。</summary>
       <param name="xamlDirectObject">对特定 IXamlDirectObject 的引用。</param>
-      <param name="propertyIndex">对要从 XamlPropertyIndex 枚举中的受支持属性列表中获取值的 _DateTimeOffset_ 属性的引用。</param>
+      <param name="propertyIndex">对 _DateTimeOffset_ 属性的引用，用于从 XamlPropertyIndex 枚举中支持的属性列表中获取的值。</param>
       <returns>指定属性的 _DateTimeOffset_ 值。</returns>
     </member>
     <member name="M:Windows.UI.Xaml.Core.Direct.XamlDirect.GetDefault">
@@ -78,90 +78,90 @@
     <member name="M:Windows.UI.Xaml.Core.Direct.XamlDirect.GetDoubleProperty(Windows.UI.Xaml.Core.Direct.IXamlDirectObject,Windows.UI.Xaml.Core.Direct.XamlPropertyIndex)">
       <summary>获取特定 IXamlDirectObject 的 _Double_ 属性的值。</summary>
       <param name="xamlDirectObject">对特定 IXamlDirectObject 的引用。</param>
-      <param name="propertyIndex">对要从 XamlPropertyIndex 枚举中的受支持属性列表中获取值的 _Double_ 属性的引用。</param>
+      <param name="propertyIndex">对 _Double_ 属性的引用，用于从 XamlPropertyIndex 枚举中支持的属性列表中获取的值。</param>
       <returns>指定属性的 _Double_ 值。</returns>
     </member>
     <member name="M:Windows.UI.Xaml.Core.Direct.XamlDirect.GetDurationProperty(Windows.UI.Xaml.Core.Direct.IXamlDirectObject,Windows.UI.Xaml.Core.Direct.XamlPropertyIndex)">
       <summary>获取特定 IXamlDirectObject 的 _Duration_ 属性的值。</summary>
       <param name="xamlDirectObject">对特定 IXamlDirectObject 的引用。</param>
-      <param name="propertyIndex">对要从 XamlPropertyIndex 枚举中的受支持属性列表中获取值的 _Duration_ 属性的引用。</param>
+      <param name="propertyIndex">对 _Duration_ 属性的引用，用于从 XamlPropertyIndex 枚举中支持的属性列表中获取的值。</param>
       <returns>指定属性的 _Duration_ 值。</returns>
     </member>
     <member name="M:Windows.UI.Xaml.Core.Direct.XamlDirect.GetEnumProperty(Windows.UI.Xaml.Core.Direct.IXamlDirectObject,Windows.UI.Xaml.Core.Direct.XamlPropertyIndex)">
       <summary>获取特定 IXamlDirectObject 的 _Enum_ 属性的值。</summary>
       <param name="xamlDirectObject">对特定 IXamlDirectObject 的引用。</param>
-      <param name="propertyIndex">对要从 XamlPropertyIndex 枚举中的受支持属性列表中获取值的 _Enum_ 属性的引用。</param>
-      <returns>可以转换为所需的 _Enum_ 类型的指定属性的 _UInt32_ 值。</returns>
+      <param name="propertyIndex">对 _Enum_ 属性的引用，用于从 XamlPropertyIndex 枚举中支持的属性列表中获取的值。</param>
+      <returns>可强制转换为所需的 _Enum_ 类型的指定属性的 _UInt32_ 值。</returns>
     </member>
     <member name="M:Windows.UI.Xaml.Core.Direct.XamlDirect.GetGridLengthProperty(Windows.UI.Xaml.Core.Direct.IXamlDirectObject,Windows.UI.Xaml.Core.Direct.XamlPropertyIndex)">
       <summary>获取特定 IXamlDirectObject 的 GridLength 属性的值。</summary>
       <param name="xamlDirectObject">对特定 IXamlDirectObject 的引用。</param>
-      <param name="propertyIndex">对要从 XamlPropertyIndex 枚举中的受支持属性列表中获取值的 GridLength 属性的引用。</param>
+      <param name="propertyIndex">对 GridLength 属性的引用，用于从 XamlPropertyIndex 枚举中支持的属性列表中获取的值。</param>
       <returns>指定属性的 GridLength 值。</returns>
     </member>
     <member name="M:Windows.UI.Xaml.Core.Direct.XamlDirect.GetInt32Property(Windows.UI.Xaml.Core.Direct.IXamlDirectObject,Windows.UI.Xaml.Core.Direct.XamlPropertyIndex)">
       <summary>获取特定 IXamlDirectObject 的 _Int32_ 属性的值。</summary>
       <param name="xamlDirectObject">对特定 IXamlDirectObject 的引用。</param>
-      <param name="propertyIndex">对要从 XamlPropertyIndex 枚举中的受支持属性列表中获取值的 _Int32_ 属性的引用。</param>
+      <param name="propertyIndex">对 _Int32_ 属性的引用，用于从 XamlPropertyIndex 枚举中支持的属性列表中获取的值。</param>
       <returns>指定属性的 _Int32_ 值。</returns>
     </member>
     <member name="M:Windows.UI.Xaml.Core.Direct.XamlDirect.GetMatrix3DProperty(Windows.UI.Xaml.Core.Direct.IXamlDirectObject,Windows.UI.Xaml.Core.Direct.XamlPropertyIndex)">
       <summary>获取特定 IXamlDirectObject 的 Matrix3D 属性的值。</summary>
       <param name="xamlDirectObject">对特定 IXamlDirectObject 的引用。</param>
-      <param name="propertyIndex">对要从 XamlPropertyIndex 枚举中的受支持属性列表中获取值的 Matrix3D 属性的引用。</param>
+      <param name="propertyIndex">对 Matrix3D 属性的引用，用于从 XamlPropertyIndex 枚举中支持的属性列表中获取的值。</param>
       <returns>指定属性的 Matrix3D 值。</returns>
     </member>
     <member name="M:Windows.UI.Xaml.Core.Direct.XamlDirect.GetMatrixProperty(Windows.UI.Xaml.Core.Direct.IXamlDirectObject,Windows.UI.Xaml.Core.Direct.XamlPropertyIndex)">
-      <summary>获取特定 IXamlDirectObject 的 Matrix 属性的值。</summary>
+      <summary>获取特定 IXamlDirectObject 的矩阵属性的值。</summary>
       <param name="xamlDirectObject">对特定 IXamlDirectObject 的引用。</param>
-      <param name="propertyIndex">对要从 XamlPropertyIndex 枚举中的受支持属性列表中获取值的 Matrix 属性的引用。</param>
-      <returns>指定属性的 Matrix 值。</returns>
+      <param name="propertyIndex">对要从 XamlPropertyIndex 枚举中支持的属性列表获取其值的 Matrix 属性的引用。</param>
+      <returns>指定属性的矩阵值。</returns>
     </member>
     <member name="M:Windows.UI.Xaml.Core.Direct.XamlDirect.GetObject(Windows.UI.Xaml.Core.Direct.IXamlDirectObject)">
-      <summary>获取（和在必要时创建）作为指定 IXamlDirectObject 的完整 XAML 类型的实例。</summary>
-      <param name="xamlDirectObject">引用特定 IXamlDirectObject。</param>
-      <returns>返回完整 XAML 类型的实例（通常但不总是 DependencyObject）。</returns>
+      <summary>获取（并在必要时创建）作为指定 IXamlDirectObject 的完整 XAML 类型的实例。</summary>
+      <param name="xamlDirectObject">引用特定的 IXamlDirectObject。</param>
+      <returns>返回完整 XAML 类型的实例（通常为，但不总是 System.windows.dependencyobject&gt;）。</returns>
     </member>
     <member name="M:Windows.UI.Xaml.Core.Direct.XamlDirect.GetObjectProperty(Windows.UI.Xaml.Core.Direct.IXamlDirectObject,Windows.UI.Xaml.Core.Direct.XamlPropertyIndex)">
       <summary>获取特定 IXamlDirectObject 的 _object_ 属性的值。</summary>
       <param name="xamlDirectObject">对特定 IXamlDirectObject 的引用。</param>
-      <param name="propertyIndex">对要从 XamlPropertyIndex 枚举中的受支持属性列表中获取值的 _object_ 属性的引用。</param>
+      <param name="propertyIndex">对 _object_ 属性的引用，用于从 XamlPropertyIndex 枚举中支持的属性列表中获取的值。</param>
       <returns>指定属性的 _object_ 值。</returns>
     </member>
     <member name="M:Windows.UI.Xaml.Core.Direct.XamlDirect.GetPointProperty(Windows.UI.Xaml.Core.Direct.IXamlDirectObject,Windows.UI.Xaml.Core.Direct.XamlPropertyIndex)">
-      <summary>获取特定 IXamlDirectObject 的 Point 属性的值。</summary>
+      <summary>获取特定 IXamlDirectObject 的点属性的值。</summary>
       <param name="xamlDirectObject">对特定 IXamlDirectObject 的引用。</param>
-      <param name="propertyIndex">对要从 XamlPropertyIndex 枚举中的受支持属性列表中获取值的 Point 属性的引用。</param>
-      <returns>指定属性的 Point 值。</returns>
+      <param name="propertyIndex">对从 XamlPropertyIndex 枚举中支持的属性列表获取其值的 Point 属性的引用。</param>
+      <returns>指定属性的点值。</returns>
     </member>
     <member name="M:Windows.UI.Xaml.Core.Direct.XamlDirect.GetRectProperty(Windows.UI.Xaml.Core.Direct.IXamlDirectObject,Windows.UI.Xaml.Core.Direct.XamlPropertyIndex)">
       <summary>获取特定 IXamlDirectObject 的 Rect 属性的值。</summary>
       <param name="xamlDirectObject">对特定 IXamlDirectObject 的引用。</param>
-      <param name="propertyIndex">对要从 XamlPropertyIndex 枚举中的受支持属性列表中获取值的 Rect 属性的引用。</param>
+      <param name="propertyIndex">要从 XamlPropertyIndex 枚举中支持的属性列表中获取的值的 Rect 属性的引用。</param>
       <returns>指定属性的 Rect 值。</returns>
     </member>
     <member name="M:Windows.UI.Xaml.Core.Direct.XamlDirect.GetSizeProperty(Windows.UI.Xaml.Core.Direct.IXamlDirectObject,Windows.UI.Xaml.Core.Direct.XamlPropertyIndex)">
-      <summary>获取特定 IXamlDirectObject 的 Size 属性的值。</summary>
+      <summary>获取特定 IXamlDirectObject 的大小属性的值。</summary>
       <param name="xamlDirectObject">对特定 IXamlDirectObject 的引用。</param>
-      <param name="propertyIndex">对要从 XamlPropertyIndex 枚举中的受支持属性列表中获取值的 Size 属性的引用。</param>
-      <returns>指定属性的 Size 值。</returns>
+      <param name="propertyIndex">对要从 XamlPropertyIndex 枚举中支持的属性列表获取其值的 Size 属性的引用。</param>
+      <returns>指定属性的大小值。</returns>
     </member>
     <member name="M:Windows.UI.Xaml.Core.Direct.XamlDirect.GetStringProperty(Windows.UI.Xaml.Core.Direct.IXamlDirectObject,Windows.UI.Xaml.Core.Direct.XamlPropertyIndex)">
       <summary>获取特定 IXamlDirectObject 的 _string_ 属性的值。</summary>
       <param name="xamlDirectObject">对特定 IXamlDirectObject 的引用。</param>
-      <param name="propertyIndex">对要从 XamlPropertyIndex 枚举中的受支持属性列表中获取值的 _string_ 属性的引用。</param>
+      <param name="propertyIndex">对 _string_ 属性的引用，用于从 XamlPropertyIndex 枚举中支持的属性列表中获取的值。</param>
       <returns>指定属性的 _string_ 值。</returns>
     </member>
     <member name="M:Windows.UI.Xaml.Core.Direct.XamlDirect.GetThicknessProperty(Windows.UI.Xaml.Core.Direct.IXamlDirectObject,Windows.UI.Xaml.Core.Direct.XamlPropertyIndex)">
-      <summary>获取特定 IXamlDirectObject 的 Thickness 属性的值。</summary>
+      <summary>获取特定 IXamlDirectObject 的宽窄属性的值。</summary>
       <param name="xamlDirectObject">对特定 IXamlDirectObject 的引用。</param>
-      <param name="propertyIndex">对要从 XamlPropertyIndex 枚举中的受支持属性列表中获取值的 Thickness 属性的引用。</param>
-      <returns>指定属性的 Thickness 值。</returns>
+      <param name="propertyIndex">对要从 XamlPropertyIndex 枚举中支持的属性列表获取其值的粗细属性的引用。</param>
+      <returns>指定属性的厚度值。</returns>
     </member>
     <member name="M:Windows.UI.Xaml.Core.Direct.XamlDirect.GetTimeSpanProperty(Windows.UI.Xaml.Core.Direct.IXamlDirectObject,Windows.UI.Xaml.Core.Direct.XamlPropertyIndex)">
       <summary>获取特定 IXamlDirectObject 的 _TimeSpan_ 属性的值。</summary>
       <param name="xamlDirectObject">对特定 IXamlDirectObject 的引用。</param>
-      <param name="propertyIndex">对要从 XamlPropertyIndex 枚举中的受支持属性列表中获取值的 _TimeSpan_ 属性的引用。</param>
+      <param name="propertyIndex">对 _TimeSpan_ 属性的引用，用于从 XamlPropertyIndex 枚举中支持的属性列表中获取的值。</param>
       <returns>指定属性的 _TimeSpan_ 值。</returns>
     </member>
     <member name="M:Windows.UI.Xaml.Core.Direct.XamlDirect.GetXamlDirectObject(System.Object)">
@@ -171,160 +171,160 @@
       <returns>返回 IXamlDirectObject 实例。</returns>
     </member>
     <member name="M:Windows.UI.Xaml.Core.Direct.XamlDirect.GetXamlDirectObjectFromCollectionAt(Windows.UI.Xaml.Core.Direct.IXamlDirectObject,System.UInt32)">
-      <summary>返回指定 IXamlDirectObject 集合中的指定索引处的 IXamlDirectObject 项。</summary>
+      <summary>从指定的 IXamlDirectObject 集合中返回指定索引处的 IXamlDirectObject 项。</summary>
       <param name="xamlDirectObject">引用特定的 IXamlDirectObject 集合。</param>
-      <param name="index">引用要获取的项集合中的索引。</param>
-      <returns>返回集合的指定索引处的 IXamlDirectObject 项。</returns>
+      <param name="index">引用要获取的项的集合中的索引。</param>
+      <returns>返回集合中指定索引处的 IXamlDirectObject 项。</returns>
     </member>
     <member name="M:Windows.UI.Xaml.Core.Direct.XamlDirect.GetXamlDirectObjectProperty(Windows.UI.Xaml.Core.Direct.IXamlDirectObject,Windows.UI.Xaml.Core.Direct.XamlPropertyIndex)">
       <summary>获取特定 IXamlDirectObject 的 IXamlDirectObject 属性的值。</summary>
       <param name="xamlDirectObject">对特定 IXamlDirectObject 的引用。</param>
-      <param name="propertyIndex">对要从 XamlPropertyIndex 枚举中的受支持属性列表中获取值的 IXamlDirectObject 属性的引用。</param>
+      <param name="propertyIndex">对 IXamlDirectObject 属性的引用，用于从 XamlPropertyIndex 枚举中支持的属性列表中获取的值。</param>
       <returns>指定属性的 IXamlDirectObject 值。</returns>
     </member>
     <member name="M:Windows.UI.Xaml.Core.Direct.XamlDirect.InsertIntoCollectionAt(Windows.UI.Xaml.Core.Direct.IXamlDirectObject,System.UInt32,Windows.UI.Xaml.Core.Direct.IXamlDirectObject)">
-      <summary>将值插入到指定 IXamlDirectObject 集合中的指定索引处。</summary>
+      <summary>将值插入到指定的 IXamlDirectObject 集合中的指定索引处。</summary>
       <param name="xamlDirectObject">引用特定的 IXamlDirectObject 集合。</param>
-      <param name="index">引用必须插入指定值的集合中的索引。</param>
-      <param name="value">引用要添加到集合中的 IXamlDirectObject 值。</param>
+      <param name="index">引用集合中必须插入指定值的索引。</param>
+      <param name="value">引用要添加到集合的 IXamlDirectObject 值。</param>
     </member>
     <member name="M:Windows.UI.Xaml.Core.Direct.XamlDirect.RemoveEventHandler(Windows.UI.Xaml.Core.Direct.IXamlDirectObject,Windows.UI.Xaml.Core.Direct.XamlEventIndex,System.Object)">
-      <summary>删除此 IXamlDirectObject 中的指定事件处理程序。 通常，由 XamlDirect.AddEventHandler 添加相关的处理程序。</summary>
+      <summary>从此 IXamlDirectObject 中移除指定的事件处理程序。通常，相关处理程序由 XamlDirect 添加。 AddEventHandler。</summary>
       <param name="xamlDirectObject">对当前 IXamlDirectObject 的引用。</param>
-      <param name="eventIndex">通过 XamlEventIndex 枚举指定的删除句柄事件的标识符。</param>
-      <param name="handler">对指定处理程序实现的引用。</param>
+      <param name="eventIndex">事件的标识符，用于删除通过 XamlEventIndex 枚举指定的句柄。</param>
+      <param name="handler">对指定的处理程序实现的引用。</param>
     </member>
     <member name="M:Windows.UI.Xaml.Core.Direct.XamlDirect.RemoveFromCollection(Windows.UI.Xaml.Core.Direct.IXamlDirectObject,Windows.UI.Xaml.Core.Direct.IXamlDirectObject)">
-      <summary>尝试删除指定 IXamlDirectObject 集合中的值。</summary>
+      <summary>尝试从指定的 IXamlDirectObject 集合中删除值。</summary>
       <param name="xamlDirectObject">引用特定的 IXamlDirectObject 集合。</param>
-      <param name="value">引用要从集合中删除的 IXamlDirectObject 值。</param>
-      <returns>如果值已存在，则为 **true**。</returns>
+      <param name="value">引用要从集合中移除的 IXamlDirectObject 值。</param>
+      <returns>* * true * * 如果值存在。</returns>
     </member>
     <member name="M:Windows.UI.Xaml.Core.Direct.XamlDirect.RemoveFromCollectionAt(Windows.UI.Xaml.Core.Direct.IXamlDirectObject,System.UInt32)">
-      <summary>尝试删除 IXamlDirectObject 集合中的指定索引处的值。</summary>
+      <summary>尝试从 IXamlDirectObject 集合中删除指定索引处的值。</summary>
       <param name="xamlDirectObject">引用特定的 IXamlDirectObject 集合。</param>
-      <param name="index">引用必须删除值的集合中的索引。</param>
+      <param name="index">引用必须删除其值的集合中的索引。</param>
     </member>
     <member name="M:Windows.UI.Xaml.Core.Direct.XamlDirect.SetBooleanProperty(Windows.UI.Xaml.Core.Direct.IXamlDirectObject,Windows.UI.Xaml.Core.Direct.XamlPropertyIndex,System.Boolean)">
-      <summary>设置特定 IXamlDirectObject 的 _Boolean_ 属性的值。</summary>
+      <summary>为特定 IXamlDirectObject 设置 _Boolean_ 属性的值。</summary>
       <param name="xamlDirectObject">对特定 IXamlDirectObject 的引用。</param>
-      <param name="propertyIndex">对要从 XamlPropertyIndex 枚举中的受支持属性列表中设置值的 _Boolean_ 属性的引用。</param>
-      <param name="value">要为指定的属性设置的 _Boolean_值。</param>
+      <param name="propertyIndex">对 _Boolean_ 属性的引用，用于从 XamlPropertyIndex 枚举中支持的属性列表中设置的值。</param>
+      <param name="value">要为指定属性设置的 _Boolean_ 值。</param>
     </member>
     <member name="M:Windows.UI.Xaml.Core.Direct.XamlDirect.SetColorProperty(Windows.UI.Xaml.Core.Direct.IXamlDirectObject,Windows.UI.Xaml.Core.Direct.XamlPropertyIndex,Windows.UI.Color)">
-      <summary>设置特定 IXamlDirectObject 的 Color 属性的值。</summary>
+      <summary>为特定 IXamlDirectObject 设置颜色属性的值。</summary>
       <param name="xamlDirectObject">对特定 IXamlDirectObject 的引用。</param>
-      <param name="propertyIndex">对要从 XamlPropertyIndex 枚举中的受支持属性列表中设置值的 Color 属性的引用。</param>
-      <param name="value">要设置到指定属性的 Color 值。</param>
+      <param name="propertyIndex">对从 XamlPropertyIndex 枚举中支持的属性列表设置的值的 Color 属性的引用。</param>
+      <param name="value">要设置为指定属性的颜色值。</param>
     </member>
     <member name="M:Windows.UI.Xaml.Core.Direct.XamlDirect.SetCornerRadiusProperty(Windows.UI.Xaml.Core.Direct.IXamlDirectObject,Windows.UI.Xaml.Core.Direct.XamlPropertyIndex,Windows.UI.Xaml.CornerRadius)">
-      <summary>设置特定 IXamlDirectObject 的 CornerRadius 属性的值。</summary>
+      <summary>为特定 IXamlDirectObject 设置 CornerRadius 属性的值。</summary>
       <param name="xamlDirectObject">对特定 IXamlDirectObject 的引用。</param>
-      <param name="propertyIndex">对要从 XamlPropertyIndex 枚举中的受支持属性列表中设置值的 CornerRadius 属性的引用。</param>
-      <param name="value">要设置到指定属性的 CornerRadius 值。</param>
+      <param name="propertyIndex">对 CornerRadius 属性的引用，用于从 XamlPropertyIndex 枚举中支持的属性列表中设置的值。</param>
+      <param name="value">要设置为指定属性的 CornerRadius 值。</param>
     </member>
     <member name="M:Windows.UI.Xaml.Core.Direct.XamlDirect.SetDateTimeProperty(Windows.UI.Xaml.Core.Direct.IXamlDirectObject,Windows.UI.Xaml.Core.Direct.XamlPropertyIndex,Windows.Foundation.DateTime)">
-      <summary>设置特定 IXamlDirectObject 的 _DateTimeOffset_ 属性的值。</summary>
+      <summary>为特定 IXamlDirectObject 设置 _DateTimeOffset_ 属性的值。</summary>
       <param name="xamlDirectObject">对特定 IXamlDirectObject 的引用。</param>
-      <param name="propertyIndex">对要从 XamlPropertyIndex 枚举中的受支持属性列表中设置值的 _DateTimeOffset_ 属性的引用。</param>
-      <param name="value">要设置到指定属性的 _DateTimeOffset_ 值。</param>
+      <param name="propertyIndex">对 _DateTimeOffset_ 属性的引用，用于从 XamlPropertyIndex 枚举中支持的属性列表中设置的值。</param>
+      <param name="value">要设置为指定属性的 _DateTimeOffset_ 值。</param>
     </member>
     <member name="M:Windows.UI.Xaml.Core.Direct.XamlDirect.SetDoubleProperty(Windows.UI.Xaml.Core.Direct.IXamlDirectObject,Windows.UI.Xaml.Core.Direct.XamlPropertyIndex,System.Double)">
-      <summary>设置特定 IXamlDirectObject 的 _Double_ 属性的值。</summary>
+      <summary>为特定 IXamlDirectObject 设置 _Double_ 属性的值。</summary>
       <param name="xamlDirectObject">对特定 IXamlDirectObject 的引用。</param>
-      <param name="propertyIndex">对要从 XamlPropertyIndex 枚举中的受支持属性列表中设置值的 _Double_ 属性的引用。</param>
-      <param name="value">要设置到指定属性的 _Double_ 值。</param>
+      <param name="propertyIndex">对 _Double_ 属性的引用，用于从 XamlPropertyIndex 枚举中支持的属性列表中设置的值。</param>
+      <param name="value">要设置为指定属性的 _Double_ 值。</param>
     </member>
     <member name="M:Windows.UI.Xaml.Core.Direct.XamlDirect.SetDurationProperty(Windows.UI.Xaml.Core.Direct.IXamlDirectObject,Windows.UI.Xaml.Core.Direct.XamlPropertyIndex,Windows.UI.Xaml.Duration)">
-      <summary>设置特定 IXamlDirectObject 的 _Duration_ 属性的值。</summary>
+      <summary>为特定 IXamlDirectObject 设置 _Duration_ 属性的值。</summary>
       <param name="xamlDirectObject">对特定 IXamlDirectObject 的引用。</param>
-      <param name="propertyIndex">对要从 XamlPropertyIndex 枚举中的受支持属性列表中设置值的 _Duration_ 属性的引用。</param>
-      <param name="value">要设置到指定属性的 _Duration_ 值。</param>
+      <param name="propertyIndex">对 _Duration_ 属性的引用，用于从 XamlPropertyIndex 枚举中支持的属性列表中设置的值。</param>
+      <param name="value">要设置为指定属性的 _Duration_ 值。</param>
     </member>
     <member name="M:Windows.UI.Xaml.Core.Direct.XamlDirect.SetEnumProperty(Windows.UI.Xaml.Core.Direct.IXamlDirectObject,Windows.UI.Xaml.Core.Direct.XamlPropertyIndex,System.UInt32)">
-      <summary>设置特定 IXamlDirectObject 的 _Enum_ 属性的值。</summary>
+      <summary>为特定 IXamlDirectObject 设置 _Enum_ 属性的值。</summary>
       <param name="xamlDirectObject">对特定 IXamlDirectObject 的引用。</param>
-      <param name="propertyIndex">对要从 XamlPropertyIndex 枚举中的受支持属性列表中设置值的 _Enum_ 属性的引用。</param>
-      <param name="value">将所需的 _Enum_ 值转换为要设置到指定属性的 _UInt32_。</param>
+      <param name="propertyIndex">对 _Enum_ 属性的引用，用于从 XamlPropertyIndex 枚举中支持的属性列表中设置的值。</param>
+      <param name="value">将所需的 _Enum_ 值强制转换为 _UInt32_，以将设置为指定的属性。</param>
     </member>
     <member name="M:Windows.UI.Xaml.Core.Direct.XamlDirect.SetGridLengthProperty(Windows.UI.Xaml.Core.Direct.IXamlDirectObject,Windows.UI.Xaml.Core.Direct.XamlPropertyIndex,Windows.UI.Xaml.GridLength)">
-      <summary>设置特定 IXamlDirectObject 的 GridLength 属性的值。</summary>
+      <summary>为特定 IXamlDirectObject 设置 GridLength 属性的值。</summary>
       <param name="xamlDirectObject">对特定 IXamlDirectObject 的引用。</param>
-      <param name="propertyIndex">对要从 XamlPropertyIndex 枚举中的受支持属性列表中设置值的 GridLength 属性的引用。</param>
-      <param name="value">要设置到指定属性的 GridLength 值。</param>
+      <param name="propertyIndex">对 GridLength 属性的引用，用于从 XamlPropertyIndex 枚举中支持的属性列表中设置的值。</param>
+      <param name="value">要设置为指定属性的 GridLength 值。</param>
     </member>
     <member name="M:Windows.UI.Xaml.Core.Direct.XamlDirect.SetInt32Property(Windows.UI.Xaml.Core.Direct.IXamlDirectObject,Windows.UI.Xaml.Core.Direct.XamlPropertyIndex,System.Int32)">
-      <summary>设置特定 IXamlDirectObject 的 _Int32_ 属性的值。</summary>
+      <summary>为特定 IXamlDirectObject 设置 _Int32_ 属性的值。</summary>
       <param name="xamlDirectObject">对特定 IXamlDirectObject 的引用。</param>
-      <param name="propertyIndex">对要从 XamlPropertyIndex 枚举中的受支持属性列表中设置值的 _Int32_ 属性的引用。</param>
-      <param name="value">要设置到指定属性的 _Int32_ 值。</param>
+      <param name="propertyIndex">对 _Int32_ 属性的引用，用于从 XamlPropertyIndex 枚举中支持的属性列表中设置的值。</param>
+      <param name="value">要设置为指定属性的 _Int32_ 值。</param>
     </member>
     <member name="M:Windows.UI.Xaml.Core.Direct.XamlDirect.SetMatrix3DProperty(Windows.UI.Xaml.Core.Direct.IXamlDirectObject,Windows.UI.Xaml.Core.Direct.XamlPropertyIndex,Windows.UI.Xaml.Media.Media3D.Matrix3D)">
-      <summary>设置特定 IXamlDirectObject 的 Matrix3D 属性的值。</summary>
+      <summary>为特定 IXamlDirectObject 设置 Matrix3D 属性的值。</summary>
       <param name="xamlDirectObject">对特定 IXamlDirectObject 的引用。</param>
-      <param name="propertyIndex">对要从 XamlPropertyIndex 枚举中的受支持属性列表中设置值的 Matrix3D 属性的引用。</param>
-      <param name="value">要设置到指定属性的 Matrix3D 值。</param>
+      <param name="propertyIndex">对 Matrix3D 属性的引用，用于从 XamlPropertyIndex 枚举中支持的属性列表中设置的值。</param>
+      <param name="value">要设置为指定属性的 Matrix3D 值。</param>
     </member>
     <member name="M:Windows.UI.Xaml.Core.Direct.XamlDirect.SetMatrixProperty(Windows.UI.Xaml.Core.Direct.IXamlDirectObject,Windows.UI.Xaml.Core.Direct.XamlPropertyIndex,Windows.UI.Xaml.Media.Matrix)">
-      <summary>设置特定 IXamlDirectObject 的 Matrix 属性的值。</summary>
+      <summary>设置特定 IXamlDirectObject 的矩阵属性的值。</summary>
       <param name="xamlDirectObject">对特定 IXamlDirectObject 的引用。</param>
-      <param name="propertyIndex">对要从 XamlPropertyIndex 枚举中的受支持属性列表中设置值的 Matrix 属性的引用。</param>
-      <param name="value">要设置到指定属性的 Matrix 值。</param>
+      <param name="propertyIndex">对 Matrix 属性的引用，用于从 XamlPropertyIndex 枚举中支持的属性列表中设置的值。</param>
+      <param name="value">要设置为指定属性的矩阵值。</param>
     </member>
     <member name="M:Windows.UI.Xaml.Core.Direct.XamlDirect.SetObjectProperty(Windows.UI.Xaml.Core.Direct.IXamlDirectObject,Windows.UI.Xaml.Core.Direct.XamlPropertyIndex,System.Object)">
-      <summary>设置特定 IXamlDirectObject 的 _object_ 属性的值。</summary>
+      <summary>为特定 IXamlDirectObject 设置 _object_ 属性的值。</summary>
       <param name="xamlDirectObject">对特定 IXamlDirectObject 的引用。</param>
-      <param name="propertyIndex">对要从 XamlPropertyIndex 枚举中的受支持属性列表中设置值的 _object_ 属性的引用。</param>
-      <param name="value">要设置到指定属性的 _object_ 值。</param>
+      <param name="propertyIndex">对 _object_ 属性的引用，用于从 XamlPropertyIndex 枚举中支持的属性列表中设置的值。</param>
+      <param name="value">要设置为指定属性的 _object_ 值。</param>
     </member>
     <member name="M:Windows.UI.Xaml.Core.Direct.XamlDirect.SetPointProperty(Windows.UI.Xaml.Core.Direct.IXamlDirectObject,Windows.UI.Xaml.Core.Direct.XamlPropertyIndex,Windows.Foundation.Point)">
-      <summary>设置特定 IXamlDirectObject 的 Point 属性的值。</summary>
+      <summary>为特定 IXamlDirectObject 设置 Point 属性的值。</summary>
       <param name="xamlDirectObject">对特定 IXamlDirectObject 的引用。</param>
-      <param name="propertyIndex">对要从 XamlPropertyIndex 枚举中的受支持属性列表中设置值的 Point 属性的引用。</param>
-      <param name="value">要设置到指定属性的 Point 值。</param>
+      <param name="propertyIndex">对从 XamlPropertyIndex 枚举中支持的属性列表设置的值的 Point 属性的引用。</param>
+      <param name="value">要设置为指定属性的点值。</param>
     </member>
     <member name="M:Windows.UI.Xaml.Core.Direct.XamlDirect.SetRectProperty(Windows.UI.Xaml.Core.Direct.IXamlDirectObject,Windows.UI.Xaml.Core.Direct.XamlPropertyIndex,Windows.Foundation.Rect)">
-      <summary>设置特定 IXamlDirectObject 的 Rect 属性的值。</summary>
+      <summary>为特定 IXamlDirectObject 设置 Rect 属性的值。</summary>
       <param name="xamlDirectObject">对特定 IXamlDirectObject 的引用。</param>
-      <param name="propertyIndex">对要从 XamlPropertyIndex 枚举中的受支持属性列表中设置值的 Rect 属性的引用。</param>
-      <param name="value">要设置到指定属性的 Rect 值。</param>
+      <param name="propertyIndex">对从 XamlPropertyIndex 枚举中支持的属性列表设置值的 Rect 属性的引用。</param>
+      <param name="value">要设置为指定属性的 Rect 值。</param>
     </member>
     <member name="M:Windows.UI.Xaml.Core.Direct.XamlDirect.SetSizeProperty(Windows.UI.Xaml.Core.Direct.IXamlDirectObject,Windows.UI.Xaml.Core.Direct.XamlPropertyIndex,Windows.Foundation.Size)">
-      <summary>设置特定 IXamlDirectObject 的 Size 属性的值。</summary>
+      <summary>设置特定 IXamlDirectObject 的大小属性的值。</summary>
       <param name="xamlDirectObject">对特定 IXamlDirectObject 的引用。</param>
-      <param name="propertyIndex">对要从 XamlPropertyIndex 枚举中的受支持属性列表中设置值的 Size 属性的引用。</param>
-      <param name="value">要设置到指定属性的 Size 值。</param>
+      <param name="propertyIndex">对要从 XamlPropertyIndex 枚举中支持的属性列表设置值的 Size 属性的引用。</param>
+      <param name="value">要设置为指定属性的大小值。</param>
     </member>
     <member name="M:Windows.UI.Xaml.Core.Direct.XamlDirect.SetStringProperty(Windows.UI.Xaml.Core.Direct.IXamlDirectObject,Windows.UI.Xaml.Core.Direct.XamlPropertyIndex,System.String)">
-      <summary>设置特定 IXamlDirectObject 的 _string_ 属性的值。</summary>
+      <summary>为特定 IXamlDirectObject 设置 _string_ 属性的值。</summary>
       <param name="xamlDirectObject">对特定 IXamlDirectObject 的引用。</param>
-      <param name="propertyIndex">对要从 XamlPropertyIndex 枚举中的受支持属性列表中设置值的 _string_ 属性的引用。</param>
-      <param name="value">要设置到指定属性的 _string_ 值。</param>
+      <param name="propertyIndex">对 _string_ 属性的引用，用于从 XamlPropertyIndex 枚举中支持的属性列表中设置的值。</param>
+      <param name="value">要设置为指定属性的 _string_ 值。</param>
     </member>
     <member name="M:Windows.UI.Xaml.Core.Direct.XamlDirect.SetThicknessProperty(Windows.UI.Xaml.Core.Direct.IXamlDirectObject,Windows.UI.Xaml.Core.Direct.XamlPropertyIndex,Windows.UI.Xaml.Thickness)">
-      <summary>设置特定 IXamlDirectObject 的 Thickness 属性的值。</summary>
+      <summary>为特定 IXamlDirectObject 设置粗细属性的值。</summary>
       <param name="xamlDirectObject">对特定 IXamlDirectObject 的引用。</param>
-      <param name="propertyIndex">对要从 XamlPropertyIndex 枚举中的受支持属性列表中设置值的 Thickness 属性的引用。</param>
-      <param name="value">要设置到指定属性的 Thickness 值。</param>
+      <param name="propertyIndex">对 $ XamlPropertyIndex 枚举中支持的属性列表的值进行设置的粗细属性的引用。</param>
+      <param name="value">要设置为指定属性的粗细值。</param>
     </member>
     <member name="M:Windows.UI.Xaml.Core.Direct.XamlDirect.SetTimeSpanProperty(Windows.UI.Xaml.Core.Direct.IXamlDirectObject,Windows.UI.Xaml.Core.Direct.XamlPropertyIndex,Windows.Foundation.TimeSpan)">
-      <summary>设置特定 IXamlDirectObject 的 _TimeSpan_ 属性的值。</summary>
+      <summary>为特定 IXamlDirectObject 设置 _TimeSpan_ 属性的值。</summary>
       <param name="xamlDirectObject">对特定 IXamlDirectObject 的引用。</param>
-      <param name="propertyIndex">对要从 XamlPropertyIndex 枚举中的受支持属性列表中设置值的 _TimeSpan_ 属性的引用。</param>
-      <param name="value">要设置到指定属性的 _TimeSpan_ 值。</param>
+      <param name="propertyIndex">对 _TimeSpan_ 属性的引用，用于从 XamlPropertyIndex 枚举中支持的属性列表中设置的值。</param>
+      <param name="value">要设置为指定属性的 _TimeSpan_ 值。</param>
     </member>
     <member name="M:Windows.UI.Xaml.Core.Direct.XamlDirect.SetXamlDirectObjectProperty(Windows.UI.Xaml.Core.Direct.IXamlDirectObject,Windows.UI.Xaml.Core.Direct.XamlPropertyIndex,Windows.UI.Xaml.Core.Direct.IXamlDirectObject)">
-      <summary>设置特定 IXamlDirectObject 的 IXamlDirectObject 属性的值。</summary>
+      <summary>为特定 IXamlDirectObject 设置 IXamlDirectObject 属性的值。</summary>
       <param name="xamlDirectObject">对特定 IXamlDirectObject 的引用。</param>
-      <param name="propertyIndex">对要从 XamlPropertyIndex 枚举中的受支持属性列表中设置值的 IXamlDirectObject 属性的引用。</param>
-      <param name="value">要设置到指定属性的 IXamlDirectObject 值。</param>
+      <param name="propertyIndex">对 IXamlDirectObject 属性的引用，用于从 XamlPropertyIndex 枚举中支持的属性列表中设置的值。</param>
+      <param name="value">要设置为指定属性的 IXamlDirectObject 值。</param>
     </member>
     <member name="T:Windows.UI.Xaml.Core.Direct.XamlDirectContract">
       <summary>
       </summary>
     </member>
     <member name="T:Windows.UI.Xaml.Core.Direct.XamlEventIndex">
-      <summary>列出 XamlDirect 中支持的所有事件的枚举。</summary>
+      <summary>列举 XamlDirect 中所有支持的事件的枚举。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlEventIndex.AppBar_Closed">
       <summary>AppBar 类型的 _Closed_ 事件。</summary>
@@ -348,7 +348,7 @@
       <summary>AutoSuggestBox 类型的 _TextChanged_ 事件。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlEventIndex.ButtonBase_Click">
-      <summary>ButtonBase 类型的 _Click_ 事件。</summary>
+      <summary>System.windows.controls.primitives.buttonbase.click&gt; 类型的 _Click_ 事件。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlEventIndex.CalendarDatePicker_CalendarViewDayItemChanging">
       <summary>CalendarDatePicker 类型的 _CalendarViewDayItemChanging_ 事件。</summary>
@@ -381,7 +381,7 @@
       <summary>ComboBox 类型的 _DropDownOpened_ 事件。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlEventIndex.CommandBar_DynamicOverflowItemsChanging">
-      <summary>CommandBar 类型的 _DynamicOverflowItemsChanging_ 事件。</summary>
+      <summary>命令栏类型的 _DynamicOverflowItemsChanging_ 事件。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlEventIndex.ContentDialog_CloseButtonClick">
       <summary>ContentDialog 类型的 _CloseButtonClick_ 事件。</summary>
@@ -402,10 +402,10 @@
       <summary>ContentDialog 类型的 _SecondaryButtonClick_ 事件。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlEventIndex.Control_FocusDisengaged">
-      <summary>Control 类型的 _FocusDisengaged_ 事件。</summary>
+      <summary>控件类型的 _FocusDisengaged_ 事件。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlEventIndex.Control_FocusEngaged">
-      <summary>Control 类型的 _FocusEngaged_ 事件。</summary>
+      <summary>控件类型的 _FocusEngaged_ 事件。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlEventIndex.DatePicker_DateChanged">
       <summary>DatePicker 类型的 _DateChanged_ 事件。</summary>
@@ -414,16 +414,16 @@
       <summary>DatePicker 类型的 _SelectedDateChanged_ 事件。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlEventIndex.Frame_Navigated">
-      <summary>Frame 类型的 _Navigated_ 事件。</summary>
+      <summary>帧类型的 _Navigated_ 事件。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlEventIndex.Frame_Navigating">
-      <summary>Frame 类型的 _Navigating_ 事件。</summary>
+      <summary>帧类型的 _Navigating_ 事件。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlEventIndex.Frame_NavigationFailed">
-      <summary>Frame 类型的 _NavigationFailed_ 事件。</summary>
+      <summary>帧类型的 _NavigationFailed_ 事件。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlEventIndex.Frame_NavigationStopped">
-      <summary>Frame 类型的 _NavigationStopped_ 事件。</summary>
+      <summary>帧类型的 _NavigationStopped_ 事件。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlEventIndex.FrameworkElement_DataContextChanged">
       <summary>FrameworkElement 类型的 _DataContextChanged_ 事件。</summary>
@@ -435,16 +435,16 @@
       <summary>FrameworkElement 类型的 _SizeChanged_ 事件。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlEventIndex.Hub_SectionHeaderClick">
-      <summary>Hub 类型的 _SectionHeaderClick_ 事件。</summary>
+      <summary>中心类型的 _SectionHeaderClick_ 事件。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlEventIndex.Hub_SectionsInViewChanged">
-      <summary>Hub 类型的 _SectionsInViewChanged_ 事件。</summary>
+      <summary>中心类型的 _SectionsInViewChanged_ 事件。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlEventIndex.ItemsPresenter_HorizontalSnapPointsChanged">
-      <summary>ItemsPresenter 类型的 _HorizontalSnapPointsChanged_ 事件。</summary>
+      <summary>System.windows.controls.itemspresenter&gt; 类型的 _HorizontalSnapPointsChanged_ 事件。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlEventIndex.ItemsPresenter_VerticalSnapPointsChanged">
-      <summary>ItemsPresenter 类型的 _VerticalSnapPointsChanged_ 事件。</summary>
+      <summary>System.windows.controls.itemspresenter&gt; 类型的 _VerticalSnapPointsChanged_ 事件。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlEventIndex.ListViewBase_ChoosingGroupHeaderContainer">
       <summary>ListViewBase 类型的 _ChoosingGroupHeaderContainer_ 事件。</summary>
@@ -483,7 +483,7 @@
       <summary>RichEditBox 类型的 _TextChanging_ 事件。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlEventIndex.ScrollBar_Scroll">
-      <summary>ScrollBar 类型的 _Scroll_ 事件。</summary>
+      <summary>滚动条类型的 _Scroll_ 事件。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlEventIndex.ScrollViewer_AnchorRequested">
       <summary>ScrollViewer 类型的 _AnchorRequested_ 事件。</summary>
@@ -516,7 +516,7 @@
       <summary>SearchBox 类型的 _SuggestionsRequested_ 事件。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlEventIndex.Selector_SelectionChanged">
-      <summary>Selector 类型的 _SelectionChanged_ 事件。</summary>
+      <summary>选择器类型的 _SelectionChanged_ 事件。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlEventIndex.SemanticZoom_ViewChangeCompleted">
       <summary>SemanticZoom 类型的 _ViewChangeCompleted_ 事件。</summary>
@@ -528,10 +528,10 @@
       <summary>SettingsFlyout 类型的 _BackClick_ 事件。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlEventIndex.StackPanel_HorizontalSnapPointsChanged">
-      <summary>StackPanel 类型的 _HorizontalSnapPointsChanged_ 事件。</summary>
+      <summary>System.windows.controls.stackpanel&gt; 类型的 _HorizontalSnapPointsChanged_ 事件。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlEventIndex.StackPanel_VerticalSnapPointsChanged">
-      <summary>StackPanel 类型的 _VerticalSnapPointsChanged_ 事件。</summary>
+      <summary>System.windows.controls.stackpanel&gt; 类型的 _VerticalSnapPointsChanged_ 事件。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlEventIndex.Thumb_DragCompleted">
       <summary>Thumb 类型的 _DragCompleted_ 事件。</summary>
@@ -549,22 +549,22 @@
       <summary>TimePicker 类型的 _TimeChanged_ 事件。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlEventIndex.ToggleButton_Checked">
-      <summary>ToggleButton 类型的 _Checked_ 事件。</summary>
+      <summary>切换按钮类型的 _Checked_ 事件。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlEventIndex.ToggleButton_Indeterminate">
-      <summary>ToggleButton 类型的 _Indeterminate_ 事件。</summary>
+      <summary>切换按钮类型的 _Indeterminate_ 事件。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlEventIndex.ToggleButton_Unchecked">
-      <summary>ToggleButton 类型的 _Unchecked_ 事件。</summary>
+      <summary>切换按钮类型的 _Unchecked_ 事件。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlEventIndex.ToggleSwitch_Toggled">
       <summary>ToggleSwitch 类型的 _Toggled_ 事件。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlEventIndex.ToolTip_Closed">
-      <summary>ToolTip 类型的 _Closed_ 事件。</summary>
+      <summary>工具提示类型的 _Closed_ 事件。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlEventIndex.ToolTip_Opened">
-      <summary>ToolTip 类型的 _Opened_ 事件。</summary>
+      <summary>工具提示类型的 _Opened_ 事件。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlEventIndex.UIElement_BringIntoViewRequested">
       <summary>UIElement 类型的 _BringIntoViewRequested_ 事件。</summary>
@@ -681,67 +681,67 @@
       <summary>VirtualizingStackPanel 类型的 _CleanUpVirtualizedItemEvent_ 事件。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlEventIndex.WebView_ContainsFullScreenElementChanged">
-      <summary>WebView 类型的 _ContainsFullScreenElementChanged_ 事件。</summary>
+      <summary>Web 视图类型的 _ContainsFullScreenElementChanged_ 事件。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlEventIndex.WebView_ContentLoading">
-      <summary>WebView 类型的 _ContentLoading_ 事件。</summary>
+      <summary>Web 视图类型的 _ContentLoading_ 事件。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlEventIndex.WebView_DOMContentLoaded">
-      <summary>WebView 类型的 _DOMContentLoaded_ 事件。</summary>
+      <summary>Web 视图类型的 _DOMContentLoaded_ 事件。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlEventIndex.WebView_FrameContentLoading">
-      <summary>WebView 类型的 _FrameContentLoading_ 事件。</summary>
+      <summary>Web 视图类型的 _FrameContentLoading_ 事件。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlEventIndex.WebView_FrameDOMContentLoaded">
-      <summary>WebView 类型的 _FrameDOMContentLoaded_ 事件。</summary>
+      <summary>Web 视图类型的 _FrameDOMContentLoaded_ 事件。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlEventIndex.WebView_FrameNavigationCompleted">
-      <summary>WebView 类型的 _FrameNavigationCompleted_ 事件。</summary>
+      <summary>Web 视图类型的 _FrameNavigationCompleted_ 事件。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlEventIndex.WebView_FrameNavigationStarting">
-      <summary>WebView 类型的 _FrameNavigationStarting_ 事件。</summary>
+      <summary>Web 视图类型的 _FrameNavigationStarting_ 事件。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlEventIndex.WebView_LoadCompleted">
-      <summary>WebView 类型的 _LoadCompleted_ 事件。</summary>
+      <summary>Web 视图类型的 _LoadCompleted_ 事件。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlEventIndex.WebView_LongRunningScriptDetected">
-      <summary>WebView 类型的 _LongRunningScriptDetected_ 事件。</summary>
+      <summary>Web 视图类型的 _LongRunningScriptDetected_ 事件。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlEventIndex.WebView_NavigationCompleted">
-      <summary>WebView 类型的 _NavigationCompleted_ 事件。</summary>
+      <summary>Web 视图类型的 _NavigationCompleted_ 事件。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlEventIndex.WebView_NavigationFailed">
-      <summary>WebView 类型的 _NavigationFailed_ 事件。</summary>
+      <summary>Web 视图类型的 _NavigationFailed_ 事件。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlEventIndex.WebView_NavigationStarting">
-      <summary>WebView 类型的 _NavigationStarting_ 事件。</summary>
+      <summary>Web 视图类型的 _NavigationStarting_ 事件。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlEventIndex.WebView_NewWindowRequested">
-      <summary>WebView 类型的 _NewWindowRequested_ 事件。</summary>
+      <summary>Web 视图类型的 _NewWindowRequested_ 事件。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlEventIndex.WebView_PermissionRequested">
-      <summary>WebView 类型的 _PermissionRequested_ 事件。</summary>
+      <summary>Web 视图类型的 _PermissionRequested_ 事件。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlEventIndex.WebView_ScriptNotify">
-      <summary>WebView 类型的 _ScriptNotify_ 事件。</summary>
+      <summary>Web 视图类型的 _ScriptNotify_ 事件。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlEventIndex.WebView_SeparateProcessLost">
-      <summary>WebView 类型的 _SeparateProcessLost_ 事件。</summary>
+      <summary>Web 视图类型的 _SeparateProcessLost_ 事件。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlEventIndex.WebView_UnsafeContentWarningDisplaying">
-      <summary>WebView 类型的 _UnsafeContentWarningDisplaying_ 事件。</summary>
+      <summary>Web 视图类型的 _UnsafeContentWarningDisplaying_ 事件。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlEventIndex.WebView_UnsupportedUriSchemeIdentified">
-      <summary>WebView 类型的 _UnsupportedUriSchemeIdentified_ 事件。</summary>
+      <summary>Web 视图类型的 _UnsupportedUriSchemeIdentified_ 事件。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlEventIndex.WebView_UnviewableContentIdentified">
-      <summary>WebView 类型的 _UnviewableContentIdentified_ 事件。</summary>
+      <summary>Web 视图类型的 _UnviewableContentIdentified_ 事件。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlEventIndex.WebView_WebResourceRequested">
-      <summary>WebView 类型的 _WebResourceRequested_ 事件。</summary>
+      <summary>Web 视图类型的 _WebResourceRequested_ 事件。</summary>
     </member>
     <member name="T:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex">
-      <summary>列出 XamlDirect 中支持的所有属性的枚举。</summary>
+      <summary>列举 XamlDirect 中所有支持的属性的枚举。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.AdaptiveTrigger_MinWindowHeight">
       <summary>AdaptiveTrigger 类型的 _MinWindowHeight_ 属性。</summary>
@@ -897,88 +897,88 @@
       <summary>AutomationPeerAnnotation 类型的 _Type_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.AutomationProperties_AcceleratorKey">
-      <summary>AutomationProperties 类型的 _AcceleratorKey_ 属性。</summary>
+      <summary>Automationproperties.livesetting 类型的 _AcceleratorKey_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.AutomationProperties_AccessibilityView">
-      <summary>AutomationProperties 类型的 _AccessibilityView_ 属性。</summary>
+      <summary>Automationproperties.livesetting 类型的 _AccessibilityView_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.AutomationProperties_AccessKey">
-      <summary>AutomationProperties 类型的 _AccessKey_ 属性。</summary>
+      <summary>Automationproperties.livesetting 类型的 _AccessKey_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.AutomationProperties_Annotations">
-      <summary>AutomationProperties 类型的 _Annotations_ 属性。</summary>
+      <summary>Automationproperties.livesetting 类型的 _Annotations_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.AutomationProperties_AutomationId">
-      <summary>AutomationProperties 类型的 _AutomationId_ 属性。</summary>
+      <summary>Automationproperties.livesetting 类型的 _AutomationId_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.AutomationProperties_ControlledPeers">
-      <summary>AutomationProperties 类型的 _ControlledPeers_ 属性。</summary>
+      <summary>Automationproperties.livesetting 类型的 _ControlledPeers_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.AutomationProperties_Culture">
-      <summary>AutomationProperties 类型的 _Culture_ 属性。</summary>
+      <summary>Automationproperties.livesetting 类型的 _Culture_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.AutomationProperties_DescribedBy">
-      <summary>AutomationProperties 类型的 _DescribedBy_ 属性。</summary>
+      <summary>Automationproperties.livesetting 类型的 _DescribedBy_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.AutomationProperties_FlowsFrom">
-      <summary>AutomationProperties 类型的 _FlowsFrom_ 属性。</summary>
+      <summary>Automationproperties.livesetting 类型的 _FlowsFrom_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.AutomationProperties_FlowsTo">
-      <summary>AutomationProperties 类型的 _FlowsTo_ 属性。</summary>
+      <summary>Automationproperties.livesetting 类型的 _FlowsTo_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.AutomationProperties_FullDescription">
-      <summary>AutomationProperties 类型的 _FullDescription_ 属性。</summary>
+      <summary>Automationproperties.livesetting 类型的 _FullDescription_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.AutomationProperties_HeadingLevel">
-      <summary>AutomationProperties 类型的 _HeadingLevel_ 属性。</summary>
+      <summary>Automationproperties.livesetting 类型的 _HeadingLevel_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.AutomationProperties_HelpText">
-      <summary>AutomationProperties 类型的 _HelpText_ 属性。</summary>
+      <summary>Automationproperties.livesetting 类型的 _HelpText_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.AutomationProperties_IsDataValidForForm">
-      <summary>AutomationProperties 类型的 _IsDataValidForForm_ 属性。</summary>
+      <summary>Automationproperties.livesetting 类型的 _IsDataValidForForm_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.AutomationProperties_IsDialog">
-      <summary>AutomationProperties 类型的 _IsDialog_ 属性。</summary>
+      <summary>Automationproperties.livesetting 类型的 _IsDialog_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.AutomationProperties_IsPeripheral">
-      <summary>AutomationProperties 类型的 _IsPeripheral_ 属性。</summary>
+      <summary>Automationproperties.livesetting 类型的 _IsPeripheral_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.AutomationProperties_IsRequiredForForm">
-      <summary>AutomationProperties 类型的 _IsRequiredForForm_ 属性。</summary>
+      <summary>Automationproperties.livesetting 类型的 _IsRequiredForForm_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.AutomationProperties_ItemStatus">
-      <summary>AutomationProperties 类型的 _ItemStatus_ 属性。</summary>
+      <summary>Automationproperties.livesetting 类型的 _ItemStatus_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.AutomationProperties_ItemType">
-      <summary>AutomationProperties 类型的 _ItemType_ 属性。</summary>
+      <summary>Automationproperties.livesetting 类型的 _ItemType_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.AutomationProperties_LabeledBy">
-      <summary>AutomationProperties 类型的 _LabeledBy_ 属性。</summary>
+      <summary>Automationproperties.livesetting 类型的 _LabeledBy_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.AutomationProperties_LandmarkType">
-      <summary>AutomationProperties 类型的 _LandmarkType_ 属性。</summary>
+      <summary>Automationproperties.livesetting 类型的 _LandmarkType_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.AutomationProperties_Level">
-      <summary>AutomationProperties 类型的 _Level_ 属性。</summary>
+      <summary>Automationproperties.livesetting 类型的 _Level_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.AutomationProperties_LiveSetting">
-      <summary>AutomationProperties 类型的 _LiveSetting_ 属性。</summary>
+      <summary>Automationproperties.livesetting 类型的 _LiveSetting_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.AutomationProperties_LocalizedControlType">
-      <summary>AutomationProperties 类型的 _LocalizedControlType_ 属性。</summary>
+      <summary>Automationproperties.livesetting 类型的 _LocalizedControlType_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.AutomationProperties_LocalizedLandmarkType">
-      <summary>AutomationProperties 类型的 _LocalizedLandmarkType_ 属性。</summary>
+      <summary>Automationproperties.livesetting 类型的 _LocalizedLandmarkType_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.AutomationProperties_Name">
-      <summary>AutomationProperties 类型的 _Name_ 属性。</summary>
+      <summary>Automationproperties.livesetting 类型的 _Name_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.AutomationProperties_PositionInSet">
-      <summary>AutomationProperties 类型的 _PositionInSet_ 属性。</summary>
+      <summary>Automationproperties.livesetting 类型的 _PositionInSet_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.AutomationProperties_SizeOfSet">
-      <summary>AutomationProperties 类型的 _SizeOfSet_ 属性。</summary>
+      <summary>Automationproperties.livesetting 类型的 _SizeOfSet_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.AutoSuggestBox_AutoMaximizeSuggestionArea">
       <summary>AutoSuggestBox 类型的 _AutoMaximizeSuggestionArea_ 属性。</summary>
@@ -1035,46 +1035,46 @@
       <summary>BeginStoryboard 类型的 _Storyboard_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.BezierSegment_Point1">
-      <summary>BezierSegment 类型的 _Point1_ 属性。</summary>
+      <summary>System.windows.media.beziersegment&gt; 类型的 _Point1_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.BezierSegment_Point2">
-      <summary>BezierSegment 类型的 _Point2_ 属性。</summary>
+      <summary>System.windows.media.beziersegment&gt; 类型的 _Point2_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.BezierSegment_Point3">
-      <summary>BezierSegment 类型的 _Point3_ 属性。</summary>
+      <summary>System.windows.media.beziersegment&gt; 类型的 _Point3_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Binding_Converter">
-      <summary>Binding 类型的 _Converter_ 属性。</summary>
+      <summary>绑定类型的 _Converter_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Binding_ConverterLanguage">
-      <summary>Binding 类型的 _ConverterLanguage_ 属性。</summary>
+      <summary>绑定类型的 _ConverterLanguage_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Binding_ConverterParameter">
-      <summary>Binding 类型的 _ConverterParameter_ 属性。</summary>
+      <summary>绑定类型的 _ConverterParameter_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Binding_ElementName">
-      <summary>Binding 类型的 _ElementName_ 属性。</summary>
+      <summary>绑定类型的 _ElementName_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Binding_FallbackValue">
-      <summary>Binding 类型的 _FallbackValue_ 属性。</summary>
+      <summary>绑定类型的 _FallbackValue_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Binding_Mode">
-      <summary>Binding 类型的 _Mode_ 属性。</summary>
+      <summary>绑定类型的 _Mode_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Binding_Path">
-      <summary>Binding 类型的 _Path_ 属性。</summary>
+      <summary>绑定类型的 _Path_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Binding_RelativeSource">
-      <summary>Binding 类型的 _RelativeSource_ 属性。</summary>
+      <summary>绑定类型的 _RelativeSource_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Binding_Source">
-      <summary>Binding 类型的 _Source_ 属性。</summary>
+      <summary>绑定类型的 _Source_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Binding_TargetNullValue">
-      <summary>Binding 类型的 _TargetNullValue_ 属性。</summary>
+      <summary>绑定类型的 _TargetNullValue_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Binding_UpdateSourceTrigger">
-      <summary>Binding 类型的 _UpdateSourceTrigger_ 属性。</summary>
+      <summary>绑定类型的 _UpdateSourceTrigger_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.BitmapIcon_ShowAsMonochrome">
       <summary>BitmapIcon 类型的 _ShowAsMonochrome_ 属性。</summary>
@@ -1119,46 +1119,46 @@
       <summary>BitmapSource 类型的 _PixelWidth_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Block_HorizontalTextAlignment">
-      <summary>Block 类型的 _HorizontalTextAlignment_ 属性。</summary>
+      <summary>块类型的 _HorizontalTextAlignment_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Block_LineHeight">
-      <summary>Block 类型的 _LineHeight_ 属性。</summary>
+      <summary>块类型的 _LineHeight_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Block_LineStackingStrategy">
-      <summary>Block 类型的 _LineStackingStrategy_ 属性。</summary>
+      <summary>块类型的 _LineStackingStrategy_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Block_Margin">
-      <summary>Block 类型的 _Margin_ 属性。</summary>
+      <summary>块类型的 _Margin_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Block_TextAlignment">
-      <summary>Block 类型的 _TextAlignment_ 属性。</summary>
+      <summary>块类型的 _TextAlignment_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Border_Background">
-      <summary>Border 类型的 _Background_ 属性。</summary>
+      <summary>边框类型的 _Background_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Border_BackgroundSizing">
-      <summary>Border 类型的 _BackgroundSizing_ 属性。</summary>
+      <summary>边框类型的 _BackgroundSizing_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Border_BackgroundTransition">
-      <summary>Border 类型的 _BackgroundTransition_ 属性。</summary>
+      <summary>边框类型的 _BackgroundTransition_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Border_BorderBrush">
-      <summary>Border 类型的 _BorderBrush_ 属性。</summary>
+      <summary>边框类型的 _BorderBrush_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Border_BorderThickness">
-      <summary>Border 类型的 _BorderThickness_ 属性。</summary>
+      <summary>边框类型的 _BorderThickness_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Border_Child">
-      <summary>Border 类型的 _Child_ 属性。</summary>
+      <summary>边框类型的 _Child_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Border_ChildTransitions">
-      <summary>Border 类型的 _ChildTransitions_ 属性。</summary>
+      <summary>边框类型的 _ChildTransitions_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Border_CornerRadius">
-      <summary>Border 类型的 _CornerRadius_ 属性。</summary>
+      <summary>边框类型的 _CornerRadius_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Border_Padding">
-      <summary>Border 类型的 _Padding_ 属性。</summary>
+      <summary>边框类型的 _Padding_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.BounceEase_Bounces">
       <summary>BounceEase 类型的 _Bounces_ 属性。</summary>
@@ -1167,34 +1167,34 @@
       <summary>BounceEase 类型的 _Bounciness_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Brush_Opacity">
-      <summary>Brush 类型的 _Opacity_ 属性。</summary>
+      <summary>画笔类型的 _Opacity_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Brush_RelativeTransform">
-      <summary>Brush 类型的 _RelativeTransform_ 属性。</summary>
+      <summary>画笔类型的 _RelativeTransform_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Brush_Transform">
-      <summary>Brush 类型的 _Transform_ 属性。</summary>
+      <summary>画笔类型的 _Transform_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.BrushTransition_Duration">
       <summary>BrushTransition 类型的 _Duration_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Button_Flyout">
-      <summary>Button 类型的 _Flyout_ 属性。</summary>
+      <summary>按钮类型的 _Flyout_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.ButtonBase_ClickMode">
-      <summary>ButtonBase 类型的 _ClickMode_ 属性。</summary>
+      <summary>System.windows.controls.primitives.buttonbase.click&gt; 类型的 _ClickMode_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.ButtonBase_Command">
-      <summary>ButtonBase 类型的 _Command_ 属性。</summary>
+      <summary>System.windows.controls.primitives.buttonbase.click&gt; 类型的 _Command_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.ButtonBase_CommandParameter">
-      <summary>ButtonBase 类型的 _CommandParameter_ 属性。</summary>
+      <summary>System.windows.controls.primitives.buttonbase.click&gt; 类型的 _CommandParameter_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.ButtonBase_IsPointerOver">
-      <summary>ButtonBase 类型的 _IsPointerOver_ 属性。</summary>
+      <summary>System.windows.controls.primitives.buttonbase.click&gt; 类型的 _IsPointerOver_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.ButtonBase_IsPressed">
-      <summary>ButtonBase 类型的 _IsPressed_ 属性。</summary>
+      <summary>System.windows.controls.primitives.buttonbase.click&gt; 类型的 _IsPressed_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.CalendarDatePicker_CalendarIdentifier">
       <summary>CalendarDatePicker 类型的 _CalendarIdentifier_ 属性。</summary>
@@ -1455,13 +1455,13 @@
       <summary>CalendarViewTemplateSettings 类型的 _WeekDay7_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Canvas_Left">
-      <summary>Canvas 类型的 _Left_ 属性。</summary>
+      <summary>画布类型的 _Left_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Canvas_Top">
-      <summary>Canvas 类型的 _Top_ 属性。</summary>
+      <summary>画布类型的 _Top_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Canvas_ZIndex">
-      <summary>Canvas 类型的 _ZIndex_ 属性。</summary>
+      <summary>画布类型的 _ZIndex_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.CaptureElement_Source">
       <summary>CaptureElement 类型的 _Source_ 属性。</summary>
@@ -1482,19 +1482,19 @@
       <summary>CollectionViewSource 类型的 _View_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.ColorAnimation_By">
-      <summary>ColorAnimation 类型的 _By_ 属性。</summary>
+      <summary>System.windows.media.animation.coloranimation&gt; 类型的 _By_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.ColorAnimation_EasingFunction">
-      <summary>ColorAnimation 类型的 _EasingFunction_ 属性。</summary>
+      <summary>System.windows.media.animation.coloranimation&gt; 类型的 _EasingFunction_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.ColorAnimation_EnableDependentAnimation">
-      <summary>ColorAnimation 类型的 _EnableDependentAnimation_ 属性。</summary>
+      <summary>System.windows.media.animation.coloranimation&gt; 类型的 _EnableDependentAnimation_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.ColorAnimation_From">
-      <summary>ColorAnimation 类型的 _From_ 属性。</summary>
+      <summary>System.windows.media.animation.coloranimation&gt; 类型的 _From_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.ColorAnimation_To">
-      <summary>ColorAnimation 类型的 _To_ 属性。</summary>
+      <summary>System.windows.media.animation.coloranimation&gt; 类型的 _To_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.ColorAnimationUsingKeyFrames_EnableDependentAnimation">
       <summary>ColorAnimationUsingKeyFrames 类型的 _EnableDependentAnimation_ 属性。</summary>
@@ -1788,16 +1788,16 @@
       <summary>CompositeTransform3D 类型的 _TranslateZ_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.ContentControl_Content">
-      <summary>ContentControl 类型的 _Content_ 属性。</summary>
+      <summary>System.windows.controls.contentcontrol&gt; 类型的 _Content_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.ContentControl_ContentTemplate">
-      <summary>ContentControl 类型的 _ContentTemplate_ 属性。</summary>
+      <summary>System.windows.controls.contentcontrol&gt; 类型的 _ContentTemplate_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.ContentControl_ContentTemplateSelector">
-      <summary>ContentControl 类型的 _ContentTemplateSelector_ 属性。</summary>
+      <summary>System.windows.controls.contentcontrol&gt; 类型的 _ContentTemplateSelector_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.ContentControl_ContentTransitions">
-      <summary>ContentControl 类型的 _ContentTransitions_ 属性。</summary>
+      <summary>System.windows.controls.contentcontrol&gt; 类型的 _ContentTransitions_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.ContentDialog_CloseButtonCommand">
       <summary>ContentDialog 类型的 _CloseButtonCommand_ 属性。</summary>
@@ -1896,85 +1896,85 @@
       <summary>ContentLink 类型的 _XYFocusUpNavigationStrategy_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.ContentPresenter_Background">
-      <summary>ContentPresenter 类型的 _Background_ 属性。</summary>
+      <summary>System.windows.controls.contentpresenter&gt; 类型的 _Background_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.ContentPresenter_BackgroundSizing">
-      <summary>ContentPresenter 类型的 _BackgroundSizing_ 属性。</summary>
+      <summary>System.windows.controls.contentpresenter&gt; 类型的 _BackgroundSizing_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.ContentPresenter_BackgroundTransition">
-      <summary>ContentPresenter 类型的 _BackgroundTransition_ 属性。</summary>
+      <summary>System.windows.controls.contentpresenter&gt; 类型的 _BackgroundTransition_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.ContentPresenter_BorderBrush">
-      <summary>ContentPresenter 类型的 _BorderBrush_ 属性。</summary>
+      <summary>System.windows.controls.contentpresenter&gt; 类型的 _BorderBrush_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.ContentPresenter_BorderThickness">
-      <summary>ContentPresenter 类型的 _BorderThickness_ 属性。</summary>
+      <summary>System.windows.controls.contentpresenter&gt; 类型的 _BorderThickness_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.ContentPresenter_CharacterSpacing">
-      <summary>ContentPresenter 类型的 _CharacterSpacing_ 属性。</summary>
+      <summary>System.windows.controls.contentpresenter&gt; 类型的 _CharacterSpacing_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.ContentPresenter_Content">
-      <summary>ContentPresenter 类型的 _Content_ 属性。</summary>
+      <summary>System.windows.controls.contentpresenter&gt; 类型的 _Content_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.ContentPresenter_ContentTemplate">
-      <summary>ContentPresenter 类型的 _ContentTemplate_ 属性。</summary>
+      <summary>System.windows.controls.contentpresenter&gt; 类型的 _ContentTemplate_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.ContentPresenter_ContentTemplateSelector">
-      <summary>ContentPresenter 类型的 _ContentTemplateSelector_ 属性。</summary>
+      <summary>System.windows.controls.contentpresenter&gt; 类型的 _ContentTemplateSelector_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.ContentPresenter_ContentTransitions">
-      <summary>ContentPresenter 类型的 _ContentTransitions_ 属性。</summary>
+      <summary>System.windows.controls.contentpresenter&gt; 类型的 _ContentTransitions_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.ContentPresenter_CornerRadius">
-      <summary>ContentPresenter 类型的 _CornerRadius_ 属性。</summary>
+      <summary>System.windows.controls.contentpresenter&gt; 类型的 _CornerRadius_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.ContentPresenter_FontFamily">
-      <summary>ContentPresenter 类型的 _FontFamily_ 属性。</summary>
+      <summary>System.windows.controls.contentpresenter&gt; 类型的 _FontFamily_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.ContentPresenter_FontSize">
-      <summary>ContentPresenter 类型的 _FontSize_ 属性。</summary>
+      <summary>System.windows.controls.contentpresenter&gt; 类型的 _FontSize_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.ContentPresenter_FontStretch">
-      <summary>ContentPresenter 类型的 _FontStretch_ 属性。</summary>
+      <summary>System.windows.controls.contentpresenter&gt; 类型的 _FontStretch_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.ContentPresenter_FontStyle">
-      <summary>ContentPresenter 类型的 _FontStyle_ 属性。</summary>
+      <summary>System.windows.controls.contentpresenter&gt; 类型的 _FontStyle_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.ContentPresenter_FontWeight">
-      <summary>ContentPresenter 类型的 _FontWeight_ 属性。</summary>
+      <summary>System.windows.controls.contentpresenter&gt; 类型的 _FontWeight_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.ContentPresenter_Foreground">
-      <summary>ContentPresenter 类型的 _Foreground_ 属性。</summary>
+      <summary>System.windows.controls.contentpresenter&gt; 类型的 _Foreground_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.ContentPresenter_HorizontalContentAlignment">
-      <summary>ContentPresenter 类型的 _HorizontalContentAlignment_ 属性。</summary>
+      <summary>System.windows.controls.contentpresenter&gt; 类型的 _HorizontalContentAlignment_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.ContentPresenter_IsTextScaleFactorEnabled">
-      <summary>ContentPresenter 类型的 _IsTextScaleFactorEnabled_ 属性。</summary>
+      <summary>System.windows.controls.contentpresenter&gt; 类型的 _IsTextScaleFactorEnabled_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.ContentPresenter_LineHeight">
-      <summary>ContentPresenter 类型的 _LineHeight_ 属性。</summary>
+      <summary>System.windows.controls.contentpresenter&gt; 类型的 _LineHeight_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.ContentPresenter_LineStackingStrategy">
-      <summary>ContentPresenter 类型的 _LineStackingStrategy_ 属性。</summary>
+      <summary>System.windows.controls.contentpresenter&gt; 类型的 _LineStackingStrategy_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.ContentPresenter_MaxLines">
-      <summary>ContentPresenter 类型的 _MaxLines_ 属性。</summary>
+      <summary>System.windows.controls.contentpresenter&gt; 类型的 _MaxLines_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.ContentPresenter_OpticalMarginAlignment">
-      <summary>ContentPresenter 类型的 _OpticalMarginAlignment_ 属性。</summary>
+      <summary>System.windows.controls.contentpresenter&gt; 类型的 _OpticalMarginAlignment_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.ContentPresenter_Padding">
-      <summary>ContentPresenter 类型的 _Padding_ 属性。</summary>
+      <summary>System.windows.controls.contentpresenter&gt; 类型的 _Padding_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.ContentPresenter_TextLineBounds">
-      <summary>ContentPresenter 类型的 _TextLineBounds_ 属性。</summary>
+      <summary>System.windows.controls.contentpresenter&gt; 类型的 _TextLineBounds_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.ContentPresenter_TextWrapping">
-      <summary>ContentPresenter 类型的 _TextWrapping_ 属性。</summary>
+      <summary>System.windows.controls.contentpresenter&gt; 类型的 _TextWrapping_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.ContentPresenter_VerticalContentAlignment">
-      <summary>ContentPresenter 类型的 _VerticalContentAlignment_ 属性。</summary>
+      <summary>System.windows.controls.contentpresenter&gt; 类型的 _VerticalContentAlignment_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.ContentThemeTransition_HorizontalOffset">
       <summary>ContentThemeTransition 类型的 _HorizontalOffset_ 属性。</summary>
@@ -1983,112 +1983,112 @@
       <summary>ContentThemeTransition 类型的 _VerticalOffset_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Control_Background">
-      <summary>Control 类型的 _Background_ 属性。</summary>
+      <summary>控件类型的 _Background_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Control_BackgroundSizing">
-      <summary>Control 类型的 _BackgroundSizing_ 属性。</summary>
+      <summary>控件类型的 _BackgroundSizing_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Control_BorderBrush">
-      <summary>Control 类型的 _BorderBrush_ 属性。</summary>
+      <summary>控件类型的 _BorderBrush_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Control_BorderThickness">
-      <summary>Control 类型的 _BorderThickness_ 属性。</summary>
+      <summary>控件类型的 _BorderThickness_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Control_CharacterSpacing">
-      <summary>Control 类型的 _CharacterSpacing_ 属性。</summary>
+      <summary>控件类型的 _CharacterSpacing_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Control_CornerRadius">
-      <summary>Control 类型的 _CornerRadius_ 属性。</summary>
+      <summary>控件类型的 _CornerRadius_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Control_DefaultStyleResourceUri">
-      <summary>Control 类型的 _DefaultStyleResourceUri_ 属性。</summary>
+      <summary>控件类型的 _DefaultStyleResourceUri_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Control_ElementSoundMode">
-      <summary>Control 类型的 _ElementSoundMode_ 属性。</summary>
+      <summary>控件类型的 _ElementSoundMode_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Control_FocusState">
-      <summary>Control 类型的 _FocusState_ 属性。</summary>
+      <summary>控件类型的 _FocusState_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Control_FontFamily">
-      <summary>Control 类型的 _FontFamily_ 属性。</summary>
+      <summary>控件类型的 _FontFamily_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Control_FontSize">
-      <summary>Control 类型的 _FontSize_ 属性。</summary>
+      <summary>控件类型的 _FontSize_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Control_FontStretch">
-      <summary>Control 类型的 _FontStretch_ 属性。</summary>
+      <summary>控件类型的 _FontStretch_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Control_FontStyle">
-      <summary>Control 类型的 _FontStyle_ 属性。</summary>
+      <summary>控件类型的 _FontStyle_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Control_FontWeight">
-      <summary>Control 类型的 _FontWeight_ 属性。</summary>
+      <summary>控件类型的 _FontWeight_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Control_Foreground">
-      <summary>Control 类型的 _Foreground_ 属性。</summary>
+      <summary>控件类型的 _Foreground_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Control_HorizontalContentAlignment">
-      <summary>Control 类型的 _HorizontalContentAlignment_ 属性。</summary>
+      <summary>控件类型的 _HorizontalContentAlignment_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Control_IsEnabled">
-      <summary>Control 类型的 _IsEnabled_ 属性。</summary>
+      <summary>控件类型的 _IsEnabled_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Control_IsFocusEngaged">
-      <summary>Control 类型的 _IsFocusEngaged_ 属性。</summary>
+      <summary>控件类型的 _IsFocusEngaged_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Control_IsFocusEngagementEnabled">
-      <summary>Control 类型的 _IsFocusEngagementEnabled_ 属性。</summary>
+      <summary>控件类型的 _IsFocusEngagementEnabled_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Control_IsTabStop">
-      <summary>Control 类型的 _IsTabStop_ 属性。</summary>
+      <summary>控件类型的 _IsTabStop_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Control_IsTemplateFocusTarget">
-      <summary>Control 类型的 _IsTemplateFocusTarget_ 属性。</summary>
+      <summary>控件类型的 _IsTemplateFocusTarget_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Control_IsTemplateKeyTipTarget">
-      <summary>Control 类型的 _IsTemplateKeyTipTarget_ 属性。</summary>
+      <summary>控件类型的 _IsTemplateKeyTipTarget_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Control_IsTextScaleFactorEnabled">
-      <summary>Control 类型的 _IsTextScaleFactorEnabled_ 属性。</summary>
+      <summary>控件类型的 _IsTextScaleFactorEnabled_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Control_Padding">
-      <summary>Control 类型的 _Padding_ 属性。</summary>
+      <summary>控件类型的 _Padding_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Control_RequiresPointer">
-      <summary>Control 类型的 _RequiresPointer_ 属性。</summary>
+      <summary>控件类型的 _RequiresPointer_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Control_TabIndex">
-      <summary>Control 类型的 _TabIndex_ 属性。</summary>
+      <summary>控件类型的 _TabIndex_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Control_TabNavigation">
-      <summary>Control 类型的 _TabNavigation_ 属性。</summary>
+      <summary>控件类型的 _TabNavigation_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Control_Template">
-      <summary>Control 类型的 _Template_ 属性。</summary>
+      <summary>控件类型的 _Template_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Control_UseSystemFocusVisuals">
-      <summary>Control 类型的 _UseSystemFocusVisuals_ 属性。</summary>
+      <summary>控件类型的 _UseSystemFocusVisuals_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Control_VerticalContentAlignment">
-      <summary>Control 类型的 _VerticalContentAlignment_ 属性。</summary>
+      <summary>控件类型的 _VerticalContentAlignment_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Control_XYFocusDown">
-      <summary>Control 类型的 _XYFocusDown_ 属性。</summary>
+      <summary>控件类型的 _XYFocusDown_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Control_XYFocusLeft">
-      <summary>Control 类型的 _XYFocusLeft_ 属性。</summary>
+      <summary>控件类型的 _XYFocusLeft_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Control_XYFocusRight">
-      <summary>Control 类型的 _XYFocusRight_ 属性。</summary>
+      <summary>控件类型的 _XYFocusRight_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Control_XYFocusUp">
-      <summary>Control 类型的 _XYFocusUp_ 属性。</summary>
+      <summary>控件类型的 _XYFocusUp_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.ControlTemplate_TargetType">
-      <summary>ControlTemplate 类型的 _TargetType_ 属性。</summary>
+      <summary>System.windows.controls.controltemplate&gt; 类型的 _TargetType_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.DataTemplate_ExtensionInstance">
-      <summary>DataTemplate 类型的 _ExtensionInstance_ 属性。</summary>
+      <summary>System.windows.datatemplate&gt; 类型的 _ExtensionInstance_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.DatePicker_CalendarIdentifier">
       <summary>DatePicker 类型的 _CalendarIdentifier_ 属性。</summary>
@@ -2139,25 +2139,25 @@
       <summary>DispatcherTimer 类型的 _Interval_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.DoubleAnimation_By">
-      <summary>DoubleAnimation 类型的 _By_ 属性。</summary>
+      <summary>System.windows.media.animation.doubleanimation&gt; 类型的 _By_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.DoubleAnimation_EasingFunction">
-      <summary>DoubleAnimation 类型的 _EasingFunction_ 属性。</summary>
+      <summary>System.windows.media.animation.doubleanimation&gt; 类型的 _EasingFunction_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.DoubleAnimation_EnableDependentAnimation">
-      <summary>DoubleAnimation 类型的 _EnableDependentAnimation_ 属性。</summary>
+      <summary>System.windows.media.animation.doubleanimation&gt; 类型的 _EnableDependentAnimation_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.DoubleAnimation_From">
-      <summary>DoubleAnimation 类型的 _From_ 属性。</summary>
+      <summary>System.windows.media.animation.doubleanimation&gt; 类型的 _From_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.DoubleAnimation_To">
-      <summary>DoubleAnimation 类型的 _To_ 属性。</summary>
+      <summary>System.windows.media.animation.doubleanimation&gt; 类型的 _To_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.DoubleAnimationUsingKeyFrames_EnableDependentAnimation">
-      <summary>DoubleAnimationUsingKeyFrames 类型的 _EnableDependentAnimation_ 属性。</summary>
+      <summary>System.windows.media.animation.doubleanimationusingkeyframes.keyframes 类型的 _EnableDependentAnimation_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.DoubleAnimationUsingKeyFrames_KeyFrames">
-      <summary>DoubleAnimationUsingKeyFrames 类型的 _KeyFrames_ 属性。</summary>
+      <summary>System.windows.media.animation.doubleanimationusingkeyframes.keyframes 类型的 _KeyFrames_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.DoubleKeyFrame_KeyTime">
       <summary>DoubleKeyFrame 类型的 _KeyTime_ 属性。</summary>
@@ -2211,7 +2211,7 @@
       <summary>EasingDoubleKeyFrame 类型的 _EasingFunction_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.EasingFunctionBase_EasingMode">
-      <summary>EasingFunctionBase 类型的 _EasingMode_ 属性。</summary>
+      <summary>赋予类型的 _EasingMode_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.EasingPointKeyFrame_EasingFunction">
       <summary>EasingPointKeyFrame 类型的 _EasingFunction_ 属性。</summary>
@@ -2220,19 +2220,19 @@
       <summary>EdgeUIThemeTransition 类型的 _Edge_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.ElasticEase_Oscillations">
-      <summary>ElasticEase 类型的 _Oscillations_ 属性</summary>
+      <summary>带类型的 _Oscillations_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.ElasticEase_Springiness">
-      <summary>ElasticEase 类型的 _Springiness_ 属性</summary>
+      <summary>带类型的 _Springiness_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.EllipseGeometry_Center">
-      <summary>EllipseGeometry 类型的 _Center_ 属性。</summary>
+      <summary>System.windows.media.ellipsegeometry&gt; 类型的 _Center_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.EllipseGeometry_RadiusX">
-      <summary>EllipseGeometry 类型的 _RadiusX_ 属性。</summary>
+      <summary>System.windows.media.ellipsegeometry&gt; 类型的 _RadiusX_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.EllipseGeometry_RadiusY">
-      <summary>EllipseGeometry 类型的 _RadiusY_ 属性。</summary>
+      <summary>System.windows.media.ellipsegeometry&gt; 类型的 _RadiusY_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.EntranceThemeTransition_FromHorizontalOffset">
       <summary>EntranceThemeTransition 类型的 _FromHorizontalOffset_ 属性。</summary>
@@ -2244,10 +2244,10 @@
       <summary>EntranceThemeTransition 类型的 _IsStaggeringEnabled_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.EventTrigger_Actions">
-      <summary>EventTrigger 类型的 _Actions_ 属性。</summary>
+      <summary>System.windows.eventtrigger&gt; 类型的 _Actions_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.EventTrigger_RoutedEvent">
-      <summary>EventTrigger 类型的 _RoutedEvent_ 属性。</summary>
+      <summary>System.windows.eventtrigger&gt; 类型的 _RoutedEvent_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.ExponentialEase_Exponent">
       <summary>ExponentialEase 类型的 _Exponent_ 属性。</summary>
@@ -2262,10 +2262,10 @@
       <summary>FlipView 类型的 _UseTouchAnimationsForAllNavigation_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Flyout_Content">
-      <summary>Flyout 类型的 _Content_ 属性。</summary>
+      <summary>弹出类型的 _Content_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Flyout_FlyoutPresenterStyle">
-      <summary>Flyout 类型的 _FlyoutPresenterStyle_ 属性。</summary>
+      <summary>弹出类型的 _FlyoutPresenterStyle_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.FlyoutBase_AllowFocusOnInteraction">
       <summary>FlyoutBase 类型的 _AllowFocusOnInteraction_ 属性。</summary>
@@ -2352,31 +2352,31 @@
       <summary>FontIconSource 类型的 _MirroredWhenRightToLeft_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Frame_BackStack">
-      <summary>Frame 类型的 _BackStack_ 属性。</summary>
+      <summary>帧类型的 _BackStack_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Frame_BackStackDepth">
-      <summary>Frame 类型的 _BackStackDepth_ 属性。</summary>
+      <summary>帧类型的 _BackStackDepth_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Frame_CacheSize">
-      <summary>Frame 类型的 _CacheSize_ 属性。</summary>
+      <summary>帧类型的 _CacheSize_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Frame_CanGoBack">
-      <summary>Frame 类型的 _CanGoBack_ 属性。</summary>
+      <summary>帧类型的 _CanGoBack_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Frame_CanGoForward">
-      <summary>Frame 类型的 _CanGoForward_ 属性。</summary>
+      <summary>帧类型的 _CanGoForward_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Frame_CurrentSourcePageType">
-      <summary>Frame 类型的 _CurrentSourcePageType_ 属性。</summary>
+      <summary>帧类型的 _CurrentSourcePageType_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Frame_ForwardStack">
-      <summary>Frame 类型的 _ForwardStack_ 属性。</summary>
+      <summary>帧类型的 _ForwardStack_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Frame_IsNavigationStackEnabled">
-      <summary>Frame 类型的 _IsNavigationStackEnabled_ 属性。</summary>
+      <summary>帧类型的 _IsNavigationStackEnabled_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Frame_SourcePageType">
-      <summary>Frame 类型的 _SourcePageType_ 属性。</summary>
+      <summary>帧类型的 _SourcePageType_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.FrameworkElement_ActualHeight">
       <summary>FrameworkElement 类型的 _ActualHeight_ 属性。</summary>
@@ -2466,10 +2466,10 @@
       <summary>FrameworkElementAutomationPeer 类型的 _Owner_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Geometry_Bounds">
-      <summary>Geometry 类型的 _Bounds_ 属性。</summary>
+      <summary>几何图形类型的 _Bounds_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Geometry_Transform">
-      <summary>Geometry 类型的 _Transform_ 属性。</summary>
+      <summary>几何图形类型的 _Transform_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.GeometryGroup_Children">
       <summary>GeometryGroup 类型的 _Children_ 属性。</summary>
@@ -2478,34 +2478,34 @@
       <summary>GeometryGroup 类型的 _FillRule_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Glyphs_ColorFontPaletteIndex">
-      <summary>Glyphs 类型的 _ColorFontPaletteIndex_ 属性。</summary>
+      <summary>标志符号类型的 _ColorFontPaletteIndex_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Glyphs_Fill">
-      <summary>Glyphs 类型的 _Fill_ 属性。</summary>
+      <summary>标志符号类型的 _Fill_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Glyphs_FontRenderingEmSize">
-      <summary>Glyphs 类型的 _FontRenderingEmSize_ 属性。</summary>
+      <summary>标志符号类型的 _FontRenderingEmSize_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Glyphs_FontUri">
-      <summary>Glyphs 类型的 _FontUri_ 属性。</summary>
+      <summary>标志符号类型的 _FontUri_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Glyphs_Indices">
-      <summary>Glyphs 类型的 _Indices_ 属性。</summary>
+      <summary>标志符号类型的 _Indices_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Glyphs_IsColorFontEnabled">
-      <summary>Glyphs 类型的 _IsColorFontEnabled_ 属性。</summary>
+      <summary>标志符号类型的 _IsColorFontEnabled_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Glyphs_OriginX">
-      <summary>Glyphs 类型的 _OriginX_ 属性。</summary>
+      <summary>标志符号类型的 _OriginX_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Glyphs_OriginY">
-      <summary>Glyphs 类型的 _OriginY_ 属性。</summary>
+      <summary>标志符号类型的 _OriginY_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Glyphs_StyleSimulations">
-      <summary>Glyphs 类型的 _StyleSimulations_ 属性。</summary>
+      <summary>标志符号类型的 _StyleSimulations_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Glyphs_UnicodeString">
-      <summary>Glyphs 类型的 _UnicodeString_ 属性。</summary>
+      <summary>标志符号类型的 _UnicodeString_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.GradientBrush_ColorInterpolationMode">
       <summary>GradientBrush 类型的 _ColorInterpolationMode_ 属性。</summary>
@@ -2520,49 +2520,49 @@
       <summary>GradientBrush 类型的 _SpreadMethod_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.GradientStop_Color">
-      <summary>GradientStop 类型的 _Color_ 属性。</summary>
+      <summary>System.windows.media.gradientstop&gt; 类型的 _Color_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.GradientStop_Offset">
-      <summary>GradientStop 类型的 _Offset_ 属性。</summary>
+      <summary>System.windows.media.gradientstop&gt; 类型的 _Offset_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Grid_BackgroundSizing">
-      <summary>Grid 类型的 _BackgroundSizing_ 属性。</summary>
+      <summary>网格类型的 _BackgroundSizing_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Grid_BorderBrush">
-      <summary>Grid 类型的 _BorderBrush_ 属性。</summary>
+      <summary>网格类型的 _BorderBrush_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Grid_BorderThickness">
-      <summary>Grid 类型的 _BorderThickness_ 属性。</summary>
+      <summary>网格类型的 _BorderThickness_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Grid_Column">
-      <summary>Grid 类型的 _Column_ 属性。</summary>
+      <summary>网格类型的 _Column_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Grid_ColumnDefinitions">
-      <summary>Grid 类型的 _ColumnDefinitions_ 属性。</summary>
+      <summary>网格类型的 _ColumnDefinitions_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Grid_ColumnSpacing">
-      <summary>Grid 类型的 _ColumnSpacing_ 属性。</summary>
+      <summary>网格类型的 _ColumnSpacing_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Grid_ColumnSpan">
-      <summary>Grid 类型的 _ColumnSpan_ 属性。</summary>
+      <summary>网格类型的 _ColumnSpan_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Grid_CornerRadius">
-      <summary>Grid 类型的 _CornerRadius_ 属性。</summary>
+      <summary>网格类型的 _CornerRadius_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Grid_Padding">
-      <summary>Grid 类型的 _Padding_ 属性。</summary>
+      <summary>网格类型的 _Padding_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Grid_Row">
-      <summary>Grid 类型的 _Row_ 属性。</summary>
+      <summary>网格类型的 _Row_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Grid_RowDefinitions">
-      <summary>Grid 类型的 _RowDefinitions_ 属性。</summary>
+      <summary>网格类型的 _RowDefinitions_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Grid_RowSpacing">
-      <summary>Grid 类型的 _RowSpacing_ 属性。</summary>
+      <summary>网格类型的 _RowSpacing_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Grid_RowSpan">
-      <summary>Grid 类型的 _RowSpan_ 属性。</summary>
+      <summary>网格类型的 _RowSpan_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.GridViewItem_TemplateSettings">
       <summary>GridViewItem 类型的 _TemplateSettings_ 属性。</summary>
@@ -2670,34 +2670,34 @@
       <summary>HandwritingView 类型的 _PlacementTarget_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Hub_DefaultSectionIndex">
-      <summary>Hub 类型的 _DefaultSectionIndex_ 属性。</summary>
+      <summary>中心类型的 _DefaultSectionIndex_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Hub_Header">
-      <summary>Hub 类型的 _Header_ 属性。</summary>
+      <summary>中心类型的 _Header_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Hub_HeaderTemplate">
-      <summary>Hub 类型的 _HeaderTemplate_ 属性。</summary>
+      <summary>中心类型的 _HeaderTemplate_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Hub_IsActiveView">
-      <summary>Hub 类型的 _IsActiveView_ 属性。</summary>
+      <summary>中心类型的 _IsActiveView_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Hub_IsZoomedInView">
-      <summary>Hub 类型的 _IsZoomedInView_ 属性。</summary>
+      <summary>中心类型的 _IsZoomedInView_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Hub_Orientation">
-      <summary>Hub 类型的 _Orientation_ 属性。</summary>
+      <summary>中心类型的 _Orientation_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Hub_SectionHeaders">
-      <summary>Hub 类型的 _SectionHeaders_ 属性。</summary>
+      <summary>中心类型的 _SectionHeaders_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Hub_Sections">
-      <summary>Hub 类型的 _Sections_ 属性。</summary>
+      <summary>中心类型的 _Sections_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Hub_SectionsInView">
-      <summary>Hub 类型的 _SectionsInView_ 属性。</summary>
+      <summary>中心类型的 _SectionsInView_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Hub_SemanticZoomOwner">
-      <summary>Hub 类型的 _SemanticZoomOwner_ 属性。</summary>
+      <summary>中心类型的 _SemanticZoomOwner_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.HubSection_ContentTemplate">
       <summary>HubSection 类型的 _ContentTemplate_ 属性。</summary>
@@ -2712,46 +2712,46 @@
       <summary>HubSection 类型的 _IsHeaderInteractive_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Hyperlink_ElementSoundMode">
-      <summary>Hyperlink 类型的 _ElementSoundMode_ 属性。</summary>
+      <summary>超链接类型的 _ElementSoundMode_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Hyperlink_FocusState">
-      <summary>Hyperlink 类型的 _FocusState_ 属性。</summary>
+      <summary>超链接类型的 _FocusState_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Hyperlink_IsTabStop">
-      <summary>Hyperlink 类型的 _IsTabStop_ 属性。</summary>
+      <summary>超链接类型的 _IsTabStop_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Hyperlink_NavigateUri">
-      <summary>Hyperlink 类型的 _NavigateUri_ 属性。</summary>
+      <summary>超链接类型的 _NavigateUri_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Hyperlink_TabIndex">
-      <summary>Hyperlink 类型的 _TabIndex_ 属性。</summary>
+      <summary>超链接类型的 _TabIndex_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Hyperlink_UnderlineStyle">
-      <summary>Hyperlink 类型的 _UnderlineStyle_ 属性。</summary>
+      <summary>超链接类型的 _UnderlineStyle_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Hyperlink_XYFocusDown">
-      <summary>Hyperlink 类型的 _XYFocusDown_ 属性。</summary>
+      <summary>超链接类型的 _XYFocusDown_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Hyperlink_XYFocusDownNavigationStrategy">
-      <summary>Hyperlink 类型的 _XYFocusDownNavigationStrategy_ 属性。</summary>
+      <summary>超链接类型的 _XYFocusDownNavigationStrategy_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Hyperlink_XYFocusLeft">
-      <summary>Hyperlink 类型的 _XYFocusLeft_ 属性。</summary>
+      <summary>超链接类型的 _XYFocusLeft_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Hyperlink_XYFocusLeftNavigationStrategy">
-      <summary>Hyperlink 类型的 _XYFocusLeftNavigationStrategy_ 属性。</summary>
+      <summary>超链接类型的 _XYFocusLeftNavigationStrategy_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Hyperlink_XYFocusRight">
-      <summary>Hyperlink 类型的 _XYFocusRight_ 属性。</summary>
+      <summary>超链接类型的 _XYFocusRight_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Hyperlink_XYFocusRightNavigationStrategy">
-      <summary>Hyperlink 类型的 _XYFocusRightNavigationStrategy_ 属性。</summary>
+      <summary>超链接类型的 _XYFocusRightNavigationStrategy_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Hyperlink_XYFocusUp">
-      <summary>Hyperlink 类型的 _XYFocusUp_ 属性。</summary>
+      <summary>超链接类型的 _XYFocusUp_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Hyperlink_XYFocusUpNavigationStrategy">
-      <summary>Hyperlink 类型的 _XYFocusUpNavigationStrategy_ 属性。</summary>
+      <summary>超链接类型的 _XYFocusUpNavigationStrategy_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.HyperlinkButton_NavigateUri">
       <summary>HyperlinkButton 类型的 _NavigateUri_ 属性。</summary>
@@ -2766,19 +2766,19 @@
       <summary>IconSourceElement 类型的 _IconSource_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Image_NineGrid">
-      <summary>Image 类型的 _NineGrid_ 属性。</summary>
+      <summary>图像类型的 _NineGrid_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Image_PlayToSource">
-      <summary>Image 类型的 _PlayToSource_ 属性。</summary>
+      <summary>图像类型的 _PlayToSource_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Image_Source">
-      <summary>Image 类型的 _Source_ 属性。</summary>
+      <summary>图像类型的 _Source_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Image_Stretch">
-      <summary>Image 类型的 _Stretch_ 属性。</summary>
+      <summary>图像类型的 _Stretch_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.ImageBrush_ImageSource">
-      <summary>ImageBrush 类型的 _ImageSource_ 属性。</summary>
+      <summary>System.windows.media.imagebrush&gt; 类型的 _ImageSource_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.InertiaExpansionBehavior_DesiredDeceleration">
       <summary>InertiaExpansionBehavior 类型的 _DesiredDeceleration_ 属性。</summary>
@@ -2799,7 +2799,7 @@
       <summary>InertiaTranslationBehavior 类型的 _DesiredDisplacement_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.InlineUIContainer_Child">
-      <summary>InlineUIContainer 类型的 _Child_ 属性。</summary>
+      <summary>System.windows.documents.inlineuicontainer&gt; 类型的 _Child_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.InputScope_Names">
       <summary>InputScope 类型的 _Names_ 属性。</summary>
@@ -2814,61 +2814,61 @@
       <summary>ItemAutomationPeer 类型的 _ItemsControlAutomationPeer_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.ItemsControl_DisplayMemberPath">
-      <summary>ItemsControl 类型的 _DisplayMemberPath_ 属性。</summary>
+      <summary>System.windows.controls.itemscontrol&gt; 类型的 _DisplayMemberPath_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.ItemsControl_GroupStyle">
-      <summary>ItemsControl 类型的 _GroupStyle_ 属性。</summary>
+      <summary>System.windows.controls.itemscontrol&gt; 类型的 _GroupStyle_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.ItemsControl_GroupStyleSelector">
-      <summary>ItemsControl 类型的 _GroupStyleSelector_ 属性。</summary>
+      <summary>System.windows.controls.itemscontrol&gt; 类型的 _GroupStyleSelector_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.ItemsControl_IsGrouping">
-      <summary>ItemsControl 类型的 _IsGrouping_ 属性。</summary>
+      <summary>System.windows.controls.itemscontrol&gt; 类型的 _IsGrouping_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.ItemsControl_ItemContainerStyle">
-      <summary>ItemsControl 类型的 _ItemContainerStyle_ 属性。</summary>
+      <summary>System.windows.controls.itemscontrol&gt; 类型的 _ItemContainerStyle_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.ItemsControl_ItemContainerStyleSelector">
-      <summary>ItemsControl 类型的 _ItemContainerStyleSelector_ 属性。</summary>
+      <summary>System.windows.controls.itemscontrol&gt; 类型的 _ItemContainerStyleSelector_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.ItemsControl_ItemContainerTransitions">
-      <summary>ItemsControl 类型的 _ItemContainerTransitions_ 属性。</summary>
+      <summary>System.windows.controls.itemscontrol&gt; 类型的 _ItemContainerTransitions_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.ItemsControl_Items">
-      <summary>ItemsControl 类型的 _Items_ 属性。</summary>
+      <summary>System.windows.controls.itemscontrol&gt; 类型的 _Items_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.ItemsControl_ItemsPanel">
-      <summary>ItemsControl 类型的 _ItemsPanel_ 属性。</summary>
+      <summary>System.windows.controls.itemscontrol&gt; 类型的 _ItemsPanel_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.ItemsControl_ItemsSource">
-      <summary>ItemsControl 类型的 _ItemsSource_ 属性。</summary>
+      <summary>System.windows.controls.itemscontrol&gt; 类型的 _ItemsSource_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.ItemsControl_ItemTemplate">
-      <summary>ItemsControl 类型的 _ItemTemplate_ 属性。</summary>
+      <summary>System.windows.controls.itemscontrol&gt; 类型的 _ItemTemplate_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.ItemsControl_ItemTemplateSelector">
-      <summary>ItemsControl 类型的 _ItemTemplateSelector_ 属性。</summary>
+      <summary>System.windows.controls.itemscontrol&gt; 类型的 _ItemTemplateSelector_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.ItemsPresenter_Footer">
-      <summary>ItemsPresenter 类型的 _Footer_ 属性。</summary>
+      <summary>System.windows.controls.itemspresenter&gt; 类型的 _Footer_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.ItemsPresenter_FooterTemplate">
-      <summary>ItemsPresenter 类型的 _FooterTemplate_ 属性。</summary>
+      <summary>System.windows.controls.itemspresenter&gt; 类型的 _FooterTemplate_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.ItemsPresenter_FooterTransitions">
-      <summary>ItemsPresenter 类型的 _FooterTransitions_ 属性。</summary>
+      <summary>System.windows.controls.itemspresenter&gt; 类型的 _FooterTransitions_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.ItemsPresenter_Header">
-      <summary>ItemsPresenter 类型的 _Header_ 属性。</summary>
+      <summary>System.windows.controls.itemspresenter&gt; 类型的 _Header_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.ItemsPresenter_HeaderTemplate">
-      <summary>ItemsPresenter 类型的 _HeaderTemplate_ 属性。</summary>
+      <summary>System.windows.controls.itemspresenter&gt; 类型的 _HeaderTemplate_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.ItemsPresenter_HeaderTransitions">
-      <summary>ItemsPresenter 类型的 _HeaderTransitions_ 属性。</summary>
+      <summary>System.windows.controls.itemspresenter&gt; 类型的 _HeaderTransitions_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.ItemsPresenter_Padding">
-      <summary>ItemsPresenter 类型的 _Padding_ 属性。</summary>
+      <summary>System.windows.controls.itemspresenter&gt; 类型的 _Padding_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.ItemsStackPanel_AreStickyGroupHeadersEnabled">
       <summary>ItemsStackPanel 类型的 _AreStickyGroupHeadersEnabled_ 属性。</summary>
@@ -2931,16 +2931,16 @@
       <summary>KeySpline 类型的 _ControlPoint2_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Line_X1">
-      <summary>Line 类型的 _X1_ 属性。</summary>
+      <summary>线条类型的 _X1_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Line_X2">
-      <summary>Line 类型的 _X2_ 属性。</summary>
+      <summary>线条类型的 _X2_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Line_Y1">
-      <summary>Line 类型的 _Y1_ 属性。</summary>
+      <summary>线条类型的 _Y1_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Line_Y2">
-      <summary>Line 类型的 _Y2_ 属性。</summary>
+      <summary>线条类型的 _Y2_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.LinearGradientBrush_EndPoint">
       <summary>LinearGradientBrush 类型的 _EndPoint_ 属性。</summary>
@@ -2955,7 +2955,7 @@
       <summary>LineGeometry 类型的 _StartPoint_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.LineSegment_Point">
-      <summary>LineSegment 类型的 _Point_ 属性。</summary>
+      <summary>System.windows.media.linesegment&gt; 类型的 _Point_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.ListBox_SelectedItems">
       <summary>ListBox 类型的 _SelectedItems_ 属性。</summary>
@@ -3444,10 +3444,10 @@
       <summary>MenuFlyoutSubItem 类型的 _Text_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.ObjectAnimationUsingKeyFrames_EnableDependentAnimation">
-      <summary>ObjectAnimationUsingKeyFrames 类型的 _EnableDependentAnimation_ 属性。</summary>
+      <summary>System.windows.media.animation.objectanimationusingkeyframes&gt; 类型的 _EnableDependentAnimation_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.ObjectAnimationUsingKeyFrames_KeyFrames">
-      <summary>ObjectAnimationUsingKeyFrames 类型的 _KeyFrames_ 属性。</summary>
+      <summary>System.windows.media.animation.objectanimationusingkeyframes&gt; 类型的 _KeyFrames_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.ObjectKeyFrame_KeyTime">
       <summary>ObjectKeyFrame 类型的 _KeyTime_ 属性。</summary>
@@ -3456,43 +3456,43 @@
       <summary>ObjectKeyFrame 类型的 _Value_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Page_BottomAppBar">
-      <summary>Page 类型的 _BottomAppBar_ 属性。</summary>
+      <summary>页类型的 _BottomAppBar_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Page_Frame">
-      <summary>Page 类型的 _Frame_ 属性。</summary>
+      <summary>页类型的 _Frame_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Page_NavigationCacheMode">
-      <summary>Page 类型的 _NavigationCacheMode_ 属性。</summary>
+      <summary>页类型的 _NavigationCacheMode_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Page_TopAppBar">
-      <summary>Page 类型的 _TopAppBar_ 属性。</summary>
+      <summary>页类型的 _TopAppBar_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.PageStackEntry_SourcePageType">
       <summary>PageStackEntry 类型的 _SourcePageType_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Panel_Background">
-      <summary>Panel 类型的 _Background_ 属性。</summary>
+      <summary>面板类型的 _Background_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Panel_BackgroundTransition">
-      <summary>Panel 类型的 _BackgroundTransition_ 属性。</summary>
+      <summary>面板类型的 _BackgroundTransition_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Panel_Children">
-      <summary>Panel 类型的 _Children_ 属性。</summary>
+      <summary>面板类型的 _Children_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Panel_ChildrenTransitions">
-      <summary>Panel 类型的 _ChildrenTransitions_ 属性。</summary>
+      <summary>面板类型的 _ChildrenTransitions_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Panel_IsItemsHost">
-      <summary>Panel 类型的 _IsItemsHost_ 属性。</summary>
+      <summary>面板类型的 _IsItemsHost_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.PaneThemeTransition_Edge">
       <summary>PaneThemeTransition 类型的 _Edge_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Paragraph_Inlines">
-      <summary>Paragraph 类型的 _Inlines_ 属性。</summary>
+      <summary>段落类型的 _Inlines_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Paragraph_TextIndent">
-      <summary>Paragraph 类型的 _TextIndent_ 属性。</summary>
+      <summary>段落类型的 _TextIndent_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.PasswordBox_CanPasteClipboardContent">
       <summary>PasswordBox 类型的 _CanPasteClipboardContent_ 属性。</summary>
@@ -3540,25 +3540,25 @@
       <summary>PasswordBox 类型的 _TextReadingOrder_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Path_Data">
-      <summary>Path 类型的 _Data_ 属性。</summary>
+      <summary>路径类型的 _Data_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.PathFigure_IsClosed">
-      <summary>PathFigure 类型的 _IsClosed_ 属性。</summary>
+      <summary>System.windows.media.pathfigure&gt; 类型的 _IsClosed_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.PathFigure_IsFilled">
-      <summary>PathFigure 类型的 _IsFilled_ 属性。</summary>
+      <summary>System.windows.media.pathfigure&gt; 类型的 _IsFilled_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.PathFigure_Segments">
-      <summary>PathFigure 类型的 _Segments_ 属性。</summary>
+      <summary>System.windows.media.pathfigure&gt; 类型的 _Segments_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.PathFigure_StartPoint">
-      <summary>PathFigure 类型的 _StartPoint_ 属性。</summary>
+      <summary>System.windows.media.pathfigure&gt; 类型的 _StartPoint_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.PathGeometry_Figures">
-      <summary>PathGeometry 类型的 _Figures_ 属性。</summary>
+      <summary>System.windows.media.pathgeometry&gt; 类型的 _Figures_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.PathGeometry_FillRule">
-      <summary>PathGeometry 类型的 _FillRule_ 属性。</summary>
+      <summary>System.windows.media.pathgeometry&gt; 类型的 _FillRule_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.PathIcon_Data">
       <summary>PathIcon 类型的 _Data_ 属性。</summary>
@@ -3615,37 +3615,37 @@
       <summary>PlaneProjection 类型的 _RotationZ_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.PointAnimation_By">
-      <summary>PointAnimation 类型的 _By_ 属性。</summary>
+      <summary>Pointanimation 针对类型的 _By_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.PointAnimation_EasingFunction">
-      <summary>PointAnimation 类型的 _EasingFunction_ 属性。</summary>
+      <summary>Pointanimation 针对类型的 _EasingFunction_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.PointAnimation_EnableDependentAnimation">
-      <summary>PointAnimation 类型的 _EnableDependentAnimation_ 属性。</summary>
+      <summary>Pointanimation 针对类型的 _EnableDependentAnimation_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.PointAnimation_From">
-      <summary>PointAnimation 类型的 _From_ 属性。</summary>
+      <summary>Pointanimation 针对类型的 _From_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.PointAnimation_To">
-      <summary>PointAnimation 类型的 _To_ 属性。</summary>
+      <summary>Pointanimation 针对类型的 _To_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.PointAnimationUsingKeyFrames_EnableDependentAnimation">
-      <summary>PointAnimationUsingKeyFrames 类型的 _EnableDependentAnimation_ 属性。</summary>
+      <summary>System.windows.media.animation.pointanimationusingkeyframes&gt; 类型的 _EnableDependentAnimation_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.PointAnimationUsingKeyFrames_KeyFrames">
-      <summary>PointAnimationUsingKeyFrames 类型的 _KeyFrames_ 属性。</summary>
+      <summary>System.windows.media.animation.pointanimationusingkeyframes&gt; 类型的 _KeyFrames_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Pointer_IsInContact">
-      <summary>Pointer 类型的 _IsInContact_ 属性。</summary>
+      <summary>指针类型的 _IsInContact_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Pointer_IsInRange">
-      <summary>Pointer 类型的 _IsInRange_ 属性。</summary>
+      <summary>指针类型的 _IsInRange_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Pointer_PointerDeviceType">
-      <summary>Pointer 类型的 _PointerDeviceType_ 属性。</summary>
+      <summary>指针类型的 _PointerDeviceType_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Pointer_PointerId">
-      <summary>Pointer 类型的 _PointerId_ 属性。</summary>
+      <summary>指针类型的 _PointerId_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.PointerDownThemeAnimation_TargetName">
       <summary>PointerDownThemeAnimation 类型的 _TargetName_ 属性。</summary>
@@ -3663,19 +3663,19 @@
       <summary>PolyBezierSegment 类型的 _Points_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Polygon_FillRule">
-      <summary>Polygon 类型的 _FillRule_ 属性。</summary>
+      <summary>多边形类型的 _FillRule_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Polygon_Points">
-      <summary>Polygon 类型的 _Points_ 属性。</summary>
+      <summary>多边形类型的 _Points_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Polyline_FillRule">
-      <summary>Polyline 类型的 _FillRule_ 属性。</summary>
+      <summary>折线类型的 _FillRule_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Polyline_Points">
-      <summary>Polyline 类型的 _Points_ 属性。</summary>
+      <summary>折线类型的 _Points_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.PolyLineSegment_Points">
-      <summary>PolyLineSegment 类型的 _Points_ 属性。</summary>
+      <summary>System.windows.media.polylinesegment&gt; 类型的 _Points_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.PolyQuadraticBezierSegment_Points">
       <summary>PolyQuadraticBezierSegment 类型的 _Points_ 属性。</summary>
@@ -3723,7 +3723,7 @@
       <summary>PopupThemeTransition 类型的 _FromVerticalOffset_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.PowerEase_Power">
-      <summary>PowerEase 类型的 _Power_ 属性。</summary>
+      <summary>System.windows.media.animation.powerease&gt; 类型的 _Power_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.PrintDocument_DocumentSource">
       <summary>PrintDocument 类型的 _DocumentSource_ 属性。</summary>
@@ -3780,13 +3780,13 @@
       <summary>PropertyPath 类型的 _Path_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.QuadraticBezierSegment_Point1">
-      <summary>QuadraticBezierSegment 类型的 _Point1_ 属性。</summary>
+      <summary>System.windows.media.quadraticbeziersegment&gt; 类型的 _Point1_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.QuadraticBezierSegment_Point2">
-      <summary>QuadraticBezierSegment 类型的 _Point2_ 属性。</summary>
+      <summary>System.windows.media.quadraticbeziersegment&gt; 类型的 _Point2_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.RadioButton_GroupName">
-      <summary>RadioButton 类型的 _GroupName_ 属性。</summary>
+      <summary>单选按钮类型的 _GroupName_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.RangeBase_LargeChange">
       <summary>RangeBase 类型的 _LargeChange_ 属性。</summary>
@@ -3804,10 +3804,10 @@
       <summary>RangeBase 类型的 _Value_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Rectangle_RadiusX">
-      <summary>Rectangle 类型的 _RadiusX_ 属性。</summary>
+      <summary>矩形类型的 _RadiusX_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Rectangle_RadiusY">
-      <summary>Rectangle 类型的 _RadiusY_ 属性。</summary>
+      <summary>矩形类型的 _RadiusY_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.RectangleGeometry_Rect">
       <summary>RectangleGeometry 类型的 _Rect_ 属性。</summary>
@@ -3879,10 +3879,10 @@
       <summary>RelativeSource 类型的 _Mode_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.RenderTargetBitmap_PixelHeight">
-      <summary>RenderTargetBitmap 类型的 _PixelHeight_ 属性。</summary>
+      <summary>System.windows.media.imaging.rendertargetbitmap.render 类型的 _PixelHeight_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.RenderTargetBitmap_PixelWidth">
-      <summary>RenderTargetBitmap 类型的 _PixelWidth_ 属性。</summary>
+      <summary>System.windows.media.imaging.rendertargetbitmap.render 类型的 _PixelWidth_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.RepeatButton_Delay">
       <summary>RepeatButton 类型的 _Delay_ 属性。</summary>
@@ -4107,55 +4107,55 @@
       <summary>RichTextBlockOverflow 类型的 _Padding_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.RotateTransform_Angle">
-      <summary>RotateTransform 类型的 _Angle_ 属性。</summary>
+      <summary>System.windows.media.rotatetransform&gt; 类型的 _Angle_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.RotateTransform_CenterX">
-      <summary>RotateTransform 类型的 _CenterX_ 属性。</summary>
+      <summary>System.windows.media.rotatetransform&gt; 类型的 _CenterX_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.RotateTransform_CenterY">
-      <summary>RotateTransform 类型的 _CenterY_ 属性。</summary>
+      <summary>System.windows.media.rotatetransform&gt; 类型的 _CenterY_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.RowDefinition_ActualHeight">
-      <summary>RowDefinition 类型的 _ActualHeight_ 属性。</summary>
+      <summary>System.windows.controls.rowdefinition.height 类型的 _ActualHeight_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.RowDefinition_Height">
-      <summary>RowDefinition 类型的 _Height_ 属性。</summary>
+      <summary>System.windows.controls.rowdefinition.height 类型的 _Height_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.RowDefinition_MaxHeight">
-      <summary>RowDefinition 类型的 _MaxHeight_ 属性。</summary>
+      <summary>System.windows.controls.rowdefinition.height 类型的 _MaxHeight_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.RowDefinition_MinHeight">
-      <summary>RowDefinition 类型的 _MinHeight_ 属性。</summary>
+      <summary>System.windows.controls.rowdefinition.height 类型的 _MinHeight_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Run_FlowDirection">
-      <summary>Run 类型的 _FlowDirection_ 属性。</summary>
+      <summary>运行类型的 _FlowDirection_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Run_Text">
-      <summary>Run 类型的 _Text_ 属性。</summary>
+      <summary>运行类型的 _Text_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.ScalarTransition_Duration">
       <summary>ScalarTransition 类型的 _Duration_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.ScaleTransform_CenterX">
-      <summary>ScaleTransform 类型的 _CenterX_ 属性。</summary>
+      <summary>System.windows.media.scaletransform&gt; 类型的 _CenterX_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.ScaleTransform_CenterY">
-      <summary>ScaleTransform 类型的 _CenterY_ 属性。</summary>
+      <summary>System.windows.media.scaletransform&gt; 类型的 _CenterY_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.ScaleTransform_ScaleX">
-      <summary>ScaleTransform 类型的 _ScaleX_ 属性。</summary>
+      <summary>System.windows.media.scaletransform&gt; 类型的 _ScaleX_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.ScaleTransform_ScaleY">
-      <summary>ScaleTransform 类型的 _ScaleY_ 属性。</summary>
+      <summary>System.windows.media.scaletransform&gt; 类型的 _ScaleY_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.ScrollBar_IndicatorMode">
-      <summary>ScrollBar 类型的 _IndicatorMode_ 属性。</summary>
+      <summary>滚动条类型的 _IndicatorMode_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.ScrollBar_Orientation">
-      <summary>ScrollBar 类型的 _Orientation_ 属性。</summary>
+      <summary>滚动条类型的 _Orientation_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.ScrollBar_ViewportSize">
-      <summary>ScrollBar 类型的 _ViewportSize_ 属性。</summary>
+      <summary>滚动条类型的 _ViewportSize_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.ScrollContentPresenter_CanContentRenderOutsideBounds">
       <summary>ScrollContentPresenter 类型的 _CanContentRenderOutsideBounds_ 属性。</summary>
@@ -4302,19 +4302,19 @@
       <summary>SearchBox 类型的 _SearchHistoryEnabled_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Selector_IsSynchronizedWithCurrentItem">
-      <summary>Selector 类型的 _IsSynchronizedWithCurrentItem_ 属性。</summary>
+      <summary>选择器类型的 _IsSynchronizedWithCurrentItem_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Selector_SelectedIndex">
-      <summary>Selector 类型的 _SelectedIndex_ 属性。</summary>
+      <summary>选择器类型的 _SelectedIndex_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Selector_SelectedItem">
-      <summary>Selector 类型的 _SelectedItem_ 属性。</summary>
+      <summary>选择器类型的 _SelectedItem_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Selector_SelectedValue">
-      <summary>Selector 类型的 _SelectedValue_ 属性。</summary>
+      <summary>选择器类型的 _SelectedValue_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Selector_SelectedValuePath">
-      <summary>Selector 类型的 _SelectedValuePath_ 属性。</summary>
+      <summary>选择器类型的 _SelectedValuePath_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.SelectorItem_IsSelected">
       <summary>SelectorItem 类型的 _IsSelected_ 属性。</summary>
@@ -4383,40 +4383,40 @@
       <summary>SettingsFlyoutTemplateSettings 类型的 _IconSource_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Shape_Fill">
-      <summary>Shape 类型的 _Fill_ 属性。</summary>
+      <summary>形状类型的 _Fill_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Shape_GeometryTransform">
-      <summary>Shape 类型的 _GeometryTransform_ 属性。</summary>
+      <summary>形状类型的 _GeometryTransform_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Shape_Stretch">
-      <summary>Shape 类型的 _Stretch_ 属性。</summary>
+      <summary>形状类型的 _Stretch_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Shape_Stroke">
-      <summary>Shape 类型的 _Stroke_ 属性。</summary>
+      <summary>形状类型的 _Stroke_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Shape_StrokeDashArray">
-      <summary>Shape 类型的 _StrokeDashArray_ 属性。</summary>
+      <summary>形状类型的 _StrokeDashArray_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Shape_StrokeDashCap">
-      <summary>Shape 类型的 _StrokeDashCap_ 属性。</summary>
+      <summary>形状类型的 _StrokeDashCap_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Shape_StrokeDashOffset">
-      <summary>Shape 类型的 _StrokeDashOffset_ 属性。</summary>
+      <summary>形状类型的 _StrokeDashOffset_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Shape_StrokeEndLineCap">
-      <summary>Shape 类型的 _StrokeEndLineCap_ 属性。</summary>
+      <summary>形状类型的 _StrokeEndLineCap_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Shape_StrokeLineJoin">
-      <summary>Shape 类型的 _StrokeLineJoin_ 属性。</summary>
+      <summary>形状类型的 _StrokeLineJoin_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Shape_StrokeMiterLimit">
-      <summary>Shape 类型的 _StrokeMiterLimit_ 属性。</summary>
+      <summary>形状类型的 _StrokeMiterLimit_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Shape_StrokeStartLineCap">
-      <summary>Shape 类型的 _StrokeStartLineCap_ 属性。</summary>
+      <summary>形状类型的 _StrokeStartLineCap_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Shape_StrokeThickness">
-      <summary>Shape 类型的 _StrokeThickness_ 属性。</summary>
+      <summary>形状类型的 _StrokeThickness_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.SkewTransform_AngleX">
       <summary>SkewTransform 类型的 _AngleX_ 属性。</summary>
@@ -4431,52 +4431,52 @@
       <summary>SkewTransform 类型的 _CenterY_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Slider_Header">
-      <summary>Slider 类型的 _Header_ 属性。</summary>
+      <summary>滑块类型的 _Header_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Slider_HeaderTemplate">
-      <summary>Slider 类型的 _HeaderTemplate_ 属性。</summary>
+      <summary>滑块类型的 _HeaderTemplate_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Slider_IntermediateValue">
-      <summary>Slider 类型的 _IntermediateValue_ 属性。</summary>
+      <summary>滑块类型的 _IntermediateValue_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Slider_IsDirectionReversed">
-      <summary>Slider 类型的 _IsDirectionReversed_ 属性。</summary>
+      <summary>滑块类型的 _IsDirectionReversed_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Slider_IsThumbToolTipEnabled">
-      <summary>Slider 类型的 _IsThumbToolTipEnabled_ 属性。</summary>
+      <summary>滑块类型的 _IsThumbToolTipEnabled_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Slider_Orientation">
-      <summary>Slider 类型的 _Orientation_ 属性。</summary>
+      <summary>滑块类型的 _Orientation_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Slider_SnapsTo">
-      <summary>Slider 类型的 _SnapsTo_ 属性。</summary>
+      <summary>滑块类型的 _SnapsTo_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Slider_StepFrequency">
-      <summary>Slider 类型的 _StepFrequency_ 属性。</summary>
+      <summary>滑块类型的 _StepFrequency_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Slider_ThumbToolTipValueConverter">
-      <summary>Slider 类型的 _ThumbToolTipValueConverter_ 属性。</summary>
+      <summary>滑块类型的 _ThumbToolTipValueConverter_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Slider_TickFrequency">
-      <summary>Slider 类型的 _TickFrequency_ 属性。</summary>
+      <summary>滑块类型的 _TickFrequency_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Slider_TickPlacement">
-      <summary>Slider 类型的 _TickPlacement_ 属性。</summary>
+      <summary>滑块类型的 _TickPlacement_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.SolidColorBrush_Color">
-      <summary>SolidColorBrush 类型的 _Color_ 属性。</summary>
+      <summary>System.windows.media.solidcolorbrush&gt; 类型的 _Color_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Span_Inlines">
-      <summary>Span 类型的 _Inlines_ 属性。</summary>
+      <summary>范围类型的 _Inlines_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.SplineColorKeyFrame_KeySpline">
       <summary>SplineColorKeyFrame 类型的 _KeySpline_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.SplineDoubleKeyFrame_KeySpline">
-      <summary>SplineDoubleKeyFrame 类型的 _KeySpline_ 属性。</summary>
+      <summary>System.windows.media.animation.splinedoublekeyframe.keyspline 类型的 _KeySpline_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.SplinePointKeyFrame_KeySpline">
-      <summary>SplinePointKeyFrame 类型的 _KeySpline_ 属性。</summary>
+      <summary>来类型的 _KeySpline_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.SplitCloseThemeAnimation_ClosedLength">
       <summary>SplitCloseThemeAnimation 类型的 _ClosedLength_ 属性。</summary>
@@ -4593,28 +4593,28 @@
       <summary>SplitViewTemplateSettings 类型的 _OpenPaneLengthMinusCompactLength_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.StackPanel_AreScrollSnapPointsRegular">
-      <summary>StackPanel 类型的 _AreScrollSnapPointsRegular_ 属性。</summary>
+      <summary>System.windows.controls.stackpanel&gt; 类型的 _AreScrollSnapPointsRegular_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.StackPanel_BackgroundSizing">
-      <summary>StackPanel 类型的 _BackgroundSizing_ 属性。</summary>
+      <summary>System.windows.controls.stackpanel&gt; 类型的 _BackgroundSizing_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.StackPanel_BorderBrush">
-      <summary>StackPanel 类型的 _BorderBrush_ 属性。</summary>
+      <summary>System.windows.controls.stackpanel&gt; 类型的 _BorderBrush_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.StackPanel_BorderThickness">
-      <summary>StackPanel 类型的 _BorderThickness_ 属性。</summary>
+      <summary>System.windows.controls.stackpanel&gt; 类型的 _BorderThickness_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.StackPanel_CornerRadius">
-      <summary>StackPanel 类型的 _CornerRadius_ 属性。</summary>
+      <summary>System.windows.controls.stackpanel&gt; 类型的 _CornerRadius_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.StackPanel_Orientation">
-      <summary>StackPanel 类型的 _Orientation_ 属性。</summary>
+      <summary>System.windows.controls.stackpanel&gt; 类型的 _Orientation_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.StackPanel_Padding">
-      <summary>StackPanel 类型的 _Padding_ 属性。</summary>
+      <summary>System.windows.controls.stackpanel&gt; 类型的 _Padding_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.StackPanel_Spacing">
-      <summary>StackPanel 类型的 _Spacing_ 属性。</summary>
+      <summary>System.windows.controls.stackpanel&gt; 类型的 _Spacing_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.StandardUICommand_Kind">
       <summary>StandardUICommand 类型的 _Kind_ 属性。</summary>
@@ -4623,25 +4623,25 @@
       <summary>StateTrigger 类型的 _IsActive_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Storyboard_Children">
-      <summary>Storyboard 类型的 _Children_ 属性。</summary>
+      <summary>情节提要类型的 _Children_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Storyboard_TargetName">
-      <summary>Storyboard 类型的 _TargetName_ 属性。</summary>
+      <summary>情节提要类型的 _TargetName_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Storyboard_TargetProperty">
-      <summary>Storyboard 类型的 _TargetProperty_ 属性。</summary>
+      <summary>情节提要类型的 _TargetProperty_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Style_BasedOn">
-      <summary>Style 类型的 _BasedOn_ 属性。</summary>
+      <summary>样式类型的 _BasedOn_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Style_IsSealed">
-      <summary>Style 类型的 _IsSealed_ 属性。</summary>
+      <summary>样式类型的 _IsSealed_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Style_Setters">
-      <summary>Style 类型的 _Setters_ 属性。</summary>
+      <summary>样式类型的 _Setters_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Style_TargetType">
-      <summary>Style 类型的 _TargetType_ 属性。</summary>
+      <summary>样式类型的 _TargetType_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.SvgImageSource_RasterizePixelHeight">
       <summary>SvgImageSource 类型的 _RasterizePixelHeight_ 属性。</summary>
@@ -4776,100 +4776,100 @@
       <summary>TextBlock 类型的 _TextWrapping_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.TextBox_AcceptsReturn">
-      <summary>TextBox 类型的 _AcceptsReturn_ 属性。</summary>
+      <summary>文本框类型的 _AcceptsReturn_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.TextBox_CanPasteClipboardContent">
-      <summary>TextBox 类型的 _CanPasteClipboardContent_ 属性。</summary>
+      <summary>文本框类型的 _CanPasteClipboardContent_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.TextBox_CanRedo">
-      <summary>TextBox 类型的 _CanRedo_ 属性。</summary>
+      <summary>文本框类型的 _CanRedo_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.TextBox_CanUndo">
-      <summary>TextBox 类型的 _CanUndo_ 属性。</summary>
+      <summary>文本框类型的 _CanUndo_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.TextBox_CharacterCasing">
-      <summary>TextBox 类型的 _CharacterCasing_ 属性。</summary>
+      <summary>文本框类型的 _CharacterCasing_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.TextBox_Description">
-      <summary>TextBox 类型的 _Description_ 属性。</summary>
+      <summary>文本框类型的 _Description_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.TextBox_DesiredCandidateWindowAlignment">
-      <summary>TextBox 类型的 _DesiredCandidateWindowAlignment_ 属性。</summary>
+      <summary>文本框类型的 _DesiredCandidateWindowAlignment_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.TextBox_HandwritingView">
-      <summary>TextBox 类型的 _HandwritingView_ 属性。</summary>
+      <summary>文本框类型的 _HandwritingView_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.TextBox_Header">
-      <summary>TextBox 类型的 _Header_ 属性。</summary>
+      <summary>文本框类型的 _Header_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.TextBox_HeaderTemplate">
-      <summary>TextBox 类型的 _HeaderTemplate_ 属性。</summary>
+      <summary>文本框类型的 _HeaderTemplate_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.TextBox_HorizontalTextAlignment">
-      <summary>TextBox 类型的 _HorizontalTextAlignment_ 属性。</summary>
+      <summary>文本框类型的 _HorizontalTextAlignment_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.TextBox_InputScope">
-      <summary>TextBox 类型的 _InputScope_ 属性。</summary>
+      <summary>文本框类型的 _InputScope_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.TextBox_IsColorFontEnabled">
-      <summary>TextBox 类型的 _IsColorFontEnabled_ 属性。</summary>
+      <summary>文本框类型的 _IsColorFontEnabled_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.TextBox_IsHandwritingViewEnabled">
-      <summary>TextBox 类型的 _IsHandwritingViewEnabled_ 属性。</summary>
+      <summary>文本框类型的 _IsHandwritingViewEnabled_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.TextBox_IsReadOnly">
-      <summary>TextBox 类型的 _IsReadOnly_ 属性。</summary>
+      <summary>文本框类型的 _IsReadOnly_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.TextBox_IsSpellCheckEnabled">
-      <summary>TextBox 类型的 _IsSpellCheckEnabled_ 属性。</summary>
+      <summary>文本框类型的 _IsSpellCheckEnabled_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.TextBox_IsTextPredictionEnabled">
-      <summary>TextBox 类型的 _IsTextPredictionEnabled_ 属性。</summary>
+      <summary>文本框类型的 _IsTextPredictionEnabled_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.TextBox_MaxLength">
-      <summary>TextBox 类型的 _MaxLength_ 属性。</summary>
+      <summary>文本框类型的 _MaxLength_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.TextBox_PlaceholderForeground">
-      <summary>TextBox 类型的 _PlaceholderForeground_ 属性。</summary>
+      <summary>文本框类型的 _PlaceholderForeground_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.TextBox_PlaceholderText">
-      <summary>TextBox 类型的 _PlaceholderText_ 属性。</summary>
+      <summary>文本框类型的 _PlaceholderText_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.TextBox_PreventKeyboardDisplayOnProgrammaticFocus">
-      <summary>TextBox 类型的 _PreventKeyboardDisplayOnProgrammaticFocus_ 属性。</summary>
+      <summary>文本框类型的 _PreventKeyboardDisplayOnProgrammaticFocus_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.TextBox_ProofingMenuFlyout">
-      <summary>TextBox 类型的 _ProofingMenuFlyout_ 属性。</summary>
+      <summary>文本框类型的 _ProofingMenuFlyout_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.TextBox_SelectedText">
-      <summary>TextBox 类型的 _SelectedText_ 属性。</summary>
+      <summary>文本框类型的 _SelectedText_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.TextBox_SelectionFlyout">
-      <summary>TextBox 类型的 _SelectionFlyout_ 属性。</summary>
+      <summary>文本框类型的 _SelectionFlyout_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.TextBox_SelectionHighlightColor">
-      <summary>TextBox 类型的 _SelectionHighlightColor_ 属性。</summary>
+      <summary>文本框类型的 _SelectionHighlightColor_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.TextBox_SelectionHighlightColorWhenNotFocused">
-      <summary>TextBox 类型的 _SelectionHighlightColorWhenNotFocused_ 属性。</summary>
+      <summary>文本框类型的 _SelectionHighlightColorWhenNotFocused_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.TextBox_SelectionLength">
-      <summary>TextBox 类型的 _SelectionLength_ 属性。</summary>
+      <summary>文本框类型的 _SelectionLength_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.TextBox_SelectionStart">
-      <summary>TextBox 类型的 _SelectionStart_ 属性。</summary>
+      <summary>文本框类型的 _SelectionStart_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.TextBox_Text">
-      <summary>TextBox 类型的 _Text_ 属性。</summary>
+      <summary>文本框类型的 _Text_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.TextBox_TextAlignment">
-      <summary>TextBox 类型的 _TextAlignment_ 属性。</summary>
+      <summary>文本框类型的 _TextAlignment_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.TextBox_TextReadingOrder">
-      <summary>TextBox 类型的 _TextReadingOrder_ 属性。</summary>
+      <summary>文本框类型的 _TextReadingOrder_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.TextBox_TextWrapping">
-      <summary>TextBox 类型的 _TextWrapping_ 属性。</summary>
+      <summary>文本框类型的 _TextWrapping_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.TextElement_AccessKey">
       <summary>TextElement 类型的 _AccessKey_ 属性。</summary>
@@ -4953,22 +4953,22 @@
       <summary>TileBrush 类型的 _Stretch_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Timeline_AutoReverse">
-      <summary>Timeline 类型的 _AutoReverse_ 属性。</summary>
+      <summary>时间线类型的 _AutoReverse_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Timeline_BeginTime">
-      <summary>Timeline 类型的 _BeginTime_ 属性。</summary>
+      <summary>时间线类型的 _BeginTime_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Timeline_Duration">
-      <summary>Timeline 类型的 _Duration_ 属性。</summary>
+      <summary>时间线类型的 _Duration_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Timeline_FillBehavior">
-      <summary>Timeline 类型的 _FillBehavior_ 属性。</summary>
+      <summary>时间线类型的 _FillBehavior_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Timeline_RepeatBehavior">
-      <summary>Timeline 类型的 _RepeatBehavior_ 属性。</summary>
+      <summary>时间线类型的 _RepeatBehavior_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Timeline_SpeedRatio">
-      <summary>Timeline 类型的 _SpeedRatio_ 属性。</summary>
+      <summary>时间线类型的 _SpeedRatio_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.TimelineMarker_Text">
       <summary>TimelineMarker 类型的 _Text_ 属性。</summary>
@@ -5001,10 +5001,10 @@
       <summary>TimePicker 类型的 _Time_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.ToggleButton_IsChecked">
-      <summary>ToggleButton 类型的 _IsChecked_ 属性。</summary>
+      <summary>切换按钮类型的 _IsChecked_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.ToggleButton_IsThreeState">
-      <summary>ToggleButton 类型的 _IsThreeState_ 属性。</summary>
+      <summary>切换按钮类型的 _IsThreeState_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.ToggleMenuFlyoutItem_IsChecked">
       <summary>ToggleMenuFlyoutItem 类型的 _IsChecked_ 属性。</summary>
@@ -5058,25 +5058,25 @@
       <summary>ToggleSwitchTemplateSettings 类型的 _KnobOnToOffOffset_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.ToolTip_HorizontalOffset">
-      <summary>ToolTip 类型的 _HorizontalOffset_ 属性。</summary>
+      <summary>工具提示类型的 _HorizontalOffset_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.ToolTip_IsOpen">
-      <summary>ToolTip 类型的 _IsOpen_ 属性。</summary>
+      <summary>工具提示类型的 _IsOpen_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.ToolTip_Placement">
-      <summary>ToolTip 类型的 _Placement_ 属性。</summary>
+      <summary>工具提示类型的 _Placement_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.ToolTip_PlacementRect">
-      <summary>ToolTip 类型的 _PlacementRect_ 属性。</summary>
+      <summary>工具提示类型的 _PlacementRect_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.ToolTip_PlacementTarget">
-      <summary>ToolTip 类型的 _PlacementTarget_ 属性。</summary>
+      <summary>工具提示类型的 _PlacementTarget_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.ToolTip_TemplateSettings">
-      <summary>ToolTip 类型的 _TemplateSettings_ 属性。</summary>
+      <summary>工具提示类型的 _TemplateSettings_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.ToolTip_VerticalOffset">
-      <summary>ToolTip 类型的 _VerticalOffset_ 属性。</summary>
+      <summary>工具提示类型的 _VerticalOffset_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.ToolTipService_Placement">
       <summary>ToolTipService 类型的 _Placement_ 属性。</summary>
@@ -5094,145 +5094,145 @@
       <summary>ToolTipTemplateSettings 类型的 _FromVerticalOffset_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.TransformGroup_Children">
-      <summary>TransformGroup 类型的 _Children_ 属性。</summary>
+      <summary>System.windows.media.transformgroup&gt; 类型的 _Children_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.TransformGroup_Value">
-      <summary>TransformGroup 类型的 _Value_ 属性。</summary>
+      <summary>System.windows.media.transformgroup&gt; 类型的 _Value_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.TranslateTransform_X">
-      <summary>TranslateTransform 类型的 _X_ 属性。</summary>
+      <summary>System.windows.media.translatetransform.x 类型的 _X_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.TranslateTransform_Y">
-      <summary>TranslateTransform 类型的 _Y_ 属性。</summary>
+      <summary>System.windows.media.translatetransform.x 类型的 _Y_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Typography_AnnotationAlternates">
-      <summary>Typography 类型的 _AnnotationAlternates_ 属性。</summary>
+      <summary>版式类型的 _AnnotationAlternates_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Typography_Capitals">
-      <summary>Typography 类型的 _Capitals_ 属性。</summary>
+      <summary>版式类型的 _Capitals_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Typography_CapitalSpacing">
-      <summary>Typography 类型的 _CapitalSpacing_ 属性。</summary>
+      <summary>版式类型的 _CapitalSpacing_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Typography_CaseSensitiveForms">
-      <summary>Typography 类型的 _CaseSensitiveForms_ 属性。</summary>
+      <summary>版式类型的 _CaseSensitiveForms_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Typography_ContextualAlternates">
-      <summary>Typography 类型的 _ContextualAlternates_ 属性。</summary>
+      <summary>版式类型的 _ContextualAlternates_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Typography_ContextualLigatures">
-      <summary>Typography 类型的 _ContextualLigatures_ 属性。</summary>
+      <summary>版式类型的 _ContextualLigatures_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Typography_ContextualSwashes">
-      <summary>Typography 类型的 _ContextualSwashes_ 属性。</summary>
+      <summary>版式类型的 _ContextualSwashes_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Typography_DiscretionaryLigatures">
-      <summary>Typography 类型的 _DiscretionaryLigatures_ 属性。</summary>
+      <summary>版式类型的 _DiscretionaryLigatures_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Typography_EastAsianExpertForms">
-      <summary>Typography 类型的 _EastAsianExpertForms_ 属性。</summary>
+      <summary>版式类型的 _EastAsianExpertForms_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Typography_EastAsianLanguage">
-      <summary>Typography 类型的 _EastAsianLanguage_ 属性。</summary>
+      <summary>版式类型的 _EastAsianLanguage_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Typography_EastAsianWidths">
-      <summary>Typography 类型的 _EastAsianWidths_ 属性。</summary>
+      <summary>版式类型的 _EastAsianWidths_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Typography_Fraction">
-      <summary>Typography 类型的 _Fraction_ 属性。</summary>
+      <summary>版式类型的 _Fraction_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Typography_HistoricalForms">
-      <summary>Typography 类型的 _HistoricalForms_ 属性。</summary>
+      <summary>版式类型的 _HistoricalForms_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Typography_HistoricalLigatures">
-      <summary>Typography 类型的 _HistoricalLigatures_ 属性。</summary>
+      <summary>版式类型的 _HistoricalLigatures_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Typography_Kerning">
-      <summary>Typography 类型的 _Kerning_ 属性。</summary>
+      <summary>版式类型的 _Kerning_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Typography_MathematicalGreek">
-      <summary>Typography 类型的 _MathematicalGreek_ 属性。</summary>
+      <summary>版式类型的 _MathematicalGreek_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Typography_NumeralAlignment">
-      <summary>Typography 类型的 _NumeralAlignment_ 属性。</summary>
+      <summary>版式类型的 _NumeralAlignment_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Typography_NumeralStyle">
-      <summary>Typography 类型的 _NumeralStyle_ 属性。</summary>
+      <summary>版式类型的 _NumeralStyle_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Typography_SlashedZero">
-      <summary>Typography 类型的 _SlashedZero_ 属性。</summary>
+      <summary>版式类型的 _SlashedZero_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Typography_StandardLigatures">
-      <summary>Typography 类型的 _StandardLigatures_ 属性。</summary>
+      <summary>版式类型的 _StandardLigatures_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Typography_StandardSwashes">
-      <summary>Typography 类型的 _StandardSwashes_ 属性。</summary>
+      <summary>版式类型的 _StandardSwashes_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Typography_StylisticAlternates">
-      <summary>Typography 类型的 _StylisticAlternates_ 属性。</summary>
+      <summary>版式类型的 _StylisticAlternates_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Typography_StylisticSet1">
-      <summary>Typography 类型的 _StylisticSet1_ 属性。</summary>
+      <summary>版式类型的 _StylisticSet1_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Typography_StylisticSet10">
-      <summary>Typography 类型的 _StylisticSet10_ 属性。</summary>
+      <summary>版式类型的 _StylisticSet10_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Typography_StylisticSet11">
-      <summary>Typography 类型的 _StylisticSet11_ 属性。</summary>
+      <summary>版式类型的 _StylisticSet11_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Typography_StylisticSet12">
-      <summary>Typography 类型的 _StylisticSet12_ 属性。</summary>
+      <summary>版式类型的 _StylisticSet12_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Typography_StylisticSet13">
-      <summary>Typography 类型的 _StylisticSet13_ 属性。</summary>
+      <summary>版式类型的 _StylisticSet13_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Typography_StylisticSet14">
-      <summary>Typography 类型的 _StylisticSet14_ 属性。</summary>
+      <summary>版式类型的 _StylisticSet14_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Typography_StylisticSet15">
-      <summary>Typography 类型的 _StylisticSet15_ 属性。</summary>
+      <summary>版式类型的 _StylisticSet15_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Typography_StylisticSet16">
-      <summary>Typography 类型的 _StylisticSet16_ 属性。</summary>
+      <summary>版式类型的 _StylisticSet16_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Typography_StylisticSet17">
-      <summary>Typography 类型的 _StylisticSet17_ 属性。</summary>
+      <summary>版式类型的 _StylisticSet17_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Typography_StylisticSet18">
-      <summary>Typography 类型的 _StylisticSet18_ 属性。</summary>
+      <summary>版式类型的 _StylisticSet18_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Typography_StylisticSet19">
-      <summary>Typography 类型的 _StylisticSet19_ 属性。</summary>
+      <summary>版式类型的 _StylisticSet19_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Typography_StylisticSet2">
-      <summary>Typography 类型的 _StylisticSet2_ 属性。</summary>
+      <summary>版式类型的 _StylisticSet2_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Typography_StylisticSet20">
-      <summary>Typography 类型的 _StylisticSet20_ 属性。</summary>
+      <summary>版式类型的 _StylisticSet20_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Typography_StylisticSet3">
-      <summary>Typography 类型的 _StylisticSet3_ 属性。</summary>
+      <summary>版式类型的 _StylisticSet3_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Typography_StylisticSet4">
-      <summary>Typography 类型的 _StylisticSet4_ 属性。</summary>
+      <summary>版式类型的 _StylisticSet4_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Typography_StylisticSet5">
-      <summary>Typography 类型的 _StylisticSet5_ 属性。</summary>
+      <summary>版式类型的 _StylisticSet5_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Typography_StylisticSet6">
-      <summary>Typography 类型的 _StylisticSet6_ 属性。</summary>
+      <summary>版式类型的 _StylisticSet6_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Typography_StylisticSet7">
-      <summary>Typography 类型的 _StylisticSet7_ 属性。</summary>
+      <summary>版式类型的 _StylisticSet7_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Typography_StylisticSet8">
-      <summary>Typography 类型的 _StylisticSet8_ 属性。</summary>
+      <summary>版式类型的 _StylisticSet8_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Typography_StylisticSet9">
-      <summary>Typography 类型的 _StylisticSet9_ 属性。</summary>
+      <summary>版式类型的 _StylisticSet9_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.Typography_Variants">
-      <summary>Typography 类型的 _Variants_ 属性。</summary>
+      <summary>版式类型的 _Variants_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.UIElement_AccessKey">
       <summary>UIElement 类型的 _AccessKey_ 属性。</summary>
@@ -5463,10 +5463,10 @@
       <summary>VisualState 类型的 _Storyboard_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.VisualStateGroup_States">
-      <summary>VisualStateGroup 类型的 _States_ 属性。</summary>
+      <summary>System.windows.visualstategroup&gt; 类型的 _States_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.VisualStateGroup_Transitions">
-      <summary>VisualStateGroup 类型的 _Transitions_ 属性。</summary>
+      <summary>System.windows.visualstategroup&gt; 类型的 _Transitions_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.VisualStateManager_CustomVisualStateManager">
       <summary>VisualStateManager 类型的 _CustomVisualStateManager_ 属性。</summary>
@@ -5475,64 +5475,64 @@
       <summary>VisualStateManager 类型的 _VisualStateGroups_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.VisualTransition_From">
-      <summary>VisualTransition 类型的 _From_ 属性。</summary>
+      <summary>System.windows.visualtransition&gt; 类型的 _From_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.VisualTransition_GeneratedDuration">
-      <summary>VisualTransition 类型的 _GeneratedDuration_ 属性。</summary>
+      <summary>System.windows.visualtransition&gt; 类型的 _GeneratedDuration_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.VisualTransition_GeneratedEasingFunction">
-      <summary>VisualTransition 类型的 _GeneratedEasingFunction_ 属性。</summary>
+      <summary>System.windows.visualtransition&gt; 类型的 _GeneratedEasingFunction_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.VisualTransition_Storyboard">
-      <summary>VisualTransition 类型的 _Storyboard_ 属性。</summary>
+      <summary>System.windows.visualtransition&gt; 类型的 _Storyboard_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.VisualTransition_To">
-      <summary>VisualTransition 类型的 _To_ 属性。</summary>
+      <summary>System.windows.visualtransition&gt; 类型的 _To_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.WebView_AllowedScriptNotifyUris">
-      <summary>WebView 类型的 _AllowedScriptNotifyUris_ 属性。</summary>
+      <summary>Web 视图类型的 _AllowedScriptNotifyUris_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.WebView_CanGoBack">
-      <summary>WebView 类型的 _CanGoBack_ 属性。</summary>
+      <summary>Web 视图类型的 _CanGoBack_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.WebView_CanGoForward">
-      <summary>WebView 类型的 _CanGoForward_ 属性。</summary>
+      <summary>Web 视图类型的 _CanGoForward_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.WebView_ContainsFullScreenElement">
-      <summary>WebView 类型的 _ContainsFullScreenElement_ 属性。</summary>
+      <summary>Web 视图类型的 _ContainsFullScreenElement_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.WebView_DataTransferPackage">
-      <summary>WebView 类型的 _DataTransferPackage_ 属性。</summary>
+      <summary>Web 视图类型的 _DataTransferPackage_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.WebView_DefaultBackgroundColor">
-      <summary>WebView 类型的 _DefaultBackgroundColor_ 属性。</summary>
+      <summary>Web 视图类型的 _DefaultBackgroundColor_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.WebView_DeferredPermissionRequests">
-      <summary>WebView 类型的 _DeferredPermissionRequests_ 属性。</summary>
+      <summary>Web 视图类型的 _DeferredPermissionRequests_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.WebView_DocumentTitle">
-      <summary>WebView 类型的 _DocumentTitle_ 属性。</summary>
+      <summary>Web 视图类型的 _DocumentTitle_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.WebView_ExecutionMode">
-      <summary>WebView 类型的 _ExecutionMode_ 属性。</summary>
+      <summary>Web 视图类型的 _ExecutionMode_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.WebView_Settings">
-      <summary>WebView 类型的 _Settings_ 属性。</summary>
+      <summary>Web 视图类型的 _Settings_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.WebView_Source">
-      <summary>WebView 类型的 _Source_ 属性。</summary>
+      <summary>Web 视图类型的 _Source_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.WebView_XYFocusDown">
-      <summary>WebView 类型的 _XYFocusDown_ 属性。</summary>
+      <summary>Web 视图类型的 _XYFocusDown_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.WebView_XYFocusLeft">
-      <summary>WebView 类型的 _XYFocusLeft_ 属性。</summary>
+      <summary>Web 视图类型的 _XYFocusLeft_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.WebView_XYFocusRight">
-      <summary>WebView 类型的 _XYFocusRight_ 属性。</summary>
+      <summary>Web 视图类型的 _XYFocusRight_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.WebView_XYFocusUp">
-      <summary>WebView 类型的 _XYFocusUp_ 属性。</summary>
+      <summary>Web 视图类型的 _XYFocusUp_ 属性。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlPropertyIndex.WebViewBrush_SourceName">
       <summary>WebViewBrush 类型的 _SourceName_ 属性。</summary>
@@ -5580,7 +5580,7 @@
       <summary>XamlUICommand 类型的 _Label_ 属性。</summary>
     </member>
     <member name="T:Windows.UI.Xaml.Core.Direct.XamlTypeIndex">
-      <summary>列举 XamlDirect 中支持的所有类型的枚举。</summary>
+      <summary>列举 XamlDirect 中所有支持的类型的枚举。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.AdaptiveTrigger">
       <summary>AdaptiveTrigger 类型。</summary>
@@ -5631,13 +5631,13 @@
       <summary>BeginStoryboard 类型。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.BezierSegment">
-      <summary>BezierSegment 类型。</summary>
+      <summary>System.windows.media.beziersegment&gt; 类型。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.Binding">
-      <summary>Binding 类型。</summary>
+      <summary>绑定类型。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.BindingBase">
-      <summary>BindingBase 类型。</summary>
+      <summary>System.windows.data.bindingbase.delay 类型。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.BitmapCache">
       <summary>BitmapCache 类型。</summary>
@@ -5652,16 +5652,16 @@
       <summary>BitmapImage 类型。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.Bold">
-      <summary>Bold 类型。</summary>
+      <summary>粗体类型。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.Border">
-      <summary>Border 类型。</summary>
+      <summary>边框类型。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.BounceEase">
       <summary>BounceEase 类型。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.Button">
-      <summary>Button 类型。</summary>
+      <summary>按钮类型。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.CalendarDatePicker">
       <summary>CalendarDatePicker 类型。</summary>
@@ -5676,7 +5676,7 @@
       <summary>CalendarViewDayItem 类型。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.Canvas">
-      <summary>Canvas 类型。</summary>
+      <summary>画布类型。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.CaptureElement">
       <summary>CaptureElement 类型。</summary>
@@ -5685,7 +5685,7 @@
       <summary>CarouselPanel 类型。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.CheckBox">
-      <summary>CheckBox 类型。</summary>
+      <summary>复选框类型。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.CircleEase">
       <summary>CircleEase 类型。</summary>
@@ -5694,7 +5694,7 @@
       <summary>CollectionViewSource 类型。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.ColorAnimation">
-      <summary>ColorAnimation 类型。</summary>
+      <summary>System.windows.media.animation.coloranimation&gt; 类型。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.ColorAnimationUsingKeyFrames">
       <summary>ColorAnimationUsingKeyFrames 类型。</summary>
@@ -5724,7 +5724,7 @@
       <summary>CompositeTransform3D 类型。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.ContentControl">
-      <summary>ContentControl 类型。</summary>
+      <summary>System.windows.controls.contentcontrol&gt; 类型。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.ContentDialog">
       <summary>ContentDialog 类型。</summary>
@@ -5733,19 +5733,19 @@
       <summary>ContentLink 类型。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.ContentPresenter">
-      <summary>ContentPresenter 类型。</summary>
+      <summary>System.windows.controls.contentpresenter&gt; 类型。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.ContentThemeTransition">
       <summary>ContentThemeTransition 类型。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.ControlTemplate">
-      <summary>ControlTemplate 类型。</summary>
+      <summary>System.windows.controls.controltemplate&gt; 类型。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.CubicEase">
       <summary>CubicEase 类型。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.DataTemplate">
-      <summary>DataTemplate 类型。</summary>
+      <summary>System.windows.datatemplate&gt; 类型。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.DatePicker">
       <summary>DatePicker 类型。</summary>
@@ -5757,7 +5757,7 @@
       <summary>DiscreteColorKeyFrame 类型。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.DiscreteDoubleKeyFrame">
-      <summary>DiscreteDoubleKeyFrame 类型。</summary>
+      <summary>System.windows.media.animation.discretedoublekeyframe&gt; 类型。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.DiscreteObjectKeyFrame">
       <summary>DiscreteObjectKeyFrame 类型。</summary>
@@ -5766,10 +5766,10 @@
       <summary>DiscretePointKeyFrame 类型。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.DoubleAnimation">
-      <summary>DoubleAnimation 类型。</summary>
+      <summary>System.windows.media.animation.doubleanimation&gt; 类型。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.DoubleAnimationUsingKeyFrames">
-      <summary>DoubleAnimationUsingKeyFrames 类型。</summary>
+      <summary>System.windows.media.animation.doubleanimationusingkeyframes.keyframes 类型。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.DragItemThemeAnimation">
       <summary>DragItemThemeAnimation 类型。</summary>
@@ -5799,19 +5799,19 @@
       <summary>EdgeUIThemeTransition 类型。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.ElasticEase">
-      <summary>ElasticEase 类型。</summary>
+      <summary>带类型。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.Ellipse">
-      <summary>Ellipse 类型。</summary>
+      <summary>省略号类型。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.EllipseGeometry">
-      <summary>EllipseGeometry 类型。</summary>
+      <summary>System.windows.media.ellipsegeometry&gt; 类型。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.EntranceThemeTransition">
       <summary>EntranceThemeTransition 类型。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.EventTrigger">
-      <summary>EventTrigger 类型。</summary>
+      <summary>System.windows.eventtrigger&gt; 类型。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.ExponentialEase">
       <summary>ExponentialEase 类型。</summary>
@@ -5829,7 +5829,7 @@
       <summary>FlipViewItem 类型。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.Flyout">
-      <summary>Flyout 类型。</summary>
+      <summary>飞出类型。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.FlyoutPresenter">
       <summary>FlyoutPresenter 类型。</summary>
@@ -5841,19 +5841,19 @@
       <summary>FontIconSource 类型。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.Frame">
-      <summary>Frame 类型。</summary>
+      <summary>帧类型。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.GeometryGroup">
       <summary>GeometryGroup 类型。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.Glyphs">
-      <summary>Glyphs 类型。</summary>
+      <summary>标志符号类型。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.GradientStop">
-      <summary>GradientStop 类型。</summary>
+      <summary>System.windows.media.gradientstop&gt; 类型。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.Grid">
-      <summary>Grid 类型。</summary>
+      <summary>网格类型。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.GridView">
       <summary>GridView 类型。</summary>
@@ -5874,13 +5874,13 @@
       <summary>HandwritingView 类型。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.Hub">
-      <summary>Hub 类型。</summary>
+      <summary>中心类型。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.HubSection">
       <summary>HubSection 类型。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.Hyperlink">
-      <summary>Hyperlink 类型。</summary>
+      <summary>超链接类型。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.HyperlinkButton">
       <summary>HyperlinkButton 类型。</summary>
@@ -5889,16 +5889,16 @@
       <summary>IconSourceElement 类型。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.Image">
-      <summary>Image 类型。</summary>
+      <summary>映像类型。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.ImageBrush">
-      <summary>ImageBrush 类型。</summary>
+      <summary>System.windows.media.imagebrush&gt; 类型。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.InkCanvas">
       <summary>InkCanvas 类型。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.InlineUIContainer">
-      <summary>InlineUIContainer 类型。</summary>
+      <summary>System.windows.documents.inlineuicontainer&gt; 类型。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.InputScope">
       <summary>InputScope 类型。</summary>
@@ -5907,16 +5907,16 @@
       <summary>InputScopeName 类型。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.Italic">
-      <summary>Italic 类型。</summary>
+      <summary>斜体类型。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.ItemsControl">
-      <summary>ItemsControl 类型。</summary>
+      <summary>System.windows.controls.itemscontrol&gt; 类型。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.ItemsPanelTemplate">
       <summary>ItemsPanelTemplate 类型。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.ItemsPresenter">
-      <summary>ItemsPresenter 类型。</summary>
+      <summary>System.windows.controls.itemspresenter&gt; 类型。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.ItemsStackPanel">
       <summary>ItemsStackPanel 类型。</summary>
@@ -5931,13 +5931,13 @@
       <summary>KeySpline 类型。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.Line">
-      <summary>Line 类型。</summary>
+      <summary>线条类型。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.LinearColorKeyFrame">
-      <summary>LinearColorKeyFrame 类型。</summary>
+      <summary>System.windows.media.animation.linearcolorkeyframe&gt; 类型。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.LinearDoubleKeyFrame">
-      <summary>LinearDoubleKeyFrame 类型。</summary>
+      <summary>System.windows.media.animation.lineardoublekeyframe&gt; 类型。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.LinearGradientBrush">
       <summary>LinearGradientBrush 类型。</summary>
@@ -5952,7 +5952,7 @@
       <summary>LineGeometry 类型。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.LineSegment">
-      <summary>LineSegment 类型。</summary>
+      <summary>System.windows.media.linesegment&gt; 类型。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.ListBox">
       <summary>ListBox 类型。</summary>
@@ -6006,28 +6006,28 @@
       <summary>MenuFlyoutSubItem 类型。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.ObjectAnimationUsingKeyFrames">
-      <summary>ObjectAnimationUsingKeyFrames 类型。</summary>
+      <summary>System.windows.media.animation.objectanimationusingkeyframes&gt; 类型。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.Page">
-      <summary>Page 类型。</summary>
+      <summary>页类型。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.PaneThemeTransition">
       <summary>PaneThemeTransition 类型。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.Paragraph">
-      <summary>Paragraph 类型。</summary>
+      <summary>段落类型。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.PasswordBox">
       <summary>PasswordBox 类型。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.Path">
-      <summary>Path 类型。</summary>
+      <summary>路径类型。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.PathFigure">
-      <summary>PathFigure 类型。</summary>
+      <summary>System.windows.media.pathfigure&gt; 类型。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.PathGeometry">
-      <summary>PathGeometry 类型。</summary>
+      <summary>System.windows.media.pathgeometry&gt; 类型。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.PathIcon">
       <summary>PathIcon 类型。</summary>
@@ -6042,10 +6042,10 @@
       <summary>PlaneProjection 类型。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.PointAnimation">
-      <summary>PointAnimation 类型。</summary>
+      <summary>Pointanimation 针对类型。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.PointAnimationUsingKeyFrames">
-      <summary>PointAnimationUsingKeyFrames 类型。</summary>
+      <summary>System.windows.media.animation.pointanimationusingkeyframes&gt; 类型。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.PointerDownThemeAnimation">
       <summary>PointerDownThemeAnimation 类型。</summary>
@@ -6057,13 +6057,13 @@
       <summary>PolyBezierSegment 类型。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.Polygon">
-      <summary>Polygon 类型。</summary>
+      <summary>多边形类型。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.Polyline">
-      <summary>Polyline 类型。</summary>
+      <summary>折线类型。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.PolyLineSegment">
-      <summary>PolyLineSegment 类型。</summary>
+      <summary>System.windows.media.polylinesegment&gt; 类型。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.PolyQuadraticBezierSegment">
       <summary>PolyQuadraticBezierSegment 类型。</summary>
@@ -6081,7 +6081,7 @@
       <summary>PopupThemeTransition 类型。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.PowerEase">
-      <summary>PowerEase 类型。</summary>
+      <summary>System.windows.media.animation.powerease&gt; 类型。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.PrintDocument">
       <summary>PrintDocument 类型。</summary>
@@ -6093,22 +6093,22 @@
       <summary>ProgressRing 类型。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.QuadraticBezierSegment">
-      <summary>QuadraticBezierSegment 类型。</summary>
+      <summary>System.windows.media.quadraticbeziersegment&gt; 类型。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.QuadraticEase">
-      <summary>QuadraticEase 类型。</summary>
+      <summary>带类型。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.QuarticEase">
-      <summary>QuarticEase 类型。</summary>
+      <summary>带类型。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.QuinticEase">
-      <summary>QuinticEase 类型。</summary>
+      <summary>带类型。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.RadioButton">
-      <summary>RadioButton 类型。</summary>
+      <summary>单选按钮类型。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.Rectangle">
-      <summary>Rectangle 类型。</summary>
+      <summary>矩形类型。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.RectangleGeometry">
       <summary>RectangleGeometry 类型。</summary>
@@ -6120,7 +6120,7 @@
       <summary>RelativeSource 类型。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.RenderTargetBitmap">
-      <summary>RenderTargetBitmap 类型。</summary>
+      <summary>System.windows.media.imaging.rendertargetbitmap.render 类型。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.ReorderThemeTransition">
       <summary>ReorderThemeTransition 类型。</summary>
@@ -6147,19 +6147,19 @@
       <summary>RichTextBlockOverflow 类型。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.RotateTransform">
-      <summary>RotateTransform 类型。</summary>
+      <summary>System.windows.media.rotatetransform&gt; 类型。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.RowDefinition">
-      <summary>RowDefinition 类型。</summary>
+      <summary>System.windows.controls.rowdefinition.height 类型。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.Run">
-      <summary>Run 类型。</summary>
+      <summary>运行类型。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.ScaleTransform">
-      <summary>ScaleTransform 类型。</summary>
+      <summary>System.windows.media.scaletransform&gt; 类型。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.ScrollBar">
-      <summary>ScrollBar 类型。</summary>
+      <summary>滚动条类型。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.ScrollContentPresenter">
       <summary>ScrollContentPresenter 类型。</summary>
@@ -6186,25 +6186,25 @@
       <summary>SkewTransform 类型。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.Slider">
-      <summary>Slider 类型。</summary>
+      <summary>滑块类型。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.SoftwareBitmapSource">
       <summary>SoftwareBitmapSource 类型。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.SolidColorBrush">
-      <summary>SolidColorBrush 类型。</summary>
+      <summary>System.windows.media.solidcolorbrush&gt; 类型。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.Span">
-      <summary>Span 类型。</summary>
+      <summary>范围类型。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.SplineColorKeyFrame">
       <summary>SplineColorKeyFrame 类型。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.SplineDoubleKeyFrame">
-      <summary>SplineDoubleKeyFrame 类型。</summary>
+      <summary>System.windows.media.animation.splinedoublekeyframe.keyspline 类型。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.SplinePointKeyFrame">
-      <summary>SplinePointKeyFrame 类型。</summary>
+      <summary>来类型。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.SplitCloseThemeAnimation">
       <summary>SplitCloseThemeAnimation 类型。</summary>
@@ -6216,7 +6216,7 @@
       <summary>SplitView 类型。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.StackPanel">
-      <summary>StackPanel 类型。</summary>
+      <summary>System.windows.controls.stackpanel&gt; 类型。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.StandardUICommand">
       <summary>StandardUICommand 类型。</summary>
@@ -6225,10 +6225,10 @@
       <summary>StateTrigger 类型。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.Storyboard">
-      <summary>Storyboard 类型。</summary>
+      <summary>情节提要类型。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.Style">
-      <summary>Style 类型。</summary>
+      <summary>样式类型。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.SvgImageSource">
       <summary>SvgImageSource 类型。</summary>
@@ -6255,13 +6255,13 @@
       <summary>TextBlock 类型。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.TextBox">
-      <summary>TextBox 类型。</summary>
+      <summary>文本框类型。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.ThemeShadow">
       <summary>ThemeShadow 类型。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.Thumb">
-      <summary>Thumb 类型。</summary>
+      <summary>缩略图类型。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.TickBar">
       <summary>TickBar 类型。</summary>
@@ -6273,7 +6273,7 @@
       <summary>TimePicker 类型。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.ToggleButton">
-      <summary>ToggleButton 类型。</summary>
+      <summary>切换按钮类型。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.ToggleMenuFlyoutItem">
       <summary>ToggleMenuFlyoutItem 类型。</summary>
@@ -6285,13 +6285,13 @@
       <summary>ToolTip 类型。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.TransformGroup">
-      <summary>TransformGroup 类型。</summary>
+      <summary>System.windows.media.transformgroup&gt; 类型。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.TranslateTransform">
-      <summary>TranslateTransform 类型。</summary>
+      <summary>System.windows.media.translatetransform.x 类型。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.Underline">
-      <summary>Underline 类型。</summary>
+      <summary>下划线类型。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.UserControl">
       <summary>UserControl 类型。</summary>
@@ -6309,16 +6309,16 @@
       <summary>VisualState 类型。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.VisualStateGroup">
-      <summary>VisualStateGroup 类型。</summary>
+      <summary>System.windows.visualstategroup&gt; 类型。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.VisualStateManager">
       <summary>VisualStateManager 类型。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.VisualTransition">
-      <summary>VisualTransition 类型。</summary>
+      <summary>System.windows.visualtransition&gt; 类型。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.WebView">
-      <summary>WebView 类型。</summary>
+      <summary>Web 视图类型。</summary>
     </member>
     <member name="F:Windows.UI.Xaml.Core.Direct.XamlTypeIndex.WebViewBrush">
       <summary>WebViewBrush 类型。</summary>
