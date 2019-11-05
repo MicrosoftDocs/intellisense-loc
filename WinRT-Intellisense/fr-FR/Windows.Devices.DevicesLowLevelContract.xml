@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <doc>
   <assembly>
-    <name>Windows. Devices. DevicesLowLevelContract</name>
+    <name>Windows.Devices.DevicesLowLevelContract</name>
   </assembly>
   <members>
     <member name="T:Windows.Devices.DevicesLowLevelContract">
@@ -9,145 +9,145 @@
       </summary>
     </member>
     <member name="T:Windows.Devices.ILowLevelDevicesAggregateProvider">
-      <summary>Représente les propriétés communes à tous les fournisseurs d’agrégats d’appareils de bas niveau.</summary>
+      <summary>Représente les propriétés communes à tous les fournisseurs d'agrégat de périphérique de niveau inférieur.</summary>
     </member>
     <member name="P:Windows.Devices.ILowLevelDevicesAggregateProvider.AdcControllerProvider">
-      <summary>Obtient le fournisseur ADC par défaut. Si le fournisseur par défaut n’est pas défini explicitement, il revient au pilote/contrôleur normal.</summary>
+      <summary>Obtient le fournisseur ADC par défaut. Si le fournisseur par défaut n'est pas explicitement défini, il s'agira du pilote/contrôleur normal.</summary>
       <returns>Fournisseur ADC.</returns>
     </member>
     <member name="P:Windows.Devices.ILowLevelDevicesAggregateProvider.GpioControllerProvider">
-      <summary>Obtient le fournisseur GPIO par défaut. Si le fournisseur par défaut n’est pas défini explicitement, il revient au pilote/contrôleur normal.</summary>
+      <summary>Obtient le fournisseur GPIO par défaut. Si le fournisseur par défaut n'est pas explicitement défini, il s'agira du pilote/contrôleur normal.</summary>
       <returns>Fournisseur GPIO.</returns>
     </member>
     <member name="P:Windows.Devices.ILowLevelDevicesAggregateProvider.I2cControllerProvider">
-      <summary>Obtient le fournisseur par défaut I &lt; SUP &gt; 2 &lt;/SUP &gt; C. Si le fournisseur par défaut n’est pas défini explicitement, il revient au pilote/contrôleur normal.</summary>
-      <returns>Le &lt; SUP &gt; 2 &lt;/SUP &gt; C.</returns>
+      <summary>Obtient le fournisseur I&lt;sup&gt;2&lt;/sup&gt; C par défaut. Si le fournisseur par défaut n'est pas explicitement défini, il s'agira du pilote/contrôleur normal.</summary>
+      <returns>Fournisseur I&lt;sup&gt;2&lt;/sup&gt; C.</returns>
     </member>
     <member name="P:Windows.Devices.ILowLevelDevicesAggregateProvider.PwmControllerProvider">
-      <summary>Obtient le fournisseur PWM par défaut. Si le fournisseur par défaut n’est pas défini explicitement, il revient au pilote/contrôleur normal.</summary>
+      <summary>Obtient le fournisseur PWM par défaut. Si le fournisseur par défaut n'est pas explicitement défini, il s'agira du pilote/contrôleur normal.</summary>
       <returns>Fournisseur PWM.</returns>
     </member>
     <member name="P:Windows.Devices.ILowLevelDevicesAggregateProvider.SpiControllerProvider">
-      <summary>Obtient le fournisseur SPI par défaut. Si le fournisseur par défaut n’est pas défini explicitement, il revient au pilote/contrôleur normal.</summary>
+      <summary>Obtient le fournisseur SPI par défaut. Si le fournisseur par défaut n'est pas explicitement défini, il s'agira du pilote/contrôleur normal.</summary>
       <returns>Fournisseur SPI.</returns>
     </member>
     <member name="T:Windows.Devices.LowLevelDevicesAggregateProvider">
-      <summary>Représente les fournisseurs de périphériques de bus de bas niveau. Cette classe donne accès au fournisseur par défaut pour les contrôleurs de bus de bas niveau.</summary>
+      <summary>Représente les fournisseurs de périphérique de bus de niveau inférieur. Cette classe fournit l'accès au fournisseur par défaut pour les contrôleurs de bus de niveau inférieur.</summary>
     </member>
     <member name="M:Windows.Devices.LowLevelDevicesAggregateProvider.#ctor(Windows.Devices.Adc.Provider.IAdcControllerProvider,Windows.Devices.Pwm.Provider.IPwmControllerProvider,Windows.Devices.Gpio.Provider.IGpioControllerProvider,Windows.Devices.I2c.Provider.II2cControllerProvider,Windows.Devices.Spi.Provider.ISpiControllerProvider)">
-      <summary>Crée une instance de LowLevelDevicesAggregateProvider et définit les fournisseurs fournis comme valeurs par défaut pour le bus respectif.</summary>
+      <summary>Crée une instance de LowLevelDevicesAggregateProvider et définit les fournisseurs fournis en tant que valeurs par défaut pour le bus respectif.</summary>
       <param name="adc">Fournisseur ADC.</param>
       <param name="pwm">Fournisseur PWM.</param>
       <param name="gpio">Fournisseur GPIO.</param>
-      <param name="i2c">Le &lt; SUP &gt; 2 &lt;/SUP &gt; C.</param>
+      <param name="i2c">Fournisseur I&lt;sup&gt;2&lt;/sup&gt; C.</param>
       <param name="spi">Fournisseur SPI.</param>
     </member>
     <member name="P:Windows.Devices.LowLevelDevicesAggregateProvider.AdcControllerProvider">
-      <summary>Obtient le fournisseur ADC par défaut. Si le fournisseur par défaut n’est pas défini explicitement, il revient au pilote/contrôleur normal.</summary>
+      <summary>Obtient le fournisseur ADC par défaut. Si le fournisseur par défaut n'est pas explicitement défini, il s'agira du pilote/contrôleur normal.</summary>
       <returns>Fournisseur ADC.</returns>
     </member>
     <member name="P:Windows.Devices.LowLevelDevicesAggregateProvider.GpioControllerProvider">
-      <summary>Obtient le fournisseur GPIO par défaut. Si le fournisseur par défaut n’est pas défini explicitement, il revient au pilote/contrôleur normal.</summary>
+      <summary>Obtient le fournisseur GPIO par défaut. Si le fournisseur par défaut n'est pas explicitement défini, il s'agira du pilote/contrôleur normal.</summary>
       <returns>Fournisseur GPIO.</returns>
     </member>
     <member name="P:Windows.Devices.LowLevelDevicesAggregateProvider.I2cControllerProvider">
-      <summary>Obtient le fournisseur par défaut I &lt; SUP &gt; 2 &lt;/SUP &gt; C. Si le fournisseur par défaut n’est pas défini explicitement, il revient au pilote/contrôleur normal.</summary>
-      <returns>Le &lt; SUP &gt; 2 &lt;/SUP &gt; C.</returns>
+      <summary>Obtient le fournisseur I&lt;sup&gt;2&lt;/sup&gt; C par défaut. Si le fournisseur par défaut n'est pas explicitement défini, il s'agira du pilote/contrôleur normal.</summary>
+      <returns>Fournisseur I&lt;sup&gt;2&lt;/sup&gt; C.</returns>
     </member>
     <member name="P:Windows.Devices.LowLevelDevicesAggregateProvider.PwmControllerProvider">
-      <summary>Obtient le fournisseur PWM par défaut. Si le fournisseur par défaut n’est pas défini explicitement, il revient au pilote/contrôleur normal.</summary>
+      <summary>Obtient le fournisseur PWM par défaut. Si le fournisseur par défaut n'est pas explicitement défini, il s'agira du pilote/contrôleur normal.</summary>
       <returns>Fournisseur PWM.</returns>
     </member>
     <member name="P:Windows.Devices.LowLevelDevicesAggregateProvider.SpiControllerProvider">
-      <summary>Obtient le fournisseur SPI par défaut. Si le fournisseur par défaut n’est pas défini explicitement, il revient au pilote/contrôleur normal.</summary>
+      <summary>Obtient le fournisseur SPI par défaut. Si le fournisseur par défaut n'est pas explicitement défini, il s'agira du pilote/contrôleur normal.</summary>
       <returns>Fournisseur SPI.</returns>
     </member>
     <member name="T:Windows.Devices.LowLevelDevicesController">
-      <summary>Représente un contrôleur de périphérique de bas niveau, et son fournisseur associé.</summary>
+      <summary>Représente un contrôleur de périphérique de bus de niveau inférieur, et il s'agit d'un fournisseur associé.</summary>
     </member>
     <member name="P:Windows.Devices.LowLevelDevicesController.DefaultProvider">
-      <summary>Obtient ou définit le fournisseur par défaut pour le contrôleur.</summary>
-      <returns>Fournisseur d’agrégats d’appareils.</returns>
+      <summary>Obtient ou définit le fournisseur par défaut du contrôleur.</summary>
+      <returns>Le fournisseur d'agrégat de périphérique.</returns>
     </member>
     <member name="T:Windows.Devices.Adc.AdcChannel">
       <summary>Représente un canal ADC unique.</summary>
     </member>
     <member name="P:Windows.Devices.Adc.AdcChannel.Controller">
       <summary>Obtient le contrôleur ADC pour ce canal.</summary>
-      <returns>Contrôleur ADC.</returns>
+      <returns>Le contrôleur ADC.</returns>
     </member>
     <member name="M:Windows.Devices.Adc.AdcChannel.Close">
-      <summary>Ferme la connexion sur ce canal, ce qui le rend disponible pour être ouvert par d’autres utilisateurs.</summary>
+      <summary>Ferme la connexion sur ce canal, le rendant disponible afin qu'il puisse être ouvert par d'autres.</summary>
     </member>
     <member name="M:Windows.Devices.Adc.AdcChannel.ReadRatio">
-      <summary>Lit la valeur sous la forme d’un pourcentage de la valeur maximale possible pour ce contrôleur.</summary>
-      <returns>Valeur en pourcentage de la valeur max.</returns>
+      <summary>Lit la valeur en pourcentage de la valeur maximale possible de ce contrôleur.</summary>
+      <returns>La valeur en pourcentage de la valeur maximale.</returns>
     </member>
     <member name="M:Windows.Devices.Adc.AdcChannel.ReadValue">
-      <summary>Lit la représentation numérique de la valeur analogique à partir du connecteur Active Directory.</summary>
-      <returns>Valeur numérique.</returns>
+      <summary>Lit la représentation digitale de la valeur analogique à partir de l'ADC.</summary>
+      <returns>La valeur digitale.</returns>
     </member>
     <member name="T:Windows.Devices.Adc.AdcChannelMode">
-      <summary>Décrit les modes de canal que le contrôleur ADC peut utiliser pour l’entrée.</summary>
+      <summary>Décrit les modes de canal que le contrôleur ADC peut utiliser pour l'entrée.</summary>
     </member>
     <member name="F:Windows.Devices.Adc.AdcChannelMode.Differential">
-      <summary>Différence entre deux codes confidentiels.</summary>
+      <summary>Différence entre deux broches.</summary>
     </member>
     <member name="F:Windows.Devices.Adc.AdcChannelMode.SingleEnded">
-      <summary>Valeur simple d’un code confidentiel particulier.</summary>
+      <summary>Valeur simple d'une broche particulière.</summary>
     </member>
     <member name="T:Windows.Devices.Adc.AdcController">
       <summary>Représente un contrôleur ADC sur le système</summary>
     </member>
     <member name="P:Windows.Devices.Adc.AdcController.ChannelCount">
-      <summary>Nombre de canaux disponibles sur le contrôleur ADC.</summary>
+      <summary>Le nombre de canaux disponibles sur le contrôleur ADC.</summary>
       <returns>Nombre de canaux.</returns>
     </member>
     <member name="P:Windows.Devices.Adc.AdcController.ChannelMode">
       <summary>Obtient ou définit le mode de canal pour le contrôleur ADC.</summary>
-      <returns>Mode de canal ADC.</returns>
+      <returns>Le mode de canal ADC.</returns>
     </member>
     <member name="P:Windows.Devices.Adc.AdcController.MaxValue">
       <summary>Obtient la valeur maximale que le contrôleur peut signaler.</summary>
       <returns>Valeur maximale.</returns>
     </member>
     <member name="P:Windows.Devices.Adc.AdcController.MinValue">
-      <summary>Valeur minimale que le contrôleur peut signaler.</summary>
+      <summary>La valeur minimale que le contrôleur peut signaler.</summary>
       <returns>Valeur minimale.</returns>
     </member>
     <member name="P:Windows.Devices.Adc.AdcController.ResolutionInBits">
-      <summary>Obtient la résolution du contrôleur en tant que nombre de bits qu’il a. Par exemple, si vous avez un connecteur Active Directory (ADC) 10 bits, cela signifie qu’il peut détecter des niveaux discrets de 1024 (2 ^ 10).</summary>
-      <returns>Nombre de bits du contrôleur ADC.</returns>
+      <summary>Obtient la résolution du contrôleur en tant que nombre de bits qu'il possède. Par exemple, si nous avons un contrôleur ADC 10 bits, cela signifie qu’il peut détecter 1024 (2^10) niveaux discrets.</summary>
+      <returns>Le nombre de bits que le contrôleur ADC possède.</returns>
     </member>
     <member name="M:Windows.Devices.Adc.AdcController.GetControllersAsync(Windows.Devices.Adc.Provider.IAdcProvider)">
-      <summary>Obtient tous les contrôleurs qui sont connectés au système de manière asynchrone.</summary>
-      <param name="provider">Fournisseur ADC pour les contrôleurs sur le système.</param>
-      <returns>Lorsque la méthode se termine correctement, elle retourne une liste de valeurs qui représentent les contrôleurs disponibles sur le système.</returns>
+      <summary>Obtient tous les contrôleurs qui sont connectés au système de façon asynchrone.</summary>
+      <param name="provider">Le fournisseur ADC pour les contrôleurs sur le système.</param>
+      <returns>Lorsque la méthode s'exécute correctement, elle retourne une liste de valeurs qui représentent les contrôleurs disponibles sur le système.</returns>
     </member>
     <member name="M:Windows.Devices.Adc.AdcController.GetDefaultAsync">
       <summary>Obtient le contrôleur ADC par défaut sur le système.</summary>
-      <returns>Le contrôleur ADC par défaut sur le système, ou null si le système n’a pas de contrôleur ADC.</returns>
+      <returns>Contrôleur ADC par défaut sur le système, ou null si le système n'a pas de contrôleur ADC.</returns>
     </member>
     <member name="M:Windows.Devices.Adc.AdcController.IsChannelModeSupported(Windows.Devices.Adc.AdcChannelMode)">
       <summary>Vérifie que le mode de canal spécifié est pris en charge par le contrôleur.</summary>
-      <param name="channelMode">Mode de canal.</param>
+      <param name="channelMode">Le mode de canal.</param>
       <returns>True si le mode de canal spécifié est pris en charge ; sinon, false.</returns>
     </member>
     <member name="M:Windows.Devices.Adc.AdcController.OpenChannel(System.Int32)">
-      <summary>Ouvre une connexion au canal ADC spécifié.</summary>
-      <param name="channelNumber">Canal auquel se connecter.</param>
-      <returns>Canal ADC.</returns>
+      <summary>Ouvre une connexion sur le canal ADC spécifié.</summary>
+      <param name="channelNumber">Le canal auquel se connecter.</param>
+      <returns>Le canal ADC.</returns>
     </member>
     <member name="T:Windows.Devices.Adc.Provider.IAdcControllerProvider">
-      <summary>Représente les propriétés et les méthodes communes à tous les contrôleurs ADC.</summary>
+      <summary>Représente des propriétés et des méthodes communes à tous les contrôleurs ADC.</summary>
     </member>
     <member name="P:Windows.Devices.Adc.Provider.IAdcControllerProvider.ChannelCount">
-      <summary>Obtient le nombre de canaux disponibles sur pour le contrôleur.</summary>
+      <summary>Obtient le nombre de canaux disponible pour le contrôleur.</summary>
       <returns>Nombre de canaux.</returns>
     </member>
     <member name="P:Windows.Devices.Adc.Provider.IAdcControllerProvider.ChannelMode">
       <summary>Obtient ou définit le mode de canal du contrôleur.</summary>
-      <returns>Mode de canal.</returns>
+      <returns>Le mode de canal.</returns>
     </member>
     <member name="P:Windows.Devices.Adc.Provider.IAdcControllerProvider.MaxValue">
       <summary>Obtient la valeur maximale que le contrôleur peut retourner.</summary>
@@ -158,860 +158,860 @@
       <returns>Valeur minimale.</returns>
     </member>
     <member name="P:Windows.Devices.Adc.Provider.IAdcControllerProvider.ResolutionInBits">
-      <summary>Obtient la résolution du contrôleur en tant que nombre de bits qu’il a.</summary>
-      <returns>Résolution en tant que nombre de bits.</returns>
+      <summary>Obtient la résolution du contrôleur en tant que nombre de bits qu'il possède.</summary>
+      <returns>La résolution en tant que nombre de bits.</returns>
     </member>
     <member name="M:Windows.Devices.Adc.Provider.IAdcControllerProvider.AcquireChannel(System.Int32)">
       <summary>Acquiert une connexion au canal spécifié.</summary>
-      <param name="channel">Le canal auquel se connecter.</param>
+      <param name="channel">Canal auquel se connecter.</param>
     </member>
     <member name="M:Windows.Devices.Adc.Provider.IAdcControllerProvider.IsChannelModeSupported(Windows.Devices.Adc.Provider.ProviderAdcChannelMode)">
       <summary>Détermine si le mode de canal spécifié est pris en charge par le contrôleur.</summary>
-      <param name="channelMode">Mode de canal en question.</param>
+      <param name="channelMode">Le mode de canal en question.</param>
       <returns>True si le mode de canal spécifié est pris en charge ; sinon, false.</returns>
     </member>
     <member name="M:Windows.Devices.Adc.Provider.IAdcControllerProvider.ReadValue(System.Int32)">
-      <summary>Obtient la représentation numérique de la valeur analogique sur le canal spécifié.</summary>
-      <param name="channelNumber">Le canal à partir duquel effectuer la lecture.</param>
-      <returns>Représentation numérique de la valeur analogique.</returns>
+      <summary>Obtient la représentation digitale de la valeur analogique sur le canal spécifié.</summary>
+      <param name="channelNumber">Canal à partir duquel lire.</param>
+      <returns>La représentation digitale de la valeur analogique.</returns>
     </member>
     <member name="M:Windows.Devices.Adc.Provider.IAdcControllerProvider.ReleaseChannel(System.Int32)">
-      <summary>Libère la connexion de canal, en ouvrant ce canal afin que d’autres puissent l’utiliser.</summary>
-      <param name="channel">Le canal auquel fermer la connexion.</param>
+      <summary>Libère la connexion de canal, ouvrant ce canal afin qu'il puisse être utilisé par d'autres.</summary>
+      <param name="channel">Canal sur lequel fermer la connexion.</param>
     </member>
     <member name="T:Windows.Devices.Adc.Provider.IAdcProvider">
       <summary>Représente des méthodes communes à tous les fournisseurs ADC.</summary>
     </member>
     <member name="M:Windows.Devices.Adc.Provider.IAdcProvider.GetControllers">
       <summary>Obtient les contrôleurs ADC disponibles sur le système.</summary>
-      <returns>Lorsque cette méthode est terminée, elle retourne une liste de tous les contrôleurs disponibles sur le système.</returns>
+      <returns>Lorsque cette méthode se termine, elle retourne une liste de tous les contrôleurs disponibles sur le système.</returns>
     </member>
     <member name="T:Windows.Devices.Adc.Provider.ProviderAdcChannelMode">
-      <summary>Détermine la façon dont la valeur de code confidentiel est représentée. L’implémentation de spécificités est décidée par le fournisseur. par conséquent, Differential peut être complet ou un pseudo-différentiel.</summary>
+      <summary>Détermine comment la valeur de broche est représentée. L'implémentation des détails est décidée par le fournisseur afin de pouvoir utiliser une différence complète ou une pseudo différence.</summary>
     </member>
     <member name="F:Windows.Devices.Adc.Provider.ProviderAdcChannelMode.Differential">
-      <summary>Différence entre deux codes confidentiels.</summary>
+      <summary>Différence entre deux broches.</summary>
     </member>
     <member name="F:Windows.Devices.Adc.Provider.ProviderAdcChannelMode.SingleEnded">
-      <summary>Valeur simple d’un code confidentiel particulier.</summary>
+      <summary>Valeur simple d'une broche particulière.</summary>
     </member>
     <member name="T:Windows.Devices.Gpio.GpioChangeCount">
-      <summary>Représente un échantillonnage presque simultané du nombre de fois où un code confidentiel a changé de valeur et l’heure à laquelle ce nombre a été échantillonné. Cette structure peut être utilisée pour déterminer le nombre de modifications de valeur de code confidentiel sur une période donnée.</summary>
+      <summary>Représente un échantillonnage quasi simultané du nombre de modifications de la valeur d'une broche, et l'heure d'échantillonnage de ce nombre. Cette structure peut être utilisée pour déterminer le nombre de modifications de la valeur d'une broche sur une période donnée.</summary>
     </member>
     <member name="F:Windows.Devices.Gpio.GpioChangeCount.Count">
-      <summary>Nombre de fois où la transition de polarité spécifiée par GpioChangeCounter. Polar s’est produite sur le code confidentiel.</summary>
+      <summary>Nombre d'occurrences de la transition de polarité spécifiée par GpioChangeCounter.Polarity sur la broche.</summary>
     </member>
     <member name="F:Windows.Devices.Gpio.GpioChangeCount.RelativeTime">
-      <summary>Heure à laquelle ce nombre a été échantillonné. L’heure est échantillonnée près de (mais pas simultanément avec) le nombre. Cet horodatage peut être utilisé pour déterminer le temps écoulé entre deux enregistrements GpioChangeCount. Elle ne correspond à aucune heure absolue ou système.</summary>
+      <summary>Heure d'échantillonnage de ce nombre. L'heure est échantillonnée près du nombre, (mais pas en simultané avec celui-ci). Cet horodatage peut être utilisé pour déterminer le temps écoulé entre deux enregistrements GpioChangeCount. Il ne correspond pas à une heure absolue ou système.</summary>
     </member>
     <member name="T:Windows.Devices.Gpio.GpioChangeCounter">
-      <summary>Compte les modifications d’une polarité spécifiée sur un pin d’e/s à usage général (GPIO).</summary>
+      <summary>Décompte les modifications d'une polarité spécifiée sur une broche GPIO.</summary>
     </member>
     <member name="M:Windows.Devices.Gpio.GpioChangeCounter.#ctor(Windows.Devices.Gpio.GpioPin)">
-      <summary>Crée un nouveau GpioChangeCounter associé au code confidentiel spécifié. Un seul GpioChangeCounter peut être associé à un code confidentiel à un moment donné.</summary>
-      <param name="pin">Code confidentiel sur lequel compter les modifications. Ce code PIN doit avoir été ouvert en mode exclusif et ne peut pas être associé à un autre GpioChangeCounter.</param>
+      <summary>Crée un objet GpioChangeCounter associé à la broche spécifiée. Un seul objet GpioChangeCounter peut être associé à une broche à la fois.</summary>
+      <param name="pin">Broche sur laquelle décompter les modifications. Cette broche doit avoir été ouverte en mode exclusif et ne peut pas être associée à un autre objet GpioChangeCounter.</param>
     </member>
     <member name="P:Windows.Devices.Gpio.GpioChangeCounter.IsStarted">
-      <summary>Obtient une valeur indiquant si le comptage des modifications du code confidentiel est actuellement actif.</summary>
+      <summary>Indique si le décompte des modifications de la broche est actuellement actif.</summary>
       <returns>
       </returns>
     </member>
     <member name="P:Windows.Devices.Gpio.GpioChangeCounter.Polarity">
-      <summary>Obtient ou définit la polarité des transitions qui seront comptées. La polarité ne peut être modifiée que lorsque le comptage des codes confidentiels n’est pas démarré.</summary>
+      <summary>Obtient ou définit la polarité des transitions qui seront comptabilisées. La polarité ne peut être modifiée que lorsque le décompte des modifications de la broche n'est pas démarré.</summary>
       <returns>
       </returns>
     </member>
     <member name="M:Windows.Devices.Gpio.GpioChangeCounter.Close">
-      <summary>Ferme le compteur de modifications, en le dissociant de son code confidentiel.</summary>
+      <summary>Ferme le compteur de modification, en le dissociant de sa broche.</summary>
     </member>
     <member name="M:Windows.Devices.Gpio.GpioChangeCounter.Read">
-      <summary>Lit le nombre actuel de modifications de polarité. Avant de commencer le comptage, la valeur 0 est retournée.</summary>
-      <returns>Structure GpioChangeCount contenant un nombre et un horodateur associé.</returns>
+      <summary>Lit le nombre actuel de modifications de la polarité. Avant le démarrage du décompte, la valeur 0 est retournée.</summary>
+      <returns>Structure GpioChangeCount contenant un nombre et un horodatage associé.</returns>
     </member>
     <member name="M:Windows.Devices.Gpio.GpioChangeCounter.Reset">
-      <summary>Réinitialise le nombre à 0 et retourne le nombre précédent.</summary>
-      <returns>Structure GpioChangeCount contenant un nombre et un horodateur associé.</returns>
+      <summary>Rétablit le nombre à 0 et retourne le nombre précédent.</summary>
+      <returns>Structure GpioChangeCount contenant un nombre et un horodatage associé.</returns>
     </member>
     <member name="M:Windows.Devices.Gpio.GpioChangeCounter.Start">
-      <summary>Commence à compter les modifications dans la polarité du code confidentiel. Cette méthode peut uniquement être appelée lorsque le comptage des modifications n’est pas déjà actif.</summary>
+      <summary>Démarre le décompte des modifications de polarité de la broche. Cette méthode ne peut être appelée que lorsque le décompte des modifications n'est pas déjà actif.</summary>
     </member>
     <member name="M:Windows.Devices.Gpio.GpioChangeCounter.Stop">
-      <summary>Arrêtez le comptage des modifications dans la polarité du code confidentiel. Cette méthode peut uniquement être appelée lorsque le comptage des modifications est actuellement actif.</summary>
+      <summary>Arrête le décompte des modifications de polarité de la broche. Cette méthode ne peut être appelée que lorsque le décompte des modifications est actuellement actif.</summary>
     </member>
     <member name="T:Windows.Devices.Gpio.GpioChangePolarity">
-      <summary>Représente la polarité des modifications qui sont pertinentes pour l’action associée.</summary>
+      <summary>Représente la polarité des modifications pertinentes pour l'action associée.</summary>
     </member>
     <member name="F:Windows.Devices.Gpio.GpioChangePolarity.Both">
-      <summary>Les transitions de faible à élevé et de haut en bas doivent déclencher l’action associée.</summary>
+      <summary>Les transitions de Bas à Haut et de Haut à Bas doivent déclencher l'action associée.</summary>
     </member>
     <member name="F:Windows.Devices.Gpio.GpioChangePolarity.Falling">
-      <summary>Les transitions de haut à bas doivent déclencher l’action associée.</summary>
+      <summary>Les transitions de Haut à Bas doivent déclencher l'action associée.</summary>
     </member>
     <member name="F:Windows.Devices.Gpio.GpioChangePolarity.Rising">
-      <summary>Les transitions de bas à élevé doivent déclencher l’action associée.</summary>
+      <summary>Les transitions de Bas à Haut doivent déclencher l'action associée.</summary>
     </member>
     <member name="T:Windows.Devices.Gpio.GpioChangeReader">
-      <summary>Représente une mémoire tampon circulaire partagée entre le mode noyau et le mode utilisateur dans lequel les horodateurs haute résolution sont placés quand un pin d’e/s (GPIO) à usage général change de valeur.</summary>
+      <summary>Représente une mémoire tampon circulaire partagée entre le mode noyau et le mode utilisateur dans laquelle les horodatages à haute résolution sont placés lorsqu'une broche GPIO change de valeur.</summary>
     </member>
     <member name="M:Windows.Devices.Gpio.GpioChangeReader.#ctor(Windows.Devices.Gpio.GpioPin)">
-      <summary>Crée un nouveau GpioChangeReader associé au code confidentiel spécifié. Un seul GpioChangeReader peut être associé à un code confidentiel à un moment donné.</summary>
-      <param name="pin">Code confidentiel sur lequel lire les modifications. Le code confidentiel doit avoir été ouvert en mode exclusif et ne peut pas être associé à un autre lecteur de modification.</param>
+      <summary>Crée un objet GpioChangeReader associé à la broche spécifiée. Un seul objet GpioChangeReader peut être associé à une broche à la fois.</summary>
+      <param name="pin">Broche sur laquelle lire les modifications. La broche doit avoir été ouverte en mode exclusif et ne peut pas être associée à un autre lecteur de modification.</param>
     </member>
     <member name="M:Windows.Devices.Gpio.GpioChangeReader.#ctor(Windows.Devices.Gpio.GpioPin,System.Int32)">
-      <summary>Crée un nouveau GpioChangeReader associé au code confidentiel spécifié et avec la capacité minimale spécifiée pour les enregistrements de modification. Un seul GpioChangeReader peut être associé à un code confidentiel à un moment donné.</summary>
-      <param name="pin">Code confidentiel sur lequel lire les modifications. Le code confidentiel doit avoir été ouvert en mode exclusif et ne peut pas être associé à un autre lecteur de modification.</param>
-      <param name="minCapacity">Nombre minimal d’enregistrements de modification que le lecteur doit pouvoir conserver.</param>
+      <summary>Crée un objet GpioChangeReader associé à la broche spécifiée et avec la capacité minimale spécifiée pour les enregistrements de modification. Un seul objet GpioChangeReader peut être associé à une broche à la fois.</summary>
+      <param name="pin">Broche sur laquelle lire les modifications. La broche doit avoir été ouverte en mode exclusif et ne peut pas être associée à un autre lecteur de modification.</param>
+      <param name="minCapacity">Nombre minimal d'enregistrements de modification que le lecteur doit pouvoir contenir.</param>
     </member>
     <member name="P:Windows.Devices.Gpio.GpioChangeReader.Capacity">
-      <summary>Obtient le nombre maximal d’enregistrements de modification que le GpioChangeReader peut stocker en même temps.</summary>
-      <returns>Nombre maximal d’enregistrements de modification.</returns>
+      <summary>Obtient le nombre maximal d'enregistrements de modification que GpioChangeReader peut contenir en même temps.</summary>
+      <returns>Nombre maximal d'enregistrements de modification.</returns>
     </member>
     <member name="P:Windows.Devices.Gpio.GpioChangeReader.IsEmpty">
-      <summary>Obtient une valeur indiquant s’il existe actuellement zéro enregistrement de modification dans le lecteur.</summary>
-      <returns>Retourne la valeur true s’il n’y a aucun élément de modification dans le lecteur, et false dans le cas contraire.</returns>
+      <summary>Indique si aucun enregistrement de modification n'est disponible dans le lecteur.</summary>
+      <returns>Retourne la valeur true aucun enregistrement de modification n'est disponible dans le lecteur ; sinon, false.</returns>
     </member>
     <member name="P:Windows.Devices.Gpio.GpioChangeReader.IsOverflowed">
-      <summary>Obtient une valeur indiquant si la tentative de placer un enregistrement de modification dans la mémoire tampon du lecteur a échoué en raison de la saturation de la mémoire tampon.</summary>
-      <returns>Retourne la valeur true si une tentative de placement a échoué, et false dans le cas contraire.</returns>
+      <summary>Indique si une tentative de placement d'un enregistrement de modification dans la mémoire tampon du lecteur a échoué en raison de la saturation de la mémoire tampon.</summary>
+      <returns>Retourne la valeur true si une tentative de placement a échoué ; sinon, false.</returns>
     </member>
     <member name="P:Windows.Devices.Gpio.GpioChangeReader.IsStarted">
-      <summary>Obtient une valeur indiquant si l’enregistrement des modifications de pin est actuellement actif.</summary>
-      <returns>Retourne la valeur true si les modifications du code PIN sont en cours d’enregistrement et false dans le cas contraire.</returns>
+      <summary>Indique si l'enregistrement des modifications de la broche est actuellement actif.</summary>
+      <returns>Retourne la valeur true si les modifications de la broche sont en cours d'enregistrement ; sinon, false.</returns>
     </member>
     <member name="P:Windows.Devices.Gpio.GpioChangeReader.Length">
-      <summary>Obtient le nombre d’enregistrements actuellement présents dans le lecteur de modification.</summary>
-      <returns>Nombre actuel d’enregistrements de modification.</returns>
+      <summary>Obtient le nombre d'enregistrements actuellement disponibles dans le lecteur de modification.</summary>
+      <returns>Nombre actuel d'enregistrements de modification.</returns>
     </member>
     <member name="P:Windows.Devices.Gpio.GpioChangeReader.Polarity">
-      <summary>Obtient ou définit la polarité des transitions qui seront enregistrées. La polarité ne peut être modifiée que lorsque l’enregistrement de la modification du code pin n’est pas démarré.</summary>
-      <returns>Augmentation ou chute. La valeur de polarité par défaut est automne.</returns>
+      <summary>Obtient ou définit la polarité des transitions qui seront enregistrées. La polarité ne peut être modifiée que lorsque l'enregistrement des modifications de la broche n'est pas démarré.</summary>
+      <returns>En hausse ou En baisse. La valeur de polarité par défaut est En baisse.</returns>
     </member>
     <member name="M:Windows.Devices.Gpio.GpioChangeReader.Clear">
-      <summary>Ignore tous les enregistrements de modification de la mémoire tampon du lecteur.</summary>
+      <summary>Supprime tous les enregistrements de modification de la mémoire tampon du lecteur.</summary>
     </member>
     <member name="M:Windows.Devices.Gpio.GpioChangeReader.Close">
-      <summary>Ferme le lecteur de modification, libérant la mémoire tampon associée et dissociant le lecteur de son code confidentiel.</summary>
+      <summary>Ferme le lecteur de modification, en libérant la mémoire tampon associée et en dissociant le lecteur de sa broche.</summary>
     </member>
     <member name="M:Windows.Devices.Gpio.GpioChangeReader.GetAllItems">
-      <summary>Supprime et retourne tous les éléments actuels dans la mémoire tampon du lecteur.</summary>
-      <returns>IVector &lt; GpioChangeRecord &gt;</returns>
+      <summary>Supprime et retourne tous les éléments qui se trouvent actuellement dans la mémoire tampon du lecteur.</summary>
+      <returns>IVector&lt;GpioChangeRecord &gt;</returns>
     </member>
     <member name="M:Windows.Devices.Gpio.GpioChangeReader.GetNextItem">
-      <summary>Récupère et supprime le premier enregistrement de modification inséré dans la mémoire tampon du lecteur.</summary>
-      <returns>Structure GpioChangeRecord contenant l’horodateur et la polarité (en augmentation ou en chute) de la modification.</returns>
+      <summary>Récupère et supprime l'enregistrement de modification précédemment inséré de la mémoire tampon du lecteur.</summary>
+      <returns>Structure GpioChangeRecord contenant la valeur d'horodatage et de polarité (en hausse ou en baisse) de la modification.</returns>
     </member>
     <member name="M:Windows.Devices.Gpio.GpioChangeReader.PeekNextItem">
-      <summary>Récupère l’enregistrement de modification inséré précédemment à partir de la mémoire tampon du lecteur, sans le supprimer.</summary>
-      <returns>Structure GpioChangeRecord contenant l’horodateur et la polarité (en augmentation ou en chute) de la modification.</returns>
+      <summary>Récupère l'enregistrement de modification précédemment inséré de la mémoire tampon du lecteur, sans le supprimer.</summary>
+      <returns>Structure GpioChangeRecord contenant la valeur d'horodatage et de polarité (en hausse ou en baisse) de la modification.</returns>
     </member>
     <member name="M:Windows.Devices.Gpio.GpioChangeReader.Start">
-      <summary>Démarre l’enregistrement des modifications dans la polarité du code confidentiel. Cette méthode peut uniquement être appelée lorsque l’enregistrement des modifications n’est pas déjà actif.</summary>
+      <summary>Démarre l'enregistrement des modifications de polarité de la broche. Cette méthode ne peut être appelée que lorsque l'enregistrement des modifications n'est pas déjà actif.</summary>
     </member>
     <member name="M:Windows.Devices.Gpio.GpioChangeReader.Stop">
-      <summary>Arrêter l’enregistrement des modifications dans la polarité du code confidentiel. Cette méthode ne peut être appelée que lorsque l’enregistrement des modifications est actuellement actif.</summary>
+      <summary>Arrête l'enregistrement des modifications de polarité de la broche. Cette méthode ne peut être appelée que lorsque l'enregistrement des modifications est actuellement actif.</summary>
     </member>
     <member name="M:Windows.Devices.Gpio.GpioChangeReader.WaitForItemsAsync(System.Int32)">
-      <summary>Attend le remplissage de la mémoire tampon avec au moins * nombre * nombre d’éléments, à partir duquel l’action asynchrone se termine. Cette action peut être annulée.</summary>
-      <param name="count">Nombre d’éléments avec lesquels la mémoire tampon doit être remplie avant la fin de l’opération asynchrone.</param>
+      <summary>Attend que la mémoire tampon contienne au moins *count* nombre d'éléments avant que l'action asynchrone s'exécute. Cette action est annulable.</summary>
+      <param name="count">Nombre d'éléments que doit contenir la mémoire tampon avant l'exécution de l'opération asynchrone.</param>
       <returns>
       </returns>
     </member>
     <member name="T:Windows.Devices.Gpio.GpioChangeRecord">
-      <summary>Stocke un timestap relatif d’une modification de valeur de code confidentiel d’e/s (GPIO) à usage général, et indique si le code PIN est passé du niveau faible à élevé ou de haut en bas.</summary>
+      <summary>Enregistre un horodatage relatif du changement de valeur d'une broche GPIO, et indique si la broche est passée de Bas à Haut ou de Haut à Bas.</summary>
     </member>
     <member name="F:Windows.Devices.Gpio.GpioChangeRecord.Edge">
-      <summary>Objet GpioPinEdge correspondant au type de transition.</summary>
+      <summary>Un objet GpioPinEdge correspondant au type de transition.</summary>
     </member>
     <member name="F:Windows.Devices.Gpio.GpioChangeRecord.RelativeTime">
-      <summary>Horodateur relatif qui peut être utilisé pour déterminer la différence de temps entre deux enregistrements de modification. Cet horodatage ne correspond à aucune heure absolue ou système.</summary>
+      <summary>Horodatage relatif qui peut être utilisé pour déterminer la différence de temps entre deux enregistrements de modification. Cet horodatage ne correspond pas à une heure absolue ou système.</summary>
     </member>
     <member name="T:Windows.Devices.Gpio.GpioController">
-      <summary>Représente le contrôleur d’e/s à usage général (GPIO) par défaut pour le système.</summary>
+      <summary>Représente le contrôleur GPIO par défaut du système.</summary>
     </member>
     <member name="P:Windows.Devices.Gpio.GpioController.PinCount">
-      <summary>Obtient le nombre de broches sur le contrôleur d’e/s à usage général (GPIO).</summary>
-      <returns>Nombre de broches sur le contrôleur GPIO. Certains codes confidentiels ne sont peut-être pas disponibles en mode utilisateur. Pour plus d’informations sur la correspondance entre les numéros de code confidentiel et les broches physiques, consultez la documentation de votre carte de circuit.</returns>
+      <summary>Obtient le nombre de broches sur le contrôleur d'E/S à caractère général (GPIO).</summary>
+      <returns>Nombre de broches sur le contrôleur GPIO. Certaines peuvent ne pas être disponibles en mode utilisateur. Pour plus d'informations sur la façon dont les numéros de broche correspondent aux broches physiques, consultez la documentation de votre circuit imprimé.</returns>
     </member>
     <member name="M:Windows.Devices.Gpio.GpioController.GetControllersAsync(Windows.Devices.Gpio.Provider.IGpioProvider)">
-      <summary>Obtient tous les contrôleurs qui sont connectés au système de manière asynchrone.</summary>
-      <param name="provider">Fournisseur GPIO pour les contrôleurs sur le système.</param>
-      <returns>Lorsque la méthode se termine correctement, elle retourne une liste de valeurs qui représentent les contrôleurs disponibles sur le système.</returns>
+      <summary>Obtient tous les contrôleurs qui sont connectés au système de façon asynchrone.</summary>
+      <param name="provider">Le fournisseur GPIO pour les contrôleurs sur le système.</param>
+      <returns>Lorsque la méthode s'exécute correctement, elle retourne une liste de valeurs qui représentent les contrôleurs disponibles sur le système.</returns>
     </member>
     <member name="M:Windows.Devices.Gpio.GpioController.GetDefault">
-      <summary>Obtient le contrôleur d’e/s à usage général (GPIO) par défaut pour le système.</summary>
-      <returns>Le contrôleur GPIO par défaut pour le système, ou null si le système n’a pas de contrôleur GPIO.</returns>
+      <summary>Obtient le contrôleur d'E/S (GPIO) à caractère général par défaut du système.</summary>
+      <returns>Contrôleur GPIO par défaut du système, ou null si le système n'a pas de contrôleur GPIO.</returns>
     </member>
     <member name="M:Windows.Devices.Gpio.GpioController.GetDefaultAsync">
-      <summary>Obtient le contrôleur d’e/s à usage général (GPIO) par défaut pour le système.</summary>
-      <returns>Le contrôleur GPIO par défaut pour le système, ou null si le système n’a pas de contrôleur GPIO.</returns>
+      <summary>Obtient le contrôleur d'E/S (GPIO) à caractère général par défaut du système.</summary>
+      <returns>Contrôleur GPIO par défaut du système, ou null si le système n'a pas de contrôleur GPIO.</returns>
     </member>
     <member name="M:Windows.Devices.Gpio.GpioController.OpenPin(System.Int32)">
-      <summary>Ouvre une connexion au code pin d’e/s à usage général (GPIO) spécifié en mode exclusif.</summary>
-      <param name="pinNumber">Numéro de code confidentiel du pin GPIO que vous souhaitez ouvrir. Le numéro de code confidentiel doit être</param>
-      <returns>Pin GPIO ouvert.</returns>
+      <summary>Ouvre une connexion à la broche d'E/S (GPIO) à caractère général spécifiée en mode exclusif.</summary>
+      <param name="pinNumber">Code confidentiel de la broche GPIO à ouvrir. Le numéro de la broche doit être</param>
+      <returns>Broche GPIO ouverte.</returns>
     </member>
     <member name="M:Windows.Devices.Gpio.GpioController.OpenPin(System.Int32,Windows.Devices.Gpio.GpioSharingMode)">
-      <summary>Ouvre le code confidentiel d’e/s à usage général (GPIO) spécifié dans le mode spécifié.</summary>
-      <param name="pinNumber">Numéro de code confidentiel du pin GPIO que vous souhaitez ouvrir. Le numéro de code confidentiel doit être</param>
-      <param name="sharingMode">Mode dans lequel vous souhaitez ouvrir le pin GPIO, qui détermine si d’autres connexions au code confidentiel peuvent être ouvertes pendant que le code PIN est ouvert.</param>
-      <returns>Pin GPIO ouvert.</returns>
+      <summary>Ouvre la broche d'E/S à caractère général (GPIO) spécifiée en mode spécifié.</summary>
+      <param name="pinNumber">Code confidentiel de la broche GPIO à ouvrir. Le numéro de la broche doit être</param>
+      <param name="sharingMode">Mode dans lequel vous souhaitez ouvrir la broche GPIO, qui détermine si d'autres connexions à la broche peuvent être ouvertes lorsque la broche est ouverte.</param>
+      <returns>Broche GPIO ouverte.</returns>
     </member>
     <member name="M:Windows.Devices.Gpio.GpioController.TryOpenPin(System.Int32,Windows.Devices.Gpio.GpioSharingMode,Windows.Devices.Gpio.GpioPin@,Windows.Devices.Gpio.GpioOpenStatus@)">
-      <summary>Ouvre le code confidentiel d’e/s à usage général (GPIO) spécifié dans le mode spécifié et obtient une valeur d’État que vous pouvez utiliser pour gérer un échec d’ouverture du code PIN par programmation.</summary>
-      <param name="pinNumber">Numéro de code confidentiel du pin GPIO que vous souhaitez ouvrir. Certains codes confidentiels ne sont peut-être pas disponibles en mode utilisateur. Pour plus d’informations sur la correspondance entre les numéros de code confidentiel et les broches physiques, consultez la documentation de votre carte de circuit.</param>
-      <param name="sharingMode">Mode dans lequel vous souhaitez ouvrir le pin GPIO, qui détermine si d’autres connexions au code confidentiel peuvent être ouvertes pendant que le code PIN est ouvert.</param>
-      <param name="pin">Pin GPIO ouvert si la valeur de retour est true ; Sinon, null.</param>
-      <param name="openStatus">Valeur d’énumération qui indique soit que la tentative d’ouverture du code PIN GPIO a réussi, soit la raison de l’échec de la tentative d’ouverture du code confidentiel GPIO.</param>
-      <returns>True si la méthode a réussi à ouvrir le code confidentiel ; Sinon, false.</returns>
+      <summary>Ouvre la broche GPIO spécifiée dans le mode spécifié et obtient une valeur d'état que vous pouvez utiliser pour gérer par programmation l'échec d'ouverture de la broche.</summary>
+      <param name="pinNumber">Code confidentiel de la broche GPIO à ouvrir. Certaines peuvent ne pas être disponibles en mode utilisateur. Pour plus d'informations sur la façon dont les numéros de broche correspondent aux broches physiques, consultez la documentation de votre circuit imprimé.</param>
+      <param name="sharingMode">Mode dans lequel vous souhaitez ouvrir la broche GPIO, qui détermine si d'autres connexions à la broche peuvent être ouvertes lorsque la broche est ouverte.</param>
+      <param name="pin">Broche GPIO ouverte si la valeur de retour est true ; sinon, null.</param>
+      <param name="openStatus">Une valeur d'énumération qui indique que la tentative d'ouverture de la broche GPIO a réussi ou qui indique la raison pour laquelle la tentative d'ouverture de la broche GPIO a échoué.</param>
+      <returns>True si la méthode a ouvert correctement la broche ; sinon false.</returns>
     </member>
     <member name="T:Windows.Devices.Gpio.GpioOpenStatus">
-      <summary>Décrit les résultats possibles de l’ouverture d’un code confidentiel avec la méthode GpioController. TryOpenPin.</summary>
+      <summary>Décrit les résultats possibles de l'ouverture d'une broche avec la méthode GpioController.TryOpenPin.</summary>
     </member>
     <member name="F:Windows.Devices.Gpio.GpioOpenStatus.MuxingConflict">
-      <summary>Le code PIN est actuellement ouvert pour une fonction différente, par exemple * * I2C * *, * * SPI * * ou * * UART * *. Assurez-vous que le code confidentiel n’est pas utilisé par une autre fonction.</summary>
+      <summary>La broche est actuellement ouverte pour une autre fonction, tel que **I2c**, **Spi** ou **UART**. Vérifiez que la broche n’est pas utilisée par une autre fonction.</summary>
     </member>
     <member name="F:Windows.Devices.Gpio.GpioOpenStatus.PinOpened">
-      <summary>Le code PIN GPIO a été ouvert avec succès.</summary>
+      <summary>La broche GPIO a été correctement ouverte.</summary>
     </member>
     <member name="F:Windows.Devices.Gpio.GpioOpenStatus.PinUnavailable">
-      <summary>Le code PIN est réservé par le système et n’est pas disponible pour les applications qui s’exécutent en mode utilisateur.</summary>
+      <summary>La broche est réservée par le système et n'est pas disponible pour les applications qui s'exécutent en mode utilisateur.</summary>
     </member>
     <member name="F:Windows.Devices.Gpio.GpioOpenStatus.SharingViolation">
-      <summary>Le code PIN est actuellement ouvert dans un mode de partage incompatible. Par exemple :</summary>
+      <summary>La broche est actuellement ouverte dans un mode de partage incompatible. Exemple :</summary>
     </member>
     <member name="F:Windows.Devices.Gpio.GpioOpenStatus.UnknownError">
-      <summary>Impossible d’ouvrir le code confidentiel.</summary>
+      <summary>La broche n'a pas pu être ouverte.</summary>
     </member>
     <member name="T:Windows.Devices.Gpio.GpioPin">
-      <summary>Représente un code confidentiel d’e/s à usage général (GPIO).</summary>
+      <summary>Représente une broche d'E/S à caractère général (GPIO).</summary>
     </member>
     <member name="P:Windows.Devices.Gpio.GpioPin.DebounceTimeout">
-      <summary>Obtient ou définit le délai d’attente de débond pour le code confidentiel d’e/s à usage général (GPIO), qui est un intervalle pendant lequel les modifications apportées à la valeur du code PIN sont filtrées et ne génèrent pas d’événements ValueChanged.</summary>
-      <returns>Délai d’attente de débond (de type TimeSpan) pour le code confidentiel GPIO. Si la longueur de cet intervalle est égale à 0, toutes les modifications apportées à la valeur du code PIN génèrent des événements ValueChanged.</returns>
+      <summary>Obtient ou définit le délai d'attente de la réponse pour la broche GPIO, qui est un intervalle pendant lequel les modifications apportées à la valeur de la broche sont filtrées et ne génèrent aucun événement ValueChanged.</summary>
+      <returns>Délai de stabilisation (de type intervalle de temps) pour la broche GPIO. Si la durée de cet intervalle est 0, toutes les modifications apportées à la valeur de la broche génèrent des événements ValueChanged.</returns>
     </member>
     <member name="P:Windows.Devices.Gpio.GpioPin.PinNumber">
-      <summary>Obtient le numéro de code confidentiel du pin d’e/s à usage général (GPIO).</summary>
-      <returns>Numéro de code confidentiel du pin GPIO.</returns>
+      <summary>Obtient le code confidentiel de la broche GPIO.</summary>
+      <returns>Code confidentiel de la broche GPIO.</returns>
     </member>
     <member name="P:Windows.Devices.Gpio.GpioPin.SharingMode">
-      <summary>Obtient le mode de partage dans lequel le code confidentiel d’e/s à usage général (GPIO) est ouvert.</summary>
-      <returns>Mode de partage dans lequel le code confidentiel GPIO est ouvert.</returns>
+      <summary>Obtient le mode de partage dans lequel la broche GPIO est ouverte.</summary>
+      <returns>Mode de partage dans lequel la broche GPIO est ouverte.</returns>
     </member>
     <member name="E:Windows.Devices.Gpio.GpioPin.ValueChanged">
-      <summary>Se produit lorsque la valeur du pin d’e/s à usage général (GPIO) change, en raison d’une stimulation externe quand le code confidentiel est configuré en tant qu’entrée, ou lorsqu’une valeur est écrite dans le code confidentiel lorsque le code PIN est configuré comme sortie.</summary>
+      <summary>Se produit lorsque la valeur de la broche GPIO change, soit suite à une impulsion externe lorsque la broche est configurée comme entrée, soit lorsqu'une valeur est entrée dans la broche lorsque la broche est configurée comme sortie.</summary>
     </member>
     <member name="M:Windows.Devices.Gpio.GpioPin.Close">
-      <summary>Ferme le code confidentiel d’e/s à usage général (GPIO) et libère les ressources qui lui sont associées.</summary>
+      <summary>Ferme la broche GPIO et libère les ressources associées à celle-ci.</summary>
     </member>
     <member name="M:Windows.Devices.Gpio.GpioPin.GetDriveMode">
-      <summary>Obtient le mode lecteur actuel pour le code confidentiel d’e/s à usage général (GPIO). Le mode lecteur spécifie si le code PIN est configuré en tant qu’entrée ou sortie, et détermine la façon dont les valeurs sont pilotées sur le code confidentiel.</summary>
-      <returns>Valeur d’énumération qui indique le mode lecteur actuel pour le code confidentiel GPIO. Le mode lecteur spécifie si le code PIN est configuré en tant qu’entrée ou sortie, et détermine la façon dont les valeurs sont pilotées sur le code confidentiel.</returns>
+      <summary>Obtient le mode d'actionnement actuel de la broche GPIO. Le mode d'actionnement spécifie si la broche est configurée comme entrée ou sortie, et détermine comment les valeurs sont acheminées dans la broche.</summary>
+      <returns>Valeur d'énumération qui indique le mode d'actionnement actuel de la broche GPIO. Le mode d'actionnement spécifie si la broche est configurée comme entrée ou sortie, et détermine comment les valeurs sont acheminées dans la broche.</returns>
     </member>
     <member name="M:Windows.Devices.Gpio.GpioPin.IsDriveModeSupported(Windows.Devices.Gpio.GpioPinDriveMode)">
-      <summary>Obtient une valeur indiquant si le code confidentiel d’e/s à usage général (GPIO) prend en charge le mode lecteur spécifié.</summary>
-      <param name="driveMode">Le mode de lecteur pour lequel vous souhaitez vérifier la prise en charge.</param>
-      <returns>True si le pin GPIO prend en charge le mode lecteur que * driveMode * spécifie ; Sinon, false. Si vous spécifiez un mode de lecteur pour lequel cette méthode retourne la valeur false lorsque vous appelez SetDriveMode, SetDriveMode génère une exception.</returns>
+      <summary>Obtient une valeur indiquant si la broche GPIO prend en charge le mode lecteur spécifié.</summary>
+      <param name="driveMode">Mode d'actionnement dont vous souhaitez vérifier la prise en charge.</param>
+      <returns>True si la broche GPIO prend en charge le mode d'actionnement spécifié par *driveMode* ; sinon, false. Si vous spécifiez un mode d'actionnement pour lequel cette méthode retourne la valeur false lorsque vous appelez la méthode SetDriveMode, la méthode SetDriveMode génère une exception.</returns>
     </member>
     <member name="M:Windows.Devices.Gpio.GpioPin.Read">
-      <summary>Lit la valeur actuelle du code confidentiel d’e/s à usage général (GPIO).</summary>
-      <returns>Valeur actuelle du pin GPIO. Si le code PIN est configuré en tant que sortie, cette valeur correspond à la dernière valeur écrite dans le code confidentiel.</returns>
+      <summary>Lit la valeur actuelle de la broche GPIO.</summary>
+      <returns>Valeur actuelle de la broche GPIO. Si la broche est configurée comme sortie, cette valeur est la dernière valeur entrée dans la broche.</returns>
     </member>
     <member name="M:Windows.Devices.Gpio.GpioPin.SetDriveMode(Windows.Devices.Gpio.GpioPinDriveMode)">
-      <summary>Définit le mode lecteur du code confidentiel d’e/s à usage général (GPIO). Le mode lecteur spécifie si le code PIN est configuré en tant qu’entrée ou sortie, et détermine la façon dont les valeurs sont pilotées sur le code confidentiel.</summary>
-      <param name="value">Valeur d’énumération qui spécifie le mode de lecteur à utiliser pour le code confidentiel GPIO. Le mode lecteur spécifie si le code PIN est configuré en tant qu’entrée ou sortie, et détermine la façon dont les valeurs sont pilotées sur le code confidentiel.</param>
+      <summary>Définit le mode d'actionnement de la broche GPIO. Le mode d'actionnement spécifie si la broche est configurée comme entrée ou sortie, et détermine comment les valeurs sont acheminées dans la broche.</summary>
+      <param name="value">Valeur d'énumération qui spécifie le mode d'actionnement à utiliser pour la broche GPIO. Le mode d'actionnement spécifie si la broche est configurée comme entrée ou sortie, et détermine comment les valeurs sont acheminées dans la broche.</param>
     </member>
     <member name="M:Windows.Devices.Gpio.GpioPin.Write(Windows.Devices.Gpio.GpioPinValue)">
-      <summary>Pilote la valeur spécifiée sur le code confidentiel d’e/s à usage général (GPIO) en fonction du mode de lecteur actuel pour le code confidentiel si le code confidentiel est configuré en tant que sortie, ou met à jour la valeur de sortie verrouillée pour le code confidentiel si le code PIN est configuré en tant qu’entrée.</summary>
-      <param name="value">Valeur d’énumération à écrire dans le code confidentiel GPIO.</param>
+      <summary>Achemine la valeur spécifiée sur la broche GPIO en fonction du mode d'actionnement actuel de la broche si celle-ci est configurée comme sortie, ou met à jour la valeur de sortie verrouillée de la broche si celle-ci est configurée comme entrée.</summary>
+      <param name="value">Valeur d'énumération à entrer sur la broche GPIO.</param>
     </member>
     <member name="T:Windows.Devices.Gpio.GpioPinDriveMode">
-      <summary>Indique si un code confidentiel d’e/s à usage général (GPIO) est configuré en tant qu’entrée ou sortie, et comment les valeurs sont pilotées sur le code confidentiel.</summary>
+      <summary>Décrit si une broche GPIO est configurée comme une entrée ou une sortie et comment les valeurs sont acheminées sur la broche.</summary>
     </member>
     <member name="F:Windows.Devices.Gpio.GpioPinDriveMode.Input">
-      <summary>Configure le code confidentiel GPIO en mode flottant, avec une haute impédance.</summary>
+      <summary>Configure la broche GPIO en mode flottant avec une forte impédance.</summary>
     </member>
     <member name="F:Windows.Devices.Gpio.GpioPinDriveMode.InputPullDown">
-      <summary>Configure le pin GPIO comme une impédance élevée avec une résistance de type pull-up.</summary>
+      <summary>Configure la broche GPIO pour une forte impédance avec une résistance pull-down à la terre.</summary>
     </member>
     <member name="F:Windows.Devices.Gpio.GpioPinDriveMode.InputPullUp">
-      <summary>Configure le pin GPIO comme une impédance élevée avec une résistance d’extraction à la connexion de frais de tension (VCC).</summary>
+      <summary>Configure la broche GPIO pour une forte impédance avec une résistance pull-up à la connexion de charge de tension (VCC).</summary>
     </member>
     <member name="F:Windows.Devices.Gpio.GpioPinDriveMode.Output">
-      <summary>Configure le code confidentiel GPIO en mode lecteur fort, avec une faible impédance.</summary>
+      <summary>Configure la broche GPIO en mode d'actionnement fort avec une faible impédance.</summary>
     </member>
     <member name="F:Windows.Devices.Gpio.GpioPinDriveMode.OutputOpenDrain">
-      <summary>Configure le GPIO en mode de drainage ouvert.</summary>
+      <summary>Configure la broche GPIO en mode de drainage ouvert.</summary>
     </member>
     <member name="F:Windows.Devices.Gpio.GpioPinDriveMode.OutputOpenDrainPullUp">
-      <summary>Configure le code confidentiel GPIO en mode drain ouvert avec le mode d’extraction résistive.</summary>
+      <summary>Configure la broche GPIO en mode de drainage ouvert avec le mode pull-up résistif.</summary>
     </member>
     <member name="F:Windows.Devices.Gpio.GpioPinDriveMode.OutputOpenSource">
-      <summary>Configure le code confidentiel GPIO en mode Open Collector.</summary>
+      <summary>Configure la broche GPIO en mode de collecteur ouvert.</summary>
     </member>
     <member name="F:Windows.Devices.Gpio.GpioPinDriveMode.OutputOpenSourcePullDown">
-      <summary>Configure le code confidentiel GPIO en mode collecteur ouvert avec le mode d’extraction résistive.</summary>
+      <summary>Configure la broche GPIO en mode de collecteur ouvert avec le mode pull-down résistif.</summary>
     </member>
     <member name="T:Windows.Devices.Gpio.GpioPinEdge">
-      <summary>Décrit les types de modifications possibles qui peuvent se produire à la valeur du code pin d’e/s à usage général (GPIO) pour l’événement GpioPin. ValueChanged.</summary>
+      <summary>Décrit les types de changement de valeur possible de la valeur de la broche GPIO pour l'événement GpioPin.ValueChanged.</summary>
     </member>
     <member name="F:Windows.Devices.Gpio.GpioPinEdge.FallingEdge">
-      <summary>La valeur de la broche GPIO est passée de haut en bas.</summary>
+      <summary>La valeur de la broche GPIO est passée de haut à bas.</summary>
     </member>
     <member name="F:Windows.Devices.Gpio.GpioPinEdge.RisingEdge">
-      <summary>La valeur de la broche GPIO est passée de faible à élevé.</summary>
+      <summary>La valeur de la broche GPIO est passée de bas à haut.</summary>
     </member>
     <member name="T:Windows.Devices.Gpio.GpioPinValue">
-      <summary>Décrit les valeurs possibles pour un code confidentiel d’e/s à usage général (GPIO).</summary>
+      <summary>Décrit les valeurs possibles pour une broche GPIO.</summary>
     </member>
     <member name="F:Windows.Devices.Gpio.GpioPinValue.High">
-      <summary>La valeur du pin GPIO est élevée.</summary>
+      <summary>La valeur de la broche GPIO est haut.</summary>
     </member>
     <member name="F:Windows.Devices.Gpio.GpioPinValue.Low">
-      <summary>La valeur du pin GPIO est faible.</summary>
+      <summary>La valeur de la broche GPIO est Bas.</summary>
     </member>
     <member name="T:Windows.Devices.Gpio.GpioPinValueChangedEventArgs">
-      <summary>Fournit des données sur l’événement GpioPin. ValueChanged qui se produit lorsque la valeur du code pin d’e/s à usage général (GPIO) change, en raison d’un stimulus externe quand le code confidentiel est configuré en tant qu’entrée, ou lorsqu’une valeur est écrite dans le code confidentiel lorsque le code confidentiel est configuré en tant que sortie.</summary>
+      <summary>Fournit des informations sur l'événement GpioPin.ValueChanged qui se produit lorsque la valeur de la broche GPIO change, soit suite à une impulsion externe lorsque la broche est configurée comme entrée, soit lorsqu'une valeur est entrée dans la broche lorsque la broche est configurée comme sortie.</summary>
     </member>
     <member name="P:Windows.Devices.Gpio.GpioPinValueChangedEventArgs.Edge">
-      <summary>Obtient le type de modification qui s’est produit sur la valeur du code confidentiel d’e/s à usage général (GPIO) pour l’événement GpioPin. ValueChanged.</summary>
-      <returns>Valeur d’énumération qui indique le type de modification qui s’est produite à la valeur du pin GPIO pour l’événement GpioPin. ValueChanged.</returns>
+      <summary>Décrit le type de changement de la valeur de la broche GPIO pour l'événement GpioPin.ValueChanged.</summary>
+      <returns>Valeur d'énumération qui indique le type de changement présenté par la broche GPIO pour l'événement GpioPin.ValueChanged.</returns>
     </member>
     <member name="T:Windows.Devices.Gpio.GpioSharingMode">
-      <summary>Décrit les modes dans lesquels vous pouvez ouvrir un code pin d’e/s à usage général (GPIO). Ces modes déterminent si d’autres connexions au code confidentiel GPIO peuvent être ouvertes pendant que le code PIN est ouvert.</summary>
+      <summary>Décrit les modes dans lesquels vous pouvez ouvrir une broche GPIO. Ces modes déterminent si d'autres connexions à la broche GPIO peuvent être ouvertes pendant que la broche elle-même est ouverte.</summary>
     </member>
     <member name="F:Windows.Devices.Gpio.GpioSharingMode.Exclusive">
-      <summary>Ouvre le pin GPIO en mode exclusif, afin qu’aucune autre connexion au code confidentiel ne puisse être ouverte.</summary>
+      <summary>Ouvre la broche GPIO exclusivement, afin qu'aucune autre connexion à la broche ne puisse être ouverte.</summary>
     </member>
     <member name="F:Windows.Devices.Gpio.GpioSharingMode.SharedReadOnly">
-      <summary>Ouvre le code PIN GPIO comme partagé, afin que d’autres connexions en mode * * SharedReadOnly * * au code confidentiel puissent être ouvertes.</summary>
+      <summary>Ouvre la broche GPIO en partage, afin de pouvoir ouvrir d'autres connexions à la broche en mode **SharedReadOnly**.</summary>
     </member>
     <member name="T:Windows.Devices.Gpio.Provider.GpioPinProviderValueChangedEventArgs">
-      <summary>Fournit des informations sur l’événement IGpioPinProvider. ValueChanged.</summary>
+      <summary>Fournit des informations sur l'événement IGpioPinProvider.ValueChanged.</summary>
     </member>
     <member name="M:Windows.Devices.Gpio.Provider.GpioPinProviderValueChangedEventArgs.#ctor(Windows.Devices.Gpio.Provider.ProviderGpioPinEdge)">
-      <summary>Construit la classe GpioPinProviderValueChangedEventArgs avec la valeur de périphérie spécifiée.</summary>
-      <param name="edge">Bord du pin souhaité.</param>
+      <summary>Construit la classe GpioPinProviderValueChangedEventArgs avec la valeur de bord spécifiée.</summary>
+      <param name="edge">Le bord souhaité de la broche.</param>
     </member>
     <member name="P:Windows.Devices.Gpio.Provider.GpioPinProviderValueChangedEventArgs.Edge">
-      <summary>Obtient la valeur à laquelle le code PIN est passé.</summary>
-      <returns>Bord du pin.</returns>
+      <summary>Obtient la valeur modifiée de la broche.</summary>
+      <returns>Le bord de la broche.</returns>
     </member>
     <member name="T:Windows.Devices.Gpio.Provider.IGpioControllerProvider">
-      <summary>Représente les actions communes à tous les contrôleurs d’e/s à usage général (GPIO).</summary>
+      <summary>Représente les actions communes à tous les contrôleurs d'E/S à caractère général (GPIO).</summary>
     </member>
     <member name="P:Windows.Devices.Gpio.Provider.IGpioControllerProvider.PinCount">
-      <summary>Obtient le nombre d’épingles d’e/s à usage général (GPIO) disponibles.</summary>
-      <returns>Nombre de pin GPIO disponibles.</returns>
+      <summary>Obtient le nombre de broches d'E/S à caractère général (GPIO) disponibles.</summary>
+      <returns>Le nombre de broches GPIO disponibles.</returns>
     </member>
     <member name="M:Windows.Devices.Gpio.Provider.IGpioControllerProvider.OpenPinProvider(System.Int32,Windows.Devices.Gpio.Provider.ProviderGpioSharingMode)">
-      <summary>Ouvre et retourne le fournisseur de broches GPIO (General-Purpose I/O) pour un code confidentiel spécifique.</summary>
-      <param name="pin">Numéro de code confidentiel GPIO souhaité.</param>
-      <param name="sharingMode">Mode de partage auquel le code confidentiel doit être ouvert.</param>
-      <returns>Fournisseur de pin GPIO pour le code confidentiel spécifié.</returns>
+      <summary>Ouvre et retourne le fournisseur de broche d'E/S à caractère général (GPIO) pour une broche spécifique.</summary>
+      <param name="pin">Numéro de broche GPIO souhaité.</param>
+      <param name="sharingMode">Le mode de partage pour ouvrir la broche.</param>
+      <returns>Le fournisseur de broche GPIO pour la broche spécifiée.</returns>
     </member>
     <member name="T:Windows.Devices.Gpio.Provider.IGpioPinProvider">
-      <summary>Représente les actions communes aux fournisseurs de code confidentiels d’e/s à usage général (GPIO).</summary>
+      <summary>Représente des actions communes aux fournisseurs de broche d'E/S à caractère général (GPIO).</summary>
     </member>
     <member name="P:Windows.Devices.Gpio.Provider.IGpioPinProvider.DebounceTimeout">
-      <summary>Obtient ou définit le délai d’attente de débond pour le code confidentiel d’e/s à usage général (GPIO), qui est un intervalle pendant lequel les modifications apportées à la valeur du code PIN sont filtrées et ne génèrent pas d’événements ValueChanged.</summary>
-      <returns>Délai d’attente de débond pour le pin GPIO, qui est un intervalle pendant lequel les modifications apportées à la valeur du code PIN sont filtrées et ne génèrent pas d’événements ValueChanged. Si la longueur de cet intervalle est égale à 0, toutes les modifications apportées à la valeur du code PIN génèrent des événements ValueChanged.</returns>
+      <summary>Obtient ou définit le délai d'attente de la réponse pour la broche GPIO, qui est un intervalle pendant lequel les modifications apportées à la valeur de la broche sont filtrées et ne génèrent aucun événement ValueChanged.</summary>
+      <returns>Délai d'attente de la réponse pour la broche GPIO, qui est un intervalle pendant lequel les modifications apportées à la valeur de la broche sont filtrées et ne génèrent aucun événement ValueChanged. Si la durée de cet intervalle est 0, toutes les modifications apportées à la valeur de la broche génèrent des événements ValueChanged.</returns>
     </member>
     <member name="P:Windows.Devices.Gpio.Provider.IGpioPinProvider.PinNumber">
-      <summary>Obtient le numéro de code confidentiel du pin d’e/s à usage général (GPIO).</summary>
-      <returns>Numéro de code confidentiel du pin GPIO.</returns>
+      <summary>Obtient le code confidentiel de la broche GPIO.</summary>
+      <returns>Code confidentiel de la broche GPIO.</returns>
     </member>
     <member name="P:Windows.Devices.Gpio.Provider.IGpioPinProvider.SharingMode">
-      <summary>Obtient le mode de partage dans lequel le code confidentiel d’e/s à usage général (GPIO) est ouvert.</summary>
-      <returns>Mode de partage dans lequel le code confidentiel GPIO est ouvert.</returns>
+      <summary>Obtient le mode de partage dans lequel la broche GPIO est ouverte.</summary>
+      <returns>Mode de partage dans lequel la broche GPIO est ouverte.</returns>
     </member>
     <member name="E:Windows.Devices.Gpio.Provider.IGpioPinProvider.ValueChanged">
-      <summary>Événement qui se déclenche lorsque la valeur du code pin a changé.</summary>
+      <summary>Événement qui se déclenche lorsque la valeur de la broche a changé.</summary>
     </member>
     <member name="M:Windows.Devices.Gpio.Provider.IGpioPinProvider.GetDriveMode">
-      <summary>Obtient le mode de lecteur actuellement configuré du pin.</summary>
-      <returns>Mode de lecteur du code confidentiel.</returns>
+      <summary>Obtient le mode d'actionnement actuellement configuré pour la broche.</summary>
+      <returns>Le mode d'actionnement de la broche.</returns>
     </member>
     <member name="M:Windows.Devices.Gpio.Provider.IGpioPinProvider.IsDriveModeSupported(Windows.Devices.Gpio.Provider.ProviderGpioPinDriveMode)">
-      <summary>Détermine si un mode lecteur est pris en charge pour le code confidentiel.</summary>
-      <param name="driveMode">Mode de lecteur souhaité.</param>
-      <returns>True si le mode lecteur est pris en charge ; Sinon, false.</returns>
+      <summary>Détermine si un mode d'actionnement est pris en charge pour la broche.</summary>
+      <param name="driveMode">Le mode d'actionnement souhaité.</param>
+      <returns>True si le mode d'actionnement est pris en charge ; sinon, false.</returns>
     </member>
     <member name="M:Windows.Devices.Gpio.Provider.IGpioPinProvider.Read">
-      <summary>Lit la valeur actuelle du code confidentiel.</summary>
-      <returns>Valeur du pin.</returns>
+      <summary>Lit la valeur actuelle de la broche.</summary>
+      <returns>La valeur de la broche.</returns>
     </member>
     <member name="M:Windows.Devices.Gpio.Provider.IGpioPinProvider.SetDriveMode(Windows.Devices.Gpio.Provider.ProviderGpioPinDriveMode)">
-      <summary>Définit le mode lecteur du pin.</summary>
-      <param name="value">Mode de lecteur souhaité pour le code confidentiel.</param>
+      <summary>Définit le mode d'actionnement de la broche.</summary>
+      <param name="value">Le mode d'actionnement souhaité pour la broche.</param>
     </member>
     <member name="M:Windows.Devices.Gpio.Provider.IGpioPinProvider.Write(Windows.Devices.Gpio.Provider.ProviderGpioPinValue)">
-      <summary>Écrit une valeur dans le code confidentiel.</summary>
+      <summary>Écrit une valeur sur la broche.</summary>
       <param name="value">Valeur à écrire.</param>
     </member>
     <member name="T:Windows.Devices.Gpio.Provider.IGpioProvider">
-      <summary>Représente les actions communes aux fournisseurs de contrôleurs d’e/s à usage général (GPIO).</summary>
+      <summary>Représente des actions communes aux fournisseurs de contrôleur d'E/S à caractère général (GPIO).</summary>
     </member>
     <member name="M:Windows.Devices.Gpio.Provider.IGpioProvider.GetControllers">
       <summary>Obtient les contrôleurs disponibles sur le système.</summary>
-      <returns>Liste de valeurs qui représentent les contrôleurs disponibles sur le système.</returns>
+      <returns>Une liste de valeurs qui représentent les contrôleurs disponibles sur le système.</returns>
     </member>
     <member name="T:Windows.Devices.Gpio.Provider.ProviderGpioPinDriveMode">
-      <summary>Indique si un code confidentiel d’e/s à usage général (GPIO) est configuré en tant qu’entrée ou sortie, et comment les valeurs sont pilotées sur le code confidentiel.</summary>
+      <summary>Décrit si une broche GPIO est configurée comme une entrée ou une sortie et comment les valeurs sont acheminées sur la broche.</summary>
     </member>
     <member name="F:Windows.Devices.Gpio.Provider.ProviderGpioPinDriveMode.Input">
-      <summary>Configure le code confidentiel GPIO en mode flottant, avec une haute impédance.</summary>
+      <summary>Configure la broche GPIO en mode flottant avec une forte impédance.</summary>
     </member>
     <member name="F:Windows.Devices.Gpio.Provider.ProviderGpioPinDriveMode.InputPullDown">
-      <summary>Configure le pin GPIO comme une impédance élevée avec une résistance de type pull-up.</summary>
+      <summary>Configure la broche GPIO pour une forte impédance avec une résistance pull-down à la terre.</summary>
     </member>
     <member name="F:Windows.Devices.Gpio.Provider.ProviderGpioPinDriveMode.InputPullUp">
-      <summary>Configure le pin GPIO comme une impédance élevée avec une résistance d’extraction à la connexion de frais de tension (VCC).</summary>
+      <summary>Configure la broche GPIO pour une forte impédance avec une résistance pull-up à la connexion de charge de tension (VCC).</summary>
     </member>
     <member name="F:Windows.Devices.Gpio.Provider.ProviderGpioPinDriveMode.Output">
-      <summary>Configure le code confidentiel GPIO en mode lecteur fort, avec une faible impédance.</summary>
+      <summary>Configure la broche GPIO en mode d'actionnement fort avec une faible impédance.</summary>
     </member>
     <member name="F:Windows.Devices.Gpio.Provider.ProviderGpioPinDriveMode.OutputOpenDrain">
-      <summary>Configure le GPIO en mode de drainage ouvert.</summary>
+      <summary>Configure la broche GPIO en mode de drainage ouvert.</summary>
     </member>
     <member name="F:Windows.Devices.Gpio.Provider.ProviderGpioPinDriveMode.OutputOpenDrainPullUp">
-      <summary>Configure le code confidentiel GPIO en mode drain ouvert avec le mode d’extraction résistive.</summary>
+      <summary>Configure la broche GPIO en mode de drainage ouvert avec le mode pull-up résistif.</summary>
     </member>
     <member name="F:Windows.Devices.Gpio.Provider.ProviderGpioPinDriveMode.OutputOpenSource">
-      <summary>Configure le code confidentiel GPIO en mode Open Collector.</summary>
+      <summary>Configure la broche GPIO en mode de collecteur ouvert.</summary>
     </member>
     <member name="F:Windows.Devices.Gpio.Provider.ProviderGpioPinDriveMode.OutputOpenSourcePullDown">
-      <summary>Configure le code confidentiel GPIO en mode collecteur ouvert avec le mode d’extraction résistive.</summary>
+      <summary>Configure la broche GPIO en mode de collecteur ouvert avec le mode pull-down résistif.</summary>
     </member>
     <member name="T:Windows.Devices.Gpio.Provider.ProviderGpioPinEdge">
-      <summary>Décrit les types de modifications possibles qui peuvent se produire à la valeur du code confidentiel d’e/s à usage général (GPIO).</summary>
+      <summary>Décrit les types de changement de valeur possibles de la valeur de la broche GPIO.</summary>
     </member>
     <member name="F:Windows.Devices.Gpio.Provider.ProviderGpioPinEdge.FallingEdge">
-      <summary>Le bord en chute ou lorsque la valeur passe de haut à bas.</summary>
+      <summary>Le bord tombant, ou lorsque la valeur va de haut en bas.</summary>
     </member>
     <member name="F:Windows.Devices.Gpio.Provider.ProviderGpioPinEdge.RisingEdge">
-      <summary>Le bord en augmentation ou lorsque la valeur passe de faible à élevé.</summary>
+      <summary>Le bord montant, ou lorsque la valeur va de bas en haut.</summary>
     </member>
     <member name="T:Windows.Devices.Gpio.Provider.ProviderGpioPinValue">
-      <summary>Décrit les valeurs possibles pour un code confidentiel d’e/s à usage général (GPIO).</summary>
+      <summary>Décrit les valeurs possibles pour une broche GPIO.</summary>
     </member>
     <member name="F:Windows.Devices.Gpio.Provider.ProviderGpioPinValue.High">
-      <summary>La valeur du pin GPIO est élevée.</summary>
+      <summary>La valeur de la broche GPIO est haut.</summary>
     </member>
     <member name="F:Windows.Devices.Gpio.Provider.ProviderGpioPinValue.Low">
-      <summary>La valeur du pin GPIO est faible.</summary>
+      <summary>La valeur de la broche GPIO est Bas.</summary>
     </member>
     <member name="T:Windows.Devices.Gpio.Provider.ProviderGpioSharingMode">
-      <summary>Décrit les modes dans lesquels vous pouvez ouvrir un code pin d’e/s à usage général (GPIO). Ces modes déterminent si d’autres connexions au code confidentiel GPIO peuvent être ouvertes pendant que le code PIN est ouvert.</summary>
+      <summary>Décrit les modes dans lesquels vous pouvez ouvrir une broche GPIO. Ces modes déterminent si d'autres connexions à la broche GPIO peuvent être ouvertes pendant que la broche elle-même est ouverte.</summary>
     </member>
     <member name="F:Windows.Devices.Gpio.Provider.ProviderGpioSharingMode.Exclusive">
-      <summary>Ouvre le pin GPIO en mode exclusif, afin qu’aucune autre connexion au code confidentiel ne puisse être ouverte.</summary>
+      <summary>Ouvre la broche GPIO exclusivement, afin qu'aucune autre connexion à la broche ne puisse être ouverte.</summary>
     </member>
     <member name="F:Windows.Devices.Gpio.Provider.ProviderGpioSharingMode.SharedReadOnly">
-      <summary>Ouvre le code PIN GPIO comme partagé, afin que d’autres connexions en mode * * SharedReadOnly * * au code confidentiel puissent être ouvertes. Seules les opérations qui ne modifient pas l’état du pin peuvent être effectuées.</summary>
+      <summary>Ouvre la broche GPIO en partage, afin de pouvoir ouvrir d'autres connexions à la broche en mode **SharedReadOnly**. Seules les opérations qui ne changent pas l'état de la broche peuvent être exécutées.</summary>
     </member>
     <member name="T:Windows.Devices.I2c.I2cBusSpeed">
-      <summary>Décrit les vitesses de bus disponibles pour la connexion à un appareil Inter-Integrated Circuit (I &lt; SUP &gt; 2 &lt;/SUP &gt; C). La vitesse du bus correspond à la fréquence d’horloge du &lt; SUP &gt; 2 &lt;/SUP &gt; C lors de l’accès à l’appareil.</summary>
+      <summary>Décrit les vitesses de bus disponibles pour se connecter à un appareil à circuit inter-intégré (I&lt;sup&gt;2&lt;/sup&gt; C). La vitesse du bus est la fréquence à laquelle chronométrer le bus I&lt;sup&gt;2&lt;/sup&gt; C lors de l'accès à l'appareil.</summary>
     </member>
     <member name="F:Windows.Devices.I2c.I2cBusSpeed.FastMode">
-      <summary>Vitesse rapide de 400 kHz.</summary>
+      <summary>Vitesse rapide de 400 kHz.</summary>
     </member>
     <member name="F:Windows.Devices.I2c.I2cBusSpeed.StandardMode">
-      <summary>Vitesse standard de 100 kilohertz (kHz). Cette vitesse est la valeur par défaut.</summary>
+      <summary>Vitesse standard de 100 kilohertz (kHz). Vitesse par défaut.</summary>
     </member>
     <member name="T:Windows.Devices.I2c.I2cConnectionSettings">
-      <summary>Représente les paramètres de connexion que vous souhaitez utiliser pour un appareil inter-intégré (I &lt; SUP &gt; 2 &lt;/SUP &gt; C).</summary>
+      <summary>Représente les paramètres de connexion à utiliser pour un appareil à circuit inter-intégré (I&lt;sup&gt;2&lt;/sup&gt; C).</summary>
     </member>
     <member name="M:Windows.Devices.I2c.I2cConnectionSettings.#ctor(System.Int32)">
-      <summary>Crée et Initialise une nouvelle instance de la classe I2cConnectionSettings pour l’appareil Inter-Integrated Circuit (I &lt; SUP &gt; 2 &lt;/SUP &gt; C) avec l’adresse de bus spécifiée, en utilisant les paramètres par défaut du mode standard pour la vitesse du bus et le mode de partage exclusif. .</summary>
-      <param name="slaveAddress">Adresse de bus du périphérique Inter-Integrated Circuit (I &lt; SUP &gt; 2 &lt;/SUP &gt; C) à laquelle les paramètres du I2cConnectionSettings doivent s’appliquer. Seul l’adressage 7 bits est pris en charge. par conséquent, la plage de valeurs valides est comprise entre 8 et 119.</param>
+      <summary>Crée et initialise une nouvelle instance de la classe I2cConnectionSettings pour un appareil à circuit inter-intégré (I&lt;sup&gt;2&lt;/sup&gt; C) avec l'adresse de bus spécifiée, à l'aide des paramètres par défaut du mode standard pour la vitesse de bus et le mode de partage exclusif.</summary>
+      <param name="slaveAddress">Adresse de bus de l'appareil à circuit inter-intégré (I&lt;sup&gt;2&lt;/sup&gt; C) auquel les paramètres de la méthode I2cConnectionSettings doivent s'appliquer. Seul l'adressage sur 7 bits est pris en charge, si bien que la plage des valeurs valides est comprise entre 8 et 119.</param>
     </member>
     <member name="P:Windows.Devices.I2c.I2cConnectionSettings.BusSpeed">
-      <summary>Obtient ou définit la vitesse du bus à utiliser pour la connexion à un appareil inter-intégré (I &lt; SUP &gt; 2 &lt;/SUP &gt; C). La vitesse du bus correspond à la fréquence d’horloge du &lt; SUP &gt; 2 &lt;/SUP &gt; C lors de l’accès à l’appareil.</summary>
-      <returns>Vitesse du bus à utiliser pour la connexion à anI &lt; SUP &gt; 2 &lt;/SUP &gt; C.</returns>
+      <summary>Obtient ou définit la vitesse du bus à utiliser pour se connecter à un appareil à circuit inter-intégré (I&lt;sup&gt;2&lt;/sup&gt; C). La vitesse du bus est la fréquence à laquelle chronométrer le bus I&lt;sup&gt;2&lt;/sup&gt; C lors de l'accès à l'appareil.</summary>
+      <returns>Vitesse du bus à utiliser pour se connecter à un appareil I&lt;sup&gt;2&lt;/sup&gt; C.</returns>
     </member>
     <member name="P:Windows.Devices.I2c.I2cConnectionSettings.SharingMode">
-      <summary>Obtient ou définit le mode de partage à utiliser pour se connecter au circuit inter-intégré (I &lt; SUP &gt; 2 &lt;/SUP &gt; C). Ce mode détermine si d’autres connexions à l’adresse I &lt; SUP &gt; 2 &lt;/SUP &gt; C peuvent être ouvertes pendant que vous vous connectez à l’adresse du bus I &lt; SUP &gt; 2 &lt;/SUP &gt; C.</summary>
-      <returns>Mode de partage à utiliser pour se connecter à l’adresse de bus I &lt; SUP &gt; 2 &lt;/SUP &gt; C.</returns>
+      <summary>Obtient ou définit le mode de partage à utiliser pour se connecter à l'adresse de bus à circuit inter-intégré (I&lt;sup&gt;2&lt;/sup&gt; C). Ce mode détermine si d'autres connexions à l'adresse de bus I&lt;sup&gt;2&lt;/sup&gt; C peuvent être ouvertes pendant que vous êtes connecté à l'adresse de bus I&lt;sup&gt;2&lt;/sup&gt; C.</summary>
+      <returns>Mode de partage à utiliser pour se connecter à l'adresse de bus I&lt;sup&gt;2&lt;/sup&gt; C.</returns>
     </member>
     <member name="P:Windows.Devices.I2c.I2cConnectionSettings.SlaveAddress">
-      <summary>Obtient ou définit l’adresse de bus du périphérique Inter-Integrated Circuit (I &lt; SUP &gt; 2 &lt;/SUP &gt; C).</summary>
-      <returns>Adresse bus de l’appareil I &lt; SUP &gt; 2 &lt;/SUP &gt; C. Seul l’adressage 7 bits est pris en charge. par conséquent, la plage de valeurs valides est comprise entre 8 et 119.</returns>
+      <summary>Obtient ou définit l'adresse de bus à circuit inter-intégré (I&lt;sup&gt;2&lt;/sup&gt; C).</summary>
+      <returns>Adresse de bus de l'appareil I&lt;sup&gt;2&lt;/sup&gt; C. Seul l'adressage sur 7 bits est pris en charge, si bien que la plage des valeurs valides est comprise entre 8 et 119.</returns>
     </member>
     <member name="T:Windows.Devices.I2c.I2cController">
-      <summary>Représente le &lt; SUP &gt; 2 &lt;/SUP &gt; C pour le système.</summary>
+      <summary>Représente le contrôleur I&lt;sup&gt;2&lt;/sup&gt; C du système.</summary>
     </member>
     <member name="M:Windows.Devices.I2c.I2cController.GetControllersAsync(Windows.Devices.I2c.Provider.II2cProvider)">
-      <summary>Obtient tous les contrôleurs I &lt; SUP &gt; 2 &lt;/SUP &gt; C qui se trouvent sur le système.</summary>
-      <param name="provider">Le &lt; SUP &gt; 2 &lt;/SUP &gt; C pour les contrôleurs sur le système.</param>
-      <returns>Lorsque la méthode se termine correctement, elle retourne une liste de valeurs qui représentent les &lt; SUP &gt; 2 &lt;/SUP &gt; C disponibles sur le système.</returns>
+      <summary>Obtient tous les contrôleurs I&lt;sup&gt;2&lt;/sup&gt; C disponibles sur le système.</summary>
+      <param name="provider">Fournisseur I&lt;sup&gt;2&lt;/sup&gt; C pour les contrôleurs présents sur le système.</param>
+      <returns>Lorsque la méthode s'exécute correctement, elle retourne une liste de valeurs qui représentent les contrôleurs I&lt;sup&gt;2&lt;/sup&gt; C disponibles sur le système.</returns>
     </member>
     <member name="M:Windows.Devices.I2c.I2cController.GetDefaultAsync">
-      <summary>Obtient le &lt; SUP &gt; 2 &lt;/SUP &gt; C par défaut sur le système.</summary>
-      <returns>La valeur par défaut I &lt; SUP &gt; 2 &lt; contrôleur de &gt; C sur le système, ou null si le système n’a pas de contrôleur I &lt; SUP &gt; 2 &lt;/SUP &gt; C.</returns>
+      <summary>Obtient le contrôleur I&lt;sup&gt;2&lt;/sup&gt; C par défaut présent sur le système.</summary>
+      <returns>Contrôleur I&lt;sup&gt;2&lt;/sup&gt; C par défaut présent sur le système, ou null si le système ne dispose pas de contrôleur I&lt;sup&gt;2&lt;/sup&gt; C.</returns>
     </member>
     <member name="M:Windows.Devices.I2c.I2cController.GetDevice(Windows.Devices.I2c.I2cConnectionSettings)">
-      <summary>Obtient l’appareil I &lt; SUP &gt; 2 &lt;/SUP &gt; C avec les paramètres spécifiés.</summary>
+      <summary>Obtient l'appareil I&lt;sup&gt;2&lt;/sup&gt; C avec les paramètres spécifiés.</summary>
       <param name="settings">Paramètres de connexion souhaités.</param>
-      <returns>L’appareil I &lt; SUP &gt; 2 &lt;/SUP &gt; C.</returns>
+      <returns>Appareil I&lt;sup&gt;2&lt;/sup&gt; C.</returns>
     </member>
     <member name="T:Windows.Devices.I2c.I2cDevice">
-      <summary>Représente un canal de communication à un appareil sur un bus inter-intégré (I &lt; SUP &gt; 2 &lt;/SUP &gt; C).</summary>
+      <summary>Représente un canal de communication vers un appareil sur un bus à circuit inter-intégré (I&lt;sup&gt;2&lt;/sup&gt; C).</summary>
     </member>
     <member name="P:Windows.Devices.I2c.I2cDevice.ConnectionSettings">
-      <summary>Obtient les paramètres de connexion utilisés pour la communication avec le périphérique (I &lt; SUP &gt; 2 &lt;/SUP &gt; C).</summary>
-      <returns>Les paramètres de connexion utilisés pour la communication avec le circuit inter-intégré (I &lt; SUP &gt; 2 &lt;/SUP &gt; C).</returns>
+      <summary>Obtient les paramètres de connexion utilisés pour la communication avec l'appareil à circuit inter-intégré (I&lt;sup&gt;2&lt;/sup&gt; C).</summary>
+      <returns>Paramètres de connexion utilisés pour la communication avec l'appareil à circuit inter-intégré (I&lt;sup&gt;2&lt;/sup&gt; C).</returns>
     </member>
     <member name="P:Windows.Devices.I2c.I2cDevice.DeviceId">
-      <summary>Obtient l’identificateur d’appareil plug-and-Play du contrôleur de bus inter-intégré (I &lt; SUP &gt; 2 &lt;/SUP &gt; C) pour l’appareil.</summary>
-      <returns>Identificateur d’appareil plug-and-Play du contrôleur de bus inter-intégré (I &lt; SUP &gt; 2 &lt;/SUP &gt; C) pour l’appareil.</returns>
+      <summary>Obtient l'identificateur d'appareil prêt à l'emploi du contrôleur de bus à circuit inter-intégré (I&lt;sup&gt;2&lt;/sup&gt; C) pour l'appareil.</summary>
+      <returns>Identificateur d'appareil prêt à l'emploi du contrôleur de bus à circuit inter-intégré (I&lt;sup&gt;2&lt;/sup&gt; C) pour l'appareil.</returns>
     </member>
     <member name="M:Windows.Devices.I2c.I2cDevice.Close">
-      <summary>Ferme la connexion au périphérique Inter-Integrated Circuit (I &lt; SUP &gt; 2 &lt;/SUP &gt; C).</summary>
+      <summary>Ferme la connexion à l'appareil à circuit inter-intégré (I&lt;sup&gt;2&lt;/sup&gt; C).</summary>
     </member>
     <member name="M:Windows.Devices.I2c.I2cDevice.FromIdAsync(System.String,Windows.Devices.I2c.I2cConnectionSettings)">
-      <summary>Récupère un objet I2cDevice de façon asynchrone pour le contrôleur de bus inter-intégré (I &lt; SUP &gt; 2 &lt;/SUP &gt; C) avec l’identificateur de périphérique Plug-and-Play spécifié, à l’aide des paramètres de connexion spécifiés.</summary>
-      <param name="deviceId">Identificateur d’appareil plug-and-Play du contrôleur de bus I &lt; SUP &gt; 2 &lt;/SUP &gt; C pour lequel vous souhaitez créer un objet I2cDevice.</param>
-      <param name="settings">Paramètres de connexion à utiliser pour la communication avec le contrôleur de bus I &lt; SUP &gt; 2 &lt;/SUP &gt; qui * deviceId *.</param>
-      <returns>Opération asynchrone qui retourne l’objet I2cDevice.</returns>
+      <summary>Récupère un objet I2cDevice de façon asynchrone pour le contrôleur de bus à circuit inter-intégré (I&lt;sup&gt;2&lt;/sup&gt; C) ayant l'identificateur d'appareil prêt à l'emploi spécifié, à l'aide des paramètres de connexion spécifiés.</summary>
+      <param name="deviceId">Identificateur d'appareil prêt à l'emploi du contrôleur de bus I&lt;sup&gt;2&lt;/sup&gt; C pour lequel vous souhaitez créer un objet I2cDevice.</param>
+      <param name="settings">Paramètres de connexion à utiliser pour la communication avec le contrôleur de bus I&lt;sup&gt;2&lt;/sup&gt; C spécifié par le paramètre *deviceId*.</param>
+      <returns>Opération asynchrone qui retourne l'objet I2cDevice.</returns>
     </member>
     <member name="M:Windows.Devices.I2c.I2cDevice.GetDeviceSelector">
-      <summary>Récupère une chaîne de syntaxe de requête avancée (AQS) pour tous les contrôleurs de bus inter-Integrated Circuit (I &lt; SUP &gt; 2 &lt;/SUP &gt; C) sur le système. Vous pouvez utiliser cette chaîne avec la méthode DeviceInformation. FindAllAsync pour obtenir des objets DeviceInformation pour ces contrôleurs de bus.</summary>
-      <returns>Une chaîne AQS pour tous les contrôleurs de bus I &lt; SUP &gt; 2 &lt;/SUP &gt; C sur le système, que vous pouvez utiliser avec la méthode DeviceInformation. FindAllAsync pour obtenir des objets DeviceInformation pour ces contrôleurs de bus.</returns>
+      <summary>Récupère une chaîne de recherche avancée (AQS) pour tous les contrôleurs de bus à circuit inter-intégré (I&lt;sup&gt;2&lt;/sup&gt; C) présents sur le système. Vous pouvez utiliser cette chaîne avec la méthode DeviceInformation.FindAllAsync pour obtenir des objets DeviceInformation pour ces contrôleurs de bus.</summary>
+      <returns>Chaîne AQS pour tous les contrôleurs de bus I&lt;sup&gt;2&lt;/sup&gt; C présents sur le système, que vous pouvez utiliser avec la méthode DeviceInformation.FindAllAsync pour obtenir des objets DeviceInformation pour ces contrôleurs de bus.</returns>
     </member>
     <member name="M:Windows.Devices.I2c.I2cDevice.GetDeviceSelector(System.String)">
-      <summary>Récupère une chaîne de syntaxe de requête avancée (AQS) pour le bus inter-intégré (I &lt; SUP &gt; 2 &lt;/SUP &gt; C) qui porte le nom convivial spécifié. Vous pouvez utiliser cette chaîne avec la méthode DeviceInformation. FindAllAsync pour obtenir un objet DeviceInformation pour ce bus.</summary>
-      <param name="friendlyName">Nom convivial du bus particulier I &lt; SUP &gt; 2 &lt;/SUP &gt; C sur une plateforme matérielle particulière pour laquelle vous souhaitez obtenir la chaîne AQS.</param>
-      <returns>Une chaîne AQS pour l’I &lt; SUP &gt; 2 &lt;/SUP &gt; C qui spécifie * friendlyName *, que vous pouvez utiliser avec la méthode DeviceInformation. FindAllAsync pour obtenir un objet DeviceInformation pour ce bus.</returns>
+      <summary>Récupère une chaîne de syntaxe de recherche avancée (AQS) pour le bus à circuit inter-intégré (I&lt;sup&gt;2&lt;/sup&gt; C) portant le nom convivial spécifié. Vous pouvez utiliser cette chaîne avec la méthode DeviceInformation.FindAllAsync pour obtenir un objet DeviceInformation pour ce bus.</summary>
+      <param name="friendlyName">Nom convivial pour le bus I&lt;sup&gt;2&lt;/sup&gt; C spécifique sur une plateforme matérielle spécifique pour laquelle vous souhaitez obtenir la chaîne AQS.</param>
+      <returns>Chaîne AQS pour le bus I&lt;sup&gt;2&lt;/sup&gt; C spécifié par *friendlyName*, que vous pouvez utiliser avec la méthode DeviceInformation.FindAllAsync pour obtenir un objet DeviceInformation pour ce bus.</returns>
     </member>
     <member name="M:Windows.Devices.I2c.I2cDevice.Read(System.Byte[])">
-      <summary>Lit les données à partir du bus inter-intégré (I &lt; SUP &gt; 2 &lt;/SUP &gt; C) sur lequel l’appareil est connecté dans la mémoire tampon spécifiée.</summary>
-      <param name="buffer">Mémoire tampon dans laquelle vous souhaitez lire les données à partir du I &lt; SUP &gt; 2 &lt;/SUP &gt; C. La longueur de la mémoire tampon détermine la quantité de données à demander à l’appareil.</param>
+      <summary>Lit les données du bus à circuit inter-intégré (I&lt;sup&gt;2&lt;/sup&gt; C) sur lequel l'appareil est connecté dans la mémoire tampon spécifiée.</summary>
+      <param name="buffer">Mémoire tampon dont vous souhaitez lire les données à partir du bus I&lt;sup&gt;2&lt;/sup&gt; C. La longueur de la mémoire tampon détermine la quantité de données à demander à l'appareil.</param>
     </member>
     <member name="M:Windows.Devices.I2c.I2cDevice.ReadPartial(System.Byte[])">
-      <summary>Lit les données à partir du bus inter-intégré (I &lt; SUP &gt; 2 &lt;/SUP &gt; C) sur lequel l’appareil est connecté dans la mémoire tampon spécifiée, et retourne des informations sur la réussite de l’opération que vous pouvez utiliser pour la gestion des erreurs.</summary>
-      <param name="buffer">Mémoire tampon dans laquelle vous souhaitez lire les données à partir du I &lt; SUP &gt; 2 &lt;/SUP &gt; C. La longueur de la mémoire tampon détermine la quantité de données à demander à l’appareil.</param>
-      <returns>Structure qui contient des informations sur la réussite de l’opération de lecture et le nombre réel d’octets que l’opération a lus dans la mémoire tampon.</returns>
+      <summary>Lit, dans la mémoire tampon spécifiée, les données du bus à circuit inter-intégré (I&lt;sup&gt;2&lt;/sup&gt; C) sur lequel l'appareil est connecté et retourne des informations sur la réussite de l'opération, que vous pouvez utiliser pour la gestion des erreurs.</summary>
+      <param name="buffer">Mémoire tampon dont vous souhaitez lire les données à partir du bus I&lt;sup&gt;2&lt;/sup&gt; C. La longueur de la mémoire tampon détermine la quantité de données à demander à l'appareil.</param>
+      <returns>Structure qui contient des informations sur la réussite de l'opération de lecture et sur le nombre d'octets réel que l'opération a lus dans la mémoire tampon.</returns>
     </member>
     <member name="M:Windows.Devices.I2c.I2cDevice.Write(System.Byte[])">
-      <summary>Écrit des données dans le bus inter-intégré (I &lt; SUP &gt; 2 &lt;/SUP &gt; C) sur lequel l’appareil est connecté, en fonction de l’adresse de bus spécifiée dans l’objet I2cConnectionSetting s que vous avez utilisé pour créer l’objet I2cDevice.</summary>
-      <param name="buffer">Mémoire tampon qui contient les données que vous souhaitez écrire sur l’appareil I &lt; SUP &gt; 2 &lt;/SUP &gt; C. Ces données ne doivent pas inclure l’adresse du bus.</param>
+      <summary>Écrit des données sur le bus à circuit intégré (I&lt;sup&gt;2&lt;/sup&gt; C) sur lequel l'appareil est connecté, en se basant sur l'adresse de bus spécifiée dans l'objet I2cConnectionSettings que vous avez utilisé pour créer l'objet I2cDevice.</summary>
+      <param name="buffer">Mémoire tampon qui contient les données que vous souhaitez écrire dans l'appareil I&lt;sup&gt;2&lt;/sup&gt; C. Ces données ne doivent pas inclure l'adresse de bus.</param>
     </member>
     <member name="M:Windows.Devices.I2c.I2cDevice.WritePartial(System.Byte[])">
-      <summary>Écrit des données dans le bus inter-intégré (I &lt; SUP &gt; 2 &lt;/SUP &gt; C) sur lequel l’appareil est connecté, et retourne des informations sur la réussite de l’opération que vous pouvez utiliser pour la gestion des erreurs.</summary>
-      <param name="buffer">Mémoire tampon qui contient les données que vous souhaitez écrire sur l’appareil I &lt; SUP &gt; 2 &lt;/SUP &gt; C. Ces données ne doivent pas inclure l’adresse du bus.</param>
-      <returns>Structure qui contient des informations sur la réussite de l’opération d’écriture et le nombre réel d’octets que l’opération a écrits dans la mémoire tampon.</returns>
+      <summary>Écrit des données sur le bus à circuit inter-intégré (I&lt;sup&gt;2&lt;/sup&gt; C) sur lequel l'appareil est connecté et retourne des informations sur la réussite de l'opération, que vous pouvez utiliser pour la gestion des erreurs.</summary>
+      <param name="buffer">Mémoire tampon qui contient les données que vous souhaitez écrire dans l'appareil I&lt;sup&gt;2&lt;/sup&gt; C. Ces données ne doivent pas inclure l'adresse de bus.</param>
+      <returns>Structure qui contient des informations sur la réussite de l'opération d'écriture et sur le nombre d'octets réel que l'opération a écrits dans la mémoire tampon.</returns>
     </member>
     <member name="M:Windows.Devices.I2c.I2cDevice.WriteRead(System.Byte[],System.Byte[])">
-      <summary>Effectue une opération atomique pour écrire des données dans, puis lire les données à partir du bus inter-intégré (I &lt; SUP &gt; 2 &lt;/SUP &gt; C) sur lequel l’appareil est connecté et envoie une condition de redémarrage entre les opérations d’écriture et de lecture.</summary>
-      <param name="writeBuffer">Mémoire tampon qui contient les données que vous souhaitez écrire sur l’appareil I &lt; SUP &gt; 2 &lt;/SUP &gt; C. Ces données ne doivent pas inclure l’adresse du bus.</param>
-      <param name="readBuffer">Mémoire tampon dans laquelle vous souhaitez lire les données à partir du I &lt; SUP &gt; 2 &lt;/SUP &gt; C. La longueur de la mémoire tampon détermine la quantité de données à demander à l’appareil.</param>
+      <summary>Effectue une opération atomique pour écrire puis lire les données dans le bus à circuit inter-intégré (I&lt;sup&gt;2&lt;/sup&gt; C) sur lequel l'appareil est connecté, puis envoie une condition de redémarrage entre les opérations d'écriture et de lecture.</summary>
+      <param name="writeBuffer">Mémoire tampon qui contient les données que vous souhaitez écrire dans l'appareil I&lt;sup&gt;2&lt;/sup&gt; C. Ces données ne doivent pas inclure l'adresse de bus.</param>
+      <param name="readBuffer">Mémoire tampon dont vous souhaitez lire les données à partir du bus I&lt;sup&gt;2&lt;/sup&gt; C. La longueur de la mémoire tampon détermine la quantité de données à demander à l'appareil.</param>
     </member>
     <member name="M:Windows.Devices.I2c.I2cDevice.WriteReadPartial(System.Byte[],System.Byte[])">
-      <summary>Effectue une opération atomique pour écrire des données dans, puis lire les données à partir du bus inter-intégré (I &lt; SUP &gt; 2 &lt;/SUP &gt; C) sur lequel l’appareil est connecté, et retourne des informations sur la réussite de l’opération que vous pouvez utiliser pour la gestion des erreurs.</summary>
-      <param name="writeBuffer">Mémoire tampon qui contient les données que vous souhaitez écrire sur l’appareil I &lt; SUP &gt; 2 &lt;/SUP &gt; C. Ces données ne doivent pas inclure l’adresse du bus.</param>
-      <param name="readBuffer">Mémoire tampon dans laquelle vous souhaitez lire les données à partir du I &lt; SUP &gt; 2 &lt;/SUP &gt; C. La longueur de la mémoire tampon détermine la quantité de données à demander à l’appareil.</param>
-      <returns>Structure qui contient des informations indiquant si les parties de lecture et d’écriture de l’opération ont réussi et la somme du nombre réel d’octets que l’opération a écrits et le nombre réel d’octets que l’opération a lus.</returns>
+      <summary>Effectue une opération atomique pour écrire puis lire les données dans le bus à circuit inter-intégré (I&lt;sup&gt;2&lt;/sup&gt; C) sur lequel l'appareil est connecté, et retourne des informations sur la réussite de l'opération, que vous pouvez utiliser pour la gestion des erreurs.</summary>
+      <param name="writeBuffer">Mémoire tampon qui contient les données que vous souhaitez écrire dans l'appareil I&lt;sup&gt;2&lt;/sup&gt; C. Ces données ne doivent pas inclure l'adresse de bus.</param>
+      <param name="readBuffer">Mémoire tampon dont vous souhaitez lire les données à partir du bus I&lt;sup&gt;2&lt;/sup&gt; C. La longueur de la mémoire tampon détermine la quantité de données à demander à l'appareil.</param>
+      <returns>Structure qui contient des informations indiquant si les parties lecture et écriture de l'opération ont réussi, le total d'octets réel que l'opération a écrits et le nombre d'octets réel que l'opération a lus.</returns>
     </member>
     <member name="T:Windows.Devices.I2c.I2cSharingMode">
-      <summary>Décrit les modes dans lesquels vous pouvez vous connecter à un circuit inter-intégré (I &lt; SUP &gt; 2 &lt;/SUP &gt; C). Ces modes déterminent si d’autres connexions à l’adresse I &lt; SUP &gt; 2 &lt;/SUP &gt; C peuvent être ouvertes pendant que vous êtes connecté à l’adresse du bus I &lt; SUP &gt; 2 &lt;/SUP &gt; C.</summary>
+      <summary>Décrit les modes dans lesquels vous pouvez vous connecter à une adresse de bus à circuit inter-intégré (I&lt;sup&gt;2&lt;/sup&gt; C). Ces modes déterminent si d'autres connexions à l'adresse de bus I&lt;sup&gt;2&lt;/sup&gt; C peuvent être ouvertes pendant que vous êtes connecté à l'adresse de bus I&lt;sup&gt;2&lt;/sup&gt; C.</summary>
     </member>
     <member name="F:Windows.Devices.I2c.I2cSharingMode.Exclusive">
-      <summary>Se connecte à l’adresse du bus I &lt; SUP &gt; 2 &lt;/SUP &gt; en mode exclusif, de sorte qu’aucune autre connexion à l' &lt; &gt; 2 &lt;/SUP &gt; C ne peut être établie lorsque vous restez connecté. Ce mode est le mode par défaut.</summary>
+      <summary>Se connecte à l'adresse de bus I&lt;sup&gt;2&lt;/sup&gt; C exclusivement, afin qu'aucune autre connexion à l'adresse de bus I&lt;sup&gt;2&lt;/sup&gt; C ne puisse être établie tandis que vous restez connecté. Ce mode est le mode par défaut.</summary>
     </member>
     <member name="F:Windows.Devices.I2c.I2cSharingMode.Shared">
-      <summary>Se connecte à l’adresse de bus I &lt; SUP &gt; 2 &lt;/SUP &gt; en mode partagé, de sorte que d’autres connexions à l' &lt; SUP &gt; 2 &lt;/SUP &gt; C peuvent être effectuées pendant que vous restez connecté.</summary>
+      <summary>Se connecte à l'adresse de bus I&lt;sup&gt;2&lt;/sup&gt; C en mode partagé, afin que d'autres connexions à l'adresse de bus I&lt;sup&gt;2&lt;/sup&gt; C puissent être établies tandis que vous restez connecté.</summary>
     </member>
     <member name="T:Windows.Devices.I2c.I2cTransferResult">
-      <summary>Fournit des informations indiquant si les données sont transférées et que la méthode ReadPartial, WritePartial ou WriteReadPartial a été effectuée avec succès, ainsi que le nombre réel d’octets transférés par la méthode.</summary>
+      <summary>Fournit des informations indiquant si les transferts de données effectués par la méthode ReadPartial, WritePartial ou WriteReadPartial ont réussi et le nombre réel d'octets que la méthode a transférés.</summary>
     </member>
     <member name="F:Windows.Devices.I2c.I2cTransferResult.BytesTransferred">
-      <summary>Nombre réel d’octets que l’opération a réellement transférés. Le tableau suivant décrit ce que représente cette valeur pour chaque méthode.</summary>
+      <summary>Nombre d'octets effectif que l'opération a réellement transféré. Le tableau suivant décrit ce que représente cette valeur pour chaque méthode.</summary>
     </member>
     <member name="F:Windows.Devices.I2c.I2cTransferResult.Status">
-      <summary>Valeur d’énumération qui indique si l’opération de lecture ou d’écriture a transféré le nombre complet d’octets que la méthode a demandés, ou la raison pour laquelle le transfert complet a échoué. Pour WriteReadPartial, la valeur indique si les données pour les opérations d’écriture et de lecture ont été entièrement transférées.</summary>
+      <summary>Valeur d'énumération indiquant si l'opération de lecture ou d'écriture a transféré le nombre d'octets complet que la méthode a demandé, ou le motif pour lequel le transfert complet a échoué. Pour la méthode WriteReadPartial, la valeur indique si les données des opérations de lecture et d'écriture ont été entièrement transférées.</summary>
     </member>
     <member name="T:Windows.Devices.I2c.I2cTransferStatus">
-      <summary>Indique si les données sont transférées avec succès par la méthode ReadPartial, WritePartial ou WriteReadPartial, ou fournit la raison pour laquelle les transferts n’ont pas réussi.</summary>
+      <summary>Décrit si les transferts de données effectués par la méthode ReadPartial, WritePartial ou WriteReadPartial ont réussi, ou fournit le motif pour lequel ces transferts n'ont pas réussi.</summary>
     </member>
     <member name="F:Windows.Devices.I2c.I2cTransferStatus.ClockStretchTimeout">
-      <summary>Le transfert a échoué en raison de l’étirement trop long de l’horloge. Vérifiez que la ligne de l’horloge n’est pas trop faible.</summary>
+      <summary>Le transfert a échoué en raison de l'étirement prolongé de l'horloge. Vérifiez que la ligne d'horloge n'est pas maintenue à un niveau bas.</summary>
     </member>
     <member name="F:Windows.Devices.I2c.I2cTransferStatus.FullTransfer">
-      <summary>Les données ont été entièrement transférées. Pour WriteReadPartial, les données pour les opérations d’écriture et de lecture ont été entièrement transférées.</summary>
+      <summary>Les données ont été entièrement transférées. Pour la méthode WriteReadPartial, les données des opérations d'écriture et de lecture ont été entièrement transférées.</summary>
     </member>
     <member name="F:Windows.Devices.I2c.I2cTransferStatus.PartialTransfer">
-      <summary>L’appareil I &lt; SUP &gt; 2 &lt;/SUP &gt; C a reçu un accusé de réception négatif du transfert de données avant que toutes les données n’aient été transférées.</summary>
+      <summary>L'appareil I&lt;sup&gt;2&lt;/sup&gt; C a émis un accusé de réception négatif relatif au transfert de données avant le transfert de toutes les données.</summary>
     </member>
     <member name="F:Windows.Devices.I2c.I2cTransferStatus.SlaveAddressNotAcknowledged">
-      <summary>L’adresse du bus n’a pas été reconnue.</summary>
+      <summary>L'adresse de bus n'a pas reçu d'accusé de réception.</summary>
     </member>
     <member name="F:Windows.Devices.I2c.I2cTransferStatus.UnknownError">
       <summary>Le transfert a échoué pour une raison inconnue.</summary>
     </member>
     <member name="T:Windows.Devices.I2c.II2cDeviceStatics">
-      <summary>Permet d’ouvrir un canal de communication sur un appareil sur un bus inter-intégré (I &lt; SUP &gt; 2 &lt;/SUP &gt; C).</summary>
+      <summary>Fournit des méthodes pour ouvrir un canal de communication vers un appareil sur un bus à circuit inter-intégré (I&lt;sup&gt;2&lt;/sup&gt; C).</summary>
     </member>
     <member name="M:Windows.Devices.I2c.II2cDeviceStatics.FromIdAsync(System.String,Windows.Devices.I2c.I2cConnectionSettings)">
-      <summary>Récupère un objet I2cDevice de façon asynchrone pour le contrôleur de bus inter-intégré (I &lt; SUP &gt; 2 &lt;/SUP &gt; C) avec l’identificateur de périphérique Plug-and-Play spécifié, à l’aide des paramètres de connexion spécifiés.</summary>
-      <param name="deviceId">Identificateur d’appareil plug-and-Play du contrôleur de bus I &lt; SUP &gt; 2 &lt;/SUP &gt; C pour lequel vous souhaitez créer un objet I2cDevice.</param>
-      <param name="settings">Paramètres de connexion à utiliser pour la communication avec le contrôleur de bus I &lt; SUP &gt; 2 &lt;/SUP &gt; qui * deviceId *.</param>
-      <returns>Opération asynchrone qui retourne l’objet I2cDevice.</returns>
+      <summary>Récupère un objet I2cDevice de façon asynchrone pour le contrôleur de bus à circuit inter-intégré (I&lt;sup&gt;2&lt;/sup&gt; C) ayant l'identificateur d'appareil prêt à l'emploi spécifié, à l'aide des paramètres de connexion spécifiés.</summary>
+      <param name="deviceId">Identificateur d'appareil prêt à l'emploi du contrôleur de bus I&lt;sup&gt;2&lt;/sup&gt; C pour lequel vous souhaitez créer un objet I2cDevice.</param>
+      <param name="settings">Paramètres de connexion à utiliser pour la communication avec le contrôleur de bus I&lt;sup&gt;2&lt;/sup&gt; C spécifié par le paramètre *deviceId*.</param>
+      <returns>Opération asynchrone qui retourne l'objet I2cDevice.</returns>
     </member>
     <member name="M:Windows.Devices.I2c.II2cDeviceStatics.GetDeviceSelector">
-      <summary>Récupère une chaîne de syntaxe de requête avancée (AQS) pour tous les contrôleurs de bus inter-Integrated Circuit (I &lt; SUP &gt; 2 &lt;/SUP &gt; C) sur le système. Vous pouvez utiliser cette chaîne avec la méthode DeviceInformation. FindAllAsync pour obtenir des objets DeviceInformation pour ces contrôleurs de bus.</summary>
-      <returns>Une chaîne AQS pour tous les contrôleurs de bus I &lt; SUP &gt; 2 &lt;/SUP &gt; C sur le système, que vous pouvez utiliser avec la méthode DeviceInformation. FindAllAsync pour obtenir des objets DeviceInformation pour ces contrôleurs de bus.</returns>
+      <summary>Récupère une chaîne de recherche avancée (AQS) pour tous les contrôleurs de bus à circuit inter-intégré (I&lt;sup&gt;2&lt;/sup&gt; C) présents sur le système. Vous pouvez utiliser cette chaîne avec la méthode DeviceInformation.FindAllAsync pour obtenir des objets DeviceInformation pour ces contrôleurs de bus.</summary>
+      <returns>Chaîne AQS pour tous les contrôleurs de bus I&lt;sup&gt;2&lt;/sup&gt; C présents sur le système, que vous pouvez utiliser avec la méthode DeviceInformation.FindAllAsync pour obtenir des objets DeviceInformation pour ces contrôleurs de bus.</returns>
     </member>
     <member name="M:Windows.Devices.I2c.II2cDeviceStatics.GetDeviceSelector(System.String)">
-      <summary>Récupère une chaîne de syntaxe de requête avancée (AQS) pour le bus inter-intégré (I &lt; SUP &gt; 2 &lt;/SUP &gt; C) qui porte le nom convivial spécifié. Vous pouvez utiliser cette chaîne avec la méthode DeviceInformation. FindAllAsync pour obtenir un objet DeviceInformation pour ce bus.</summary>
-      <param name="friendlyName">Nom convivial du bus particulier I &lt; SUP &gt; 2 &lt;/SUP &gt; C sur une plateforme matérielle particulière pour laquelle vous souhaitez obtenir la chaîne AQS.</param>
-      <returns>Une chaîne AQS pour l’I &lt; SUP &gt; 2 &lt;/SUP &gt; C qui spécifie * friendlyName *, que vous pouvez utiliser avec la méthode DeviceInformation. FindAllAsync pour obtenir un objet DeviceInformation pour ce bus.</returns>
+      <summary>Récupère une chaîne de syntaxe de recherche avancée (AQS) pour le bus à circuit inter-intégré (I&lt;sup&gt;2&lt;/sup&gt; C) portant le nom convivial spécifié. Vous pouvez utiliser cette chaîne avec la méthode DeviceInformation.FindAllAsync pour obtenir un objet DeviceInformation pour ce bus.</summary>
+      <param name="friendlyName">Nom convivial pour le bus I&lt;sup&gt;2&lt;/sup&gt; C spécifique sur une plateforme matérielle spécifique pour laquelle vous souhaitez obtenir la chaîne AQS.</param>
+      <returns>Chaîne AQS pour le bus I&lt;sup&gt;2&lt;/sup&gt; C spécifié par *friendlyName*, que vous pouvez utiliser avec la méthode DeviceInformation.FindAllAsync pour obtenir un objet DeviceInformation pour ce bus.</returns>
     </member>
     <member name="T:Windows.Devices.I2c.Provider.II2cControllerProvider">
-      <summary>Représente les propriétés et les méthodes communes à tous les &lt; SUP &gt; 2 &lt;/SUP &gt; C.</summary>
+      <summary>Représente des propriétés et des méthodes communes à tous les contrôleurs I&lt;sup&gt;2&lt;/sup&gt; C.</summary>
     </member>
     <member name="M:Windows.Devices.I2c.Provider.II2cControllerProvider.GetDeviceProvider(Windows.Devices.I2c.Provider.ProviderI2cConnectionSettings)">
-      <summary>Obtient le fournisseur d’appareils I &lt; SUP &gt; 2 &lt;/SUP &gt; avec les paramètres spécifiés.</summary>
-      <param name="settings">Paramètres souhaités.</param>
-      <returns>Fournisseur d’appareils I &lt; SUP &gt; 2 &lt;/SUP &gt; C.</returns>
+      <summary>Obtient le fournisseur d'appareil I&lt;sup&gt;2&lt;/sup&gt; C avec les paramètres spécifiés.</summary>
+      <param name="settings">Les paramètres souhaités.</param>
+      <returns>Fournisseur d'appareil I&lt;sup&gt;2&lt;/sup&gt; C.</returns>
     </member>
     <member name="T:Windows.Devices.I2c.Provider.II2cDeviceProvider">
-      <summary>Représente des méthodes communes à tous les fournisseurs d’appareils I &lt; SUP &gt; 2 &lt;/SUP &gt; C.</summary>
+      <summary>Représente des méthodes communes à tous les fournisseurs d'appareil I&lt;sup&gt;2&lt;/sup&gt; C.</summary>
     </member>
     <member name="P:Windows.Devices.I2c.Provider.II2cDeviceProvider.DeviceId">
-      <summary>Obtient l’identificateur d’appareil plug-and-Play du contrôleur de bus inter-intégré (I &lt; SUP &gt; 2 &lt;/SUP &gt; C) pour l’appareil.</summary>
-      <returns>Identificateur d’appareil plug-and-Play du contrôleur de bus inter-intégré (I &lt; SUP &gt; 2 &lt;/SUP &gt; C) pour l’appareil.</returns>
+      <summary>Obtient l'identificateur d'appareil prêt à l'emploi du contrôleur de bus à circuit inter-intégré (I&lt;sup&gt;2&lt;/sup&gt; C) pour l'appareil.</summary>
+      <returns>Identificateur d'appareil prêt à l'emploi du contrôleur de bus à circuit inter-intégré (I&lt;sup&gt;2&lt;/sup&gt; C) pour l'appareil.</returns>
     </member>
     <member name="M:Windows.Devices.I2c.Provider.II2cDeviceProvider.Read(System.Byte[])">
-      <summary>Lit les données à partir du bus inter-intégré (I &lt; SUP &gt; 2 &lt;/SUP &gt; C) sur lequel l’appareil est connecté dans la mémoire tampon spécifiée.</summary>
-      <param name="buffer">Mémoire tampon dans laquelle vous souhaitez lire les données à partir du I &lt; SUP &gt; 2 &lt;/SUP &gt; C. La longueur de la mémoire tampon détermine la quantité de données à demander à l’appareil.</param>
+      <summary>Lit les données du bus à circuit inter-intégré (I&lt;sup&gt;2&lt;/sup&gt; C) sur lequel l'appareil est connecté dans la mémoire tampon spécifiée.</summary>
+      <param name="buffer">Mémoire tampon dont vous souhaitez lire les données à partir du bus I&lt;sup&gt;2&lt;/sup&gt; C. La longueur de la mémoire tampon détermine la quantité de données à demander à l'appareil.</param>
     </member>
     <member name="M:Windows.Devices.I2c.Provider.II2cDeviceProvider.ReadPartial(System.Byte[])">
-      <summary>Lit les données à partir du bus inter-intégré (I &lt; SUP &gt; 2 &lt;/SUP &gt; C) sur lequel l’appareil est connecté dans la mémoire tampon spécifiée, et retourne des informations sur la réussite de l’opération que vous pouvez utiliser pour la gestion des erreurs.</summary>
-      <param name="buffer">Mémoire tampon dans laquelle vous souhaitez lire les données à partir du I &lt; SUP &gt; 2 &lt;/SUP &gt; C. La longueur de la mémoire tampon détermine la quantité de données à demander à l’appareil.</param>
-      <returns>Structure qui contient des informations sur la réussite de l’opération de lecture et le nombre réel d’octets que l’opération a lus dans la mémoire tampon.</returns>
+      <summary>Lit, dans la mémoire tampon spécifiée, les données du bus à circuit inter-intégré (I&lt;sup&gt;2&lt;/sup&gt; C) sur lequel l'appareil est connecté et retourne des informations sur la réussite de l'opération, que vous pouvez utiliser pour la gestion des erreurs.</summary>
+      <param name="buffer">Mémoire tampon dont vous souhaitez lire les données à partir du bus I&lt;sup&gt;2&lt;/sup&gt; C. La longueur de la mémoire tampon détermine la quantité de données à demander à l'appareil.</param>
+      <returns>Structure qui contient des informations sur la réussite de l'opération de lecture et sur le nombre d'octets réel que l'opération a lus dans la mémoire tampon.</returns>
     </member>
     <member name="M:Windows.Devices.I2c.Provider.II2cDeviceProvider.Write(System.Byte[])">
-      <summary>Écrit des données dans le bus inter-intégré (I &lt; SUP &gt; 2 &lt;/SUP &gt; C) sur lequel l’appareil est connecté.</summary>
-      <param name="buffer">Mémoire tampon qui contient les données que vous souhaitez écrire sur l’appareil I &lt; SUP &gt; 2 &lt;/SUP &gt; C. Ces données ne doivent pas inclure l’adresse du bus.</param>
+      <summary>Écrit des données sur le bus à circuit intégré (I&lt;sup&gt;2&lt;/sup&gt; C) sur lequel l'appareil est connecté.</summary>
+      <param name="buffer">Mémoire tampon qui contient les données que vous souhaitez écrire dans l'appareil I&lt;sup&gt;2&lt;/sup&gt; C. Ces données ne doivent pas inclure l'adresse de bus.</param>
     </member>
     <member name="M:Windows.Devices.I2c.Provider.II2cDeviceProvider.WritePartial(System.Byte[])">
-      <summary>Écrit des données dans le bus inter-intégré (I &lt; SUP &gt; 2 &lt;/SUP &gt; C) sur lequel l’appareil est connecté, et retourne des informations sur la réussite de l’opération que vous pouvez utiliser pour la gestion des erreurs.</summary>
-      <param name="buffer">Mémoire tampon qui contient les données que vous souhaitez écrire sur l’appareil I &lt; SUP &gt; 2 &lt;/SUP &gt; C. Ces données ne doivent pas inclure l’adresse du bus.</param>
-      <returns>Structure qui contient des informations sur la réussite de l’opération d’écriture et le nombre réel d’octets que l’opération a écrits dans la mémoire tampon.</returns>
+      <summary>Écrit des données sur le bus à circuit inter-intégré (I&lt;sup&gt;2&lt;/sup&gt; C) sur lequel l'appareil est connecté et retourne des informations sur la réussite de l'opération, que vous pouvez utiliser pour la gestion des erreurs.</summary>
+      <param name="buffer">Mémoire tampon qui contient les données que vous souhaitez écrire dans l'appareil I&lt;sup&gt;2&lt;/sup&gt; C. Ces données ne doivent pas inclure l'adresse de bus.</param>
+      <returns>Structure qui contient des informations sur la réussite de l'opération d'écriture et sur le nombre d'octets réel que l'opération a écrits dans la mémoire tampon.</returns>
     </member>
     <member name="M:Windows.Devices.I2c.Provider.II2cDeviceProvider.WriteRead(System.Byte[],System.Byte[])">
-      <summary>Effectue une opération atomique pour écrire des données dans, puis lire les données à partir du bus inter-intégré (I &lt; SUP &gt; 2 &lt;/SUP &gt; C) sur lequel l’appareil est connecté et envoie une condition de redémarrage entre les opérations d’écriture et de lecture.</summary>
-      <param name="writeBuffer">Mémoire tampon qui contient les données que vous souhaitez écrire sur l’appareil I &lt; SUP &gt; 2 &lt;/SUP &gt; C. Ces données ne doivent pas inclure l’adresse du bus.</param>
-      <param name="readBuffer">Mémoire tampon dans laquelle vous souhaitez lire les données à partir du I &lt; SUP &gt; 2 &lt;/SUP &gt; C. La longueur de la mémoire tampon détermine la quantité de données à demander à l’appareil.</param>
+      <summary>Effectue une opération atomique pour écrire puis lire les données dans le bus à circuit inter-intégré (I&lt;sup&gt;2&lt;/sup&gt; C) sur lequel l'appareil est connecté, puis envoie une condition de redémarrage entre les opérations d'écriture et de lecture.</summary>
+      <param name="writeBuffer">Mémoire tampon qui contient les données que vous souhaitez écrire dans l'appareil I&lt;sup&gt;2&lt;/sup&gt; C. Ces données ne doivent pas inclure l'adresse de bus.</param>
+      <param name="readBuffer">Mémoire tampon dont vous souhaitez lire les données à partir du bus I&lt;sup&gt;2&lt;/sup&gt; C. La longueur de la mémoire tampon détermine la quantité de données à demander à l'appareil.</param>
     </member>
     <member name="M:Windows.Devices.I2c.Provider.II2cDeviceProvider.WriteReadPartial(System.Byte[],System.Byte[])">
-      <summary>Effectue une opération atomique pour écrire des données dans, puis lire les données à partir du bus inter-intégré (I &lt; SUP &gt; 2 &lt;/SUP &gt; C) sur lequel l’appareil est connecté, et retourne des informations sur la réussite de l’opération que vous pouvez utiliser pour la gestion des erreurs.</summary>
-      <param name="writeBuffer">Mémoire tampon qui contient les données que vous souhaitez écrire sur l’appareil I &lt; SUP &gt; 2 &lt;/SUP &gt; C. Ces données ne doivent pas inclure l’adresse du bus.</param>
-      <param name="readBuffer">Mémoire tampon dans laquelle vous souhaitez lire les données à partir du I &lt; SUP &gt; 2 &lt;/SUP &gt; C. La longueur de la mémoire tampon détermine la quantité de données à demander à l’appareil.</param>
-      <returns>Structure qui contient des informations indiquant si les parties de lecture et d’écriture de l’opération ont réussi et la somme du nombre réel d’octets que l’opération a écrits et le nombre réel d’octets que l’opération a lus.</returns>
+      <summary>Effectue une opération atomique pour écrire puis lire les données dans le bus à circuit inter-intégré (I&lt;sup&gt;2&lt;/sup&gt; C) sur lequel l'appareil est connecté, et retourne des informations sur la réussite de l'opération, que vous pouvez utiliser pour la gestion des erreurs.</summary>
+      <param name="writeBuffer">Mémoire tampon qui contient les données que vous souhaitez écrire dans l'appareil I&lt;sup&gt;2&lt;/sup&gt; C. Ces données ne doivent pas inclure l'adresse de bus.</param>
+      <param name="readBuffer">Mémoire tampon dont vous souhaitez lire les données à partir du bus I&lt;sup&gt;2&lt;/sup&gt; C. La longueur de la mémoire tampon détermine la quantité de données à demander à l'appareil.</param>
+      <returns>Structure qui contient des informations indiquant si les parties lecture et écriture de l'opération ont réussi, le total d'octets réel que l'opération a écrits et le nombre d'octets réel que l'opération a lus.</returns>
     </member>
     <member name="T:Windows.Devices.I2c.Provider.II2cProvider">
-      <summary>Représente les actions communes à tous les &lt; SUP &gt; 2 &lt;/SUP &gt; C.</summary>
+      <summary>Représente des actions communes à tous les fournisseurs I&lt;sup&gt;2&lt;/sup&gt; C.</summary>
     </member>
     <member name="M:Windows.Devices.I2c.Provider.II2cProvider.GetControllersAsync">
-      <summary>Obtient tous les contrôleurs I &lt; SUP &gt; 2 &lt;/SUP &gt; C qui se trouvent sur le système.</summary>
-      <returns>Lorsque la méthode se termine correctement, elle retourne une liste de valeurs qui représentent les &lt; SUP &gt; 2 &lt;/SUP &gt; C disponibles sur le système.</returns>
+      <summary>Obtient tous les contrôleurs I&lt;sup&gt;2&lt;/sup&gt; C disponibles sur le système.</summary>
+      <returns>Lorsque la méthode s'exécute correctement, elle retourne une liste de valeurs qui représentent les contrôleurs I&lt;sup&gt;2&lt;/sup&gt; C disponibles sur le système.</returns>
     </member>
     <member name="T:Windows.Devices.I2c.Provider.ProviderI2cBusSpeed">
-      <summary>Décrit les vitesses de bus disponibles pour la connexion à un appareil Inter-Integrated Circuit (I &lt; SUP &gt; 2 &lt;/SUP &gt; C). La vitesse du bus correspond à la fréquence d’horloge du &lt; SUP &gt; 2 &lt;/SUP &gt; C lors de l’accès à l’appareil.</summary>
+      <summary>Décrit les vitesses de bus disponibles pour se connecter à un appareil à circuit inter-intégré (I&lt;sup&gt;2&lt;/sup&gt; C). La vitesse du bus est la fréquence à laquelle chronométrer le bus I&lt;sup&gt;2&lt;/sup&gt; C lors de l'accès à l'appareil.</summary>
     </member>
     <member name="F:Windows.Devices.I2c.Provider.ProviderI2cBusSpeed.FastMode">
-      <summary>Vitesse rapide de 400 kHz.</summary>
+      <summary>Vitesse rapide de 400 kHz.</summary>
     </member>
     <member name="F:Windows.Devices.I2c.Provider.ProviderI2cBusSpeed.StandardMode">
-      <summary>Vitesse standard de 100 kilohertz (kHz). Cette vitesse est la valeur par défaut.</summary>
+      <summary>Vitesse standard de 100 kilohertz (kHz). Vitesse par défaut.</summary>
     </member>
     <member name="T:Windows.Devices.I2c.Provider.ProviderI2cConnectionSettings">
-      <summary>Représente les paramètres de connexion que vous souhaitez utiliser pour un appareil inter-intégré (I &lt; SUP &gt; 2 &lt;/SUP &gt; C).</summary>
+      <summary>Représente les paramètres de connexion à utiliser pour un appareil à circuit inter-intégré (I&lt;sup&gt;2&lt;/sup&gt; C).</summary>
     </member>
     <member name="P:Windows.Devices.I2c.Provider.ProviderI2cConnectionSettings.BusSpeed">
-      <summary>Obtient ou définit la vitesse du bus à utiliser pour la connexion à un appareil inter-intégré (I &lt; SUP &gt; 2 &lt;/SUP &gt; C). La vitesse du bus correspond à la fréquence d’horloge du &lt; SUP &gt; 2 &lt;/SUP &gt; C lors de l’accès à l’appareil.</summary>
-      <returns>Vitesse du bus à utiliser pour se connecter à un appareil I &lt; SUP &gt; 2 &lt;/SUP &gt; C.</returns>
+      <summary>Obtient ou définit la vitesse du bus à utiliser pour se connecter à un appareil à circuit inter-intégré (I&lt;sup&gt;2&lt;/sup&gt; C). La vitesse du bus est la fréquence à laquelle chronométrer le bus I&lt;sup&gt;2&lt;/sup&gt; C lors de l'accès à l'appareil.</summary>
+      <returns>Vitesse du bus à utiliser pour se connecter à un appareil I&lt;sup&gt;2&lt;/sup&gt; C.</returns>
     </member>
     <member name="P:Windows.Devices.I2c.Provider.ProviderI2cConnectionSettings.SharingMode">
-      <summary>Obtient ou définit le mode de partage à utiliser pour se connecter au circuit inter-intégré (I &lt; SUP &gt; 2 &lt;/SUP &gt; C). Ce mode détermine si d’autres connexions à l’adresse I &lt; SUP &gt; 2 &lt;/SUP &gt; C peuvent être ouvertes pendant que vous vous connectez à l’adresse du bus I &lt; SUP &gt; 2 &lt;/SUP &gt; C.</summary>
-      <returns>Mode de partage à utiliser pour se connecter à l’adresse de bus I &lt; SUP &gt; 2 &lt;/SUP &gt; C.</returns>
+      <summary>Obtient ou définit le mode de partage à utiliser pour se connecter à l'adresse de bus à circuit inter-intégré (I&lt;sup&gt;2&lt;/sup&gt; C). Ce mode détermine si d'autres connexions à l'adresse de bus I&lt;sup&gt;2&lt;/sup&gt; C peuvent être ouvertes pendant que vous êtes connecté à l'adresse de bus I&lt;sup&gt;2&lt;/sup&gt; C.</summary>
+      <returns>Mode de partage à utiliser pour se connecter à l'adresse de bus I&lt;sup&gt;2&lt;/sup&gt; C.</returns>
     </member>
     <member name="P:Windows.Devices.I2c.Provider.ProviderI2cConnectionSettings.SlaveAddress">
-      <summary>Obtient ou définit l’adresse de bus du périphérique Inter-Integrated Circuit (I &lt; SUP &gt; 2 &lt;/SUP &gt; C).</summary>
-      <returns>Adresse bus de l’appareil I &lt; SUP &gt; 2 &lt;/SUP &gt; C. Seul l’adressage 7 bits est pris en charge. par conséquent, la plage de valeurs valides est comprise entre 8 et 119.</returns>
+      <summary>Obtient ou définit l'adresse de bus à circuit inter-intégré (I&lt;sup&gt;2&lt;/sup&gt; C).</summary>
+      <returns>Adresse de bus de l'appareil I&lt;sup&gt;2&lt;/sup&gt; C. Seul l'adressage sur 7 bits est pris en charge, si bien que la plage des valeurs valides est comprise entre 8 et 119.</returns>
     </member>
     <member name="T:Windows.Devices.I2c.Provider.ProviderI2cSharingMode">
-      <summary>Décrit les modes dans lesquels vous pouvez vous connecter à un circuit inter-intégré (I &lt; SUP &gt; 2 &lt;/SUP &gt; C). Ces modes déterminent si d’autres connexions à l’adresse I &lt; SUP &gt; 2 &lt;/SUP &gt; C peuvent être ouvertes pendant que vous êtes connecté à l’adresse du bus I &lt; SUP &gt; 2 &lt;/SUP &gt; C.</summary>
+      <summary>Décrit les modes dans lesquels vous pouvez vous connecter à une adresse de bus à circuit inter-intégré (I&lt;sup&gt;2&lt;/sup&gt; C). Ces modes déterminent si d'autres connexions à l'adresse de bus I&lt;sup&gt;2&lt;/sup&gt; C peuvent être ouvertes pendant que vous êtes connecté à l'adresse de bus I&lt;sup&gt;2&lt;/sup&gt; C.</summary>
     </member>
     <member name="F:Windows.Devices.I2c.Provider.ProviderI2cSharingMode.Exclusive">
-      <summary>Se connecte à l’adresse du bus I &lt; SUP &gt; 2 &lt;/SUP &gt; en mode exclusif, de sorte qu’aucune autre connexion à l' &lt; &gt; 2 &lt;/SUP &gt; C ne peut être établie lorsque vous restez connecté. Ce mode est le mode par défaut.</summary>
+      <summary>Se connecte à l'adresse de bus I&lt;sup&gt;2&lt;/sup&gt; C exclusivement, afin qu'aucune autre connexion à l'adresse de bus I&lt;sup&gt;2&lt;/sup&gt; C ne puisse être établie tandis que vous restez connecté. Ce mode est le mode par défaut.</summary>
     </member>
     <member name="F:Windows.Devices.I2c.Provider.ProviderI2cSharingMode.Shared">
-      <summary>Se connecte à l’adresse de bus I &lt; SUP &gt; 2 &lt;/SUP &gt; en mode partagé, de sorte que d’autres connexions à l' &lt; SUP &gt; 2 &lt;/SUP &gt; C peuvent être effectuées pendant que vous restez connecté.</summary>
+      <summary>Se connecte à l'adresse de bus I&lt;sup&gt;2&lt;/sup&gt; C en mode partagé, afin que d'autres connexions à l'adresse de bus I&lt;sup&gt;2&lt;/sup&gt; C puissent être établies tandis que vous restez connecté.</summary>
     </member>
     <member name="T:Windows.Devices.I2c.Provider.ProviderI2cTransferResult">
-      <summary>Fournit des informations indiquant si les données sont transférées et que la méthode ReadPartial, WritePartial ou WriteReadPartial a été effectuée avec succès, ainsi que le nombre réel d’octets transférés par la méthode.</summary>
+      <summary>Fournit des informations indiquant si les transferts de données effectués par la méthode ReadPartial, WritePartial ou WriteReadPartial ont réussi et le nombre réel d'octets que la méthode a transférés.</summary>
     </member>
     <member name="F:Windows.Devices.I2c.Provider.ProviderI2cTransferResult.BytesTransferred">
-      <summary>Nombre réel d’octets que l’opération a réellement transférés. Le tableau suivant décrit ce que représente cette valeur pour chaque méthode.</summary>
+      <summary>Nombre d'octets effectif que l'opération a réellement transféré. Le tableau suivant décrit ce que représente cette valeur pour chaque méthode.</summary>
     </member>
     <member name="F:Windows.Devices.I2c.Provider.ProviderI2cTransferResult.Status">
-      <summary>Valeur d’énumération qui indique si l’opération de lecture ou d’écriture a transféré le nombre complet d’octets que la méthode a demandés, ou la raison pour laquelle le transfert complet a échoué. Pour WriteReadPartial, la valeur indique si les données pour les opérations d’écriture et de lecture ont été entièrement transférées.</summary>
+      <summary>Valeur d'énumération indiquant si l'opération de lecture ou d'écriture a transféré le nombre d'octets complet que la méthode a demandé, ou le motif pour lequel le transfert complet a échoué. Pour la méthode WriteReadPartial, la valeur indique si les données des opérations de lecture et d'écriture ont été entièrement transférées.</summary>
     </member>
     <member name="T:Windows.Devices.I2c.Provider.ProviderI2cTransferStatus">
-      <summary>Indique si les données sont transférées avec succès par la méthode ReadPartial, WritePartial ou WriteReadPartial, ou fournit la raison pour laquelle les transferts n’ont pas réussi.</summary>
+      <summary>Décrit si les transferts de données effectués par la méthode ReadPartial, WritePartial ou WriteReadPartial ont réussi, ou fournit le motif pour lequel ces transferts n'ont pas réussi.</summary>
     </member>
     <member name="F:Windows.Devices.I2c.Provider.ProviderI2cTransferStatus.FullTransfer">
-      <summary>Les données ont été entièrement transférées. Pour WriteReadPartial, les données pour les opérations d’écriture et de lecture ont été entièrement transférées.</summary>
+      <summary>Les données ont été entièrement transférées. Pour la méthode WriteReadPartial, les données des opérations d'écriture et de lecture ont été entièrement transférées.</summary>
     </member>
     <member name="F:Windows.Devices.I2c.Provider.ProviderI2cTransferStatus.PartialTransfer">
-      <summary>L’appareil I &lt; SUP &gt; 2 &lt;/SUP &gt; C a reçu un accusé de réception négatif du transfert de données avant que toutes les données n’aient été transférées.</summary>
+      <summary>L'appareil I&lt;sup&gt;2&lt;/sup&gt; C a émis un accusé de réception négatif relatif au transfert de données avant le transfert de toutes les données.</summary>
     </member>
     <member name="F:Windows.Devices.I2c.Provider.ProviderI2cTransferStatus.SlaveAddressNotAcknowledged">
-      <summary>L’adresse du bus n’a pas été reconnue.</summary>
+      <summary>L'adresse de bus n'a pas reçu d'accusé de réception.</summary>
     </member>
     <member name="T:Windows.Devices.Pwm.PwmController">
       <summary>Représente un contrôleur PWM connecté au système.</summary>
     </member>
     <member name="P:Windows.Devices.Pwm.PwmController.ActualFrequency">
       <summary>Obtient la fréquence réelle du PWM.</summary>
-      <returns>Fréquence en Hz.</returns>
+      <returns>La fréquence en Hertz.</returns>
     </member>
     <member name="P:Windows.Devices.Pwm.PwmController.MaxFrequency">
       <summary>Obtient la fréquence maximale offerte par le contrôleur.</summary>
-      <returns>Fréquence maximale en Hz.</returns>
+      <returns>La fréquence maximale en Hertz.</returns>
     </member>
     <member name="P:Windows.Devices.Pwm.PwmController.MinFrequency">
       <summary>Obtient la fréquence minimale offerte par le contrôleur.</summary>
-      <returns>Fréquence minimale en Hz.</returns>
+      <returns>La fréquence minimale en Hertz.</returns>
     </member>
     <member name="P:Windows.Devices.Pwm.PwmController.PinCount">
-      <summary>Obtient le nombre de pin disponibles sur le système.</summary>
+      <summary>Obtient le nombre de broches disponibles sur le système.</summary>
       <returns>Nombre de broches.</returns>
     </member>
     <member name="M:Windows.Devices.Pwm.PwmController.FromIdAsync(System.String)">
-      <summary>Initialise une instance de contrôleur PWM en fonction de l’ID de DeviceInformation donné.</summary>
-      <param name="deviceId">ID DeviceInformation acquis.</param>
+      <summary>Initialise une instance de contrôleur PWM basée sur l’ID DeviceInformation donné.</summary>
+      <param name="deviceId">ID de l'objet DeviceInformation acquis.</param>
       <returns>
       </returns>
     </member>
     <member name="M:Windows.Devices.Pwm.PwmController.GetControllersAsync(Windows.Devices.Pwm.Provider.IPwmProvider)">
-      <summary>Obtient tous les contrôleurs sur le système de manière asynchrone.</summary>
-      <param name="provider">Fournisseur PWM qui se trouve sur le système.</param>
-      <returns>Lorsque la méthode se termine correctement, elle retourne une liste de valeurs qui représentent les contrôleurs disponibles sur le système.</returns>
+      <summary>Obtient tous les contrôleurs sur le système de façon asynchrone.</summary>
+      <param name="provider">Le fournisseur PWM basé sur le système.</param>
+      <returns>Lorsque la méthode s'exécute correctement, elle retourne une liste de valeurs qui représentent les contrôleurs disponibles sur le système.</returns>
     </member>
     <member name="M:Windows.Devices.Pwm.PwmController.GetDefaultAsync">
       <summary>Obtient le contrôleur PWM par défaut sur le système.</summary>
-      <returns>Le contrôleur PWM par défaut du système, ou null si le système n’a pas de contrôleur PWM.</returns>
+      <returns>Contrôleur PWM par défaut sur le système, ou null si le système n'a pas de contrôleur PWM.</returns>
     </member>
     <member name="M:Windows.Devices.Pwm.PwmController.GetDeviceSelector">
-      <summary>Récupère une chaîne de syntaxe de requête avancée (AQS) pour tous les contrôleurs PWM sur le système. Vous pouvez utiliser cette chaîne avec la méthode DeviceInformation. FindAllAsync pour obtenir des objets DeviceInformation pour ces contrôleurs.</summary>
+      <summary>Récupère une chaîne de syntaxe de recherche avancée (AQS) pour tous les contrôleurs PWM présents sur le système. Vous pouvez utiliser cette chaîne avec la méthode DeviceInformation.FindAllAsync pour obtenir des objets DeviceInformation pour ces contrôleurs.</summary>
       <returns>
       </returns>
     </member>
     <member name="M:Windows.Devices.Pwm.PwmController.GetDeviceSelector(System.String)">
-      <summary>Récupère une chaîne de syntaxe de requête avancée (AQS) pour le contrôleur PWM qui porte le nom convivial spécifié. Vous pouvez utiliser cette chaîne avec la méthode DeviceInformation. FindAllAsync pour obtenir des objets DeviceInformation pour ces contrôleurs.</summary>
-      <param name="friendlyName">Nom convivial du contrôleur PWM particulier pour lequel vous souhaitez obtenir la chaîne AQS correspondante.</param>
+      <summary>Récupère une chaîne de syntaxe de recherche avancée (AQS) pour le contrôleur PWM portant le nom convivial spécifié. Vous pouvez utiliser cette chaîne avec la méthode DeviceInformation.FindAllAsync pour obtenir des objets DeviceInformation pour ces contrôleurs.</summary>
+      <param name="friendlyName">Nom convivial pour le contrôleur PWM spécifique pour lequel vous voulez obtenir la chaîne AQS correspondante.</param>
       <returns>
       </returns>
     </member>
     <member name="M:Windows.Devices.Pwm.PwmController.OpenPin(System.Int32)">
-      <summary>Ouvre le code confidentiel à utiliser.</summary>
-      <param name="pinNumber">Code pin à ouvrir.</param>
-      <returns>Le pin demandé peut désormais être utilisé.</returns>
+      <summary>Ouvre la broche pour l'utiliser.</summary>
+      <param name="pinNumber">La broche à ouvrir.</param>
+      <returns>La broche demandée est maintenant disponible.</returns>
     </member>
     <member name="M:Windows.Devices.Pwm.PwmController.SetDesiredFrequency(System.Double)">
-      <summary>Définit la fréquence du PWM.</summary>
-      <param name="desiredFrequency">Valeur de la fréquence souhaitée, en Hz.</param>
-      <returns>Fréquence réelle définie. Il s’agit de la correspondance la plus proche prise en charge, telle que déterminée par le fournisseur.</returns>
+      <summary>Définit la fréquence PWM.</summary>
+      <param name="desiredFrequency">Puis, la valeur de la fréquence souhaitée en Hertz.</param>
+      <returns>La fréquence réelle définie. Ce sera la fréquence la plus proche prise en charge telle que spécifiée par le fournisseur.</returns>
     </member>
     <member name="T:Windows.Devices.Pwm.PwmPin">
       <summary>Représente une seule broche PWM sur le système.</summary>
     </member>
     <member name="P:Windows.Devices.Pwm.PwmPin.Controller">
-      <summary>Obtient le contrôleur PWM utilisé par ce code confidentiel.</summary>
-      <returns>Contrôleur.</returns>
+      <summary>Obtient le contrôleur PWM en cours d'utilisation par cette broche.</summary>
+      <returns>Le contrôleur.</returns>
     </member>
     <member name="P:Windows.Devices.Pwm.PwmPin.IsStarted">
-      <summary>Obtient l’état Démarré du pin.</summary>
+      <summary>Obtient l'état démarré de la broche.</summary>
       <returns>True si le PWM a démarré sur cette broche, sinon false.</returns>
     </member>
     <member name="P:Windows.Devices.Pwm.PwmPin.Polarity">
-      <summary>Obtient ou définit la polarité du pin.</summary>
-      <returns>Polarité du code confidentiel.</returns>
+      <summary>Obtient ou définit la polarité de la broche.</summary>
+      <returns>La polarité de la broche.</returns>
     </member>
     <member name="M:Windows.Devices.Pwm.PwmPin.Close">
-      <summary>Ferme la connexion active au code confidentiel et rend le code confidentiel à la disposition des autres utilisateurs.</summary>
+      <summary>Ferme la connexion active à la broche, et rend la broche disponible à l'ouverture par d'autres connexions.</summary>
     </member>
     <member name="M:Windows.Devices.Pwm.PwmPin.GetActiveDutyCyclePercentage">
-      <summary>Récupère le pourcentage du cycle de responsabilité pour ce code PIN.</summary>
-      <returns>Pourcentage du cycle de responsabilité, entre 0,0 et 1,0.</returns>
+      <summary>Récupère le pourcentage de coefficient d'utilisation de cette broche.</summary>
+      <returns>Le pourcentage de coefficient d'utilisation, entre 0.0 et 1.0.</returns>
     </member>
     <member name="M:Windows.Devices.Pwm.PwmPin.SetActiveDutyCyclePercentage(System.Double)">
-      <summary>Définit le pourcentage du cycle de responsabilité pour ce code PIN.</summary>
-      <param name="dutyCyclePercentage">Pourcentage du cycle de responsabilité souhaité, représenté sous la forme d’une valeur comprise entre 0,0 et 1,0.</param>
+      <summary>Définit le pourcentage de coefficient d'utilisation de cette broche.</summary>
+      <param name="dutyCyclePercentage">Le pourcentage de coefficient d'utilisation souhaité, représenté sous la forme d'une valeur comprise entre 0.0 et 1.0.</param>
     </member>
     <member name="M:Windows.Devices.Pwm.PwmPin.Start">
-      <summary>Démarre le PWM sur ce code PIN.</summary>
+      <summary>Démarre le PWM sur cette broche.</summary>
     </member>
     <member name="M:Windows.Devices.Pwm.PwmPin.Stop">
-      <summary>Arrête le PWM sur ce code PIN.</summary>
+      <summary>Arrête le PWM sur cette broche.</summary>
     </member>
     <member name="T:Windows.Devices.Pwm.PwmPulsePolarity">
-      <summary>Décrit la polarité dans laquelle le signal PWM doit commencer.</summary>
+      <summary>Indique à quelle polarité le signal PWM doit commencer.</summary>
     </member>
     <member name="F:Windows.Devices.Pwm.PwmPulsePolarity.ActiveHigh">
-      <summary>Configure le signal PWM pour qu’il démarre dans un état élevé actif.</summary>
+      <summary>Configure le signal PWM pour commencer à l'état actif élevé.</summary>
     </member>
     <member name="F:Windows.Devices.Pwm.PwmPulsePolarity.ActiveLow">
-      <summary>Configure le signal PWM pour démarrer en état faible actif.</summary>
+      <summary>Configure le signal PWM pour commencer à l'état actif faible.</summary>
     </member>
     <member name="T:Windows.Devices.Pwm.Provider.IPwmControllerProvider">
-      <summary>Représente les propriétés et les méthodes communes à tous les contrôleurs PWM.</summary>
+      <summary>Représente des propriétés et des méthodes communes à tous les contrôleurs PWM.</summary>
     </member>
     <member name="P:Windows.Devices.Pwm.Provider.IPwmControllerProvider.ActualFrequency">
       <summary>Obtient la fréquence réelle du PWM.</summary>
-      <returns>Fréquence en Hz.</returns>
+      <returns>La fréquence en Hertz.</returns>
     </member>
     <member name="P:Windows.Devices.Pwm.Provider.IPwmControllerProvider.MaxFrequency">
       <summary>Obtient la fréquence maximale offerte par le contrôleur.</summary>
-      <returns>Fréquence maximale en Hz.</returns>
+      <returns>La fréquence maximale en Hertz.</returns>
     </member>
     <member name="P:Windows.Devices.Pwm.Provider.IPwmControllerProvider.MinFrequency">
       <summary>Obtient la fréquence minimale offerte par le contrôleur.</summary>
-      <returns>Fréquence minimale en Hz.</returns>
+      <returns>La fréquence minimale en Hertz.</returns>
     </member>
     <member name="P:Windows.Devices.Pwm.Provider.IPwmControllerProvider.PinCount">
-      <summary>Obtient le nombre de codes confidentiels PWM disponibles sur le système.</summary>
-      <returns>Nombre de codes confidentiels disponibles.</returns>
+      <summary>Obtient le nombre de broches PWM disponibles sur le système.</summary>
+      <returns>Le nombre de broches disponibles.</returns>
     </member>
     <member name="M:Windows.Devices.Pwm.Provider.IPwmControllerProvider.AcquirePin(System.Int32)">
-      <summary>Acquiert le code confidentiel spécifié et ouvre ce code confidentiel à utiliser.</summary>
-      <param name="pin">Le code PIN auquel ouvrir une connexion PWM.</param>
+      <summary>Acquiert la broche spécifiée et ouvre cette broche pour l'utiliser.</summary>
+      <param name="pin">Broche sur laquelle ouvrir une connexion PWM.</param>
     </member>
     <member name="M:Windows.Devices.Pwm.Provider.IPwmControllerProvider.DisablePin(System.Int32)">
-      <summary>Arrête le PWM sur ce code PIN.</summary>
-      <param name="pin">Le code PIN sur lequel arrêter le signal PWM.</param>
+      <summary>Arrête le PWM sur cette broche.</summary>
+      <param name="pin">Broche sur laquelle arrêter le signal PWM.</param>
     </member>
     <member name="M:Windows.Devices.Pwm.Provider.IPwmControllerProvider.EnablePin(System.Int32)">
-      <summary>Démarre le signal PWM sur le code confidentiel spécifié.</summary>
-      <param name="pin">Le code PIN sur lequel démarrer le signal PWM.</param>
+      <summary>Démarre le signal PWM sur la broche spécifiée.</summary>
+      <param name="pin">Broche sur laquelle démarrer le signal PWM.</param>
     </member>
     <member name="M:Windows.Devices.Pwm.Provider.IPwmControllerProvider.ReleasePin(System.Int32)">
-      <summary>Libère la connexion au code confidentiel spécifié et rend ce code confidentiel accessible aux autres.</summary>
-      <param name="pin">Code pin à libérer.</param>
+      <summary>Libère la connexion à la broche spécifiée et rend cette broche disponibles à d'autres connexions.</summary>
+      <param name="pin">La broche à libérer.</param>
     </member>
     <member name="M:Windows.Devices.Pwm.Provider.IPwmControllerProvider.SetDesiredFrequency(System.Double)">
       <summary>Définit la fréquence PWM souhaitée.</summary>
-      <param name="frequency">Fréquence souhaitée en Hz.</param>
-      <returns>Fréquence du PWM réel après le paramétrage de la valeur ci-dessus. Il s’agit de la correspondance la plus proche prise en charge, telle que déterminée par le fournisseur.</returns>
+      <param name="frequency">La fréquence souhaitée en Hertz.</param>
+      <returns>La fréquence PWM réelle après avoir défini à la valeur ci-dessus. Ce sera la fréquence la plus proche prise en charge telle que spécifiée par le fournisseur.</returns>
     </member>
     <member name="M:Windows.Devices.Pwm.Provider.IPwmControllerProvider.SetPulseParameters(System.Int32,System.Double,System.Boolean)">
-      <summary>Définit les paramètres PWM pour le code confidentiel, le cycle de l’utilisation et la polarité.</summary>
-      <param name="pin">Indique à quel code PIN ces valeurs s’appliquent.</param>
-      <param name="dutyCycle">Pourcentage du cycle de responsabilité, avec une valeur comprise entre 0 et 100 inclus.</param>
-      <param name="invertPolarity">True si la polarité du code confidentiel doit être inversée ; sinon, false.</param>
+      <summary>Définit les paramètres PWM pour la broche, le coefficient d'utilisation, et la polarité.</summary>
+      <param name="pin">Indique à quelle broche ces valeurs s'appliquent.</param>
+      <param name="dutyCycle">Le pourcentage de coefficient d'utilisation, avec une valeur comprise entre 0 et 100 inclus.</param>
+      <param name="invertPolarity">True si la polarité de la broche est inversée, sinon false.</param>
     </member>
     <member name="T:Windows.Devices.Pwm.Provider.IPwmProvider">
       <summary>Représente des méthodes communes à tous les fournisseurs PWM.</summary>
@@ -1021,65 +1021,65 @@
       <returns>Retourne une liste des contrôleurs PWM disponibles sur le système.</returns>
     </member>
     <member name="T:Windows.Devices.Spi.ISpiDeviceStatics">
-      <summary>Représente les statistiques d’appareil SPI communes aux appareils SPI.</summary>
+      <summary>Représente les statistiques de périphérique SPI communes aux périphériques SPI.</summary>
     </member>
     <member name="M:Windows.Devices.Spi.ISpiDeviceStatics.FromIdAsync(System.String,Windows.Devices.Spi.SpiConnectionSettings)">
-      <summary>Ouvre un appareil avec les paramètres de connexion fournis.</summary>
+      <summary>Ouvre un périphérique avec les paramètres de connexion fournis.</summary>
       <param name="busId">ID du bus.</param>
       <param name="settings">Paramètres de connexion.</param>
-      <returns>L’appareil SPI.</returns>
+      <returns>Périphérique SPI.</returns>
     </member>
     <member name="M:Windows.Devices.Spi.ISpiDeviceStatics.GetBusInfo(System.String)">
-      <summary>Récupère les informations relatives à un certain bus.</summary>
+      <summary>Récupère des informations sur un certain bus.</summary>
       <param name="busId">ID du bus.</param>
       <returns>Informations de bus demandées.</returns>
     </member>
     <member name="M:Windows.Devices.Spi.ISpiDeviceStatics.GetDeviceSelector">
-      <summary>Obtient tous les bus SPI détectés sur le système.</summary>
-      <returns>Chaîne contenant tous les bus du système.</returns>
+      <summary>Prend tous les bus SPI trouvés sur le système.</summary>
+      <returns>Chaîne contenant l'ensemble des bus sur le système.</returns>
     </member>
     <member name="M:Windows.Devices.Spi.ISpiDeviceStatics.GetDeviceSelector(System.String)">
-      <summary>Obtient tous les bus SPI trouvés sur le système qui correspondent au paramètre d’entrée.</summary>
-      <param name="friendlyName">Paramètre d’entrée spécifiant un nom d’identification pour le bus souhaité. Cela correspond généralement à un nom sur le schéma.</param>
-      <returns>Chaîne contenant tous les bus qui ont l’entrée dans le nom.</returns>
+      <summary>Prend tous les bus SPI trouvés sur le système qui correspondent au paramètre d'entrée.</summary>
+      <param name="friendlyName">Paramètre d'entrée spécifiant un nom d'identificateur pour le bus souhaité. Cela correspond généralement à un nom dans le schéma.</param>
+      <returns>Chaîne contenant l'ensemble des bus qui ont l'entrée dans le nom.</returns>
     </member>
     <member name="T:Windows.Devices.Spi.SpiBusInfo">
       <summary>Représente les informations relatives à un bus SPI.</summary>
     </member>
     <member name="P:Windows.Devices.Spi.SpiBusInfo.ChipSelectLineCount">
-      <summary>Obtient le nombre de lignes de sélection de puce disponibles sur le bus.</summary>
-      <returns>Nombre de lignes de sélection de puces.</returns>
+      <summary>Obtient le nombre de lignes de sélection de puce disponible sur le bus.</summary>
+      <returns>Nombre de lignes de sélection de puce.</returns>
     </member>
     <member name="P:Windows.Devices.Spi.SpiBusInfo.MaxClockFrequency">
-      <summary>Fréquence maximale du cycle d’horloge du bus.</summary>
-      <returns>Cycle d’horloge en Hz.</returns>
+      <summary>Fréquence du cycle d'horloge maximum du bus.</summary>
+      <returns>Cycle d'horloge en Hz.</returns>
     </member>
     <member name="P:Windows.Devices.Spi.SpiBusInfo.MinClockFrequency">
-      <summary>Fréquence minimale du cycle d’horloge du bus.</summary>
-      <returns>Cycle d’horloge en Hz.</returns>
+      <summary>Fréquence du cycle d'horloge minimum du bus.</summary>
+      <returns>Cycle d'horloge en Hz.</returns>
     </member>
     <member name="P:Windows.Devices.Spi.SpiBusInfo.SupportedDataBitLengths">
       <summary>Obtient les longueurs de bits qui peuvent être utilisées sur le bus pour transmettre des données.</summary>
-      <returns>Longueurs de données prises en charge.</returns>
+      <returns>Longueurs des données prises en charge.</returns>
     </member>
     <member name="T:Windows.Devices.Spi.SpiConnectionSettings">
       <summary>Représente les paramètres de la connexion avec un SpiDevice.</summary>
     </member>
     <member name="M:Windows.Devices.Spi.SpiConnectionSettings.#ctor(System.Int32)">
       <summary>Initialise une nouvelle instance de SpiConnectionSettings.</summary>
-      <param name="chipSelectLine">La ligne de sélection de la puce sur laquelle la connexion sera établie.</param>
+      <param name="chipSelectLine">Ligne de sélection de puce sur laquelle la connexion sera effectuée.</param>
     </member>
     <member name="P:Windows.Devices.Spi.SpiConnectionSettings.ChipSelectLine">
-      <summary>Obtient ou définit la ligne de sélection de puce pour la connexion à l’appareil SPI.</summary>
+      <summary>Obtient ou définit la ligne de sélection de puce pour la connexion au périphérique SPI.</summary>
       <returns>Ligne de sélection de puce.</returns>
     </member>
     <member name="P:Windows.Devices.Spi.SpiConnectionSettings.ClockFrequency">
-      <summary>Obtient ou définit la fréquence d’horloge de la connexion.</summary>
-      <returns>Valeur de la fréquence d’horloge en Hz.</returns>
+      <summary>Obtient ou définit la fréquence de l'horloge pour la connexion.</summary>
+      <returns>Valeur de la fréquence de l'horloge en Hz.</returns>
     </member>
     <member name="P:Windows.Devices.Spi.SpiConnectionSettings.DataBitLength">
-      <summary>Obtient ou définit la longueur en bits des données sur cette connexion.</summary>
-      <returns>Longueur du bit de données.</returns>
+      <summary>Obtient ou définit la longueur de bits pour les données sur cette connexion.</summary>
+      <returns>Longueur des bits de données.</returns>
     </member>
     <member name="P:Windows.Devices.Spi.SpiConnectionSettings.Mode">
       <summary>Obtient ou définit le SpiMode pour cette connexion.</summary>
@@ -1093,73 +1093,73 @@
       <summary>Représente le contrôleur SPI sur le système.</summary>
     </member>
     <member name="M:Windows.Devices.Spi.SpiController.GetControllersAsync(Windows.Devices.Spi.Provider.ISpiProvider)">
-      <summary>Obtient tous les contrôleurs SPI qui se trouvent sur le système.</summary>
-      <param name="provider">Fournisseur SPI pour les contrôleurs sur le système.</param>
-      <returns>Lorsque la méthode se termine correctement, elle retourne une liste de valeurs qui représentent les contrôleurs SPI disponibles sur le système.</returns>
+      <summary>Obtient tous les contrôleurs SPI qui sont sur le système.</summary>
+      <param name="provider">Le fournisseur SPI pour les contrôleurs sur le système.</param>
+      <returns>Lorsque la méthode s'exécute correctement, elle retourne une liste de valeurs qui représentent les contrôleurs SPI disponibles sur le système.</returns>
     </member>
     <member name="M:Windows.Devices.Spi.SpiController.GetDefaultAsync">
       <summary>Obtient le contrôleur SPI par défaut sur le système.</summary>
-      <returns>Le contrôleur SPI par défaut sur le système, ou null si le système n’a pas de contrôleur SPI.</returns>
+      <returns>Contrôleur SPI par défaut sur le système, ou null si le système n'a pas de contrôleur SPI.</returns>
     </member>
     <member name="M:Windows.Devices.Spi.SpiController.GetDevice(Windows.Devices.Spi.SpiConnectionSettings)">
-      <summary>Obtient l’appareil SPI avec les paramètres spécifiés.</summary>
+      <summary>Obtient l'appareil SPI avec les paramètres spécifiés.</summary>
       <param name="settings">Paramètres de connexion souhaités.</param>
-      <returns>L’appareil SPI.</returns>
+      <returns>Périphérique SPI.</returns>
     </member>
     <member name="T:Windows.Devices.Spi.SpiDevice">
-      <summary>Représente un appareil connecté via le bus SPI.</summary>
+      <summary>Représente un périphérique connecté via le bus SPI.</summary>
     </member>
     <member name="P:Windows.Devices.Spi.SpiDevice.ConnectionSettings">
-      <summary>Obtient les paramètres de connexion pour l’appareil.</summary>
+      <summary>Obtient les paramètres de connexion du périphérique.</summary>
       <returns>Paramètres de connexion.</returns>
     </member>
     <member name="P:Windows.Devices.Spi.SpiDevice.DeviceId">
-      <summary>Obtient l’ID unique associé à l’appareil.</summary>
+      <summary>Obtient l'ID unique associé au périphérique.</summary>
       <returns>ID.</returns>
     </member>
     <member name="M:Windows.Devices.Spi.SpiDevice.Close">
-      <summary>Ferme la connexion à l’appareil.</summary>
+      <summary>Ferme la connexion au périphérique.</summary>
     </member>
     <member name="M:Windows.Devices.Spi.SpiDevice.FromIdAsync(System.String,Windows.Devices.Spi.SpiConnectionSettings)">
-      <summary>Ouvre un appareil avec les paramètres de connexion fournis.</summary>
+      <summary>Ouvre un périphérique avec les paramètres de connexion fournis.</summary>
       <param name="busId">ID du bus.</param>
       <param name="settings">Paramètres de connexion.</param>
-      <returns>L’appareil SPI demandé.</returns>
+      <returns>Périphérique SPI demandé.</returns>
     </member>
     <member name="M:Windows.Devices.Spi.SpiDevice.GetBusInfo(System.String)">
-      <summary>Récupère les informations relatives à un certain bus.</summary>
+      <summary>Récupère des informations sur un certain bus.</summary>
       <param name="busId">ID du bus.</param>
       <returns>Informations de bus demandées.</returns>
     </member>
     <member name="M:Windows.Devices.Spi.SpiDevice.GetDeviceSelector">
-      <summary>Obtient tous les bus SPI détectés sur le système.</summary>
-      <returns>Chaîne contenant tous les bus détectés sur le système.</returns>
+      <summary>Prend tous les bus SPI trouvés sur le système.</summary>
+      <returns>Chaîne contenant l'ensemble des bus trouvés sur le système.</returns>
     </member>
     <member name="M:Windows.Devices.Spi.SpiDevice.GetDeviceSelector(System.String)">
-      <summary>Obtient tous les bus SPI trouvés sur le système qui correspondent au paramètre d’entrée.</summary>
-      <param name="friendlyName">Paramètre d’entrée spécifiant un nom d’identification pour le bus souhaité. Cela correspond généralement à un nom sur le schéma.</param>
-      <returns>Chaîne contenant tous les bus qui ont l’entrée dans le nom.</returns>
+      <summary>Prend tous les bus SPI trouvés sur le système qui correspondent au paramètre d'entrée.</summary>
+      <param name="friendlyName">Paramètre d'entrée spécifiant un nom d'identificateur pour le bus souhaité. Cela correspond généralement à un nom dans le schéma.</param>
+      <returns>Chaîne contenant l'ensemble des bus qui ont l'entrée dans le nom.</returns>
     </member>
     <member name="M:Windows.Devices.Spi.SpiDevice.Read(System.Byte[])">
-      <summary>Lit à partir de l’appareil connecté.</summary>
-      <param name="buffer">Tableau contenant les données lues à partir de l’appareil.</param>
+      <summary>Effectue une lecture du périphérique connecté.</summary>
+      <param name="buffer">Tableau contenant les données lues du périphérique.</param>
     </member>
     <member name="M:Windows.Devices.Spi.SpiDevice.TransferFullDuplex(System.Byte[],System.Byte[])">
-      <summary>Transférer des données à l’aide d’un système de communication duplex intégral. Full duplex permet aux maîtres et aux esclaves de communiquer simultanément.</summary>
-      <param name="writeBuffer">Tableau contenant les données à écrire sur l’appareil.</param>
-      <param name="readBuffer">Tableau contenant les données lues à partir de l’appareil.</param>
+      <summary>Transfère des données à l'aide d'un système de communication en duplex intégral. Le duplex intégral permet au formulaire de base et à l'esclave de communiquer simultanément.</summary>
+      <param name="writeBuffer">Tableau contenant les données à écrire sur le périphérique.</param>
+      <param name="readBuffer">Tableau contenant les données lues du périphérique.</param>
     </member>
     <member name="M:Windows.Devices.Spi.SpiDevice.TransferSequential(System.Byte[],System.Byte[])">
-      <summary>Transférer les données de manière séquentielle vers l’appareil.</summary>
-      <param name="writeBuffer">Tableau contenant les données à écrire sur l’appareil.</param>
-      <param name="readBuffer">Tableau contenant les données lues à partir de l’appareil.</param>
+      <summary>Transfère les données de manière séquentielle vers le périphérique.</summary>
+      <param name="writeBuffer">Tableau contenant les données à écrire sur le périphérique.</param>
+      <param name="readBuffer">Tableau contenant les données lues du périphérique.</param>
     </member>
     <member name="M:Windows.Devices.Spi.SpiDevice.Write(System.Byte[])">
-      <summary>Écrit sur l’appareil connecté.</summary>
-      <param name="buffer">Tableau contenant les données à écrire sur l’appareil.</param>
+      <summary>Écrit sur le périphérique connecté.</summary>
+      <param name="buffer">Tableau contenant les données à écrire sur le périphérique.</param>
     </member>
     <member name="T:Windows.Devices.Spi.SpiMode">
-      <summary>Définit le mode de communication SPI. Le mode de communication définit le bord de l’horloge sur lequel la ligne de sortie principale bascule, le maître dans les échantillons de ligne et le signal de niveau stable de l’horloge du signal (nommé SCLK). Chaque mode est défini avec une paire de paramètres appelée polarité d’horloge (CPOL) et phase d’horloge (CPHA).</summary>
+      <summary>Définit le mode de communication SPI. Le mode de communication définit le bord de l'horloge sur lequel le contour du formulaire bascule, les exemples inclus du formulaire de base, et le niveau Prêt du signal de l'horloge (nommé SCLK). Chaque mode est défini avec une paire de paramètres appelés la polarité d'horloge (CPOL) et la phase d'horloge (CPHA).</summary>
     </member>
     <member name="F:Windows.Devices.Spi.SpiMode.Mode0">
       <summary>CPOL = 0, CPHA = 0.</summary>
@@ -1174,76 +1174,76 @@
       <summary>CPOL = 1, CPHA = 1.</summary>
     </member>
     <member name="T:Windows.Devices.Spi.SpiSharingMode">
-      <summary>Définit le mode de partage pour le bus SPI.</summary>
+      <summary>Définit le mode de partage du bus SPI.</summary>
     </member>
     <member name="F:Windows.Devices.Spi.SpiSharingMode.Exclusive">
-      <summary>Le segment de bus SPI n’est pas partagé.</summary>
+      <summary>Le segment de bus SPI n'est pas partagé.</summary>
     </member>
     <member name="F:Windows.Devices.Spi.SpiSharingMode.Shared">
       <summary>Le bus SPI est partagé.</summary>
     </member>
     <member name="T:Windows.Devices.Spi.Provider.ISpiControllerProvider">
-      <summary>Représente les actions communes à tous les contrôleurs SPI.</summary>
+      <summary>Représente des actions communes à tous les contrôleurs SPI.</summary>
     </member>
     <member name="M:Windows.Devices.Spi.Provider.ISpiControllerProvider.GetDeviceProvider(Windows.Devices.Spi.Provider.ProviderSpiConnectionSettings)">
-      <summary>Obtient l’appareil SPI avec les paramètres spécifiés.</summary>
+      <summary>Obtient l'appareil SPI avec les paramètres spécifiés.</summary>
       <param name="settings">Paramètres de connexion souhaités.</param>
-      <returns>L’appareil SPI.</returns>
+      <returns>Périphérique SPI.</returns>
     </member>
     <member name="T:Windows.Devices.Spi.Provider.ISpiDeviceProvider">
-      <summary>Représente les actions communes à un appareil connecté via le bus SPI.</summary>
+      <summary>Représente des actions communes à un appareil connecté via le bus SPI.</summary>
     </member>
     <member name="P:Windows.Devices.Spi.Provider.ISpiDeviceProvider.ConnectionSettings">
-      <summary>Obtient les paramètres de connexion pour l’appareil.</summary>
+      <summary>Obtient les paramètres de connexion du périphérique.</summary>
       <returns>Paramètres de connexion.</returns>
     </member>
     <member name="P:Windows.Devices.Spi.Provider.ISpiDeviceProvider.DeviceId">
-      <summary>Obtient l’ID unique associé à l’appareil.</summary>
-      <returns>ID de l’appareil.</returns>
+      <summary>Obtient l'ID unique associé au périphérique.</summary>
+      <returns>ID de périphérique.</returns>
     </member>
     <member name="M:Windows.Devices.Spi.Provider.ISpiDeviceProvider.Read(System.Byte[])">
-      <summary>Lit à partir de l’appareil connecté.</summary>
-      <param name="buffer">Tableau contenant les données lues à partir de l’appareil.</param>
+      <summary>Effectue une lecture du périphérique connecté.</summary>
+      <param name="buffer">Tableau contenant les données lues du périphérique.</param>
     </member>
     <member name="M:Windows.Devices.Spi.Provider.ISpiDeviceProvider.TransferFullDuplex(System.Byte[],System.Byte[])">
-      <summary>Transférer des données à l’aide d’un système de communication duplex intégral. Full duplex permet aux maîtres et aux esclaves de communiquer simultanément.</summary>
-      <param name="writeBuffer">Tableau contenant les données à écrire sur l’appareil.</param>
-      <param name="readBuffer">Tableau contenant les données lues à partir de l’appareil.</param>
+      <summary>Transfère des données à l'aide d'un système de communication en duplex intégral. Le duplex intégral permet au formulaire de base et à l'esclave de communiquer simultanément.</summary>
+      <param name="writeBuffer">Tableau contenant les données à écrire sur le périphérique.</param>
+      <param name="readBuffer">Tableau contenant les données lues du périphérique.</param>
     </member>
     <member name="M:Windows.Devices.Spi.Provider.ISpiDeviceProvider.TransferSequential(System.Byte[],System.Byte[])">
-      <summary>Transférer les données de manière séquentielle vers l’appareil.</summary>
-      <param name="writeBuffer">Tableau contenant les données à écrire sur l’appareil.</param>
-      <param name="readBuffer">Tableau contenant les données lues à partir de l’appareil.</param>
+      <summary>Transfère les données de manière séquentielle vers le périphérique.</summary>
+      <param name="writeBuffer">Tableau contenant les données à écrire sur le périphérique.</param>
+      <param name="readBuffer">Tableau contenant les données lues du périphérique.</param>
     </member>
     <member name="M:Windows.Devices.Spi.Provider.ISpiDeviceProvider.Write(System.Byte[])">
-      <summary>Écrit sur l’appareil connecté.</summary>
-      <param name="buffer">Tableau contenant les données à écrire sur l’appareil.</param>
+      <summary>Écrit sur le périphérique connecté.</summary>
+      <param name="buffer">Tableau contenant les données à écrire sur le périphérique.</param>
     </member>
     <member name="T:Windows.Devices.Spi.Provider.ISpiProvider">
-      <summary>Représente les actions communes aux fournisseurs de contrôleurs SPI.</summary>
+      <summary>Représente des actions communes aux fournisseurs de contrôleur SPI.</summary>
     </member>
     <member name="M:Windows.Devices.Spi.Provider.ISpiProvider.GetControllersAsync">
       <summary>Obtient tous les contrôleurs SPI sur le système pour le fournisseur.</summary>
-      <returns>Lorsque la méthode se termine correctement, elle retourne une liste de valeurs qui représentent les contrôleurs SPI disponibles sur le système.</returns>
+      <returns>Lorsque la méthode s'exécute correctement, elle retourne une liste de valeurs qui représentent les contrôleurs SPI disponibles sur le système.</returns>
     </member>
     <member name="T:Windows.Devices.Spi.Provider.ProviderSpiConnectionSettings">
-      <summary>Représente les paramètres du fournisseur pour la connexion à un appareil.</summary>
+      <summary>Représente les paramètres du fournisseur pour la connexion à un périphérique.</summary>
     </member>
     <member name="M:Windows.Devices.Spi.Provider.ProviderSpiConnectionSettings.#ctor(System.Int32)">
       <summary>Initialise une nouvelle instance de ProviderSpiConnectionSettings.</summary>
-      <param name="chipSelectLine">La ligne de sélection de la puce sur laquelle la connexion sera établie.</param>
+      <param name="chipSelectLine">Ligne de sélection de puce sur laquelle la connexion sera effectuée.</param>
     </member>
     <member name="P:Windows.Devices.Spi.Provider.ProviderSpiConnectionSettings.ChipSelectLine">
-      <summary>Obtient ou définit la ligne de sélection de puce pour la connexion à l’appareil SPI.</summary>
+      <summary>Obtient ou définit la ligne de sélection de puce pour la connexion au périphérique SPI.</summary>
       <returns>Ligne de sélection de puce.</returns>
     </member>
     <member name="P:Windows.Devices.Spi.Provider.ProviderSpiConnectionSettings.ClockFrequency">
-      <summary>Obtient ou définit la fréquence d’horloge de la connexion.</summary>
-      <returns>Valeur de la fréquence d’horloge en Hz.</returns>
+      <summary>Obtient ou définit la fréquence de l'horloge pour la connexion.</summary>
+      <returns>Valeur de la fréquence de l'horloge en Hz.</returns>
     </member>
     <member name="P:Windows.Devices.Spi.Provider.ProviderSpiConnectionSettings.DataBitLength">
-      <summary>Obtient ou définit la longueur en bits des données sur cette connexion.</summary>
-      <returns>Longueur du bit de données.</returns>
+      <summary>Obtient ou définit la longueur de bits pour les données sur cette connexion.</summary>
+      <returns>Longueur des bits de données.</returns>
     </member>
     <member name="P:Windows.Devices.Spi.Provider.ProviderSpiConnectionSettings.Mode">
       <summary>Obtient ou définit le ProviderSpiMode pour cette connexion.</summary>
@@ -1254,7 +1254,7 @@
       <returns>Mode de partage.</returns>
     </member>
     <member name="T:Windows.Devices.Spi.Provider.ProviderSpiMode">
-      <summary>Définit le mode de communication SPI. Le mode de communication définit le bord de l’horloge sur lequel la ligne de sortie principale bascule, le maître dans les échantillons de ligne et le signal de niveau stable de l’horloge du signal (nommé SCLK). Chaque mode est défini avec une paire de paramètres appelée polarité d’horloge (CPOL) et phase d’horloge (CPHA).</summary>
+      <summary>Définit le mode de communication SPI. Le mode de communication définit le bord de l'horloge sur lequel le contour du formulaire bascule, les exemples inclus du formulaire de base, et le niveau Prêt du signal de l'horloge (nommé SCLK). Chaque mode est défini avec une paire de paramètres appelés la polarité d'horloge (CPOL) et la phase d'horloge (CPHA).</summary>
     </member>
     <member name="F:Windows.Devices.Spi.Provider.ProviderSpiMode.Mode0">
       <summary>CPOL = 0, CPHA = 0.</summary>
@@ -1269,10 +1269,10 @@
       <summary>CPOL = 1, CPHA = 1.</summary>
     </member>
     <member name="T:Windows.Devices.Spi.Provider.ProviderSpiSharingMode">
-      <summary>Définit le mode de partage pour le bus SPI.</summary>
+      <summary>Définit le mode de partage du bus SPI.</summary>
     </member>
     <member name="F:Windows.Devices.Spi.Provider.ProviderSpiSharingMode.Exclusive">
-      <summary>Le segment de bus SPI n’est pas partagé.</summary>
+      <summary>Le segment de bus SPI n'est pas partagé.</summary>
     </member>
     <member name="F:Windows.Devices.Spi.Provider.ProviderSpiSharingMode.Shared">
       <summary>Le bus SPI est partagé.</summary>

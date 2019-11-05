@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <doc>
   <assembly>
-    <name>Windows. Security. isolation. IsolatedWindowsEnvironmentContract</name>
+    <name>Windows.Security.Isolation.IsolatedWindowsEnvironmentContract</name>
   </assembly>
   <members>
     <member name="T:Windows.Security.Isolation.IsolatedWindowsEnvironment">
@@ -224,7 +224,7 @@
       <summary>L’appareil ne répond pas à la configuration matérielle requise</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentHostError.RebootRequired">
-      <summary>Redémarrage requis</summary>
+      <summary>Redémarrage obligatoire</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentHostError.UnknownError">
       <summary>Erreur inconnue</summary>
@@ -456,7 +456,7 @@
       <summary>A réussi.</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentShareFolderStatus.UnknownFailure">
-      <summary>Échec inconnu.</summary>
+      <summary>Erreur inconnue.</summary>
     </member>
     <member name="T:Windows.Security.Isolation.IsolatedWindowsEnvironmentStartProcessResult">
       <summary>Classe Runtime qui interroge le résultat du processus de démarrage dans l’environnement Windows isolé.</summary>

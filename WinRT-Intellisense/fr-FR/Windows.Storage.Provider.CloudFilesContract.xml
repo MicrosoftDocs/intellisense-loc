@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <doc>
   <assembly>
-    <name>Windows. Storage. Provider. CloudFilesContract</name>
+    <name>Windows.Storage.Provider.CloudFilesContract</name>
   </assembly>
   <members>
     <member name="T:Windows.Storage.Provider.CloudFilesContract">
@@ -9,33 +9,33 @@
       </summary>
     </member>
     <member name="T:Windows.Storage.Provider.IStorageProviderItemPropertySource">
-      <summary>Fournit l’accès aux propriétés d’élément du fournisseur de stockage à partir de la racine de synchronisation.</summary>
+      <summary>Permet d’accéder aux propriétés d’élément du fournisseur de stockage à partir de la racine de synchronisation.</summary>
     </member>
     <member name="M:Windows.Storage.Provider.IStorageProviderItemPropertySource.GetItemProperties(System.String)">
-      <summary>Obtient une liste de propriétés d’élément pour un fournisseur de stockage.</summary>
-      <param name="itemPath">Chemin d’accès à l’élément de stockage.</param>
+      <summary>Obtient une liste des propriétés de l’élément pour un fournisseur de stockage.</summary>
+      <param name="itemPath">Un chemin d’accès à l’élément de stockage.</param>
       <returns>Liste des propriétés de l’élément à partir du fournisseur de stockage.</returns>
     </member>
     <member name="T:Windows.Storage.Provider.IStorageProviderPropertyCapabilities">
-      <summary>Fournit l’accès aux fonctionnalités de propriété prises en charge par la racine de synchronisation.</summary>
+      <summary>Fournit l’accès aux fonctions de propriété prises en charge par la racine de synchronisation.</summary>
     </member>
     <member name="M:Windows.Storage.Provider.IStorageProviderPropertyCapabilities.IsPropertySupported(System.String)">
       <summary>Détermine si une propriété est prise en charge par la racine de synchronisation.</summary>
-      <param name="propertyCanonicalName">Nom de la propriété. Par exemple, « System. photo. DateTaken »</param>
-      <returns>* * True * * si la propriété est prise en charge par la racine de synchronisation ; * * False * * sinon</returns>
+      <param name="propertyCanonicalName">Nom de la propriété. Par exemple, « System.Photo.DateTaken »</param>
+      <returns>**True** si la propriété est prise en charge par la racine de synchronisation ; sinon,**false**</returns>
     </member>
     <member name="T:Windows.Storage.Provider.IStorageProviderUriSource">
-      <summary>Interface pour obtenir un chemin d’accès d’URI de contenu et des informations.</summary>
+      <summary>Interface pour obtenir le chemin d'accès et des informations sur l'URI du contenu.</summary>
     </member>
     <member name="M:Windows.Storage.Provider.IStorageProviderUriSource.GetContentInfoForPath(System.String,Windows.Storage.Provider.StorageProviderGetContentInfoForPathResult)">
-      <summary>Obtient des informations sur l’URI d’un fournisseur de stockage en fonction du chemin d’accès de l’URI.</summary>
-      <param name="path">Chemin d’accès de l’URI du fournisseur de stockage.</param>
-      <param name="result">Informations de contenu sur l’URI du fournisseur de stockage fourni.</param>
+      <summary>Obtient des informations sur un URI de fournisseur de stockage en fonction du chemin d'accès de l'URI.</summary>
+      <param name="path">Chemin d'accès de l'URI du fournisseur de stockage.</param>
+      <param name="result">Informations de contenu sur l'URI du fournisseur de stockage fourni.</param>
     </member>
     <member name="M:Windows.Storage.Provider.IStorageProviderUriSource.GetPathForContentUri(System.String,Windows.Storage.Provider.StorageProviderGetPathForContentUriResult)">
-      <summary>Obtient le chemin d’accès de l’URI de contenu en fonction du nom de l’URI.</summary>
-      <param name="contentUri">Nom de chaîne de l’URI de contenu.</param>
-      <param name="result">Chemin d’accès de l’URI de contenu fourni.</param>
+      <summary>Obtient le chemin d'accès de l'URI du contenu en fonction du nom de l'URI.</summary>
+      <param name="contentUri">Nom de chaîne de l'URI du contenu.</param>
+      <param name="result">Chemin d'accès de l'URI du contenu fourni.</param>
     </member>
     <member name="T:Windows.Storage.Provider.StorageProviderFileTypeInfo">
       <summary>
@@ -62,60 +62,60 @@
       </returns>
     </member>
     <member name="T:Windows.Storage.Provider.StorageProviderGetContentInfoForPathResult">
-      <summary>Fournit des méthodes pour obtenir des informations supplémentaires sur un chemin d’accès d’URI de contenu.</summary>
+      <summary>Fournit des méthodes pour obtenir des informations supplémentaires sur le chemin d'accès d'un URI de contenu.</summary>
     </member>
     <member name="M:Windows.Storage.Provider.StorageProviderGetContentInfoForPathResult.#ctor">
       <summary>Constructeur par défaut StorageProviderGetContentInfoForPathResult.</summary>
     </member>
     <member name="P:Windows.Storage.Provider.StorageProviderGetContentInfoForPathResult.ContentId">
-      <summary>Obtient ou définit l’ID de contenu associé à StorageProviderGetContentInfoForPathResult.</summary>
-      <returns>Valeur d’ID de contenu.</returns>
+      <summary>Obtient ou définit l'ID de contenu associé à l'objet StorageProviderGetContentInfoForPathResult.</summary>
+      <returns>Valeur de l'ID du contenu.</returns>
     </member>
     <member name="P:Windows.Storage.Provider.StorageProviderGetContentInfoForPathResult.ContentUri">
-      <summary>Obtient ou définit l’URI de contenu associé à StorageProviderGetContentInfoForPathResult.</summary>
-      <returns>Valeur de l’URI de contenu.</returns>
+      <summary>Obtient ou définit l'URI du contenu associé à l'objet StorageProviderGetContentInfoForPathResult.</summary>
+      <returns>Valeur de l'URI du contenu.</returns>
     </member>
     <member name="P:Windows.Storage.Provider.StorageProviderGetContentInfoForPathResult.Status">
-      <summary>État d’un fournisseur de stockage associé à StorageProviderGetContentInfoForPathResult.</summary>
-      <returns>Valeur d’énumération StorageProviderUriSourceStatus.</returns>
+      <summary>Statut d'un fournisseur de stockage associé à l'objet StorageProviderGetContentInfoForPathResult.</summary>
+      <returns>Valeur d'énumération StorageProviderUriSourceStatus.</returns>
     </member>
     <member name="T:Windows.Storage.Provider.StorageProviderGetPathForContentUriResult">
-      <summary>Fournit des méthodes pour obtenir des informations supplémentaires sur le résultat d’un URI de contenu.</summary>
+      <summary>Fournit des méthodes pour obtenir des informations supplémentaires sur le résultat d'un URI de contenu.</summary>
     </member>
     <member name="M:Windows.Storage.Provider.StorageProviderGetPathForContentUriResult.#ctor">
       <summary>Constructeur par défaut StorageProviderGetPathForContentUriResult.</summary>
     </member>
     <member name="P:Windows.Storage.Provider.StorageProviderGetPathForContentUriResult.Path">
-      <summary>Obtient le chemin d’accès de l’objet StorageProviderGetPathForContentUriResult.</summary>
-      <returns>Chemin d’accès de l’URI de contenu.</returns>
+      <summary>Obtient le chemin d'accès de l'objet StorageProviderGetPathForContentUriResult.</summary>
+      <returns>Chemin d'accès de l'URI du contenu.</returns>
     </member>
     <member name="P:Windows.Storage.Provider.StorageProviderGetPathForContentUriResult.Status">
-      <summary>État d’un fournisseur de stockage associé à StorageProviderGetPathForContentUriResult.</summary>
-      <returns>Valeur d’énumération StorageProviderUriSourceStatus.</returns>
+      <summary>Statut d'un fournisseur de stockage associé à l'objet StorageProviderGetPathForContentUriResult.</summary>
+      <returns>Valeur d'énumération StorageProviderUriSourceStatus.</returns>
     </member>
     <member name="T:Windows.Storage.Provider.StorageProviderHardlinkPolicy">
-      <summary>Spécifie si les liens physiques sont autorisés sur un fichier ou un dossier d’espace réservé. Par défaut, les liens physiques ne sont pas autorisés sur un espace réservé.</summary>
+      <summary>Spécifie si les liens physiques sont autorisés sur un fichier ou dossier d'espace réservé. Par défaut, les liens physiques ne sont pas autorisés sur un espace réservé.</summary>
     </member>
     <member name="F:Windows.Storage.Provider.StorageProviderHardlinkPolicy.Allowed">
-      <summary>Les liens physiques sont autorisés sur un espace réservé dans la même racine de synchronisation.</summary>
+      <summary>Les liens physiques sont autorisés sur un espace réservé au sein de la même racine de synchronisation.</summary>
     </member>
     <member name="F:Windows.Storage.Provider.StorageProviderHardlinkPolicy.None">
-      <summary>Aucun lien physique n’est autorisé.</summary>
+      <summary>Aucun lien physique n'est autorisé.</summary>
     </member>
     <member name="T:Windows.Storage.Provider.StorageProviderHydrationPolicy">
-      <summary>Énumération des valeurs de la stratégie d’alimentation des fichiers pour un fichier d’espace réservé. La stratégie d’hydratation permet à une racine de synchronisation de personnaliser le comportement de récupération des données pour un fichier d’espace réservé.</summary>
+      <summary>Énumération des valeurs de stratégie d'hydratation de fichier pour un fichier d'espace réservé. La stratégie d’hydratation permet à une racine de synchronisation de personnaliser le comportement de récupération des données pour un fichier d'espace réservé.</summary>
     </member>
     <member name="F:Windows.Storage.Provider.StorageProviderHydrationPolicy.AlwaysFull">
-      <summary>Si cette option est sélectionnée et qu’un espace réservé ne peut pas être entièrement hydraté, la plateforme échoue avec : ERROR_CLOUD_FILE_INVALID_REQUEST.</summary>
+      <summary>Si cette option est sélectionnée et un espace réservé ne peut pas être entièrement hydraté, la plateforme échoue avec : ERROR_CLOUD_FILE_INVALID_REQUEST.</summary>
     </member>
     <member name="F:Windows.Storage.Provider.StorageProviderHydrationPolicy.Full">
-      <summary>Une alimentation complète est effectuée. Garantit que l’espace réservé est disponible localement avant d’effectuer une demande.</summary>
+      <summary>Une hydratation complète est effectuée. Garantit que l’espace réservé est disponible localement avant d’effectuer une demande.</summary>
     </member>
     <member name="F:Windows.Storage.Provider.StorageProviderHydrationPolicy.Partial">
-      <summary>L’hydratation est effectuée à la demande de l’utilisateur. L’hydratation ne continue pas en arrière-plan.</summary>
+      <summary>L'hydratation est effectuée à la demande de l’utilisateur. L'hydratation ne se poursuit pas en arrière-plan.</summary>
     </member>
     <member name="F:Windows.Storage.Provider.StorageProviderHydrationPolicy.Progressive">
-      <summary>Le hyrdration à la demande est exécuté. Si la mise en attente n’est pas terminée, elle se poursuit en arrière-plan.</summary>
+      <summary>L'hydratation à la demande est effectuée. Si l’hydratation n’a pas terminée, elle continue en arrière-plan.</summary>
     </member>
     <member name="T:Windows.Storage.Provider.StorageProviderHydrationPolicyModifier">
       <summary>Fournit des modificateurs de stratégie à utiliser avec le StorageProviderHydrationPolicy principal.</summary>
@@ -127,19 +127,19 @@
       <summary>Aucun modificateur.</summary>
     </member>
     <member name="F:Windows.Storage.Provider.StorageProviderHydrationPolicyModifier.StreamingAllowed">
-      <summary>Ce modificateur ne permet pas à la plateforme de stocker des données sur le disque retourné par un fournisseur de synchronisation.</summary>
+      <summary>Ce modificateur ne permet pas à la plateforme de stocker les données sur disque retournées par un fournisseur de synchronisation.</summary>
     </member>
     <member name="F:Windows.Storage.Provider.StorageProviderHydrationPolicyModifier.ValidationRequired">
-      <summary>Une fois les données alimentées dans le fichier, elles sont validées.</summary>
+      <summary>Une fois les données hydratées dans le fichier, elles seront validées.</summary>
     </member>
     <member name="T:Windows.Storage.Provider.StorageProviderInSyncPolicy">
-      <summary>Contient les attributs de fichier et de répertoire pris en charge par la racine de synchronisation.</summary>
+      <summary>Contient les attributs de fichiers et de répertoires pris en charge par la racine de synchronisation.</summary>
     </member>
     <member name="F:Windows.Storage.Provider.StorageProviderInSyncPolicy.Default">
-      <summary>Valeur de stratégie de synchronisation par défaut.</summary>
+      <summary>La valeur de stratégie de synchronisation par défaut.</summary>
     </member>
     <member name="F:Windows.Storage.Provider.StorageProviderInSyncPolicy.DirectoryCreationTime">
-      <summary>Heure de création de l’annuaire.</summary>
+      <summary>L’heure de création du répertoire.</summary>
     </member>
     <member name="F:Windows.Storage.Provider.StorageProviderInSyncPolicy.DirectoryHiddenAttribute">
       <summary>Attribut masqué d’un répertoire.</summary>
@@ -148,7 +148,7 @@
       <summary>Heure de la dernière écriture dans un répertoire.</summary>
     </member>
     <member name="F:Windows.Storage.Provider.StorageProviderInSyncPolicy.DirectoryReadOnlyAttribute">
-      <summary>Attribut en lecture seule d’un répertoire.</summary>
+      <summary>Attribut de lecture seule d’un répertoire.</summary>
     </member>
     <member name="F:Windows.Storage.Provider.StorageProviderInSyncPolicy.DirectorySystemAttribute">
       <summary>Attribut système d’un fichier.</summary>
@@ -163,7 +163,7 @@
       <summary>Heure de la dernière écriture dans un fichier.</summary>
     </member>
     <member name="F:Windows.Storage.Provider.StorageProviderInSyncPolicy.FileReadOnlyAttribute">
-      <summary>Attribut en lecture seule d’un fichier.</summary>
+      <summary>Attribut de lecture seule d’un fichier.</summary>
     </member>
     <member name="F:Windows.Storage.Provider.StorageProviderInSyncPolicy.FileSystemAttribute">
       <summary>Attribut système d’un fichier.</summary>
@@ -172,80 +172,80 @@
       <summary>Valeur réservée pour le moteur de synchronisation.</summary>
     </member>
     <member name="T:Windows.Storage.Provider.StorageProviderItemProperties">
-      <summary>Permet d’accéder aux propriétés d’un élément de stockage du fournisseur de stockage cloud (par exemple, un fichier ou un dossier).</summary>
+      <summary>Permet d'accéder aux propriétés d’un élément de stockage de fournisseur de stockage cloud (comme un fichier ou un dossier).</summary>
     </member>
     <member name="M:Windows.Storage.Provider.StorageProviderItemProperties.SetAsync(Windows.Storage.IStorageItem,Windows.Foundation.Collections.IIterable{Windows.Storage.Provider.StorageProviderItemProperty})">
-      <summary>Définit les valeurs des propriétés personnalisées d’un élément de stockage.</summary>
+      <summary>Définit les valeurs de propriétés personnalisées d’un élément de stockage.</summary>
       <param name="item">Élément de stockage.</param>
-      <param name="itemProperties">Liste Iterable des États StorageProviderItemProperty pour l’élément de stockage.</param>
-      <returns>Action asynchrone. Si vous utilisez la programmation asynchrone, le type de retour est void.</returns>
+      <param name="itemProperties">Liste itérable des états StorageProviderItemProperty pour l’élément de stockage.</param>
+      <returns>Action asynchrone. Si vous utilisez la programmation asynchrone, le type du retour est « void ».</returns>
     </member>
     <member name="T:Windows.Storage.Provider.StorageProviderItemProperty">
-      <summary>Définit une propriété de fournisseur de stockage cloud pour un élément de stockage (comme un fichier ou un dossier).</summary>
+      <summary>Définit une propriété de fournisseur de stockage dans le cloud pour un élément de stockage (comme un fichier ou un dossier).</summary>
     </member>
     <member name="M:Windows.Storage.Provider.StorageProviderItemProperty.#ctor">
       <summary>Constructeur par défaut StorageProviderItemProperty.</summary>
     </member>
     <member name="P:Windows.Storage.Provider.StorageProviderItemProperty.IconResource">
-      <summary>Référence à une ressource icône pour une propriété du fournisseur de stockage cloud.</summary>
-      <returns>Valeur de chaîne d’une référence à une ressource icône. Par exemple, « SyncProviderResources. dll,-1234 »</returns>
+      <summary>Référence à une ressource d’icône pour une propriété de fournisseur de stockage dans le cloud.</summary>
+      <returns>Valeur de chaîne d’une référence à une ressource d’icône. Par exemple, « SyncProviderResources.dll, -1234 »</returns>
     </member>
     <member name="P:Windows.Storage.Provider.StorageProviderItemProperty.Id">
-      <summary>ID d’un élément de stockage fourni par le fournisseur de stockage cloud.</summary>
-      <returns>ID de l’élément de stockage.</returns>
+      <summary>L’Id d’un élément de stockage fourni par le fournisseur de stockage Cloud.</summary>
+      <returns>ID de l'élément de stockage.</returns>
     </member>
     <member name="P:Windows.Storage.Provider.StorageProviderItemProperty.Value">
       <summary>Texte descriptif de l’état d’un élément de stockage du fournisseur de stockage.</summary>
       <returns>Valeur de chaîne du texte.</returns>
     </member>
     <member name="T:Windows.Storage.Provider.StorageProviderItemPropertyDefinition">
-      <summary>Définit les propriétés d’un élément à partir d’un fournisseur de stockage cloud.</summary>
+      <summary>Définit les propriétés d’un élément à partir d’un fournisseur de stockage Cloud.</summary>
     </member>
     <member name="M:Windows.Storage.Provider.StorageProviderItemPropertyDefinition.#ctor">
       <summary>Constructeur par défaut StorageProviderItemPropertyDefinition.</summary>
     </member>
     <member name="P:Windows.Storage.Provider.StorageProviderItemPropertyDefinition.DisplayNameResource">
-      <summary>Obtient ou définit le nom complet de l’état d’un fournisseur de stockage cloud.</summary>
-      <returns>Valeur de chaîne pour le nom d’affichage de l’État.</returns>
+      <summary>Obtient ou définit le nom d’affichage de l'état d'un fournisseur de stockage Cloud.</summary>
+      <returns>Valeur de chaîne pour le nom d’affichage de l'état.</returns>
     </member>
     <member name="P:Windows.Storage.Provider.StorageProviderItemPropertyDefinition.Id">
-      <summary>ID d’un élément de stockage fourni par le fournisseur de stockage cloud lorsque la racine de synchronisation est inscrite.</summary>
-      <returns>Numéro d’identification de l’élément de stockage.</returns>
+      <summary>Id d’un élément de stockage fourni par le fournisseur de stockage Cloud lorsque de la racine de synchronisation est enregistrée.</summary>
+      <returns>Numéro d'ID de l'élément de stockage.</returns>
     </member>
     <member name="T:Windows.Storage.Provider.StorageProviderPopulationPolicy">
-      <summary>Permet à un fournisseur de synchronisation de contrôler la manière dont un fichier ou un répertoire d’espace réservé</summary>
+      <summary>Permet à un fournisseur de synchronisation de contrôler un fichier ou répertoire d'espace réservé</summary>
     </member>
     <member name="F:Windows.Storage.Provider.StorageProviderPopulationPolicy.AlwaysFull">
-      <summary>La plateforme suppose que les fichiers et répertoires d’espace réservé sont toujours disponibles localement.</summary>
+      <summary>La plateforme suppose que les répertoires et fichiers d’espace réservé sont toujours disponibles localement.</summary>
     </member>
     <member name="F:Windows.Storage.Provider.StorageProviderPopulationPolicy.Full">
-      <summary>Si les fichiers d’espace réservé ou les répertoires ne sont pas entièrement remplis, la plateforme demande que le fournisseur de synchronisation les renseigne avant d’effectuer une demande de l’utilisateur.</summary>
+      <summary>Si les fichiers ou les répertoires d’espace réservé ne sont pas entièrement remplis, la plateforme demande que le fournisseur de synchronisation les remplisse avant de terminer une demande de l’utilisateur.</summary>
     </member>
     <member name="T:Windows.Storage.Provider.StorageProviderProtectionMode">
       <summary>Indique le type de données contenues dans la racine de synchronisation.</summary>
     </member>
     <member name="F:Windows.Storage.Provider.StorageProviderProtectionMode.Personal">
-      <summary>La racine de synchronisation doit contenir uniquement des fichiers personnels, non chiffrés ou des fichiers d’entreprise.</summary>
+      <summary>La racine de synchronisation doit contenir uniquement des fichiers personnels, des fichiers non chiffrés ou professionnels connexes.</summary>
     </member>
     <member name="F:Windows.Storage.Provider.StorageProviderProtectionMode.Unknown">
       <summary>La racine de synchronisation peut contenir n’importe quel type de fichier.</summary>
     </member>
     <member name="T:Windows.Storage.Provider.StorageProviderSyncRootInfo">
-      <summary>Contient les propriétés de la racine de synchronisation d’un fournisseur de stockage cloud à inscrire auprès du système d’exploitation.</summary>
+      <summary>Contient les propriétés de la racine de synchronisation d’un fournisseur de stockage cloud à inscrire sur le système d’exploitation.</summary>
     </member>
     <member name="M:Windows.Storage.Provider.StorageProviderSyncRootInfo.#ctor">
       <summary>Constructeur par défaut StorageProviderSyncRootInfo.</summary>
     </member>
     <member name="P:Windows.Storage.Provider.StorageProviderSyncRootInfo.AllowPinning">
-      <summary>Active ou désactive la possibilité pour les fichiers d’être rendus disponibles hors connexion.</summary>
-      <returns>* * True * * si l’épinglage est activé ; * * False * * sinon</returns>
+      <summary>Active ou désactive la possibilité de rendre les fichiers disponibles hors connexion.</summary>
+      <returns>**True** si l'épinglage est activé ; sinon, **False**.</returns>
     </member>
     <member name="P:Windows.Storage.Provider.StorageProviderSyncRootInfo.Context">
       <summary>Contient les informations d’identité de la racine de synchronisation.</summary>
-      <returns>Mémoire tampon contenant l’identité racine de synchronisation.</returns>
+      <returns>Mémoire tampon contenant l’identité de la racine de synchronisation.</returns>
     </member>
     <member name="P:Windows.Storage.Provider.StorageProviderSyncRootInfo.DisplayNameResource">
-      <summary>Nom complet facultatif qui correspond à l’inscription de la racine de synchronisation existante.</summary>
+      <summary>Nom d’affichage facultatif qui est mappé à l’inscription existante de la racine de synchronisation.</summary>
       <returns>Nom complet.</returns>
     </member>
     <member name="P:Windows.Storage.Provider.StorageProviderSyncRootInfo.FallbackFileTypeInfo">
@@ -255,77 +255,77 @@
       </returns>
     </member>
     <member name="P:Windows.Storage.Provider.StorageProviderSyncRootInfo.HardlinkPolicy">
-      <summary>Stratégie de lien physique de la racine de synchronisation.</summary>
-      <returns>StorageProviderHardlinkPolicy défini.</returns>
+      <summary>La stratégie de lien physique de la racine de synchronisation.</summary>
+      <returns>La StorageProviderHardlinkPolicy définie.</returns>
     </member>
     <member name="P:Windows.Storage.Provider.StorageProviderSyncRootInfo.HydrationPolicy">
       <summary>Stratégie d’hydratation de l’inscription de la racine de synchronisation.</summary>
-      <returns>Valeur enum de la stratégie d’hydratation du fournisseur de stockage.</returns>
+      <returns>Valeur d’énumération de la stratégie d’hydratation du fournisseur de stockage.</returns>
     </member>
     <member name="P:Windows.Storage.Provider.StorageProviderSyncRootInfo.HydrationPolicyModifier">
-      <summary>Modificateur de stratégie d’hydratation de l’inscription de la racine de synchronisation.</summary>
-      <returns>Valeur enum du modificateur de stratégie d’hydratation du fournisseur de stockage.</returns>
+      <summary>Modificateur de la stratégie d’hydratation de l’inscription de la racine de synchronisation.</summary>
+      <returns>Valeur d’énumération du modificateur de la stratégie d’hydratation du fournisseur de stockage.</returns>
     </member>
     <member name="P:Windows.Storage.Provider.StorageProviderSyncRootInfo.IconResource">
-      <summary>Chemin d’accès à une ressource icône pour l’état personnalisé d’un fichier ou d’un dossier.</summary>
-      <returns>Le chemin d’accès à la ressource icône, par exemple « SyncProvider. dll,-100 » ou « SyncProvider. dll,-101 »</returns>
+      <summary>Chemin d’accès à une ressource d’icône pour l’état personnalisé d’un fichier ou dossier.</summary>
+      <returns>Chemin d'accès à la ressource d'icône, par exemple, « SyncProvider.dll,-100 » ou « SyncProvider.dll,-101 »</returns>
     </member>
     <member name="P:Windows.Storage.Provider.StorageProviderSyncRootInfo.Id">
       <summary>Identificateur de la racine de synchronisation.</summary>
-      <returns>Identificateur sous la forme : [ID du fournisseur de stockage] ! [SID Windows] ! [ID de compte]</returns>
+      <returns>Identificateur sous la forme : [ID de fournisseur de stockage]![SID Windows]![ID de compte]</returns>
     </member>
     <member name="P:Windows.Storage.Provider.StorageProviderSyncRootInfo.InSyncPolicy">
-      <summary>Permet d’accéder à la stratégie de synchronisation pour le fournisseur de stockage cloud.</summary>
-      <returns>Valeur de la stratégie de synchronisation.</returns>
+      <summary>Fournit l’accès à la stratégie de synchronisation pour le fournisseur de stockage Cloud.</summary>
+      <returns>Valeur de stratégie de synchronisation.</returns>
     </member>
     <member name="P:Windows.Storage.Provider.StorageProviderSyncRootInfo.Path">
-      <summary>Dossier de stockage qui représente le chemin d’accès à la racine du système de dossiers Cloud.</summary>
+      <summary>Dossier de stockage qui représente le chemin d’accès à la racine du système de dossiers basé sur le cloud.</summary>
       <returns>Dossier de stockage.</returns>
     </member>
     <member name="P:Windows.Storage.Provider.StorageProviderSyncRootInfo.PopulationPolicy">
       <summary>Stratégie de remplissage de l’inscription de la racine de synchronisation.</summary>
-      <returns>Valeur enum de la stratégie de remplissage.</returns>
+      <returns>Valeur d’énumération de la stratégie de remplissage.</returns>
     </member>
     <member name="P:Windows.Storage.Provider.StorageProviderSyncRootInfo.ProtectionMode">
       <summary>Mode de protection de l’inscription de la racine de synchronisation.</summary>
-      <returns>Valeur enum du mode de protection.</returns>
+      <returns>Valeur d’énumération du mode de protection.</returns>
     </member>
     <member name="P:Windows.Storage.Provider.StorageProviderSyncRootInfo.ProviderId">
       <summary>Obtient ou définit un GUID qui représente l’ID du fournisseur de stockage.</summary>
       <returns>GUID qui représente l’ID du fournisseur de stockage.</returns>
     </member>
     <member name="P:Windows.Storage.Provider.StorageProviderSyncRootInfo.RecycleBinUri">
-      <summary>URI vers une corbeille de stockage cloud.</summary>
-      <returns>URI vers la corbeille.</returns>
+      <summary>URI de la corbeille de stockage cloud.</summary>
+      <returns>URI de la corbeille.</returns>
     </member>
     <member name="P:Windows.Storage.Provider.StorageProviderSyncRootInfo.ShowSiblingsAsGroup">
-      <summary>Affiche les racines de synchronisation frères listées sous la racine principale de la synchronisation dans l’Explorateur de fichiers.</summary>
-      <returns>* * True * * si les racines de synchronisation frères sont affichées, * * false * * sinon</returns>
+      <summary>Affiche les racines de synchronisation frères répertoriées sous la racine de synchronisation principale dans l’Explorateur de fichiers.</summary>
+      <returns>**True** si les racines de synchronisation frères sont affichées ; sinon, **False**</returns>
     </member>
     <member name="P:Windows.Storage.Provider.StorageProviderSyncRootInfo.StorageProviderItemPropertyDefinitions">
-      <summary>Obtient les informations de StorageProviderItemPropertyDefinition pour une racine de synchronisation.</summary>
+      <summary>Obtient les informations StorageProviderItemPropertyDefinition pour une racine de synchronisation.</summary>
       <returns>
       </returns>
     </member>
     <member name="P:Windows.Storage.Provider.StorageProviderSyncRootInfo.Version">
       <summary>Numéro de version de la racine de synchronisation.</summary>
-      <returns>Valeur de chaîne pour le numéro de version. Par exemple, « 1,0 »</returns>
+      <returns>Valeur de chaîne pour le numéro de version. Par exemple, « 1.0 »</returns>
     </member>
     <member name="T:Windows.Storage.Provider.StorageProviderSyncRootManager">
-      <summary>Permet d’inscrire ou d’annuler l’inscription d’une racine de synchronisation du fournisseur de stockage cloud avec le système d’exploitation.</summary>
+      <summary>Permet d’inscrire ou d’annuler l’inscription de la racine de synchronisation d’un fournisseur de stockage cloud sur le système d’exploitation.</summary>
     </member>
     <member name="M:Windows.Storage.Provider.StorageProviderSyncRootManager.GetCurrentSyncRoots">
-      <summary>Obtient toutes les racines de synchronisation actuellement enregistrées.</summary>
+      <summary>Obtient toutes les racines de synchronisation actuellement inscrites.</summary>
       <returns>Collection de racines de synchronisation actuellement inscrites.</returns>
     </member>
     <member name="M:Windows.Storage.Provider.StorageProviderSyncRootManager.GetSyncRootInformationForFolder(Windows.Storage.IStorageFolder)">
-      <summary>Retourne les propriétés de la racine de synchronisation d’un fournisseur de stockage cloud en fonction d’un dossier de stockage.</summary>
-      <param name="folder">Dossier de stockage pour la racine de synchronisation.</param>
+      <summary>Renvoie les propriétés de la racine de synchronisation d’un fournisseur de stockage cloud à partir d’un dossier de stockage.</summary>
+      <param name="folder">Dossier de stockage de la racine de synchronisation.</param>
       <returns>Propriétés de la racine de synchronisation d’un fournisseur de stockage cloud pour le dossier de stockage donné.</returns>
     </member>
     <member name="M:Windows.Storage.Provider.StorageProviderSyncRootManager.GetSyncRootInformationForId(System.String)">
-      <summary>Retourne les propriétés de la racine de synchronisation d’un fournisseur de stockage cloud en fonction d’un ID racine de synchronisation.</summary>
-      <param name="id">Valeur de chaîne de l’ID racine de synchronisation.</param>
+      <summary>Renvoie les propriétés de la racine de synchronisation d’un fournisseur de stockage cloud à partir d’un ID de racine de stockage.</summary>
+      <param name="id">Valeur de chaîne de l’ID de la racine de synchronisation.</param>
       <returns>Propriétés de la racine de synchronisation spécifiée.</returns>
     </member>
     <member name="M:Windows.Storage.Provider.StorageProviderSyncRootManager.IsSupported">
@@ -335,24 +335,24 @@
       </returns>
     </member>
     <member name="M:Windows.Storage.Provider.StorageProviderSyncRootManager.Register(Windows.Storage.Provider.StorageProviderSyncRootInfo)">
-      <summary>Inscrit une racine de synchronisation auprès du système d’exploitation.</summary>
+      <summary>Inscrit une racine de synchronisation sur le système d’exploitation.</summary>
       <param name="syncRootInformation">Racine de synchronisation à inscrire.</param>
     </member>
     <member name="M:Windows.Storage.Provider.StorageProviderSyncRootManager.Unregister(System.String)">
-      <summary>Annule l’inscription d’une racine de synchronisation auprès du système d’exploitation.</summary>
-      <param name="id">ID de la racine de synchronisation dont l’inscription doit être annulée.</param>
+      <summary>Annule l’inscription d’une racine de synchronisation sur le système d’exploitation.</summary>
+      <param name="id">ID de la racine de synchronisation dont l'inscription doit être annulée.</param>
     </member>
     <member name="T:Windows.Storage.Provider.StorageProviderUriSourceStatus">
-      <summary>Énumération de l’état de l’URI d’un fournisseur de stockage.</summary>
+      <summary>Énumération du statut d'un URI de fournisseur de stockage.</summary>
     </member>
     <member name="F:Windows.Storage.Provider.StorageProviderUriSourceStatus.FileNotFound">
-      <summary>L’URI n’est pas reconnu par le fournisseur de synchronisation.</summary>
+      <summary>L'URI n'est pas reconnu par le fournisseur de synchronisation.</summary>
     </member>
     <member name="F:Windows.Storage.Provider.StorageProviderUriSourceStatus.NoSyncRoot">
-      <summary>Aucune racine de synchronisation n’est inscrite auprès de la source de l’URI.</summary>
+      <summary>Aucune racine de synchronisation n'est enregistrée avec la source d'URI.</summary>
     </member>
     <member name="F:Windows.Storage.Provider.StorageProviderUriSourceStatus.Success">
-      <summary>L’ID du fournisseur de stockage existe.</summary>
+      <summary>L'ID du fournisseur de stockage existe.</summary>
     </member>
   </members>
 </doc>
