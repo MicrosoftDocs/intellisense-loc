@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <doc>
   <assembly>
-    <name>Windows. .Cfilea. CloudFilesContract</name>
+    <name>Windows.Storage.Provider.CloudFilesContract</name>
   </assembly>
   <members>
     <member name="T:Windows.Storage.Provider.CloudFilesContract">
@@ -9,33 +9,33 @@
       </summary>
     </member>
     <member name="T:Windows.Storage.Provider.IStorageProviderItemPropertySource">
-      <summary>동기화 루트에서 저장소 공급자 항목 속성에 대 한 액세스를 제공 합니다.</summary>
+      <summary>동기화 루트에서 저장소 공급자 항목 속성에 액세스할 수 있도록 합니다.</summary>
     </member>
     <member name="M:Windows.Storage.Provider.IStorageProviderItemPropertySource.GetItemProperties(System.String)">
-      <summary>저장소 공급자에 대 한 항목 속성의 목록을 가져옵니다.</summary>
-      <param name="itemPath">저장소 항목에 대 한 경로입니다.</param>
+      <summary>저장소 공급자에 대한 항목 속성 목록을 가져옵니다.</summary>
+      <param name="itemPath">저장소 항목의 경로입니다.</param>
       <returns>저장소 공급자의 항목 속성 목록입니다.</returns>
     </member>
     <member name="T:Windows.Storage.Provider.IStorageProviderPropertyCapabilities">
-      <summary>동기화 루트에서 지 원하는 속성 기능에 대 한 액세스를 제공 합니다.</summary>
+      <summary>동기화 루트에서 지원하는 속성 기능에 대한 액세스를 제공합니다.</summary>
     </member>
     <member name="M:Windows.Storage.Provider.IStorageProviderPropertyCapabilities.IsPropertySupported(System.String)">
-      <summary>동기화 루트에서 속성이 지원 되는지 여부를 확인 합니다.</summary>
-      <param name="propertyCanonicalName">속성의 이름입니다. 예: "DateTaken"</param>
-      <returns>동기화 루트에서 속성이 지원 되는 경우 * * True * * * * False * * 그렇지 않으면</returns>
+      <summary>동기화 루트에서 속성이 지원되는지 확인합니다.</summary>
+      <param name="propertyCanonicalName">속성의 이름입니다. 예: "System.Photo.DateTaken"</param>
+      <returns>동기화 루트가 속성을 지원하면 **True**이고, 그렇지 않으면 **False**입니다.</returns>
     </member>
     <member name="T:Windows.Storage.Provider.IStorageProviderUriSource">
       <summary>콘텐츠 URI 경로 및 정보를 가져오기 위한 인터페이스입니다.</summary>
     </member>
     <member name="M:Windows.Storage.Provider.IStorageProviderUriSource.GetContentInfoForPath(System.String,Windows.Storage.Provider.StorageProviderGetContentInfoForPathResult)">
-      <summary>URI 경로가 지정 된 경우 저장소 공급자 URI에 대 한 정보를 가져옵니다.</summary>
+      <summary>URI 경로가 제공된 저장소 공급자 URI에 대한 정보를 가져옵니다.</summary>
       <param name="path">저장소 공급자 URI의 경로입니다.</param>
-      <param name="result">제공 된 저장소 공급자 URI에 대 한 콘텐츠 정보입니다.</param>
+      <param name="result">제공된 저장소 공급자 URI에 대한 콘텐츠 정보입니다.</param>
     </member>
     <member name="M:Windows.Storage.Provider.IStorageProviderUriSource.GetPathForContentUri(System.String,Windows.Storage.Provider.StorageProviderGetPathForContentUriResult)">
-      <summary>URI 이름이 지정 된 콘텐츠 URI의 경로를 가져옵니다.</summary>
+      <summary>URI 이름이 제공된 콘텐츠 URI의 경로를 가져옵니다.</summary>
       <param name="contentUri">콘텐츠 URI의 문자열 이름입니다.</param>
-      <param name="result">제공 된 콘텐츠 URI의 경로입니다.</param>
+      <param name="result">제공된 콘텐츠 URI의 경로입니다.</param>
     </member>
     <member name="T:Windows.Storage.Provider.StorageProviderFileTypeInfo">
       <summary>
@@ -62,25 +62,25 @@
       </returns>
     </member>
     <member name="T:Windows.Storage.Provider.StorageProviderGetContentInfoForPathResult">
-      <summary>콘텐츠 URI 경로에 대 한 추가 정보를 가져오는 메서드를 제공 합니다.</summary>
+      <summary>콘텐츠 URI 경로에 대한 추가 정보를 가져오기 위한 메서드를 제공합니다.</summary>
     </member>
     <member name="M:Windows.Storage.Provider.StorageProviderGetContentInfoForPathResult.#ctor">
       <summary>StorageProviderGetContentInfoForPathResult 기본 생성자입니다.</summary>
     </member>
     <member name="P:Windows.Storage.Provider.StorageProviderGetContentInfoForPathResult.ContentId">
-      <summary>StorageProviderGetContentInfoForPathResult와 연결 된 콘텐츠 ID를 가져오거나 설정 합니다.</summary>
+      <summary>StorageProviderGetContentInfoForPathResult와 연관된 콘텐츠 ID를 가져오거나 설정합니다.</summary>
       <returns>콘텐츠 ID 값입니다.</returns>
     </member>
     <member name="P:Windows.Storage.Provider.StorageProviderGetContentInfoForPathResult.ContentUri">
-      <summary>StorageProviderGetContentInfoForPathResult와 연결 된 콘텐츠 URI를 가져오거나 설정 합니다.</summary>
+      <summary>StorageProviderGetContentInfoForPathResult와 연관된 콘텐츠 URI를 가져오거나 설정합니다.</summary>
       <returns>콘텐츠 URI 값입니다.</returns>
     </member>
     <member name="P:Windows.Storage.Provider.StorageProviderGetContentInfoForPathResult.Status">
-      <summary>StorageProviderGetContentInfoForPathResult와 연결 된 저장소 공급자의 상태입니다.</summary>
+      <summary>StorageProviderGetContentInfoForPathResult와 연관된 저장소 공급자의 상태입니다.</summary>
       <returns>StorageProviderUriSourceStatus 열거형 값입니다.</returns>
     </member>
     <member name="T:Windows.Storage.Provider.StorageProviderGetPathForContentUriResult">
-      <summary>콘텐츠 URI 결과에 대 한 추가 정보를 가져오는 메서드를 제공 합니다.</summary>
+      <summary>콘텐츠 URI 결과에 대한 추가 정보를 가져오기 위한 메서드를 제공합니다.</summary>
     </member>
     <member name="M:Windows.Storage.Provider.StorageProviderGetPathForContentUriResult.#ctor">
       <summary>StorageProviderGetPathForContentUriResult 기본 생성자입니다.</summary>
@@ -90,50 +90,50 @@
       <returns>콘텐츠 URI 경로입니다.</returns>
     </member>
     <member name="P:Windows.Storage.Provider.StorageProviderGetPathForContentUriResult.Status">
-      <summary>StorageProviderGetPathForContentUriResult와 연결 된 저장소 공급자의 상태입니다.</summary>
+      <summary>StorageProviderGetPathForContentUriResult와 연관된 저장소 공급자의 상태입니다.</summary>
       <returns>StorageProviderUriSourceStatus 열거형 값입니다.</returns>
     </member>
     <member name="T:Windows.Storage.Provider.StorageProviderHardlinkPolicy">
-      <summary>자리 표시자 파일이 나 폴더에서 하드 링크를 허용할지 여부를 지정 합니다. 기본적으로 자리 표시자에는 하드 링크가 허용 되지 않습니다.</summary>
+      <summary>자리 표시자 파일 또는 폴터에 하드 링크가 허용되는지 지정합니다. 기본적으로 하드 링크는 자리 표시자에 허용되지 않습니다.</summary>
     </member>
     <member name="F:Windows.Storage.Provider.StorageProviderHardlinkPolicy.Allowed">
-      <summary>하드 링크는 동일한 동기화 루트 내의 자리 표시자에서 허용 됩니다.</summary>
+      <summary>같은 동기화 루트 내에 있는 자리 표시자에는 하드 링크가 허용됩니다.</summary>
     </member>
     <member name="F:Windows.Storage.Provider.StorageProviderHardlinkPolicy.None">
-      <summary>하드 링크가 허용 되지 않습니다.</summary>
+      <summary>하드 링크가 허용되지 않습니다.</summary>
     </member>
     <member name="T:Windows.Storage.Provider.StorageProviderHydrationPolicy">
-      <summary>자리 표시자 파일에 대 한 파일 하이드레이션 정책 값의 열거형입니다. 하이드레이션 정책은 동기화 루트를 사용 하 여 자리 표시자 파일의 데이터 검색 동작을 사용자 지정할 수 있습니다.</summary>
+      <summary>자리 표시자 파일에 대한 파일 하이드레이션 정책 값의 열거형입니다. 하이드레이션 정책은 동기화 루트가 자리 표시자 파일의 데이터를 검색하기 위한 동작을 사용자 지정할 수 있게 해줍니다.</summary>
     </member>
     <member name="F:Windows.Storage.Provider.StorageProviderHydrationPolicy.AlwaysFull">
-      <summary>이를 선택 하 고 자리 표시자를 완전히 하이드레이션 하는 경우 플랫폼은 다음과 함께 실패 합니다. ERROR_CLOUD_FILE_INVALID_REQUEST.</summary>
+      <summary>이 옵션이 선택되고 자리 표시자가 완전히 하이드레이션될 수 없는 경우, 플랫폼은 ERROR_CLOUD_FILE_INVALID_REQUEST 오류로 인해 실패합니다.</summary>
     </member>
     <member name="F:Windows.Storage.Provider.StorageProviderHydrationPolicy.Full">
-      <summary>전체 하이드레이션 수행 됩니다. 요청을 완료 하기 전에 자리 표시자를 로컬에서 사용할 수 있는지 확인 합니다.</summary>
+      <summary>전체 하이드레이션이 수행됩니다. 요청을 완료하기 전에 자리 표시자를 로컬로 사용할 수 있는지 확인합니다.</summary>
     </member>
     <member name="F:Windows.Storage.Provider.StorageProviderHydrationPolicy.Partial">
-      <summary>하이드레이션은 사용자의 요청에 의해 수행 됩니다. 하이드레이션는 백그라운드에서 계속 진행 되지 않습니다.</summary>
+      <summary>사용자 요청 시 하이드레이션이 수행됩니다. 하이드레이션은 백그라운드로 계속되지 않습니다.</summary>
     </member>
     <member name="F:Windows.Storage.Provider.StorageProviderHydrationPolicy.Progressive">
-      <summary>주문형 hyrdration이 수행 됩니다. 하이드레이션가 완료 되지 않은 경우 백그라운드에서 계속 됩니다.</summary>
+      <summary>요청 시 하이드레이션이 수행됩니다. 하이드레이션 완료되지 않은 경우 백그라운드에서 계속됩니다.</summary>
     </member>
     <member name="T:Windows.Storage.Provider.StorageProviderHydrationPolicyModifier">
-      <summary>주 StorageProviderHydrationPolicy 사용할 정책 한정자를 제공 합니다.</summary>
+      <summary>기본 StorageProviderHydrationPolicy와 함께 사용할 정책 한정자를 제공합니다.</summary>
     </member>
     <member name="F:Windows.Storage.Provider.StorageProviderHydrationPolicyModifier.AutoDehydrationAllowed">
-      <summary>자동 파일 디하이드레이션이 허용 됩니다.</summary>
+      <summary>자동 파일 디하이드레이션이 허용됩니다.</summary>
     </member>
     <member name="F:Windows.Storage.Provider.StorageProviderHydrationPolicyModifier.None">
       <summary>한정자가 없습니다.</summary>
     </member>
     <member name="F:Windows.Storage.Provider.StorageProviderHydrationPolicyModifier.StreamingAllowed">
-      <summary>이 한정자를 사용 하면 플랫폼에서 동기화 공급자가 반환 하는 디스크에 데이터를 저장할 수 없습니다.</summary>
+      <summary>이 한정자는 플랫폼이 동기화 공급자에서 반환된 디스크에 데이터를 저장하도록 허용하지 않습니다.</summary>
     </member>
     <member name="F:Windows.Storage.Provider.StorageProviderHydrationPolicyModifier.ValidationRequired">
-      <summary>데이터를 파일로 하이드레이션 유효성 검사가 수행 됩니다.</summary>
+      <summary>데이터가 파일에 하이드레이션되면 데이터 유효성 검사가 수행됩니다.</summary>
     </member>
     <member name="T:Windows.Storage.Provider.StorageProviderInSyncPolicy">
-      <summary>동기화 루트에서 지 원하는 파일 및 디렉터리 특성을 포함 합니다.</summary>
+      <summary>동기화 루트에서 지원하는 파일과 디렉터리 특성을 포함합니다.</summary>
     </member>
     <member name="F:Windows.Storage.Provider.StorageProviderInSyncPolicy.Default">
       <summary>기본 동기화 정책 값입니다.</summary>
@@ -160,7 +160,7 @@
       <summary>파일의 숨겨진 특성입니다.</summary>
     </member>
     <member name="F:Windows.Storage.Provider.StorageProviderInSyncPolicy.FileLastWriteTime">
-      <summary>파일에 대해 마지막으로 쓴 시간입니다.</summary>
+      <summary>파일에 마지막으로 쓴 시간입니다.</summary>
     </member>
     <member name="F:Windows.Storage.Provider.StorageProviderInSyncPolicy.FileReadOnlyAttribute">
       <summary>파일의 읽기 전용 특성입니다.</summary>
@@ -169,83 +169,83 @@
       <summary>파일의 시스템 특성입니다.</summary>
     </member>
     <member name="F:Windows.Storage.Provider.StorageProviderInSyncPolicy.PreserveInsyncForSyncEngine">
-      <summary>동기화 엔진에 대해 예약 된 값입니다.</summary>
+      <summary>동기화 엔진에 예약된 값입니다.</summary>
     </member>
     <member name="T:Windows.Storage.Provider.StorageProviderItemProperties">
-      <summary>클라우드 저장소 공급자 저장소 항목의 속성 (예: 파일 또는 폴더)에 대 한 액세스를 제공 합니다.</summary>
+      <summary>클라우드 저장소 공급자 저장소 항목(예: 파일 또는 폴더)의 속성에 대한 액세스를 제공합니다.</summary>
     </member>
     <member name="M:Windows.Storage.Provider.StorageProviderItemProperties.SetAsync(Windows.Storage.IStorageItem,Windows.Foundation.Collections.IIterable{Windows.Storage.Provider.StorageProviderItemProperty})">
-      <summary>저장소 항목의 사용자 지정 속성 값을 설정 합니다.</summary>
+      <summary>저장소 항목의 사용자 지정 속성 값을 설정합니다.</summary>
       <param name="item">저장소 항목입니다.</param>
-      <param name="itemProperties">저장소 항목에 대 한 StorageProviderItemProperty 상태의 반복 가능한 목록입니다.</param>
-      <returns>비동기 작업입니다. 비동기 프로그래밍을 사용 하는 경우 반환 형식은 void입니다.</returns>
+      <param name="itemProperties">저장소 항목에 대한 StorageProviderItemProperty 상태의 반복 가능한 목록입니다.</param>
+      <returns>비동기 작업입니다. 비동기 프로그래밍을 사용하는 경우, 반환 유형은 void입니다.</returns>
     </member>
     <member name="T:Windows.Storage.Provider.StorageProviderItemProperty">
-      <summary>저장소 항목 (예: 파일 또는 폴더)에 대 한 클라우드 저장소 공급자 속성을 정의 합니다.</summary>
+      <summary>저장소 항목(예: 파일 또는 폴더)에 대한 클라우드 저장소 공급자 속성을 정의합니다.</summary>
     </member>
     <member name="M:Windows.Storage.Provider.StorageProviderItemProperty.#ctor">
       <summary>StorageProviderItemProperty 기본 생성자입니다.</summary>
     </member>
     <member name="P:Windows.Storage.Provider.StorageProviderItemProperty.IconResource">
-      <summary>클라우드 저장소 공급자 속성의 아이콘 리소스에 대 한 참조입니다.</summary>
-      <returns>아이콘 리소스에 대 한 참조의 문자열 값입니다. 예: "SyncProviderResources .dll,-1234"</returns>
+      <summary>클라우드 저장소 공급자 속성의 아이콘 리소스에 대한 참조입니다.</summary>
+      <returns>아이콘 리소스에 대한 참조의 문자열 값입니다. 예: "SyncProviderResources.dll, -1234"</returns>
     </member>
     <member name="P:Windows.Storage.Provider.StorageProviderItemProperty.Id">
-      <summary>클라우드 저장소 공급자가 제공 하는 저장소 항목의 Id입니다.</summary>
-      <returns>저장소 항목의 Id입니다.</returns>
+      <summary>클라우드 저장소 공급자가 제공한 저장소 항목의 ID입니다.</summary>
+      <returns>저장소 항목의 ID입니다.</returns>
     </member>
     <member name="P:Windows.Storage.Provider.StorageProviderItemProperty.Value">
-      <summary>저장소 공급자 저장소 항목의 상태에 대 한 설명 텍스트입니다.</summary>
+      <summary>저장소 공급자 저장소 항목의 상태에 대한 설명 텍스트입니다.</summary>
       <returns>텍스트의 문자열 값입니다.</returns>
     </member>
     <member name="T:Windows.Storage.Provider.StorageProviderItemPropertyDefinition">
-      <summary>클라우드 저장소 공급자의 항목 속성을 정의 합니다.</summary>
+      <summary>클라우드 저장소 공급자의 항목 속성을 정의합니다.</summary>
     </member>
     <member name="M:Windows.Storage.Provider.StorageProviderItemPropertyDefinition.#ctor">
       <summary>StorageProviderItemPropertyDefinition 기본 생성자입니다.</summary>
     </member>
     <member name="P:Windows.Storage.Provider.StorageProviderItemPropertyDefinition.DisplayNameResource">
-      <summary>클라우드 저장소 공급자 상태의 표시 이름을 가져오거나 설정 합니다.</summary>
+      <summary>클라우드 저장소 공급자 상태의 표시 이름을 가져오거나 설정합니다.</summary>
       <returns>상태 표시 이름의 문자열 값입니다.</returns>
     </member>
     <member name="P:Windows.Storage.Provider.StorageProviderItemPropertyDefinition.Id">
-      <summary>동기화 루트가 등록 될 때 클라우드 저장소 공급자가 제공 하는 저장소 항목의 Id입니다.</summary>
-      <returns>저장소 항목의 Id 번호입니다.</returns>
+      <summary>동기화 루트가 등록될 때 클라우드 저장소 공급자가 제공한 저장소 항목의 ID입니다.</summary>
+      <returns>저장소 항목의 ID 번호입니다.</returns>
     </member>
     <member name="T:Windows.Storage.Provider.StorageProviderPopulationPolicy">
-      <summary>동기화 공급자가 자리 표시자 파일이 나 디렉터리를 제어할 수 있도록 허용 합니다.</summary>
+      <summary>동기화 공급자가 자리 표시자 파일 또는 폴더의 사용 방법을 제어할 수 있도록 허용합니다.</summary>
     </member>
     <member name="F:Windows.Storage.Provider.StorageProviderPopulationPolicy.AlwaysFull">
-      <summary>플랫폼은 자리 표시자 파일 및 디렉터리를 항상 로컬에서 사용할 수 있다고 가정 합니다.</summary>
+      <summary>플랫폼은 자리 표시자 파일과 디렉터리를 항상 로컬로 사용할 수 있다고 가정합니다.</summary>
     </member>
     <member name="F:Windows.Storage.Provider.StorageProviderPopulationPolicy.Full">
-      <summary>자리 표시자 파일 또는 디렉터리가 완전히 채워지지 않은 경우 플랫폼은 사용자 요청을 완료 하기 전에 동기화 공급자가 해당 파일을 채우도록 요청 합니다.</summary>
+      <summary>자리 표시자 파일이나 디렉터리가 완벽하게 채워지지 않으면, 플랫폼은 사용자 요청을 완료하기 전에 동기화 공급자가 이를 채우도록 요청합니다.</summary>
     </member>
     <member name="T:Windows.Storage.Provider.StorageProviderProtectionMode">
-      <summary>동기화 루트에 포함 된 데이터의 형식을 나타냅니다.</summary>
+      <summary>동기화 루트에 포함된 데이터의 형식을 나타냅니다.</summary>
     </member>
     <member name="F:Windows.Storage.Provider.StorageProviderProtectionMode.Personal">
-      <summary>동기화 루트에는 암호화 되지 않은 개인 파일이 나 비즈니스 관련 파일이 포함 되어야 합니다.</summary>
+      <summary>동기화 루트에는 암호화되거나 비즈니스와 관련된 파일이 아닌 개인 파일만 포함되어 있어야 합니다.</summary>
     </member>
     <member name="F:Windows.Storage.Provider.StorageProviderProtectionMode.Unknown">
-      <summary>동기화 루트는 모든 형식의 파일을 포함할 수 있습니다.</summary>
+      <summary>동기화 루트는 모든 종류의 파일을 포함할 수 있습니다.</summary>
     </member>
     <member name="T:Windows.Storage.Provider.StorageProviderSyncRootInfo">
-      <summary>운영 체제에 등록할 클라우드 저장소 공급자의 동기화 루트 속성을 포함 합니다.</summary>
+      <summary>운영 체제에 등록할 클라우드 저장소 공급자의 동기화 루트 속성을 포함합니다.</summary>
     </member>
     <member name="M:Windows.Storage.Provider.StorageProviderSyncRootInfo.#ctor">
       <summary>StorageProviderSyncRootInfo 기본 생성자입니다.</summary>
     </member>
     <member name="P:Windows.Storage.Provider.StorageProviderSyncRootInfo.AllowPinning">
-      <summary>오프 라인에서 파일을 사용할 수 있도록 하는 기능을 사용 하거나 사용 하지 않도록 설정 합니다.</summary>
-      <returns>* * True * * 고정을 사용 하는 경우 * * False * * 그렇지 않으면</returns>
+      <summary>파일을 오프라인에서 사용할 수 있는 기능을 사용하거나 사용하지 않도록 설정합니다.</summary>
+      <returns>고정을 사용할 수 있으면 **True**이고, 그렇지 않으면 **False**입니다.</returns>
     </member>
     <member name="P:Windows.Storage.Provider.StorageProviderSyncRootInfo.Context">
-      <summary>동기화 루트 id 정보를 포함 합니다.</summary>
-      <returns>동기화 루트 id를 포함 하는 버퍼입니다.</returns>
+      <summary>동기화 루트 ID 정보를 포함합니다.</summary>
+      <returns>동기화 루트 ID를 포함하는 버퍼입니다.</returns>
     </member>
     <member name="P:Windows.Storage.Provider.StorageProviderSyncRootInfo.DisplayNameResource">
-      <summary>기존 동기화 루트 등록에 매핑되는 선택적 표시 이름입니다.</summary>
+      <summary>기존 동기화 루트 등록을 매핑하는 표시 이름(선택 사항)입니다.</summary>
       <returns>표시 이름입니다.</returns>
     </member>
     <member name="P:Windows.Storage.Provider.StorageProviderSyncRootInfo.FallbackFileTypeInfo">
@@ -256,7 +256,7 @@
     </member>
     <member name="P:Windows.Storage.Provider.StorageProviderSyncRootInfo.HardlinkPolicy">
       <summary>동기화 루트의 하드 링크 정책입니다.</summary>
-      <returns>정의 된 Storageprovider하드 Linkpolicy입니다.</returns>
+      <returns>정의된 StorageProviderHardlinkPolicy입니다.</returns>
     </member>
     <member name="P:Windows.Storage.Provider.StorageProviderSyncRootInfo.HydrationPolicy">
       <summary>동기화 루트 등록의 하이드레이션 정책입니다.</summary>
@@ -267,66 +267,66 @@
       <returns>저장소 공급자 하이드레이션 정책 한정자 열거형 값입니다.</returns>
     </member>
     <member name="P:Windows.Storage.Provider.StorageProviderSyncRootInfo.IconResource">
-      <summary>파일이 나 폴더의 사용자 지정 상태에 대 한 아이콘 리소스의 경로입니다.</summary>
-      <returns>아이콘 리소스의 경로 (예: "SyncProvider .dll,-100" 또는 "SyncProvider .dll,-101")</returns>
+      <summary>파일 또는 폴더의 사용자 정의 상태에 대한 아이콘 리소스의 경로입니다.</summary>
+      <returns>아이콘 리소스의 경로(예: "SyncProvider.dll,-100" 또는 "SyncProvider.dll,-101")입니다.</returns>
     </member>
     <member name="P:Windows.Storage.Provider.StorageProviderSyncRootInfo.Id">
       <summary>동기화 루트의 식별자입니다.</summary>
-      <returns>[저장소 공급자 ID]! 형식의 식별자입니다. [Windows SID]! [계정 ID]</returns>
+      <returns>식별자의 형식은 [Storage Provider ID]![Windows SID]![Account ID]와 같습니다.</returns>
     </member>
     <member name="P:Windows.Storage.Provider.StorageProviderSyncRootInfo.InSyncPolicy">
-      <summary>클라우드 저장소 공급자에 대 한 동기화 정책에 대 한 액세스를 제공 합니다.</summary>
+      <summary>클라우드 저장소 공급자의 동기화 정책에 대한 액세스를 제공합니다.</summary>
       <returns>동기화 정책 값입니다.</returns>
     </member>
     <member name="P:Windows.Storage.Provider.StorageProviderSyncRootInfo.Path">
-      <summary>클라우드 기반 폴더 시스템의 루트에 대 한 경로를 나타내는 저장소 폴더입니다.</summary>
+      <summary>클라우드 기반 폴더 시스템의 루트 경로를 나타내는 저장소 폴더입니다.</summary>
       <returns>저장소 폴더입니다.</returns>
     </member>
     <member name="P:Windows.Storage.Provider.StorageProviderSyncRootInfo.PopulationPolicy">
       <summary>동기화 루트 등록의 채우기 정책입니다.</summary>
-      <returns>모집단 정책 열거형 값입니다.</returns>
+      <returns>채우기 정책 열거형 값입니다.</returns>
     </member>
     <member name="P:Windows.Storage.Provider.StorageProviderSyncRootInfo.ProtectionMode">
       <summary>동기화 루트 등록의 보호 모드입니다.</summary>
-      <returns>보호 모드 열거 값입니다.</returns>
+      <returns>보호 모드 열거형 값입니다.</returns>
     </member>
     <member name="P:Windows.Storage.Provider.StorageProviderSyncRootInfo.ProviderId">
-      <summary>저장소 공급자의 ID를 나타내는 GUID를 가져오거나 설정 합니다.</summary>
+      <summary>저장소 공급자의 ID를 나타내는 GUID를 가져오거나 설정합니다.</summary>
       <returns>저장소 공급자의 ID를 나타내는 GUID입니다.</returns>
     </member>
     <member name="P:Windows.Storage.Provider.StorageProviderSyncRootInfo.RecycleBinUri">
-      <summary>클라우드 저장소 휴지통에 대 한 Uri입니다.</summary>
-      <returns>휴지통에 대 한 Uri입니다.</returns>
+      <summary>클라우드 저장소 휴지통에 대한 URI입니다.</summary>
+      <returns>휴지통에 대한 URI입니다.</returns>
     </member>
     <member name="P:Windows.Storage.Provider.StorageProviderSyncRootInfo.ShowSiblingsAsGroup">
-      <summary>파일 탐색기에서 주 동기화 루트 아래에 나열 된 형제 동기화 루트를 표시 합니다.</summary>
-      <returns>* * True * * 형제 동기화 루트가 표시 되 면 * * False * * 그렇지 않으면입니다.</returns>
+      <summary>파일 탐색기의 기본 동기화 루트 아래에 나열된 형제 동기화 루트를 표시합니다.</summary>
+      <returns>형제 동기화 루트가 표시되면 **True**이고, 그렇지 않으면 **False**입니다.</returns>
     </member>
     <member name="P:Windows.Storage.Provider.StorageProviderSyncRootInfo.StorageProviderItemPropertyDefinitions">
-      <summary>동기화 루트에 대 한 StorageProviderItemPropertyDefinition 정보를 가져옵니다.</summary>
+      <summary>동기화 루트에 대한 StorageProviderItemPropertyDefinition 정보를 가져옵니다.</summary>
       <returns>
       </returns>
     </member>
     <member name="P:Windows.Storage.Provider.StorageProviderSyncRootInfo.Version">
       <summary>동기화 루트의 버전 번호입니다.</summary>
-      <returns>버전 번호에 대 한 문자열 값입니다. 예: "1.0"</returns>
+      <returns>버전 번호의 문자열 값입니다. 예: "1.0"</returns>
     </member>
     <member name="T:Windows.Storage.Provider.StorageProviderSyncRootManager">
-      <summary>운영 체제에 클라우드 저장소 공급자 동기화 루트를 등록 하거나 등록을 취소 하는 기능을 제공 합니다.</summary>
+      <summary>클라우드 저장소 공급자 동기화 루트를 운영 체제에 등록 또는 등록 취소하는 기능을 제공합니다.</summary>
     </member>
     <member name="M:Windows.Storage.Provider.StorageProviderSyncRootManager.GetCurrentSyncRoots">
-      <summary>현재 등록 된 동기화 루트를 모두 가져옵니다.</summary>
-      <returns>현재 등록 된 동기화 루트의 컬렉션입니다.</returns>
+      <summary>현재 등록된 모든 동기화 루트를 가져옵니다.</summary>
+      <returns>현재 등록된 동기화 루트의 컬렉션입니다.</returns>
     </member>
     <member name="M:Windows.Storage.Provider.StorageProviderSyncRootManager.GetSyncRootInformationForFolder(Windows.Storage.IStorageFolder)">
-      <summary>저장소 폴더가 지정 된 경우 클라우드 저장소 공급자의 동기화 루트 속성을 반환 합니다.</summary>
+      <summary>저장소 폴더가 지정된 클라우드 저장소 공급자 동기화 루트의 속성을 반환합니다.</summary>
       <param name="folder">동기화 루트의 저장소 폴더입니다.</param>
-      <returns>지정 된 저장소 폴더에 대 한 클라우드 저장소 공급자의 동기화 루트 속성입니다.</returns>
+      <returns>지정된 저장소 폴더에 대한 클라우드 저장소 공급자 동기화 루트의 속성입니다.</returns>
     </member>
     <member name="M:Windows.Storage.Provider.StorageProviderSyncRootManager.GetSyncRootInformationForId(System.String)">
-      <summary>동기화 루트 Id가 지정 된 경우 클라우드 저장소 공급자의 동기화 루트 속성을 반환 합니다.</summary>
-      <param name="id">동기화 루트 Id의 문자열 값입니다.</param>
-      <returns>지정 된 동기화 루트의 속성입니다.</returns>
+      <summary>동기화 루트 ID가 지정된 클라우드 저장소 공급자 동기화 루트의 속성을 반환합니다.</summary>
+      <param name="id">동기화 루트 ID의 문자열 값입니다.</param>
+      <returns>지정된 동기화 루트에 대한 속성입니다.</returns>
     </member>
     <member name="M:Windows.Storage.Provider.StorageProviderSyncRootManager.IsSupported">
       <summary>
@@ -335,24 +335,24 @@
       </returns>
     </member>
     <member name="M:Windows.Storage.Provider.StorageProviderSyncRootManager.Register(Windows.Storage.Provider.StorageProviderSyncRootInfo)">
-      <summary>운영 체제에 동기화 루트를 등록 합니다.</summary>
+      <summary>운영 체제에 동기화 루트를 등록합니다.</summary>
       <param name="syncRootInformation">등록할 동기화 루트입니다.</param>
     </member>
     <member name="M:Windows.Storage.Provider.StorageProviderSyncRootManager.Unregister(System.String)">
-      <summary>운영 체제에서 동기화 루트의 등록을 취소 합니다.</summary>
-      <param name="id">등록을 취소할 동기화 루트의 Id입니다.</param>
+      <summary>운영 체제에서 동기화 루트를 등록 취소합니다.</summary>
+      <param name="id">등록 취소할 동기화 루트의 ID입니다.</param>
     </member>
     <member name="T:Windows.Storage.Provider.StorageProviderUriSourceStatus">
-      <summary>저장소 공급자 URI의 상태를 열거 합니다.</summary>
+      <summary>저장소 공급자 URI의 상태에 대한 열거형입니다.</summary>
     </member>
     <member name="F:Windows.Storage.Provider.StorageProviderUriSourceStatus.FileNotFound">
-      <summary>동기화 공급자가 URI를 인식할 수 없습니다.</summary>
+      <summary>URI가 동기화 공급자에서 인식되지 않습니다.</summary>
     </member>
     <member name="F:Windows.Storage.Provider.StorageProviderUriSourceStatus.NoSyncRoot">
-      <summary>URI 원본에 등록 된 동기화 루트가 없습니다.</summary>
+      <summary>URI 원본에 등록된 동기 루트가 없습니다.</summary>
     </member>
     <member name="F:Windows.Storage.Provider.StorageProviderUriSourceStatus.Success">
-      <summary>저장소 공급자 ID가 있습니다.</summary>
+      <summary>저장소 공급자 ID가 존재합니다.</summary>
     </member>
   </members>
 </doc>

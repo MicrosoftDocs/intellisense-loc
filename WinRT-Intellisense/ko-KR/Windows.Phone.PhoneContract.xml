@@ -1,97 +1,97 @@
 <?xml version="1.0" encoding="utf-8"?>
 <doc>
   <assembly>
-    <name>PhoneContract</name>
+    <name>Windows.Phone.PhoneContract</name>
   </assembly>
   <members>
     <member name="T:Windows.ApplicationModel.CameraApplicationManager">
-      <summary>앱이 장치에 설치 된 모든 렌즈 앱을 표시 하는 대화 상자를 시작 하 고 사용자가이를 신속 하 게 전환할 수 있도록 합니다.</summary>
+      <summary>앱에서 장치에 설치된 모든 렌즈 앱을 표시하는 대화 상자를 시작할 수 있으며 사용자가 앱 간을 빠르게 전환할 수 있습니다.</summary>
     </member>
     <member name="M:Windows.ApplicationModel.CameraApplicationManager.ShowInstalledApplicationsUI">
-      <summary>장치에 설치 된 모든 렌즈 앱을 표시 하 고 사용자가이를 신속 하 게 전환할 수 있는 대화 상자를 시작 합니다.</summary>
+      <summary>앱에서 장치에 설치된 모든 렌즈 앱을 표시하는 대화 상자를 시작하며 사용자가 앱 간을 빠르게 전환할 수 있습니다.</summary>
     </member>
     <member name="T:Windows.Media.Capture.ScreenCapture">
-      <summary>앱이 장치에 표시 되는 콘텐츠의 오디오 및 비디오를 캡처할 수 있도록 합니다.</summary>
+      <summary>장치에 표시 중인 콘텐츠의 오디오 및 비디오를 앱에서 캡처할 수 있습니다.</summary>
     </member>
     <member name="P:Windows.Media.Capture.ScreenCapture.AudioSource">
-      <summary>화면 캡처에 사용 되는 오디오 원본을 가져옵니다.</summary>
-      <returns>화면 캡처에 사용 되는 오디오 원본입니다.</returns>
+      <summary>화면 캡처에 사용할 오디오 소스를 가져옵니다.</summary>
+      <returns>화면 캡처에 사용되는 오디오 소스입니다.</returns>
     </member>
     <member name="P:Windows.Media.Capture.ScreenCapture.IsAudioSuspended">
-      <summary>오디오의 화면 캡처가 현재 일시 중단 되었는지 여부를 가져옵니다.</summary>
-      <returns>화면 캡처 오디오가 현재 일시 중단 되었는지 여부를 나타냅니다.</returns>
+      <summary>오디오 화면 캡처가 현재 중지된 상태인지 여부를 가져옵니다.</summary>
+      <returns>화면 캡처 오디오가 현재 일시 중단된 상태인지 여부입니다.</returns>
     </member>
     <member name="P:Windows.Media.Capture.ScreenCapture.IsVideoSuspended">
-      <summary>비디오의 화면 캡처가 현재 일시 중단 되었는지 여부를 가져옵니다.</summary>
-      <returns>비디오의 화면 캡처가 현재 일시 중단 되었는지 여부를 나타냅니다.</returns>
+      <summary>비디오 화면 캡처가 현재 중지된 상태인지 여부를 가져옵니다.</summary>
+      <returns>비디오 화면 캡처가 현재 일시 중단된 상태인지 여부입니다.</returns>
     </member>
     <member name="P:Windows.Media.Capture.ScreenCapture.VideoSource">
-      <summary>화면 캡처에 사용 되는 비디오 원본을 가져옵니다.</summary>
-      <returns>화면 캡처에 사용 되는 비디오 원본입니다.</returns>
+      <summary>화면 캡처에 사용되는 비디오 소스를 가져옵니다.</summary>
+      <returns>화면 캡처에 사용되는 비디오 소스입니다.</returns>
     </member>
     <member name="E:Windows.Media.Capture.ScreenCapture.SourceSuspensionChanged">
-      <summary>화면이 캡처된 후 오디오나 비디오가 변경 될 때 발생 합니다.</summary>
+      <summary>화면이 캡처된 오디오 또는 비디오의 일시 중단이 변경될 때 발생합니다.</summary>
     </member>
     <member name="M:Windows.Media.Capture.ScreenCapture.GetForCurrentView">
-      <summary>응용 프로그램의 현재 뷰와 연결 된 ScreenCapture 개체를 가져옵니다.</summary>
-      <returns>앱의 현재 뷰와 연결 된 ScreenCapture 개체입니다.</returns>
+      <summary>앱의 현재 보기와 연결된 ScreenCapture 개체를 가져옵니다.</summary>
+      <returns>앱의 현재 보기와 연결된 ScreenCapture 개체입니다.</returns>
     </member>
     <member name="T:Windows.Media.Capture.SourceSuspensionChangedEventArgs">
-      <summary>오디오나 비디오의 캡처가 일시 중단 되거나 다시 시작 될 때 트리거되는 SourceSuspensionChanged 이벤트에 대 한 정보를 제공 합니다.</summary>
+      <summary>오디오 또는 비디오의 캡처가 일시 중지되거나 다시 시작될 때 트리거되는 SourceSuspensionChanged 이벤트에 대한 정보를 제공합니다.</summary>
     </member>
     <member name="P:Windows.Media.Capture.SourceSuspensionChangedEventArgs.IsAudioSuspended">
-      <summary>오디오의 화면 캡처가 현재 일시 중단 되었는지 여부를 가져옵니다.</summary>
-      <returns>오디오 화면 캡처가 현재 일시 중단 되었는지 여부를 나타냅니다.</returns>
+      <summary>오디오 화면 캡처가 현재 중지된 상태인지 여부를 가져옵니다.</summary>
+      <returns>오디오 화면 캡처가 현재 일시 중단된 상태인지 여부입니다.</returns>
     </member>
     <member name="P:Windows.Media.Capture.SourceSuspensionChangedEventArgs.IsVideoSuspended">
-      <summary>오디오의 화면 캡처가 현재 일시 중단 되었는지 여부를 가져옵니다.</summary>
-      <returns>오디오 화면 캡처가 현재 일시 중단 되었는지 여부를 나타냅니다.</returns>
+      <summary>오디오 화면 캡처가 현재 중지된 상태인지 여부를 가져옵니다.</summary>
+      <returns>오디오 화면 캡처가 현재 일시 중단된 상태인지 여부입니다.</returns>
     </member>
     <member name="T:Windows.Media.Effects.SlowMotionEffectDefinition">
-      <summary>저속 동작 효과 정의를 나타냅니다.</summary>
+      <summary>느린 동작 효과 정의를 나타냅니다.</summary>
     </member>
     <member name="M:Windows.Media.Effects.SlowMotionEffectDefinition.#ctor">
-      <summary>SlowMotionEffectDefinition 개체의 새 인스턴스를 만들고 초기화 합니다.</summary>
+      <summary>SlowMotionEffectDefinition 개체의 새 인스턴스를 만들어 초기화합니다.</summary>
     </member>
     <member name="P:Windows.Media.Effects.SlowMotionEffectDefinition.ActivatableClassId">
-      <summary>속도가 낮은 동작 효과 정의의 활성화 가능한 클래스 ID를 가져옵니다.</summary>
-      <returns>운영 체제의 런타임 클래스 식별자입니다 (예: "SlowMotionEffectDefinition").</returns>
+      <summary>느린 동작 효과 정의의 활성화 가능 클래스 ID를 가져옵니다.</summary>
+      <returns>"Windows.Media.Effects.SlowMotionEffectDefinition" 등의 운영 체제의 런타임 클래스 식별자입니다.</returns>
     </member>
     <member name="P:Windows.Media.Effects.SlowMotionEffectDefinition.Properties">
-      <summary>SlowMotionEffectDefinition 개체를 구성 하기 위한 속성 집합을 가져옵니다.</summary>
-      <returns>SlowMotionEffectDefinition 개체를 구성 하기 위한 속성의 집합입니다.</returns>
+      <summary>SlowMotionEffectDefinition 개체를 구성하는 속성 집합을 가져옵니다.</summary>
+      <returns>SlowMotionEffectDefinition 개체를 구성하는 속성 집합입니다.</returns>
     </member>
     <member name="P:Windows.Media.Effects.SlowMotionEffectDefinition.TimeStretchRate">
-      <summary>현재 시간 스트레치 율을 가져오거나 설정 합니다.</summary>
-      <returns>현재 시간 스트레치 율입니다.</returns>
+      <summary>현재 시간 늘이기 비율을 가져오거나 설정합니다.</summary>
+      <returns>현재 시간 늘이기 비율입니다.</returns>
     </member>
     <member name="T:Windows.Media.SpeechRecognition.VoiceCommandManager">
-      <summary>VCD (음성 명령 정의) 파일에서 명령 집합을 설치 하 고 설치 된 명령 집합에 액세스할 수 있도록 하는 정적 클래스입니다.</summary>
+      <summary>VCD(Voice Command Definition) 파일에서 명령 집합을 설치하고 설치된 명령 집합에 액세스할 수 있도록 하는 정적 클래스입니다.</summary>
     </member>
     <member name="P:Windows.Media.SpeechRecognition.VoiceCommandManager.InstalledCommandSets">
-      <summary>파일에 이름 특성이 설정 된 모든 설치 된 명령 집합을 포함 하는 사전입니다.</summary>
-      <returns>VCD (음성 명령 정의) 파일에 이름 특성이 설정 된 설치 된 명령 집합의 사전입니다.</returns>
+      <summary>Name 특성이 파일에 설정된 모든 설치된 명령 집합을 포함하는 사전입니다.</summary>
+      <returns>VCD(Voice Command Definition) 파일에 Name 특성이 설정된 설치된 명령 집합의 사전입니다.</returns>
     </member>
     <member name="M:Windows.Media.SpeechRecognition.VoiceCommandManager.InstallCommandSetsFromStorageFileAsync(Windows.Storage.StorageFile)">
-      <summary>파일에 CommandSet 요소를 설치 합니다.</summary>
-      <param name="file">VCD (음성 명령 정의) 파일을 나타내는 개체입니다.</param>
+      <summary>파일에 CommandSet 요소를 설치합니다.</summary>
+      <param name="file">VCD(Voice Command Definition) 파일을 나타내는 개체입니다.</param>
       <returns>비동기 작업입니다.</returns>
     </member>
     <member name="T:Windows.Media.SpeechRecognition.VoiceCommandSet">
-      <summary>설치 된 특정 명령 집합에서 작업을 사용 하도록 설정 합니다.</summary>
+      <summary>특정한 설치된 명령 집합에서 작업을 사용하도록 설정합니다.</summary>
     </member>
     <member name="P:Windows.Media.SpeechRecognition.VoiceCommandSet.Language">
-      <summary>파일에서 CommandSet 요소의 language (xml: lang) 값을 가져옵니다.</summary>
-      <returns>명령 집합의 언어 (xml: lang)입니다.</returns>
+      <summary>파일의 CommandSet 요소에서 언어(xml:lang) 값을 가져옵니다.</summary>
+      <returns>명령 집합의 언어(xml:lang)입니다.</returns>
     </member>
     <member name="P:Windows.Media.SpeechRecognition.VoiceCommandSet.Name">
-      <summary>파일에서 CommandSet 요소의 Name 특성 값을 가져옵니다.</summary>
-      <returns>CommandSet 요소의 Name 특성 값입니다.</returns>
+      <summary>파일의 CommandSet 요소에서 Name 특성 값을 가져옵니다.</summary>
+      <returns>CommandSet 요소의 이름 특성 값입니다.</returns>
     </member>
     <member name="M:Windows.Media.SpeechRecognition.VoiceCommandSet.SetPhraseListAsync(System.String,Windows.Foundation.Collections.IIterable{System.String})">
-      <summary>PhraseList 요소를 항목 요소의 배열로 채웁니다.</summary>
-      <param name="phraseListName">PhraseList 요소의 label 특성에 해당 하는 문자열입니다.</param>
-      <param name="phraseList">PhraseList 요소에 항목 요소로 추가 되는 값의 문자열 배열입니다.</param>
+      <summary>항목 요소의 배열로 PhraseList 요소를 채웁니다.</summary>
+      <param name="phraseListName">PhraseList 요소의 레이블 특성에 해당하는 문자열입니다.</param>
+      <param name="phraseList">PhraseList 요소에 항목 요소로 추가될 값의 문자열 배열입니다.</param>
       <returns>비동기 작업입니다.</returns>
     </member>
     <member name="T:Windows.Phone.PhoneContract">
@@ -99,107 +99,107 @@
       </summary>
     </member>
     <member name="T:Windows.Phone.ApplicationModel.ApplicationProfile">
-      <summary>앱에 대 한 프로필 정보를 제공 합니다.</summary>
+      <summary>앱에 대한 프로필 정보를 제공합니다.</summary>
     </member>
     <member name="P:Windows.Phone.ApplicationModel.ApplicationProfile.Modes">
-      <summary>앱이 실행 되는 모드를 나타내는 값을 가져옵니다.</summary>
-      <returns>앱이 실행 되는 모드를 나타내는 값입니다.</returns>
+      <summary>앱이 실행 중인 모드를 나타내는 값을 가져옵니다.</summary>
+      <returns>앱이 실행 중인 모드를 나타내는 값입니다.</returns>
     </member>
     <member name="T:Windows.Phone.ApplicationModel.ApplicationProfileModes">
-      <summary>앱이 실행 되는 모드를 나타냅니다.</summary>
+      <summary>앱이 실행 중인 모드를 나타냅니다.</summary>
     </member>
     <member name="F:Windows.Phone.ApplicationModel.ApplicationProfileModes.Alternate">
-      <summary>앱이 대체 모드로 실행 되 고 있습니다.</summary>
+      <summary>앱이 대체 모드로 실행됩니다.</summary>
     </member>
     <member name="F:Windows.Phone.ApplicationModel.ApplicationProfileModes.Default">
-      <summary>앱이 기본 모드로 실행 되 고 있습니다.</summary>
+      <summary>앱이 기본 모드로 실행됩니다.</summary>
     </member>
     <member name="T:Windows.Phone.Devices.Notification.VibrationDevice">
-      <summary>휴대폰을 Vibrates 합니다.</summary>
+      <summary>전화기를 진동시킵니다.</summary>
     </member>
     <member name="M:Windows.Phone.Devices.Notification.VibrationDevice.Cancel">
-      <summary>휴대폰의 진동을 중지 합니다.</summary>
+      <summary>전화의 진동을 중지합니다.</summary>
     </member>
     <member name="M:Windows.Phone.Devices.Notification.VibrationDevice.GetDefault">
       <summary>VibrationDevice 클래스의 인스턴스를 가져옵니다.</summary>
       <returns>기본 VibrationDevice 인스턴스입니다.</returns>
     </member>
     <member name="M:Windows.Phone.Devices.Notification.VibrationDevice.Vibrate(Windows.Foundation.TimeSpan)">
-      <summary>지정 된 기간 (0 ~ 5 초) 동안 전화를 Vibrates 합니다.</summary>
-      <param name="duration">전화 vibrates 기간 (0 ~ 5 초)입니다. 0 보다 작거나 5 보다 큰 값은 예외를 발생 시킵니다.</param>
+      <summary>지정한 시간(0 ~ 5초)동안 전화기를 진동시킵니다.</summary>
+      <param name="duration">전화기가 진동하는 시간(0~5초)입니다. 값이 0보다 작거나 5보다 크면 예외가 발생합니다.</param>
     </member>
     <member name="T:Windows.Phone.Devices.Power.Battery">
-      <summary>휴대폰의 배터리 상태에 대 한 정보를 제공 합니다.</summary>
+      <summary>전화 배터리의 상태에 대한 정보를 제공합니다.</summary>
     </member>
     <member name="P:Windows.Phone.Devices.Power.Battery.RemainingChargePercent">
-      <summary>휴대폰의 배터리에 남아 있는 충전 비율을 나타내는 값을 가져옵니다.</summary>
-      <returns>휴대폰의 배터리에서 남은 청구 비율을 나타내는 0에서 100 사이의 값입니다.</returns>
+      <summary>전화 배터리에 남은 충전량의 백분율을 나타내는 값을 가져옵니다.</summary>
+      <returns>전화 배터리에 남은 충전량의 백분율을 나타내는 0에서 100까지의 값입니다.</returns>
     </member>
     <member name="P:Windows.Phone.Devices.Power.Battery.RemainingDischargeTime">
-      <summary>휴대폰의 배터리가 완전히 discharged 때까지 남은 시간을 예상 하는 값을 가져옵니다. 각 단위 값은 100 나노초를 나타냅니다.</summary>
-      <returns>전화의 배터리가 완전히 discharged 때까지 남은 시간을 예상 하는 값입니다. 각 단위 값은 100 나노초를 나타냅니다.</returns>
+      <summary>전화 배터리가 완전히 방전될 때까지 남은 시간(초)을 예상하는 값을 가져옵니다. 각 단위 값은 100나노초를 나타냅니다.</summary>
+      <returns>전화 배터리가 완전히 방전될 때까지 남은 시간(초)을 예상하는 값입니다. 각 단위 값은 100나노초를 나타냅니다.</returns>
     </member>
     <member name="E:Windows.Phone.Devices.Power.Battery.RemainingChargePercentChanged">
-      <summary>RemainingChargePercent의 값이 1% 감소 하는 경우 발생 합니다.</summary>
+      <summary>RemainingChargePercent의 값이 1%씩 낮아질 때마다 발생합니다.</summary>
     </member>
     <member name="M:Windows.Phone.Devices.Power.Battery.GetDefault">
-      <summary>휴대폰에 대 한 기본 배터리 개체를 가져옵니다.</summary>
-      <returns>휴대폰에 대 한 기본 배터리 개체입니다.</returns>
+      <summary>휴대폰의의 기본 Battery 개체를 가져옵니다.</summary>
+      <returns>휴대폰의 기본 Battery 개체입니다.</returns>
     </member>
     <member name="T:Windows.Phone.Management.Deployment.Enterprise">
-      <summary>사용자가 회사 앱을 설치 하도록 등록 하거나 사용자가 등록을 취소할 수 있는 엔터프라이즈를 나타냅니다.</summary>
+      <summary>사용자가 회사 앱을 설치하기 위해 등록할 수 있거나 사용자가 등록을 취소할 수 있는 엔터프라이즈를 나타냅니다.</summary>
     </member>
     <member name="P:Windows.Phone.Management.Deployment.Enterprise.EnrollmentValidFrom">
-      <summary>엔터프라이즈의 사용자 등록이 유효한 시작 날짜를 가져옵니다.</summary>
-      <returns>엔터프라이즈의 사용자 등록이 유효한 시작 날짜입니다.</returns>
+      <summary>엔터프라이즈에서 사용자의 등록이 유효한 시작 날짜를 가져옵니다.</summary>
+      <returns>엔터프라이즈에서 사용자의 등록이 유효한 시작 날짜입니다.</returns>
     </member>
     <member name="P:Windows.Phone.Management.Deployment.Enterprise.EnrollmentValidTo">
-      <summary>엔터프라이즈의 사용자 등록이 유효한 때 까지의 종료 날짜를 가져옵니다.</summary>
-      <returns>엔터프라이즈에서 사용자의 등록이 유효한 때 까지의 종료 날짜입니다.</returns>
+      <summary>엔터프라이즈에서 사용자의 등록이 유효한 끝 날짜를 가져옵니다.</summary>
+      <returns>엔터프라이즈에서 사용자의 등록이 유효한 끝 날짜입니다.</returns>
     </member>
     <member name="P:Windows.Phone.Management.Deployment.Enterprise.Id">
-      <summary>엔터프라이즈 인증서에 표시 되는 엔터프라이즈의 고유 ID를 가져옵니다.</summary>
-      <returns>엔터프라이즈 인증서에 표시 되는 엔터프라이즈의 고유한 ID입니다.</returns>
+      <summary>엔터프라이즈 인증서에 나타나는 엔터프라이즈의 고유 ID를 가져옵니다.</summary>
+      <returns>엔터프라이즈 인증서에 나타나는 엔터프라이즈의 고유 ID입니다.</returns>
     </member>
     <member name="P:Windows.Phone.Management.Deployment.Enterprise.Name">
-      <summary>엔터프라이즈 인증서에 표시 되는 엔터프라이즈의 이름을 가져옵니다.</summary>
-      <returns>엔터프라이즈 인증서에 표시 되는 엔터프라이즈의 이름입니다.</returns>
+      <summary>엔터프라이즈 인증서에 나타나는 엔터프라이즈 이름을 가져옵니다.</summary>
+      <returns>엔터프라이즈 인증서에 나타나는 엔터프라이즈 이름입니다.</returns>
     </member>
     <member name="P:Windows.Phone.Management.Deployment.Enterprise.Status">
       <summary>엔터프라이즈에서 사용자의 현재 등록 상태를 가져옵니다.</summary>
-      <returns>회사의 사용자 등록에 대 한 현재 상태입니다.</returns>
+      <returns>엔터프라이즈에서 사용자의 현재 등록 상태입니다.</returns>
     </member>
     <member name="P:Windows.Phone.Management.Deployment.Enterprise.WorkplaceId">
-      <summary>엔터프라이즈 인증서에 표시 되는 엔터프라이즈의 고유 ID를 가져옵니다.</summary>
-      <returns>엔터프라이즈 인증서에 표시 되는 엔터프라이즈의 고유한 ID입니다.</returns>
+      <summary>엔터프라이즈 인증서에 나타나는 엔터프라이즈의 고유 ID를 가져옵니다.</summary>
+      <returns>엔터프라이즈 인증서에 나타나는 엔터프라이즈의 고유 ID입니다.</returns>
     </member>
     <member name="T:Windows.Phone.Management.Deployment.EnterpriseEnrollmentManager">
-      <summary>기업에서 등록을 관리 합니다.</summary>
+      <summary>엔터프라이즈에서 등록을 관리합니다.</summary>
     </member>
     <member name="P:Windows.Phone.Management.Deployment.EnterpriseEnrollmentManager.CurrentEnterprise">
-      <summary>현재 앱에 대해 등록 된 엔터프라이즈를 가져옵니다.</summary>
-      <returns>현재 앱에 대해 등록 된 엔터프라이즈입니다.</returns>
+      <summary>현재 앱에 대해 등록된 엔터프라이즈를 가져옵니다.</summary>
+      <returns>현재 앱에 대해 등록된 엔터프라이즈입니다.</returns>
     </member>
     <member name="P:Windows.Phone.Management.Deployment.EnterpriseEnrollmentManager.EnrolledEnterprises">
-      <summary>사용자가 등록 된 모든 회사의 목록을 가져옵니다.</summary>
-      <returns>사용자가 등록 된 모든 엔터프라이즈의 목록입니다.</returns>
+      <summary>사용자가 등록한 모든 엔터프라이즈 목록을 가져옵니다.</summary>
+      <returns>사용자가 등록한 모든 엔터프라이즈 목록입니다.</returns>
     </member>
     <member name="M:Windows.Phone.Management.Deployment.EnterpriseEnrollmentManager.RequestEnrollmentAsync(System.String)">
-      <summary>Uri로 식별 되는 엔터프라이즈를 등록 하거나 다시 등록 합니다.</summary>
-      <param name="enrollmentToken">등록할 엔터프라이즈에 대 한 Uri입니다.</param>
-      <returns>등록 작업의 결과를 보고 하는 비동기 작업입니다.</returns>
+      <summary>URI로 식별되는 엔터프라이즈를 등록 또는 다시 등록합니다.</summary>
+      <param name="enrollmentToken">등록할 엔터프라이즈의 URI입니다.</param>
+      <returns>등록 작업의 결과 보고하는 비동기 작업입니다.</returns>
     </member>
     <member name="M:Windows.Phone.Management.Deployment.EnterpriseEnrollmentManager.RequestUnenrollmentAsync(Windows.Phone.Management.Deployment.Enterprise)">
-      <summary>Uri로 식별 되는 엔터프라이즈를 등록 취소 합니다.</summary>
-      <param name="enterprise">등록을 취소할 엔터프라이즈의 Uri입니다.</param>
-      <returns>등록 작업의 결과를 보고 하는 비동기 작업입니다.</returns>
+      <summary>URI로 식별되는 엔터프라이즈에 대한 등록을 취소합니다.</summary>
+      <param name="enterprise">등록을 취소할 엔터프라이즈의 URI입니다.</param>
+      <returns>등록 작업의 결과 보고하는 비동기 작업입니다.</returns>
     </member>
     <member name="M:Windows.Phone.Management.Deployment.EnterpriseEnrollmentManager.ValidateEnterprisesAsync">
-      <summary>사용자의 엔터프라이즈 등록 유효성을 검사 하는 연결을 트리거합니다.</summary>
+      <summary>사용자의 엔터프라이즈 등록 유효성을 검사하는 연결을 트리거합니다.</summary>
       <returns>유효성 검사를 나타내는 비동기 작업입니다.</returns>
     </member>
     <member name="T:Windows.Phone.Management.Deployment.EnterpriseEnrollmentResult">
-      <summary>사용자가 시작한 등록 작업의 상태를 보고 합니다.</summary>
+      <summary>사용자가 시작한 등록 작업의 상태를 보고합니다.</summary>
     </member>
     <member name="P:Windows.Phone.Management.Deployment.EnterpriseEnrollmentResult.EnrolledEnterprise">
       <summary>사용자가 등록을 시작한 엔터프라이즈를 가져옵니다.</summary>
@@ -210,132 +210,132 @@
       <returns>사용자가 시작한 등록 작업의 상태입니다.</returns>
     </member>
     <member name="T:Windows.Phone.Management.Deployment.EnterpriseEnrollmentStatus">
-      <summary>회사의 사용자 등록 상태를 보고 합니다.</summary>
+      <summary>엔터프라이즈에서 사용자의 등록 상태를 보고합니다.</summary>
     </member>
     <member name="F:Windows.Phone.Management.Deployment.EnterpriseEnrollmentStatus.CancelledByUser">
-      <summary>사용자가 등록을 취소 했습니다.</summary>
+      <summary>사용자가 등록을 취소했습니다.</summary>
     </member>
     <member name="F:Windows.Phone.Management.Deployment.EnterpriseEnrollmentStatus.Success">
-      <summary>등록에 성공 했습니다.</summary>
+      <summary>등록에 성공했습니다.</summary>
     </member>
     <member name="F:Windows.Phone.Management.Deployment.EnterpriseEnrollmentStatus.UnknownFailure">
-      <summary>등록에서 예기치 않은 문제가 발생 했습니다.</summary>
+      <summary>등록 중 예기치 않은 문제가 발생했습니다.</summary>
     </member>
     <member name="T:Windows.Phone.Management.Deployment.EnterpriseStatus">
-      <summary>회사의 사용자 등록에 대 한 현재 상태를 지정 합니다.</summary>
+      <summary>엔터프라이즈에서 사용자의 현재 등록 상태를 지정합니다.</summary>
     </member>
     <member name="F:Windows.Phone.Management.Deployment.EnterpriseStatus.Disabled">
-      <summary>마지막 등록 검사 이후 너무 많은 시간이 경과 하 여 등록이 사용 하지 않도록 설정 되었습니다.</summary>
+      <summary>마지막 등록 확인 후 너무 많은 시간이 경과하여 등록이 해제되었습니다.</summary>
     </member>
     <member name="F:Windows.Phone.Management.Deployment.EnterpriseStatus.Enrolled">
-      <summary>사용자가 엔터프라이즈에 등록 되어 있고 등록이 활성화 되어 있습니다.</summary>
+      <summary>사용자가 엔터프라이즈에 등록했으며 등록이 현재 활성화 상태입니다.</summary>
     </member>
     <member name="F:Windows.Phone.Management.Deployment.EnterpriseStatus.Expired">
-      <summary>엔터프라이즈 인증서가 만료 되어 더 이상 유효 하지 않습니다.</summary>
+      <summary>엔터프라이즈 인증서가 만료되어 더 이상 유효하지 않습니다.</summary>
     </member>
     <member name="F:Windows.Phone.Management.Deployment.EnterpriseStatus.Revoked">
-      <summary>엔터프라이즈 등록이 해지 되었습니다.</summary>
+      <summary>엔터프라이즈 등록이 해지되었습니다.</summary>
     </member>
     <member name="T:Windows.Phone.Management.Deployment.InstallationManager">
-      <summary>휴대폰에 대 한 응용 프로그램 설치를 관리 합니다.</summary>
+      <summary>전화의 응용 프로그램 설치를 관리합니다.</summary>
     </member>
     <member name="M:Windows.Phone.Management.Deployment.InstallationManager.AddPackageAsync(System.String,Windows.Foundation.Uri)">
-      <summary>앱 제목 및 위치 URI로 지정 된 앱에 대 한 설치 프로세스를 시작 합니다.</summary>
-      <param name="title">설치할 응용 프로그램의 이름입니다.</param>
-      <param name="sourceLocation">설치할 응용 프로그램의 URI 위치입니다.</param>
+      <summary>앱 제목 및 위치 URI로 지정된 앱의 설치 프로세스를 시작합니다.</summary>
+      <param name="title">설치할 앱의 이름입니다.</param>
+      <param name="sourceLocation">설치할 앱의 URI 위치입니다.</param>
       <returns>설치 프로세스를 나타내는 비동기 작업입니다.</returns>
     </member>
     <member name="M:Windows.Phone.Management.Deployment.InstallationManager.AddPackageAsync(System.String,Windows.Foundation.Uri,System.String,System.String,Windows.Foundation.Uri)">
-      <summary>이 API는 사용자 코드에서 직접 사용 하기 위한 것이 아닙니다.</summary>
-      <param name="title">이 API는 사용자 코드에서 직접 사용 하기 위한 것이 아닙니다.</param>
-      <param name="sourceLocation">이 API는 사용자 코드에서 직접 사용 하기 위한 것이 아닙니다.</param>
-      <param name="instanceId">이 API는 사용자 코드에서 직접 사용 하기 위한 것이 아닙니다.</param>
-      <param name="offerId">이 API는 사용자 코드에서 직접 사용 하기 위한 것이 아닙니다.</param>
-      <param name="license">이 API는 사용자 코드에서 직접 사용 하기 위한 것이 아닙니다.</param>
-      <returns>이 API는 사용자 코드에서 직접 사용 하기 위한 것이 아닙니다.</returns>
+      <summary>이 API는 사용자 코드에서 직접 사용할 수 없습니다.</summary>
+      <param name="title">이 API는 사용자 코드에서 직접 사용할 수 없습니다.</param>
+      <param name="sourceLocation">이 API는 사용자 코드에서 직접 사용할 수 없습니다.</param>
+      <param name="instanceId">이 API는 사용자 코드에서 직접 사용할 수 없습니다.</param>
+      <param name="offerId">이 API는 사용자 코드에서 직접 사용할 수 없습니다.</param>
+      <param name="license">이 API는 사용자 코드에서 직접 사용할 수 없습니다.</param>
+      <returns>이 API는 사용자 코드에서 직접 사용할 수 없습니다.</returns>
     </member>
     <member name="M:Windows.Phone.Management.Deployment.InstallationManager.FindPackages">
-      <summary>모든 사용자에 게 설치 된 모든 패키지에 대 한 정보를 검색 합니다.</summary>
-      <returns>메서드가 성공 하면 패키지 개체의 열거 가능한 컬렉션이 반환 됩니다. 이 컬렉션의 각 패키지 개체에는 이름, 게시자, 버전 및 설치 위치를 비롯 하 여 패키지에 대 한 정보가 포함 되어 있습니다.</returns>
+      <summary>모든 사용자에 대해 설치된 모든 패키지에 대한 정보를 검색합니다.</summary>
+      <returns>메서드가 성공하면 패키지 개체의 열거 가능한 컬렉션이 반환됩니다. 이 컬렉션의 각 패키지 개체에는 이름, 게시자, 버전 및 설치 위치 등 패키지에 대한 정보가 포함되어 있습니다.</returns>
     </member>
     <member name="M:Windows.Phone.Management.Deployment.InstallationManager.FindPackages(System.String,System.String)">
-      <summary>지정 된 이름 및 게시자를 사용 하 여 설치 된 모든 패키지를 찾습니다.</summary>
-      <param name="packageName">패키지 이름입니다. 이 매개 변수는 null 일 수 없습니다.</param>
-      <param name="packagePublisher">패키지 게시자입니다. 이 매개 변수는 null 일 수 없습니다.</param>
-      <returns>메서드가 성공 하면 패키지 이름과 게시자 이름이 같은 패키지 개체의 열거 가능한 컬렉션이 반환 됩니다. 이 컬렉션의 각 패키지 개체에는 이름, 게시자, 버전 및 설치 위치를 비롯 하 여 패키지에 대 한 정보가 포함 되어 있습니다. 지정 된 이름과 게시자의 패키지를 찾을 수 없는 경우이 메서드는 빈 목록을 반환 합니다.</returns>
+      <summary>지정된 이름 및 게시자를 사용하여 설치된 모든 패키지를 찾습니다.</summary>
+      <param name="packageName">패키지 이름입니다. 이 매개 변수는 null일 수 없습니다.</param>
+      <param name="packagePublisher">패키지 게시자입니다. 이 매개 변수는 null일 수 없습니다.</param>
+      <returns>메서드가 성공하면 패키지 이름이 게시자 이름이 같은 패키지 개체의 열거 가능한 컬렉션이 반환됩니다. 이 컬렉션의 각 패키지 개체에는 이름, 게시자, 버전 및 설치 위치 등 패키지에 대한 정보가 포함되어 있습니다. 지정된 이름 및 게시자를 사용하는 패키지가 없을 경우 이 메서드는 빈 목록을 반환합니다.</returns>
     </member>
     <member name="M:Windows.Phone.Management.Deployment.InstallationManager.FindPackagesForCurrentPublisher">
-      <summary>이 메서드를 호출 하는 앱과 동일한 게시자 ID를 가진 모든 앱 패키지를 반환 합니다.</summary>
-      <returns>이 메서드를 호출 하는 앱과 동일한 게시자 ID를 사용 하는 앱 패키지 목록입니다.</returns>
+      <summary>이 메서드를 호출하는 앱과 동일한 게시자 ID를 사용하는 모든 앱 패키지를 반환합니다.</summary>
+      <returns>이 메서드를 호출하는 앱과 동일한 게시자 ID를 사용하는 앱 패키지의 목록입니다.</returns>
     </member>
     <member name="M:Windows.Phone.Management.Deployment.InstallationManager.GetPendingPackageInstalls">
-      <summary>현재 진행 중인 모든 앱 설치를 반환 합니다.</summary>
-      <returns>현재 진행 중인 앱 설치의 목록입니다. 이 목록에는 비동기 작업 클래스 (IAsyncOperationWithProgress)로 래핑된 각 설치에 대 한 PackageInstallResult (보류 중)이 포함 되어 있습니다. 진행률 정보를 가져오는 방법에 대 한 자세한 정보는 비동기 프로그래밍을 참조 하세요.</returns>
+      <summary>현재 진행 중인 모든 앱 설치를 반환합니다.</summary>
+      <returns>현재 진행 중인 앱 설치의 목록입니다. 목록에는 비동기 작업 클래스(IAsyncOperationWithProgress)로 래핑된 각 설치에 대한 PackageInstallResult(pending)가 포함되어 있습니다. 진행률 정보를 가져오는 방법에 대한 자세한 내용은 비동기 프로그래밍을 참조하십시오.</returns>
     </member>
     <member name="M:Windows.Phone.Management.Deployment.InstallationManager.RegisterPackageAsync(Windows.Foundation.Uri,Windows.Foundation.Collections.IIterable{Windows.Foundation.Uri},Windows.Management.Deployment.DeploymentOptions)">
-      <summary>현재 사용자에 대 한 패키지 (주 패키지)와 해당 종속성 패키지를 등록 합니다.</summary>
-      <param name="manifestUri">주 패키지의 패키지 매니페스트에 대 한 경로입니다.</param>
-      <param name="dependencyPackageUris">종속성 패키지에 대 한 경로입니다. 종속성 패키지가 없거나 종속성 패키지가 이미 등록 되어 있는 경우이 매개 변수는 null 일 수 있습니다. DeploymentOptions를 * * DevelopmentMode * *로 설정 하는 경우이 매개 변수를 null로 둡니다.</param>
-      <param name="deploymentOptions">배포 작업을 수정 하는 옵션입니다.</param>
-      <returns>비동기 배포 작업을 나타내며 진행률 업데이트를 포함 하는 개체입니다.</returns>
+      <summary>현재 사용자에 대한 패키지(기본 패키지)와 관련 종속성 패키지를 등록합니다.</summary>
+      <param name="manifestUri">기본 패키지의 패키지 매니페스트 경로입니다.</param>
+      <param name="dependencyPackageUris">종속성 패키지의 경로입니다. 종속성 패키지가 없거나 종속성 패키지가 이미 등록된 경우 이 매개 변수는 null일 수 있습니다. DeploymentOptions가 **DevelopmentMode**로 설정된 경우 이 매개 변수를 null로 두어야 합니다.</param>
+      <param name="deploymentOptions">배포 작업을 수정하는 옵션입니다.</param>
+      <returns>비동기 배포 작업을 나타내고 진행률 업데이트를 포함하는 개체입니다.</returns>
     </member>
     <member name="M:Windows.Phone.Management.Deployment.InstallationManager.RemovePackageAsync(System.String,Windows.Management.Deployment.RemovalOptions)">
-      <summary>현재 사용자의 패키지를 비동기적으로 제거 하 고 제거 작업에서 진행률 및 상태 메시지를 받습니다. 사용자에 대해 설치 된 다른 패키지가 없는 경우 해당 사용자에 대 한 종속성 패키지도 제거 됩니다.</summary>
-      <param name="packageFullName">제거할 패키지를 식별 하는 패키지 id의 문자열 표현입니다.</param>
-      <param name="removalOptions">제거 작업을 수정 하는 옵션입니다.</param>
-      <returns>비동기 제거 작업을 나타내며 진행률 업데이트를 포함 하는 개체입니다.</returns>
+      <summary>현재 사용자에 대해 패키지를 비동기적으로 제거하고 제거 작업에 대한 진행률 및 상태 메시지를 수신합니다. 종속성 패키지에 종속되어 있는 다른 패키지가 없으면 해당 종속성 패키지도 제거됩니다.</summary>
+      <param name="packageFullName">제거할 패키지를 식별하는 패키지 ID의 문자열 표현입니다.</param>
+      <param name="removalOptions">제거 작업을 수정하는 옵션입니다.</param>
+      <returns>비동기 제거 작업을 나타내고 진행률 업데이트를 포함하는 개체입니다.</returns>
     </member>
     <member name="T:Windows.Phone.Management.Deployment.PackageInstallResult">
-      <summary>지정 된 응용 프로그램 패키지에 대 한 응용 프로그램 설치 결과를 제공 합니다.</summary>
+      <summary>지정된 응용 프로그램 패키지의 응용 프로그램 설치 결과를 제공합니다.</summary>
     </member>
     <member name="P:Windows.Phone.Management.Deployment.PackageInstallResult.ErrorText">
-      <summary>응용 프로그램 패키지의 설치와 관련 된 오류의 텍스트를 가져옵니다.</summary>
-      <returns>응용 프로그램 패키지의 설치와 관련 된 오류의 텍스트입니다.</returns>
+      <summary>응용 프로그램 패키지의 설치와 관련된 오류 텍스트를 가져옵니다.</summary>
+      <returns>응용 프로그램 패키지의 설치와 관련된 오류 텍스트입니다.</returns>
     </member>
     <member name="P:Windows.Phone.Management.Deployment.PackageInstallResult.InstallState">
       <summary>응용 프로그램 패키지의 설치 상태를 가져옵니다.</summary>
       <returns>응용 프로그램 패키지의 설치 상태입니다.</returns>
     </member>
     <member name="P:Windows.Phone.Management.Deployment.PackageInstallResult.ProductId">
-      <summary>설치 상태가 제공 되는 응용 프로그램 패키지의 고유 식별자를 가져옵니다.</summary>
-      <returns>설치 상태가 제공 되는 응용 프로그램 패키지의 고유 식별자입니다.</returns>
+      <summary>설치 상태가 제공되는 응용 프로그램 패키지의 고유 식별자를 가져옵니다.</summary>
+      <returns>설치 상태가 제공되는 응용 프로그램 패키지의 고유 식별자입니다.</returns>
     </member>
     <member name="T:Windows.Phone.Media.Devices.AudioRoutingEndpoint">
-      <summary>명시적으로 설정할 수 있는 오디오 끝점을 나열 합니다.</summary>
+      <summary>명시적으로 설정할 수 있는 오디오 끝점을 나열합니다.</summary>
     </member>
     <member name="F:Windows.Phone.Media.Devices.AudioRoutingEndpoint.Bluetooth">
-      <summary>Bluetooth 장치.</summary>
+      <summary>Bluetooth 장치입니다.</summary>
     </member>
     <member name="F:Windows.Phone.Media.Devices.AudioRoutingEndpoint.BluetoothPreferred">
-      <summary>Bluetooth 장치를 선호 합니다.</summary>
+      <summary>Bluetooth 장치가 기본적으로 설정됩니다.</summary>
     </member>
     <member name="F:Windows.Phone.Media.Devices.AudioRoutingEndpoint.BluetoothWithNoiseAndEchoCancellation">
-      <summary>노이즈 및 반향 취소를 사용 하는 Bluetooth 장치입니다.</summary>
+      <summary>소음 및 반향 취소 기능이 있는 Bluetooth 장치입니다.</summary>
     </member>
     <member name="F:Windows.Phone.Media.Devices.AudioRoutingEndpoint.Default">
-      <summary>기본 오디오 끝점입니다. 기본 끝점은 유선 헤드셋입니다 (사용 가능한 경우). 그렇지 않으면 송수화기입니다.</summary>
+      <summary>기본 오디오 끝점입니다. 기본 끝점은 사용 가능한 경우 유선 헤드셋이고, 그렇지 않으면 핸드셋입니다.</summary>
     </member>
     <member name="F:Windows.Phone.Media.Devices.AudioRoutingEndpoint.Earpiece">
-      <summary>빈 부분입니다.</summary>
+      <summary>이어폰입니다.</summary>
     </member>
     <member name="F:Windows.Phone.Media.Devices.AudioRoutingEndpoint.Speakerphone">
       <summary>스피커폰입니다.</summary>
     </member>
     <member name="F:Windows.Phone.Media.Devices.AudioRoutingEndpoint.WiredHeadset">
-      <summary>유선 헤드셋.</summary>
+      <summary>유선 헤드셋입니다.</summary>
     </member>
     <member name="F:Windows.Phone.Media.Devices.AudioRoutingEndpoint.WiredHeadsetSpeakerOnly">
-      <summary>출력 전용 유선 헤드셋. 기본 마이크에서 입력이 수신 됩니다.</summary>
+      <summary>출력 전용 유선 헤드셋입니다. 입력은 기본 마이크에서 수신됩니다.</summary>
     </member>
     <member name="T:Windows.Phone.Media.Devices.AudioRoutingManager">
-      <summary>Voice over IP 응용 프로그램에서 스피커폰 이외의 끝점으로 오디오를 라우팅할 수 있도록 하는 기능을 제공 합니다.</summary>
+      <summary>VoIP 응용 프로그램이 스피커폰 이외의 끝점에 오디오를 라우팅할 수 있도록 하는 기능을 제공합니다.</summary>
     </member>
     <member name="P:Windows.Phone.Media.Devices.AudioRoutingManager.AvailableAudioEndpoints">
       <summary>사용 가능한 오디오 라우팅 끝점의 목록을 가져옵니다.</summary>
-      <returns>사용 가능한 오디오 라우팅 끝점의 목록입니다. 여러 끝점을 사용할 수 있는 경우 AvailableAudioRoutingEndpoints 열거형의 값은 비트 or를 사용 하 여 결합 됩니다.</returns>
+      <returns>사용 가능한 오디오 라우팅 끝점의 목록입니다. 여러 끝점을 사용할 수 있는 경우 AvailableAudioRoutingEndpoints 열거형의 값은 비트 OR 연산을 사용하여 결합됩니다.</returns>
     </member>
     <member name="E:Windows.Phone.Media.Devices.AudioRoutingManager.AudioEndpointChanged">
-      <summary>현재 사용 중인 오디오 끝점이 변경 되거나 사용 가능한 오디오 끝점 집합이 변경 되 면 발생 합니다.</summary>
+      <summary>현재 사용 중인 오디오 끝점이 변경되었을 때나 사용 가능한 오디오 끝점의 집합이 변경되었을 때 발생합니다.</summary>
     </member>
     <member name="M:Windows.Phone.Media.Devices.AudioRoutingManager.GetAudioEndpoint">
       <summary>현재 사용 중인 오디오 끝점을 가져옵니다.</summary>
@@ -346,385 +346,385 @@
       <returns>AudioRoutingManager 클래스의 기본 인스턴스입니다.</returns>
     </member>
     <member name="M:Windows.Phone.Media.Devices.AudioRoutingManager.SetAudioEndpoint(Windows.Phone.Media.Devices.AudioRoutingEndpoint)">
-      <summary>다른 오디오 끝점을 요청 합니다.</summary>
+      <summary>다른 오디오 끝점을 요청합니다.</summary>
       <param name="endpoint">사용할 오디오 끝점입니다.</param>
     </member>
     <member name="T:Windows.Phone.Media.Devices.AvailableAudioRoutingEndpoints">
-      <summary>사용할 수 있는 오디오 엔드포인트를 나타냅니다.</summary>
+      <summary>사용할 수 있는 오디오 끝점을 나타냅니다.</summary>
     </member>
     <member name="F:Windows.Phone.Media.Devices.AvailableAudioRoutingEndpoints.Bluetooth">
       <summary>Bluetooth 장치를 사용할 수 있습니다.</summary>
     </member>
     <member name="F:Windows.Phone.Media.Devices.AvailableAudioRoutingEndpoints.Earpiece">
-      <summary>빈 조각이 제공 됩니다.</summary>
+      <summary>이어폰을 사용할 수 있습니다.</summary>
     </member>
     <member name="F:Windows.Phone.Media.Devices.AvailableAudioRoutingEndpoints.None">
-      <summary>사용할 수 있는 오디오 끝점이 없습니다.</summary>
+      <summary>오디오 끝점을 사용할 수 없습니다.</summary>
     </member>
     <member name="F:Windows.Phone.Media.Devices.AvailableAudioRoutingEndpoints.Speakerphone">
       <summary>스피커폰을 사용할 수 있습니다.</summary>
     </member>
     <member name="T:Windows.Phone.Notification.Management.AccessoryManager">
-      <summary>활성 전화, 스마트 조사 또는 적합성 밴드와 같은 액세서리 장치에 대 한 알림 및 기타 유틸리티를 등록 하 고 사용 하도록 설정 하는 메서드를 제공 합니다.</summary>
+      <summary>액티브 휴대폰 커버, 스마트 시계, 피트니스 밴드 등의 액세서리 장치에 대해 알림 및 기타 유틸리티를 등록하거나 사용하도록 설정할 수 있습니다.</summary>
     </member>
     <member name="P:Windows.Phone.Notification.Management.AccessoryManager.BatterySaverState">
-      <summary>배터리 보호기가 설정 되어 있는지 여부를 나타내는 값을 가져옵니다.</summary>
-      <returns>배터리 절약 모드가 설정 된 경우 true를 반환 하 고, 그렇지 않으면 false를 반환 합니다.</returns>
+      <summary>배터리 절약 모드가 켜져 있는지 여부를 나타내는 값을 가져옵니다.</summary>
+      <returns>배터리 절약 모드가 켜져 있으면 true이고, 그렇지 않으면 false입니다.</returns>
     </member>
     <member name="P:Windows.Phone.Notification.Management.AccessoryManager.DoNotDisturbEnabled">
-      <summary>전화에서 방해 금지를 적용 하는지 여부를 나타내는 값을 가져옵니다.</summary>
-      <returns>방해 금지 기능이 설정 되어 있으면 true, 그렇지 않으면 false를 반환 합니다.</returns>
+      <summary>휴대폰에서 방해 금지를 적용 중인지 여부를 나타내는 값을 가져옵니다.</summary>
+      <returns>방해 금지가 켜져 있으면 true이고, 그렇지 않으면 false입니다.</returns>
     </member>
     <member name="P:Windows.Phone.Notification.Management.AccessoryManager.DrivingModeEnabled">
-      <summary>구동 모드가 휴대폰에 적용 되는지 여부를 나타내는 값을 가져옵니다.</summary>
-      <returns>구동 모드가 설정 된 경우 true를 반환 하 고 그렇지 않으면 false를 반환 합니다.</returns>
+      <summary>휴대폰에서 운전 모드를 적용 중인지 여부를 나타내는 값을 가져옵니다.</summary>
+      <returns>운전 모드가 켜져 있으면 true이고, 그렇지 않으면 false입니다.</returns>
     </member>
     <member name="P:Windows.Phone.Notification.Management.AccessoryManager.IsPhonePinLocked">
       <summary>전화가 잠겨 있는지 여부를 나타내는 값을 가져옵니다.</summary>
-      <returns>전화가 잠겨 있으면 True이 고, 그렇지 않으면 false입니다.</returns>
+      <returns>전화가 잠겨 있으면 true이고, 그렇지 않으면 false입니다.</returns>
     </member>
     <member name="P:Windows.Phone.Notification.Management.AccessoryManager.MediaPlaybackCapabilities">
-      <summary>허용 가능한 재생 기능을 나타냅니다.</summary>
-      <returns>재생, 일시 중지, 중지 및 레코드를 포함 하는 열거형 값 중 하나입니다.</returns>
+      <summary>허용되는 재생 기능을 나타냅니다.</summary>
+      <returns>재생, 일시 중지, 중지, 녹음 등 열거형 값 중 하나입니다.</returns>
     </member>
     <member name="P:Windows.Phone.Notification.Management.AccessoryManager.MediaPlaybackStatus">
-      <summary>액세서리에서 재생 된 미디어의 상태를 가져옵니다.</summary>
-      <returns>재생, 일시 중지, 중지 또는 변경 내용이 변경 된 열거형의 값 중 하나입니다.</returns>
+      <summary>액세서리에서 재생 중인 미디어의 상태를 가져옵니다.</summary>
+      <returns>재생 중, 일시 중지됨, 중지됨 또는 트랙 변경됨 등 열거형의 값 중 하나입니다.</returns>
     </member>
     <member name="P:Windows.Phone.Notification.Management.AccessoryManager.PhoneCallAudioEndpoint">
-      <summary>기본, 스피커 및 실습을 포함 하 여 호출의 끝점을 가져오거나 설정 합니다.</summary>
-      <returns>호출의 끝점입니다.</returns>
+      <summary>기본값, 스피커, 핸즈프리를 비롯하여 통화의 끝점을 가져오거나 설정합니다.</summary>
+      <returns>통화의 끝점입니다.</returns>
     </member>
     <member name="P:Windows.Phone.Notification.Management.AccessoryManager.PhoneLineDetails">
-      <summary>전화 라인에 대 한 세부 정보를 가져옵니다.</summary>
-      <returns>전화 라인 식별자와 전화 번호에 대 한 정보입니다.</returns>
+      <summary>전화선에 대한 자세한 정보를 가져옵니다.</summary>
+      <returns>식별자, 전화 번호를 비롯하여 전화선에 대한 정보입니다.</returns>
     </member>
     <member name="P:Windows.Phone.Notification.Management.AccessoryManager.PhoneMute">
-      <summary>전화 통화를 음소거 할지 여부를 가져오거나 설정 합니다.</summary>
-      <returns>전화 통화가 음소거 되어 있으면 True이 고, 그렇지 않으면 false입니다.</returns>
+      <summary>전화 통화의 음소거 여부를 가져오거나 설정합니다.</summary>
+      <returns>전화 통화가 음소거되면 true이고, 그렇지 않으면 false입니다.</returns>
     </member>
     <member name="P:Windows.Phone.Notification.Management.AccessoryManager.SpeedDialList">
-      <summary>고속 전화 접속 목록 연락처와 해당 연락처 정보를 액세서리로 제공 합니다.</summary>
-      <returns>빠른 전화 접속 목록 연락처 목록입니다.</returns>
+      <summary>단축 다이얼 목록 연락처 목록과 연락처 정보를 액세서리에 제공합니다.</summary>
+      <returns>단축 다이얼 목록 연락처 목록입니다.</returns>
     </member>
     <member name="P:Windows.Phone.Notification.Management.AccessoryManager.VolumeInfo">
-      <summary>전화 볼륨의 상태를 나타내는 값을 가져옵니다.</summary>
-      <returns>전화 볼륨의 상태를 나타내는 값입니다.</returns>
+      <summary>휴대폰 볼륨의 상태를 나타내는 값을 가져옵니다.</summary>
+      <returns>휴대폰 볼륨의 상태를 나타내는 값입니다.</returns>
     </member>
     <member name="M:Windows.Phone.Notification.Management.AccessoryManager.AcceptPhoneCall(System.UInt32)">
-      <summary>들어오는 전화 통화를 수락 합니다.</summary>
-      <param name="phoneCallId">들어오는 전화 통화의 식별자입니다.</param>
+      <summary>걸려오는 전화를 받습니다.</summary>
+      <param name="phoneCallId">수신 전화 통화의 식별자입니다.</param>
     </member>
     <member name="M:Windows.Phone.Notification.Management.AccessoryManager.AcceptPhoneCall(System.UInt32,Windows.Phone.Notification.Management.PhoneCallAudioEndpoint)">
-      <summary>들어오는 전화 통화를 수락 합니다.</summary>
-      <param name="phoneCallId">들어오는 호출의 식별자입니다.</param>
-      <param name="endPoint">들어오는 호출의 오디오 끝점입니다.</param>
+      <summary>걸려오는 전화를 받습니다.</summary>
+      <param name="phoneCallId">수신 통화의 식별자</param>
+      <param name="endPoint">수신 통화의 오디오 끝점</param>
     </member>
     <member name="M:Windows.Phone.Notification.Management.AccessoryManager.AcceptPhoneCallWithVideo(System.UInt32)">
-      <summary>들어오는 비디오 통화를 수락 합니다.</summary>
-      <param name="phoneCallId">들어오는 호출의 식별자입니다.</param>
+      <summary>걸려오는 화상 통화를 받습니다.</summary>
+      <param name="phoneCallId">수신 통화의 식별자</param>
     </member>
     <member name="M:Windows.Phone.Notification.Management.AccessoryManager.AcceptPhoneCallWithVideo(System.UInt32,Windows.Phone.Notification.Management.PhoneCallAudioEndpoint)">
-      <summary>들어오는 비디오 통화를 수락 합니다.</summary>
-      <param name="phoneCallId">들어오는 호출의 식별자입니다.</param>
-      <param name="endPoint">들어오는 호출의 오디오 끝점입니다.</param>
+      <summary>걸려오는 화상 통화를 받습니다.</summary>
+      <param name="phoneCallId">수신 통화의 식별자</param>
+      <param name="endPoint">수신 통화의 오디오 끝점</param>
     </member>
     <member name="M:Windows.Phone.Notification.Management.AccessoryManager.ClearToast(System.String)">
-      <summary>보조 장치에서 알림 메시지를 읽으면이 방법을 사용 하 여 알림 메시지를 휴대폰에서 지울 수 있습니다. 알림 센터의 항목은이 메서드를 호출 하 여 볼 수 있는 결과로 지워집니다.</summary>
-      <param name="instanceId">지울 알림의 인스턴스 id를 포함 하는 문자열입니다.</param>
+      <summary>액세서리 장치에서 알림 메시지를 읽은 경우, 이 메서드를 사용하면 휴대폰에서는 알림이 삭제될 수 있습니다. 이 메서드를 호출했다는 증거로 관리 센터에서 해당 알림 항목이 지워집니다.</summary>
+      <param name="instanceId">삭제할 알림의 인스턴스 ID가 포함된 문자열입니다.</param>
     </member>
     <member name="M:Windows.Phone.Notification.Management.AccessoryManager.DecreaseVolume(System.Int32)">
-      <summary>지정 된 양에 따라 볼륨을 줄입니다.</summary>
-      <param name="step">볼륨을 감소 시킬 크기입니다.</param>
+      <summary>볼륨을 표시된 양만큼 낮춥니다.</summary>
+      <param name="step">낮추려는 볼륨 양입니다.</param>
     </member>
     <member name="M:Windows.Phone.Notification.Management.AccessoryManager.DisableAllAccessoryNotificationTypes">
-      <summary>알림 및 응용 프로그램 제거에 대 한 알림을 옵트아웃 (Opt out) 합니다.</summary>
+      <summary>알림 및 응용 프로그램 제거에 대한 알림 받기를 옵트아웃(opt out)합니다.</summary>
     </member>
     <member name="M:Windows.Phone.Notification.Management.AccessoryManager.DisableEmailNotificationEmailAccount(System.String)">
-      <summary>지정 된 전자 메일 계정에 대 한 알림을 사용 하지 않도록 설정 합니다.</summary>
-      <param name="emailAccount">전자 메일 계정의 이름을 포함 하는 문자열입니다.</param>
+      <summary>지정한 전자 메일 계정에 대해 알림을 사용하지 않도록 설정합니다.</summary>
+      <param name="emailAccount">전자 메일 계정의 이름이 포함된 문자열입니다.</param>
     </member>
     <member name="M:Windows.Phone.Notification.Management.AccessoryManager.DisableNotificationsForApplication(System.String)">
-      <summary>지정 된 앱에서 알림 및 앱 제거 알림 가져오기를 옵트아웃 (Opt out) 합니다.</summary>
+      <summary>지정한 앱에 대한 알림 및 앱 제거 알림 받기를 옵트아웃(opt out)합니다.</summary>
       <param name="appId">앱의 식별자입니다.</param>
     </member>
     <member name="M:Windows.Phone.Notification.Management.AccessoryManager.DismissAlarm(System.Guid)">
-      <summary>활성 경보를 해제 합니다.</summary>
+      <summary>활성 경보를 해제합니다.</summary>
       <param name="alarmId">해제할 경보의 식별자입니다.</param>
     </member>
     <member name="M:Windows.Phone.Notification.Management.AccessoryManager.DismissAlarmByInstanceId(System.String)">
-      <summary>인스턴스 id로 식별 된 경보를 해제 합니다.</summary>
-      <param name="instanceId">해제할 경보의 인스턴스 id가 포함 된 문자열입니다.</param>
+      <summary>인스턴스 ID로 식별된 알람을 해제합니다.</summary>
+      <param name="instanceId">해제할 알람의 인스턴스 ID가 포함된 문자열입니다.</param>
     </member>
     <member name="M:Windows.Phone.Notification.Management.AccessoryManager.DismissReminder(System.Guid)">
-      <summary>활성 미리 알림을 해제 합니다.</summary>
+      <summary>활성 미리 알림을 해제합니다.</summary>
       <param name="reminderId">해제할 미리 알림의 식별자입니다.</param>
     </member>
     <member name="M:Windows.Phone.Notification.Management.AccessoryManager.DismissReminderByInstanceId(System.String)">
-      <summary>인스턴스 id로 식별 된 미리 알림을 해제 합니다.</summary>
-      <param name="instanceId">해제할 미리 알림의 인스턴스 id가 포함 된 문자열입니다.</param>
+      <summary>인스턴스 ID로 식별된 미리 알림을 해제합니다.</summary>
+      <param name="instanceId">해제할 미리 알림의 인스턴스 ID가 포함된 문자열입니다.</param>
     </member>
     <member name="M:Windows.Phone.Notification.Management.AccessoryManager.EnableAccessoryNotificationTypes(System.Int32)">
-      <summary>알림 또는 앱 제거에 대 한 알림을 수신 합니다.</summary>
-      <param name="accessoryNotificationTypes">AccessoryNotificationType 열거형에 지정 된 값 중 하나입니다.</param>
+      <summary>알림 또는 앱 제거에 대한 알림 받기를 옵트인(opt in)합니다.</summary>
+      <param name="accessoryNotificationTypes">AccessoryNotificationType 열거형에 지정된 값 중 하나입니다.</param>
     </member>
     <member name="M:Windows.Phone.Notification.Management.AccessoryManager.EnableEmailNotificationEmailAccount(System.String)">
-      <summary>지정 된 전자 메일 계정에 대해 전자 메일 알림을 사용 하도록 설정 합니다.</summary>
-      <param name="emailAccount">전자 메일 계정의 이름을 포함 하는 문자열입니다.</param>
+      <summary>지정한 전자 메일 계정에 대해 전자 메일 알림을 사용하도록 설정합니다.</summary>
+      <param name="emailAccount">전자 메일 계정의 이름이 포함된 문자열입니다.</param>
     </member>
     <member name="M:Windows.Phone.Notification.Management.AccessoryManager.EnableEmailNotificationFolderFilter(System.String,Windows.Foundation.Collections.IVectorView{System.String})">
-      <summary>지정 된 계정의 지정 된 폴더에 대 한 전자 메일 알림을 사용 하도록 설정 합니다.</summary>
-      <param name="emailAccount">전자 메일 알림을 사용 하도록 설정 하는 전자 메일 계정입니다.</param>
-      <param name="folders">사용자가 모니터링 하려는 전자 메일 계정에 있는 폴더입니다.</param>
+      <summary>지정한 계정의 지정한 폴더에 대해 전자 메일 알림을 사용하도록 설정합니다.</summary>
+      <param name="emailAccount">전자 메일 알림을 사용하도록 설정할 전자 메일 계정입니다.</param>
+      <param name="folders">사용자가 모니터링하려는 전자 메일 계정의 폴더입니다.</param>
     </member>
     <member name="M:Windows.Phone.Notification.Management.AccessoryManager.EnableNotificationsForApplication(System.String)">
-      <summary>지정 된 앱에서 알림 및 앱 제거 알림 가져오기를 옵트인 (Opt in) 합니다.</summary>
-      <param name="appId">알림을 제공할 응용 프로그램의 id가 포함 된 문자열입니다.</param>
+      <summary>지정한 앱의 알림 및 앱 제거 알림 받기를 옵트인(opt in)합니다.</summary>
+      <param name="appId">알림을 제공할 응용 프로그램의 ID가 포함된 문자열입니다.</param>
     </member>
     <member name="M:Windows.Phone.Notification.Management.AccessoryManager.EndPhoneCall(System.UInt32)">
-      <summary>지정 된 전화 통화 식별자에 대 한 전화 통화를 종료 합니다.</summary>
-      <param name="phoneCallId">전화 통화의 식별자입니다. 활성 수신 전화 통화에 대 한 PhoneNotificationTriggerDetail 속성에서이 값을 가져옵니다.</param>
+      <summary>지정된 전화 통화 식별자에 대한 전화 통화를 종료합니다.</summary>
+      <param name="phoneCallId">전화 통화의 식별자입니다. 활성 수신 전화 통화에 대한 PhoneNotificationTriggerDetail.CallDetails.CallID 속성에서 이 값을 가져옵니다.</param>
     </member>
     <member name="M:Windows.Phone.Notification.Management.AccessoryManager.GetAllEmailAccounts">
-      <summary>장치에서 전자 메일 계정을 가져옵니다.</summary>
-      <returns>장치의 전자 메일 계정에 대 한 데이터를 포함 하는 EmailAccountInfo 개체의 컬렉션입니다.</returns>
+      <summary>장치의 전자 메일 계정을 가져옵니다.</summary>
+      <returns>장치의 전자 메일 계정에 대한 데이터가 포함된 EmailAccountInfo 개체의 컬렉션입니다.</returns>
     </member>
     <member name="M:Windows.Phone.Notification.Management.AccessoryManager.GetAppIcon(System.String)">
-      <summary>지정 된 응용 프로그램 식별자에 대 한 아이콘을 가져옵니다.</summary>
-      <param name="appId">응용 프로그램과 연결 된 식별자입니다.</param>
-      <returns>앱의 아이콘이 포함 된 스트림입니다.</returns>
+      <summary>지정된 응용 프로그램 식별자의 아이콘을 가져옵니다.</summary>
+      <param name="appId">응용 프로그램과 연결된 식별자입니다.</param>
+      <returns>앱의 아이콘이 포함된 스트림입니다.</returns>
     </member>
     <member name="M:Windows.Phone.Notification.Management.AccessoryManager.GetApps">
-      <summary>장치에서 toast 지원 앱의 이름 및 id가 포함 된 사전을 가져옵니다.</summary>
-      <returns>앱의 이름 및 id를 포함 하는 사전입니다. 연결 된 응용 프로그램이 현재 업데이트 되 고 있는 경우 값은 빈 문자열일 수 있습니다.</returns>
+      <summary>장치에서 알림 가능 앱의 이름과 ID가 포함된 사전을 가져옵니다.</summary>
+      <returns>앱의 이름과 ID가 포함된 사전입니다. 연결된 응용 프로그램이 현재 업데이트 중인 경우 값은 빈 문자열일 수 있습니다.</returns>
     </member>
     <member name="M:Windows.Phone.Notification.Management.AccessoryManager.GetEnabledAccessoryNotificationTypes">
-      <summary>AccessoryNotificationType 열거에 표시 되는 사용 알림 유형 목록을 가져옵니다.</summary>
-      <returns>값은 AccessoryNotificationType 열거형에 있는 플래그의 비트 플래그 조합입니다. 또는 열거형 값을 함께 지정 하 여 경고를 표시할 알림 유형을 나타낼 수 있습니다.</returns>
+      <summary>AccessoryNotificationType 열거형에 표시된 대로 사용하도록 설정된 알림 유형의 목록을 가져옵니다.</summary>
+      <returns>값은 AccessoryNotificationType 열거형에 있는 플래그의 비트 플래그 조합입니다. 열거형 값에 OR 연산자를 적용하여 경보를 표시할 알림 형식을 나타낼 수 있습니다.</returns>
     </member>
     <member name="M:Windows.Phone.Notification.Management.AccessoryManager.GetFolders(System.String)">
-      <summary>휴대폰에 정의 된 전자 메일 폴더 목록을 가져옵니다.</summary>
-      <param name="emailAccount">폴더가 정의 된 전자 메일 계정입니다.</param>
+      <summary>휴대폰에 정의된 전자 메일 폴더의 목록을 가져옵니다.</summary>
+      <param name="emailAccount">폴더가 정의되어 있는 전자 메일 계정입니다.</param>
       <returns>EmailFolderInfo 개체의 컬렉션입니다.</returns>
     </member>
     <member name="M:Windows.Phone.Notification.Management.AccessoryManager.GetMediaMetadata">
-      <summary>큐에 대기 중인 현재 트랙의 제목, 부제목, 음악가, 앨범, 트랙 번호, 축소판 그림 및 기간을 가져옵니다.</summary>
-      <returns>제목, 부제목, 음악가, 앨범, 트랙 번호, 축소판 그림 및 기간을 포함 하는 MediaMetadata 개체입니다.</returns>
+      <summary>대기 중인 현재 트랙의 제목, 부제목, 아티스트, 앨범, 트랙 번호, 미리 보기 및 시간을 가져옵니다.</summary>
+      <returns>제목, 부제목, 아티스트, 앨범, 트랙 번호, 미리 보기 및 시간이 포함된 MediaMetadata 개체입니다.</returns>
     </member>
     <member name="M:Windows.Phone.Notification.Management.AccessoryManager.GetNextTriggerDetails">
-      <summary>알림 유형, 표시 이름 및 만든 시간을 포함 하 여 트리거에 대 한 정보를 포함 하는 다음 트리거 세부 정보를 가져옵니다.</summary>
-      <returns>트리거에 대 한 정보를 포함 합니다.</returns>
+      <summary>알림 형식, 표시 이름, 만든 시간 등 트리거에 대한 정보가 포함된 다음 트리거 세부 정보를 가져옵니다.</summary>
+      <returns>트리거에 대한 정보를 포함합니다.</returns>
     </member>
     <member name="M:Windows.Phone.Notification.Management.AccessoryManager.GetPhoneLineDetails(System.Guid)">
-      <summary>줄 번호, 줄 id, 표시 이름 및 음성 메일 수를 포함 하 여 전화 라인에 대 한 세부 정보를 가져옵니다.</summary>
-      <param name="phoneLine">전화 라인의 식별자입니다.</param>
-      <returns>줄 번호, 줄 id, 이름 및 음성 메일 수를 포함 하는 전화 정보입니다.</returns>
+      <summary>선 번호, 선 ID, 표시 이름, 음성 메일 수 등 전화선에 대한 세부 정보를 가져옵니다.</summary>
+      <param name="phoneLine">전화선의 식별자입니다.</param>
+      <returns>선 번호, 선 ID, 이름, 음성 메일 수를 비롯한 전화 세부 정보입니다.</returns>
     </member>
     <member name="M:Windows.Phone.Notification.Management.AccessoryManager.GetUserConsent">
-      <summary>최종 사용자가 알림을 받기 위해 액세서리 응용 프로그램에 동의 했는지 여부를 나타내는 부울 값을 가져옵니다.</summary>
-      <returns>최종 사용자에 게 동의가 부여 되 면 true를 반환 하 고, 그렇지 않으면 false를 반환 합니다.</returns>
+      <summary>액세서리 응용 프로그램의 알림 수신에 대한 최종 사용자의 동의 여부를 나타내는 부울을 가져옵니다.</summary>
+      <returns>최종 사용자가 동의했으면 true이고, 그렇지 않으면 false입니다.</returns>
     </member>
     <member name="M:Windows.Phone.Notification.Management.AccessoryManager.HoldPhoneCall(System.UInt32,System.Boolean)">
-      <summary>현재 전화 통화를 대기 중으로 설정 하거나 대기 중 전화 통화를 선택 합니다.</summary>
-      <param name="phoneCallId">호출의 식별자입니다.</param>
-      <param name="holdCall">호출을 대기 중으로 설정 하는 경우 True이 고, 보류 중에서 호출을 선택 하면 false입니다.</param>
+      <summary>현재 통화를 보류 중으로 전환하거나, 보류 중인 통화를 받습니다.</summary>
+      <param name="phoneCallId">통화 식별자입니다.</param>
+      <param name="holdCall">통화를 보류 중으로 전환하면 true이고, 보류 중인 통화를 받으면 false입니다.</param>
     </member>
     <member name="M:Windows.Phone.Notification.Management.AccessoryManager.IncreaseVolume(System.Int32)">
-      <summary>휴대폰에서 재생 되는 미디어의 볼륨을 늘립니다.</summary>
-      <param name="step">볼륨을 증가 시킬 크기입니다.</param>
+      <summary>전화에서 재생 중인 미디어의 볼륨을 높입니다.</summary>
+      <param name="step">높이려는 볼륨 양입니다.</param>
     </member>
     <member name="M:Windows.Phone.Notification.Management.AccessoryManager.IsNotificationEnabledForApplication(System.String)">
-      <summary>호출 하는 액세서리 응용 프로그램에서 지정 된 응용 프로그램의 알림 메시지를 받을지 여부를 나타내는 값을 가져옵니다.</summary>
+      <summary>통화 액세서리 응용 프로그램에서 지정된 응용 프로그램의 알림 메시지를 받을지 여부를 나타내는 값을 가져옵니다.</summary>
       <param name="appId">응용 프로그램의 식별자입니다.</param>
-      <returns>응용 프로그램에서 알림을 지원 하면 true를 반환 하 고, 그렇지 않으면 false를 반환 합니다.</returns>
+      <returns>응용 프로그램에서 알림을 지원하면 true이고, 그렇지 않으면 false입니다.</returns>
     </member>
     <member name="M:Windows.Phone.Notification.Management.AccessoryManager.MakePhoneCall(System.Guid,System.String)">
-      <summary>전화 통화를 수행 합니다.</summary>
-      <param name="phoneLine">전화 라인의 식별자입니다. PhoneLineDetails의 LineId 속성에 매핑됩니다.</param>
-      <param name="phoneNumber">호출할 숫자입니다.</param>
+      <summary>전화를 겁니다.</summary>
+      <param name="phoneLine">전화선의 식별자입니다. PhoneLineDetails의 LineId 속성에 매핑됩니다.</param>
+      <param name="phoneNumber">전화를 걸 번호입니다.</param>
     </member>
     <member name="M:Windows.Phone.Notification.Management.AccessoryManager.MakePhoneCall(System.Guid,System.String,Windows.Phone.Notification.Management.PhoneCallAudioEndpoint)">
-      <summary>전화 통화를 수행 합니다.</summary>
-      <param name="phoneLine">전화 라인의 식별자입니다. PhoneLineDetails의 LineId 속성에 매핑됩니다.</param>
-      <param name="phoneNumber">호출할 숫자입니다.</param>
-      <param name="endPoint">호출의 오디오 끝점입니다.</param>
+      <summary>전화를 겁니다.</summary>
+      <param name="phoneLine">전화선의 식별자입니다. PhoneLineDetails의 LineId 속성에 매핑됩니다.</param>
+      <param name="phoneNumber">전화를 걸 번호입니다.</param>
+      <param name="endPoint">통화의 오디오 끝점입니다.</param>
     </member>
     <member name="M:Windows.Phone.Notification.Management.AccessoryManager.MakePhoneCallWithVideo(System.Guid,System.String)">
-      <summary>비디오 전화 통화를 수행 합니다.</summary>
-      <param name="phoneLine">전화 라인의 식별자입니다.</param>
-      <param name="phoneNumber">호출할 숫자입니다.</param>
+      <summary>화상 전화를 겁니다.</summary>
+      <param name="phoneLine">전화선의 식별자입니다.</param>
+      <param name="phoneNumber">전화를 걸 번호입니다.</param>
     </member>
     <member name="M:Windows.Phone.Notification.Management.AccessoryManager.MakePhoneCallWithVideo(System.Guid,System.String,Windows.Phone.Notification.Management.PhoneCallAudioEndpoint)">
-      <summary>비디오 전화 통화를 수행 합니다.</summary>
-      <param name="phoneLine">전화 라인의 식별자입니다.</param>
-      <param name="phoneNumber">호출할 숫자입니다.</param>
-      <param name="endPoint">오디오 끝점입니다. 기본, 스피커 또는 실습에서 사용할 수 있는 값 중 하나입니다.</param>
+      <summary>화상 전화를 겁니다.</summary>
+      <param name="phoneLine">전화선의 식별자입니다.</param>
+      <param name="phoneNumber">전화를 걸 번호입니다.</param>
+      <param name="endPoint">오디오 끝점이며, 가능한 값은 기본값, 스피커, 핸즈프리 중 하나입니다.</param>
     </member>
     <member name="M:Windows.Phone.Notification.Management.AccessoryManager.PerformMediaPlaybackCommand(Windows.Phone.Notification.Management.PlaybackCommand)">
-      <summary>미디어 스트림에 대해 작업을 수행 합니다.</summary>
-      <param name="command">재생, 일시 중지, 중지, 이전, FastForward, 다음 등의 열거형 값 중 하나입니다.</param>
+      <summary>미디어 스트림에서 작업을 수행합니다.</summary>
+      <param name="command">재생, 일시 중지, 중지, 이전, 빨리 감기, 다음 등 열거형 값 중 하나입니다.</param>
     </member>
     <member name="M:Windows.Phone.Notification.Management.AccessoryManager.ProcessTriggerDetails(Windows.Phone.Notification.Management.IAccessoryNotificationTriggerDetails)">
-      <summary>지정 된 트리거 세부 정보가 액세서리에서 처리 AccessoryManager을 나타냅니다. 이렇게 하면 AccessoryManager 트리거 정보 큐에서 제거 됩니다.</summary>
-      <param name="pDetails">액세서리에서 처리 된 것으로 표시 해야 하는 트리거 세부 정보입니다.</param>
+      <summary>지정된 트리거 세부 정보를 액세서리에서 처리했다고 AccessoryManager에 알립니다. 그러면 AccessoryManager 트리거 세부 정보 큐에서 해당 정보가 제거됩니다.</summary>
+      <param name="pDetails">액세서리에서 처리한 것으로 표시되는 트리거 세부 정보입니다.</param>
     </member>
     <member name="M:Windows.Phone.Notification.Management.AccessoryManager.RegisterAccessoryApp">
-      <summary>AccessoryManager를 사용 하 여 액세서리 응용 프로그램을 등록 하 고 트리거 식별자를 반환 합니다.</summary>
-      <returns>이 액세서리 앱에 대 한 트리거 식별자입니다. 이 트리거 식별자는 * * DeviceManufacturerNotificationTrigger * *를 빌드하는 데 사용 됩니다.</returns>
+      <summary>AccessoryManager를 사용하여 액세서리 응용 프로그램을 등록하고 트리거 식별자를 반환합니다.</summary>
+      <returns>이 액세서리 앱에 대한 트리거 식별자입니다. 이 트리거 식별자는 **DeviceManufacturerNotificationTrigger**를 빌드하는 데 사용됩니다.</returns>
     </member>
     <member name="M:Windows.Phone.Notification.Management.AccessoryManager.RejectPhoneCall(System.UInt32)">
-      <summary>지정 된 식별자를 사용 하 여 전화 통화를 거부 합니다.</summary>
+      <summary>지정된 식별자를 가진 전화 통화를 거부합니다.</summary>
       <param name="phoneCallId">전화 통화 식별자입니다.</param>
     </member>
     <member name="M:Windows.Phone.Notification.Management.AccessoryManager.RejectPhoneCall(System.UInt32,System.UInt32)">
-      <summary>지정 된 식별자를 가진 전화 통화를 거부 하 고 SMS 응답을 보냅니다.</summary>
+      <summary>지정된 식별자를 가진 전화 통화를 거부하고 SMS 응답을 보냅니다.</summary>
       <param name="phoneCallId">전화 통화 식별자입니다.</param>
       <param name="textResponseID">TextResponse의 식별자입니다.</param>
     </member>
     <member name="M:Windows.Phone.Notification.Management.AccessoryManager.RingDevice">
-      <summary>전화를 울립니다.</summary>
+      <summary>전화 벨을 울립니다.</summary>
     </member>
     <member name="M:Windows.Phone.Notification.Management.AccessoryManager.SetMute(System.Boolean)">
-      <summary>전화에서 음소거를 설정 하거나 해제 합니다.</summary>
-      <param name="mute">음소거가 설정 되어 있으면 True이 고, 그렇지 않으면 false입니다.</param>
+      <summary>휴대폰에서 음소거를 설정하거나 해제합니다.</summary>
+      <param name="mute">음소거를 설정하면 true이고, 그렇지 않으면 false입니다.</param>
     </member>
     <member name="M:Windows.Phone.Notification.Management.AccessoryManager.SetRingerVibrate(System.Boolean,System.Boolean)">
-      <summary>액세서리는 휴대폰에서 벨소리와 진동 설정을 설정 하거나 해제할 수 있습니다.</summary>
-      <param name="ringer">벨소리가 설정 되어 있으면 true이 고, 그렇지 않으면 false입니다.</param>
-      <param name="vibrate">진동 모드가 설정 되어 있으면 true이 고, 그렇지 않으면 false입니다.</param>
+      <summary>액세서리에서 휴대폰의 벨소리 및 진동을 설정하거나 해제할 수 있습니다.</summary>
+      <param name="ringer">벨소리가 켜져 있으면 true이고, 그렇지 않으면 false입니다.</param>
+      <param name="vibrate">진동 모드가 켜져 있으면 true이고, 그렇지 않으면 false입니다.</param>
     </member>
     <member name="M:Windows.Phone.Notification.Management.AccessoryManager.SnoozeAlarm(System.Guid)">
-      <summary>경보를 Snoozes.</summary>
-      <param name="alarmId">다시 알림에 대 한 경보의 식별자입니다.</param>
+      <summary>경보를 다시 알립니다.</summary>
+      <param name="alarmId">다시 알릴 경보의 식별자입니다.</param>
     </member>
     <member name="M:Windows.Phone.Notification.Management.AccessoryManager.SnoozeAlarm(System.Guid,Windows.Foundation.TimeSpan)">
-      <summary>지정 된 시간 범위에 대 한 경보를 Snoozes 합니다.</summary>
-      <param name="alarmId">알람의 식별자입니다.</param>
-      <param name="timeSpan">경보를 다시 알림 하는 시간입니다.</param>
+      <summary>지정된 시간 범위 동안 경보를 다시 알립니다.</summary>
+      <param name="alarmId">경보의 식별자입니다.</param>
+      <param name="timeSpan">경보를 다시 알릴 시간입니다.</param>
     </member>
     <member name="M:Windows.Phone.Notification.Management.AccessoryManager.SnoozeAlarmByInstanceId(System.String)">
-      <summary>Snoozes는 인스턴스 id로 식별 되는 경보를 표시 합니다.</summary>
-      <param name="instanceId">다시 알림을 적용할 경보의 인스턴스 id가 포함 된 문자열입니다.</param>
+      <summary>인스턴스 ID로 식별된 알람을 다시 알립니다.</summary>
+      <param name="instanceId">다시 알릴 알람의 인스턴스 ID가 포함된 문자열입니다.</param>
     </member>
     <member name="M:Windows.Phone.Notification.Management.AccessoryManager.SnoozeReminder(System.Guid)">
-      <summary>미리 알림을 Snoozes.</summary>
+      <summary>미리 알림을 다시 알립니다.</summary>
       <param name="reminderId">미리 알림 식별자입니다.</param>
     </member>
     <member name="M:Windows.Phone.Notification.Management.AccessoryManager.SnoozeReminder(System.Guid,Windows.Foundation.TimeSpan)">
-      <summary>지정 된 시간 범위에 대 한 미리 알림을 Snoozes.</summary>
+      <summary>지정된 시간 범위 동안 미리 알림을 다시 알립니다.</summary>
       <param name="reminderId">미리 알림 식별자입니다.</param>
-      <param name="timeSpan">미리 알림을 dismiuss 시간입니다.</param>
+      <param name="timeSpan">미리 알림을 해제할 시간입니다.</param>
     </member>
     <member name="M:Windows.Phone.Notification.Management.AccessoryManager.SnoozeReminderByInstanceId(System.String)">
-      <summary>인스턴스 id로 식별 된 미리 알림을 Snoozes 합니다.</summary>
-      <param name="instanceId">다시 알릴 미리 알림의 인스턴스 id가 포함 된 문자열입니다.</param>
+      <summary>인스턴스 ID로 식별된 미리 알림을 다시 알립니다.</summary>
+      <param name="instanceId">다시 알릴 미리 알림의 인스턴스 ID가 포함된 문자열입니다.</param>
     </member>
     <member name="M:Windows.Phone.Notification.Management.AccessoryManager.SwapPhoneCalls(System.UInt32,System.UInt32)">
-      <summary>현재 전화 통화를 대기 상태로 전환 하 고 대기 중인 전화 통화를 연결 합니다.</summary>
-      <param name="phoneCallIdToHold">대기 중인 전화 통화에 대 한 Idenifier입니다.</param>
-      <param name="phoneCallIdOnHold">연결할 전화 통화에 대 한 식별자입니다.</param>
+      <summary>현재 통화를 보류 중으로 전환한 다음 보류 중인 통화를 연결합니다.</summary>
+      <param name="phoneCallIdToHold">보류 중으로 전환할 통화의 식별자입니다.</param>
+      <param name="phoneCallIdOnHold">연결할 통화의 식별자입니다.</param>
     </member>
     <member name="M:Windows.Phone.Notification.Management.AccessoryManager.UpdateEmailReadStatus(Windows.Phone.Notification.Management.BinaryId,System.Boolean)">
-      <summary>전자 메일의 상태를 읽을 수 있는지 여부를 업데이트 합니다.</summary>
+      <summary>전자 메일의 상태를 읽을지 여부를 업데이트합니다.</summary>
       <param name="messageEntryId">전자 메일 메시지의 고유 식별자입니다.</param>
-      <param name="isRead">전자 메일 메시지를 읽은 경우 true입니다. 그렇지 않으면 false입니다.</param>
+      <param name="isRead">전자 메일 메시지를 읽으면 true이고, 그렇지 않으면 false입니다.</param>
     </member>
     <member name="T:Windows.Phone.Notification.Management.AccessoryNotificationType">
-      <summary>휴대폰에서 발생 하는 알림의 유형을 나타냅니다. IAccessoryNotificationTriggerDetails * * 메서드는 AccessoryManager에서 트리거할 때 실행 되는 * * IBackgroundTask * * 메서드에 사용할 수 있습니다. IAccessoryNotificationTriggerDetails 내에는 * * INotification * * 개체가 있습니다. * * BackgroundTask * * 개발자는이 인터페이스를 조사 하 여 특정 알림 유형을 확인 해야 합니다.</summary>
+      <summary>휴대폰에서 발생하는 알림의 형식을 나타냅니다. AccessoryManager에 의해 트리거되면 실행되는 **IBackgroundTask.Run** 메서드에서 IAccessoryNotificationTriggerDetails를 사용할 수 있습니다. IAccessoryNotificationTriggerDetails 내에 **INotification** 개체가 있습니다. **BackgroundTask** 개발자는 이 인터페이스를 조사하여 구체적인 알림 형식을 확인해야 합니다.</summary>
     </member>
     <member name="F:Windows.Phone.Notification.Management.AccessoryNotificationType.Alarm">
-      <summary>발생 한 알람의 알림입니다.</summary>
+      <summary>발생한 경보의 알림입니다.</summary>
     </member>
     <member name="F:Windows.Phone.Notification.Management.AccessoryNotificationType.AppUninstalled">
-      <summary>앱이 제거 되었다는 알림입니다.</summary>
+      <summary>앱을 제거되었다는 알림입니다.</summary>
     </member>
     <member name="F:Windows.Phone.Notification.Management.AccessoryNotificationType.BatterySaver">
-      <summary>배터리 절약이 꺼져 있는 알림입니다.</summary>
+      <summary>배터리 절약 모드를 설정하거나 해제한다는 알림입니다.</summary>
     </member>
     <member name="F:Windows.Phone.Notification.Management.AccessoryNotificationType.CalendarChanged">
-      <summary>일정 이벤트가 변경 되었음을 나타내는 알림입니다.</summary>
+      <summary>달력 이벤트가 변경되었음을 나타내는 알림입니다.</summary>
     </member>
     <member name="F:Windows.Phone.Notification.Management.AccessoryNotificationType.CortanaTile">
-      <summary>Cortana 타일의 알림입니다. 자세한 내용은 CortanaTileNotificationTriggerDetails를 참조 하세요.</summary>
+      <summary>Cortana 타일의 알림입니다. 자세한 내용은 CortanaTileNotificationTriggerDetails를 참조하세요.</summary>
     </member>
     <member name="F:Windows.Phone.Notification.Management.AccessoryNotificationType.Dnd">
-      <summary>방해 금지 된 알림이 설정 되거나 해제 됩니다.</summary>
+      <summary>방해 금지를 설정하거나 해제한다는 알림입니다.</summary>
     </member>
     <member name="F:Windows.Phone.Notification.Management.AccessoryNotificationType.DrivingMode">
-      <summary>구동 모드가 설정 또는 해제 되었다는 알림입니다.</summary>
+      <summary>운전 모드를 설정하거나 해제한다는 알림입니다.</summary>
     </member>
     <member name="F:Windows.Phone.Notification.Management.AccessoryNotificationType.Email">
-      <summary>받은 전자 메일의 새 일괄 처리를 나타내는 알림</summary>
+      <summary>새 전자 메일 배치를 받았음을 나타내는 알림입니다.</summary>
     </member>
     <member name="F:Windows.Phone.Notification.Management.AccessoryNotificationType.EmailReadStatusChanged">
-      <summary>전자 메일의 읽기 상태가 변경 되었음을 나타내는 알림입니다.</summary>
+      <summary>전자 메일의 읽기 상태가 변경되었음을 나타내는 알림입니다.</summary>
     </member>
     <member name="F:Windows.Phone.Notification.Management.AccessoryNotificationType.Media">
-      <summary>미디어 재생 상태가 변경 되었음을 나타내는 알림입니다.</summary>
+      <summary>미디어 재생 상태가 변경되었음을 나타내는 알림입니다.</summary>
     </member>
     <member name="F:Windows.Phone.Notification.Management.AccessoryNotificationType.None">
-      <summary>알림 유형이 "None"입니다.</summary>
+      <summary>알림 형식은 "없음"입니다.</summary>
     </member>
     <member name="F:Windows.Phone.Notification.Management.AccessoryNotificationType.Phone">
-      <summary>전화 통화를 수신 했음을 나타내는 알림입니다.</summary>
+      <summary>전화를 받았음을 나타내는 알림입니다.</summary>
     </member>
     <member name="F:Windows.Phone.Notification.Management.AccessoryNotificationType.Reminder">
-      <summary>발생 한 미리 알림의 알림</summary>
+      <summary>발생한 미리 알림의 알림입니다.</summary>
     </member>
     <member name="F:Windows.Phone.Notification.Management.AccessoryNotificationType.Toast">
-      <summary>휴대폰 UI에서 알림으로 매니페스트 되는 앱의 알림입니다.</summary>
+      <summary>전화기 UI에 알림으로 표시되는 앱의 알림입니다.</summary>
     </member>
     <member name="F:Windows.Phone.Notification.Management.AccessoryNotificationType.ToastCleared">
-      <summary>알림이 지워진 알림이 표시 되지 않았음을 나타냅니다.</summary>
+      <summary>알림이 지워졌음을 나타내는 알림입니다.</summary>
     </member>
     <member name="F:Windows.Phone.Notification.Management.AccessoryNotificationType.VolumeChanged">
-      <summary>볼륨이 변경 되었음을 나타내는 알림입니다.</summary>
+      <summary>볼륨이 변경되었음을 나타내는 알림입니다.</summary>
     </member>
     <member name="T:Windows.Phone.Notification.Management.AlarmNotificationTriggerDetails">
-      <summary>액세서리에서 알람 알림을 렌더링 하는 데 필요한 모든 정보를 나타냅니다.</summary>
+      <summary>액세서리에 대한 경보 알림을 렌더링하는 데 필요한 모든 정보를 나타냅니다.</summary>
     </member>
     <member name="P:Windows.Phone.Notification.Management.AlarmNotificationTriggerDetails.AccessoryNotificationType">
-      <summary>수신 되는 알림 유형을 지정 합니다. 경보의 경우이 값은 * * AccessoryNotificationType * *입니다.</summary>
-      <returns>AccessoryNotificationType</returns>
+      <summary>수신된 알림 형식을 지정합니다. 경보의 경우, 이 값은 **AccessoryNotificationType.Alarm**입니다.</summary>
+      <returns>AccessoryNotificationType.Alarm</returns>
     </member>
     <member name="P:Windows.Phone.Notification.Management.AlarmNotificationTriggerDetails.AlarmId">
-      <summary>알림이 생성 된 알람의 고유 ID입니다.</summary>
-      <returns>알림이 생성 된 알람의 고유 ID입니다.</returns>
+      <summary>알림을 발생시킨 경보의 고유한 ID입니다.</summary>
+      <returns>알림을 발생시킨 경보의 고유한 ID입니다.</returns>
     </member>
     <member name="P:Windows.Phone.Notification.Management.AlarmNotificationTriggerDetails.AppDisplayName">
-      <summary>알림을 생성 한 앱의 표시 이름입니다.</summary>
-      <returns>알림을 생성 한 앱의 표시 이름입니다.</returns>
+      <summary>알림을 생성한 앱의 표시 이름입니다.</summary>
+      <returns>알림을 생성한 앱의 표시 이름입니다.</returns>
     </member>
     <member name="P:Windows.Phone.Notification.Management.AlarmNotificationTriggerDetails.AppId">
-      <summary>알림을 생성 한 앱의 인스턴스 ID입니다.</summary>
-      <returns>알림을 생성 한 앱의 인스턴스 ID입니다.</returns>
+      <summary>알림을 생성한 앱의 인스턴스 ID입니다.</summary>
+      <returns>알림을 생성한 앱의 인스턴스 ID입니다.</returns>
     </member>
     <member name="P:Windows.Phone.Notification.Management.AlarmNotificationTriggerDetails.InstanceId">
-      <summary>여러 경보 인스턴스 간에 구분 하는 식별자를 가져옵니다.</summary>
-      <returns>여러 경보 인스턴스 간에 구분 되는 문자열 식별자입니다.</returns>
+      <summary>알람의 여러 인스턴스 사이를 구분하는 식별자를 가져옵니다.</summary>
+      <returns>알람의 여러 인스턴스 사이를 구분하는 문자열입니다.</returns>
     </member>
     <member name="P:Windows.Phone.Notification.Management.AlarmNotificationTriggerDetails.ReminderState">
-      <summary>알람의 현재 상태를 나타내는 ReminderState 값입니다.</summary>
-      <returns>가능한 값 목록은 ReminderState를 참조 하세요.</returns>
+      <summary>경보의 현재 상태를 나타내는 ReminderState 값입니다.</summary>
+      <returns>사용 가능한 값 목록을 보려면 ReminderState을 참조하십시오.</returns>
     </member>
     <member name="P:Windows.Phone.Notification.Management.AlarmNotificationTriggerDetails.StartedProcessing">
-      <summary>액세서리에서 알림 처리를 시작 했는지 여부를 지정 합니다.</summary>
-      <returns>* * true * * 보조 프로그램이 알림 처리를 시작한 경우 그렇지 않으면 * * false * *입니다.</returns>
+      <summary>액세서리에서 알림 처리를 시작했는지 여부를 지정합니다.</summary>
+      <returns>액세서리에서 전자 메일 알림 처리를 시작했으면 **true**이고, 그렇지 않으면 **false**입니다.</returns>
     </member>
     <member name="P:Windows.Phone.Notification.Management.AlarmNotificationTriggerDetails.TimeCreated">
-      <summary>알림이 만들어진 날짜 및 시간입니다.</summary>
-      <returns>알림이 만들어진 날짜 및 시간입니다.</returns>
+      <summary>알림을 만든 날짜와 시간입니다.</summary>
+      <returns>알림을 만든 날짜와 시간입니다.</returns>
     </member>
     <member name="P:Windows.Phone.Notification.Management.AlarmNotificationTriggerDetails.Timestamp">
-      <summary>액세서리 관리자 서비스에서 액세서리 앱으로 알림이 전달 된 날짜 및 시간을 나타냅니다.</summary>
-      <returns>액세서리 관리자 서비스에서 액세서리 앱으로 알림이 전달 된 날짜 및 시간입니다.</returns>
+      <summary>액세서리 관리자 서비스에서 액세서리 앱에 알림을 제공한 날짜와 시간을 나타냅니다.</summary>
+      <returns>액세서리 관리자 서비스에서 액세서리 앱에 알림을 제공한 날짜와 시간입니다.</returns>
     </member>
     <member name="P:Windows.Phone.Notification.Management.AlarmNotificationTriggerDetails.Title">
-      <summary>알람의 제목입니다.</summary>
-      <returns>알람의 제목입니다.</returns>
+      <summary>경보의 제목입니다.</summary>
+      <returns>경보의 제목입니다.</returns>
     </member>
     <member name="T:Windows.Phone.Notification.Management.AppNotificationInfo">
-      <summary>응용 프로그램의 이름 및 식별자를 나타냅니다.</summary>
+      <summary>앱의 이름과 식별자를 나타냅니다.</summary>
     </member>
     <member name="P:Windows.Phone.Notification.Management.AppNotificationInfo.Id">
       <summary>응용 프로그램의 식별자를 가져옵니다.</summary>
@@ -738,7 +738,7 @@
       <summary>이진 식별자를 나타냅니다.</summary>
     </member>
     <member name="P:Windows.Phone.Notification.Management.BinaryId.Id">
-      <summary>이진 id의 식별자를 가져옵니다.</summary>
+      <summary>이진 ID의 식별자를 가져옵니다.</summary>
       <returns>식별자입니다.</returns>
     </member>
     <member name="P:Windows.Phone.Notification.Management.BinaryId.Length">
@@ -746,307 +746,307 @@
       <returns>식별자의 길이입니다.</returns>
     </member>
     <member name="T:Windows.Phone.Notification.Management.CalendarChangedEvent">
-      <summary>일정 이벤트의 유형을 나타냅니다.</summary>
+      <summary>달력 이벤트의 형식을 나타냅니다.</summary>
     </member>
     <member name="F:Windows.Phone.Notification.Management.CalendarChangedEvent.AppointmentAdded">
-      <summary>일정 약속이 추가 되었습니다.</summary>
+      <summary>달력 약속이 추가되었습니다.</summary>
     </member>
     <member name="F:Windows.Phone.Notification.Management.CalendarChangedEvent.AppointmentChanged">
-      <summary>일정 약속이 변경 되었습니다.</summary>
+      <summary>달력 약속이 변경되었습니다.</summary>
     </member>
     <member name="F:Windows.Phone.Notification.Management.CalendarChangedEvent.AppointmentDeleted">
-      <summary>일정 약속이 삭제 되었습니다.</summary>
+      <summary>달력 약속이 삭제되었습니다.</summary>
     </member>
     <member name="F:Windows.Phone.Notification.Management.CalendarChangedEvent.CalendarAdded">
-      <summary>일정이 추가 되었습니다.</summary>
+      <summary>달력이 추가되었습니다.</summary>
     </member>
     <member name="F:Windows.Phone.Notification.Management.CalendarChangedEvent.CalendarChanged">
-      <summary>일정이 변경 되었습니다.</summary>
+      <summary>달력이 변경되었습니다.</summary>
     </member>
     <member name="F:Windows.Phone.Notification.Management.CalendarChangedEvent.CalendarDeleted">
-      <summary>일정이 삭제 되었습니다.</summary>
+      <summary>일정을 삭제했습니다.</summary>
     </member>
     <member name="F:Windows.Phone.Notification.Management.CalendarChangedEvent.LostEvents">
-      <summary>이벤트가 손실 되었습니다.</summary>
+      <summary>이벤트가 손실되었습니다.</summary>
     </member>
     <member name="T:Windows.Phone.Notification.Management.CalendarChangedNotificationTriggerDetails">
-      <summary>액세서리에서 일정 변경 알림을 렌더링 하는 데 필요한 모든 정보를 나타냅니다.</summary>
+      <summary>액세서리에 대한 달력 변경 알림을 렌더링하는 데 필요한 모든 정보를 나타냅니다.</summary>
     </member>
     <member name="P:Windows.Phone.Notification.Management.CalendarChangedNotificationTriggerDetails.AccessoryNotificationType">
-      <summary>수신 되는 알림 유형을 지정 하는 AccessoryNotificationType입니다.</summary>
-      <returns>AccessoryNotificationType 변경</returns>
+      <summary>수신한 알림의 유형을 지정하는 AccessoryNotificationType입니다.</summary>
+      <returns>AccessoryNotificationType.CalendarChanged</returns>
     </member>
     <member name="P:Windows.Phone.Notification.Management.CalendarChangedNotificationTriggerDetails.AppDisplayName">
-      <summary>알림을 생성 한 앱의 표시 이름을 나타냅니다.</summary>
-      <returns>알림을 생성 한 앱의 표시 이름입니다.</returns>
+      <summary>알림을 생성한 앱의 표시 이름을 나타냅니다.</summary>
+      <returns>알림을 생성한 앱의 표시 이름입니다.</returns>
     </member>
     <member name="P:Windows.Phone.Notification.Management.CalendarChangedNotificationTriggerDetails.AppId">
-      <summary>알림을 생성 한 앱의 인스턴스 ID를 나타냅니다.</summary>
-      <returns>알림을 생성 한 앱의 인스턴스 ID입니다.</returns>
+      <summary>알림을 생성한 앱의 인스턴스 ID를 나타냅니다.</summary>
+      <returns>알림을 생성한 앱의 인스턴스 ID입니다.</returns>
     </member>
     <member name="P:Windows.Phone.Notification.Management.CalendarChangedNotificationTriggerDetails.EventType">
       <summary>이벤트의 유형을 나타냅니다.</summary>
       <returns>달력 변경 이벤트의 유형입니다.</returns>
     </member>
     <member name="P:Windows.Phone.Notification.Management.CalendarChangedNotificationTriggerDetails.ItemId">
-      <summary>일정 항목의 식별자를 나타냅니다.</summary>
-      <returns>일정 항목의 항목 식별자입니다.</returns>
+      <summary>달력 항목의 식별자를 나타냅니다.</summary>
+      <returns>달력 항목의 항목 식별자입니다.</returns>
     </member>
     <member name="P:Windows.Phone.Notification.Management.CalendarChangedNotificationTriggerDetails.StartedProcessing">
-      <summary>액세서리에서 알림 처리를 시작 했는지 여부를 지정 합니다.</summary>
-      <returns>* * true * * 보조 프로그램이 알림 처리를 시작한 경우 그렇지 않으면 * * false입니다. * *</returns>
+      <summary>액세서리에서 알림 처리를 시작했는지 여부를 지정합니다.</summary>
+      <returns>액세서리에서 전자 메일 알림 처리를 시작했으면 **true**이고, 그렇지 않으면 **false**입니다.</returns>
     </member>
     <member name="P:Windows.Phone.Notification.Management.CalendarChangedNotificationTriggerDetails.TimeCreated">
-      <summary>알림이 만들어진 날짜 및 시간을 가져옵니다.</summary>
-      <returns>알림이 만들어진 날짜 및 시간입니다.</returns>
+      <summary>알림을 생성한 날짜와 시간을 가져옵니다.</summary>
+      <returns>알림을 만든 날짜와 시간입니다.</returns>
     </member>
     <member name="T:Windows.Phone.Notification.Management.CortanaTileNotificationTriggerDetails">
-      <summary>액세서리에서 Cortana 라이브 타일 업데이트 알림을 렌더링 하는 데 필요한 모든 정보를 나타냅니다.</summary>
+      <summary>액세서리에서 Cortana 라이브 타일 업데이트 알림을 렌더링하는 데 필요한 모든 정보를 나타냅니다.</summary>
     </member>
     <member name="P:Windows.Phone.Notification.Management.CortanaTileNotificationTriggerDetails.AccessoryNotificationType">
-      <summary>수신 되는 알림 유형을 지정 하는 AccessoryNotificationType입니다. Cortana 타일 알림의 경우이 값은 AccessoryNotificationType. CortanaTile입니다.</summary>
+      <summary>수신한 알림의 유형을 지정하는 AccessoryNotificationType입니다. Cortana 타일 알림의 경우 이 값은 AccessoryNotificationType.CortanaTile입니다.</summary>
       <returns>AccessoryNotificationType.CortanaTile</returns>
     </member>
     <member name="P:Windows.Phone.Notification.Management.CortanaTileNotificationTriggerDetails.AppDisplayName">
-      <summary>알림을 생성 한 앱의 표시 이름을 나타냅니다.</summary>
-      <returns>알림을 생성 한 앱의 표시 이름입니다.</returns>
+      <summary>알림을 생성한 앱의 표시 이름을 나타냅니다.</summary>
+      <returns>알림을 생성한 앱의 표시 이름입니다.</returns>
     </member>
     <member name="P:Windows.Phone.Notification.Management.CortanaTileNotificationTriggerDetails.AppId">
-      <summary>알림을 생성 한 앱의 인스턴스 ID를 나타냅니다.</summary>
-      <returns>알림을 생성 한 앱의 인스턴스 ID입니다.</returns>
+      <summary>알림을 생성한 앱의 인스턴스 ID를 나타냅니다.</summary>
+      <returns>알림을 생성한 앱의 인스턴스 ID입니다.</returns>
     </member>
     <member name="P:Windows.Phone.Notification.Management.CortanaTileNotificationTriggerDetails.Content">
-      <summary>Cortana 라이브 타일의 주석 텍스트를 나타내는 문자열입니다. 라이브 타일에서이 콘텐츠는 최대 4 줄까지 래핑합니다.</summary>
+      <summary>Cortana 라이브 타일의 주석 텍스트를 나타내는 문자열입니다. 라이브 타일에서 이 콘텐츠는 최대 네 줄로 줄 바꿈됩니다.</summary>
       <returns>Cortana 라이브 타일의 주석 텍스트를 나타내는 문자열입니다.</returns>
     </member>
     <member name="P:Windows.Phone.Notification.Management.CortanaTileNotificationTriggerDetails.EmphasizedText">
-      <summary>Cortana 라이브 타일에서 온도를 표시 하는 데 사용 되는 문자열입니다. 라이브 타일에서이 텍스트는 매우 넓은 글꼴로 렌더링 되며 줄 바꿈되지 않습니다. 이 속성에 값이 있으면 LargeContent2, NonWrappedSmallContent2, NonWrappedSmallContent3 및 NonWrappedSmallContent4는 항상 숨겨집니다.</summary>
-      <returns>Cortana 라이브 타일에서 온도를 표시 하는 데 사용 되는 문자열입니다.</returns>
+      <summary>Cortana 라이브 타일에서 온도를 표시하는 데 사용되는 문자열입니다. 라이브 타일에서 이 텍스트는 아주 큰 글꼴로 렌더링되며 줄 바꿈되지 않습니다. 이 속성의 값이 있는 경우 LargeContent2, NonWrappedSmallContent2, NonWrappedSmallContent3 및 NonWrappedSmallContent4는 항상 숨겨집니다.</summary>
+      <returns>Cortana 라이브 타일에서 온도를 표시하는 데 사용되는 문자열입니다.</returns>
     </member>
     <member name="P:Windows.Phone.Notification.Management.CortanaTileNotificationTriggerDetails.LargeContent1">
-      <summary>Cortana 라이브 타일 제목을 나타내는 문자열입니다. 라이브 타일에서 콘텐츠는 모두 대문자로 표시 됩니다.</summary>
+      <summary>Cortana 라이브 타일 제목을 나타내는 문자열입니다. 라이브 타일에서 콘텐츠가 모두 대문자로 표시됩니다.</summary>
       <returns>Cortana 라이브 타일 제목을 나타내는 문자열입니다.</returns>
     </member>
     <member name="P:Windows.Phone.Notification.Management.CortanaTileNotificationTriggerDetails.LargeContent2">
-      <summary>Cortana 라이브 타일 제목 (있는 경우) 아래에 표시 되는 텍스트를 나타내는 문자열입니다. 라이브 타일에서 콘텐츠는 두 줄로 줄 바꿈됩니다.</summary>
-      <returns>Cortana 라이브 타일 제목 (있는 경우) 아래에 표시 되는 텍스트를 나타내는 문자열입니다.</returns>
+      <summary>Cortana 라이브 타일 제목 아래에 표시되는 텍스트를 나타내는 문자열입니다(있는 경우). 라이브 타일에서 콘텐츠가 두 줄로 줄 바꿈됩니다.</summary>
+      <returns>Cortana 라이브 타일 제목 아래에 표시되는 텍스트를 나타내는 문자열입니다(있는 경우).</returns>
     </member>
     <member name="P:Windows.Phone.Notification.Management.CortanaTileNotificationTriggerDetails.NonWrappedSmallContent1">
-      <summary>Cortana 라이브 타일에서 줄 바꿈하지 않는 작은 텍스트의 첫 번째 줄을 나타내는 문자열입니다.</summary>
-      <returns>Cortana 라이브 타일에서 줄 바꿈하지 않는 작은 텍스트의 첫 번째 줄을 나타내는 문자열입니다.</returns>
+      <summary>Cortana 라이브 타일에서 줄 바꿈되지 않는 작은 텍스트의 첫 줄을 나타내는 문자열입니다.</summary>
+      <returns>Cortana 라이브 타일에서 줄 바꿈되지 않는 작은 텍스트의 첫 줄을 나타내는 문자열입니다.</returns>
     </member>
     <member name="P:Windows.Phone.Notification.Management.CortanaTileNotificationTriggerDetails.NonWrappedSmallContent2">
-      <summary>Cortana 라이브 타일에서 줄 바꿈하지 않는 작은 텍스트의 두 번째 줄을 나타내는 문자열입니다.</summary>
-      <returns>Cortana 라이브 타일에서 줄 바꿈하지 않는 작은 텍스트의 두 번째 줄을 나타내는 문자열입니다.</returns>
+      <summary>Cortana 라이브 타일에서 줄 바꿈되지 않는 작은 텍스트의 두 번째 줄을 나타내는 문자열입니다.</summary>
+      <returns>Cortana 라이브 타일에서 줄 바꿈되지 않는 작은 텍스트의 두 번째 줄을 나타내는 문자열입니다.</returns>
     </member>
     <member name="P:Windows.Phone.Notification.Management.CortanaTileNotificationTriggerDetails.NonWrappedSmallContent3">
-      <summary>Cortana 라이브 타일에서 줄 바꿈하지 않는 작은 텍스트의 세 번째 줄을 나타내는 문자열입니다.</summary>
-      <returns>Cortana 라이브 타일에서 줄 바꿈하지 않는 작은 텍스트의 세 번째 줄을 나타내는 문자열입니다.</returns>
+      <summary>Cortana 라이브 타일에서 줄 바꿈되지 않는 작은 텍스트의 세 번째 줄을 나타내는 문자열입니다.</summary>
+      <returns>Cortana 라이브 타일에서 줄 바꿈되지 않는 작은 텍스트의 세 번째 줄을 나타내는 문자열입니다.</returns>
     </member>
     <member name="P:Windows.Phone.Notification.Management.CortanaTileNotificationTriggerDetails.NonWrappedSmallContent4">
-      <summary>Cortana 라이브 타일에서 줄 바꿈하지 않는 작은 텍스트의 네 번째 줄을 나타내는 문자열입니다.</summary>
-      <returns>Cortana 라이브 타일에서 줄 바꿈하지 않는 작은 텍스트의 네 번째 줄을 나타내는 문자열입니다.</returns>
+      <summary>Cortana 라이브 타일에서 줄 바꿈되지 않는 작은 텍스트의 네 번째 줄을 나타내는 문자열입니다.</summary>
+      <returns>Cortana 라이브 타일에서 줄 바꿈되지 않는 작은 텍스트의 네 번째 줄을 나타내는 문자열입니다.</returns>
     </member>
     <member name="P:Windows.Phone.Notification.Management.CortanaTileNotificationTriggerDetails.Source">
-      <summary>Cortana 라이브 타일의 소스 텍스트에 해당 하는 문자열입니다. 원본 텍스트는 긴 타일의 오른쪽 아래 모퉁이에 표시 됩니다.</summary>
-      <returns>Cortana 라이브 타일의 원본 텍스트입니다.</returns>
+      <summary>Cortana 라이브 타일에서 소스 텍스트에 해당하는 문자열입니다. 큰 타일의 오른쪽 아래 모퉁이에 소스 텍스트가 표시됩니다.</summary>
+      <returns>Cortana 라이브 타일의 소스 텍스트입니다.</returns>
     </member>
     <member name="P:Windows.Phone.Notification.Management.CortanaTileNotificationTriggerDetails.StartedProcessing">
-      <summary>액세서리에서 알림 처리를 시작 했는지 여부를 지정 합니다.</summary>
-      <returns>* * true * * 보조 프로그램이 알림 처리를 시작한 경우 그렇지 않으면 * * false입니다. * *</returns>
+      <summary>액세서리에서 알림 처리를 시작했는지 여부를 지정합니다.</summary>
+      <returns>액세서리에서 전자 메일 알림 처리를 시작했으면 **true**이고, 그렇지 않으면 **false**입니다.</returns>
     </member>
     <member name="P:Windows.Phone.Notification.Management.CortanaTileNotificationTriggerDetails.TileId">
-      <summary>받은 알림에 해당 하는 Cortana 라이브 타일의 ID입니다.</summary>
-      <returns>받은 알림에 해당 하는 Cortana 라이브 타일의 ID입니다.</returns>
+      <summary>수신된 알림에 해당하는 Cortana 라이브 타일의 ID입니다.</summary>
+      <returns>수신된 알림에 해당하는 Cortana 라이브 타일의 ID입니다.</returns>
     </member>
     <member name="P:Windows.Phone.Notification.Management.CortanaTileNotificationTriggerDetails.TimeCreated">
-      <summary>알림이 만들어진 날짜 및 시간입니다.</summary>
-      <returns>알림이 만들어진 날짜 및 시간입니다.</returns>
+      <summary>알림을 만든 날짜와 시간입니다.</summary>
+      <returns>알림을 만든 날짜와 시간입니다.</returns>
     </member>
     <member name="T:Windows.Phone.Notification.Management.EmailAccountInfo">
-      <summary>전자 메일 계정의 표시 이름 및 계정에서 알림을 사용 하는지 여부를 나타냅니다.</summary>
+      <summary>전자 메일 계정의 표시 이름과 계정에 대한 알림 사용 여부를 나타냅니다.</summary>
     </member>
     <member name="P:Windows.Phone.Notification.Management.EmailAccountInfo.DisplayName">
       <summary>전자 메일 계정의 표시 이름을 나타냅니다.</summary>
-      <returns>표시 이름을 포함 하는 문자열입니다.</returns>
+      <returns>표시 이름을 포함하는 문자열입니다.</returns>
     </member>
     <member name="P:Windows.Phone.Notification.Management.EmailAccountInfo.IsNotificationEnabled">
-      <summary>전자 메일 계정에 대해 알림을 사용할 수 있는지 여부를 나타내는 값을 가져옵니다.</summary>
-      <returns>전자 메일 계정에 대해 알림을 사용 하는 경우 true입니다. 그렇지 않으면 false입니다.</returns>
+      <summary>전자 메일 계정에 대한 알림 사용 여부를 나타내는 값을 가져옵니다.</summary>
+      <returns>전자 메일 계정에 대해 알림을 사용하면 true이고, 그렇지 않으면 false입니다.</returns>
     </member>
     <member name="T:Windows.Phone.Notification.Management.EmailFolderInfo">
-      <summary>전자 메일 폴더의 표시 이름 및 폴더에 대해 알림을 사용 하는지 여부를 나타냅니다.</summary>
+      <summary>전자 메일 폴더의 표시 이름 및 폴더에 대한 알림 사용 여부를 나타냅니다.</summary>
     </member>
     <member name="P:Windows.Phone.Notification.Management.EmailFolderInfo.DisplayName">
       <summary>전자 메일 폴더의 표시 이름을 나타냅니다.</summary>
-      <returns>전자 메일 폴더의 표시 이름을 포함 하는 문자열입니다.</returns>
+      <returns>전자 메일 폴더의 표시 이름을 포함하는 문자열입니다.</returns>
     </member>
     <member name="P:Windows.Phone.Notification.Management.EmailFolderInfo.IsNotificationEnabled">
-      <summary>전자 메일 계정이 액세서리 응용 프로그램에 알림을 제공할 수 있는지 여부를 나타내는 값을 가져옵니다.</summary>
-      <returns>전자 메일 계정에서 알림을 제공할 수 있으면 true이 고, 그렇지 않으면 false입니다.</returns>
+      <summary>전자 메일 계정에서 액세서리 응용 프로그램에 알림을 제공할 수 있는지 여부를 나타내는 값을 가져옵니다.</summary>
+      <returns>전자 메일 계정에서 알림을 제공할 수 있으면 true이고, 그렇지 않으면 false입니다.</returns>
     </member>
     <member name="T:Windows.Phone.Notification.Management.EmailNotificationTriggerDetails">
-      <summary>액세서리에서 전자 메일 알림을 렌더링 하는 데 필요한 모든 정보를 나타냅니다.</summary>
+      <summary>액세서리에 대한 전자 메일 알림을 렌더링하는 데 필요한 모든 정보를 나타냅니다.</summary>
     </member>
     <member name="P:Windows.Phone.Notification.Management.EmailNotificationTriggerDetails.AccessoryNotificationType">
-      <summary>수신 되는 알림 유형을 지정 하는 AccessoryNotificationType입니다. 전자 메일 알림의 경우이 값은 AccessoryNotificationType입니다.</summary>
-      <returns>AccessoryNotificationType</returns>
+      <summary>수신한 알림의 유형을 지정하는 AccessoryNotificationType입니다. 전자 메일 알림의 경우 이 값은 AccessoryNotificationType.Email입니다.</summary>
+      <returns>AccessoryNotificationType.Email</returns>
     </member>
     <member name="P:Windows.Phone.Notification.Management.EmailNotificationTriggerDetails.AccountName">
       <summary>휴대폰의 계정 이름입니다.</summary>
-      <returns>휴대폰에서 계정을 참조 하는 이름을 지정 하는 문자열입니다.</returns>
+      <returns>휴대폰 계정을 참조하는 이름을 지정하는 문자열입니다.</returns>
     </member>
     <member name="P:Windows.Phone.Notification.Management.EmailNotificationTriggerDetails.AppDisplayName">
-      <summary>전자 메일 알림을 생성 한 앱의 표시 이름을 나타냅니다.</summary>
-      <returns>전자 메일 알림을 생성 한 앱의 표시 이름입니다.</returns>
+      <summary>전자 메일 알림을 생성한 앱의 표시 이름을 나타냅니다.</summary>
+      <returns>전자 메일 알림을 생성한 앱의 표시 이름입니다.</returns>
     </member>
     <member name="P:Windows.Phone.Notification.Management.EmailNotificationTriggerDetails.AppId">
-      <summary>알림과 연결 된 앱의 ID입니다 (해당 하는 경우). 저장소의 앱 ID가 아닙니다. 앱을 고유 하 게 식별 하기 위해 특정 휴대폰의 앱 인스턴스 ID입니다.</summary>
-      <returns>응용 프로그램의 ID를 지정 하는 문자열입니다.</returns>
+      <summary>해당하는 경우 알림과 관련된 앱의 ID입니다. Store에 있는 앱의 ID는 해당되지 않습니다. 특정 휴대폰에서 앱을 고유하게 식별하는 앱 인스턴스의 ID입니다.</summary>
+      <returns>앱의 ID를 지정하는 문자열입니다.</returns>
     </member>
     <member name="P:Windows.Phone.Notification.Management.EmailNotificationTriggerDetails.EmailMessage">
-      <summary>전자 메일에 대 한 추가 세부 정보를 포함 하는 EmailMessage 개체입니다.</summary>
-      <returns>Windows. e l e. EmailMessage의 인터페이스입니다.</returns>
+      <summary>전자 메일에 대한 추가 정보를 포함하는 EmailMessage 개체입니다.</summary>
+      <returns>Windows.ApplicationModel.Email.EmailMessage의 인터페이스입니다.</returns>
     </member>
     <member name="P:Windows.Phone.Notification.Management.EmailNotificationTriggerDetails.MessageEntryId">
-      <summary>전화 MAPI 저장소의 개별 전자 메일에 대 한 고유 식별자를 나타냅니다.</summary>
-      <returns>전자 메일의 식별자입니다.</returns>
+      <summary>휴대폰 MAPI 저장소에 있는 개별 전자 메일에 대한 고유 식별자를 나타냅니다.</summary>
+      <returns>전자 메일에 대한 식별자입니다.</returns>
     </member>
     <member name="P:Windows.Phone.Notification.Management.EmailNotificationTriggerDetails.ParentFolderName">
       <summary>전자 메일 메시지의 부모 폴더 이름입니다.</summary>
-      <returns>부모 폴더의 이름을 포함 하는 문자열입니다.</returns>
+      <returns>부모 폴더의 이름이 포함된 문자열입니다.</returns>
     </member>
     <member name="P:Windows.Phone.Notification.Management.EmailNotificationTriggerDetails.SenderAddress">
       <summary>전자 메일 메시지를 보낸 사람의 전자 메일 주소입니다.</summary>
       <returns>전자 메일 메시지를 보낸 사람의 전자 메일 주소를 나타내는 문자열입니다.</returns>
     </member>
     <member name="P:Windows.Phone.Notification.Management.EmailNotificationTriggerDetails.SenderName">
-      <summary>전자 메일 메시지의 보낸 사람의 표시 이름입니다.</summary>
-      <returns>전자 메일 메시지의 보낸 사람의 표시 이름을 나타내는 문자열입니다.</returns>
+      <summary>전자 메일 메시지를 보낸 사람의 표시 이름입니다.</summary>
+      <returns>전자 메일 메시지를 보낸 사람의 표시 이름을 나타내는 문자열입니다.</returns>
     </member>
     <member name="P:Windows.Phone.Notification.Management.EmailNotificationTriggerDetails.StartedProcessing">
-      <summary>액세서리에서 전자 메일 알림 처리를 시작 했는지 여부를 지정 합니다.</summary>
-      <returns>* * true * * 보조 프로그램이 메일 알림 처리를 시작한 경우 그렇지 않으면 * * false입니다. * *</returns>
+      <summary>액세서리에서 전자 메일 알림 처리를 시작했는지 여부를 지정합니다.</summary>
+      <returns>액세서리에서 전자 메일 알림 처리를 시작했으면 **true**이고, 그렇지 않으면 **false**입니다.</returns>
     </member>
     <member name="P:Windows.Phone.Notification.Management.EmailNotificationTriggerDetails.TimeCreated">
-      <summary>전자 메일 알림이 만들어진 날짜 및 시간을 나타냅니다.</summary>
-      <returns>전자 메일 알림이 생성 된 날짜/시간입니다.</returns>
+      <summary>전자 메일 알림을 만든 날짜와 시간을 나타냅니다.</summary>
+      <returns>전자 메일 알림을 만든 DateTime입니다.</returns>
     </member>
     <member name="P:Windows.Phone.Notification.Management.EmailNotificationTriggerDetails.Timestamp">
-      <summary>액세서리 관리자 서비스에서 액세서리 앱으로 알림이 전달 된 날짜 및 시간을 나타냅니다.</summary>
-      <returns>액세서리 관리자 서비스에서 액세서리 앱으로 알림이 전달 된 날짜 및 시간입니다.</returns>
+      <summary>액세서리 관리자 서비스에서 액세서리 앱에 알림을 제공한 날짜와 시간을 나타냅니다.</summary>
+      <returns>액세서리 관리자 서비스에서 액세서리 앱에 알림을 제공한 날짜와 시간입니다.</returns>
     </member>
     <member name="T:Windows.Phone.Notification.Management.EmailReadNotificationTriggerDetails">
-      <summary>액세서리에서 전자 메일 읽기 알림을 렌더링 하는 데 필요한 모든 정보를 나타냅니다.</summary>
+      <summary>액세서리에 대한 전자 메일 읽기 알림을 렌더링하는 데 필요한 모든 정보를 나타냅니다.</summary>
     </member>
     <member name="P:Windows.Phone.Notification.Management.EmailReadNotificationTriggerDetails.AccessoryNotificationType">
-      <summary>수신 되는 알림 유형을 지정 하는 AccessoryNotificationType입니다. 전자 메일 알림의 경우이 값은 AccessoryNotificationType입니다.</summary>
-      <returns>AccessoryNotificationType 읽기</returns>
+      <summary>수신한 알림의 유형을 지정하는 AccessoryNotificationType입니다. 전자 메일 알림의 경우 이 값은 AccessoryNotificationType.EmailRead입니다.</summary>
+      <returns>AccessoryNotificationType.EmailRead</returns>
     </member>
     <member name="P:Windows.Phone.Notification.Management.EmailReadNotificationTriggerDetails.AccountName">
       <summary>전자 메일 계정의 이름을 나타냅니다.</summary>
-      <returns>전자 메일 계정의 이름을 포함 하는 문자열입니다.</returns>
+      <returns>전자 메일 계정의 이름이 포함된 문자열입니다.</returns>
     </member>
     <member name="P:Windows.Phone.Notification.Management.EmailReadNotificationTriggerDetails.AppDisplayName">
-      <summary>전자 메일 읽기 알림을 생성 한 앱의 표시 이름을 나타냅니다.</summary>
-      <returns>전자 메일 알림을 생성 한 앱의 표시 이름입니다.</returns>
+      <summary>전자 메일 읽기 알림을 생성한 앱의 표시 이름을 나타냅니다.</summary>
+      <returns>전자 메일 알림을 생성한 앱의 표시 이름입니다.</returns>
     </member>
     <member name="P:Windows.Phone.Notification.Management.EmailReadNotificationTriggerDetails.AppId">
-      <summary>알림과 연결 된 앱의 ID입니다 (해당 하는 경우). 저장소의 앱 ID가 아닙니다. 앱을 고유 하 게 식별 하기 위해 특정 휴대폰의 앱 인스턴스 ID입니다.</summary>
-      <returns>응용 프로그램의 ID를 지정 하는 문자열입니다.</returns>
+      <summary>해당하는 경우 알림과 관련된 앱의 ID입니다. Store에 있는 앱의 ID는 해당되지 않습니다. 특정 휴대폰에서 앱을 고유하게 식별하는 앱 인스턴스의 ID입니다.</summary>
+      <returns>앱의 ID를 지정하는 문자열입니다.</returns>
     </member>
     <member name="P:Windows.Phone.Notification.Management.EmailReadNotificationTriggerDetails.IsRead">
-      <summary>전자 메일을 읽은 적이 있는지 여부를 나타냅니다.</summary>
-      <returns>전자 메일을 읽은 경우 true이 고, 그렇지 않으면 false입니다.</returns>
+      <summary>전자 메일을 읽었는지 여부를 나타냅니다.</summary>
+      <returns>전자 메일을 읽었으면 true이고, 그렇지 않으면 false입니다.</returns>
     </member>
     <member name="P:Windows.Phone.Notification.Management.EmailReadNotificationTriggerDetails.MessageEntryId">
-      <summary>전화 MAPI 저장소의 개별 전자 메일에 대 한 고유 식별자를 나타냅니다.</summary>
-      <returns>전자 메일의 식별자입니다.</returns>
+      <summary>휴대폰 MAPI 저장소에 있는 개별 전자 메일에 대한 고유 식별자를 나타냅니다.</summary>
+      <returns>전자 메일에 대한 식별자입니다.</returns>
     </member>
     <member name="P:Windows.Phone.Notification.Management.EmailReadNotificationTriggerDetails.ParentFolderName">
       <summary>전자 메일 메시지의 부모 폴더 이름입니다.</summary>
-      <returns>부모 폴더의 이름을 포함 하는 문자열입니다.</returns>
+      <returns>부모 폴더의 이름이 포함된 문자열입니다.</returns>
     </member>
     <member name="P:Windows.Phone.Notification.Management.EmailReadNotificationTriggerDetails.StartedProcessing">
-      <summary>액세서리에서 전자 메일 알림 처리를 시작 했는지 여부를 지정 합니다.</summary>
-      <returns>* * true * * 보조 프로그램이 메일 알림 처리를 시작한 경우 그렇지 않으면 * * false입니다. * *</returns>
+      <summary>액세서리에서 전자 메일 알림 처리를 시작했는지 여부를 지정합니다.</summary>
+      <returns>액세서리에서 전자 메일 알림 처리를 시작했으면 **true**이고, 그렇지 않으면 **false**입니다.</returns>
     </member>
     <member name="P:Windows.Phone.Notification.Management.EmailReadNotificationTriggerDetails.TimeCreated">
-      <summary>전자 메일 알림이 만들어진 날짜 및 시간을 나타냅니다.</summary>
-      <returns>전자 메일 알림이 생성 된 날짜/시간입니다.</returns>
+      <summary>전자 메일 알림을 만든 날짜와 시간을 나타냅니다.</summary>
+      <returns>전자 메일 알림을 만든 DateTime입니다.</returns>
     </member>
     <member name="T:Windows.Phone.Notification.Management.IAccessoryNotificationTriggerDetails">
       <summary>액세서리 알림 데이터의 컬렉션을 나타냅니다.</summary>
     </member>
     <member name="P:Windows.Phone.Notification.Management.IAccessoryNotificationTriggerDetails.AccessoryNotificationType">
-      <summary>수신 되는 알림 유형을 지정 하는 AccessoryNotificationType입니다.</summary>
-      <returns>값 목록은 AccessoryNotificationType를 참조 하세요.</returns>
+      <summary>수신한 알림의 유형을 지정하는 AccessoryNotificationType입니다.</summary>
+      <returns>값 목록을 보려면 AccessoryNotificationType을 참조하십시오.</returns>
     </member>
     <member name="P:Windows.Phone.Notification.Management.IAccessoryNotificationTriggerDetails.AppDisplayName">
-      <summary>알림을 생성 한 앱의 표시 이름을 나타냅니다.</summary>
-      <returns>알림을 생성 한 앱의 표시 이름입니다.</returns>
+      <summary>알림을 생성한 앱의 표시 이름을 나타냅니다.</summary>
+      <returns>알림을 생성한 앱의 표시 이름입니다.</returns>
     </member>
     <member name="P:Windows.Phone.Notification.Management.IAccessoryNotificationTriggerDetails.AppId">
-      <summary>알림을 생성 한 앱의 인스턴스 ID를 나타냅니다.</summary>
-      <returns>알림을 생성 한 앱의 인스턴스 ID입니다.</returns>
+      <summary>알림을 생성한 앱의 인스턴스 ID를 나타냅니다.</summary>
+      <returns>알림을 생성한 앱의 인스턴스 ID입니다.</returns>
     </member>
     <member name="P:Windows.Phone.Notification.Management.IAccessoryNotificationTriggerDetails.StartedProcessing">
-      <summary>액세서리에서 알림 처리를 시작 했는지 여부를 지정 합니다.</summary>
-      <returns>* * true * * 보조 프로그램이 알림 처리를 시작한 경우 그렇지 않으면 * * false입니다. * *</returns>
+      <summary>액세서리에서 알림 처리를 시작했는지 여부를 지정합니다.</summary>
+      <returns>액세서리에서 전자 메일 알림 처리를 시작했으면 **true**이고, 그렇지 않으면 **false**입니다.</returns>
     </member>
     <member name="P:Windows.Phone.Notification.Management.IAccessoryNotificationTriggerDetails.TimeCreated">
-      <summary>알림이 생성 된 날짜/시간을 나타냅니다.</summary>
-      <returns>알림이 생성 된 날짜/시간입니다.</returns>
+      <summary>알림을 만든 DateTime을 나타냅니다.</summary>
+      <returns>알림을 만든 DateTime입니다.</returns>
     </member>
     <member name="T:Windows.Phone.Notification.Management.MediaControlsTriggerDetails">
-      <summary>휴대폰의 미디어 재생 상태가 변경 되었음을 나타내는 알림을 렌더링 하는 데 필요한 모든 데이터를 나타냅니다.</summary>
+      <summary>휴대폰에서 미디어 재생 상태가 변경되었음을 나타내는 알림을 렌더링하는 데 필요한 모든 데이터를 나타냅니다.</summary>
     </member>
     <member name="P:Windows.Phone.Notification.Management.MediaControlsTriggerDetails.AccessoryNotificationType">
-      <summary>수신 되는 알림 유형을 지정 합니다. 미디어 알림의 경우이 값은 AccessoryNotificationType입니다.</summary>
-      <returns>AccessoryNotificationType</returns>
+      <summary>수신된 알림 형식을 지정합니다. 미디어 알림의 경우 이 값은 AccessoryNotificationType.Media입니다.</summary>
+      <returns>AccessoryNotificationType.Media</returns>
     </member>
     <member name="P:Windows.Phone.Notification.Management.MediaControlsTriggerDetails.AppDisplayName">
-      <summary>알림을 생성 한 앱의 표시 이름입니다.</summary>
-      <returns>알림을 생성 한 앱의 표시 이름입니다.</returns>
+      <summary>알림을 생성한 앱의 표시 이름입니다.</summary>
+      <returns>알림을 생성한 앱의 표시 이름입니다.</returns>
     </member>
     <member name="P:Windows.Phone.Notification.Management.MediaControlsTriggerDetails.AppId">
-      <summary>알림을 생성 한 앱의 인스턴스 ID입니다.</summary>
-      <returns>알림을 생성 한 앱의 인스턴스 ID입니다.</returns>
+      <summary>알림을 생성한 앱의 인스턴스 ID입니다.</summary>
+      <returns>알림을 생성한 앱의 인스턴스 ID입니다.</returns>
     </member>
     <member name="P:Windows.Phone.Notification.Management.MediaControlsTriggerDetails.MediaMetadata">
-      <summary>미디어에 대 한 추가 정보를 포함 하는 MediaMetadata 개체입니다.</summary>
-      <returns>미디어에 대 한 추가 정보를 포함 하는 MediaMetadata 개체입니다.</returns>
+      <summary>미디어에 대한 추가 정보가 포함된 MediaMetadata 개체입니다.</summary>
+      <returns>미디어에 대한 추가 정보가 포함된 MediaMetadata 개체입니다.</returns>
     </member>
     <member name="P:Windows.Phone.Notification.Management.MediaControlsTriggerDetails.PlaybackStatus">
       <summary>해당 미디어의 현재 재생 상태입니다.</summary>
-      <returns>가능한 값 목록은 PlaybackStatus를 참조 하세요.</returns>
+      <returns>사용 가능한 값 목록을 보려면 PlaybackStatus를 참조하십시오.</returns>
     </member>
     <member name="P:Windows.Phone.Notification.Management.MediaControlsTriggerDetails.StartedProcessing">
-      <summary>액세서리에서 알림 처리를 시작 했는지 여부를 지정 합니다.</summary>
-      <returns>* * true * * 보조 프로그램이 알림 처리를 시작한 경우 그렇지 않으면 * * false * *입니다.</returns>
+      <summary>액세서리에서 알림 처리를 시작했는지 여부를 지정합니다.</summary>
+      <returns>액세서리에서 전자 메일 알림 처리를 시작했으면 **true**이고, 그렇지 않으면 **false**입니다.</returns>
     </member>
     <member name="P:Windows.Phone.Notification.Management.MediaControlsTriggerDetails.TimeCreated">
-      <summary>알림이 만들어진 날짜 및 시간입니다.</summary>
-      <returns>알림이 만들어진 날짜 및 시간입니다.</returns>
+      <summary>알림을 만든 날짜와 시간입니다.</summary>
+      <returns>알림을 만든 날짜와 시간입니다.</returns>
     </member>
     <member name="T:Windows.Phone.Notification.Management.MediaMetadata">
-      <summary>액세서리 알림 인스턴스와 연결 된 메타 데이터를 가져옵니다.</summary>
+      <summary>액세서리 알림 인스턴스와 연결된 메타데이터를 가져옵니다.</summary>
     </member>
     <member name="P:Windows.Phone.Notification.Management.MediaMetadata.Album">
       <summary>앨범의 이름을 가져옵니다.</summary>
       <returns>앨범의 이름입니다.</returns>
     </member>
     <member name="P:Windows.Phone.Notification.Management.MediaMetadata.Artist">
-      <summary>음악가의 이름을 가져옵니다.</summary>
-      <returns>음악가의 이름을 포함 하는 문자열입니다.</returns>
+      <summary>아티스트의 이름을 가져옵니다.</summary>
+      <returns>아티스트의 이름을 포함하는 문자열입니다.</returns>
     </member>
     <member name="P:Windows.Phone.Notification.Management.MediaMetadata.Duration">
       <summary>미디어의 지속 시간을 가져옵니다.</summary>
-      <returns>미디어의 기간입니다.</returns>
+      <returns>미디어의 지속 시간입니다.</returns>
     </member>
     <member name="P:Windows.Phone.Notification.Management.MediaMetadata.Subtitle">
-      <summary>미디어의 부제를 가져옵니다.</summary>
-      <returns>미디어의 부제입니다.</returns>
+      <summary>미디어의 부제목을 가져옵니다.</summary>
+      <returns>미디어의 부제목입니다.</returns>
     </member>
     <member name="P:Windows.Phone.Notification.Management.MediaMetadata.Thumbnail">
       <summary>미디어의 미리 보기를 가져옵니다.</summary>
@@ -1061,42 +1061,42 @@
       <returns>미디어의 트랙 번호입니다.</returns>
     </member>
     <member name="T:Windows.Phone.Notification.Management.PhoneCallAudioEndpoint">
-      <summary>전화 통화의 끝점을 나타내며, 기본, 스피커 및 실습에 대 한 값을 포함 합니다.</summary>
+      <summary>기본값, 스피커 및 핸즈프리 값 등 전화 통화의 끝점을 나타냅니다.</summary>
     </member>
     <member name="F:Windows.Phone.Notification.Management.PhoneCallAudioEndpoint.Default">
-      <summary>전화가 끝점입니다.</summary>
+      <summary>휴대폰이 끝점입니다.</summary>
     </member>
     <member name="F:Windows.Phone.Notification.Management.PhoneCallAudioEndpoint.Handsfree">
-      <summary>손을 사용 하지 않는 것이 좋습니다.</summary>
+      <summary>핸즈프리가 끝점입니다.</summary>
     </member>
     <member name="F:Windows.Phone.Notification.Management.PhoneCallAudioEndpoint.Speaker">
-      <summary>스피커 전화가 끝점입니다.</summary>
+      <summary>스피커폰이 끝점입니다.</summary>
     </member>
     <member name="T:Windows.Phone.Notification.Management.PhoneCallDetails">
-      <summary>전화 통화에 대 한 세부 정보에 대 한 읽기 전용 액세스를 제공 합니다.</summary>
+      <summary>전화 통화 관련 정보에 대한 읽기 전용 액세스 권한을 제공합니다.</summary>
     </member>
     <member name="P:Windows.Phone.Notification.Management.PhoneCallDetails.CallDirection">
-      <summary>전화 통화, 수신 또는 발신의 방향을 가져옵니다.</summary>
-      <returns>전화 통화 방향입니다.</returns>
+      <summary>전화 통화의 방향(수신 또는 발신)을 가져옵니다.</summary>
+      <returns>전화 통화의 방향입니다.</returns>
     </member>
     <member name="P:Windows.Phone.Notification.Management.PhoneCallDetails.CallId">
       <summary>전화 통화의 식별자를 가져옵니다.</summary>
       <returns>전화 통화의 식별자입니다.</returns>
     </member>
     <member name="P:Windows.Phone.Notification.Management.PhoneCallDetails.CallMediaType">
-      <summary>미디어, 오디오 전용 또는 오디오 및 비디오의 유형을 가져옵니다.</summary>
-      <returns>미디어의 유형입니다.</returns>
+      <summary>미디어 형식(오디오 전용 또는 오디오 및 비디오)을 가져옵니다.</summary>
+      <returns>미디어 형식입니다.</returns>
     </member>
     <member name="P:Windows.Phone.Notification.Management.PhoneCallDetails.CallTransport">
-      <summary>전송 유형 (셀룰러 또는 VoIP)을 가져옵니다.</summary>
-      <returns>전송의 유형입니다.</returns>
+      <summary>전송 형식(셀룰러 또는 VoIP)을 가져옵니다.</summary>
+      <returns>전송 형식입니다.</returns>
     </member>
     <member name="P:Windows.Phone.Notification.Management.PhoneCallDetails.ConferenceCallId">
-      <summary>전화 통화에 대 한 식별자를 가져옵니다.</summary>
-      <returns>전화 통화에 대 한 식별자입니다.</returns>
+      <summary>전화 회의에 대한 식별자를 가져옵니다.</summary>
+      <returns>전화 회의에 대한 식별자입니다.</returns>
     </member>
     <member name="P:Windows.Phone.Notification.Management.PhoneCallDetails.ContactName">
-      <summary>전화 통화에 대 한 연락처의 이름을 가져옵니다.</summary>
+      <summary>전화 통화의 연락처 이름을 가져옵니다.</summary>
       <returns>연락처의 이름입니다.</returns>
     </member>
     <member name="P:Windows.Phone.Notification.Management.PhoneCallDetails.EndTime">
@@ -1104,234 +1104,234 @@
       <returns>전화 통화의 종료 시간입니다.</returns>
     </member>
     <member name="P:Windows.Phone.Notification.Management.PhoneCallDetails.PhoneLine">
-      <summary>전화 라인을 가져옵니다.</summary>
-      <returns>전화 라인입니다.</returns>
+      <summary>전화선을 가져옵니다.</summary>
+      <returns>전화선입니다.</returns>
     </member>
     <member name="P:Windows.Phone.Notification.Management.PhoneCallDetails.PhoneNumber">
-      <summary>전화 통화 번호를 가져옵니다.</summary>
-      <returns>전화 통화 번호입니다.</returns>
+      <summary>전화 통화의 번호를 가져옵니다.</summary>
+      <returns>전화 통화의 번호입니다.</returns>
     </member>
     <member name="P:Windows.Phone.Notification.Management.PhoneCallDetails.PresetTextResponses">
-      <summary>액세서리 응용 프로그램에서 표시할 수 있는 사전 설정 텍스트 응답의 목록을 가져옵니다.</summary>
-      <returns>사전 설정 텍스트 응답의 목록입니다. 텍스트 응답에는 응답 ID 및 해당 ID에 매핑된 문자열 텍스트가 포함 됩니다.</returns>
+      <summary>액세서리 응용 프로그램에서 표시할 수 있는 미리 설정된 텍스트 응답 목록을 가져옵니다.</summary>
+      <returns>미리 설정된 텍스트 응답 목록입니다. 텍스트 응답은 응답 ID와 해당 ID에 매핑되는 문자열 텍스트를 포함합니다.</returns>
     </member>
     <member name="P:Windows.Phone.Notification.Management.PhoneCallDetails.StartTime">
       <summary>전화 통화의 시작 시간을 가져옵니다.</summary>
       <returns>전화 통화의 시작 시간입니다.</returns>
     </member>
     <member name="P:Windows.Phone.Notification.Management.PhoneCallDetails.State">
-      <summary>전화 통화의 상태를 가져옵니다. 예를 들어, 대기 중 또는 종료 된 경우입니다.</summary>
+      <summary>전화 통화의 상태(예: 벨 울림, 대기 중, 종료됨)를 가져옵니다.</summary>
       <returns>전화 통화의 상태입니다.</returns>
     </member>
     <member name="T:Windows.Phone.Notification.Management.PhoneCallDirection">
-      <summary>전화 통화 방향을 나타냅니다.</summary>
+      <summary>전화 통화의 방향을 나타냅니다.</summary>
     </member>
     <member name="F:Windows.Phone.Notification.Management.PhoneCallDirection.Incoming">
-      <summary>전화 통화를 수신 합니다.</summary>
+      <summary>전화가 걸려오고 있습니다.</summary>
     </member>
     <member name="F:Windows.Phone.Notification.Management.PhoneCallDirection.Outgoing">
-      <summary>전화 통화를 보내는 경우</summary>
+      <summary>전화를 걸고 있습니다.</summary>
     </member>
     <member name="T:Windows.Phone.Notification.Management.PhoneCallState">
-      <summary>전화 통화의 상태를 나타냅니다. 예를 들어, 대기 중이거나 보류 중입니다.</summary>
+      <summary>전화 통화의 상태(예: 벨 울림, 보류 중)를 나타냅니다.</summary>
     </member>
     <member name="F:Windows.Phone.Notification.Management.PhoneCallState.Ended">
-      <summary>전화 통화 상태가 종료 되었습니다.</summary>
+      <summary>통화가 종료된 상태입니다.</summary>
     </member>
     <member name="F:Windows.Phone.Notification.Management.PhoneCallState.Held">
-      <summary>전화 통화 상태가 보류 됨입니다.</summary>
+      <summary>통화가 보류된 상태입니다.</summary>
     </member>
     <member name="F:Windows.Phone.Notification.Management.PhoneCallState.Ringing">
-      <summary>전화 통화 상태가 신호를 울립니다.</summary>
+      <summary>전화 통화가 벨 울림 상태입니다.</summary>
     </member>
     <member name="F:Windows.Phone.Notification.Management.PhoneCallState.Talking">
-      <summary>전화 통화 상태가 통신 하 고 있습니다.</summary>
+      <summary>통화 중 상태입니다.</summary>
     </member>
     <member name="F:Windows.Phone.Notification.Management.PhoneCallState.Unknown">
-      <summary>전화 통화 상태를 알 수 없습니다.</summary>
+      <summary>전화 통화의 상태를 알 수 없습니다.</summary>
     </member>
     <member name="T:Windows.Phone.Notification.Management.PhoneCallTransport">
-      <summary>전송, 셀룰러 또는 VoIP의 유형을 나타냅니다.</summary>
+      <summary>전송 형식(셀룰러 또는 VoIP)을 나타냅니다.</summary>
     </member>
     <member name="F:Windows.Phone.Notification.Management.PhoneCallTransport.Cellular">
       <summary>셀룰러 전송입니다.</summary>
     </member>
     <member name="F:Windows.Phone.Notification.Management.PhoneCallTransport.Voip">
-      <summary>전송이 VoIP입니다.</summary>
+      <summary>VoIP 전송입니다.</summary>
     </member>
     <member name="T:Windows.Phone.Notification.Management.PhoneLineDetails">
-      <summary>전화 라인의 세부 정보를 나타냅니다.</summary>
+      <summary>전화선에 대한 세부 정보를 나타냅니다.</summary>
     </member>
     <member name="P:Windows.Phone.Notification.Management.PhoneLineDetails.DefaultOutgoingLine">
-      <summary>전화 회선이 기본 발신 선 인지 여부를 나타내는 값을 가져옵니다.</summary>
-      <returns>전화 회선이 기본 발신 줄 이면 True이 고, 그렇지 않으면 false입니다.</returns>
+      <summary>전화선이 기본 발신 회선인지 여부를 나타내는 값을 가져옵니다.</summary>
+      <returns>전화선이 기본 발신 회선이면 true이고, 그렇지 않으면 false입니다.</returns>
     </member>
     <member name="P:Windows.Phone.Notification.Management.PhoneLineDetails.DisplayName">
-      <summary>전화 라인의 표시 이름을 가져옵니다.</summary>
-      <returns>전화 라인의 표시 이름입니다.</returns>
+      <summary>전화선의 표시 이름을 가져옵니다.</summary>
+      <returns>전화선의 표시 이름입니다.</returns>
     </member>
     <member name="P:Windows.Phone.Notification.Management.PhoneLineDetails.LineId">
-      <summary>전화 라인의 식별자를 가져옵니다.</summary>
-      <returns>전화 라인의 식별자입니다.</returns>
+      <summary>전화선의 식별자를 가져옵니다.</summary>
+      <returns>전화선의 식별자입니다.</returns>
     </member>
     <member name="P:Windows.Phone.Notification.Management.PhoneLineDetails.LineNumber">
-      <summary>전화 라인 번호를 가져옵니다.</summary>
-      <returns>휴대폰의 줄 번호입니다.</returns>
+      <summary>전화선 번호를 가져옵니다.</summary>
+      <returns>전화선의 번호입니다.</returns>
     </member>
     <member name="P:Windows.Phone.Notification.Management.PhoneLineDetails.MissedCallCount">
-      <summary>전화 라인에서 누락 된 호출 수를 나타냅니다.</summary>
-      <returns>누락 된 호출 수입니다.</returns>
+      <summary>전화선의 부재 중 전화 수를 나타냅니다.</summary>
+      <returns>부재 중 전화 수입니다.</returns>
     </member>
     <member name="P:Windows.Phone.Notification.Management.PhoneLineDetails.RegistrationState">
-      <summary>연결 끊김, 홈 또는 로밍의 전화 라인 등록 상태를 가져옵니다.</summary>
+      <summary>전화선의 등록 상태(연결 끊김, 자택 또는 로밍)를 가져옵니다.</summary>
       <returns>휴대폰의 등록 상태입니다.</returns>
     </member>
     <member name="P:Windows.Phone.Notification.Management.PhoneLineDetails.VoicemailCount">
-      <summary>전화 회선의 음성 메일 메시지 수를 가져옵니다.</summary>
-      <returns>전화 회선의 음성 메일 메시지 수입니다.</returns>
+      <summary>전화선의 음성 메일 메시지 수를 가져옵니다.</summary>
+      <returns>전화선의 음성 메일 메시지 수입니다.</returns>
     </member>
     <member name="T:Windows.Phone.Notification.Management.PhoneLineRegistrationState">
-      <summary>전화 회선, 연결 끊김, 홈 또는 로밍에 대 한 등록 상태를 나타냅니다.</summary>
+      <summary>전화선의 등록 상태(연결 끊김, 자택 또는 로밍)를 나타냅니다.</summary>
     </member>
     <member name="F:Windows.Phone.Notification.Management.PhoneLineRegistrationState.Disconnected">
-      <summary>전화 회선 등록 상태를 끊었습니다.</summary>
+      <summary>전화선 등록 상태가 연결 끊김입니다.</summary>
     </member>
     <member name="F:Windows.Phone.Notification.Management.PhoneLineRegistrationState.Home">
-      <summary>전화 회선 등록 상태는 홈입니다.</summary>
+      <summary>전화선 등록 상태가 자택입니다.</summary>
     </member>
     <member name="F:Windows.Phone.Notification.Management.PhoneLineRegistrationState.Roaming">
-      <summary>전화 회선 등록 상태는 로밍입니다.</summary>
+      <summary>전화선 등록 상태가 로밍입니다.</summary>
     </member>
     <member name="T:Windows.Phone.Notification.Management.PhoneMediaType">
-      <summary>전화 라인, 오디오 전용 또는 오디오 및 비디오의 미디어 유형을 나타냅니다.</summary>
+      <summary>전화선의 미디어 형식(오디오 전용 또는 오디오 및 비디오)을 나타냅니다.</summary>
     </member>
     <member name="F:Windows.Phone.Notification.Management.PhoneMediaType.AudioOnly">
-      <summary>전화 라인의 미디어는 오디오 전용입니다.</summary>
+      <summary>전화선의 미디어가 오디오 전용입니다.</summary>
     </member>
     <member name="F:Windows.Phone.Notification.Management.PhoneMediaType.AudioVideo">
-      <summary>전화 라인의 미디어는 오디오 및 비디오입니다.</summary>
+      <summary>전화선의 미디어가 오디오 및 비디오입니다.</summary>
     </member>
     <member name="T:Windows.Phone.Notification.Management.PhoneNotificationTriggerDetails">
-      <summary>액세서리에서 전화 알림을 렌더링 하는 데 필요한 모든 정보를 나타냅니다.</summary>
+      <summary>액세서리에 대한 휴대폰 알림을 렌더링하는 데 필요한 모든 정보를 나타냅니다.</summary>
     </member>
     <member name="P:Windows.Phone.Notification.Management.PhoneNotificationTriggerDetails.AccessoryNotificationType">
-      <summary>수신 되는 알림 유형을 지정 하는 AccessoryNotificationType입니다. 전화 알림의 경우이 값은 AccessoryNotificationType입니다.</summary>
-      <returns>AccessoryNotificationType</returns>
+      <summary>수신한 알림의 유형을 지정하는 AccessoryNotificationType입니다. 휴대폰 알림의 경우 이 값은 AccessoryNotificationType.Phone입니다.</summary>
+      <returns>AccessoryNotificationType.Phone</returns>
     </member>
     <member name="P:Windows.Phone.Notification.Management.PhoneNotificationTriggerDetails.AppDisplayName">
-      <summary>전화 알림을 생성 한 앱의 표시 이름을 나타냅니다.</summary>
-      <returns>전화 알림을 생성 한 앱의 표시 이름입니다.</returns>
+      <summary>휴대폰 알림을 생성한 앱의 표시 이름을 나타냅니다.</summary>
+      <returns>휴대폰 알림을 생성한 앱의 표시 이름입니다.</returns>
     </member>
     <member name="P:Windows.Phone.Notification.Management.PhoneNotificationTriggerDetails.AppId">
-      <summary>알림과 연결 된 앱의 ID입니다 (해당 하는 경우). 저장소의 앱 ID가 아닙니다. 앱을 고유 하 게 식별 하기 위해 특정 휴대폰의 앱 인스턴스 ID입니다.</summary>
-      <returns>응용 프로그램의 ID를 지정 하는 문자열입니다.</returns>
+      <summary>해당하는 경우 알림과 관련된 앱의 ID입니다. Store에 있는 앱의 ID는 해당되지 않습니다. 특정 휴대폰에서 앱을 고유하게 식별하는 앱 인스턴스의 ID입니다.</summary>
+      <returns>앱의 ID를 지정하는 문자열입니다.</returns>
     </member>
     <member name="P:Windows.Phone.Notification.Management.PhoneNotificationTriggerDetails.CallDetails">
-      <summary>전화 알림을 생성 한 전화 통화에 대 한 세부 정보를 나타냅니다.</summary>
-      <returns>전화 통화에 대 한 세부 정보입니다.</returns>
+      <summary>휴대폰 알림을 생성한 전화 통화에 대한 세부 정보를 나타냅니다.</summary>
+      <returns>전화 통화에 대한 세부 정보입니다.</returns>
     </member>
     <member name="P:Windows.Phone.Notification.Management.PhoneNotificationTriggerDetails.PhoneLineChangedId">
-      <summary>알림을 생성 한 변경 된 전화 라인의 인스턴스 ID를 나타냅니다.</summary>
-      <returns>새 전화 라인의 ID를 나타냅니다.</returns>
+      <summary>알림을 생성한 변경된 전화선의 인스턴스 ID를 나타냅니다.</summary>
+      <returns>새 전화선의 ID를 나타냅니다.</returns>
     </member>
     <member name="P:Windows.Phone.Notification.Management.PhoneNotificationTriggerDetails.PhoneNotificationType">
-      <summary>수신 된 알림의 유형을 나타내는 PhoneNotificationType 열거형의 값입니다.</summary>
-      <returns>값 목록은 PhoneNotificationType를 참조 하세요.</returns>
+      <summary>수신된 알림의 형식을 나타내는 PhoneNotificationType 열거형의 값입니다.</summary>
+      <returns>값 목록을 보려면 PhoneNotificationType을 참조하십시오.</returns>
     </member>
     <member name="P:Windows.Phone.Notification.Management.PhoneNotificationTriggerDetails.StartedProcessing">
-      <summary>액세서리에서 전화 알림 처리를 시작 했는지 여부를 지정 합니다.</summary>
-      <returns>* * true * * 보조 프로그램이 전화 알림 처리를 시작한 경우 그렇지 않으면 * * false입니다. * *</returns>
+      <summary>액세서리에서 휴대폰 알림 처리를 시작했는지 여부를 지정합니다.</summary>
+      <returns>액세서리에서 전화 알림 처리를 시작했으면 **true**이고, 그렇지 않으면 **false**입니다.</returns>
     </member>
     <member name="P:Windows.Phone.Notification.Management.PhoneNotificationTriggerDetails.TimeCreated">
-      <summary>전화 통화 알림이 만들어진 날짜 및 시간을 나타냅니다.</summary>
-      <returns>알림이 생성 된 날짜/시간입니다.</returns>
+      <summary>전화 통화 알림을 만든 날짜와 시간을 나타냅니다.</summary>
+      <returns>알림을 만든 DateTime입니다.</returns>
     </member>
     <member name="T:Windows.Phone.Notification.Management.PhoneNotificationType">
-      <summary>액세서리 응용 프로그램으로 전송 되는 알림 유형을 나타냅니다.</summary>
+      <summary>액세서리 응용 프로그램에 보낸 알림의 형식을 나타냅니다.</summary>
     </member>
     <member name="F:Windows.Phone.Notification.Management.PhoneNotificationType.CallChanged">
-      <summary>알림은 변경 된 호출입니다.</summary>
+      <summary>알림 형식이 변경된 통화입니다.</summary>
     </member>
     <member name="F:Windows.Phone.Notification.Management.PhoneNotificationType.LineChanged">
-      <summary>변경 된 전화 라인의 알림입니다.</summary>
+      <summary>알림 형식이 변경된 전화선입니다.</summary>
     </member>
     <member name="F:Windows.Phone.Notification.Management.PhoneNotificationType.NewCall">
-      <summary>새 호출에 대 한 알림입니다.</summary>
+      <summary>알림 형식이 새 통화입니다.</summary>
     </member>
     <member name="F:Windows.Phone.Notification.Management.PhoneNotificationType.PhoneCallAudioEndpointChanged">
-      <summary>알림은 오디오 enpoint (손 모양, 강연자 또는 휴대폰)입니다.</summary>
+      <summary>알림 형식이 오디오 끝점(핸즈프리, 스피커, 휴대폰) 변경입니다.</summary>
     </member>
     <member name="F:Windows.Phone.Notification.Management.PhoneNotificationType.PhoneMuteChanged">
-      <summary>알림은 전화 음소거 상태를 변경 하는 것입니다.</summary>
+      <summary>알림 형식이 전화 음소거 상태 변경입니다.</summary>
     </member>
     <member name="T:Windows.Phone.Notification.Management.PlaybackCapability">
-      <summary>미디어 재생 기능의 유형을 나타냅니다.</summary>
+      <summary>미디어 재생 기능의 형식을 나타냅니다.</summary>
     </member>
     <member name="F:Windows.Phone.Notification.Management.PlaybackCapability.ChannelDown">
-      <summary>채널 다운 재생 기능.</summary>
+      <summary>채널 아래로 재생 기능입니다.</summary>
     </member>
     <member name="F:Windows.Phone.Notification.Management.PlaybackCapability.ChannelUp">
-      <summary>채널 위로 재생 기능을 설정 합니다.</summary>
+      <summary>채널 위로 재생 기능입니다.</summary>
     </member>
     <member name="F:Windows.Phone.Notification.Management.PlaybackCapability.FastForward">
-      <summary>빨리 감기 재생 기능.</summary>
+      <summary>재생 빨리 감기 기능입니다.</summary>
     </member>
     <member name="F:Windows.Phone.Notification.Management.PlaybackCapability.Next">
-      <summary>다음 재생 기능.</summary>
+      <summary>다음 재생 기능입니다.</summary>
     </member>
     <member name="F:Windows.Phone.Notification.Management.PlaybackCapability.None">
       <summary>재생 기능이 없습니다.</summary>
     </member>
     <member name="F:Windows.Phone.Notification.Management.PlaybackCapability.Pause">
-      <summary>재생 기능을 일시 중지 합니다.</summary>
+      <summary>재생 일시 중지 기능입니다.</summary>
     </member>
     <member name="F:Windows.Phone.Notification.Management.PlaybackCapability.Play">
-      <summary>재생 기능 재생</summary>
+      <summary>재생 기능입니다.</summary>
     </member>
     <member name="F:Windows.Phone.Notification.Management.PlaybackCapability.Previous">
-      <summary>이전 재생 기능.</summary>
+      <summary>이전 재생 기능입니다.</summary>
     </member>
     <member name="F:Windows.Phone.Notification.Management.PlaybackCapability.Record">
-      <summary>녹음/녹화 재생 기능.</summary>
+      <summary>재생 녹음/녹화 기능입니다.</summary>
     </member>
     <member name="F:Windows.Phone.Notification.Management.PlaybackCapability.Rewind">
-      <summary>재생 기능을 되감기 합니다.</summary>
+      <summary>재생 되감기 기능입니다.</summary>
     </member>
     <member name="F:Windows.Phone.Notification.Management.PlaybackCapability.Stop">
-      <summary>재생 기능을 중지 합니다.</summary>
+      <summary>재생 중지 기능입니다.</summary>
     </member>
     <member name="T:Windows.Phone.Notification.Management.PlaybackCommand">
       <summary>실행할 미디어 재생 명령을 나타냅니다.</summary>
     </member>
     <member name="F:Windows.Phone.Notification.Management.PlaybackCommand.ChannelDown">
-      <summary>채널 아래로 명령을 실행 합니다.</summary>
+      <summary>채널 아래로 명령을 실행합니다.</summary>
     </member>
     <member name="F:Windows.Phone.Notification.Management.PlaybackCommand.ChannelUp">
-      <summary>채널 위로 명령을 실행 합니다.</summary>
+      <summary>채널 위로 명령을 실행합니다.</summary>
     </member>
     <member name="F:Windows.Phone.Notification.Management.PlaybackCommand.FastForward">
-      <summary>빨리 감기 명령을 실행 합니다.</summary>
+      <summary>빨리 감기 명령을 실행합니다.</summary>
     </member>
     <member name="F:Windows.Phone.Notification.Management.PlaybackCommand.Next">
-      <summary>다음 명령을 실행 합니다.</summary>
+      <summary>다음 명령을 실행합니다.</summary>
     </member>
     <member name="F:Windows.Phone.Notification.Management.PlaybackCommand.Pause">
-      <summary>일시 중지 명령을 실행 합니다.</summary>
+      <summary>일시 중지 명령을 실행합니다.</summary>
     </member>
     <member name="F:Windows.Phone.Notification.Management.PlaybackCommand.Play">
-      <summary>Play 명령을 실행 합니다.</summary>
+      <summary>재생 명령을 실행합니다.</summary>
     </member>
     <member name="F:Windows.Phone.Notification.Management.PlaybackCommand.Previous">
-      <summary>이전 명령을 실행 합니다.</summary>
+      <summary>이전 명령을 실행합니다.</summary>
     </member>
     <member name="F:Windows.Phone.Notification.Management.PlaybackCommand.Record">
-      <summary>Record 명령을 실행 합니다.</summary>
+      <summary>녹음 명령을 실행합니다.</summary>
     </member>
     <member name="F:Windows.Phone.Notification.Management.PlaybackCommand.Rewind">
-      <summary>되감기 명령을 실행 합니다.</summary>
+      <summary>되감기 명령을 실행합니다.</summary>
     </member>
     <member name="F:Windows.Phone.Notification.Management.PlaybackCommand.Stop">
-      <summary>Stop 명령을 실행 합니다.</summary>
+      <summary>중지 명령을 실행합니다.</summary>
     </member>
     <member name="T:Windows.Phone.Notification.Management.PlaybackStatus">
       <summary>미디어 재생 상태를 나타냅니다.</summary>
@@ -1340,186 +1340,186 @@
       <summary>미디어가 없습니다.</summary>
     </member>
     <member name="F:Windows.Phone.Notification.Management.PlaybackStatus.Paused">
-      <summary>미디어 트랙이 일시 중지 되었습니다.</summary>
+      <summary>미디어 트랙이 일시 중지되었습니다.</summary>
     </member>
     <member name="F:Windows.Phone.Notification.Management.PlaybackStatus.Playing">
-      <summary>미디어 트랙을 재생 하 고 있습니다.</summary>
+      <summary>미디어 트랙이 재생 중입니다.</summary>
     </member>
     <member name="F:Windows.Phone.Notification.Management.PlaybackStatus.Stopped">
-      <summary>미디어 트랙이 재생을 중지 했습니다.</summary>
+      <summary>미디어 트랙의 재생이 중지되었습니다.</summary>
     </member>
     <member name="F:Windows.Phone.Notification.Management.PlaybackStatus.TrackChanged">
-      <summary>미디어 트랙이 변경 되었습니다.</summary>
+      <summary>미디어 트랙이 변경되었습니다.</summary>
     </member>
     <member name="T:Windows.Phone.Notification.Management.ReminderNotificationTriggerDetails">
-      <summary>액세서리에서 미리 알림 알림을 렌더링 하는 데 필요한 모든 정보를 나타냅니다.</summary>
+      <summary>액세서리에 대한 미리 알림을 렌더링하는 데 필요한 모든 정보를 나타냅니다.</summary>
     </member>
     <member name="P:Windows.Phone.Notification.Management.ReminderNotificationTriggerDetails.AccessoryNotificationType">
-      <summary>수신 되는 알림 유형을 지정 합니다. 미리 알림의 경우이 값은 AccessoryNotificationType입니다.</summary>
-      <returns>AccessoryNotificationType</returns>
+      <summary>수신된 알림 형식을 지정합니다. 미리 알림의 경우 이 값은 AccessoryNotificationType.Reminder입니다.</summary>
+      <returns>AccessoryNotificationType.Reminder</returns>
     </member>
     <member name="P:Windows.Phone.Notification.Management.ReminderNotificationTriggerDetails.AppDisplayName">
-      <summary>알림을 생성 한 앱의 표시 이름입니다.</summary>
-      <returns>알림을 생성 한 앱의 표시 이름입니다.</returns>
+      <summary>알림을 생성한 앱의 표시 이름입니다.</summary>
+      <returns>알림을 생성한 앱의 표시 이름입니다.</returns>
     </member>
     <member name="P:Windows.Phone.Notification.Management.ReminderNotificationTriggerDetails.AppId">
-      <summary>알림을 생성 한 앱의 인스턴스 ID입니다.</summary>
-      <returns>알림을 생성 한 앱의 인스턴스 ID입니다.</returns>
+      <summary>알림을 생성한 앱의 인스턴스 ID입니다.</summary>
+      <returns>알림을 생성한 앱의 인스턴스 ID입니다.</returns>
     </member>
     <member name="P:Windows.Phone.Notification.Management.ReminderNotificationTriggerDetails.Appointment">
-      <summary>미리 알림에 대 한 추가 정보를 포함 하는 약속 개체입니다.</summary>
-      <returns>자세한 내용은 약속을 참조 하세요.</returns>
+      <summary>미리 알림에 대한 추가 정보를 포함하는 Appointment 개체입니다.</summary>
+      <returns>자세한 내용은 Appointment를 참조하십시오.</returns>
     </member>
     <member name="P:Windows.Phone.Notification.Management.ReminderNotificationTriggerDetails.Description">
-      <summary>미리 알림에 대 한 설명입니다.</summary>
-      <returns>미리 알림에 대 한 설명입니다.</returns>
+      <summary>미리 알림에 대한 설명입니다.</summary>
+      <returns>미리 알림에 대한 설명입니다.</returns>
     </member>
     <member name="P:Windows.Phone.Notification.Management.ReminderNotificationTriggerDetails.Details">
-      <summary>미리 알림에 대 한 추가 세부 정보입니다.</summary>
-      <returns>미리 알림에 대 한 추가 세부 정보를 포함 하는 문자열입니다.</returns>
+      <summary>미리 알림에 대한 추가 정보입니다.</summary>
+      <returns>미리 알림에 대한 추가 정보를 포함하는 문자열입니다.</returns>
     </member>
     <member name="P:Windows.Phone.Notification.Management.ReminderNotificationTriggerDetails.InstanceId">
-      <summary>여러 미리 알림 인스턴스 간에 구분 하는 식별자를 가져옵니다.</summary>
-      <returns>여러 미리 알림 인스턴스 간에 구분 하는 문자열 식별자입니다.</returns>
+      <summary>미리 알림의 여러 인스턴스 사이를 구분하는 식별자를 가져옵니다.</summary>
+      <returns>미리 알림의 여러 인스턴스 사이를 구분하는 문자열입니다.</returns>
     </member>
     <member name="P:Windows.Phone.Notification.Management.ReminderNotificationTriggerDetails.ReminderId">
-      <summary>알림에 대 한 해당 미리 알림의 고유 ID입니다.</summary>
-      <returns>알림에 대 한 해당 미리 알림의 고유 ID입니다.</returns>
+      <summary>알림에 해당하는 미리 알림의 고유한 ID입니다.</summary>
+      <returns>알림에 해당하는 미리 알림의 고유한 ID입니다.</returns>
     </member>
     <member name="P:Windows.Phone.Notification.Management.ReminderNotificationTriggerDetails.ReminderState">
-      <summary>미리 알림 상태를 나타내는 ReminderState 값입니다.</summary>
-      <returns>가능한 값은 ReminderState를 참조 하세요.</returns>
+      <summary>미리 알림의 상태를 나타내는 ReminderState 값입니다.</summary>
+      <returns>사용 가능한 값은 ReminderState를 참조하십시오.</returns>
     </member>
     <member name="P:Windows.Phone.Notification.Management.ReminderNotificationTriggerDetails.StartedProcessing">
-      <summary>액세서리에서 알림 처리를 시작 했는지 여부를 지정 합니다.</summary>
-      <returns>* * true * * 보조 프로그램이 알림 처리를 시작한 경우 그렇지 않으면 * * false * *입니다.</returns>
+      <summary>액세서리에서 알림 처리를 시작했는지 여부를 지정합니다.</summary>
+      <returns>액세서리에서 전자 메일 알림 처리를 시작했으면 **true**이고, 그렇지 않으면 **false**입니다.</returns>
     </member>
     <member name="P:Windows.Phone.Notification.Management.ReminderNotificationTriggerDetails.TimeCreated">
-      <summary>알림이 만들어진 날짜 및 시간입니다.</summary>
-      <returns>알림이 만들어진 날짜 및 시간입니다.</returns>
+      <summary>알림을 만든 날짜와 시간입니다.</summary>
+      <returns>알림을 만든 날짜와 시간입니다.</returns>
     </member>
     <member name="P:Windows.Phone.Notification.Management.ReminderNotificationTriggerDetails.Timestamp">
-      <summary>액세서리 관리자 서비스에서 액세서리 앱으로 알림이 전달 된 날짜 및 시간을 나타냅니다.</summary>
-      <returns>액세서리 관리자 서비스에서 액세서리 앱으로 알림이 전달 된 날짜 및 시간을 나타냅니다.</returns>
+      <summary>액세서리 관리자 서비스에서 액세서리 앱에 알림을 제공한 날짜와 시간을 나타냅니다.</summary>
+      <returns>액세서리 관리자 서비스에서 액세서리 앱에 알림을 제공한 날짜와 시간을 나타냅니다.</returns>
     </member>
     <member name="P:Windows.Phone.Notification.Management.ReminderNotificationTriggerDetails.Title">
       <summary>미리 알림의 제목입니다.</summary>
       <returns>미리 알림의 제목입니다.</returns>
     </member>
     <member name="T:Windows.Phone.Notification.Management.ReminderState">
-      <summary>미리 알림, 활성, 다시 알림 또는 해제 상태를 나타냅니다.</summary>
+      <summary>미리 알림, 활성, 다시 알림, 해제 상태를 나타냅니다.</summary>
     </member>
     <member name="F:Windows.Phone.Notification.Management.ReminderState.Active">
-      <summary>미리 알림이 활성화 되어 있습니다.</summary>
+      <summary>미리 알림이 활성 상태입니다.</summary>
     </member>
     <member name="F:Windows.Phone.Notification.Management.ReminderState.Dismissed">
-      <summary>미리 알림이 해제 됩니다.</summary>
+      <summary>미리 알림이 해제 상태입니다.</summary>
     </member>
     <member name="F:Windows.Phone.Notification.Management.ReminderState.Snoozed">
-      <summary>다시 알림 미리 알림이 있습니다.</summary>
+      <summary>미리 알림이 다시 알림 상태입니다.</summary>
     </member>
     <member name="T:Windows.Phone.Notification.Management.SpeedDialEntry">
-      <summary>빠른 전화 접속 목록의 항목을 나타냅니다.</summary>
+      <summary>단축 다이얼 목록의 항목을 나타냅니다.</summary>
     </member>
     <member name="P:Windows.Phone.Notification.Management.SpeedDialEntry.ContactName">
-      <summary>항목 연락처의 이름을 나타냅니다.</summary>
-      <returns>연락처 이름을 포함 하는 문자열입니다.</returns>
+      <summary>항목의 연락처 이름을 나타냅니다.</summary>
+      <returns>연락처 이름이 포함된 문자열입니다.</returns>
     </member>
     <member name="P:Windows.Phone.Notification.Management.SpeedDialEntry.NumberType">
       <summary>항목의 번호 형식을 나타냅니다.</summary>
-      <returns>숫자의 형식을 포함 하는 문자열입니다.</returns>
+      <returns>번호 형식을 포함하는 문자열입니다.</returns>
     </member>
     <member name="P:Windows.Phone.Notification.Management.SpeedDialEntry.PhoneNumber">
-      <summary>빠른 전화 걸기 항목의 전화 번호를 나타냅니다.</summary>
-      <returns>빠른 전화 걸기 엔트리 전화 번호를 포함 하는 문자열입니다.</returns>
+      <summary>단축 다이얼 항목의 전화 번호를 나타냅니다.</summary>
+      <returns>단축 다이얼 항목의 전화 번호를 포함하는 문자열입니다.</returns>
     </member>
     <member name="T:Windows.Phone.Notification.Management.TextResponse">
-      <summary>휴대폰에서 사전 설정 된 고유 식별자와 문자열 텍스트 응답을 포함 하는 개체를 가져옵니다. 사용자가 액세서리에서 전화 통화를 거부할 때 이러한 메시지를 선택적으로 보낼 수 있습니다. 이러한 개체는 PhoneNotificationTriggerDetails의 일부로 전송 되며 전화 통화 시 항상 최신 상태입니다.</summary>
+      <summary>휴대폰에 미리 설정된 고유한 식별자 및 문자열 텍스트 응답을 포함하는 개체를 가져옵니다. 사용자가 액세서리에서 전화 통화를 거부할 때 선택적으로 이러한 메시지를 전송할 수 있습니다. 이러한 개체는 PhoneNotificationTriggerDetails의 일부로 전송되며 항상 통화 시점의 최신 상태로 유지됩니다.</summary>
     </member>
     <member name="P:Windows.Phone.Notification.Management.TextResponse.Content">
-      <summary>휴대폰에서 사전 설정 된 텍스트 응답을 나타내는 문자열을 가져옵니다.</summary>
-      <returns>휴대폰에서 사전 설정 된 텍스트 응답을 나타내는 문자열입니다.</returns>
+      <summary>휴대폰에서 미리 설정된 텍스트 응답을 나타내는 문자열을 가져옵니다.</summary>
+      <returns>휴대폰에서 미리 설정된 텍스트 응답을 나타내는 문자열입니다.</returns>
     </member>
     <member name="P:Windows.Phone.Notification.Management.TextResponse.Id">
-      <summary>텍스트 응답을 고유 하 게 식별 하는 식별자를 가져옵니다.</summary>
-      <returns>텍스트 응답을 고유 하 게 식별 하는 식별자입니다.</returns>
+      <summary>텍스트 응답을 고유하게 식별하는 식별자를 가져옵니다.</summary>
+      <returns>텍스트 응답을 고유하게 식별하는 식별자입니다.</returns>
     </member>
     <member name="T:Windows.Phone.Notification.Management.ToastNotificationTriggerDetails">
-      <summary>액세서리에서 알림 메시지를 렌더링 하는 데 필요한 모든 정보를 나타냅니다.</summary>
+      <summary>액세서리에 대한 알림 메시지를 렌더링하는 데 필요한 모든 정보를 나타냅니다.</summary>
     </member>
     <member name="P:Windows.Phone.Notification.Management.ToastNotificationTriggerDetails.AccessoryNotificationType">
-      <summary>수신 되는 알림 유형을 지정 하는 AccessoryNotificationType입니다. 알림 메시지의 경우이 값은 AccessoryNotificationType입니다.</summary>
-      <returns>AccessoryNotificationType</returns>
+      <summary>수신한 알림의 유형을 지정하는 AccessoryNotificationType입니다. 알림 메시지의 경우 이 값은 AccessoryNotificationType.Toast입니다.</summary>
+      <returns>AccessoryNotificationType.Toast</returns>
     </member>
     <member name="P:Windows.Phone.Notification.Management.ToastNotificationTriggerDetails.AppDisplayName">
-      <summary>이 속성은 알림을 생성 한 앱의 표시 이름을 나타냅니다.</summary>
-      <returns>알림을 생성 한 앱의 표시 이름입니다.</returns>
+      <summary>이 속성은 알림을 생성한 앱의 표시 이름을 나타냅니다.</summary>
+      <returns>알림을 생성한 앱의 표시 이름입니다.</returns>
     </member>
     <member name="P:Windows.Phone.Notification.Management.ToastNotificationTriggerDetails.AppId">
-      <summary>알림을 생성 한 앱의 인스턴스 ID입니다.</summary>
-      <returns>알림을 생성 한 앱의 인스턴스 ID입니다.</returns>
+      <summary>알림을 생성한 앱의 인스턴스 ID입니다.</summary>
+      <returns>알림을 생성한 앱의 인스턴스 ID입니다.</returns>
     </member>
     <member name="P:Windows.Phone.Notification.Management.ToastNotificationTriggerDetails.InstanceId">
-      <summary>알림 메시지의 고유 식별자를 나타냅니다.</summary>
-      <returns>식별자가 포함 된 문자열입니다.</returns>
+      <summary>알림 메시지의 고유한 식별자를 나타냅니다.</summary>
+      <returns>식별자를 포함하는 문자열입니다.</returns>
     </member>
     <member name="P:Windows.Phone.Notification.Management.ToastNotificationTriggerDetails.StartedProcessing">
-      <summary>액세서리에서 알림 처리를 시작 했는지 여부를 지정 합니다.</summary>
-      <returns>* * true * * 보조 프로그램이 알림 메시지 처리를 시작한 경우 그렇지 않으면 * * false * *입니다.</returns>
+      <summary>액세서리에서 알림 메시지 처리를 시작했는지 여부를 지정합니다.</summary>
+      <returns>액세서리에서 알림 메시지 처리를 시작했으면 **true**이고, 그렇지 않으면 **false**입니다.</returns>
     </member>
     <member name="P:Windows.Phone.Notification.Management.ToastNotificationTriggerDetails.SuppressPopup">
-      <summary>알림 메시지가 표시 되지 않는지 여부를 나타냅니다. 표시 되지 않는 알림 메시지는 알림 센터에서 알림을 생성 하지만 휴대폰에는 표시 되지 않습니다.</summary>
-      <returns>* * true * * 알림 메시지를 표시 하지 않으면이 고, 그렇지 않으면입니다. 그렇지 않으면 * * false * *입니다.</returns>
+      <summary>알림 메시지가 억제되는지 여부를 나타냅니다. 억제된 알림 메시지는 알림 센터에서 알림을 생성하지만 휴대폰에 표시되지 않습니다.</summary>
+      <returns>알림 메시지가 억제되면 **true**이고, 그렇지 않으면 **false**입니다.</returns>
     </member>
     <member name="P:Windows.Phone.Notification.Management.ToastNotificationTriggerDetails.Text1">
-      <summary>알림 메시지 데이터를 포함 하는 텍스트 필드를 나타냅니다.</summary>
+      <summary>알림 메시지 데이터가 들어 있는 텍스트 필드를 나타냅니다.</summary>
       <returns>알림 메시지 텍스트입니다.</returns>
     </member>
     <member name="P:Windows.Phone.Notification.Management.ToastNotificationTriggerDetails.Text2">
-      <summary>알림 메시지 데이터를 포함 하는 텍스트 필드를 나타냅니다.</summary>
+      <summary>알림 메시지 데이터가 들어 있는 텍스트 필드를 나타냅니다.</summary>
       <returns>알림 메시지 텍스트입니다.</returns>
     </member>
     <member name="P:Windows.Phone.Notification.Management.ToastNotificationTriggerDetails.Text3">
-      <summary>알림 메시지 데이터를 포함 하는 텍스트 필드를 나타냅니다.</summary>
+      <summary>알림 메시지 데이터가 들어 있는 텍스트 필드를 나타냅니다.</summary>
       <returns>알림 메시지 텍스트입니다.</returns>
     </member>
     <member name="P:Windows.Phone.Notification.Management.ToastNotificationTriggerDetails.Text4">
-      <summary>알림 메시지 데이터를 포함 하는 텍스트 필드를 나타냅니다.</summary>
+      <summary>알림 메시지 데이터가 들어 있는 텍스트 필드를 나타냅니다.</summary>
       <returns>알림 메시지 텍스트입니다.</returns>
     </member>
     <member name="P:Windows.Phone.Notification.Management.ToastNotificationTriggerDetails.TimeCreated">
-      <summary>알림이 만들어진 날짜 및 시간을 나타냅니다.</summary>
-      <returns>알림이 만들어진 날짜 및 시간입니다.</returns>
+      <summary>알림을 만든 날짜와 시간을 나타냅니다.</summary>
+      <returns>알림을 만든 날짜와 시간입니다.</returns>
     </member>
     <member name="T:Windows.Phone.Notification.Management.VibrateState">
-      <summary>Phone 진동 모드 및 벨소리의 상태를 나타냅니다.</summary>
+      <summary>휴대폰 진동 모드 및 벨소리의 상태를 나타냅니다.</summary>
     </member>
     <member name="F:Windows.Phone.Notification.Management.VibrateState.RingerOffVibrateOff">
-      <summary>벨소리와 진동 모드는 모두 해제 되어 있습니다.</summary>
+      <summary>벨소리와 진동 모드가 모두 꺼져 있습니다.</summary>
     </member>
     <member name="F:Windows.Phone.Notification.Management.VibrateState.RingerOffVibrateOn">
-      <summary>벨소리가 꺼져 있고 진동 모드가 on입니다.</summary>
+      <summary>벨소리는 꺼지고 진동 모드는 켜져 있습니다.</summary>
     </member>
     <member name="F:Windows.Phone.Notification.Management.VibrateState.RingerOnVibrateOff">
-      <summary>벨소리는 on이 고 진동 모드는 off입니다.</summary>
+      <summary>벨소리는 켜지고 진동 모드는 꺼져 있습니다.</summary>
     </member>
     <member name="F:Windows.Phone.Notification.Management.VibrateState.RingerOnVibrateOn">
-      <summary>벨소리와 진동 모드는 모두 on입니다.</summary>
+      <summary>벨소리와 진동 모드가 모두 켜져 있습니다.</summary>
     </member>
     <member name="T:Windows.Phone.Notification.Management.VolumeInfo">
-      <summary>전화 볼륨의 상태를 나타냅니다.</summary>
+      <summary>휴대폰 볼륨의 상태를 나타냅니다.</summary>
     </member>
     <member name="P:Windows.Phone.Notification.Management.VolumeInfo.CallVolume">
       <summary>휴대폰의 통화 볼륨을 가져옵니다.</summary>
       <returns>휴대폰의 통화 볼륨을 나타내는 숫자 값입니다.</returns>
     </member>
     <member name="P:Windows.Phone.Notification.Management.VolumeInfo.IsMuted">
-      <summary>전화가 음소거 되어 있는지 여부를 나타내는 값을 가져옵니다.</summary>
-      <returns>전화가 음소거 되어 있으면 ' true '이 고, 그렇지 않으면 ' f a l s e '입니다.</returns>
+      <summary>전화가 음소거 되었는지 나타내는 값을 가져옵니다.</summary>
+      <returns>휴대폰이 음소거되었으면 'true'이고 그렇지 않으면 'false'입니다.</returns>
     </member>
     <member name="P:Windows.Phone.Notification.Management.VolumeInfo.IsVibrateEnabled">
-      <summary>휴대폰에 대해 진동를 사용할 수 있는지 여부를 나타내는 값을 가져옵니다.</summary>
-      <returns>휴대폰에 대해 진동를 사용 하는 경우 ' t r u e '이 고, 그렇지 않으면 ' false '입니다.</returns>
+      <summary>휴대폰이 진동으로 설정되었는지 나타내는 값을 가져옵니다.</summary>
+      <returns>휴대폰이 진동으로 설정되었으면 'true'이고 그렇지 않으면 'false'입니다.</returns>
     </member>
     <member name="P:Windows.Phone.Notification.Management.VolumeInfo.MediaVolume">
       <summary>휴대폰의 미디어 볼륨을 가져옵니다.</summary>
@@ -1530,536 +1530,536 @@
       <returns>휴대폰의 시스템 볼륨을 나타내는 숫자 값입니다.</returns>
     </member>
     <member name="T:Windows.Phone.PersonalInformation.ContactAddress">
-      <summary>StoredContact 개체의 도심 주소를 나타냅니다.</summary>
+      <summary>StoredContact 개체의 구/군/시 주소를 나타냅니다.</summary>
     </member>
     <member name="M:Windows.Phone.PersonalInformation.ContactAddress.#ctor">
-      <summary>연락처 주소 클래스의 새 인스턴스를 초기화 합니다.</summary>
+      <summary>ContactAddress 클래스의 새 인스턴스를 초기화합니다.</summary>
     </member>
     <member name="P:Windows.Phone.PersonalInformation.ContactAddress.Country">
-      <summary>연락처 주소와 연결 된 국가를 가져오거나 설정 합니다.</summary>
-      <returns>연락처 주소와 연결 된 국가입니다.</returns>
+      <summary>연락처 주소와 연결된 국가를 가져오거나 설정합니다.</summary>
+      <returns>연락처 주소와 연결된 국가입니다.</returns>
     </member>
     <member name="P:Windows.Phone.PersonalInformation.ContactAddress.Locality">
-      <summary>연락처 주소의 집약성을 가져오거나 설정 합니다.</summary>
-      <returns>연락처 주소의 구/군/시입니다.</returns>
+      <summary>연락처 주소의 위치를 가져오거나 설정합니다.</summary>
+      <returns>연락처 주소의 위치입니다.</returns>
     </member>
     <member name="P:Windows.Phone.PersonalInformation.ContactAddress.PostalCode">
-      <summary>연락처 주소와 연결 된 우편 번호를 가져오거나 설정 합니다.</summary>
-      <returns>연락처 주소와 연결 된 우편 번호입니다.</returns>
+      <summary>연락처 주소와 연결된 우편 번호를 가져오거나 설정합니다.</summary>
+      <returns>연락처 주소와 연결된 우편 번호입니다.</returns>
     </member>
     <member name="P:Windows.Phone.PersonalInformation.ContactAddress.Region">
-      <summary>연락처 주소와 연결 된 영역을 가져오거나 설정 합니다.</summary>
-      <returns>연락처 주소와 연결 된 하위 지역입니다.</returns>
+      <summary>연락처 주소와 연결된 지역을 가져오거나 설정합니다.</summary>
+      <returns>연락처 주소와 연결된 지역입니다.</returns>
     </member>
     <member name="P:Windows.Phone.PersonalInformation.ContactAddress.StreetAddress">
-      <summary>연락처 주소와 연결 된 주소를 가져오거나 설정 합니다.</summary>
-      <returns>연락처 주소와 연결 된 주소입니다.</returns>
+      <summary>연락처 주소와 연결된 주소를 가져오거나 설정합니다.</summary>
+      <returns>연락처 주소와 연결된 주소입니다.</returns>
     </member>
     <member name="T:Windows.Phone.PersonalInformation.ContactChangeRecord">
-      <summary>수정 버전 간에 발생 한 연락처 정보의 변경 내용을 나타냅니다.</summary>
+      <summary>수정 버전 간에 발생한 연락처 정보의 변경 내용을 나타냅니다.</summary>
     </member>
     <member name="P:Windows.Phone.PersonalInformation.ContactChangeRecord.ChangeType">
-      <summary>발생 한 변경의 유형을 가져옵니다.</summary>
-      <returns>발생 한 변경 내용 유형입니다.</returns>
+      <summary>발생한 변경 내용의 형식을 가져옵니다.</summary>
+      <returns>발생한 변경 내용의 형식입니다.</returns>
     </member>
     <member name="P:Windows.Phone.PersonalInformation.ContactChangeRecord.Id">
-      <summary>변경 된 연락처의 로컬 식별자를 가져옵니다.</summary>
-      <returns>변경 된 연락처의 로컬 식별자입니다.</returns>
+      <summary>변경된 연락처의 로컬 식별자를 가져옵니다.</summary>
+      <returns>변경된 연락처의 로컬 식별자입니다.</returns>
     </member>
     <member name="P:Windows.Phone.PersonalInformation.ContactChangeRecord.RemoteId">
-      <summary>변경 된 연락처의 원격 식별자를 가져옵니다.</summary>
-      <returns>변경 된 연락처의 원격 식별자입니다.</returns>
+      <summary>변경된 연락처의 원격 식별자를 가져옵니다.</summary>
+      <returns>변경된 연락처의 원격 식별자입니다.</returns>
     </member>
     <member name="P:Windows.Phone.PersonalInformation.ContactChangeRecord.RevisionNumber">
-      <summary>연락처 데이터의 변경 내용에 연결 된 수정 번호를 가져옵니다.</summary>
-      <returns>연락처 데이터의 변경과 관련 된 수정 번호입니다.</returns>
+      <summary>연락처 데이터의 변경 내용과 연결된 수정 번호를 가져옵니다.</summary>
+      <returns>연락처 데이터의 변경 내용과 연결된 수정 번호입니다.</returns>
     </member>
     <member name="T:Windows.Phone.PersonalInformation.ContactChangeType">
-      <summary>ContactChangeRecord로 표시 되는 변경 유형을 나타냅니다.</summary>
+      <summary>ContactChangeRecord가 나타내는 변경의 형식을 나타냅니다.</summary>
     </member>
     <member name="F:Windows.Phone.PersonalInformation.ContactChangeType.Created">
-      <summary>연락처를 만들었습니다.</summary>
+      <summary>연락처가 만들어졌습니다.</summary>
     </member>
     <member name="F:Windows.Phone.PersonalInformation.ContactChangeType.Deleted">
-      <summary>연락처가 삭제 되었습니다.</summary>
+      <summary>연락처가 삭제되었습니다.</summary>
     </member>
     <member name="F:Windows.Phone.PersonalInformation.ContactChangeType.Modified">
-      <summary>연락처가 수정 되었습니다.</summary>
+      <summary>연락처가 수정되었습니다.</summary>
     </member>
     <member name="T:Windows.Phone.PersonalInformation.ContactInformation">
-      <summary>연락처 저장소와 연결 되지 않은 연락처를 나타냅니다.</summary>
+      <summary>연락처 저장소와 연결되지 않은 연락처를 나타냅니다.</summary>
     </member>
     <member name="M:Windows.Phone.PersonalInformation.ContactInformation.#ctor">
-      <summary>연락처 정보 클래스의 새 인스턴스를 초기화 합니다.</summary>
+      <summary>ContactInformation 클래스의 새 인스턴스를 초기화합니다.</summary>
     </member>
     <member name="P:Windows.Phone.PersonalInformation.ContactInformation.DisplayName">
-      <summary>연락처의 표시 이름을 가져오거나 설정 합니다.</summary>
+      <summary>연락처의 표시 이름을 가져오거나 설정합니다.</summary>
       <returns>연락처의 표시 이름입니다.</returns>
     </member>
     <member name="P:Windows.Phone.PersonalInformation.ContactInformation.DisplayPicture">
-      <summary>연락처의 표시 그림을 가져옵니다.</summary>
-      <returns>이미지 데이터를 포함 하는 스트림입니다.</returns>
+      <summary>연락처의 표시 사진을 가져옵니다.</summary>
+      <returns>이미지 데이터를 포함하는 스트림입니다.</returns>
     </member>
     <member name="P:Windows.Phone.PersonalInformation.ContactInformation.FamilyName">
-      <summary>연락처의 패밀리 이름을 가져오거나 설정 합니다.</summary>
-      <returns>연락처의 패밀리 이름입니다.</returns>
+      <summary>연락처의 성을 가져오거나 설정합니다.</summary>
+      <returns>연락처의 성입니다.</returns>
     </member>
     <member name="P:Windows.Phone.PersonalInformation.ContactInformation.GivenName">
-      <summary>연락처의 지정 된 이름을 가져오거나 설정 합니다.</summary>
-      <returns>연락처의 지정 된 이름입니다.</returns>
+      <summary>연락처의 이름을 가져오거나 설정합니다.</summary>
+      <returns>연락처의 이름입니다.</returns>
     </member>
     <member name="P:Windows.Phone.PersonalInformation.ContactInformation.HonorificPrefix">
-      <summary>연락처의 honorific 접두사를 가져오거나 설정 합니다.</summary>
-      <returns>연락처의 honorific 접두사입니다.</returns>
+      <summary>연락처의 경칭 접두사를 가져오거나 설정합니다.</summary>
+      <returns>연락처의 경칭 접두사입니다.</returns>
     </member>
     <member name="P:Windows.Phone.PersonalInformation.ContactInformation.HonorificSuffix">
-      <summary>연락처의 honorific 접미사를 가져오거나 설정 합니다.</summary>
-      <returns>연락처의 honorific 접미사입니다.</returns>
+      <summary>연락처의 경칭 접미사를 가져오거나 설정합니다.</summary>
+      <returns>연락처의 경칭 접미사입니다.</returns>
     </member>
     <member name="M:Windows.Phone.PersonalInformation.ContactInformation.GetDisplayPictureAsync">
-      <summary>연락처의 표시 그림을 가져옵니다.</summary>
-      <returns>이미지 데이터를 포함 하는 스트림입니다.</returns>
+      <summary>연락처의 표시 사진을 가져옵니다.</summary>
+      <returns>이미지 데이터를 포함하는 스트림입니다.</returns>
     </member>
     <member name="M:Windows.Phone.PersonalInformation.ContactInformation.GetPropertiesAsync">
       <summary>연락처의 속성을 이름/값 쌍의 맵으로 가져옵니다.</summary>
-      <returns>이 메서드가 완료 되 면 이름/값 쌍 (문자열 이름, 형식화 되지 않은 값)의 맵/사전을 반환 합니다. 비동기 프로그래밍을 사용 하는 경우 결과 형식은 문자열 이름으로 키가 지정 된 이러한 키-값 쌍의 맵 또는 사전입니다. (&lt; Platform의 Api를 사용할 수 있습니다. Platform:: String, Platform:: Object C++&gt;, IDictionary의 Api &lt; 문자열, .Net 용 개체 &gt;.</returns>
+      <returns>이 메서드가 완료되면 이름/값 쌍의 지도/사전(문자열 이름, 형식화되지 않은 값)을 반환합니다. 비동기 프로그래밍을 사용하는 경우 결과 유형은 문자열 이름으로 키가 지정된 이러한 키-값 쌍의 지도 또는 사전입니다. (C++의 경우 IMap&lt;Platform::String,Platform::Object&gt;의 API를, .NET의 경우 IDictionary&lt;String,Object&gt;의 API를 사용할 수 있습니다.)</returns>
     </member>
     <member name="M:Windows.Phone.PersonalInformation.ContactInformation.ParseVcardAsync(Windows.Storage.Streams.IInputStream)">
-      <summary>스트림에서 vCard를 구문 분석 하 고 채워진 연락처 정보 개체를 반환 합니다.</summary>
-      <param name="vcard">VCard 데이터를 포함 하는 스트림입니다.</param>
-      <returns>이 메서드가 완료 되 면 vCard의 데이터로 채워진 연락처 정보 개체를 반환 합니다. 비동기 프로그래밍을 사용 하는 경우 결과 형식은 연락처 정보입니다.</returns>
+      <summary>스트림에서 vCard를 구문 분석하고 채워진 ContactInformation 개체를 반환합니다.</summary>
+      <param name="vcard">vCard 데이터를 포함하는 스트림입니다.</param>
+      <returns>이 메서드가 완료되면 vCard의 데이터로 채워진 ContactInformation 개체가 반환됩니다. 비동기 프로그래밍을 사용하는 경우, 결과 유형은 ContactInformation입니다.</returns>
     </member>
     <member name="M:Windows.Phone.PersonalInformation.ContactInformation.SetDisplayPictureAsync(Windows.Storage.Streams.IInputStream)">
-      <summary>[IInputStream] (https://docs.microsoft.com/previous-versions/hh438387 (v = 85)) 개체를 사용 하 여 연락처에 대 한 표시 그림을 설정 합니다.</summary>
-      <param name="stream">이미지 데이터를 포함 하는 스트림입니다.</param>
-      <returns>비동기 작업입니다. 비동기 프로그래밍을 사용 하는 경우 결과 형식은 * * void * *입니다.</returns>
+      <summary>[IInputStream](https://docs.microsoft.com/previous-versions/hh438387(v=vs.85)) 개체를 사용하여 연락처의 표시 그림을 설정합니다.</summary>
+      <param name="stream">이미지 데이터를 포함하는 스트림입니다.</param>
+      <returns>비동기 작업입니다. 비동기 프로그래밍을 사용하는 경우, 결과 유형은 **void**입니다.</returns>
     </member>
     <member name="M:Windows.Phone.PersonalInformation.ContactInformation.ToVcardAsync">
-      <summary>VCard 버전 3.0 형식을 사용 하 여 연락처의 vCard 표현을 검색 합니다.</summary>
-      <returns>이 메서드가 완료 되 면 vCard 데이터를 포함 하는 스트림을 반환 합니다. 비동기 프로그래밍을 사용 하는 경우 결과 형식은 IRandomAccessStream (데이터)입니다.</returns>
+      <summary>vCard 버전 3.0 형식을 사용하는 연락처의 vCard 표현을 검색합니다.</summary>
+      <returns>이 메서드가 완료되면 vCard 데이터가 포함된 스트림이 반환됩니다. 비동기 프로그래밍을 사용하는 경우 결과 유형은 데이터인 IRandomAccessStream입니다.</returns>
     </member>
     <member name="M:Windows.Phone.PersonalInformation.ContactInformation.ToVcardAsync(Windows.Phone.PersonalInformation.VCardFormat)">
-      <summary>지정 된 vCard 형식을 사용 하 여 연락처의 vCard 표현을 검색 합니다.</summary>
-      <param name="format">반환 된 vCard에서 사용 하는 형식입니다.</param>
-      <returns>이 메서드가 완료 되 면 vCard 데이터를 포함 하는 스트림을 반환 합니다. 비동기 프로그래밍을 사용 하는 경우 결과 형식은 IRandomAccessStream (데이터)입니다.</returns>
+      <summary>지정된 vCard 형식을 사용하는 연락처의 vCard 표현을 검색합니다.</summary>
+      <param name="format">반환된 vCard에서 사용할 형식입니다.</param>
+      <returns>이 메서드가 완료되면 vCard 데이터가 포함된 스트림이 반환됩니다. 비동기 프로그래밍을 사용하는 경우 결과 유형은 데이터인 IRandomAccessStream입니다.</returns>
     </member>
     <member name="T:Windows.Phone.PersonalInformation.ContactQueryOptions">
-      <summary>CreateContactQuery를 사용 하 여 연락처를 검색 하는 쿼리 옵션을 나타냅니다.</summary>
+      <summary>CreateContactQuery를 사용하여 연락처를 검색하기 위한 쿼리 옵션을 나타냅니다.</summary>
     </member>
     <member name="M:Windows.Phone.PersonalInformation.ContactQueryOptions.#ctor">
-      <summary>ContactQueryOptions 클래스의 새 인스턴스를 초기화 합니다.</summary>
+      <summary>ContactQueryOptions 클래스의 새 인스턴스를 초기화합니다.</summary>
     </member>
     <member name="P:Windows.Phone.PersonalInformation.ContactQueryOptions.DesiredFields">
-      <summary>각 연락처와 함께 반환 되어야 하는 속성 목록을 가져오거나 설정 합니다.</summary>
-      <returns>각 연락처와 함께 반환 되어야 하는 속성 목록입니다.</returns>
+      <summary>각 연락처와 함께 반환되어야 하는 속성 목록을 가져오거나 설정합니다.</summary>
+      <returns>각 연락처와 함께 반환되어야 하는 속성의 목록입니다.</returns>
     </member>
     <member name="P:Windows.Phone.PersonalInformation.ContactQueryOptions.OrderBy">
-      <summary>연락처 쿼리 결과를 정렬 하는 데 사용 되는 필드를 가져오거나 설정 합니다.</summary>
-      <returns>연락처 쿼리 결과를 정렬 하는 데 사용 되는 필드 (열거형 값)입니다.</returns>
+      <summary>연락처 쿼리 결과를 정렬하는 데 사용되는 필드를 가져오거나 설정합니다.</summary>
+      <returns>연락처 쿼리 결과를 정렬하는 데 사용하는 필드를 나타내는 열거형 값입니다.</returns>
     </member>
     <member name="T:Windows.Phone.PersonalInformation.ContactQueryResult">
-      <summary>Contact 쿼리 결과를 나타냅니다.</summary>
+      <summary>연락처 쿼리의 결과를 나타냅니다.</summary>
     </member>
     <member name="M:Windows.Phone.PersonalInformation.ContactQueryResult.GetContactCountAsync">
-      <summary>연락처 저장소에 있는 연락처의 수를 가져옵니다.</summary>
-      <returns>이 메서드가 완료 되 면 연락처 저장소의 연락처 수가 반환 됩니다. 비동기 프로그래밍을 사용 하는 경우 결과 형식은 부호 없는 정수입니다.</returns>
+      <summary>연락처 저장소의 연락처 수를 가져옵니다.</summary>
+      <returns>이 메서드가 완료되면 연락처 저장소의 연락처 수가 반환됩니다. 비동기 프로그래밍을 사용하는 경우 결과 유형은 부호 없는 정수입니다.</returns>
     </member>
     <member name="M:Windows.Phone.PersonalInformation.ContactQueryResult.GetContactsAsync">
-      <summary>연락처 저장소에서 연락처를 검색 합니다.</summary>
-      <returns>이 메서드가 완료 되 면 StoredContact 개체를 포함 하는 [IVectorView] (https://docs.microsoft.com/previous-versions/br224594 (v =))를 반환 합니다. 비동기 프로그래밍을 사용 하는 경우 결과 형식은 StoredContact 항목의 읽기 전용 목록/벡터입니다. IVectorView &lt; StoredContact &gt;에 대 C++한 api를 사용할 수 있습니다. .Net 용 IReadOnlyList &lt; StoredContact &gt;</returns>
+      <summary>연락처 저장소에서 연락처를 검색합니다.</summary>
+      <returns>이 메서드는 완료되면 StoredContact 개체를 포함하고 있는 [IVectorView](https://docs.microsoft.com/previous-versions/br224594(v=vs.85))를 반환합니다. 비동기 프로그래밍을 사용하는 경우 결과 유형은 StoredContact 항목의 읽기 전용 목록/벡터입니다. (C++의 경우 IVectorView&lt;StoredContact&gt;의 API를, .NET의 경우 IReadOnlyList&lt;StoredContact&gt;의 API를 사용할 수 있습니다.)</returns>
     </member>
     <member name="M:Windows.Phone.PersonalInformation.ContactQueryResult.GetContactsAsync(System.UInt32,System.UInt32)">
-      <summary>지정 된 시작 인덱스 및 반환할 항목 수가 지정 된 경우 연락처 저장소에서 연락처를 검색 합니다.</summary>
+      <summary>반환할 항목의 지정된 시작 인덱스 및 수를 사용하여 연락처 저장소에서 연락처를 검색합니다.</summary>
       <param name="startIndex">검색할 첫 번째 연락처의 인덱스입니다.</param>
       <param name="maxNumberOfItems">검색할 연락처의 수입니다.</param>
-      <returns>이 메서드가 완료 되 면 StoredContact 개체를 포함 하는 [IVectorView] (https://docs.microsoft.com/previous-versions/br224594 (v =))를 반환 합니다. 비동기 프로그래밍을 사용 하는 경우 결과 형식은 StoredContact 항목의 읽기 전용 목록/벡터입니다. IVectorView &lt; StoredContact &gt;에 대 C++한 api를 사용할 수 있습니다. .Net 용 IReadOnlyList &lt; StoredContact &gt;</returns>
+      <returns>이 메서드는 완료되면 StoredContact 개체를 포함하고 있는 [IVectorView](https://docs.microsoft.com/previous-versions/br224594(v=vs.85))를 반환합니다. 비동기 프로그래밍을 사용하는 경우 결과 유형은 StoredContact 항목의 읽기 전용 목록/벡터입니다. (C++의 경우 IVectorView&lt;StoredContact&gt;의 API를, .NET의 경우 IReadOnlyList&lt;StoredContact&gt;의 API를 사용할 수 있습니다.)</returns>
     </member>
     <member name="M:Windows.Phone.PersonalInformation.ContactQueryResult.GetCurrentQueryOptions">
       <summary>현재 쿼리 옵션을 가져옵니다.</summary>
       <returns>현재 쿼리 옵션입니다.</returns>
     </member>
     <member name="T:Windows.Phone.PersonalInformation.ContactQueryResultOrdering">
-      <summary>CreateContactQuery 호출에서 연락처가 반환 되는 순서를 지정 합니다.</summary>
+      <summary>CreateContactQuery 호출에서 연락처가 반환되는 순서를 지정합니다.</summary>
     </member>
     <member name="F:Windows.Phone.PersonalInformation.ContactQueryResultOrdering.FamilyNameGivenName">
-      <summary>제품군 이름을 기준으로 정렬 한 다음 이름을 지정 합니다.</summary>
+      <summary>성 다음에 이름을 기준으로 순서를 지정합니다.</summary>
     </member>
     <member name="F:Windows.Phone.PersonalInformation.ContactQueryResultOrdering.GivenNameFamilyName">
-      <summary>지정 된 이름과 패밀리 이름을 기준으로 정렬 합니다.</summary>
+      <summary>이름 다음에 성을 기준으로 순서를 지정합니다.</summary>
     </member>
     <member name="F:Windows.Phone.PersonalInformation.ContactQueryResultOrdering.SystemDefault">
-      <summary>운영 체제에서 사용 하는 기본 순서입니다.</summary>
+      <summary>운영 체제에서 사용되는 기본 순서입니다.</summary>
     </member>
     <member name="T:Windows.Phone.PersonalInformation.ContactStore">
-      <summary>Windows Phone 앱에 대 한 사용자 지정 연락처 저장소를 나타냅니다.</summary>
+      <summary>Windows Phone 앱의 사용자 지정 연락처 저장소를 나타냅니다.</summary>
     </member>
     <member name="P:Windows.Phone.PersonalInformation.ContactStore.RevisionNumber">
-      <summary>연락처 저장소에 대 한 수정 번호를 가져옵니다.</summary>
-      <returns>연락처 저장소에 대 한 수정 번호입니다.</returns>
+      <summary>연락처 저장소의 수정 번호를 가져옵니다.</summary>
+      <returns>연락처 저장소의 수정 번호입니다.</returns>
     </member>
     <member name="M:Windows.Phone.PersonalInformation.ContactStore.CreateContactQuery">
-      <summary>기본 옵션을 사용 하 여 contact 쿼리를 만듭니다.</summary>
-      <returns>상점의 연락처를 포함 하는 연락처 Queryresult입니다.</returns>
+      <summary>기본 옵션으로 연락처 쿼리를 만듭니다.</summary>
+      <returns>저장소의 연락처가 포함된 ContactQueryResult입니다.</returns>
     </member>
     <member name="M:Windows.Phone.PersonalInformation.ContactStore.CreateContactQuery(Windows.Phone.PersonalInformation.ContactQueryOptions)">
-      <summary>사용자 지정 옵션을 사용 하 여 contact 쿼리를 만듭니다.</summary>
+      <summary>사용자 지정 옵션으로 연락처 쿼리를 만듭니다.</summary>
       <param name="options">쿼리 옵션입니다.</param>
-      <returns>상점의 연락처를 포함 하는 연락처 Queryresult입니다.</returns>
+      <returns>저장소의 연락처가 포함된 ContactQueryResult입니다.</returns>
     </member>
     <member name="M:Windows.Phone.PersonalInformation.ContactStore.CreateMeContactAsync(System.String)">
-      <summary>지정 된 연락처가 장치의 현재 로그인 된 사용자를 나타내는지 설정 합니다.</summary>
-      <param name="id">장치의 현재 로그인 한 사용자를 나타내는 연락처의 ID입니다.</param>
-      <returns>성공적으로 완료 되 면 StoredContact를 반환 하는 비동기 작업입니다. 비동기 프로그래밍을 사용 하는 경우 결과 형식은 StoredContact입니다.</returns>
+      <summary>지정한 연락처가 현재 장치에 로그인한 사용자를 나타내는 것으로 설정합니다.</summary>
+      <param name="id">장치에 동시에 로그인한 사용자를 나타내는 연락처의 ID입니다.</param>
+      <returns>성공적으로 완료되면 StoredContact를 반환하는 비동기 작업입니다. 비동기 프로그래밍을 사용하는 경우, 결과 유형은 StoredContact입니다.</returns>
     </member>
     <member name="M:Windows.Phone.PersonalInformation.ContactStore.CreateOrOpenAsync">
-      <summary>앱의 사용자 지정 연락처 저장소를 열고 기본 옵션이 아직 없는 경우 저장소를 만듭니다.</summary>
-      <returns>이 메서드가 완료 되 면 앱의 사용자 지정 연락처 저장소를 나타내는 연락처 저장소 개체를 반환 합니다. 비동기 프로그래밍을 사용 하는 경우 결과 형식은 연락처 저장소입니다.</returns>
+      <summary>앱의 사용자 지정 연락처 저장소를 열어 기본 옵션을 사용하는 저장소가 없는 경우 해당 저장소를 만듭니다.</summary>
+      <returns>이 메서드가 완료되면 앱의 사용자 지정 연락처 저장소를 나타내는 ContactStore 개체가 반환됩니다. 비동기 프로그래밍을 사용하는 경우, 결과 유형은 ContactStore입니다.</returns>
     </member>
     <member name="M:Windows.Phone.PersonalInformation.ContactStore.CreateOrOpenAsync(Windows.Phone.PersonalInformation.ContactStoreSystemAccessMode,Windows.Phone.PersonalInformation.ContactStoreApplicationAccessMode)">
-      <summary>앱의 사용자 지정 연락처 저장소를 열고 지정 된 옵션 (아직 없는 경우)을 사용 하 여 저장소를 만듭니다.</summary>
-      <param name="access">스토어의 연락처를 전화 환경에서 수정할 수 있는지, 아니면 해당 연락처를 만든 앱만 수정할 수 있는지 여부입니다.</param>
-      <param name="sharing">저장소의 연락처에 대 한 모든 속성이 다른 응용 프로그램에 표시 되는지 아니면 설명 및 표시 그림만 표시 되는지 여부입니다.</param>
-      <returns>이 메서드가 완료 되 면 앱의 사용자 지정 연락처 저장소를 나타내는 연락처 저장소 개체를 반환 합니다. 비동기 프로그래밍을 사용 하는 경우 결과 형식은 연락처 저장소입니다.</returns>
+      <summary>앱의 사용자 지정 연락처 저장소를 열어 지정된 옵션을 사용하는 저장소가 없는 경우 해당 저장소를 만듭니다.</summary>
+      <param name="access">저장소의 연락처를 전화 환경에서 수정할 수 있는지 아니면 저장소를 만든 앱에서만 수정할 수 있는지 여부입니다.</param>
+      <param name="sharing">다른 응용 프로그램에 저장소의 연락처에 대한 모든 속성이 표시되는지 아니면 설명과 표시 사진만 표시되는지 여부입니다.</param>
+      <returns>이 메서드가 완료되면 앱의 사용자 지정 연락처 저장소를 나타내는 ContactStore 개체가 반환됩니다. 비동기 프로그래밍을 사용하는 경우, 결과 유형은 ContactStore입니다.</returns>
     </member>
     <member name="M:Windows.Phone.PersonalInformation.ContactStore.DeleteAsync">
-      <summary>앱의 사용자 지정 연락처 저장소를 삭제 합니다.</summary>
-      <returns>비동기 작업입니다. 비동기 프로그래밍을 사용 하는 경우 결과 형식은 * * void * *입니다.</returns>
+      <summary>앱의 사용자 지정 연락처 저장소를 삭제합니다.</summary>
+      <returns>비동기 작업입니다. 비동기 프로그래밍을 사용하는 경우, 결과 유형은 **void**입니다.</returns>
     </member>
     <member name="M:Windows.Phone.PersonalInformation.ContactStore.DeleteContactAsync(System.String)">
-      <summary>연락처 저장소에서 지정 된 ID를 가진 연락처를 삭제 합니다.</summary>
+      <summary>연락처 저장소에서 지정된 ID의 연락처를 삭제합니다.</summary>
       <param name="id">삭제할 연락처의 ID입니다.</param>
-      <returns>비동기 작업입니다. 비동기 프로그래밍을 사용 하는 경우 결과 형식은 * * void * *입니다.</returns>
+      <returns>비동기 작업입니다. 비동기 프로그래밍을 사용하는 경우, 결과 유형은 **void**입니다.</returns>
     </member>
     <member name="M:Windows.Phone.PersonalInformation.ContactStore.FindContactByIdAsync(System.String)">
-      <summary>연락처 저장소에서 지정 된 ID를 가진 연락처를 검색 합니다.</summary>
+      <summary>연락처 저장소에서 지정된 ID를 가진 연락처를 검색합니다.</summary>
       <param name="id">검색할 연락처의 ID입니다.</param>
-      <returns>이 메서드가 완료 되 면 StoredContact 개체를 반환 합니다. 비동기 프로그래밍을 사용 하는 경우 결과 형식은 StoredContact입니다.</returns>
+      <returns>이 메서드가 완료되면 StoredContact 개체를 반환합니다. 비동기 프로그래밍을 사용하는 경우, 결과 유형은 StoredContact입니다.</returns>
     </member>
     <member name="M:Windows.Phone.PersonalInformation.ContactStore.FindContactByRemoteIdAsync(System.String)">
-      <summary>연락처 저장소에서 지정 된 원격 ID를 가진 연락처를 검색 합니다.</summary>
-      <param name="id">검색할 연락처의 응용 프로그램 정의 원격 ID입니다.</param>
-      <returns>이 메서드가 완료 되 면 StoredContact 개체를 반환 합니다. 비동기 프로그래밍을 사용 하는 경우 결과 형식은 StoredContact입니다.</returns>
+      <summary>연락처 저장소에서 지정된 원격 ID를 가진 연락처를 검색합니다.</summary>
+      <param name="id">검색할 연락처에 대해 응용 프로그램에서 정의된 원격 ID입니다.</param>
+      <returns>이 메서드가 완료되면 StoredContact 개체를 반환합니다. 비동기 프로그래밍을 사용하는 경우, 결과 유형은 StoredContact입니다.</returns>
     </member>
     <member name="M:Windows.Phone.PersonalInformation.ContactStore.GetChangesAsync(System.UInt64)">
-      <summary>제공 된 수정 번호와 연결 된 연락처 저장소에 대 한 변경 내용 목록을 가져옵니다.</summary>
-      <param name="baseRevisionNumber">변경 내용을 검색 해야 하는 수정 번호입니다.</param>
-      <returns>이 메서드가 완료 되 면 수정 번호와 연결 된 각 변경 내용에 대 한 ContactChangeRecord 개체를 포함 하는 [VectorView] (https://docs.microsoft.com/previous-versions/br224594 (v =))를 반환 합니다. 비동기 프로그래밍을 사용 하는 경우 결과 형식은 ContactChangeRecord 항목의 읽기 전용 목록/벡터입니다. IVectorView &lt; ContactChangeRecord &gt;에 대 C++한 api를 사용할 수 있습니다. .Net 용 IReadOnlyList &lt; ContactChangeRecord &gt;</returns>
+      <summary>제공된 수정 번호와 연결된 연락처 저장소에 대한 변경 내용의 목록을 가져옵니다.</summary>
+      <param name="baseRevisionNumber">변경 내용을 검색해야 하는 수정 번호입니다.</param>
+      <returns>이 메서드가 완료되면 수정 번호와 연결된 각 변경 내용에 대한 ContactChangeRecord 개체가 포함된 [VectorView](https://docs.microsoft.com/previous-versions/br224594(v=vs.85))가 반환됩니다. 비동기 프로그래밍을 사용하는 경우 결과 유형은 ContactChangeRecord 항목의 읽기 전용 목록/벡터입니다. (C++의 경우 IVectorView&lt;ContactChangeRecord&gt;의 API를, .NET의 경우 IReadOnlyList&lt;ContactChangeRecord&gt;의 API를 사용할 수 있습니다.)</returns>
     </member>
     <member name="M:Windows.Phone.PersonalInformation.ContactStore.LoadExtendedPropertiesAsync">
-      <summary>앱의 사용자 지정 연락처 저장소에 대 한 확장 속성을 로드 합니다.</summary>
-      <returns>이 메서드가 완료 되 면 문자열 키/형식화 되지 않은 값 쌍을 포함 하는 맵/사전을 반환 합니다. 비동기 프로그래밍을 사용 하는 경우 결과 형식은 문자열 이름으로 키가 지정 된 이러한 키-값 쌍의 맵 또는 사전입니다. (&lt; Platform의 Api를 사용할 수 있습니다. Platform:: String, Platform:: Object C++&gt;, IDictionary의 Api &lt; 문자열, .Net 용 개체 &gt;.</returns>
+      <summary>앱의 사용자 지정 연락처 저장소에 대한 확장 속성을 로드합니다.</summary>
+      <returns>이 메서드가 완료되면 문자열 키/형식화되지 않은 값 쌍을 포함한 지도/사전을 반환합니다. 비동기 프로그래밍을 사용하는 경우 결과 유형은 문자열 이름으로 키가 지정된 이러한 키-값 쌍의 지도 또는 사전입니다. (C++의 경우 IMap&lt;Platform::String,Platform::Object&gt;의 API를, .NET의 경우 IDictionary&lt;String,Object&gt;의 API를 사용할 수 있습니다.)</returns>
     </member>
     <member name="M:Windows.Phone.PersonalInformation.ContactStore.SaveExtendedPropertiesAsync(Windows.Foundation.Collections.IMapView{System.String,System.Object})">
-      <summary>제공 된 이름/값 쌍 목록을 사용자 지정 연락처 저장소의 확장 속성에 저장 합니다.</summary>
+      <summary>이름/값 쌍의 제공된 목록을 사용자 지정 연락처 저장소의 확장 속성에 저장합니다.</summary>
       <param name="data">설정할 이름/값 속성의 집합입니다.</param>
-      <returns>비동기 작업입니다. 비동기 프로그래밍을 사용 하는 경우 결과 형식은 * * void * *입니다.</returns>
+      <returns>비동기 작업입니다. 비동기 프로그래밍을 사용하는 경우, 결과 유형은 **void**입니다.</returns>
     </member>
     <member name="T:Windows.Phone.PersonalInformation.ContactStoreApplicationAccessMode">
-      <summary>CreateOrOpenAsync를 사용 하 여 만든 사용자 지정 연락처 저장소에 대 한 응용 프로그램 액세스 모드를 지정 합니다.</summary>
+      <summary>CreateOrOpenAsync를 사용하여 만들어진 사용자 지정 연락처 저장소의 응용 프로그램 액세스 모드를 지정합니다.</summary>
     </member>
     <member name="F:Windows.Phone.PersonalInformation.ContactStoreApplicationAccessMode.LimitedReadOnly">
-      <summary>다른 응용 프로그램은 스토어의 연락처에 대 한 설명 및 표시 그림만 읽을 수 있습니다.</summary>
+      <summary>다른 응용 프로그램은 저장소의 연락처에 대한 설명과 표시 사진을 읽을 수만 있습니다.</summary>
     </member>
     <member name="F:Windows.Phone.PersonalInformation.ContactStoreApplicationAccessMode.ReadOnly">
-      <summary>다른 응용 프로그램은 스토어의 연락처에 대 한 모든 속성을 읽을 수 있습니다.</summary>
+      <summary>다른 응용 프로그램은 저장소의 연락처에 대한 모든 속성을 읽을 수 있습니다.</summary>
     </member>
     <member name="T:Windows.Phone.PersonalInformation.ContactStoreSystemAccessMode">
-      <summary>CreateOrOpenAsync를 사용 하 여 만든 사용자 지정 연락처 저장소에 대 한 시스템 액세스 모드를 지정 합니다.</summary>
+      <summary>CreateOrOpenAsync를 사용하여 만들어진 사용자 지정 연락처 저장소의 시스템 액세스 모드를 지정합니다.</summary>
     </member>
     <member name="F:Windows.Phone.PersonalInformation.ContactStoreSystemAccessMode.ReadOnly">
-      <summary>운영 체제는 연락처 저장소 에서만 읽을 수 있습니다.</summary>
+      <summary>운영 체제에서 연락처 저장소로부터 읽을 수만 있습니다.</summary>
     </member>
     <member name="F:Windows.Phone.PersonalInformation.ContactStoreSystemAccessMode.ReadWrite">
-      <summary>운영 체제에서 상점의 연락처를 수정할 수 있습니다.</summary>
+      <summary>운영 체제에서 저장소의 연락처를 수정할 수 있습니다.</summary>
     </member>
     <member name="T:Windows.Phone.PersonalInformation.IContactInformation">
-      <summary>연락처 정보에 대 한 인터페이스를 정의 합니다.</summary>
+      <summary>연락처 정보에 대한 인터페이스를 정의합니다.</summary>
     </member>
     <member name="P:Windows.Phone.PersonalInformation.IContactInformation.DisplayName">
-      <summary>연락처의 표시 이름을 가져오거나 설정 합니다.</summary>
+      <summary>연락처의 표시 이름을 가져오거나 설정합니다.</summary>
       <returns>연락처의 표시 이름입니다.</returns>
     </member>
     <member name="P:Windows.Phone.PersonalInformation.IContactInformation.DisplayPicture">
-      <summary>연락처의 표시 그림을 가져옵니다.</summary>
-      <returns>이미지 데이터를 포함 하는 스트림입니다.</returns>
+      <summary>연락처의 표시 사진을 가져옵니다.</summary>
+      <returns>이미지 데이터를 포함하는 스트림입니다.</returns>
     </member>
     <member name="P:Windows.Phone.PersonalInformation.IContactInformation.FamilyName">
-      <summary>연락처의 패밀리 이름을 가져오거나 설정 합니다.</summary>
-      <returns>연락처의 패밀리 이름입니다.</returns>
+      <summary>연락처의 성을 가져오거나 설정합니다.</summary>
+      <returns>연락처의 성입니다.</returns>
     </member>
     <member name="P:Windows.Phone.PersonalInformation.IContactInformation.GivenName">
-      <summary>연락처의 지정 된 이름을 가져오거나 설정 합니다.</summary>
-      <returns>연락처의 지정 된 이름입니다.</returns>
+      <summary>연락처의 이름을 가져오거나 설정합니다.</summary>
+      <returns>연락처의 이름입니다.</returns>
     </member>
     <member name="P:Windows.Phone.PersonalInformation.IContactInformation.HonorificPrefix">
-      <summary>연락처의 honorific 접두사를 가져오거나 설정 합니다.</summary>
-      <returns>연락처의 honorific 접두사입니다.</returns>
+      <summary>연락처의 경칭 접두사를 가져오거나 설정합니다.</summary>
+      <returns>연락처의 경칭 접두사입니다.</returns>
     </member>
     <member name="P:Windows.Phone.PersonalInformation.IContactInformation.HonorificSuffix">
-      <summary>연락처의 honorific 접미사를 가져오거나 설정 합니다.</summary>
-      <returns>연락처의 honorific 접미사입니다.</returns>
+      <summary>연락처의 경칭 접미사를 가져오거나 설정합니다.</summary>
+      <returns>연락처의 경칭 접미사입니다.</returns>
     </member>
     <member name="M:Windows.Phone.PersonalInformation.IContactInformation.GetDisplayPictureAsync">
-      <summary>연락처의 표시 그림을 가져옵니다.</summary>
-      <returns>이미지 데이터를 포함 하는 스트림입니다. 비동기 프로그래밍을 사용 하는 경우 결과 형식은 스트림으로 제공 되는 이미지에 대 한 비트맵 데이터 인 IRandomAccessStream입니다.</returns>
+      <summary>연락처의 표시 사진을 가져옵니다.</summary>
+      <returns>이미지 데이터를 포함하는 스트림입니다. 비동기 프로그래밍을 사용하는 경우 결과 유형은 스트림으로 제공되는 이미지의 비트맵 데이터인 IRandomAccessStream입니다.</returns>
     </member>
     <member name="M:Windows.Phone.PersonalInformation.IContactInformation.GetPropertiesAsync">
       <summary>연락처의 속성을 이름/값 쌍의 맵으로 가져옵니다.</summary>
-      <returns>이 메서드가 완료 되 면 문자열 이름/형식화 되지 않은 값 쌍의 맵/사전을 반환 합니다.</returns>
+      <returns>이 메서드가 완료되면 문자열 이름/형식화되지 않은 값 쌍의 지도/사전을 반환합니다.</returns>
     </member>
     <member name="M:Windows.Phone.PersonalInformation.IContactInformation.SetDisplayPictureAsync(Windows.Storage.Streams.IInputStream)">
-      <summary>[IInputStream] (https://docs.microsoft.com/previous-versions/hh438387 (v = 85)) 개체를 사용 하 여 연락처에 대 한 표시 그림을 설정 합니다.</summary>
-      <param name="stream">이미지 데이터를 포함 하는 스트림입니다.</param>
-      <returns>비동기 작업입니다. 비동기 프로그래밍을 사용 하는 경우 결과 형식은 * * void * *입니다.</returns>
+      <summary>[IInputStream](https://docs.microsoft.com/previous-versions/hh438387(v=vs.85)) 개체를 사용하여 연락처의 표시 그림을 설정합니다.</summary>
+      <param name="stream">이미지 데이터를 포함하는 스트림입니다.</param>
+      <returns>비동기 작업입니다. 비동기 프로그래밍을 사용하는 경우, 결과 유형은 **void**입니다.</returns>
     </member>
     <member name="M:Windows.Phone.PersonalInformation.IContactInformation.ToVcardAsync">
-      <summary>VCard 버전 3.0 형식을 사용 하 여 연락처의 vCard 표현을 검색 합니다.</summary>
-      <returns>이 메서드가 완료 되 면 vCard 데이터를 포함 하는 스트림을 반환 합니다. 비동기 프로그래밍을 사용 하는 경우 결과 형식은 IRandomAccessStream (데이터)입니다.</returns>
+      <summary>vCard 버전 3.0 형식을 사용하는 연락처의 vCard 표현을 검색합니다.</summary>
+      <returns>이 메서드가 완료되면 vCard 데이터가 포함된 스트림이 반환됩니다. 비동기 프로그래밍을 사용하는 경우 결과 유형은 데이터인 IRandomAccessStream입니다.</returns>
     </member>
     <member name="M:Windows.Phone.PersonalInformation.IContactInformation.ToVcardAsync(Windows.Phone.PersonalInformation.VCardFormat)">
-      <summary>지정 된 vCard 형식을 사용 하 여 연락처의 vCard 표현을 검색 합니다.</summary>
-      <param name="format">반환 된 vCard에서 사용 하는 형식입니다.</param>
-      <returns>이 메서드가 완료 되 면 vCard 데이터를 포함 하는 스트림을 반환 합니다. 비동기 프로그래밍을 사용 하는 경우 결과 형식은 IRandomAccessStream (데이터)입니다.</returns>
+      <summary>지정된 vCard 형식을 사용하는 연락처의 vCard 표현을 검색합니다.</summary>
+      <param name="format">반환된 vCard에서 사용할 형식입니다.</param>
+      <returns>이 메서드가 완료되면 vCard 데이터가 포함된 스트림이 반환됩니다. 비동기 프로그래밍을 사용하는 경우 결과 유형은 데이터인 IRandomAccessStream입니다.</returns>
     </member>
     <member name="T:Windows.Phone.PersonalInformation.IContactInformation2">
-      <summary>추가 연락처 속성을 제공 합니다.</summary>
+      <summary>추가 연락처 속성을 제공합니다.</summary>
     </member>
     <member name="P:Windows.Phone.PersonalInformation.IContactInformation2.DisplayPictureDate">
-      <summary>표시 그림이 만들어지거나 수정 된 날짜를 가져오거나 설정 합니다. 날짜별로 표시 된 사진을 정렬할 수 있도록 하는 데 사용 됩니다.</summary>
-      <returns>표시 그림이 만들어지거나 수정 된 날짜입니다.</returns>
+      <summary>표시 사진을 만들거나 수정한 날짜를 가져오거나 설정합니다. 표시 사진을 날짜별로 정렬하는 데 사용합니다.</summary>
+      <returns>표시 사진을 만들거나 수정한 날짜입니다.</returns>
     </member>
     <member name="T:Windows.Phone.PersonalInformation.KnownContactProperties">
-      <summary>StoredContact 또는 연락처 정보 개체의 알려진 속성에 액세스 하기 위한 키 이름을 제공 합니다.</summary>
+      <summary>StoredContact 또는 ContactInformation 개체의 알려진 속성에 액세스하기 위한 키 이름을 제공합니다.</summary>
     </member>
     <member name="P:Windows.Phone.PersonalInformation.KnownContactProperties.AdditionalName">
-      <summary>* * AdditionalName * * 속성 이름을 가져옵니다.</summary>
-      <returns>* * AdditionalName * * 속성 이름입니다.</returns>
+      <summary>**AdditionalName** 속성 이름을 가져옵니다.</summary>
+      <returns>**AdditionalName** 속성 이름입니다.</returns>
     </member>
     <member name="P:Windows.Phone.PersonalInformation.KnownContactProperties.Address">
-      <summary>* * 주소 * * 속성 이름을 가져옵니다.</summary>
-      <returns>* * 주소 * * 속성 이름입니다.</returns>
+      <summary>**Address** 속성 이름을 가져옵니다.</summary>
+      <returns>**Address** 속성 이름입니다.</returns>
     </member>
     <member name="P:Windows.Phone.PersonalInformation.KnownContactProperties.AlternateMobileTelephone">
-      <summary>* * AlternateMobileTelephone * * 속성 이름을 가져옵니다.</summary>
-      <returns>* * AlternateMobileTelephone * * 속성 이름입니다.</returns>
+      <summary>**AlternateMobileTelephone** 속성 이름을 가져옵니다.</summary>
+      <returns>**AlternateMobileTelephone** 속성 이름입니다.</returns>
     </member>
     <member name="P:Windows.Phone.PersonalInformation.KnownContactProperties.AlternateTelephone">
-      <summary>* * AlternateTelephone * * 속성 이름을 가져옵니다.</summary>
-      <returns>* * AlternateTelephone * * 속성 이름입니다.</returns>
+      <summary>**AlternateTelephone** 속성 이름을 가져옵니다.</summary>
+      <returns>**AlternateTelephone** 속성 이름입니다.</returns>
     </member>
     <member name="P:Windows.Phone.PersonalInformation.KnownContactProperties.AlternateWorkTelephone">
-      <summary>* * AlternateWorkTelephone * * 속성 이름을 가져옵니다.</summary>
-      <returns>* * AlternateWorkTelephone * * 속성 이름입니다.</returns>
+      <summary>**AlternateWorkTelephone** 속성 이름을 가져옵니다.</summary>
+      <returns>**AlternateWorkTelephone** 속성 이름입니다.</returns>
     </member>
     <member name="P:Windows.Phone.PersonalInformation.KnownContactProperties.Anniversary">
-      <summary>* * 기념일 * * 속성 이름을 가져옵니다.</summary>
-      <returns>* * 기념일 * * 속성 이름입니다.</returns>
+      <summary>**Anniversary** 속성 이름을 가져옵니다.</summary>
+      <returns>**Anniversary** 속성 이름입니다.</returns>
     </member>
     <member name="P:Windows.Phone.PersonalInformation.KnownContactProperties.Birthdate">
-      <summary>* * 생년월일 * * 속성 이름을 가져옵니다.</summary>
-      <returns>* * 생년월일 * * 속성 이름입니다.</returns>
+      <summary>**Birthdate** 속성 이름을 가져옵니다.</summary>
+      <returns>**Birthdate** 속성 이름입니다.</returns>
     </member>
     <member name="P:Windows.Phone.PersonalInformation.KnownContactProperties.Children">
-      <summary>* * Children * * 속성 이름을 가져옵니다.</summary>
-      <returns>* * Children * * 속성 이름입니다.</returns>
+      <summary>**Children** 속성 이름을 가져옵니다.</summary>
+      <returns>**Children** 속성 이름입니다.</returns>
     </member>
     <member name="P:Windows.Phone.PersonalInformation.KnownContactProperties.CompanyName">
-      <summary>* * CompanyName * * 속성 이름을 가져옵니다.</summary>
-      <returns>* * CompanyName * * 속성 이름입니다.</returns>
+      <summary>**CompanyName** 속성 이름을 가져옵니다.</summary>
+      <returns>**CompanyName** 속성 이름입니다.</returns>
     </member>
     <member name="P:Windows.Phone.PersonalInformation.KnownContactProperties.CompanyTelephone">
-      <summary>* * CompanyTelephone * * 속성 이름을 가져옵니다.</summary>
-      <returns>* * CompanyTelephone * * 속성 이름입니다.</returns>
+      <summary>**CompanyTelephone** 속성 이름을 가져옵니다.</summary>
+      <returns>**CompanyTelephone** 속성 이름입니다.</returns>
     </member>
     <member name="P:Windows.Phone.PersonalInformation.KnownContactProperties.DisplayName">
-      <summary>* * DisplayName * * 속성 이름을 가져옵니다.</summary>
-      <returns>* * DisplayName * * 속성 이름입니다.</returns>
+      <summary>**DisplayName** 속성 이름을 가져옵니다.</summary>
+      <returns>**DisplayName** 속성 이름입니다.</returns>
     </member>
     <member name="P:Windows.Phone.PersonalInformation.KnownContactProperties.Email">
-      <summary>* * 전자 메일 * * 속성 이름을 가져옵니다.</summary>
-      <returns>* * 전자 메일 * * 속성 이름입니다.</returns>
+      <summary>**Email** 속성 이름을 가져옵니다.</summary>
+      <returns>**Email** 속성 이름입니다.</returns>
     </member>
     <member name="P:Windows.Phone.PersonalInformation.KnownContactProperties.FamilyName">
-      <summary>* * FamilyName * * 속성 이름을 가져옵니다.</summary>
-      <returns>* * FamilyName * * 속성 이름입니다.</returns>
+      <summary>**FamilyName** 속성 이름을 가져옵니다.</summary>
+      <returns>**FamilyName** 속성 이름입니다.</returns>
     </member>
     <member name="P:Windows.Phone.PersonalInformation.KnownContactProperties.GivenName">
-      <summary>* * GivenName * * 속성 이름을 가져옵니다.</summary>
-      <returns>* * GivenName * * 속성 이름입니다.</returns>
+      <summary>**GivenName** 속성 이름을 가져옵니다.</summary>
+      <returns>**GivenName** 속성 이름입니다.</returns>
     </member>
     <member name="P:Windows.Phone.PersonalInformation.KnownContactProperties.HomeFax">
-      <summary>* * HomeFax * * 속성 이름을 가져옵니다.</summary>
-      <returns>* * HomeFax * * 속성 이름입니다.</returns>
+      <summary>**HomeFax** 속성 이름을 가져옵니다.</summary>
+      <returns>**HomeFax** 속성 이름입니다.</returns>
     </member>
     <member name="P:Windows.Phone.PersonalInformation.KnownContactProperties.HonorificPrefix">
-      <summary>* * HonorificPrefix * * 속성 이름을 가져옵니다.</summary>
-      <returns>* * HonorificPrefix * * 속성 이름입니다.</returns>
+      <summary>**HonorificPrefix** 속성 이름을 가져옵니다.</summary>
+      <returns>**HonorificPrefix** 속성 이름입니다.</returns>
     </member>
     <member name="P:Windows.Phone.PersonalInformation.KnownContactProperties.HonorificSuffix">
-      <summary>* * HonorificSuffix * * 속성 이름을 가져옵니다.</summary>
-      <returns>* * HonorificSuffix * * 속성 이름입니다.</returns>
+      <summary>**HonorificSuffix** 속성 이름을 가져옵니다.</summary>
+      <returns>**HonorificSuffix** 속성 이름입니다.</returns>
     </member>
     <member name="P:Windows.Phone.PersonalInformation.KnownContactProperties.JobTitle">
-      <summary>* * JobTitle * * 속성 이름을 가져옵니다.</summary>
-      <returns>* * JobTitle * * 속성 이름입니다.</returns>
+      <summary>**JobTitle** 속성 이름을 가져옵니다.</summary>
+      <returns>**JobTitle** 속성 이름입니다.</returns>
     </member>
     <member name="P:Windows.Phone.PersonalInformation.KnownContactProperties.Manager">
-      <summary>* * 관리자 * * 속성 이름을 가져옵니다.</summary>
-      <returns>* * 관리자 * * 속성 이름입니다.</returns>
+      <summary>**Manager** 속성 이름을 가져옵니다.</summary>
+      <returns>**Manager** 속성 이름입니다.</returns>
     </member>
     <member name="P:Windows.Phone.PersonalInformation.KnownContactProperties.MobileTelephone">
-      <summary>* * MobileTelephone * * 속성 이름을 가져옵니다.</summary>
-      <returns>* * MobileTelephone * * 속성 이름입니다.</returns>
+      <summary>**MobileTelephone** 속성 이름을 가져옵니다.</summary>
+      <returns>**MobileTelephone** 속성 이름입니다.</returns>
     </member>
     <member name="P:Windows.Phone.PersonalInformation.KnownContactProperties.Nickname">
-      <summary>* * 애칭 * * 속성 이름을 가져옵니다.</summary>
-      <returns>* * 애칭 * * 속성 이름입니다.</returns>
+      <summary>**Nickname** 속성 이름을 가져옵니다.</summary>
+      <returns>**Nickname** 속성 이름입니다.</returns>
     </member>
     <member name="P:Windows.Phone.PersonalInformation.KnownContactProperties.Notes">
-      <summary>* * 메모 * * 속성 이름을 가져옵니다.</summary>
-      <returns>* * 참고 * * 속성 이름입니다.</returns>
+      <summary>**Notes** 속성 이름을 가져옵니다.</summary>
+      <returns>**Notes** 속성 이름입니다.</returns>
     </member>
     <member name="P:Windows.Phone.PersonalInformation.KnownContactProperties.OfficeLocation">
-      <summary>* * 위치 * * 속성 이름을 가져옵니다.</summary>
-      <returns>* * 위치 * * 속성 이름입니다.</returns>
+      <summary>**OfficeLocation** 속성 이름을 가져옵니다.</summary>
+      <returns>**OfficeLocation** 속성 이름입니다.</returns>
     </member>
     <member name="P:Windows.Phone.PersonalInformation.KnownContactProperties.OtherAddress">
-      <summary>* * OtherAddress * * 속성 이름을 가져옵니다.</summary>
-      <returns>* * OtherAddress * * 속성 이름입니다.</returns>
+      <summary>**OtherAddress** 속성 이름을 가져옵니다.</summary>
+      <returns>**OtherAddress** 속성 이름입니다.</returns>
     </member>
     <member name="P:Windows.Phone.PersonalInformation.KnownContactProperties.OtherEmail">
-      <summary>* * OtherEmail * * 속성 이름을 가져옵니다.</summary>
-      <returns>* * OtherEmail * * 속성 이름입니다.</returns>
+      <summary>**OtherEmail** 속성 이름을 가져옵니다.</summary>
+      <returns>**OtherEmail** 속성 이름입니다.</returns>
     </member>
     <member name="P:Windows.Phone.PersonalInformation.KnownContactProperties.SignificantOther">
-      <summary>* * SignificantOther * * 속성 이름을 가져옵니다.</summary>
-      <returns>* * SignificantOther * * 속성 이름입니다.</returns>
+      <summary>**SignificantOther** 속성 이름을 가져옵니다.</summary>
+      <returns>SignificantOther 속성 이름입니다.</returns>
     </member>
     <member name="P:Windows.Phone.PersonalInformation.KnownContactProperties.Telephone">
-      <summary>* * 전화 * * 속성 이름을 가져옵니다.</summary>
-      <returns>* * 전화 * * 속성 이름입니다.</returns>
+      <summary>**Telephone** 속성 이름을 가져옵니다.</summary>
+      <returns>**Telephone** 속성 이름입니다.</returns>
     </member>
     <member name="P:Windows.Phone.PersonalInformation.KnownContactProperties.Url">
-      <summary>* * Url * * 속성 이름을 가져옵니다.</summary>
-      <returns>* * Url * * 속성 이름입니다.</returns>
+      <summary>**Url** 속성 이름을 가져옵니다.</summary>
+      <returns>**Url** 속성 이름입니다.</returns>
     </member>
     <member name="P:Windows.Phone.PersonalInformation.KnownContactProperties.WorkAddress">
-      <summary>* * 회사 주소 * * 속성 이름을 가져옵니다.</summary>
-      <returns>* * 회사 주소 * * 속성 이름입니다.</returns>
+      <summary>**WorkAddress** 속성 이름을 가져옵니다.</summary>
+      <returns>**WorkAddress** 속성 이름입니다.</returns>
     </member>
     <member name="P:Windows.Phone.PersonalInformation.KnownContactProperties.WorkEmail">
-      <summary>* * 회사 메일 * * 속성 이름을 가져옵니다.</summary>
-      <returns>* * 회사 메일 * * 속성 이름입니다.</returns>
+      <summary>**WorkEmail** 속성 이름을 가져옵니다.</summary>
+      <returns>**WorkEmail** 속성 이름입니다.</returns>
     </member>
     <member name="P:Windows.Phone.PersonalInformation.KnownContactProperties.WorkFax">
-      <summary>* * WorkFax * * 속성 이름을 가져옵니다.</summary>
-      <returns>* * WorkFax * * 속성 이름입니다.</returns>
+      <summary>**WorkFax** 속성 이름을 가져옵니다.</summary>
+      <returns>**WorkFax** 속성 이름입니다.</returns>
     </member>
     <member name="P:Windows.Phone.PersonalInformation.KnownContactProperties.WorkTelephone">
-      <summary>* * 회사 전화 * * 속성 이름을 가져옵니다.</summary>
-      <returns>* * 회사 전화 * * 속성 이름입니다.</returns>
+      <summary>**WorkTelephone** 속성 이름을 가져옵니다.</summary>
+      <returns>**WorkTelephone** 속성 이름입니다.</returns>
     </member>
     <member name="P:Windows.Phone.PersonalInformation.KnownContactProperties.YomiCompanyName">
-      <summary>* * YomiCompanyName * * 속성 이름을 가져옵니다.</summary>
-      <returns>* * YomiCompanyName * * 속성 이름입니다.</returns>
+      <summary>**YomiCompanyName** 속성 이름을 가져옵니다.</summary>
+      <returns>**YomiCompanyName** 속성 이름입니다.</returns>
     </member>
     <member name="P:Windows.Phone.PersonalInformation.KnownContactProperties.YomiFamilyName">
-      <summary>* * YomiFamilyName * * 속성 이름을 가져옵니다.</summary>
-      <returns>* * YomiFamilyName * * 속성 이름입니다.</returns>
+      <summary>**YomiFamilyName** 속성 이름을 가져옵니다.</summary>
+      <returns>**YomiFamilyName** 속성 이름입니다.</returns>
     </member>
     <member name="P:Windows.Phone.PersonalInformation.KnownContactProperties.YomiGivenName">
-      <summary>* * YomiGivenName * * 속성 이름을 가져옵니다.</summary>
-      <returns>* * YomiGivenName * * 속성 이름입니다.</returns>
+      <summary>**YomiGivenName** 속성 이름을 가져옵니다.</summary>
+      <returns>**YomiGivenName** 속성 이름입니다.</returns>
     </member>
     <member name="T:Windows.Phone.PersonalInformation.StoredContact">
-      <summary>사용자 지정 연락처 저장소와 연결 된 연락처를 나타냅니다.</summary>
+      <summary>사용자 지정 연락처 저장소와 연결된 연락처를 나타냅니다.</summary>
     </member>
     <member name="M:Windows.Phone.PersonalInformation.StoredContact.#ctor(Windows.Phone.PersonalInformation.ContactStore)">
-      <summary>StoredContact 클래스의 새 인스턴스를 초기화 합니다.</summary>
+      <summary>StoredContact 클래스의 새 인스턴스를 초기화합니다.</summary>
       <param name="store">연락처를 만들어야 하는 연락처 저장소입니다.</param>
     </member>
     <member name="M:Windows.Phone.PersonalInformation.StoredContact.#ctor(Windows.Phone.PersonalInformation.ContactStore,Windows.Phone.PersonalInformation.ContactInformation)">
-      <summary>StoredContact 클래스의 새 인스턴스를 초기화 하 고 제공 된 연락처 정보 개체에서 속성 값을 초기화 합니다.</summary>
+      <summary>StoredContact 클래스의 새 인스턴스를 초기화하고 제공된 ContactInformation 개체에서 속성 값을 초기화합니다.</summary>
       <param name="store">연락처를 만들어야 하는 연락처 저장소입니다.</param>
-      <param name="contact">새 연락처 개체 속성을 초기화할 연락처 정보 개체입니다.</param>
+      <param name="contact">새 연락처 개체 속성이 초기화되는 데 사용할 연락처 정보 개체입니다.</param>
     </member>
     <member name="P:Windows.Phone.PersonalInformation.StoredContact.DisplayName">
-      <summary>저장 된 연락처의 표시 이름을 가져오거나 설정 합니다.</summary>
+      <summary>저장된 연락처의 표시 이름을 가져오거나 설정합니다.</summary>
       <returns>연락처의 표시 이름입니다.</returns>
     </member>
     <member name="P:Windows.Phone.PersonalInformation.StoredContact.DisplayPicture">
-      <summary>저장 된 연락처의 표시 그림을 가져옵니다.</summary>
-      <returns>이미지 데이터를 포함 하는 스트림입니다.</returns>
+      <summary>저장된 연락처의 표시 사진을 가져옵니다.</summary>
+      <returns>이미지 데이터를 포함하는 스트림입니다.</returns>
     </member>
     <member name="P:Windows.Phone.PersonalInformation.StoredContact.DisplayPictureDate">
-      <summary>표시 그림이 만들어지거나 수정 된 날짜를 가져오거나 설정 합니다. 날짜별로 표시 된 사진을 정렬할 수 있도록 하는 데 사용 됩니다.</summary>
-      <returns>표시 그림이 만들어지거나 수정 된 날짜입니다.</returns>
+      <summary>표시 사진을 만들거나 수정한 날짜를 가져오거나 설정합니다. 표시 사진을 날짜별로 정렬하는 데 사용합니다.</summary>
+      <returns>표시 사진을 만들거나 수정한 날짜입니다.</returns>
     </member>
     <member name="P:Windows.Phone.PersonalInformation.StoredContact.FamilyName">
-      <summary>저장 된 연락처의 패밀리 이름을 가져오거나 설정 합니다.</summary>
-      <returns>연락처의 패밀리 이름입니다.</returns>
+      <summary>저장된 연락처의 성을 가져오거나 설정합니다.</summary>
+      <returns>연락처의 성입니다.</returns>
     </member>
     <member name="P:Windows.Phone.PersonalInformation.StoredContact.GivenName">
-      <summary>저장 된 연락처의 지정 된 이름을 가져오거나 설정 합니다.</summary>
-      <returns>연락처의 지정 된 이름입니다.</returns>
+      <summary>저장된 연락처의 이름을 가져오거나 설정합니다.</summary>
+      <returns>연락처의 이름입니다.</returns>
     </member>
     <member name="P:Windows.Phone.PersonalInformation.StoredContact.HonorificPrefix">
-      <summary>저장 된 연락처의 honorific 접두사를 가져오거나 설정 합니다.</summary>
-      <returns>연락처의 honorific 접두사입니다.</returns>
+      <summary>저장된 연락처의 경칭 접두사를 가져오거나 설정합니다.</summary>
+      <returns>연락처의 경칭 접두사입니다.</returns>
     </member>
     <member name="P:Windows.Phone.PersonalInformation.StoredContact.HonorificSuffix">
-      <summary>저장 된 연락처의 honorific 접미사를 가져오거나 설정 합니다.</summary>
-      <returns>연락처의 honorific 접미사입니다.</returns>
+      <summary>저장된 연락처의 경칭 접미사를 가져오거나 설정합니다.</summary>
+      <returns>연락처의 경칭 접미사입니다.</returns>
     </member>
     <member name="P:Windows.Phone.PersonalInformation.StoredContact.Id">
-      <summary>저장 된 연락처의 로컬 식별자를 가져옵니다.</summary>
+      <summary>저장된 연락처의 로컬 식별자를 가져옵니다.</summary>
       <returns>연락처의 로컬 식별자입니다.</returns>
     </member>
     <member name="P:Windows.Phone.PersonalInformation.StoredContact.RemoteId">
-      <summary>저장 된 연락처의 원격 식별자를 가져옵니다.</summary>
+      <summary>저장된 연락처의 원격 식별자를 가져옵니다.</summary>
       <returns>연락처의 원격 식별자입니다.</returns>
     </member>
     <member name="P:Windows.Phone.PersonalInformation.StoredContact.Store">
-      <summary>연락처가 저장 되는 연락처 저장소를 가져옵니다.</summary>
-      <returns>연락처가 저장 되는 연락처 저장소입니다.</returns>
+      <summary>연락처가 저장되는 ContactStore를 가져옵니다.</summary>
+      <returns>연락처가 저장되는 ContactStore입니다.</returns>
     </member>
     <member name="M:Windows.Phone.PersonalInformation.StoredContact.GetDisplayPictureAsync">
-      <summary>저장 된 연락처의 표시 그림을 가져옵니다.</summary>
-      <returns>성공적으로 완료 되 면 IRandomAccessStream 개체를 반환 하는 비동기 작업입니다. 비동기 프로그래밍을 사용 하는 경우 결과 형식은 IRandomAccessStream입니다. 비트맵 스트림으로 서 이미지 소스 파일입니다.</returns>
+      <summary>저장된 연락처의 표시 사진을 가져옵니다.</summary>
+      <returns>성공적으로 완료되면 IRandomAccessStream 개체를 반환하는 비동기 작업입니다. 비동기 프로그래밍을 사용하는 경우, 결과 유형은 IRandomAccessStream입니다. 이미지 소스 파일을 나타내는 비트맵 스트림입니다.</returns>
     </member>
     <member name="M:Windows.Phone.PersonalInformation.StoredContact.GetExtendedPropertiesAsync">
-      <summary>저장 된 연락처에 대 한 확장 속성을 이름/값 쌍의 맵으로 가져옵니다.</summary>
-      <returns>이 메서드가 완료 되 면 이름/값 쌍 (문자열 이름, 형식화 되지 않은 값)의 맵/사전을 반환 합니다. 비동기 프로그래밍을 사용 하는 경우 결과 형식은 문자열 이름으로 키가 지정 된 이러한 키-값 쌍의 맵 또는 사전입니다. (&lt; Platform의 Api를 사용할 수 있습니다. Platform:: String, Platform:: Object C++&gt;, IDictionary의 Api &lt; 문자열, .Net 용 개체 &gt;.</returns>
+      <summary>저장된 연락처의 확장 속성을 이름/값 쌍의 맵으로 가져옵니다.</summary>
+      <returns>이 메서드가 완료되면 이름/값 쌍의 지도/사전(문자열 이름, 형식화되지 않은 값)을 반환합니다. 비동기 프로그래밍을 사용하는 경우 결과 유형은 문자열 이름으로 키가 지정된 이러한 키-값 쌍의 지도 또는 사전입니다. (C++의 경우 IMap&lt;Platform::String,Platform::Object&gt;의 API를, .NET의 경우 IDictionary&lt;String,Object&gt;의 API를 사용할 수 있습니다.)</returns>
     </member>
     <member name="M:Windows.Phone.PersonalInformation.StoredContact.GetPropertiesAsync">
-      <summary>연락처에 대 한 알려진 속성을 가져옵니다.</summary>
-      <returns>이 메서드가 완료 되 면 이름/값 쌍 (문자열 이름, 형식화 되지 않은 값)의 맵/사전을 반환 합니다. 비동기 프로그래밍을 사용 하는 경우 결과 형식은 문자열 이름으로 키가 지정 된 이러한 키-값 쌍의 맵 또는 사전입니다. (&lt; Platform의 Api를 사용할 수 있습니다. Platform:: String, Platform:: Object C++&gt;, IDictionary의 Api &lt; 문자열, .Net 용 개체 &gt;.</returns>
+      <summary>연락처의 알려진 속성을 가져옵니다.</summary>
+      <returns>이 메서드가 완료되면 이름/값 쌍의 지도/사전(문자열 이름, 형식화되지 않은 값)을 반환합니다. 비동기 프로그래밍을 사용하는 경우 결과 유형은 문자열 이름으로 키가 지정된 이러한 키-값 쌍의 지도 또는 사전입니다. (C++의 경우 IMap&lt;Platform::String,Platform::Object&gt;의 API를, .NET의 경우 IDictionary&lt;String,Object&gt;의 API를 사용할 수 있습니다.)</returns>
     </member>
     <member name="M:Windows.Phone.PersonalInformation.StoredContact.ReplaceExistingContactAsync(System.String)">
-      <summary>지정 된 ID를 가진 연락처를 현재 연락처로 바꿉니다.</summary>
-      <param name="id">바꿀 연락처의 ID입니다.</param>
-      <returns>비동기 작업입니다. 비동기 프로그래밍을 사용 하는 경우 결과 형식은 * * void * *입니다.</returns>
+      <summary>지정된 ID를 가진 연락처를 현재 연락처로 바꿉니다.</summary>
+      <param name="id">교체할 연락처의 ID입니다.</param>
+      <returns>비동기 작업입니다. 비동기 프로그래밍을 사용하는 경우, 결과 유형은 **void**입니다.</returns>
     </member>
     <member name="M:Windows.Phone.PersonalInformation.StoredContact.SaveAsync">
-      <summary>연락처의 현재 상태를 연락처 저장소에 저장 합니다.</summary>
-      <returns>비동기 작업입니다. 비동기 프로그래밍을 사용 하는 경우 결과 형식은 * * void * *입니다.</returns>
+      <summary>연락처의 현재 상태를 연락처 저장소에 저장합니다.</summary>
+      <returns>비동기 작업입니다. 비동기 프로그래밍을 사용하는 경우, 결과 유형은 **void**입니다.</returns>
     </member>
     <member name="M:Windows.Phone.PersonalInformation.StoredContact.SetDisplayPictureAsync(Windows.Storage.Streams.IInputStream)">
-      <summary>[IInputStream] (https://docs.microsoft.com/previous-versions/hh438387 (v = 85)) 개체를 사용 하 여 연락처에 대 한 표시 그림을 설정 합니다.</summary>
-      <param name="stream">이미지 데이터를 포함 하는 스트림입니다.</param>
-      <returns>비동기 작업입니다. 비동기 프로그래밍을 사용 하는 경우 결과 형식은 * * void * *입니다.</returns>
+      <summary>[IInputStream](https://docs.microsoft.com/previous-versions/hh438387(v=vs.85)) 개체를 사용하여 연락처의 표시 그림을 설정합니다.</summary>
+      <param name="stream">이미지 데이터를 포함하는 스트림입니다.</param>
+      <returns>비동기 작업입니다. 비동기 프로그래밍을 사용하는 경우, 결과 유형은 **void**입니다.</returns>
     </member>
     <member name="M:Windows.Phone.PersonalInformation.StoredContact.ToVcardAsync">
-      <summary>VCard 버전 3.0 형식을 사용 하 여 연락처의 vCard 표현을 검색 합니다.</summary>
-      <returns>이 메서드가 완료 되 면 vCard 데이터를 포함 하는 스트림을 반환 합니다. 비동기 프로그래밍을 사용 하는 경우 결과 형식은 IRandomAccessStream (데이터)입니다.</returns>
+      <summary>vCard 버전 3.0 형식을 사용하는 연락처의 vCard 표현을 검색합니다.</summary>
+      <returns>이 메서드가 완료되면 vCard 데이터가 포함된 스트림이 반환됩니다. 비동기 프로그래밍을 사용하는 경우 결과 유형은 데이터인 IRandomAccessStream입니다.</returns>
     </member>
     <member name="M:Windows.Phone.PersonalInformation.StoredContact.ToVcardAsync(Windows.Phone.PersonalInformation.VCardFormat)">
-      <summary>지정 된 vCard 형식을 사용 하 여 연락처의 vCard 표현을 검색 합니다.</summary>
-      <param name="format">반환 된 vCard에서 사용 하는 형식입니다.</param>
-      <returns>이 메서드가 완료 되 면 vCard 데이터를 포함 하는 스트림을 반환 합니다. 비동기 프로그래밍을 사용 하는 경우 결과 형식은 IRandomAccessStream (데이터)입니다.</returns>
+      <summary>지정된 vCard 형식을 사용하는 연락처의 vCard 표현을 검색합니다.</summary>
+      <param name="format">반환된 vCard에서 사용할 형식입니다.</param>
+      <returns>이 메서드가 완료되면 vCard 데이터가 포함된 스트림이 반환됩니다. 비동기 프로그래밍을 사용하는 경우 결과 유형은 데이터인 IRandomAccessStream입니다.</returns>
     </member>
     <member name="T:Windows.Phone.PersonalInformation.VCardFormat">
-      <summary>VCard의 형식입니다.</summary>
+      <summary>vCard의 형식입니다.</summary>
     </member>
     <member name="F:Windows.Phone.PersonalInformation.VCardFormat.Version2_1">
       <summary>버전 2.1</summary>
@@ -2068,112 +2068,112 @@
       <summary>버전 3.0</summary>
     </member>
     <member name="T:Windows.Phone.PersonalInformation.Provisioning.ContactPartnerProvisioningManager">
-      <summary>이 API는 사용자 코드에서 직접 사용 하기 위한 것이 아닙니다.</summary>
+      <summary>이 API는 사용자 코드에서 직접 사용할 수 없습니다.</summary>
     </member>
     <member name="M:Windows.Phone.PersonalInformation.Provisioning.ContactPartnerProvisioningManager.AssociateNetworkAccountAsync(Windows.Phone.PersonalInformation.ContactStore,System.String,System.String)">
-      <summary>이 API는 사용자 코드에서 직접 사용 하기 위한 것이 아닙니다.</summary>
+      <summary>이 API는 사용자 코드에서 직접 사용할 수 없습니다.</summary>
       <param name="store">연락처 저장소입니다.</param>
       <param name="networkName">네트워크 이름입니다.</param>
       <param name="networkAccountId">계정 ID입니다.</param>
-      <returns>비동기 작업입니다. 비동기 프로그래밍을 사용 하는 경우 결과 형식은 * * void * *입니다.</returns>
+      <returns>비동기 작업입니다. 비동기 프로그래밍을 사용하는 경우, 결과 유형은 **void**입니다.</returns>
     </member>
     <member name="M:Windows.Phone.PersonalInformation.Provisioning.ContactPartnerProvisioningManager.AssociateSocialNetworkAccountAsync(Windows.Phone.PersonalInformation.ContactStore,System.String,System.String)">
-      <summary>이 API는 사용자 코드에서 직접 사용 하기 위한 것이 아닙니다.</summary>
+      <summary>이 API는 사용자 코드에서 직접 사용할 수 없습니다.</summary>
       <param name="store">연락처 저장소입니다.</param>
       <param name="networkName">네트워크 이름입니다.</param>
       <param name="networkAccountId">네트워크 계정 ID입니다.</param>
-      <returns>비동기 작업입니다. 비동기 프로그래밍을 사용 하는 경우 결과 형식은 * * void * *입니다.</returns>
+      <returns>비동기 작업입니다. 비동기 프로그래밍을 사용하는 경우, 결과 유형은 **void**입니다.</returns>
     </member>
     <member name="M:Windows.Phone.PersonalInformation.Provisioning.ContactPartnerProvisioningManager.ImportVcardToSystemAsync(Windows.Storage.Streams.IInputStream)">
-      <summary>이 API는 사용자 코드에서 직접 사용 하기 위한 것이 아닙니다.</summary>
-      <param name="stream">VCard 데이터를 포함 하는 스트림입니다.</param>
-      <returns>비동기 작업입니다. 비동기 프로그래밍을 사용 하는 경우 결과 형식은 * * void * *입니다.</returns>
+      <summary>이 API는 사용자 코드에서 직접 사용할 수 없습니다.</summary>
+      <param name="stream">vCard 데이터를 포함하는 스트림입니다.</param>
+      <returns>비동기 작업입니다. 비동기 프로그래밍을 사용하는 경우, 결과 유형은 **void**입니다.</returns>
     </member>
     <member name="T:Windows.Phone.PersonalInformation.Provisioning.MessagePartnerProvisioningManager">
-      <summary>이 API는 사용자 코드에서 직접 사용 하기 위한 것이 아닙니다.</summary>
+      <summary>이 API는 사용자 코드에서 직접 사용할 수 없습니다.</summary>
     </member>
     <member name="M:Windows.Phone.PersonalInformation.Provisioning.MessagePartnerProvisioningManager.ImportMmsToSystemAsync(System.Boolean,System.Boolean,System.String,System.String,Windows.Foundation.Collections.IVectorView{System.String},Windows.Foundation.DateTime,Windows.Foundation.Collections.IVectorView{Windows.Foundation.Collections.IMapView{System.String,System.Object}})">
-      <summary>이 API는 사용자 코드에서 직접 사용 하기 위한 것이 아닙니다.</summary>
-      <param name="incoming">이 API는 사용자 코드에서 직접 사용 하기 위한 것이 아닙니다.</param>
-      <param name="read">이 API는 사용자 코드에서 직접 사용 하기 위한 것이 아닙니다.</param>
-      <param name="subject">이 API는 사용자 코드에서 직접 사용 하기 위한 것이 아닙니다.</param>
-      <param name="sender">이 API는 사용자 코드에서 직접 사용 하기 위한 것이 아닙니다.</param>
-      <param name="recipients">이 API는 사용자 코드에서 직접 사용 하기 위한 것이 아닙니다.</param>
-      <param name="deliveryTime">이 API는 사용자 코드에서 직접 사용 하기 위한 것이 아닙니다.</param>
-      <param name="attachments">이 API는 사용자 코드에서 직접 사용 하기 위한 것이 아닙니다.</param>
-      <returns>이 API는 사용자 코드에서 직접 사용 하기 위한 것이 아닙니다.</returns>
+      <summary>이 API는 사용자 코드에서 직접 사용할 수 없습니다.</summary>
+      <param name="incoming">이 API는 사용자 코드에서 직접 사용할 수 없습니다.</param>
+      <param name="read">이 API는 사용자 코드에서 직접 사용할 수 없습니다.</param>
+      <param name="subject">이 API는 사용자 코드에서 직접 사용할 수 없습니다.</param>
+      <param name="sender">이 API는 사용자 코드에서 직접 사용할 수 없습니다.</param>
+      <param name="recipients">이 API는 사용자 코드에서 직접 사용할 수 없습니다.</param>
+      <param name="deliveryTime">이 API는 사용자 코드에서 직접 사용할 수 없습니다.</param>
+      <param name="attachments">이 API는 사용자 코드에서 직접 사용할 수 없습니다.</param>
+      <returns>이 API는 사용자 코드에서 직접 사용할 수 없습니다.</returns>
     </member>
     <member name="M:Windows.Phone.PersonalInformation.Provisioning.MessagePartnerProvisioningManager.ImportSmsToSystemAsync(System.Boolean,System.Boolean,System.String,System.String,Windows.Foundation.Collections.IVectorView{System.String},Windows.Foundation.DateTime)">
-      <summary>이 API는 사용자 코드에서 직접 사용 하기 위한 것이 아닙니다.</summary>
-      <param name="incoming">이 API는 사용자 코드에서 직접 사용 하기 위한 것이 아닙니다.</param>
-      <param name="read">이 API는 사용자 코드에서 직접 사용 하기 위한 것이 아닙니다.</param>
-      <param name="body">이 API는 사용자 코드에서 직접 사용 하기 위한 것이 아닙니다.</param>
-      <param name="sender">이 API는 사용자 코드에서 직접 사용 하기 위한 것이 아닙니다.</param>
-      <param name="recipients">이 API는 사용자 코드에서 직접 사용 하기 위한 것이 아닙니다.</param>
-      <param name="deliveryTime">이 API는 사용자 코드에서 직접 사용 하기 위한 것이 아닙니다.</param>
-      <returns>이 API는 사용자 코드에서 직접 사용 하기 위한 것이 아닙니다.</returns>
+      <summary>이 API는 사용자 코드에서 직접 사용할 수 없습니다.</summary>
+      <param name="incoming">이 API는 사용자 코드에서 직접 사용할 수 없습니다.</param>
+      <param name="read">이 API는 사용자 코드에서 직접 사용할 수 없습니다.</param>
+      <param name="body">이 API는 사용자 코드에서 직접 사용할 수 없습니다.</param>
+      <param name="sender">이 API는 사용자 코드에서 직접 사용할 수 없습니다.</param>
+      <param name="recipients">이 API는 사용자 코드에서 직접 사용할 수 없습니다.</param>
+      <param name="deliveryTime">이 API는 사용자 코드에서 직접 사용할 수 없습니다.</param>
+      <returns>이 API는 사용자 코드에서 직접 사용할 수 없습니다.</returns>
     </member>
     <member name="T:Windows.Phone.Speech.Recognition.SpeechRecognitionUIStatus">
       <summary>음성 인식 세션의 상태를 나타냅니다.</summary>
     </member>
     <member name="F:Windows.Phone.Speech.Recognition.SpeechRecognitionUIStatus.Busy">
-      <summary>휴대폰의 음성 기능이 활성화 되어 있거나 전화 통화를 진행 하는 동안 앱에서 음성 인식을 시도 했으므로 음성 인식기 GUI를 시작할 수 없습니다.</summary>
+      <summary>전화의 음성 기능이 활성화되었거나 전화 호출이 진행 중인 동안 앱이 음성 인식을 시도했기 때문에 음성 인식기 GUI가 시작될 수 없었습니다.</summary>
     </member>
     <member name="F:Windows.Phone.Speech.Recognition.SpeechRecognitionUIStatus.Cancelled">
-      <summary>사용자가 뒤로 단추를 사용 하는 등의 음성 인식기 GUI를 수동으로 취소 했습니다. 사용자가 앱 외부로 전환 하거나 GUI가 활성화 되어 있는 동안 전화 통화를 수신 하는 경우에도이 값이 반환 됩니다.</summary>
+      <summary>사용자가 뒤로 단추를 사용하는 등의 방법으로 음성 인식기 GUI를 수동으로 취소했습니다. 이 값은 사용자가 앱 외부로 전환하거나 GUI가 활성 상태일 때 전화 호출을 받은 경우에도 반환됩니다.</summary>
     </member>
     <member name="F:Windows.Phone.Speech.Recognition.SpeechRecognitionUIStatus.Preempted">
-      <summary>다음 시나리오에서는 선점 값이 반환 됩니다.</summary>
+      <summary>Preempted 값은 다음과 같은 시나리오에서 반환됩니다.</summary>
     </member>
     <member name="F:Windows.Phone.Speech.Recognition.SpeechRecognitionUIStatus.PrivacyPolicyDeclined">
-      <summary>사용자가 개인 정보 취급 방침을 거부 했습니다.</summary>
+      <summary>사용자가 개인 정보 취급 방침을 거부했습니다.</summary>
     </member>
     <member name="F:Windows.Phone.Speech.Recognition.SpeechRecognitionUIStatus.Succeeded">
-      <summary>기본 GUI (그래픽 사용자 인터페이스)를 통해 음성 인식이 성공 했습니다.</summary>
+      <summary>음성 인식이 기본 GUI(그래픽 사용자 인터페이스)를 통해 성공했습니다.</summary>
     </member>
     <member name="T:Windows.Phone.System.SystemProtection">
-      <summary>시스템 보호와 관련 된 정보를 제공 합니다.</summary>
+      <summary>시스템 보호에 관련된 정보를 제공합니다.</summary>
     </member>
     <member name="P:Windows.Phone.System.SystemProtection.ScreenLocked">
-      <summary>화면이 잠겨 있는지 여부를 나타내는 값을 가져옵니다.</summary>
-      <returns>화면이 잠긴 경우 * * true * * 그렇지 않으면 * * false * *입니다.</returns>
+      <summary>화면이 잠겼는지 여부를 나타내는 값을 가져옵니다.</summary>
+      <returns>화면이 잠겨 있으면 **true**이고 그렇지 않으면 **false**입니다.</returns>
     </member>
     <member name="M:Windows.Phone.System.SystemProtection.RequestScreenUnlock">
-      <summary>화면의 잠금 해제를 요청 합니다.</summary>
+      <summary>화면 잠금 해제를 요청합니다.</summary>
     </member>
     <member name="T:Windows.Phone.System.Power.PowerManager">
-      <summary>휴대폰의 배터리가 절전 모드에 있는지 여부에 대 한 정보를 제공 합니다.</summary>
+      <summary>전화 배터리가 절전 모드에 있는지 여부에 대한 정보를 제공합니다.</summary>
     </member>
     <member name="P:Windows.Phone.System.Power.PowerManager.PowerSavingMode">
-      <summary>휴대폰의 배터리가 절전 모드에 있는지 여부를 나타내는 값을 가져옵니다.</summary>
-      <returns>휴대폰의 배터리가 절전 모드에 있으면 true이 고, 그렇지 않으면 false입니다.</returns>
+      <summary>전화 배터리가 절전 모드인지 여부를 나타내는 값을 가져옵니다.</summary>
+      <returns>전화 배터리가 절전 모드에 있으면 true이고, 그렇지 않으면 false입니다.</returns>
     </member>
     <member name="P:Windows.Phone.System.Power.PowerManager.PowerSavingModeEnabled">
-      <summary>절전 모드를 현재 활성 상태 인지 여부에 관계 없이 휴대폰에서 절전 모드를 현재 사용할 수 있는지 여부를 나타내는 값을 가져옵니다.</summary>
-      <returns>절전 모드를 현재 활성 상태 인지 여부에 관계 없이 휴대폰에서 절전 모드를 현재 사용할 수 있는지 여부를 나타내는 값입니다.</returns>
+      <summary>절전 모드가 현재 활성인지 여부와 상관없이, 절전 모드가 휴대폰에서 현재 사용되는지 여부를 나타내는 값을 가져옵니다.</summary>
+      <returns>절전 모드가 현재 활성인지 여부와 상관없이, 절전 모드가 휴대폰에서 현재 사용되는지 여부를 나타내는 값입니다.</returns>
     </member>
     <member name="E:Windows.Phone.System.Power.PowerManager.PowerSavingModeChanged">
-      <summary>휴대폰의 배터리 전원 절약 모드가 변경 될 때 발생 합니다.</summary>
+      <summary>전화 배터리의 절전 모드가 변경될 때 발생합니다.</summary>
     </member>
     <member name="T:Windows.Phone.System.Power.PowerSavingMode">
-      <summary>휴대폰의 배터리가 절전 모드에 있는지 여부를 지정 합니다.</summary>
+      <summary>전화 배터리가 절전 모드에 있는지 여부를 지정합니다.</summary>
     </member>
     <member name="F:Windows.Phone.System.Power.PowerSavingMode.Off">
-      <summary>휴대폰의 배터리가 절전 모드에 있지 않습니다.</summary>
+      <summary>전화 배터리가 절전 모드에 있지 않습니다.</summary>
     </member>
     <member name="F:Windows.Phone.System.Power.PowerSavingMode.On">
-      <summary>휴대폰의 배터리가 절전 모드에 있습니다.</summary>
+      <summary>전화 배터리가 절전 모드에 있습니다.</summary>
     </member>
     <member name="T:Windows.Phone.System.Profile.RetailMode">
-      <summary>정품 모드 설정이 포함 되어 있습니다.</summary>
-      <deprecated type="deprecate">대신 RetailInfo를 사용 해야 합니다.</deprecated>
+      <summary>일반 정품 모드 설정이 포함되어 있습니다.</summary>
+      <deprecated type="deprecate">대신 Windows.System.Profile.RetailInfo를 사용합니다.</deprecated>
     </member>
     <member name="P:Windows.Phone.System.Profile.RetailMode.RetailModeEnabled">
-      <summary>정품 모드를 사용할 수 있는지 여부를 나타내는 값을 가져옵니다.</summary>
-      <returns>소매점 모드를 사용 하는 경우 true입니다. 그렇지 않으면 false입니다.</returns>
+      <summary>일반 정품 모드를 사용할 수 있는지 여부를 나타내는 값을 가져옵니다.</summary>
+      <returns>일반 정품 모드를 사용할 수 있으면 true이고, 그렇지 않으면 false입니다.</returns>
     </member>
     <member name="T:Windows.Phone.System.UserProfile.GameServices.Core.GameService">
-      <summary>게임 서비스에 대 한 액세스를 제공 합니다.</summary>
+      <summary>게임 서비스에 대한 액세스를 제공합니다.</summary>
     </member>
     <member name="P:Windows.Phone.System.UserProfile.GameServices.Core.GameService.ServiceUri">
       <summary>게임 서비스의 Uri를 가져옵니다.</summary>
@@ -2184,158 +2184,158 @@
       <returns>게임 서비스의 마지막 인증 결과입니다.</returns>
     </member>
     <member name="M:Windows.Phone.System.UserProfile.GameServices.Core.GameService.GetGamerProfileAsync">
-      <summary>현재 사용자에 대 한 게이머 프로필을 검색 합니다.</summary>
-      <returns>이 메서드가 완료 되 면 게이머 프로필을 나타내는 GameServicePropertyCollection를 반환 합니다.</returns>
+      <summary>현재 사용자의 게이머 프로필을 검색합니다.</summary>
+      <returns>이 메서드가 완료되면 게이머 프로필을 나타내는 GameServicePropertyCollection을 반환합니다.</returns>
     </member>
     <member name="M:Windows.Phone.System.UserProfile.GameServices.Core.GameService.GetInstalledGameItemsAsync">
-      <summary>현재 설치 된 게임 항목을 검색 합니다.</summary>
-      <returns>이 메서드가 완료 되 면 설치 된 항목의 목록을 나타내는 GameServicePropertyCollection을 반환 합니다.</returns>
+      <summary>현재 설치된 게임 항목을 검색합니다.</summary>
+      <returns>이 메서드가 완료되면 설치된 항목의 목록을 나타내는 GameServicePropertyCollection을 반환합니다.</returns>
     </member>
     <member name="M:Windows.Phone.System.UserProfile.GameServices.Core.GameService.GetPartnerTokenAsync(Windows.Foundation.Uri)">
-      <summary>지정 된 Uri의 파트너 토큰을 검색 합니다.</summary>
-      <param name="audienceUri">파트너 토큰이 검색 되는 Uri입니다.</param>
-      <returns>이 메서드가 완료 되 면 partern 토큰을 포함 하는 문자열을 반환 합니다.</returns>
+      <summary>지정된 Uri의 파트너 토큰을 검색합니다.</summary>
+      <param name="audienceUri">파트너 토큰이 검색되는 Uri입니다.</param>
+      <returns>이 메서드가 완료되면 파트너 토큰이 포함된 문자열이 반환됩니다.</returns>
     </member>
     <member name="M:Windows.Phone.System.UserProfile.GameServices.Core.GameService.GetPrivilegesAsync">
-      <summary>현재 사용자에 대 한 권한 문자열을 검색 합니다.</summary>
-      <returns>이 메서드가 완료 되 면 권한 문자열을 반환 합니다.</returns>
+      <summary>현재 사용자의 권한 문자열을 검색합니다.</summary>
+      <returns>이 메서드가 완료되면 권한 문자열을 반환합니다.</returns>
     </member>
     <member name="M:Windows.Phone.System.UserProfile.GameServices.Core.GameService.GrantAchievement(System.UInt32)">
-      <summary>현재 사용자에 게 지정 된 성과를 부여 합니다.</summary>
-      <param name="achievementId">성과의 식별자입니다.</param>
+      <summary>현재 사용자에게 지정된 도전 과제를 제공합니다.</summary>
+      <param name="achievementId">도전 과제의 식별자입니다.</param>
     </member>
     <member name="M:Windows.Phone.System.UserProfile.GameServices.Core.GameService.GrantAvatarAward(System.UInt32)">
-      <summary>지정 된 아바타 상장을 현재 사용자에 게 부여 합니다.</summary>
-      <param name="avatarAwardId">아바타 수상의 식별자입니다.</param>
+      <summary>현재 사용자에게 지정된 아바타 상품을 제공합니다.</summary>
+      <param name="avatarAwardId">아바타 상품의 식별자입니다.</param>
     </member>
     <member name="M:Windows.Phone.System.UserProfile.GameServices.Core.GameService.NotifyPartnerTokenExpired(Windows.Foundation.Uri)">
-      <summary>지정 된 Uri에 대해 캐시 된 파트너 토큰을 무효화 합니다.</summary>
-      <param name="audienceUri">지정 된 Uri입니다.</param>
+      <summary>지정된 URI에 대해 캐시된 파트너 토큰을 무효화합니다.</summary>
+      <param name="audienceUri">지정된 Uri입니다.</param>
     </member>
     <member name="M:Windows.Phone.System.UserProfile.GameServices.Core.GameService.PostResult(System.UInt32,Windows.Phone.System.UserProfile.GameServices.Core.GameServiceScoreKind,System.Int64,Windows.Phone.System.UserProfile.GameServices.Core.GameServiceGameOutcome,Windows.Storage.Streams.IBuffer)">
-      <summary>게임 결과를 종료 하 고 게시 합니다.</summary>
-      <param name="gameVariant">앱 별 게임 변형 식별자입니다.</param>
-      <param name="scoreKind">결과의 점수 유형입니다.</param>
+      <summary>게임을 종료하고 게임의 결과를 게시합니다.</summary>
+      <param name="gameVariant">앱 관련 게임 변형 식별자입니다.</param>
+      <param name="scoreKind">결과의 점수 종류입니다.</param>
       <param name="scoreValue">결과의 점수 값입니다.</param>
       <param name="gameOutcome">게임의 결과입니다.</param>
-      <param name="buffer">결과에 포함 될 데이터 버퍼입니다.</param>
+      <param name="buffer">결과에 포함될 데이터 버퍼입니다.</param>
     </member>
     <member name="T:Windows.Phone.System.UserProfile.GameServices.Core.GameServiceGameOutcome">
       <summary>게임의 결과를 나타냅니다.</summary>
     </member>
     <member name="F:Windows.Phone.System.UserProfile.GameServices.Core.GameServiceGameOutcome.Loss">
-      <summary>손실.</summary>
+      <summary>패배입니다.</summary>
     </member>
     <member name="F:Windows.Phone.System.UserProfile.GameServices.Core.GameServiceGameOutcome.None">
       <summary>결과가 없습니다.</summary>
     </member>
     <member name="F:Windows.Phone.System.UserProfile.GameServices.Core.GameServiceGameOutcome.Tie">
-      <summary>동률입니다.</summary>
+      <summary>무승부입니다.</summary>
     </member>
     <member name="F:Windows.Phone.System.UserProfile.GameServices.Core.GameServiceGameOutcome.Win">
-      <summary>Win.</summary>
+      <summary>승리입니다.</summary>
     </member>
     <member name="T:Windows.Phone.System.UserProfile.GameServices.Core.GameServicePropertyCollection">
-      <summary>게이머 서비스 속성에 대 한 액세스를 제공 합니다.</summary>
+      <summary>게이머 서비스 속성에 대한 액세스를 제공합니다.</summary>
     </member>
     <member name="M:Windows.Phone.System.UserProfile.GameServices.Core.GameServicePropertyCollection.GetPropertyAsync(System.String)">
-      <summary>지정 된 게임 서비스 속성을 가져옵니다.</summary>
+      <summary>지정된 게임 서비스 속성을 가져옵니다.</summary>
       <param name="propertyName">검색할 속성의 이름입니다.</param>
-      <returns>이 메서드가 성공적으로 완료 되 면 요청 된 속성을 나타내는 개체를 반환 합니다.</returns>
+      <returns>이 메서드가 성공적으로 완료되면 요청된 속성을 나타내는 개체가 반환됩니다.</returns>
     </member>
     <member name="T:Windows.Phone.System.UserProfile.GameServices.Core.GameServiceScoreKind">
-      <summary>게임에서 사용 하는 점수 유형을 나타냅니다.</summary>
+      <summary>게임에서 사용되는 점수의 형식을 나타냅니다.</summary>
     </member>
     <member name="F:Windows.Phone.System.UserProfile.GameServices.Core.GameServiceScoreKind.Number">
-      <summary>점수는 숫자입니다.</summary>
+      <summary>점수가 숫자입니다.</summary>
     </member>
     <member name="F:Windows.Phone.System.UserProfile.GameServices.Core.GameServiceScoreKind.Time">
-      <summary>점수가 동률입니다.</summary>
+      <summary>점수가 동점입니다.</summary>
     </member>
     <member name="T:Windows.Phone.UI.Input.BackPressedEventArgs">
-      <summary>BackPressed 이벤트에 대 한 데이터를 제공 합니다.</summary>
+      <summary>BackPressed 이벤트에 대한 데이터를 제공합니다.</summary>
     </member>
     <member name="P:Windows.Phone.UI.Input.BackPressedEventArgs.Handled">
-      <summary>이벤트가 처리 되었는지 여부를 가져오거나 설정 합니다.</summary>
-      <returns>이벤트가 처리 되었는지 여부를 나타냅니다.</returns>
+      <summary>이벤트가 처리되었는지 여부를 가져오거나 설정합니다.</summary>
+      <returns>이벤트가 처리되었는지 여부입니다.</returns>
     </member>
     <member name="T:Windows.Phone.UI.Input.CameraEventArgs">
-      <summary>CameraHalfPressed, CameraPressed 및 CameraReleased 이벤트에 대 한 데이터를 제공 합니다.</summary>
+      <summary>CameraHalfPressed, CameraPressed, CameraReleased 이벤트에 대한 데이터를 제공합니다.</summary>
     </member>
     <member name="T:Windows.Phone.UI.Input.HardwareButtons">
-      <summary>휴대폰의 하드웨어 단추에 대 한 액세스를 제공 합니다.</summary>
+      <summary>전화의 하드웨어 단추에 대한 액세스를 제공합니다.</summary>
     </member>
     <member name="E:Windows.Phone.UI.Input.HardwareButtons.BackPressed">
-      <summary>사용자가 하드웨어 뒤로 단추를 누를 때 발생 합니다.</summary>
+      <summary>사용자가 하드웨어 뒤로 단추를 누를 때 발생합니다.</summary>
     </member>
     <member name="E:Windows.Phone.UI.Input.HardwareButtons.CameraHalfPressed">
-      <summary>사용자가 하드웨어 카메라 단추 중간을 누를 때 발생 합니다.</summary>
+      <summary>사용자가 하드웨어 카메라 단추를 반쯤 누를 때 발생합니다.</summary>
     </member>
     <member name="E:Windows.Phone.UI.Input.HardwareButtons.CameraPressed">
-      <summary>사용자가 하드웨어 카메라 단추를 누를 때 발생 합니다.</summary>
+      <summary>사용자가 하드웨어 카메라 단추를 누를 때 발생합니다.</summary>
     </member>
     <member name="E:Windows.Phone.UI.Input.HardwareButtons.CameraReleased">
-      <summary>사용자가 하드웨어 카메라 단추를 놓으면 발생 합니다.</summary>
+      <summary>사용자가 하드웨어 카메라 단추를 놓을 때 발생합니다.</summary>
     </member>
     <member name="T:Windows.UI.ViewManagement.StatusBar">
-      <summary>응용 프로그램 뷰 (창)를 사용 하 여 상태 표시줄과 assocaited 상호 작용 하기 위한 메서드 및 속성을 제공 합니다. 상태 표시줄은 사용자가 장치의 동작을 제어 하 고 progres 제공할 수 있는 화면 위쪽 가장자리 (일반적으로 화면)에 시스템을 제공 하는 사용자 환경입니다.</summary>
+      <summary>앱 뷰(창)에 연결된 상태 표시줄과 상호 작용하기 위한 메서드 및 속성을 제공합니다. 상태 표시줄은 시스템이 화면의 상단 가장자리에 표시하는 사용자 환경으로, 사용자가 디바이스의 동작을 제어하고 진행률을 볼 수 있습니다.</summary>
     </member>
     <member name="P:Windows.UI.ViewManagement.StatusBar.BackgroundColor">
-      <summary>상태 표시줄의 배경색을 가져오거나 설정 합니다. 색의 알파 채널이 사용 되지 않습니다.</summary>
+      <summary>상태 표시줄의 배경색을 가져오거나 설정합니다. 색의 알파 채널이 사용되지 않습니다.</summary>
       <returns>상태 표시줄의 배경색입니다.</returns>
     </member>
     <member name="P:Windows.UI.ViewManagement.StatusBar.BackgroundOpacity">
-      <summary>상태 표시줄 배경색의 불투명도를 가져오거나 설정 합니다.</summary>
-      <returns>상태 표시줄 배경색의 불투명도입니다.</returns>
+      <summary>상태 표시줄의 배경색 불투명도를 가져오거나 설정합니다.</summary>
+      <returns>상태 표시줄의 배경색 불투명도입니다.</returns>
     </member>
     <member name="P:Windows.UI.ViewManagement.StatusBar.ForegroundColor">
-      <summary>상태 표시줄의 전경색을 가져오거나 설정 합니다. 색의 알파 채널이 사용 되지 않습니다.</summary>
+      <summary>상태 표시줄의 전경색을 가져오거나 설정합니다. 색의 알파 채널이 사용되지 않습니다.</summary>
       <returns>상태 표시줄의 전경색입니다.</returns>
     </member>
     <member name="P:Windows.UI.ViewManagement.StatusBar.OccludedRect">
-      <summary>상태 표시줄에 현재 폐색 되는 핵심 창의 영역을 가져옵니다.</summary>
-      <returns>현재 상태 표시줄에서 폐색 하는 핵심 창의 영역입니다.</returns>
+      <summary>현재 상태 표시줄에서 가린 코어 창 영역을 가져옵니다.</summary>
+      <returns>현재 상태 표시줄에서 가린 코어 창 영역입니다.</returns>
     </member>
     <member name="P:Windows.UI.ViewManagement.StatusBar.ProgressIndicator">
-      <summary>상태 표시줄의 진행률 표시기를 가져옵니다.</summary>
-      <returns>상태 표시줄의 진행률 표시기입니다.</returns>
+      <summary>상태 표시줄에 대한 진행률 표시기를 가져옵니다.</summary>
+      <returns>상태 표시줄에 대한 진행률 표시기입니다.</returns>
     </member>
     <member name="E:Windows.UI.ViewManagement.StatusBar.Hiding">
-      <summary>상태 표시줄을 숨기는 경우 발생 하는 이벤트입니다.</summary>
+      <summary>이 이벤트는 상태 표시줄이 숨겨져 있을 때 발생합니다.</summary>
     </member>
     <member name="E:Windows.UI.ViewManagement.StatusBar.Showing">
-      <summary>상태 표시줄이 표시 될 때 발생 하는 이벤트입니다.</summary>
+      <summary>이 이벤트는 상태 표시줄이 표시되고 있을 때 발생합니다.</summary>
     </member>
     <member name="M:Windows.UI.ViewManagement.StatusBar.GetForCurrentView">
-      <summary>현재 창 (응용 프로그램 보기)의 상태 표시줄을 가져옵니다.</summary>
-      <returns>현재 창 (앱 보기)의 상태 표시줄입니다.</returns>
+      <summary>현재 창(앱 뷰)의 상태 표시줄을 가져옵니다.</summary>
+      <returns>현재 창(앱 뷰)의 상태 표시줄입니다.</returns>
     </member>
     <member name="M:Windows.UI.ViewManagement.StatusBar.HideAsync">
       <summary>상태 표시줄을 숨깁니다.</summary>
-      <returns>작업의 비동기 결과입니다. 비동기 호출이 완료 된 시기를 확인 하는 데 사용 합니다.</returns>
+      <returns>작업에 대한 비동기 결과입니다. 비동기 호출이 완료된 때를 결정하는 데 사용합니다.</returns>
     </member>
     <member name="M:Windows.UI.ViewManagement.StatusBar.ShowAsync">
-      <summary>상태 표시줄을 표시 합니다.</summary>
-      <returns>작업의 비동기 결과입니다. 비동기 호출이 완료 된 시기를 확인 하는 데 사용 합니다.</returns>
+      <summary>상태 표시줄을 표시합니다.</summary>
+      <returns>작업에 대한 비동기 결과입니다. 비동기 호출이 완료된 때를 결정하는 데 사용합니다.</returns>
     </member>
     <member name="T:Windows.UI.ViewManagement.StatusBarProgressIndicator">
-      <summary>창 (앱 보기)의 상태 표시줄에서 진행률 표시기와 상호 작용 하기 위한 메서드 및 속성을 제공 합니다.</summary>
+      <summary>창(앱 뷰)에서 상태 표시줄의 진행률 표시기와 상호 작용하기 위한 메서드 및 속성을 제공합니다.</summary>
     </member>
     <member name="P:Windows.UI.ViewManagement.StatusBarProgressIndicator.ProgressValue">
-      <summary>0에서 1 사이의 범위에 있는 진행률을 나타내는 값을 가져오거나 설정 합니다.</summary>
-      <returns>0에서 1 사이의 범위에 있는 진행률을 나타내는 값입니다.</returns>
+      <summary>범위 0에서 1 사이의 진행률을 나타내는 값을 가져오거나 설정합니다.</summary>
+      <returns>범위 0에서 1 사이의 진행률을 나타내는 값입니다.</returns>
     </member>
     <member name="P:Windows.UI.ViewManagement.StatusBarProgressIndicator.Text">
-      <summary>진행률 표시기에 표시 되는 텍스트 레이블을 가져오거나 설정 합니다.</summary>
-      <returns>진행률 표시기에 표시 되는 텍스트 레이블입니다.</returns>
+      <summary>진행률 표시기에 표시된 텍스트 레이블을 가져오거나 설정합니다.</summary>
+      <returns>진행률 표시기에 표시된 텍스트 레이블입니다.</returns>
     </member>
     <member name="M:Windows.UI.ViewManagement.StatusBarProgressIndicator.HideAsync">
       <summary>진행률 표시기를 숨깁니다.</summary>
-      <returns>작업의 비동기 결과입니다. 비동기 호출이 완료 된 시기를 확인 하는 데 사용 합니다.</returns>
+      <returns>작업에 대한 비동기 결과입니다. 비동기 호출이 완료된 때를 결정하는 데 사용합니다.</returns>
     </member>
     <member name="M:Windows.UI.ViewManagement.StatusBarProgressIndicator.ShowAsync">
-      <summary>진행률 표시기를 표시 합니다.</summary>
-      <returns>작업의 비동기 결과입니다. 비동기 호출이 완료 된 시기를 확인 하는 데 사용 합니다.</returns>
+      <summary>진행률 표시기를 표시합니다.</summary>
+      <returns>작업에 대한 비동기 결과입니다. 비동기 호출이 완료된 때를 결정하는 데 사용합니다.</returns>
     </member>
   </members>
 </doc>

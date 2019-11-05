@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <doc>
   <assembly>
-    <name>IsolatedWindowsEnvironmentContract.</name>
+    <name>Windows.Security.Isolation.IsolatedWindowsEnvironmentContract</name>
   </assembly>
   <members>
     <member name="T:Windows.Security.Isolation.IsolatedWindowsEnvironment">
@@ -205,7 +205,7 @@
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentHost.HostErrors">
       <summary>호스트에서 격리 된 Windows 환경을 만들 수 있으려면 먼저 확인 해야 하는 호스트의 오류에 대 한 IVectorView입니다.</summary>
-      <returns>Ivectorview&lt;t&gt;</returns>
+      <returns>IVectorView</returns>
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentHost.IsReady">
       <summary>호스트가 올바르게 구성 되어 있고 격리 된 Windows 환경을 만들 준비가 되었는지 여부를 나타내는 부울 값입니다.</summary>
@@ -456,7 +456,7 @@
       <summary>열었습니다.</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentShareFolderStatus.UnknownFailure">
-      <summary>알 수 없는 오류입니다.</summary>
+      <summary>알 수 없는 오류가 발생했습니다.</summary>
     </member>
     <member name="T:Windows.Security.Isolation.IsolatedWindowsEnvironmentStartProcessResult">
       <summary>격리 된 Windows 환경에서 시작 프로세스의 결과를 쿼리 하는 런타임 클래스입니다.</summary>
@@ -512,12 +512,12 @@
     <member name="M:Windows.Security.Isolation.IsolatedWindowsHostMessenger.PostMessageToReceiver(System.Guid,Windows.Foundation.Collections.IVectorView{System.Object})">
       <summary>격리 된 Windows 환경에서 호스트 쪽에 등록 된 받는 사람에 게 메시지를 게시 합니다.</summary>
       <param name="receiverId">메시지 받는 사람에 대 한 GUID입니다.</param>
-      <param name="message">Ivectorview&lt;t&gt;</param>
+      <param name="message">IVectorView</param>
     </member>
     <member name="T:Windows.Security.Isolation.MessageReceivedCallback">
       <summary>PostMessageToReceiver를 사용 하 여 격리 된 Windows 환경에서 메시지를 보낼 때 호출 되는 콜백 함수입니다.</summary>
       <param name="receiverId">메시지 받는 사람에 대 한 GUID입니다.</param>
-      <param name="message">Ivectorview&lt;t&gt;</param>
+      <param name="message">IVectorView</param>
     </member>
   </members>
 </doc>

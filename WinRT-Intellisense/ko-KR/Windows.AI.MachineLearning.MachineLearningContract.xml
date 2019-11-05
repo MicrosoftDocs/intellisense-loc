@@ -1,76 +1,76 @@
 <?xml version="1.0" encoding="utf-8"?>
 <doc>
   <assembly>
-    <name>MachineLearning. MachineLearningContract</name>
+    <name>Windows.AI.MachineLearning.MachineLearningContract</name>
   </assembly>
   <members>
     <member name="T:Windows.AI.MachineLearning.ILearningModelFeatureDescriptor">
-      <summary>모든 기능에 포함 된 공용 속성을 설명 합니다.</summary>
+      <summary>모든 형상이 가진 일반적인 속성을 설명합니다.</summary>
     </member>
     <member name="P:Windows.AI.MachineLearning.ILearningModelFeatureDescriptor.Description">
-      <summary>모델에서이 기능을 사용 하는 방법에 대 한 설명입니다.</summary>
-      <returns>모델에서이 기능을 사용 하는 방법에 대 한 설명입니다.</returns>
+      <summary>모델에서 이 기능의 용도에 대한 설명입니다.</summary>
+      <returns>모델에서 이 기능의 용도에 대한 설명입니다.</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.ILearningModelFeatureDescriptor.IsRequired">
-      <summary>True 이면 LearningModelSession를 호출 하기 전에 값을이 기능에 바인딩해야 합니다.</summary>
-      <returns>True 이면 * * LearningModelSession * *를 호출 하기 전에 값을이 기능에 바인딩해야 합니다.</returns>
+      <summary>true일 경우 LearningModelSession.Evaluate를 호출하기 전에 이 형상에 값을 바인딩해야 합니다.</summary>
+      <returns>true일 경우 **LearningModelSession.Evaluate**를 호출하기 전에 이 형상에 값을 바인딩해야 합니다.</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.ILearningModelFeatureDescriptor.Kind">
-      <summary>기능의 종류-사용할 파생 클래스를 파악 하는 데 사용 됩니다.</summary>
-      <returns>기능의 종류-사용할 파생 클래스를 파악 하는 데 사용 됩니다.</returns>
+      <summary>형상의 종류입니다. 어떤 파생 클래스를 사용할지 파악하기 위해 사용합니다.</summary>
+      <returns>형상의 종류입니다. 어떤 파생 클래스를 사용할지 파악하기 위해 사용합니다.</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.ILearningModelFeatureDescriptor.Name">
-      <summary>이 기능에 값을 바인딩하는 데 사용 하는 이름입니다.</summary>
-      <returns>이 기능에 값을 바인딩하는 데 사용 하는 이름입니다.</returns>
+      <summary>이 기능에 값을 바인딩하는 데 사용하는 이름입니다.</summary>
+      <returns>이 기능에 값을 바인딩하는 데 사용하는 이름입니다.</returns>
     </member>
     <member name="T:Windows.AI.MachineLearning.ILearningModelFeatureValue">
-      <summary>기능의 인스턴스화된 값입니다.</summary>
+      <summary>형상을 위해 인스턴스화된 값입니다.</summary>
     </member>
     <member name="P:Windows.AI.MachineLearning.ILearningModelFeatureValue.Kind">
-      <summary>기능의 데이터 형식입니다.</summary>
-      <returns>기능의 데이터 형식입니다.</returns>
+      <summary>형상의 데이터 형식입니다.</summary>
+      <returns>형상의 데이터 형식입니다.</returns>
     </member>
     <member name="T:Windows.AI.MachineLearning.ILearningModelOperatorProvider">
       <summary>
       </summary>
     </member>
     <member name="T:Windows.AI.MachineLearning.ImageFeatureDescriptor">
-      <summary>모델이 예상 하는 이미지의 속성을 설명 합니다.</summary>
+      <summary>모델이 예상하는 이미지의 속성을 설명합니다.</summary>
     </member>
     <member name="P:Windows.AI.MachineLearning.ImageFeatureDescriptor.BitmapAlphaMode">
-      <summary>이미지의 예상 알파 모드를 지정 합니다.</summary>
+      <summary>이미지의 예상되는 알파 모드를 지정합니다.</summary>
       <returns>이미지의 알파 모드입니다.</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.ImageFeatureDescriptor.BitmapPixelFormat">
-      <summary>예상 픽셀 형식 (채널 순서, 비트 깊이 및 데이터 형식)을 지정 합니다.</summary>
+      <summary>예상되는 픽셀 형식(채널 순서, 비트 수준 및 데이터 형식)을 지정합니다.</summary>
       <returns>이미지의 픽셀 형식입니다.</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.ImageFeatureDescriptor.Description">
-      <summary>모델에서이 기능을 사용 하는 방법에 대 한 설명입니다.</summary>
-      <returns>모델에서이 기능을 사용 하는 방법에 대 한 설명입니다.</returns>
+      <summary>모델에서 이 기능의 용도에 대한 설명입니다.</summary>
+      <returns>모델에서 이 기능의 용도에 대한 설명입니다.</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.ImageFeatureDescriptor.Height">
-      <summary>예상 이미지 높이입니다.</summary>
-      <returns>예상 이미지 높이입니다.</returns>
+      <summary>예상되는 이미지 높이입니다.</summary>
+      <returns>예상되는 이미지 높이입니다.</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.ImageFeatureDescriptor.IsRequired">
-      <summary>True 이면 LearningModelSession를 호출 하기 전에 값을이 기능에 바인딩해야 합니다.</summary>
-      <returns>LearningModelSession를 호출 하기 전에 값을이 기능에 바인딩해야 하는 경우 True이 고, 그렇지 않으면 false입니다.</returns>
+      <summary>true일 경우 LearningModelSession.Evaluate를 호출하기 전에 이 형상에 값을 바인딩해야 합니다.</summary>
+      <returns>LearningModelSession.Evaluate를 호출하기 전에 이 형상에 값을 바인딩해야 하면 true, 그렇지 않으면 false입니다.</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.ImageFeatureDescriptor.Kind">
-      <summary>기능의 종류-사용할 파생 클래스를 파악 하는 데 사용 됩니다.</summary>
-      <returns>기능의 종류입니다.</returns>
+      <summary>형상의 종류입니다. 어떤 파생 클래스를 사용할지 파악하기 위해 사용합니다.</summary>
+      <returns>형상의 종류입니다.</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.ImageFeatureDescriptor.Name">
-      <summary>이 기능에 값을 바인딩하는 데 사용 하는 이름입니다.</summary>
-      <returns>이 기능에 값을 바인딩하는 데 사용 하는 이름입니다.</returns>
+      <summary>이 기능에 값을 바인딩하는 데 사용하는 이름입니다.</summary>
+      <returns>이 기능에 값을 바인딩하는 데 사용하는 이름입니다.</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.ImageFeatureDescriptor.Width">
-      <summary>예상 이미지 너비입니다.</summary>
-      <returns>예상 이미지 너비입니다.</returns>
+      <summary>예상되는 이미지 너비입니다.</summary>
+      <returns>예상되는 이미지 너비입니다.</returns>
     </member>
     <member name="T:Windows.AI.MachineLearning.ImageFeatureValue">
-      <summary>모델에 전달 하는 데 사용 되는 이미지의 속성을 설명 합니다.</summary>
+      <summary>모델로 전달하는 데 사용되는 이미지의 속성을 설명합니다.</summary>
     </member>
     <member name="P:Windows.AI.MachineLearning.ImageFeatureValue.Kind">
       <summary>
@@ -83,294 +83,294 @@
       <returns>비디오 프레임입니다.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.ImageFeatureValue.CreateFromVideoFrame(Windows.Media.VideoFrame)">
-      <summary>지정 된 비디오 프레임을 사용 하 여 ImageFeatureValue를 만듭니다.</summary>
-      <param name="image">* * ImageFeatureValue * *를 만드는 데 사용할 비디오 프레임입니다.</param>
-      <returns>지정 된 비디오 프레임에서 만든 * * ImageFeatureValue * *입니다.</returns>
+      <summary>지정된 비디오 프레임을 사용하여 ImageFeatureValue를 만듭니다.</summary>
+      <param name="image">**ImageFeatureValue**를 만드는 데 사용하는 비디오 프레임입니다.</param>
+      <returns>지정된 비디오 프레임으로 만든 **ImageFeatureValue**입니다.</returns>
     </member>
     <member name="T:Windows.AI.MachineLearning.ITensor">
-      <summary>Tensors는 다차원 값입니다.</summary>
+      <summary>텐서는 다차원 값입니다.</summary>
     </member>
     <member name="P:Windows.AI.MachineLearning.ITensor.Shape">
-      <summary>각 차원의 개수와 크기를 반환 합니다.</summary>
-      <returns>텐서 각 차원의 개수와 크기입니다.</returns>
+      <summary>각 차원의 수와 크기를 반환합니다.</summary>
+      <returns>텐서의 차원 개수와 각각의 크기입니다.</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.ITensor.TensorKind">
-      <summary>텐서의 데이터 형식을 반환 합니다.</summary>
+      <summary>Tensor의 데이터 형식을 반환합니다.</summary>
       <returns>텐서의 데이터 형식입니다.</returns>
     </member>
     <member name="T:Windows.AI.MachineLearning.LearningModel">
-      <summary>학습 된 기계 학습 모델을 나타냅니다.</summary>
+      <summary>학습된 기계 학습 모델을 나타냅니다.</summary>
     </member>
     <member name="P:Windows.AI.MachineLearning.LearningModel.Author">
       <summary>모델 작성자의 이름입니다.</summary>
       <returns>모델 작성자의 이름입니다.</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.LearningModel.Description">
-      <summary>모델에 대 한 설명입니다.</summary>
-      <returns>모델에 대 한 설명입니다.</returns>
+      <summary>모델에 대한 설명입니다.</summary>
+      <returns>모델에 대한 설명입니다.</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.LearningModel.Domain">
       <summary>모델의 도메인입니다.</summary>
       <returns>모델의 도메인입니다.</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.LearningModel.InputFeatures">
-      <summary>모델의 입력 기능 목록입니다.</summary>
-      <returns>모델의 입력 기능 목록입니다.</returns>
+      <summary>모델의 입력 기능의 목록입니다.</summary>
+      <returns>모델의 입력 기능의 목록입니다.</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.LearningModel.Metadata">
-      <summary>ONNX 모델의 원시 &lt; 문자열, 문자열 &gt; 메타 데이터입니다.</summary>
-      <returns>ONNX 모델의 원시 &lt; 문자열, 문자열 &gt; 메타 데이터입니다.</returns>
+      <summary>ONNX 모델에서 원시 &lt;string,string&gt; 메타데이터입니다.</summary>
+      <returns>ONNX 모델에서 원시 &lt;string,string&gt; 메타데이터입니다.</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.LearningModel.Name">
       <summary>모델의 이름입니다.</summary>
       <returns>모델의 이름입니다.</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.LearningModel.OutputFeatures">
-      <summary>모델의 출력 기능 목록입니다.</summary>
-      <returns>모델의 출력 기능 목록입니다.</returns>
+      <summary>모델의 출력 기능의 목록입니다.</summary>
+      <returns>모델의 출력 기능의 목록입니다.</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.LearningModel.Version">
       <summary>모델의 버전입니다.</summary>
       <returns>모델의 버전입니다.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.LearningModel.Close">
-      <summary>메모리 내 ONNX 모델을 해제 합니다. 이를 호출한 후에는 더 이상 LearningModelSession 개체를 만들 수 없습니다.</summary>
+      <summary>인 메모리 ONNX 모델을 릴리스합니다. 이를 호출한 뒤에는 LearningModelSession 개체를 더는 만들 수 없습니다.</summary>
     </member>
     <member name="M:Windows.AI.MachineLearning.LearningModel.LoadFromFilePath(System.String)">
-      <summary>디스크에 있는 파일에서 ONNX 모델을 로드 합니다.</summary>
-      <param name="filePath">디스크의 ONNX 모델 파일에 대 한 경로입니다.</param>
+      <summary>디스크의 파일에서 ONNX 모델을 로드합니다.</summary>
+      <param name="filePath">디스크에 있는 ONNX 모델의 경로입니다.</param>
       <returns>모델을 나타내는 개체입니다.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.LearningModel.LoadFromFilePath(System.String,Windows.AI.MachineLearning.ILearningModelOperatorProvider)">
-      <summary>디스크에 있는 파일에서 ONNX 모델을 로드 합니다.</summary>
-      <param name="filePath">디스크의 ONNX 모델 파일에 대 한 경로입니다.</param>
+      <summary>디스크의 파일에서 ONNX 모델을 로드합니다.</summary>
+      <param name="filePath">디스크에 있는 ONNX 모델의 경로입니다.</param>
       <param name="operatorProvider">
       </param>
       <returns>모델을 나타내는 개체입니다.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.LearningModel.LoadFromStorageFileAsync(Windows.Storage.IStorageFile)">
-      <summary>IStorageFile에서 비동기적으로 ONNX 모델을 로드 합니다.</summary>
+      <summary>IStorageFile에서 ONNX 모델을 비동기적으로 로드합니다.</summary>
       <param name="modelFile">모델 파일의 위치입니다.</param>
-      <returns>모델 파일을 기반으로 하는 LearningModel입니다.</returns>
+      <returns>모델 파일에 따른 LearningModel입니다.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.LearningModel.LoadFromStorageFileAsync(Windows.Storage.IStorageFile,Windows.AI.MachineLearning.ILearningModelOperatorProvider)">
-      <summary>IStorageFile에서 비동기적으로 ONNX 모델을 로드 합니다.</summary>
+      <summary>IStorageFile에서 ONNX 모델을 비동기적으로 로드합니다.</summary>
       <param name="modelFile">모델 파일의 위치입니다.</param>
       <param name="operatorProvider">
       </param>
-      <returns>모델 파일을 기반으로 하는 LearningModel입니다.</returns>
+      <returns>모델 파일에 따른 LearningModel입니다.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.LearningModel.LoadFromStream(Windows.Storage.Streams.IRandomAccessStreamReference)">
-      <summary>스트림에서 ONNX 모델을 로드 합니다.</summary>
+      <summary>스트림에서 ONNX 모델을 로드합니다.</summary>
       <param name="modelStream">모델을 로드할 스트림입니다.</param>
       <returns>모델 파일을 나타내는 개체입니다.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.LearningModel.LoadFromStream(Windows.Storage.Streams.IRandomAccessStreamReference,Windows.AI.MachineLearning.ILearningModelOperatorProvider)">
-      <summary>스트림에서 ONNX 모델을 로드 합니다.</summary>
+      <summary>스트림에서 ONNX 모델을 로드합니다.</summary>
       <param name="modelStream">모델을 로드할 스트림입니다.</param>
       <param name="operatorProvider">
       </param>
       <returns>모델 파일을 나타내는 개체입니다.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.LearningModel.LoadFromStreamAsync(Windows.Storage.Streams.IRandomAccessStreamReference)">
-      <summary>스트림에서 ONNX 모델을 비동기적으로 로드 합니다.</summary>
+      <summary>스트림에서 ONNX 모델을 비동기적으로 로드합니다.</summary>
       <param name="modelStream">모델을 로드할 스트림입니다.</param>
       <returns>모델을 나타내는 개체입니다.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.LearningModel.LoadFromStreamAsync(Windows.Storage.Streams.IRandomAccessStreamReference,Windows.AI.MachineLearning.ILearningModelOperatorProvider)">
-      <summary>스트림에서 ONNX 모델을 비동기적으로 로드 합니다.</summary>
+      <summary>스트림에서 ONNX 모델을 비동기적으로 로드합니다.</summary>
       <param name="modelStream">모델을 로드할 스트림입니다.</param>
       <param name="operatorProvider">
       </param>
       <returns>모델을 나타내는 개체입니다.</returns>
     </member>
     <member name="T:Windows.AI.MachineLearning.LearningModelBinding">
-      <summary>명명 된 입력 및 출력 기능에 값을 바인딩하는 데 사용 됩니다.</summary>
+      <summary>명명된 입력 및 출력 기능에 값을 바인딩하는 데 사용됩니다.</summary>
     </member>
     <member name="M:Windows.AI.MachineLearning.LearningModelBinding.#ctor(Windows.AI.MachineLearning.LearningModelSession)">
-      <summary>지정 된 LearningModelSession에서 LearningModelBinding를 만듭니다.</summary>
-      <param name="session">* * LearningModelBinding * *를 만들 * * LearningModelSession * *입니다.</param>
+      <summary>지정된 LearningModelSession에서 LearningModelBinding을 만듭니다.</summary>
+      <param name="session">**LearningModelBinding**을 만든 **LearningModelSession**입니다.</param>
     </member>
     <member name="P:Windows.AI.MachineLearning.LearningModelBinding.Size">
-      <summary>Map의 요소 수를 가져옵니다.</summary>
-      <returns>Map의 요소 수입니다.</returns>
+      <summary>맵의 요소 수를 가져옵니다.</summary>
+      <returns>맵의 요소 수입니다.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.LearningModelBinding.Bind(System.String,System.Object)">
-      <summary>값을 명명 된 기능에 바인딩합니다.</summary>
-      <param name="name">기능의 이름입니다.</param>
+      <summary>명명된 기능에 값을 바인딩합니다.</summary>
+      <param name="name">형상의 이름입니다.</param>
       <param name="value">바인딩할 값입니다.</param>
     </member>
     <member name="M:Windows.AI.MachineLearning.LearningModelBinding.Bind(System.String,System.Object,Windows.Foundation.Collections.IPropertySet)">
-      <summary>속성을 사용 하 여 바인딩을 제어 하는 명명 된 기능에 값을 바인딩합니다.</summary>
-      <param name="name">바인딩할 기능의 이름입니다.</param>
-      <param name="value">기능에 바인딩할 값입니다.</param>
-      <param name="props">바인딩을 제어 하는 속성입니다.</param>
+      <summary>바인딩을 제어하는 속성을 사용하여 명명된 기능에 값을 바인딩합니다.</summary>
+      <param name="name">바인딩할 대상 형상의 이름입니다.</param>
+      <param name="value">형상을 바인딩할 대상 값입니다.</param>
+      <param name="props">바인딩을 제어할 속성입니다.</param>
     </member>
     <member name="M:Windows.AI.MachineLearning.LearningModelBinding.Clear">
-      <summary>모든 바인딩을 제거 합니다.</summary>
+      <summary>모든 바인딩을 제거합니다.</summary>
     </member>
     <member name="M:Windows.AI.MachineLearning.LearningModelBinding.First">
-      <summary>지도 뷰의 첫 번째 요소로 초기화 되는 반복기를 반환 합니다.</summary>
-      <returns>지도 뷰의 첫 번째 요소로 초기화 되는 반복기입니다.</returns>
+      <summary>맵 뷰의 첫 번째 요소로 초기화되는 반복자를 반환합니다.</summary>
+      <returns>맵 뷰의 첫 번째 요소로 초기화되는 반복자입니다.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.LearningModelBinding.HasKey(System.String)">
-      <summary>지도 뷰에 지정 된 키가 포함 되어 있는지 여부를 확인 합니다.</summary>
-      <param name="key">지도 보기에 포함 되어 있는지 확인할 키입니다.</param>
-      <returns>지도 뷰에 지정 된 키가 포함 되어 있으면 True이 고, 그렇지 않으면 false입니다.</returns>
+      <summary>맵 뷰가 지정된 키를 포함하는지 여부를 결정합니다.</summary>
+      <param name="key">맵 뷰에 포함되어 있는지 확인할 키입니다.</param>
+      <returns>맵 뷰에 지정된 키가 포함되어 있으면 true, 그렇지 않으면 false입니다.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.LearningModelBinding.Lookup(System.String)">
-      <summary>지도 보기의 지정 된 키에 있는 항목을 반환 합니다.</summary>
-      <param name="key">조회할 지도 보기의 키입니다.</param>
-      <returns>지도 보기의 지정 된 키에 있는 항목입니다.</returns>
+      <summary>맵 뷰에서 지정된 키에 있는 항목을 반환합니다.</summary>
+      <param name="key">맵 뷰에서 조회할 키입니다.</param>
+      <returns>맵 뷰에서 지정된 키에 있는 항목입니다.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.LearningModelBinding.Split(Windows.Foundation.Collections.IMapView{System.String,System.Object}@,Windows.Foundation.Collections.IMapView{System.String,System.Object}@)">
-      <summary>지도 뷰를 두 개의 뷰로 분할 합니다.</summary>
-      <param name="first">원본 지도의 한 절반입니다.</param>
-      <param name="second">원본 맵의 두 번째 절반입니다.</param>
+      <summary>맵 뷰를 뷰 두 개로 분할합니다.</summary>
+      <param name="first">원래 맵의 절반입니다.</param>
+      <param name="second">원래 맵의 나머지 절반입니다.</param>
     </member>
     <member name="T:Windows.AI.MachineLearning.LearningModelDevice">
-      <summary>Machine learning 모델을 평가 하는 데 사용 되는 장치입니다.</summary>
+      <summary>기계 학습 모델을 평가하는 데 사용되는 장치입니다.</summary>
     </member>
     <member name="M:Windows.AI.MachineLearning.LearningModelDevice.#ctor(Windows.AI.MachineLearning.LearningModelDeviceKind)">
-      <summary>지정 된 LearningModelDeviceKind에서 LearningModelDevice를 만듭니다.</summary>
-      <param name="deviceKind">모델을 평가 하는 데 지정 된 * * LearningModelDeviceKind * *입니다.</param>
+      <summary>지정된 LearningModelDeviceKind에서 LearningModelDevice를 만듭니다.</summary>
+      <param name="deviceKind">모델을 평가하기 위해 지정된 **LearningModelDeviceKind**입니다.</param>
     </member>
     <member name="P:Windows.AI.MachineLearning.LearningModelDevice.AdapterId">
-      <summary>장치의 고유 식별자를 반환 합니다.</summary>
+      <summary>장치의 고유 식별자를 반환합니다.</summary>
       <returns>장치의 고유 식별자입니다.</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.LearningModelDevice.Direct3D11Device">
-      <summary>장치의 IDirect3DDevice를 반환 합니다.</summary>
-      <returns>장치에 대 한 * * IDirect3DDevice * *입니다.</returns>
+      <summary>장치의 IDirect3DDevice를 반환합니다.</summary>
+      <returns>장치의 **IDirect3DDevice**입니다.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.LearningModelDevice.CreateFromDirect3D11Device(Windows.Graphics.DirectX.Direct3D11.IDirect3DDevice)">
-      <summary>지정 된 IDirect3DDevice에서 LearningModelDevice를 만듭니다.</summary>
-      <param name="device">* * LearningModelDevice * *를 만들 * * IDirect3DDevice * *입니다.</param>
-      <returns>지정 된 * * IDirect3DDevice * *에서 만든 * * LearningModelDevice * *입니다.</returns>
+      <summary>지정된 IDirect3DDevice에서 LearningModelDevice를 만듭니다.</summary>
+      <param name="device">**LearningModelDevice**를 만들 **IDirect3DDevice**입니다.</param>
+      <returns>지정된 **IDirect3DDevice**에서 만든 **LearningModelDevice**입니다.</returns>
     </member>
     <member name="T:Windows.AI.MachineLearning.LearningModelDeviceKind">
-      <summary>Machine learning 모델을 평가할 수 있는 장치 종류 목록을 정의 합니다.</summary>
+      <summary>기계 학습 모델을 평가할 수 있는 장치 종류의 목록을 정의합니다.</summary>
     </member>
     <member name="F:Windows.AI.MachineLearning.LearningModelDeviceKind.Cpu">
-      <summary>CPU를 사용 하 여 모델을 평가 합니다.</summary>
+      <summary>CPU를 사용하여 모델을 평가합니다.</summary>
     </member>
     <member name="F:Windows.AI.MachineLearning.LearningModelDeviceKind.Default">
-      <summary>시스템이 사용할 장치를 결정할 수 있습니다.</summary>
+      <summary>사용할 장치는 시스템이 결정하도록 합니다.</summary>
     </member>
     <member name="F:Windows.AI.MachineLearning.LearningModelDeviceKind.DirectX">
-      <summary>GPU 또는 기타 DirectX 장치를 사용 하 여 모델을 평가 합니다.</summary>
+      <summary>GPU나 다른 DirectX 장치를 사용하여 모델을 평가합니다.</summary>
     </member>
     <member name="F:Windows.AI.MachineLearning.LearningModelDeviceKind.DirectXHighPerformance">
-      <summary>고성능을 위해 시스템 정책 정의 장치를 사용 합니다.</summary>
+      <summary>높은 성능을 위해 시스템 정책에 정의된 장치를 사용합니다.</summary>
     </member>
     <member name="F:Windows.AI.MachineLearning.LearningModelDeviceKind.DirectXMinPower">
-      <summary>최소 전원에 대해 시스템 정책 정의 장치를 사용 합니다.</summary>
+      <summary>전력 최소화를 위해 시스템 정책에 정의된 장치를 사용합니다.</summary>
     </member>
     <member name="T:Windows.AI.MachineLearning.LearningModelEvaluationResult">
       <summary>평가 결과를 가져옵니다.</summary>
     </member>
     <member name="P:Windows.AI.MachineLearning.LearningModelEvaluationResult.CorrelationId">
-      <summary>LearningModelSession에 전달 된 선택적 문자열입니다.</summary>
-      <returns>* * LearningModelSession * *에 전달 된 선택적 문자열입니다.</returns>
+      <summary>LearningModelSession.Evaluate로 전달된 선택적 문자열입니다.</summary>
+      <returns>**LearningModelSession.Evaluate**로 전달된 선택적 문자열입니다.</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.LearningModelEvaluationResult.ErrorStatus">
-      <summary>평가가 실패 한 경우에서 오류의 원인이 되는 오류 코드를 반환 합니다.</summary>
-      <returns>오류의 원인을 확인 하는 오류 코드입니다.</returns>
+      <summary>평가가 실패한 경우 실패를 유발한 오류 코드를 반환합니다.</summary>
+      <returns>실패를 유발한 오류 코드입니다.</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.LearningModelEvaluationResult.Outputs">
-      <summary>모델의 출력 기능을 가져옵니다.</summary>
-      <returns>모델의 출력 기능입니다.</returns>
+      <summary>모델에 대한 출력 기능을 가져옵니다.</summary>
+      <returns>모델의 출력 형상입니다.</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.LearningModelEvaluationResult.Succeeded">
-      <summary>평가가 성공적으로 완료 되 면 True이 고, 그렇지 않으면 false입니다.</summary>
-      <returns>평가가 성공적으로 완료 되 면 True이 고, 그렇지 않으면 false입니다.</returns>
+      <summary>평가가 완료된 경우 true이고, 그렇지 않은 경우 false입니다.</summary>
+      <returns>평가가 완료된 경우 true이고, 그렇지 않은 경우 false입니다.</returns>
     </member>
     <member name="T:Windows.AI.MachineLearning.LearningModelFeatureKind">
-      <summary>기계 학습 모델에 대 한 입력 및 출력 기능 종류입니다.</summary>
+      <summary>기계 학습 모델의 입력 및 출력 기능 종류입니다.</summary>
     </member>
     <member name="F:Windows.AI.MachineLearning.LearningModelFeatureKind.Image">
-      <summary>이 기능은 이미지 이므로 ImageFeatureDescriptor를 사용 합니다.</summary>
+      <summary>형상이 이미지이므로 ImageFeatureDescriptor를 사용합니다.</summary>
     </member>
     <member name="F:Windows.AI.MachineLearning.LearningModelFeatureKind.Map">
-      <summary>기능이 맵 이므로 MapFeatureDescriptor를 사용 합니다.</summary>
+      <summary>형상이 맵이므로 MapFeatureDescriptor를 사용합니다.</summary>
     </member>
     <member name="F:Windows.AI.MachineLearning.LearningModelFeatureKind.Sequence">
-      <summary>이 기능은 시퀀스 이므로 SequenceFeatureDescriptor을 사용 합니다.</summary>
+      <summary>형상이 시퀀스이므로 SequenceFeatureDescriptor를 사용합니다.</summary>
     </member>
     <member name="F:Windows.AI.MachineLearning.LearningModelFeatureKind.Tensor">
-      <summary>이 기능은 텐서 이므로 TensorFeatureDescriptor를 사용 합니다.</summary>
+      <summary>형상이 텐서이므로 TensorFeatureDescriptor를 사용합니다.</summary>
     </member>
     <member name="T:Windows.AI.MachineLearning.LearningModelSession">
-      <summary>기계 학습 모델을 평가 하는 데 사용 됩니다.</summary>
+      <summary>기계 학습 모델을 평가하는 데 사용됩니다.</summary>
     </member>
     <member name="M:Windows.AI.MachineLearning.LearningModelSession.#ctor(Windows.AI.MachineLearning.LearningModel)">
-      <summary>기본 장치를 사용 하 여 세션을 만듭니다.</summary>
-      <param name="model">이 세션에 대해 학습 된 기계 학습 모델입니다.</param>
+      <summary>기본 장치를 사용하여 세션을 만듭니다.</summary>
+      <param name="model">이 세션을 위한 학습된 기계 학습 모델입니다.</param>
     </member>
     <member name="M:Windows.AI.MachineLearning.LearningModelSession.#ctor(Windows.AI.MachineLearning.LearningModel,Windows.AI.MachineLearning.LearningModelDevice)">
-      <summary>지정 된 장치를 사용 하 여 세션을 만듭니다.</summary>
-      <param name="model">이 세션에 대해 학습 된 기계 학습 모델입니다.</param>
+      <summary>지정된 장치를 사용하여 세션을 만듭니다.</summary>
+      <param name="model">이 세션을 위한 학습된 기계 학습 모델입니다.</param>
       <param name="deviceToRunOn">세션의 평가 장치입니다.</param>
     </member>
     <member name="M:Windows.AI.MachineLearning.LearningModelSession.#ctor(Windows.AI.MachineLearning.LearningModel,Windows.AI.MachineLearning.LearningModelDevice,Windows.AI.MachineLearning.LearningModelSessionOptions)">
-      <summary>지정 된 장치 및 추가 유추 옵션을 사용 하 여 세션을 만듭니다.</summary>
-      <param name="model">이 세션에 대해 학습 된 기계 학습 모델입니다.</param>
+      <summary>지정된 장치와 추가 유추 옵션을 사용하여 세션을 만듭니다.</summary>
+      <param name="model">이 세션을 위한 학습된 기계 학습 모델입니다.</param>
       <param name="deviceToRunOn">세션의 평가 장치입니다.</param>
-      <param name="learningModelSessionOptions">세션 생성 및 평가를 구성 하는 데 사용 되는 옵션입니다.</param>
+      <param name="learningModelSessionOptions">세션 만들기 및 평가를 구성하는 데 사용되는 옵션입니다.</param>
     </member>
     <member name="P:Windows.AI.MachineLearning.LearningModelSession.Device">
-      <summary>세션의 평가 장치를 반환 합니다.</summary>
+      <summary>세션의 평가 장치를 반환합니다.</summary>
       <returns>세션의 평가 장치입니다.</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.LearningModelSession.EvaluationProperties">
-      <summary>모델 평가를 제어 하는 속성 집합입니다.</summary>
-      <returns>모델 평가를 제어 하는 속성 집합입니다.</returns>
+      <summary>모델 평가를 제어하는 속성의 집합입니다.</summary>
+      <returns>모델 평가를 제어하는 속성의 집합입니다.</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.LearningModelSession.Model">
-      <summary>이 세션에 대해 학습 된 기계 학습 모델을 반환 합니다.</summary>
-      <returns>이 세션에 대해 학습 된 기계 학습 모델입니다.</returns>
+      <summary>이 세션에 대한 학습된 기계 학습 모델을 반환합니다.</summary>
+      <returns>이 세션을 위한 학습된 기계 학습 모델입니다.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.LearningModelSession.Close">
       <summary>
       </summary>
     </member>
     <member name="M:Windows.AI.MachineLearning.LearningModelSession.Evaluate(Windows.AI.MachineLearning.LearningModelBinding,System.String)">
-      <summary>* 바인딩 *에서 바인딩된 기능 값을 사용 하 여 machine learning 모델을 평가 합니다.</summary>
-      <param name="bindings">모델 입력 및 변수 인스턴스 간의 연결에 대 한 표시자입니다.</param>
-      <param name="correlationId">출력 결과를 연결 하는 선택적 사용자 제공 문자열입니다.</param>
+      <summary>*bindings*에 바인딩된 형상 값을 사용하여 기계 학습 모델을 평가합니다.</summary>
+      <param name="bindings">모델 입력과 변수 인스턴스 사이의 연결 소유자입니다.</param>
+      <param name="correlationId">출력 결과에 연결하기 위한 선택적인 사용자 지정 문자열입니다.</param>
       <returns>평가 결과입니다.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.LearningModelSession.EvaluateAsync(Windows.AI.MachineLearning.LearningModelBinding,System.String)">
-      <summary>* 바인딩 *에 이미 바인딩되어 있는 기능 값을 사용 하 여 machine learning 모델을 비동기식으로 평가 합니다.</summary>
-      <param name="bindings">명명 된 입력 및 출력 기능에 바인딩되는 값입니다.</param>
-      <param name="correlationId">출력 결과를 연결 하는 선택적 사용자 제공 문자열입니다.</param>
+      <summary>*bindings*에 이미 바인딩된 형상 값을 사용하여 기계 학습 모델을 비동기적으로 평가합니다.</summary>
+      <param name="bindings">이름이 지정된 입력 및 출력 형상에 바인딩된 값입니다.</param>
+      <param name="correlationId">출력 결과에 연결하기 위한 선택적인 사용자 지정 문자열입니다.</param>
       <returns>평가의 LearningModelEvaluationResult입니다.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.LearningModelSession.EvaluateFeatures(Windows.Foundation.Collections.IMap{System.String,System.Object},System.String)">
-      <summary>* 기능 *의 기능 값을 사용 하 여 machine learning 모델을 평가 합니다.</summary>
-      <param name="features">모델을 평가 하는 데 사용할 기능 맵입니다.</param>
-      <param name="correlationId">출력 결과를 연결 하는 선택적 사용자 제공 문자열입니다.</param>
+      <summary>*features*의 형상 값을 사용하여 기계 학습 모델을 평가합니다.</summary>
+      <param name="features">모델을 평가할 형상의 맵입니다.</param>
+      <param name="correlationId">출력 결과에 연결하기 위한 선택적인 사용자 지정 문자열입니다.</param>
       <returns>평가 결과입니다.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.LearningModelSession.EvaluateFeaturesAsync(Windows.Foundation.Collections.IMap{System.String,System.Object},System.String)">
-      <summary>* 기능 *의 기능 값을 사용 하 여 machine learning 모델을 비동기식으로 평가 합니다.</summary>
-      <param name="features">모델을 평가 하는 데 사용할 기능 맵입니다.</param>
-      <param name="correlationId">출력 결과를 연결 하는 선택적 사용자 제공 문자열입니다.</param>
+      <summary>*features*의 형상 값을 사용하여 기계 학습 모델을 비동기적으로 평가합니다.</summary>
+      <param name="features">모델을 평가할 형상의 맵입니다.</param>
+      <param name="correlationId">출력 결과에 연결하기 위한 선택적인 사용자 지정 문자열입니다.</param>
       <returns>평가 결과입니다.</returns>
     </member>
     <member name="T:Windows.AI.MachineLearning.LearningModelSessionOptions">
-      <summary>LearningModelSession 개체를 만드는 동안 사용 되는 유추 옵션을 설명 합니다.</summary>
+      <summary>LearningModelSession 개체를 만드는 동안 사용되는 유추 옵션을 설명합니다.</summary>
     </member>
     <member name="M:Windows.AI.MachineLearning.LearningModelSessionOptions.#ctor">
-      <summary>LearningModelSession 만들기를 구성 하는 옵션을 만듭니다.</summary>
+      <summary>LearningModelSession 생성을 구성하기 위한 옵션을 만듭니다.</summary>
     </member>
     <member name="P:Windows.AI.MachineLearning.LearningModelSessionOptions.BatchSizeOverride">
-      <summary>대상 모델의 상수 일괄 처리 크기 재정의 값을 지정 하는 숫자 값입니다.</summary>
-      <returns>모델에 대 한 상수 일괄 처리 크기는 바인딩에 대 한 호출에 필요한 기능 값을 입력 합니다. * * BatchSizeOverride * *의 기본값은 정적 일괄 처리 크기인 1을 나타내는 1입니다.</returns>
+      <summary>대상 모델의 값을 재정의하는 일정한 일괄 처리 크기를 지정하는 숫자 값입니다.</summary>
+      <returns>모델에 대한 일정한 일괄 처리 크기는 바인딩 호출에 필요한 형상 값을 입력합니다. **BatchSizeOverride**의 기본값은 1이며, 일괄 처리 크기가 1로 고정됨을 나타냅니다.</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.LearningModelSessionOptions.CloseModelOnSessionCreation">
-      <summary>LearningModelSession을 만들 때 연결 된 학습 모델을 닫을지 여부를 지정 합니다.</summary>
-      <returns>세션을 만들 때 모델을 닫을지 여부를 나타냅니다.</returns>
+      <summary>LearningModelSession을 만들 때 연결된 학습 모델을 닫아야 하는지 여부를 지정합니다.</summary>
+      <returns>세션이 생성될 때 모델을 닫아야 하는지 여부를 나타냅니다.</returns>
     </member>
     <member name="T:Windows.AI.MachineLearning.MachineLearningContract">
       <summary>
@@ -380,199 +380,199 @@
       <summary>맵은 (키, 값) 쌍의 컬렉션입니다.</summary>
     </member>
     <member name="P:Windows.AI.MachineLearning.MapFeatureDescriptor.Description">
-      <summary>모델에서이 기능을 사용 하는 방법에 대 한 설명입니다.</summary>
-      <returns>모델에서이 기능을 사용 하는 방법에 대 한 설명입니다.</returns>
+      <summary>모델에서 이 기능의 용도에 대한 설명입니다.</summary>
+      <returns>모델에서 이 기능의 용도에 대한 설명입니다.</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.MapFeatureDescriptor.IsRequired">
-      <summary>True 이면 LearningModelSession를 호출 하기 전에 값을이 기능에 바인딩해야 합니다.</summary>
-      <returns>* * LearningModelSession * *;를 호출 하기 전에 값을이 기능에 바인딩해야 하는 경우 True입니다. 그렇지 않으면 false입니다.</returns>
+      <summary>true일 경우 LearningModelSession.Evaluate를 호출하기 전에 이 형상에 값을 바인딩해야 합니다.</summary>
+      <returns>**LearningModelSession.Evaluate**를 호출하기 전에 이 형상에 값을 바인딩해야 하면 true, 그렇지 않으면 false입니다.</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.MapFeatureDescriptor.KeyKind">
-      <summary>지도 키는 텐서 수 있습니다.</summary>
-      <returns>이 맵 키가 텐서의 형식입니다.</returns>
+      <summary>맵 키는 Tensor 종류가 될 수 있습니다.</summary>
+      <returns>이 맵 키의 텐서 유형입니다.</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.MapFeatureDescriptor.Kind">
-      <summary>기능의 종류입니다. 이 클래스를 사용 하 여 사용할 파생 클래스를 파악 합니다.</summary>
-      <returns>기능의 종류입니다.</returns>
+      <summary>형상의 종류입니다. 어떤 파생 클래스를 사용할지 파악하기 위해 사용합니다.</summary>
+      <returns>형상의 종류입니다.</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.MapFeatureDescriptor.Name">
-      <summary>이 기능에 값을 바인딩하는 데 사용 하는 이름입니다.</summary>
-      <returns>이 기능에 값을 바인딩하는 데 사용 하는 이름입니다.</returns>
+      <summary>이 기능에 값을 바인딩하는 데 사용하는 이름입니다.</summary>
+      <returns>이 기능에 값을 바인딩하는 데 사용하는 이름입니다.</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.MapFeatureDescriptor.ValueDescriptor">
-      <summary>지도 값은 기능 종류 일 수 있습니다.</summary>
-      <returns>이 맵 값의 기능입니다.</returns>
+      <summary>맵 값은 기능 종류가 될 수 있습니다.</summary>
+      <returns>이 맵 값에 대한 형상입니다.</returns>
     </member>
     <member name="T:Windows.AI.MachineLearning.SequenceFeatureDescriptor">
       <summary>시퀀스는 요소의 배열입니다.</summary>
     </member>
     <member name="P:Windows.AI.MachineLearning.SequenceFeatureDescriptor.Description">
-      <summary>모델에서이 기능을 사용 하는 방법에 대 한 설명입니다.</summary>
-      <returns>모델에서이 기능을 사용 하는 방법에 대 한 설명입니다.</returns>
+      <summary>모델에서 이 기능의 용도에 대한 설명입니다.</summary>
+      <returns>모델에서 이 기능의 용도에 대한 설명입니다.</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.SequenceFeatureDescriptor.ElementDescriptor">
-      <summary>시퀀스 요소는 기능 종류 일 수 있습니다.</summary>
-      <returns>이 시퀀스 요소의 기능 설명자입니다.</returns>
+      <summary>시퀀스 요소는 기능 종류가 될 수 있습니다.</summary>
+      <returns>이 시퀀스 요소에 대한 형상 설명자입니다.</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.SequenceFeatureDescriptor.IsRequired">
-      <summary>True 이면 LearningModelSession를 호출 하기 전에 값을이 기능에 바인딩해야 합니다.</summary>
-      <returns>* * LearningModelSession * *;를 호출 하기 전에 값을이 기능에 바인딩해야 하는 경우 True입니다. 그렇지 않으면 false입니다.</returns>
+      <summary>true일 경우 LearningModelSession.Evaluate를 호출하기 전에 이 형상에 값을 바인딩해야 합니다.</summary>
+      <returns>**LearningModelSession.Evaluate**를 호출하기 전에 이 형상에 값을 바인딩해야 하면 true, 그렇지 않으면 false입니다.</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.SequenceFeatureDescriptor.Kind">
-      <summary>기능의 종류입니다. 이 클래스를 사용 하 여 사용할 파생 클래스를 파악 합니다.</summary>
-      <returns>기능의 종류입니다.</returns>
+      <summary>형상의 종류입니다. 어떤 파생 클래스를 사용할지 파악하기 위해 사용합니다.</summary>
+      <returns>형상의 종류입니다.</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.SequenceFeatureDescriptor.Name">
-      <summary>이 기능에 값을 바인딩하는 데 사용 하는 이름입니다.</summary>
-      <returns>이 기능에 값을 바인딩하는 데 사용 하는 이름입니다.</returns>
+      <summary>이 기능에 값을 바인딩하는 데 사용하는 이름입니다.</summary>
+      <returns>이 기능에 값을 바인딩하는 데 사용하는 이름입니다.</returns>
     </member>
     <member name="T:Windows.AI.MachineLearning.TensorBoolean">
-      <summary>부울 텐서 개체입니다.</summary>
+      <summary>부울 Tensor 개체입니다.</summary>
     </member>
     <member name="P:Windows.AI.MachineLearning.TensorBoolean.Kind">
       <summary>기능의 종류입니다.</summary>
       <returns>기능의 종류입니다.</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.TensorBoolean.Shape">
-      <summary>각 차원의 개수와 크기를 반환 합니다.</summary>
-      <returns>각 차원의 개수와 크기입니다.</returns>
+      <summary>각 차원의 수와 크기를 반환합니다.</summary>
+      <returns>차원의 개수와 각각의 크기입니다.</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.TensorBoolean.TensorKind">
-      <summary>텐서의 데이터 형식을 반환 합니다.</summary>
+      <summary>Tensor의 데이터 형식을 반환합니다.</summary>
       <returns>텐서의 데이터 형식입니다.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorBoolean.Close">
-      <summary>이 개체에서 생성 된 처리 되지 않은 IMemoryBufferReference 개체가 없으면 * * Close * *는 개체를 삭제 하 고 연결 된 리소스를 제거 합니다. 그렇지 않으면 * * Close * *가 연결 된 리소스에서 분리 되 고 마지막 IMemoryBufferReference 닫히면 제거 됩니다.</summary>
+      <summary>이 개체에서 생성되는 별다른 IMemoryBufferReference 개체가 없으면 **Close**는 개체를 삭제하고 연결된 리소스를 제거합니다. 그렇지 않으면 **Close**는 스스로를 연결된 리소스에서 분리하며, 이러한 리소스는 마지막 IMemoryBufferReference를 닫을 때 삭제됩니다.</summary>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorBoolean.Create">
-      <summary>버퍼를 할당 하지 않고 부울 텐서 개체를 만듭니다.</summary>
-      <returns>부울 텐서 개체입니다.</returns>
+      <summary>버퍼를 할당하지 않고 부울 Tensor 개체를 만듭니다.</summary>
+      <returns>부울 Tensor 개체입니다.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorBoolean.Create(Windows.Foundation.Collections.IIterable{System.Int64})">
-      <summary>부울 텐서 개체를 만들고 * shape * 크기의 버퍼를 할당 합니다.</summary>
+      <summary>부울 텐서 개체를 만들고 *shape* 크기의 버퍼를 할당합니다.</summary>
       <param name="shape">버퍼의 크기입니다.</param>
-      <returns>지정 된 크기의 버퍼를 사용 하는 부울 텐서 개체입니다.</returns>
+      <returns>지정된 크기의 버퍼를 가진 부울 텐서 개체입니다.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorBoolean.CreateFromArray(Windows.Foundation.Collections.IIterable{System.Int64},System.Boolean[])">
-      <summary>부울 텐서 개체를 만들고, * shape * 크기의 버퍼를 할당 하 고, * data *를 모두 복사 합니다.</summary>
+      <summary>부울 텐서 개체를 만들고, *shape* 크기의 버퍼를 할당한 후, 모든 *data*를 여기로 복사합니다.</summary>
       <param name="shape">버퍼의 크기입니다.</param>
       <param name="data">버퍼에 복사할 데이터입니다.</param>
-      <returns>지정 된 데이터를 포함 하는 버퍼를 사용 하는 부울 텐서 개체입니다.</returns>
+      <returns>지정된 데이터를 포함하는 버퍼를 가진 부울 텐서 개체입니다.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorBoolean.CreateFromBuffer(System.Int64[],Windows.Storage.Streams.IBuffer)">
-      <summary>지정 된 * shape *를 사용 하 여 부울 텐서 개체를 만들고 이후 평가를 위해 * data *의 기본 버퍼를 사용 합니다.</summary>
+      <summary>지정된 *shape*의 부울 텐서 개체를 만들고, *data*의 기반 버퍼를 후속 평가에 사용합니다.</summary>
       <param name="shape">버퍼의 크기입니다.</param>
-      <param name="buffer">평가 하는 동안 사용할 버퍼입니다.</param>
-      <returns>제공 된 IBuffer * data *에 대 한 버퍼 참조에 의해 지원 되는 부울 텐서 개체입니다.</returns>
+      <param name="buffer">평가하는 동안 사용하는 버퍼입니다.</param>
+      <returns>부울 텐서 개체는 제공된 IBuffer *data*로의 버퍼 참조로 지원됩니다.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorBoolean.CreateFromIterable(Windows.Foundation.Collections.IIterable{System.Int64},Windows.Foundation.Collections.IIterable{System.Boolean})">
-      <summary>부울 텐서 개체를 만들고, * shape * 크기의 버퍼를 할당 하 고, * data *를 모두 복사 합니다.</summary>
+      <summary>부울 텐서 개체를 만들고, *shape* 크기의 버퍼를 할당한 후, 모든 *data*를 여기로 복사합니다.</summary>
       <param name="shape">버퍼의 크기입니다.</param>
       <param name="data">버퍼에 복사할 데이터입니다.</param>
-      <returns>지정 된 데이터를 포함 하는 버퍼를 사용 하는 부울 텐서 개체입니다.</returns>
+      <returns>지정된 데이터를 포함하는 버퍼를 가진 부울 텐서 개체입니다.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorBoolean.CreateFromShapeArrayAndDataArray(System.Int64[],System.Boolean[])">
-      <summary>부울 텐서 개체를 만들고, * shape * 크기의 버퍼를 할당 하 고, * data *를 모두 복사 합니다.</summary>
+      <summary>부울 텐서 개체를 만들고, *shape* 크기의 버퍼를 할당한 후, 모든 *data*를 여기로 복사합니다.</summary>
       <param name="shape">버퍼의 크기입니다.</param>
       <param name="data">버퍼에 복사할 데이터입니다.</param>
-      <returns>지정 된 데이터를 포함 하는 버퍼를 사용 하는 부울 텐서 개체입니다.</returns>
+      <returns>지정된 데이터를 포함하는 버퍼를 가진 부울 텐서 개체입니다.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorBoolean.CreateReference">
-      <summary>부울 텐서 개체를 지 원하는 버퍼의 IMemoryBufferReference 표현을 반환 합니다.</summary>
+      <summary>부울 텐서 개체를 지원하는 버퍼의 IMemoryBufferReference 표현을 반환합니다.</summary>
       <returns>텐서 버퍼의 IMemoryBufferReference 표현입니다.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorBoolean.GetAsVectorView">
-      <summary>데이터의 읽기 전용 뷰를 반환 합니다.</summary>
-      <returns>데이터의 읽기 전용 뷰입니다.</returns>
+      <summary>데이터의 읽기 전용 보기를 반환합니다.</summary>
+      <returns>데이터의 읽기 전용 보기입니다.</returns>
     </member>
     <member name="T:Windows.AI.MachineLearning.TensorDouble">
-      <summary>64 비트 float 텐서 개체입니다.</summary>
+      <summary>64비트 부동 소수점 텐서 개체입니다.</summary>
     </member>
     <member name="P:Windows.AI.MachineLearning.TensorDouble.Kind">
       <summary>기능의 종류입니다.</summary>
       <returns>기능의 종류입니다.</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.TensorDouble.Shape">
-      <summary>각 차원의 개수와 크기를 반환 합니다.</summary>
-      <returns>각 차원의 개수와 크기입니다.</returns>
+      <summary>각 차원의 수와 크기를 반환합니다.</summary>
+      <returns>차원의 개수와 각각의 크기입니다.</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.TensorDouble.TensorKind">
-      <summary>텐서의 데이터 형식을 반환 합니다.</summary>
+      <summary>Tensor의 데이터 형식을 반환합니다.</summary>
       <returns>텐서의 데이터 형식입니다.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorDouble.Close">
-      <summary>이 개체에서 생성 된 처리 되지 않은 IMemoryBufferReference 개체가 없으면 * * Close * *는 개체를 삭제 하 고 연결 된 리소스를 제거 합니다. 그렇지 않으면 * * Close * *가 연결 된 리소스에서 분리 되 고 마지막 IMemoryBufferReference 닫히면 제거 됩니다.</summary>
+      <summary>이 개체에서 생성되는 별다른 IMemoryBufferReference 개체가 없으면 **Close**는 개체를 삭제하고 연결된 리소스를 제거합니다. 그렇지 않으면 **Close**는 스스로를 연결된 리소스에서 분리하며, 이러한 리소스는 마지막 IMemoryBufferReference를 닫을 때 삭제됩니다.</summary>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorDouble.Create">
-      <summary>버퍼를 할당 하지 않고 64 비트 float 텐서 개체를 만듭니다.</summary>
-      <returns>64 비트 float 텐서 개체입니다.</returns>
+      <summary>버퍼를 할당하지 않고 64비트 부동 소수점 텐서 개체를 만듭니다.</summary>
+      <returns>64비트 부동 소수점 텐서 개체입니다.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorDouble.Create(Windows.Foundation.Collections.IIterable{System.Int64})">
-      <summary>64 비트 float 텐서 개체를 만들고 * shape * 크기의 버퍼를 할당 합니다.</summary>
+      <summary>64비트 부동 소수점 텐서 개체를 만들고 *shape* 크기의 버퍼를 할당합니다.</summary>
       <param name="shape">버퍼의 크기입니다.</param>
-      <returns>지정 된 크기의 버퍼를 사용 하는 64 비트 float 텐서 개체입니다.</returns>
+      <returns>지정된 크기의 버퍼를 가진 64비트 부동 소수점 텐서 개체입니다.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorDouble.CreateFromArray(Windows.Foundation.Collections.IIterable{System.Int64},System.Double[])">
-      <summary>64 비트 float 텐서 개체를 만들고, * shape * 크기의 버퍼를 할당 하 고, * data *를 모두 복사 합니다.</summary>
+      <summary>64비트 부동 소수점 텐서 개체를 만들고, *shape* 크기의 버퍼를 할당한 후, 모든 *data*를 여기로 복사합니다.</summary>
       <param name="shape">버퍼의 크기입니다.</param>
       <param name="data">버퍼에 복사할 데이터입니다.</param>
-      <returns>지정 된 데이터를 포함 하는 버퍼를 포함 하는 64 비트 float 텐서 개체입니다.</returns>
+      <returns>지정된 데이터를 포함하는 버퍼를 가진 64비트 부동 소수점 텐서 개체입니다.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorDouble.CreateFromBuffer(System.Int64[],Windows.Storage.Streams.IBuffer)">
-      <summary>지정 된 * shape *를 사용 하 여 double 텐서 개체를 만들고 이후 평가를 위해 * data *의 기본 버퍼를 사용 합니다.</summary>
+      <summary>지정된 *shape*의 double 텐서 개체를 만들고, *data*의 기반 버퍼를 후속 평가에 사용합니다.</summary>
       <param name="shape">버퍼의 크기입니다.</param>
-      <param name="buffer">평가 하는 동안 사용할 버퍼입니다.</param>
-      <returns>제공 된 IBuffer * data *에 대 한 버퍼 참조에 의해 지원 되는 double 텐서 개체입니다.</returns>
+      <param name="buffer">평가하는 동안 사용하는 버퍼입니다.</param>
+      <returns>double 텐서 개체는 제공된 IBuffer *data*로의 버퍼 참조로 지원됩니다.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorDouble.CreateFromIterable(Windows.Foundation.Collections.IIterable{System.Int64},Windows.Foundation.Collections.IIterable{System.Double})">
-      <summary>64 비트 float 텐서 개체를 만들고, * shape * 크기의 버퍼를 할당 하 고, * data *를 모두 복사 합니다.</summary>
+      <summary>64비트 부동 소수점 텐서 개체를 만들고, *shape* 크기의 버퍼를 할당한 후, 모든 *data*를 여기로 복사합니다.</summary>
       <param name="shape">버퍼의 크기입니다.</param>
       <param name="data">버퍼에 복사할 데이터입니다.</param>
-      <returns>지정 된 데이터를 포함 하는 버퍼를 포함 하는 64 비트 float 텐서 개체입니다.</returns>
+      <returns>지정된 데이터를 포함하는 버퍼를 가진 64비트 부동 소수점 텐서 개체입니다.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorDouble.CreateFromShapeArrayAndDataArray(System.Int64[],System.Double[])">
-      <summary>64 비트 float 텐서 개체를 만들고, * shape * 크기의 버퍼를 할당 하 고, * data *를 모두 복사 합니다.</summary>
+      <summary>64비트 부동 소수점 텐서 개체를 만들고, *shape* 크기의 버퍼를 할당한 후, 모든 *data*를 여기로 복사합니다.</summary>
       <param name="shape">버퍼의 크기입니다.</param>
       <param name="data">버퍼에 복사할 데이터입니다.</param>
-      <returns>지정 된 데이터를 포함 하는 버퍼를 포함 하는 64 비트 float 텐서 개체입니다.</returns>
+      <returns>지정된 데이터를 포함하는 버퍼를 가진 64비트 부동 소수점 텐서 개체입니다.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorDouble.CreateReference">
-      <summary>Double 텐서 개체를 지 원하는 버퍼의 IMemoryBufferReference 표현을 반환 합니다.</summary>
+      <summary>double 텐서 개체를 지원하는 버퍼의 IMemoryBufferReference 표현을 반환합니다.</summary>
       <returns>텐서 버퍼의 IMemoryBufferReference 표현입니다.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorDouble.GetAsVectorView">
-      <summary>데이터의 읽기 전용 뷰를 반환 합니다.</summary>
-      <returns>데이터의 읽기 전용 뷰입니다.</returns>
+      <summary>데이터의 읽기 전용 보기를 반환합니다.</summary>
+      <returns>데이터의 읽기 전용 보기입니다.</returns>
     </member>
     <member name="T:Windows.AI.MachineLearning.TensorFeatureDescriptor">
-      <summary>Tensors는 값의 다차원 배열입니다.</summary>
+      <summary>텐서는 값의 다차원 배열입니다.</summary>
     </member>
     <member name="P:Windows.AI.MachineLearning.TensorFeatureDescriptor.Description">
-      <summary>모델에서이 기능을 사용 하는 방법에 대 한 설명입니다.</summary>
-      <returns>모델에서이 기능을 사용 하는 방법에 대 한 설명입니다.</returns>
+      <summary>모델에서 이 기능의 용도에 대한 설명입니다.</summary>
+      <returns>모델에서 이 기능의 용도에 대한 설명입니다.</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.TensorFeatureDescriptor.IsRequired">
-      <summary>True 이면 LearningModelSession를 호출 하기 전에 값을이 기능에 바인딩해야 합니다.</summary>
-      <returns>* * LearningModelSession * *;를 호출 하기 전에 값을이 기능에 바인딩해야 하는 경우 True입니다. 그렇지 않으면 false입니다.</returns>
+      <summary>true일 경우 LearningModelSession.Evaluate를 호출하기 전에 이 형상에 값을 바인딩해야 합니다.</summary>
+      <returns>**LearningModelSession.Evaluate**를 호출하기 전에 이 형상에 값을 바인딩해야 하면 true, 그렇지 않으면 false입니다.</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.TensorFeatureDescriptor.Kind">
-      <summary>기능의 종류입니다. 이 클래스를 사용 하 여 사용할 파생 클래스를 파악 합니다.</summary>
-      <returns>기능의 종류입니다.</returns>
+      <summary>형상의 종류입니다. 어떤 파생 클래스를 사용할지 파악하기 위해 사용합니다.</summary>
+      <returns>형상의 종류입니다.</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.TensorFeatureDescriptor.Name">
-      <summary>이 기능에 값을 바인딩하는 데 사용 하는 이름입니다.</summary>
-      <returns>이 기능에 값을 바인딩하는 데 사용 하는 이름입니다.</returns>
+      <summary>이 기능에 값을 바인딩하는 데 사용하는 이름입니다.</summary>
+      <returns>이 기능에 값을 바인딩하는 데 사용하는 이름입니다.</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.TensorFeatureDescriptor.Shape">
-      <summary>각 차원의 개수와 크기를 반환 합니다.</summary>
-      <returns>각 차원의 개수와 크기입니다.</returns>
+      <summary>각 차원의 수와 크기를 반환합니다.</summary>
+      <returns>차원의 개수와 각각의 크기입니다.</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.TensorFeatureDescriptor.TensorKind">
-      <summary>텐서의 데이터 형식을 반환 합니다.</summary>
+      <summary>Tensor의 데이터 형식을 반환합니다.</summary>
       <returns>텐서의 데이터 형식입니다.</returns>
     </member>
     <member name="T:Windows.AI.MachineLearning.TensorFloat">
-      <summary>32 비트 float 텐서 개체입니다.</summary>
+      <summary>32비트 부동 소수점 텐서 개체입니다.</summary>
     </member>
     <member name="P:Windows.AI.MachineLearning.TensorFloat.Kind">
       <summary>
@@ -581,11 +581,11 @@
       </returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.TensorFloat.Shape">
-      <summary>각 차원의 개수와 크기를 반환 합니다.</summary>
-      <returns>각 차원의 개수와 크기입니다.</returns>
+      <summary>각 차원의 수와 크기를 반환합니다.</summary>
+      <returns>차원의 개수와 각각의 크기입니다.</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.TensorFloat.TensorKind">
-      <summary>텐서의 데이터 형식을 반환 합니다.</summary>
+      <summary>Tensor의 데이터 형식을 반환합니다.</summary>
       <returns>텐서의 데이터 형식입니다.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorFloat.Close">
@@ -593,680 +593,680 @@
       </summary>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorFloat.Create">
-      <summary>버퍼를 할당 하지 않고 32 비트 float 텐서 개체를 만듭니다.</summary>
-      <returns>32 비트 float 텐서 개체입니다.</returns>
+      <summary>버퍼를 할당하지 않고 32비트 부동 소수점 텐서 개체를 만듭니다.</summary>
+      <returns>32비트 부동 소수점 텐서 개체입니다.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorFloat.Create(Windows.Foundation.Collections.IIterable{System.Int64})">
-      <summary>32 비트 float 텐서 개체를 만들고 * shape * 크기의 버퍼를 할당 합니다.</summary>
+      <summary>32비트 부동 소수점 텐서 개체를 만들고 *shape* 크기의 버퍼를 할당합니다.</summary>
       <param name="shape">버퍼의 크기입니다.</param>
-      <returns>지정 된 크기의 버퍼를 사용 하는 32 비트 float 텐서 개체입니다.</returns>
+      <returns>지정된 크기의 버퍼를 가진 32비트 부동 소수점 텐서 개체입니다.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorFloat.CreateFromArray(Windows.Foundation.Collections.IIterable{System.Int64},System.Single[])">
-      <summary>32 비트 float 텐서 개체를 만들고, * shape * 크기의 버퍼를 할당 하 고, * data *를 모두 복사 합니다.</summary>
+      <summary>32비트 부동 소수점 텐서 개체를 만들고, *shape* 크기의 버퍼를 할당한 후, 모든 *data*를 여기로 복사합니다.</summary>
       <param name="shape">버퍼의 크기입니다.</param>
       <param name="data">버퍼에 복사할 데이터입니다.</param>
-      <returns>지정 된 데이터를 포함 하는 버퍼를 포함 하는 32 비트 float 텐서 개체입니다.</returns>
+      <returns>지정된 데이터를 포함하는 버퍼를 가진 32비트 부동 소수점 텐서 개체입니다.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorFloat.CreateFromBuffer(System.Int64[],Windows.Storage.Streams.IBuffer)">
-      <summary>지정 된 * shape *를 사용 하 여 float 텐서 개체를 만들고 이후 평가를 위해 * data *의 기본 버퍼를 사용 합니다.</summary>
+      <summary>지정된 *shape*의 부동 소수점 텐서 개체를 만들고, *data*의 기반 버퍼를 후속 평가에 사용합니다.</summary>
       <param name="shape">버퍼의 크기입니다.</param>
-      <param name="buffer">평가 하는 동안 사용할 버퍼입니다.</param>
-      <returns>제공 된 IBuffer * data *에 대 한 버퍼 참조에 의해 지원 되는 float 텐서 개체입니다.</returns>
+      <param name="buffer">평가하는 동안 사용하는 버퍼입니다.</param>
+      <returns>부동 소수점 텐서 개체는 제공된 IBuffer *data*로의 버퍼 참조로 지원됩니다.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorFloat.CreateFromIterable(Windows.Foundation.Collections.IIterable{System.Int64},Windows.Foundation.Collections.IIterable{System.Single})">
-      <summary>32 비트 float 텐서 개체를 만들고, * shape * 크기의 버퍼를 할당 하 고, * data *를 모두 복사 합니다.</summary>
+      <summary>32비트 부동 소수점 텐서 개체를 만들고, *shape* 크기의 버퍼를 할당한 후, 모든 *data*를 여기로 복사합니다.</summary>
       <param name="shape">버퍼의 크기입니다.</param>
       <param name="data">버퍼에 복사할 데이터입니다.</param>
-      <returns>지정 된 데이터를 포함 하는 버퍼를 포함 하는 32 비트 float 텐서 개체입니다.</returns>
+      <returns>지정된 데이터를 포함하는 버퍼를 가진 32비트 부동 소수점 텐서 개체입니다.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorFloat.CreateFromShapeArrayAndDataArray(System.Int64[],System.Single[])">
-      <summary>32 비트 float 텐서 개체를 만들고, * shape * 크기의 버퍼를 할당 하 고, * data *를 모두 복사 합니다.</summary>
+      <summary>32비트 부동 소수점 텐서 개체를 만들고, *shape* 크기의 버퍼를 할당한 후, 모든 *data*를 여기로 복사합니다.</summary>
       <param name="shape">버퍼의 크기입니다.</param>
       <param name="data">버퍼에 복사할 데이터입니다.</param>
-      <returns>지정 된 데이터를 포함 하는 버퍼를 포함 하는 32 비트 float 텐서 개체입니다.</returns>
+      <returns>지정된 데이터를 포함하는 버퍼를 가진 32비트 부동 소수점 텐서 개체입니다.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorFloat.CreateReference">
-      <summary>32 비트 float 텐서 개체를 지 원하는 버퍼의 IMemoryBufferReference 표현을 반환 합니다.</summary>
+      <summary>32비트 부동 소수점 텐서 개체를 지원하는 버퍼의 IMemoryBufferReference 표현을 반환합니다.</summary>
       <returns>텐서 버퍼의 IMemoryBufferReference 표현입니다.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorFloat.GetAsVectorView">
-      <summary>데이터의 읽기 전용 뷰를 반환 합니다.</summary>
-      <returns>데이터의 읽기 전용 뷰입니다.</returns>
+      <summary>데이터의 읽기 전용 보기를 반환합니다.</summary>
+      <returns>데이터의 읽기 전용 보기입니다.</returns>
     </member>
     <member name="T:Windows.AI.MachineLearning.TensorFloat16Bit">
-      <summary>16 비트 float 텐서 개체입니다.</summary>
+      <summary>16비트 부동 소수점 텐서 개체입니다.</summary>
     </member>
     <member name="P:Windows.AI.MachineLearning.TensorFloat16Bit.Kind">
       <summary>기능의 종류입니다.</summary>
       <returns>기능의 종류입니다.</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.TensorFloat16Bit.Shape">
-      <summary>각 차원의 개수와 크기를 반환 합니다.</summary>
-      <returns>각 차원의 개수와 크기입니다.</returns>
+      <summary>각 차원의 수와 크기를 반환합니다.</summary>
+      <returns>차원의 개수와 각각의 크기입니다.</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.TensorFloat16Bit.TensorKind">
-      <summary>텐서의 데이터 형식을 반환 합니다.</summary>
+      <summary>Tensor의 데이터 형식을 반환합니다.</summary>
       <returns>텐서의 데이터 형식입니다.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorFloat16Bit.Close">
-      <summary>이 개체에서 생성 된 처리 되지 않은 IMemoryBufferReference 개체가 없으면 * * Close * *는 개체를 삭제 하 고 연결 된 리소스를 제거 합니다. 그렇지 않으면 * * Close * *가 연결 된 리소스에서 분리 되 고 마지막 IMemoryBufferReference 닫히면 제거 됩니다.</summary>
+      <summary>이 개체에서 생성되는 별다른 IMemoryBufferReference 개체가 없으면 **Close**는 개체를 삭제하고 연결된 리소스를 제거합니다. 그렇지 않으면 **Close**는 스스로를 연결된 리소스에서 분리하며, 이러한 리소스는 마지막 IMemoryBufferReference를 닫을 때 삭제됩니다.</summary>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorFloat16Bit.Create">
-      <summary>버퍼를 할당 하지 않고 16 비트 float 텐서 개체를 만듭니다.</summary>
-      <returns>16 비트 float 텐서 개체입니다.</returns>
+      <summary>버퍼를 할당하지 않고 16비트 부동 소수점 텐서 개체를 만듭니다.</summary>
+      <returns>16비트 부동 소수점 텐서 개체입니다.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorFloat16Bit.Create(Windows.Foundation.Collections.IIterable{System.Int64})">
-      <summary>16 비트 float 텐서 개체를 만들고 * shape * 크기의 버퍼를 할당 합니다.</summary>
+      <summary>16비트 부동 소수점 텐서 개체를 만들고 *shape* 크기의 버퍼를 할당합니다.</summary>
       <param name="shape">버퍼의 크기입니다.</param>
-      <returns>지정 된 크기의 버퍼를 사용 하는 16 비트 float 텐서 개체입니다.</returns>
+      <returns>지정된 크기의 버퍼를 가진 16비트 부동 소수점 텐서 개체입니다.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorFloat16Bit.CreateFromArray(Windows.Foundation.Collections.IIterable{System.Int64},System.Single[])">
-      <summary>16 비트 float 텐서 개체를 만들고, 크기 * 셰이프 *의 버퍼를 할당 하 고, * data *를 모두 복사 합니다.</summary>
+      <summary>16비트 부동 소수점 텐서 개체를 만들고, *shape* 크기의 버퍼를 할당한 후, 모든 *data*를 여기로 복사합니다.</summary>
       <param name="shape">버퍼의 크기입니다.</param>
       <param name="data">버퍼에 복사할 데이터입니다.</param>
-      <returns>지정 된 데이터를 포함 하는 버퍼를 포함 하는 16 비트 float 텐서 개체입니다.</returns>
+      <returns>지정된 데이터를 포함하는 버퍼를 가진 16비트 부동 소수점 텐서 개체입니다.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorFloat16Bit.CreateFromBuffer(System.Int64[],Windows.Storage.Streams.IBuffer)">
-      <summary>지정 된 * shape *를 사용 하 여 16 비트 float 텐서 개체를 만들고 이후 평가를 위해 * data *의 기본 버퍼를 사용 합니다.</summary>
+      <summary>지정된 *shape*의 16비트 부동 소수점 텐서 개체를 만들고, *data*의 기반 버퍼를 후속 평가에 사용합니다.</summary>
       <param name="shape">버퍼의 크기입니다.</param>
-      <param name="buffer">평가 하는 동안 사용할 버퍼입니다.</param>
-      <returns>제공 된 IBuffer * data *에 대 한 버퍼 참조에 의해 지원 되는 16 비트 float 텐서 개체입니다.</returns>
+      <param name="buffer">평가하는 동안 사용하는 버퍼입니다.</param>
+      <returns>16비트 부동 소수점 텐서 개체는 제공된 IBuffer *data*로의 버퍼 참조로 지원됩니다.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorFloat16Bit.CreateFromIterable(Windows.Foundation.Collections.IIterable{System.Int64},Windows.Foundation.Collections.IIterable{System.Single})">
-      <summary>16 비트 float 텐서 개체를 만들고, 크기 * 셰이프 *의 버퍼를 할당 하 고, * data *를 모두 복사 합니다.</summary>
+      <summary>16비트 부동 소수점 텐서 개체를 만들고, *shape* 크기의 버퍼를 할당한 후, 모든 *data*를 여기로 복사합니다.</summary>
       <param name="shape">버퍼의 크기입니다.</param>
       <param name="data">버퍼에 복사할 데이터입니다.</param>
-      <returns>지정 된 데이터를 포함 하는 버퍼를 포함 하는 16 비트 float 텐서 개체입니다.</returns>
+      <returns>지정된 데이터를 포함하는 버퍼를 가진 16비트 부동 소수점 텐서 개체입니다.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorFloat16Bit.CreateFromShapeArrayAndDataArray(System.Int64[],System.Single[])">
-      <summary>16 비트 float 텐서 개체를 만들고, 크기 * 셰이프 *의 버퍼를 할당 하 고, * data *를 모두 복사 합니다.</summary>
+      <summary>16비트 부동 소수점 텐서 개체를 만들고, *shape* 크기의 버퍼를 할당한 후, 모든 *data*를 여기로 복사합니다.</summary>
       <param name="shape">버퍼의 크기입니다.</param>
       <param name="data">버퍼에 복사할 데이터입니다.</param>
-      <returns>지정 된 데이터를 포함 하는 버퍼를 포함 하는 16 비트 float 텐서 개체입니다.</returns>
+      <returns>지정된 데이터를 포함하는 버퍼를 가진 16비트 부동 소수점 텐서 개체입니다.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorFloat16Bit.CreateReference">
-      <summary>16 비트 float 텐서 개체를 지 원하는 버퍼의 IMemoryBufferReference 표현을 반환 합니다.</summary>
+      <summary>16비트 부동 소수점 텐서 개체를 지원하는 버퍼의 IMemoryBufferReference 표현을 반환합니다.</summary>
       <returns>텐서 버퍼의 IMemoryBufferReference 표현입니다.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorFloat16Bit.GetAsVectorView">
-      <summary>데이터의 읽기 전용 뷰를 반환 합니다.</summary>
-      <returns>데이터의 읽기 전용 뷰입니다.</returns>
+      <summary>데이터의 읽기 전용 보기를 반환합니다.</summary>
+      <returns>데이터의 읽기 전용 보기입니다.</returns>
     </member>
     <member name="T:Windows.AI.MachineLearning.TensorInt16Bit">
-      <summary>16 비트 부호 있는 정수 텐서 개체입니다.</summary>
+      <summary>16비트 부호 있는 정수 텐서 개체입니다.</summary>
     </member>
     <member name="P:Windows.AI.MachineLearning.TensorInt16Bit.Kind">
       <summary>기능의 종류입니다.</summary>
       <returns>기능의 종류입니다.</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.TensorInt16Bit.Shape">
-      <summary>각 차원의 개수와 크기를 반환 합니다.</summary>
-      <returns>각 차원의 개수와 크기입니다.</returns>
+      <summary>각 차원의 수와 크기를 반환합니다.</summary>
+      <returns>차원의 개수와 각각의 크기입니다.</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.TensorInt16Bit.TensorKind">
-      <summary>텐서의 데이터 형식을 반환 합니다.</summary>
+      <summary>Tensor의 데이터 형식을 반환합니다.</summary>
       <returns>텐서의 데이터 형식입니다.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorInt16Bit.Close">
-      <summary>이 개체에서 생성 된 처리 되지 않은 IMemoryBufferReference 개체가 없으면 * * Close * *는 개체를 삭제 하 고 연결 된 리소스를 제거 합니다. 그렇지 않으면 * * Close * *가 연결 된 리소스에서 분리 되 고 마지막 IMemoryBufferReference 닫히면 제거 됩니다.</summary>
+      <summary>이 개체에서 생성되는 별다른 IMemoryBufferReference 개체가 없으면 **Close**는 개체를 삭제하고 연결된 리소스를 제거합니다. 그렇지 않으면 **Close**는 스스로를 연결된 리소스에서 분리하며, 이러한 리소스는 마지막 IMemoryBufferReference를 닫을 때 삭제됩니다.</summary>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorInt16Bit.Create">
-      <summary>버퍼를 할당 하지 않고 16 비트 부호 있는 정수 텐서 개체를 만듭니다.</summary>
-      <returns>16 비트 부호 있는 정수 텐서 개체입니다.</returns>
+      <summary>버퍼를 할당하지 않고 16비트 부호 있는 정수 텐서 개체를 만듭니다.</summary>
+      <returns>16비트 부호 있는 정수 텐서 개체입니다.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorInt16Bit.Create(Windows.Foundation.Collections.IIterable{System.Int64})">
-      <summary>16 비트 부호 있는 정수 텐서 개체를 만들고 * shape * 크기의 버퍼를 할당 합니다.</summary>
+      <summary>16비트 부호 있는 정수 텐서 개체를 만들고 *shape* 크기의 버퍼를 할당합니다.</summary>
       <param name="shape">버퍼의 크기입니다.</param>
-      <returns>지정 된 크기의 버퍼를 사용 하는 16 비트 부호 있는 정수 텐서 개체입니다.</returns>
+      <returns>지정된 크기의 버퍼를 가진 16비트 부호 있는 정수 텐서 개체입니다.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorInt16Bit.CreateFromArray(Windows.Foundation.Collections.IIterable{System.Int64},System.Int16[])">
-      <summary>16 비트 부호 있는 정수 텐서 개체를 만들고, * shape * 크기의 버퍼를 할당 하 고, * data *를 모두 복사 합니다.</summary>
+      <summary>16비트 부호 있는 정수 텐서 개체를 만들고, *shape* 크기의 버퍼를 할당한 후, 모든 *data*를 여기로 복사합니다.</summary>
       <param name="shape">버퍼의 크기입니다.</param>
       <param name="data">버퍼에 복사할 데이터입니다.</param>
-      <returns>지정 된 데이터를 포함 하는 버퍼를 사용 하는 16 비트 부호 있는 정수 텐서 개체입니다.</returns>
+      <returns>지정된 데이터를 포함하는 버퍼를 가진 16비트 부호 있는 정수 텐서 개체입니다.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorInt16Bit.CreateFromBuffer(System.Int64[],Windows.Storage.Streams.IBuffer)">
-      <summary>지정 된 * shape *를 사용 하 여 16 비트 부호 있는 정수 텐서 개체를 만들고 이후 평가를 위해 * buffer *의 기본 버퍼를 사용 합니다.</summary>
+      <summary>지정된 *shape*의 16비트 부호 있는 정수 텐서 개체를 만들고, *buffer*의 기반 버퍼를 후속 평가에 사용합니다.</summary>
       <param name="shape">버퍼의 크기입니다.</param>
-      <param name="buffer">평가 하는 동안 사용할 버퍼입니다.</param>
-      <returns>제공 된 IBuffer * buffer *에 대 한 버퍼 참조에 의해 지원 되는 16 비트 부호 있는 정수 텐서 개체입니다.</returns>
+      <param name="buffer">평가하는 동안 사용하는 버퍼입니다.</param>
+      <returns>16비트 부호 있는 정수 텐서 개체는 제공된 IBuffer *buffer*로의 버퍼 참조로 지원됩니다.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorInt16Bit.CreateFromIterable(Windows.Foundation.Collections.IIterable{System.Int64},Windows.Foundation.Collections.IIterable{System.Int16})">
-      <summary>16 비트 부호 있는 정수 텐서 개체를 만들고, * shape * 크기의 버퍼를 할당 하 고, * data *를 모두 복사 합니다.</summary>
+      <summary>16비트 부호 있는 정수 텐서 개체를 만들고, *shape* 크기의 버퍼를 할당한 후, 모든 *data*를 여기로 복사합니다.</summary>
       <param name="shape">버퍼의 크기입니다.</param>
       <param name="data">버퍼에 복사할 데이터입니다.</param>
-      <returns>지정 된 데이터를 포함 하는 버퍼를 사용 하는 16 비트 부호 있는 정수 텐서 개체입니다.</returns>
+      <returns>지정된 데이터를 포함하는 버퍼를 가진 16비트 부호 있는 정수 텐서 개체입니다.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorInt16Bit.CreateFromShapeArrayAndDataArray(System.Int64[],System.Int16[])">
-      <summary>16 비트 부호 있는 정수 텐서 개체를 만들고, * shape * 크기의 버퍼를 할당 하 고, * data *를 모두 복사 합니다.</summary>
+      <summary>16비트 부호 있는 정수 텐서 개체를 만들고, *shape* 크기의 버퍼를 할당한 후, 모든 *data*를 여기로 복사합니다.</summary>
       <param name="shape">버퍼의 크기입니다.</param>
       <param name="data">버퍼에 복사할 데이터입니다.</param>
-      <returns>지정 된 데이터를 포함 하는 버퍼를 사용 하는 16 비트 부호 있는 정수 텐서 개체입니다.</returns>
+      <returns>지정된 데이터를 포함하는 버퍼를 가진 16비트 부호 있는 정수 텐서 개체입니다.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorInt16Bit.CreateReference">
-      <summary>16 비트 부호 있는 정수 텐서 개체를 지 원하는 버퍼의 IMemoryBufferReference 표현을 반환 합니다.</summary>
+      <summary>16비트 부호 있는 정수 텐서 개체를 지원하는 버퍼의 IMemoryBufferReference 표현을 반환합니다.</summary>
       <returns>텐서 버퍼의 IMemoryBufferReference 표현입니다.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorInt16Bit.GetAsVectorView">
-      <summary>데이터의 읽기 전용 뷰를 반환 합니다.</summary>
-      <returns>데이터의 읽기 전용 뷰입니다.</returns>
+      <summary>데이터의 읽기 전용 보기를 반환합니다.</summary>
+      <returns>데이터의 읽기 전용 보기입니다.</returns>
     </member>
     <member name="T:Windows.AI.MachineLearning.TensorInt32Bit">
-      <summary>32 비트 부호 있는 정수 텐서 개체입니다.</summary>
+      <summary>32비트 부호 있는 정수 텐서 개체입니다.</summary>
     </member>
     <member name="P:Windows.AI.MachineLearning.TensorInt32Bit.Kind">
       <summary>기능의 종류입니다.</summary>
       <returns>기능의 종류입니다.</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.TensorInt32Bit.Shape">
-      <summary>각 차원의 개수와 크기를 반환 합니다.</summary>
-      <returns>각 차원의 개수와 크기입니다.</returns>
+      <summary>각 차원의 수와 크기를 반환합니다.</summary>
+      <returns>차원의 개수와 각각의 크기입니다.</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.TensorInt32Bit.TensorKind">
-      <summary>텐서의 데이터 형식을 반환 합니다.</summary>
+      <summary>Tensor의 데이터 형식을 반환합니다.</summary>
       <returns>텐서의 데이터 형식입니다.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorInt32Bit.Close">
-      <summary>이 개체에서 생성 된 처리 되지 않은 IMemoryBufferReference 개체가 없으면 * * Close * *는 개체를 삭제 하 고 연결 된 리소스를 제거 합니다. 그렇지 않으면 * * Close * *가 연결 된 리소스에서 분리 되 고 마지막 IMemoryBufferReference 닫히면 제거 됩니다.</summary>
+      <summary>이 개체에서 생성되는 별다른 IMemoryBufferReference 개체가 없으면 **Close**는 개체를 삭제하고 연결된 리소스를 제거합니다. 그렇지 않으면 **Close**는 스스로를 연결된 리소스에서 분리하며, 이러한 리소스는 마지막 IMemoryBufferReference를 닫을 때 삭제됩니다.</summary>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorInt32Bit.Create">
-      <summary>버퍼를 할당 하지 않고 32 비트의 부호 있는 정수 텐서 개체를 만듭니다.</summary>
-      <returns>32 비트 부호 있는 정수 텐서 개체입니다.</returns>
+      <summary>버퍼를 할당하지 않고 32비트 부호 있는 정수 텐서 개체를 만듭니다.</summary>
+      <returns>32비트 부호 있는 정수 텐서 개체입니다.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorInt32Bit.Create(Windows.Foundation.Collections.IIterable{System.Int64})">
-      <summary>32 비트 부호 있는 정수 텐서 개체를 만들고 * shape * 크기의 버퍼를 할당 합니다.</summary>
+      <summary>32비트 부호 있는 정수 텐서 개체를 만들고 *shape* 크기의 버퍼를 할당합니다.</summary>
       <param name="shape">버퍼의 크기입니다.</param>
-      <returns>지정 된 크기의 버퍼를 사용 하는 32 비트 부호 있는 정수 텐서 개체입니다.</returns>
+      <returns>지정된 크기의 버퍼를 가진 32비트 부호 있는 정수 텐서 개체입니다.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorInt32Bit.CreateFromArray(Windows.Foundation.Collections.IIterable{System.Int64},System.Int32[])">
-      <summary>32 비트 부호 있는 정수 텐서 개체를 만들고, * shape * 크기의 버퍼를 할당 하 고, * data *를 모두 복사 합니다.</summary>
+      <summary>32비트 부호 있는 정수 텐서 개체를 만들고, *shape* 크기의 버퍼를 할당한 후, 모든 *data*를 여기로 복사합니다.</summary>
       <param name="shape">버퍼의 크기입니다.</param>
       <param name="data">버퍼에 복사할 데이터입니다.</param>
-      <returns>지정 된 데이터를 포함 하는 버퍼를 사용 하는 32 비트 부호 있는 정수 텐서 개체입니다.</returns>
+      <returns>지정된 데이터를 포함하는 버퍼를 가진 32비트 부호 있는 정수 텐서 개체입니다.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorInt32Bit.CreateFromBuffer(System.Int64[],Windows.Storage.Streams.IBuffer)">
-      <summary>지정 된 * shape *를 사용 하 여 32 비트 부호 있는 정수 텐서 개체를 만들고 이후 평가를 위해 * buffer *의 기본 버퍼를 사용 합니다.</summary>
+      <summary>지정된 *shape*의 32비트 부호 있는 정수 텐서 개체를 만들고, *buffer*의 기반 버퍼를 후속 평가에 사용합니다.</summary>
       <param name="shape">버퍼의 크기입니다.</param>
-      <param name="buffer">평가 하는 동안 사용할 버퍼입니다.</param>
-      <returns>제공 된 IBuffer * buffer *에 대 한 버퍼 참조에 의해 지원 되는 32 비트 부호 있는 정수 텐서 개체입니다.</returns>
+      <param name="buffer">평가하는 동안 사용하는 버퍼입니다.</param>
+      <returns>32비트 부호 있는 정수 텐서 개체는 제공된 IBuffer *buffer*로의 버퍼 참조로 지원됩니다.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorInt32Bit.CreateFromIterable(Windows.Foundation.Collections.IIterable{System.Int64},Windows.Foundation.Collections.IIterable{System.Int32})">
-      <summary>32 비트 부호 있는 정수 텐서 개체를 만들고, * shape * 크기의 버퍼를 할당 하 고, * data *를 모두 복사 합니다.</summary>
+      <summary>32비트 부호 있는 정수 텐서 개체를 만들고, *shape* 크기의 버퍼를 할당한 후, 모든 *data*를 여기로 복사합니다.</summary>
       <param name="shape">버퍼의 크기입니다.</param>
       <param name="data">버퍼에 복사할 데이터입니다.</param>
-      <returns>지정 된 데이터를 포함 하는 버퍼를 사용 하는 32 비트 부호 있는 정수 텐서 개체입니다.</returns>
+      <returns>지정된 데이터를 포함하는 버퍼를 가진 32비트 부호 있는 정수 텐서 개체입니다.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorInt32Bit.CreateFromShapeArrayAndDataArray(System.Int64[],System.Int32[])">
-      <summary>32 비트 부호 있는 정수 텐서 개체를 만들고, * shape * 크기의 버퍼를 할당 하 고, * data *를 모두 복사 합니다.</summary>
+      <summary>32비트 부호 있는 정수 텐서 개체를 만들고, *shape* 크기의 버퍼를 할당한 후, 모든 *data*를 여기로 복사합니다.</summary>
       <param name="shape">버퍼의 크기입니다.</param>
       <param name="data">버퍼에 복사할 데이터입니다.</param>
-      <returns>지정 된 데이터를 포함 하는 버퍼를 사용 하는 32 비트 부호 있는 정수 텐서 개체입니다.</returns>
+      <returns>지정된 데이터를 포함하는 버퍼를 가진 32비트 부호 있는 정수 텐서 개체입니다.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorInt32Bit.CreateReference">
-      <summary>32 비트 부호 있는 정수 텐서 개체를 지 원하는 버퍼의 IMemoryBufferReference 표현을 반환 합니다.</summary>
+      <summary>32비트 부호 있는 정수 텐서 개체를 지원하는 버퍼의 IMemoryBufferReference 표현을 반환합니다.</summary>
       <returns>텐서 버퍼의 IMemoryBufferReference 표현입니다.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorInt32Bit.GetAsVectorView">
-      <summary>데이터의 읽기 전용 뷰를 반환 합니다.</summary>
-      <returns>데이터의 읽기 전용 뷰입니다.</returns>
+      <summary>데이터의 읽기 전용 보기를 반환합니다.</summary>
+      <returns>데이터의 읽기 전용 보기입니다.</returns>
     </member>
     <member name="T:Windows.AI.MachineLearning.TensorInt64Bit">
-      <summary>64 비트 부호 있는 정수 텐서 개체입니다.</summary>
+      <summary>64비트 부호 있는 정수 텐서 개체입니다.</summary>
     </member>
     <member name="P:Windows.AI.MachineLearning.TensorInt64Bit.Kind">
       <summary>기능의 종류입니다.</summary>
       <returns>기능의 종류입니다.</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.TensorInt64Bit.Shape">
-      <summary>각 차원의 개수와 크기를 반환 합니다.</summary>
-      <returns>각 차원의 개수와 크기입니다.</returns>
+      <summary>각 차원의 수와 크기를 반환합니다.</summary>
+      <returns>차원의 개수와 각각의 크기입니다.</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.TensorInt64Bit.TensorKind">
-      <summary>텐서의 데이터 형식을 반환 합니다.</summary>
+      <summary>Tensor의 데이터 형식을 반환합니다.</summary>
       <returns>텐서의 데이터 형식입니다.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorInt64Bit.Close">
-      <summary>이 개체에서 생성 된 처리 되지 않은 IMemoryBufferReference 개체가 없으면 * * Close * *는 개체를 삭제 하 고 연결 된 리소스를 제거 합니다. 그렇지 않으면 * * Close * *가 연결 된 리소스에서 분리 되 고 마지막 IMemoryBufferReference 닫히면 제거 됩니다.</summary>
+      <summary>이 개체에서 생성되는 별다른 IMemoryBufferReference 개체가 없으면 **Close**는 개체를 삭제하고 연결된 리소스를 제거합니다. 그렇지 않으면 **Close**는 스스로를 연결된 리소스에서 분리하며, 이러한 리소스는 마지막 IMemoryBufferReference를 닫을 때 삭제됩니다.</summary>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorInt64Bit.Create">
-      <summary>버퍼를 할당 하지 않고 64 비트의 부호 있는 정수 텐서 개체를 만듭니다.</summary>
-      <returns>64 비트 부호 있는 정수 텐서 개체입니다.</returns>
+      <summary>버퍼를 할당하지 않고 64비트 부호 있는 정수 텐서 개체를 만듭니다.</summary>
+      <returns>64비트 부호 있는 정수 텐서 개체입니다.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorInt64Bit.Create(Windows.Foundation.Collections.IIterable{System.Int64})">
-      <summary>64 비트 부호 있는 정수 텐서 개체를 만들고 * shape * 크기의 버퍼를 할당 합니다.</summary>
+      <summary>64비트 부호 있는 정수 텐서 개체를 만들고 *shape* 크기의 버퍼를 할당합니다.</summary>
       <param name="shape">버퍼의 크기입니다.</param>
-      <returns>지정 된 크기의 버퍼를 사용 하는 64 비트 부호 있는 정수 텐서 개체입니다.</returns>
+      <returns>지정된 크기의 버퍼를 가진 64비트 부호 있는 정수 텐서 개체입니다.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorInt64Bit.CreateFromArray(Windows.Foundation.Collections.IIterable{System.Int64},System.Int64[])">
-      <summary>64 비트 부호 있는 정수 텐서 개체를 만들고, * shape * 크기의 버퍼를 할당 하 고, * data *를 모두 복사 합니다.</summary>
+      <summary>64비트 부호 있는 정수 텐서 개체를 만들고, *shape* 크기의 버퍼를 할당한 후, 모든 *data*를 여기로 복사합니다.</summary>
       <param name="shape">버퍼의 크기입니다.</param>
       <param name="data">버퍼에 복사할 데이터입니다.</param>
-      <returns>지정 된 데이터를 포함 하는 버퍼를 사용 하는 64 비트 부호 있는 정수 텐서 개체입니다.</returns>
+      <returns>지정된 데이터를 포함하는 버퍼를 가진 64비트 부호 있는 정수 텐서 개체입니다.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorInt64Bit.CreateFromBuffer(System.Int64[],Windows.Storage.Streams.IBuffer)">
-      <summary>지정 된 * shape *를 사용 하 여 64 비트 부호 있는 정수 텐서 개체를 만들고 이후 평가를 위해 * buffer *의 기본 버퍼를 사용 합니다.</summary>
+      <summary>지정된 *shape*의 64비트 부호 있는 정수 텐서 개체를 만들고, *buffer*의 기반 버퍼를 후속 평가에 사용합니다.</summary>
       <param name="shape">버퍼의 크기입니다.</param>
-      <param name="buffer">평가 하는 동안 사용할 버퍼입니다.</param>
-      <returns>제공 된 IBuffer * buffer *에 대 한 버퍼 참조에 의해 지원 되는 64 비트 부호 있는 정수 텐서 개체입니다.</returns>
+      <param name="buffer">평가하는 동안 사용하는 버퍼입니다.</param>
+      <returns>64비트 부호 있는 정수 텐서 개체는 제공된 IBuffer *buffer*로의 버퍼 참조로 지원됩니다.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorInt64Bit.CreateFromIterable(Windows.Foundation.Collections.IIterable{System.Int64},Windows.Foundation.Collections.IIterable{System.Int64})">
-      <summary>64 비트 부호 있는 정수 텐서 개체를 만들고, * shape * 크기의 버퍼를 할당 하 고, * data *를 모두 복사 합니다.</summary>
+      <summary>64비트 부호 있는 정수 텐서 개체를 만들고, *shape* 크기의 버퍼를 할당한 후, 모든 *data*를 여기로 복사합니다.</summary>
       <param name="shape">버퍼의 크기입니다.</param>
       <param name="data">버퍼에 복사할 데이터입니다.</param>
-      <returns>지정 된 데이터를 포함 하는 버퍼를 사용 하는 64 비트 부호 있는 정수 텐서 개체입니다.</returns>
+      <returns>지정된 데이터를 포함하는 버퍼를 가진 64비트 부호 있는 정수 텐서 개체입니다.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorInt64Bit.CreateFromShapeArrayAndDataArray(System.Int64[],System.Int64[])">
-      <summary>64 비트 부호 있는 정수 텐서 개체를 만들고, * shape * 크기의 버퍼를 할당 하 고, * data *를 모두 복사 합니다.</summary>
+      <summary>64비트 부호 있는 정수 텐서 개체를 만들고, *shape* 크기의 버퍼를 할당한 후, 모든 *data*를 여기로 복사합니다.</summary>
       <param name="shape">버퍼의 크기입니다.</param>
       <param name="data">버퍼에 복사할 데이터입니다.</param>
-      <returns>지정 된 데이터를 포함 하는 버퍼를 사용 하는 64 비트 부호 있는 정수 텐서 개체입니다.</returns>
+      <returns>지정된 데이터를 포함하는 버퍼를 가진 64비트 부호 있는 정수 텐서 개체입니다.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorInt64Bit.CreateReference">
-      <summary>64 비트 부호 있는 정수 텐서 개체를 지 원하는 버퍼의 IMemoryBufferReference 표현을 반환 합니다.</summary>
+      <summary>64비트 부호 있는 정수 텐서 개체를 지원하는 버퍼의 IMemoryBufferReference 표현을 반환합니다.</summary>
       <returns>텐서 버퍼의 IMemoryBufferReference 표현입니다.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorInt64Bit.GetAsVectorView">
-      <summary>데이터의 읽기 전용 뷰를 반환 합니다.</summary>
-      <returns>데이터의 읽기 전용 뷰입니다.</returns>
+      <summary>데이터의 읽기 전용 보기를 반환합니다.</summary>
+      <returns>데이터의 읽기 전용 보기입니다.</returns>
     </member>
     <member name="T:Windows.AI.MachineLearning.TensorInt8Bit">
-      <summary>8 비트 부호 있는 정수 텐서 개체입니다.</summary>
+      <summary>8비트 부호 있는 정수 텐서 개체입니다.</summary>
     </member>
     <member name="P:Windows.AI.MachineLearning.TensorInt8Bit.Kind">
       <summary>기능의 종류입니다.</summary>
       <returns>기능의 종류입니다.</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.TensorInt8Bit.Shape">
-      <summary>각 차원의 개수와 크기를 반환 합니다.</summary>
-      <returns>각 차원의 개수와 크기입니다.</returns>
+      <summary>각 차원의 수와 크기를 반환합니다.</summary>
+      <returns>차원의 개수와 각각의 크기입니다.</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.TensorInt8Bit.TensorKind">
-      <summary>텐서의 데이터 형식을 반환 합니다.</summary>
+      <summary>Tensor의 데이터 형식을 반환합니다.</summary>
       <returns>텐서의 데이터 형식입니다.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorInt8Bit.Close">
-      <summary>이 개체에서 생성 된 처리 되지 않은 IMemoryBufferReference 개체가 없으면 * * Close * *는 개체를 삭제 하 고 연결 된 리소스를 제거 합니다. 그렇지 않으면 * * Close * *가 연결 된 리소스에서 분리 되 고 마지막 IMemoryBufferReference 닫히면 제거 됩니다.</summary>
+      <summary>이 개체에서 생성되는 별다른 IMemoryBufferReference 개체가 없으면 **Close**는 개체를 삭제하고 연결된 리소스를 제거합니다. 그렇지 않으면 **Close**는 스스로를 연결된 리소스에서 분리하며, 이러한 리소스는 마지막 IMemoryBufferReference를 닫을 때 삭제됩니다.</summary>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorInt8Bit.Create">
-      <summary>버퍼를 할당 하지 않고 8 비트 부호 있는 정수 텐서 개체를 만듭니다.</summary>
-      <returns>8 비트 부호 있는 정수 텐서 개체입니다.</returns>
+      <summary>버퍼를 할당하지 않고 8비트 부호 있는 정수 텐서 개체를 만듭니다.</summary>
+      <returns>8비트 부호 있는 정수 텐서 개체입니다.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorInt8Bit.Create(Windows.Foundation.Collections.IIterable{System.Int64})">
-      <summary>8 비트 부호 있는 정수 텐서 개체를 만들고 * shape * 크기의 버퍼를 할당 합니다.</summary>
+      <summary>8비트 부호 있는 정수 텐서 개체를 만들고 *shape* 크기의 버퍼를 할당합니다.</summary>
       <param name="shape">버퍼의 크기입니다.</param>
-      <returns>지정 된 크기의 버퍼를 사용 하는 8 비트 부호 있는 정수 텐서 개체입니다.</returns>
+      <returns>지정된 크기의 버퍼를 가진 8비트 부호 있는 정수 텐서 개체입니다.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorInt8Bit.CreateFromArray(Windows.Foundation.Collections.IIterable{System.Int64},System.Byte[])">
-      <summary>8 비트 부호 있는 정수 텐서 개체를 만들고, * shape * 크기의 버퍼를 할당 하 고, * data *를 모두 복사 합니다.</summary>
+      <summary>8비트 부호 있는 정수 텐서 개체를 만들고, *shape* 크기의 버퍼를 할당한 후, 모든 *data*를 여기로 복사합니다.</summary>
       <param name="shape">버퍼의 크기입니다.</param>
       <param name="data">버퍼에 복사할 데이터입니다.</param>
-      <returns>지정 된 데이터를 포함 하는 버퍼를 사용 하는 8 비트 부호 있는 정수 텐서 개체입니다.</returns>
+      <returns>지정된 데이터를 포함하는 버퍼를 가진 8비트 부호 있는 정수 텐서 개체입니다.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorInt8Bit.CreateFromBuffer(System.Int64[],Windows.Storage.Streams.IBuffer)">
-      <summary>지정 된 * shape *를 사용 하 여 8 비트 부호 있는 정수 텐서 개체를 만들고 이후 평가를 위해 * buffer *의 기본 버퍼를 사용 합니다.</summary>
+      <summary>지정된 *shape*의 8비트 부호 있는 정수 텐서 개체를 만들고, *buffer*의 기반 버퍼를 후속 평가에 사용합니다.</summary>
       <param name="shape">버퍼의 크기입니다.</param>
-      <param name="buffer">평가 하는 동안 사용할 버퍼입니다.</param>
-      <returns>제공 된 IBuffer * buffer *에 대 한 버퍼 참조에 의해 지원 되는 8 비트 부호 있는 정수 텐서 개체입니다.</returns>
+      <param name="buffer">평가하는 동안 사용하는 버퍼입니다.</param>
+      <returns>8비트 부호 있는 정수 텐서 개체는 제공된 IBuffer *buffer*로의 버퍼 참조로 지원됩니다.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorInt8Bit.CreateFromIterable(Windows.Foundation.Collections.IIterable{System.Int64},Windows.Foundation.Collections.IIterable{System.Byte})">
-      <summary>8 비트 부호 있는 정수 텐서 개체를 만들고, * shape * 크기의 버퍼를 할당 하 고, * data *를 모두 복사 합니다.</summary>
+      <summary>8비트 부호 있는 정수 텐서 개체를 만들고, *shape* 크기의 버퍼를 할당한 후, 모든 *data*를 여기로 복사합니다.</summary>
       <param name="shape">버퍼의 크기입니다.</param>
       <param name="data">버퍼에 복사할 데이터입니다.</param>
-      <returns>지정 된 데이터를 포함 하는 버퍼를 사용 하는 8 비트 부호 있는 정수 텐서 개체입니다.</returns>
+      <returns>지정된 데이터를 포함하는 버퍼를 가진 8비트 부호 있는 정수 텐서 개체입니다.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorInt8Bit.CreateFromShapeArrayAndDataArray(System.Int64[],System.Byte[])">
-      <summary>8 비트 부호 있는 정수 텐서 개체를 만들고, * shape * 크기의 버퍼를 할당 하 고, * data *를 모두 복사 합니다.</summary>
+      <summary>8비트 부호 있는 정수 텐서 개체를 만들고, *shape* 크기의 버퍼를 할당한 후, 모든 *data*를 여기로 복사합니다.</summary>
       <param name="shape">버퍼의 크기입니다.</param>
       <param name="data">버퍼에 복사할 데이터입니다.</param>
-      <returns>지정 된 데이터를 포함 하는 버퍼를 사용 하는 8 비트 부호 있는 정수 텐서 개체입니다.</returns>
+      <returns>지정된 데이터를 포함하는 버퍼를 가진 8비트 부호 있는 정수 텐서 개체입니다.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorInt8Bit.CreateReference">
-      <summary>부호 있는 8 비트 정수 텐서 개체를 지 원하는 버퍼의 IMemoryBufferReference 표현을 반환 합니다.</summary>
+      <summary>8비트 부호 있는 정수 텐서 개체를 지원하는 버퍼의 IMemoryBufferReference 표현을 반환합니다.</summary>
       <returns>텐서 버퍼의 IMemoryBufferReference 표현입니다.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorInt8Bit.GetAsVectorView">
-      <summary>데이터의 읽기 전용 뷰를 반환 합니다.</summary>
-      <returns>데이터의 읽기 전용 뷰입니다.</returns>
+      <summary>데이터의 읽기 전용 보기를 반환합니다.</summary>
+      <returns>데이터의 읽기 전용 보기입니다.</returns>
     </member>
     <member name="T:Windows.AI.MachineLearning.TensorKind">
-      <summary>지원 되는 텐서 데이터 형식의 목록을 정의 합니다.</summary>
+      <summary>지원되는 Tensor의 데이터 형식 목록을 정의합니다.</summary>
     </member>
     <member name="F:Windows.AI.MachineLearning.TensorKind.Boolean">
-      <summary>텐서 형식은 * * Boolean * *입니다.</summary>
+      <summary>텐서 형식이 **Boolean**입니다.</summary>
     </member>
     <member name="F:Windows.AI.MachineLearning.TensorKind.Complex128">
-      <summary>형식이 잘못 되었습니다.</summary>
+      <summary>잘못된 형식입니다.</summary>
     </member>
     <member name="F:Windows.AI.MachineLearning.TensorKind.Complex64">
-      <summary>형식이 잘못 되었습니다.</summary>
+      <summary>잘못된 형식입니다.</summary>
     </member>
     <member name="F:Windows.AI.MachineLearning.TensorKind.Double">
-      <summary>텐서 형식은 64 비트 부동 소수점입니다.</summary>
+      <summary>텐서 형식이 64비트 부동 소수점입니다.</summary>
     </member>
     <member name="F:Windows.AI.MachineLearning.TensorKind.Float">
-      <summary>텐서 형식은 32 비트 부동 소수점입니다.</summary>
+      <summary>텐서 형식이 32비트 부동 소수점입니다.</summary>
     </member>
     <member name="F:Windows.AI.MachineLearning.TensorKind.Float16">
-      <summary>텐서 형식은 16 비트 부동 소수점입니다.</summary>
+      <summary>텐서 형식이 16비트 부동 소수점입니다.</summary>
     </member>
     <member name="F:Windows.AI.MachineLearning.TensorKind.Int16">
-      <summary>텐서 형식은 16 비트 부호 있는 정수입니다.</summary>
+      <summary>텐서 형식이 16비트 부호 있는 정수입니다.</summary>
     </member>
     <member name="F:Windows.AI.MachineLearning.TensorKind.Int32">
-      <summary>텐서 형식은 32 비트의 부호 있는 정수입니다.</summary>
+      <summary>텐서 형식이 32비트 부호 있는 정수입니다.</summary>
     </member>
     <member name="F:Windows.AI.MachineLearning.TensorKind.Int64">
-      <summary>텐서 형식은 64 비트의 부호 있는 정수입니다.</summary>
+      <summary>텐서 형식이 64비트 부호 있는 정수입니다.</summary>
     </member>
     <member name="F:Windows.AI.MachineLearning.TensorKind.Int8">
-      <summary>텐서 형식은 8 비트 부호 있는 정수입니다.</summary>
+      <summary>텐서 형식이 8비트 부호 있는 정수입니다.</summary>
     </member>
     <member name="F:Windows.AI.MachineLearning.TensorKind.String">
-      <summary>텐서 형식은 * * 문자열 * *입니다.</summary>
+      <summary>텐서 형식이 **String**입니다.</summary>
     </member>
     <member name="F:Windows.AI.MachineLearning.TensorKind.UInt16">
-      <summary>텐서 형식은 16 비트 부호 없는 정수입니다.</summary>
+      <summary>텐서 형식이 16비트 부호 없는 정수입니다.</summary>
     </member>
     <member name="F:Windows.AI.MachineLearning.TensorKind.UInt32">
-      <summary>텐서 형식은 32 비트의 부호 없는 정수입니다.</summary>
+      <summary>텐서 형식이 32비트 부호 없는 정수입니다.</summary>
     </member>
     <member name="F:Windows.AI.MachineLearning.TensorKind.UInt64">
-      <summary>텐서 형식은 64 비트의 부호 없는 정수입니다.</summary>
+      <summary>텐서 형식이 64비트 부호 없는 정수입니다.</summary>
     </member>
     <member name="F:Windows.AI.MachineLearning.TensorKind.UInt8">
-      <summary>텐서 형식은 8 비트의 부호 없는 정수입니다.</summary>
+      <summary>텐서 형식이 8비트 부호 없는 정수입니다.</summary>
     </member>
     <member name="F:Windows.AI.MachineLearning.TensorKind.Undefined">
-      <summary>형식이 잘못 되었습니다.</summary>
+      <summary>잘못된 형식입니다.</summary>
     </member>
     <member name="T:Windows.AI.MachineLearning.TensorString">
-      <summary>문자열 텐서 개체입니다.</summary>
+      <summary>문자열 Tensor 개체입니다.</summary>
     </member>
     <member name="P:Windows.AI.MachineLearning.TensorString.Kind">
       <summary>기능의 종류입니다.</summary>
       <returns>기능의 종류입니다.</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.TensorString.Shape">
-      <summary>각 차원의 개수와 크기를 반환 합니다.</summary>
-      <returns>각 차원의 개수와 크기입니다.</returns>
+      <summary>각 차원의 수와 크기를 반환합니다.</summary>
+      <returns>차원의 개수와 각각의 크기입니다.</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.TensorString.TensorKind">
-      <summary>텐서의 데이터 형식을 반환 합니다.</summary>
+      <summary>Tensor의 데이터 형식을 반환합니다.</summary>
       <returns>텐서의 데이터 형식입니다.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorString.Close">
-      <summary>이 개체에서 생성 된 처리 되지 않은 IMemoryBufferReference 개체가 없으면 * * Close * *는 개체를 삭제 하 고 연결 된 리소스를 제거 합니다. 그렇지 않으면 * * Close * *가 연결 된 리소스에서 분리 되 고 마지막 IMemoryBufferReference 닫히면 제거 됩니다.</summary>
+      <summary>이 개체에서 생성되는 별다른 IMemoryBufferReference 개체가 없으면 **Close**는 개체를 삭제하고 연결된 리소스를 제거합니다. 그렇지 않으면 **Close**는 스스로를 연결된 리소스에서 분리하며, 이러한 리소스는 마지막 IMemoryBufferReference를 닫을 때 삭제됩니다.</summary>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorString.Create">
-      <summary>버퍼를 할당 하지 않고 문자열 텐서 개체를 만듭니다.</summary>
-      <returns>문자열 텐서 개체입니다.</returns>
+      <summary>버퍼를 할당하지 않고 문자열 Tensor 개체를 만듭니다.</summary>
+      <returns>문자열 Tensor 개체입니다.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorString.Create(Windows.Foundation.Collections.IIterable{System.Int64})">
-      <summary>문자열 텐서 개체를 만들고 * shape * 크기의 버퍼를 할당 합니다.</summary>
+      <summary>문자열 텐서 개체를 만들고 *shape* 크기의 버퍼를 할당합니다.</summary>
       <param name="shape">버퍼의 크기입니다.</param>
-      <returns>지정 된 크기의 버퍼를 사용 하는 문자열 텐서 개체입니다.</returns>
+      <returns>지정된 크기의 버퍼를 가진 문자열 텐서 개체입니다.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorString.CreateFromArray(Windows.Foundation.Collections.IIterable{System.Int64},System.String[])">
-      <summary>문자열 텐서 개체를 만들고, * shape * 크기의 버퍼를 할당 하 고, * data *를 모두 복사 합니다.</summary>
+      <summary>문자열 텐서 개체를 만들고, *shape* 크기의 버퍼를 할당한 후, 모든 *data*를 여기로 복사합니다.</summary>
       <param name="shape">버퍼의 크기입니다.</param>
       <param name="data">버퍼에 복사할 데이터입니다.</param>
-      <returns>지정 된 데이터를 포함 하는 버퍼를 사용 하는 문자열 텐서 개체입니다.</returns>
+      <returns>지정된 데이터를 포함하는 버퍼를 가진 문자열 텐서 개체입니다.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorString.CreateFromIterable(Windows.Foundation.Collections.IIterable{System.Int64},Windows.Foundation.Collections.IIterable{System.String})">
-      <summary>문자열 텐서 개체를 만들고, * shape * 크기의 버퍼를 할당 하 고, * data *를 모두 복사 합니다.</summary>
+      <summary>문자열 텐서 개체를 만들고, *shape* 크기의 버퍼를 할당한 후, 모든 *data*를 여기로 복사합니다.</summary>
       <param name="shape">버퍼의 크기입니다.</param>
       <param name="data">버퍼에 복사할 데이터입니다.</param>
-      <returns>지정 된 데이터를 포함 하는 버퍼를 사용 하는 문자열 텐서 개체입니다.</returns>
+      <returns>지정된 데이터를 포함하는 버퍼를 가진 문자열 텐서 개체입니다.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorString.CreateFromShapeArrayAndDataArray(System.Int64[],System.String[])">
-      <summary>문자열 텐서 개체를 만들고, * shape * 크기의 버퍼를 할당 하 고, * data *를 모두 복사 합니다.</summary>
+      <summary>문자열 텐서 개체를 만들고, *shape* 크기의 버퍼를 할당한 후, 모든 *data*를 여기로 복사합니다.</summary>
       <param name="shape">버퍼의 크기입니다.</param>
       <param name="data">버퍼에 복사할 데이터입니다.</param>
-      <returns>지정 된 데이터를 포함 하는 버퍼를 사용 하는 문자열 텐서 개체입니다.</returns>
+      <returns>지정된 데이터를 포함하는 버퍼를 가진 문자열 텐서 개체입니다.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorString.CreateReference">
-      <summary>이 메서드는 TensorString 개체에서 허용 되지 않으므로 사용 하면 안 됩니다.</summary>
-      <returns>반환 된 IMemoryBufferReference는 항상 * * null * *입니다.</returns>
+      <summary>이 방법은 TensorString 개체에 허용되지 않아 사용할 수 없습니다.</summary>
+      <returns>반환된 IMemoryBufferReference는 항상 **null**입니다.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorString.GetAsVectorView">
-      <summary>데이터의 읽기 전용 뷰를 반환 합니다.</summary>
-      <returns>데이터의 읽기 전용 뷰입니다.</returns>
+      <summary>데이터의 읽기 전용 보기를 반환합니다.</summary>
+      <returns>데이터의 읽기 전용 보기입니다.</returns>
     </member>
     <member name="T:Windows.AI.MachineLearning.TensorUInt16Bit">
-      <summary>16 비트 부호 없는 정수 텐서 개체입니다.</summary>
+      <summary>16비트 부호 없는 정수 텐서 개체입니다.</summary>
     </member>
     <member name="P:Windows.AI.MachineLearning.TensorUInt16Bit.Kind">
       <summary>기능의 종류입니다.</summary>
       <returns>기능의 종류입니다.</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.TensorUInt16Bit.Shape">
-      <summary>각 차원의 개수와 크기를 반환 합니다.</summary>
-      <returns>각 차원의 개수와 크기입니다.</returns>
+      <summary>각 차원의 수와 크기를 반환합니다.</summary>
+      <returns>차원의 개수와 각각의 크기입니다.</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.TensorUInt16Bit.TensorKind">
-      <summary>텐서의 데이터 형식을 반환 합니다.</summary>
+      <summary>Tensor의 데이터 형식을 반환합니다.</summary>
       <returns>텐서의 데이터 형식입니다.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorUInt16Bit.Close">
-      <summary>이 개체에서 생성 된 처리 되지 않은 IMemoryBufferReference 개체가 없으면 * * Close * *는 개체를 삭제 하 고 연결 된 리소스를 제거 합니다. 그렇지 않으면 * * Close * *가 연결 된 리소스에서 분리 되 고 마지막 IMemoryBufferReference 닫히면 제거 됩니다.</summary>
+      <summary>이 개체에서 생성되는 별다른 IMemoryBufferReference 개체가 없으면 **Close**는 개체를 삭제하고 연결된 리소스를 제거합니다. 그렇지 않으면 **Close**는 스스로를 연결된 리소스에서 분리하며, 이러한 리소스는 마지막 IMemoryBufferReference를 닫을 때 삭제됩니다.</summary>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorUInt16Bit.Create">
-      <summary>버퍼를 할당 하지 않고 16 비트 부호 없는 정수 텐서 개체를 만듭니다.</summary>
-      <returns>16 비트 부호 없는 정수 텐서 개체입니다.</returns>
+      <summary>버퍼를 할당하지 않고 16비트 부호 없는 정수 텐서 개체를 만듭니다.</summary>
+      <returns>16비트 부호 없는 정수 텐서 개체입니다.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorUInt16Bit.Create(Windows.Foundation.Collections.IIterable{System.Int64})">
-      <summary>16 비트 부호 없는 정수 텐서 개체를 만들고 * shape * 크기의 버퍼를 할당 합니다.</summary>
+      <summary>16비트 부호 없는 정수 텐서 개체를 만들고 *shape* 크기의 버퍼를 할당합니다.</summary>
       <param name="shape">버퍼의 크기입니다.</param>
-      <returns>지정 된 크기의 버퍼를 사용 하는 16 비트 부호 없는 정수 텐서 개체입니다.</returns>
+      <returns>지정된 크기의 버퍼를 가진 16비트 부호 없는 정수 텐서 개체입니다.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorUInt16Bit.CreateFromArray(Windows.Foundation.Collections.IIterable{System.Int64},System.UInt16[])">
-      <summary>16 비트 부호 없는 정수 텐서 개체를 만들고, * shape * 크기의 버퍼를 할당 하 고, * data *를 모두 복사 합니다.</summary>
+      <summary>16비트 부호 없는 정수 텐서 개체를 만들고, *shape* 크기의 버퍼를 할당한 후, 모든 *data*를 여기로 복사합니다.</summary>
       <param name="shape">버퍼의 크기입니다.</param>
       <param name="data">버퍼에 복사할 데이터입니다.</param>
-      <returns>지정 된 데이터를 포함 하는 버퍼를 사용 하는 16 비트 부호 없는 정수 텐서 개체입니다.</returns>
+      <returns>지정된 데이터를 포함하는 버퍼를 가진 16비트 부호 없는 정수 텐서 개체입니다.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorUInt16Bit.CreateFromBuffer(System.Int64[],Windows.Storage.Streams.IBuffer)">
-      <summary>지정 된 * shape *를 사용 하 여 16 비트 부호 없는 정수 텐서 개체를 만들고 이후 평가를 위해 * buffer *의 기본 버퍼를 사용 합니다.</summary>
+      <summary>지정된 *shape*의 16비트 부호 없는 정수 텐서 개체를 만들고, *buffer*의 기반 버퍼를 후속 평가에 사용합니다.</summary>
       <param name="shape">버퍼의 크기입니다.</param>
-      <param name="buffer">평가 하는 동안 사용할 버퍼입니다.</param>
-      <returns>제공 된 IBuffer * buffer *에 대 한 버퍼 참조에 의해 지원 되는 16 비트 부호 없는 정수 텐서 개체입니다.</returns>
+      <param name="buffer">평가하는 동안 사용하는 버퍼입니다.</param>
+      <returns>16비트 부호 없는 정수 텐서 개체는 제공된 IBuffer *buffer*로의 버퍼 참조로 지원됩니다.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorUInt16Bit.CreateFromIterable(Windows.Foundation.Collections.IIterable{System.Int64},Windows.Foundation.Collections.IIterable{System.UInt16})">
-      <summary>16 비트 부호 없는 정수 텐서 개체를 만들고, * shape * 크기의 버퍼를 할당 하 고, * data *를 모두 복사 합니다.</summary>
+      <summary>16비트 부호 없는 정수 텐서 개체를 만들고, *shape* 크기의 버퍼를 할당한 후, 모든 *data*를 여기로 복사합니다.</summary>
       <param name="shape">버퍼의 크기입니다.</param>
       <param name="data">버퍼에 복사할 데이터입니다.</param>
-      <returns>지정 된 데이터를 포함 하는 버퍼를 사용 하는 16 비트 부호 없는 정수 텐서 개체입니다.</returns>
+      <returns>지정된 데이터를 포함하는 버퍼를 가진 16비트 부호 없는 정수 텐서 개체입니다.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorUInt16Bit.CreateFromShapeArrayAndDataArray(System.Int64[],System.UInt16[])">
-      <summary>16 비트 부호 없는 정수 텐서 개체를 만들고, * shape * 크기의 버퍼를 할당 하 고, * data *를 모두 복사 합니다.</summary>
+      <summary>16비트 부호 없는 정수 텐서 개체를 만들고, *shape* 크기의 버퍼를 할당한 후, 모든 *data*를 여기로 복사합니다.</summary>
       <param name="shape">버퍼의 크기입니다.</param>
       <param name="data">버퍼에 복사할 데이터입니다.</param>
-      <returns>지정 된 데이터를 포함 하는 버퍼를 사용 하는 16 비트 부호 없는 정수 텐서 개체입니다.</returns>
+      <returns>지정된 데이터를 포함하는 버퍼를 가진 16비트 부호 없는 정수 텐서 개체입니다.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorUInt16Bit.CreateReference">
-      <summary>16 비트 부호 없는 정수 텐서 개체를 지 원하는 버퍼의 IMemoryBufferReference 표현을 반환 합니다.</summary>
+      <summary>16비트 부호 없는 정수 텐서 개체를 지원하는 버퍼의 IMemoryBufferReference 표현을 반환합니다.</summary>
       <returns>텐서 버퍼의 IMemoryBufferReference 표현입니다.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorUInt16Bit.GetAsVectorView">
-      <summary>데이터의 읽기 전용 뷰를 반환 합니다.</summary>
-      <returns>데이터의 읽기 전용 뷰입니다.</returns>
+      <summary>데이터의 읽기 전용 보기를 반환합니다.</summary>
+      <returns>데이터의 읽기 전용 보기입니다.</returns>
     </member>
     <member name="T:Windows.AI.MachineLearning.TensorUInt32Bit">
-      <summary>32 비트 부호 없는 정수 텐서 개체입니다.</summary>
+      <summary>32비트 부호 없는 정수 텐서 개체입니다.</summary>
     </member>
     <member name="P:Windows.AI.MachineLearning.TensorUInt32Bit.Kind">
       <summary>기능의 종류입니다.</summary>
       <returns>기능의 종류입니다.</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.TensorUInt32Bit.Shape">
-      <summary>각 차원의 개수와 크기를 반환 합니다.</summary>
-      <returns>각 차원의 개수와 크기입니다.</returns>
+      <summary>각 차원의 수와 크기를 반환합니다.</summary>
+      <returns>차원의 개수와 각각의 크기입니다.</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.TensorUInt32Bit.TensorKind">
-      <summary>텐서의 데이터 형식을 반환 합니다.</summary>
+      <summary>Tensor의 데이터 형식을 반환합니다.</summary>
       <returns>텐서의 데이터 형식입니다.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorUInt32Bit.Close">
-      <summary>이 개체에서 생성 된 처리 되지 않은 IMemoryBufferReference 개체가 없으면 * * Close * *는 개체를 삭제 하 고 연결 된 리소스를 제거 합니다. 그렇지 않으면 * * Close * *가 연결 된 리소스에서 분리 되 고 마지막 IMemoryBufferReference 닫히면 제거 됩니다.</summary>
+      <summary>이 개체에서 생성되는 별다른 IMemoryBufferReference 개체가 없으면 **Close**는 개체를 삭제하고 연결된 리소스를 제거합니다. 그렇지 않으면 **Close**는 스스로를 연결된 리소스에서 분리하며, 이러한 리소스는 마지막 IMemoryBufferReference를 닫을 때 삭제됩니다.</summary>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorUInt32Bit.Create">
-      <summary>버퍼를 할당 하지 않고 32 비트 부호 없는 정수 텐서 개체를 만듭니다.</summary>
-      <returns>32 비트 부호 없는 정수 텐서 개체입니다.</returns>
+      <summary>버퍼를 할당하지 않고 32비트 부호 없는 정수 텐서 개체를 만듭니다.</summary>
+      <returns>32비트 부호 없는 정수 텐서 개체입니다.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorUInt32Bit.Create(Windows.Foundation.Collections.IIterable{System.Int64})">
-      <summary>32 비트 부호 없는 정수 텐서 개체를 만들고 * shape * 크기의 버퍼를 할당 합니다.</summary>
+      <summary>32비트 부호 없는 정수 텐서 개체를 만들고 *shape* 크기의 버퍼를 할당합니다.</summary>
       <param name="shape">버퍼의 크기입니다.</param>
-      <returns>지정 된 크기의 버퍼를 사용 하는 32 비트 부호 없는 정수 텐서 개체입니다.</returns>
+      <returns>지정된 크기의 버퍼를 가진 32비트 부호 없는 정수 텐서 개체입니다.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorUInt32Bit.CreateFromArray(Windows.Foundation.Collections.IIterable{System.Int64},System.UInt32[])">
-      <summary>32 비트 부호 없는 정수 텐서 개체를 만들고, * shape * 크기의 버퍼를 할당 하 고, * data *를 모두 복사 합니다.</summary>
+      <summary>32비트 부호 없는 정수 텐서 개체를 만들고, *shape* 크기의 버퍼를 할당한 후, 모든 *data*를 여기로 복사합니다.</summary>
       <param name="shape">버퍼의 크기입니다.</param>
       <param name="data">버퍼에 복사할 데이터입니다.</param>
-      <returns>지정 된 데이터를 포함 하는 버퍼를 사용 하는 32 비트 부호 없는 정수 텐서 개체입니다.</returns>
+      <returns>지정된 데이터를 포함하는 버퍼를 가진 32비트 부호 없는 정수 텐서 개체입니다.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorUInt32Bit.CreateFromBuffer(System.Int64[],Windows.Storage.Streams.IBuffer)">
-      <summary>지정 된 * shape *를 사용 하 여 32 비트 부호 없는 정수 텐서 개체를 만들고 이후 평가를 위해 * buffer *의 기본 버퍼를 사용 합니다.</summary>
+      <summary>지정된 *shape*의 32비트 부호 없는 정수 텐서 개체를 만들고, *buffer*의 기반 버퍼를 후속 평가에 사용합니다.</summary>
       <param name="shape">버퍼의 크기입니다.</param>
-      <param name="buffer">평가 하는 동안 사용할 버퍼입니다.</param>
-      <returns>제공 된 IBuffer * buffer *에 대 한 버퍼 참조에 의해 지원 되는 32 비트 부호 없는 정수 텐서 개체입니다.</returns>
+      <param name="buffer">평가하는 동안 사용하는 버퍼입니다.</param>
+      <returns>32비트 부호 없는 정수 텐서 개체는 제공된 IBuffer *buffer*로의 버퍼 참조로 지원됩니다.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorUInt32Bit.CreateFromIterable(Windows.Foundation.Collections.IIterable{System.Int64},Windows.Foundation.Collections.IIterable{System.UInt32})">
-      <summary>32 비트 부호 없는 정수 텐서 개체를 만들고, * shape * 크기의 버퍼를 할당 하 고, * data *를 모두 복사 합니다.</summary>
+      <summary>32비트 부호 없는 정수 텐서 개체를 만들고, *shape* 크기의 버퍼를 할당한 후, 모든 *data*를 여기로 복사합니다.</summary>
       <param name="shape">버퍼의 크기입니다.</param>
       <param name="data">버퍼에 복사할 데이터입니다.</param>
-      <returns>지정 된 데이터를 포함 하는 버퍼를 사용 하는 32 비트 부호 없는 정수 텐서 개체입니다.</returns>
+      <returns>지정된 데이터를 포함하는 버퍼를 가진 32비트 부호 없는 정수 텐서 개체입니다.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorUInt32Bit.CreateFromShapeArrayAndDataArray(System.Int64[],System.UInt32[])">
-      <summary>32 비트 부호 없는 정수 텐서 개체를 만들고, * shape * 크기의 버퍼를 할당 하 고, * data *를 모두 복사 합니다.</summary>
+      <summary>32비트 부호 없는 정수 텐서 개체를 만들고, *shape* 크기의 버퍼를 할당한 후, 모든 *data*를 여기로 복사합니다.</summary>
       <param name="shape">버퍼의 크기입니다.</param>
       <param name="data">버퍼에 복사할 데이터입니다.</param>
-      <returns>지정 된 데이터를 포함 하는 버퍼를 사용 하는 32 비트 부호 없는 정수 텐서 개체입니다.</returns>
+      <returns>지정된 데이터를 포함하는 버퍼를 가진 32비트 부호 없는 정수 텐서 개체입니다.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorUInt32Bit.CreateReference">
-      <summary>32 비트 부호 없는 정수 텐서 개체를 지 원하는 버퍼의 IMemoryBufferReference 표현을 반환 합니다.</summary>
+      <summary>32비트 부호 없는 정수 텐서 개체를 지원하는 버퍼의 IMemoryBufferReference 표현을 반환합니다.</summary>
       <returns>텐서 버퍼의 IMemoryBufferReference 표현입니다.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorUInt32Bit.GetAsVectorView">
-      <summary>데이터의 읽기 전용 뷰를 반환 합니다.</summary>
-      <returns>데이터의 읽기 전용 뷰입니다.</returns>
+      <summary>데이터의 읽기 전용 보기를 반환합니다.</summary>
+      <returns>데이터의 읽기 전용 보기입니다.</returns>
     </member>
     <member name="T:Windows.AI.MachineLearning.TensorUInt64Bit">
-      <summary>64 비트 부호 없는 정수 텐서 개체입니다.</summary>
+      <summary>64비트 부호 없는 정수 텐서 개체입니다.</summary>
     </member>
     <member name="P:Windows.AI.MachineLearning.TensorUInt64Bit.Kind">
       <summary>기능의 종류입니다.</summary>
       <returns>기능의 종류입니다.</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.TensorUInt64Bit.Shape">
-      <summary>각 차원의 개수와 크기를 반환 합니다.</summary>
-      <returns>각 차원의 개수와 크기입니다.</returns>
+      <summary>각 차원의 수와 크기를 반환합니다.</summary>
+      <returns>차원의 개수와 각각의 크기입니다.</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.TensorUInt64Bit.TensorKind">
-      <summary>텐서의 데이터 형식을 반환 합니다.</summary>
+      <summary>Tensor의 데이터 형식을 반환합니다.</summary>
       <returns>텐서의 데이터 형식입니다.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorUInt64Bit.Close">
-      <summary>이 개체에서 생성 된 처리 되지 않은 IMemoryBufferReference 개체가 없으면 * * Close * *는 개체를 삭제 하 고 연결 된 리소스를 제거 합니다. 그렇지 않으면 * * Close * *가 연결 된 리소스에서 분리 되 고 마지막 IMemoryBufferReference 닫히면 제거 됩니다.</summary>
+      <summary>이 개체에서 생성되는 별다른 IMemoryBufferReference 개체가 없으면 **Close**는 개체를 삭제하고 연결된 리소스를 제거합니다. 그렇지 않으면 **Close**는 스스로를 연결된 리소스에서 분리하며, 이러한 리소스는 마지막 IMemoryBufferReference를 닫을 때 삭제됩니다.</summary>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorUInt64Bit.Create">
-      <summary>버퍼를 할당 하지 않고 64 비트 부호 없는 정수 텐서 개체를 만듭니다.</summary>
-      <returns>64 비트 부호 없는 정수 텐서 개체입니다.</returns>
+      <summary>버퍼를 할당하지 않고 64비트 부호 없는 정수 텐서 개체를 만듭니다.</summary>
+      <returns>64비트 부호 없는 정수 텐서 개체입니다.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorUInt64Bit.Create(Windows.Foundation.Collections.IIterable{System.Int64})">
-      <summary>64 비트 부호 없는 정수 텐서 개체를 만들고 * shape * 크기의 버퍼를 할당 합니다.</summary>
+      <summary>64비트 부호 없는 정수 텐서 개체를 만들고 *shape* 크기의 버퍼를 할당합니다.</summary>
       <param name="shape">버퍼의 크기입니다.</param>
-      <returns>지정 된 크기의 버퍼를 사용 하는 64 비트 부호 없는 정수 텐서 개체입니다.</returns>
+      <returns>지정된 크기의 버퍼를 가진 64비트 부호 없는 정수 텐서 개체입니다.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorUInt64Bit.CreateFromArray(Windows.Foundation.Collections.IIterable{System.Int64},System.UInt64[])">
-      <summary>64 비트 부호 없는 정수 텐서 개체를 만들고, * shape * 크기의 버퍼를 할당 하 고, * data *를 모두 복사 합니다.</summary>
+      <summary>64비트 부호 없는 정수 텐서 개체를 만들고, *shape* 크기의 버퍼를 할당한 후, 모든 *data*를 여기로 복사합니다.</summary>
       <param name="shape">버퍼의 크기입니다.</param>
       <param name="data">버퍼에 복사할 데이터입니다.</param>
-      <returns>지정 된 데이터를 포함 하는 버퍼를 사용 하는 64 비트 부호 없는 정수 텐서 개체입니다.</returns>
+      <returns>지정된 데이터를 포함하는 버퍼를 가진 64비트 부호 없는 정수 텐서 개체입니다.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorUInt64Bit.CreateFromBuffer(System.Int64[],Windows.Storage.Streams.IBuffer)">
-      <summary>지정 된 * shape *를 사용 하 여 64 비트 부호 없는 정수 텐서 개체를 만들고 이후 평가를 위해 * buffer *의 기본 버퍼를 사용 합니다.</summary>
+      <summary>지정된 *shape*의 64비트 부호 없는 정수 텐서 개체를 만들고, *buffer*의 기반 버퍼를 후속 평가에 사용합니다.</summary>
       <param name="shape">버퍼의 크기입니다.</param>
-      <param name="buffer">평가 하는 동안 사용할 버퍼입니다.</param>
-      <returns>제공 된 IBuffer * buffer *에 대 한 버퍼 참조에 의해 지원 되는 64 비트 부호 없는 정수 텐서 개체입니다.</returns>
+      <param name="buffer">평가하는 동안 사용하는 버퍼입니다.</param>
+      <returns>64비트 부호 없는 정수 텐서 개체는 제공된 IBuffer *buffer*로의 버퍼 참조로 지원됩니다.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorUInt64Bit.CreateFromIterable(Windows.Foundation.Collections.IIterable{System.Int64},Windows.Foundation.Collections.IIterable{System.UInt64})">
-      <summary>64 비트 부호 없는 정수 텐서 개체를 만들고, * shape * 크기의 버퍼를 할당 하 고, * data *를 모두 복사 합니다.</summary>
+      <summary>64비트 부호 없는 정수 텐서 개체를 만들고, *shape* 크기의 버퍼를 할당한 후, 모든 *data*를 여기로 복사합니다.</summary>
       <param name="shape">버퍼의 크기입니다.</param>
       <param name="data">버퍼에 복사할 데이터입니다.</param>
-      <returns>지정 된 데이터를 포함 하는 버퍼를 사용 하는 64 비트 부호 없는 정수 텐서 개체입니다.</returns>
+      <returns>지정된 데이터를 포함하는 버퍼를 가진 64비트 부호 없는 정수 텐서 개체입니다.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorUInt64Bit.CreateFromShapeArrayAndDataArray(System.Int64[],System.UInt64[])">
-      <summary>64 비트 부호 없는 정수 텐서 개체를 만들고, * shape * 크기의 버퍼를 할당 하 고, * data *를 모두 복사 합니다.</summary>
+      <summary>64비트 부호 없는 정수 텐서 개체를 만들고, *shape* 크기의 버퍼를 할당한 후, 모든 *data*를 여기로 복사합니다.</summary>
       <param name="shape">버퍼의 크기입니다.</param>
       <param name="data">버퍼에 복사할 데이터입니다.</param>
-      <returns>지정 된 데이터를 포함 하는 버퍼를 사용 하는 64 비트 부호 없는 정수 텐서 개체입니다.</returns>
+      <returns>지정된 데이터를 포함하는 버퍼를 가진 64비트 부호 없는 정수 텐서 개체입니다.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorUInt64Bit.CreateReference">
-      <summary>64 비트 부호 없는 정수 텐서 개체를 지 원하는 버퍼의 IMemoryBufferReference 표현을 반환 합니다.</summary>
+      <summary>64비트 부호 없는 정수 텐서 개체를 지원하는 버퍼의 IMemoryBufferReference 표현을 반환합니다.</summary>
       <returns>텐서 버퍼의 IMemoryBufferReference 표현입니다.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorUInt64Bit.GetAsVectorView">
-      <summary>데이터의 읽기 전용 뷰를 반환 합니다.</summary>
-      <returns>데이터의 읽기 전용 뷰입니다.</returns>
+      <summary>데이터의 읽기 전용 보기를 반환합니다.</summary>
+      <returns>데이터의 읽기 전용 보기입니다.</returns>
     </member>
     <member name="T:Windows.AI.MachineLearning.TensorUInt8Bit">
-      <summary>8 비트 부호 없는 정수 텐서 개체입니다.</summary>
+      <summary>8비트 부호 없는 정수 텐서 개체입니다.</summary>
     </member>
     <member name="P:Windows.AI.MachineLearning.TensorUInt8Bit.Kind">
       <summary>기능의 종류입니다.</summary>
       <returns>기능의 종류입니다.</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.TensorUInt8Bit.Shape">
-      <summary>각 차원의 개수와 크기를 반환 합니다.</summary>
-      <returns>각 차원의 개수와 크기입니다.</returns>
+      <summary>각 차원의 수와 크기를 반환합니다.</summary>
+      <returns>차원의 개수와 각각의 크기입니다.</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.TensorUInt8Bit.TensorKind">
-      <summary>텐서의 데이터 형식을 반환 합니다.</summary>
+      <summary>Tensor의 데이터 형식을 반환합니다.</summary>
       <returns>텐서의 데이터 형식입니다.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorUInt8Bit.Close">
-      <summary>이 개체에서 생성 된 처리 되지 않은 IMemoryBufferReference 개체가 없으면 * * Close * *는 개체를 삭제 하 고 연결 된 리소스를 제거 합니다. 그렇지 않으면 * * Close * *가 연결 된 리소스에서 분리 되 고 마지막 IMemoryBufferReference 닫히면 제거 됩니다.</summary>
+      <summary>이 개체에서 생성되는 별다른 IMemoryBufferReference 개체가 없으면 **Close**는 개체를 삭제하고 연결된 리소스를 제거합니다. 그렇지 않으면 **Close**는 스스로를 연결된 리소스에서 분리하며, 이러한 리소스는 마지막 IMemoryBufferReference를 닫을 때 삭제됩니다.</summary>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorUInt8Bit.Create">
-      <summary>버퍼를 할당 하지 않고 8 비트 부호 없는 정수 텐서 개체를 만듭니다.</summary>
-      <returns>8 비트 부호 없는 정수 텐서 개체입니다.</returns>
+      <summary>버퍼를 할당하지 않고 8비트 부호 없는 정수 텐서 개체를 만듭니다.</summary>
+      <returns>8비트 부호 없는 정수 텐서 개체입니다.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorUInt8Bit.Create(Windows.Foundation.Collections.IIterable{System.Int64})">
-      <summary>8 비트 부호 없는 정수 텐서 개체를 만들고 * shape * 크기의 버퍼를 할당 합니다.</summary>
+      <summary>8비트 부호 없는 정수 텐서 개체를 만들고 *shape* 크기의 버퍼를 할당합니다.</summary>
       <param name="shape">버퍼의 크기입니다.</param>
-      <returns>지정 된 크기의 버퍼를 포함 하는 8 비트 부호 없는 정수 텐서 개체입니다.</returns>
+      <returns>지정된 크기의 버퍼를 가진 8비트 부호 없는 정수 텐서 개체입니다.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorUInt8Bit.CreateFromArray(Windows.Foundation.Collections.IIterable{System.Int64},System.Byte[])">
-      <summary>8 비트 부호 없는 정수 텐서 개체를 만들고, * shape * 크기의 버퍼를 할당 하 고, * data *를 모두 복사 합니다.</summary>
+      <summary>8비트 부호 없는 정수 텐서 개체를 만들고, *shape* 크기의 버퍼를 할당한 후, 모든 *data*를 여기로 복사합니다.</summary>
       <param name="shape">버퍼의 크기입니다.</param>
       <param name="data">버퍼에 복사할 데이터입니다.</param>
-      <returns>지정 된 데이터를 포함 하는 버퍼를 사용 하는 8 비트 부호 없는 정수 텐서 개체입니다.</returns>
+      <returns>지정된 데이터를 포함하는 버퍼를 가진 8비트 부호 없는 정수 텐서 개체입니다.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorUInt8Bit.CreateFromBuffer(System.Int64[],Windows.Storage.Streams.IBuffer)">
-      <summary>지정 된 * shape *를 사용 하 여 8 비트 부호 없는 정수 텐서 개체를 만들고 이후 평가를 위해 * buffer *의 기본 버퍼를 사용 합니다.</summary>
+      <summary>지정된 *shape*의 8비트 부호 없는 정수 텐서 개체를 만들고, *buffer*의 기반 버퍼를 후속 평가에 사용합니다.</summary>
       <param name="shape">버퍼의 크기입니다.</param>
-      <param name="buffer">평가 하는 동안 사용할 버퍼입니다.</param>
-      <returns>제공 된 IBuffer * buffer *에 대 한 버퍼 참조에 의해 지원 되는 8 비트 부호 없는 정수 텐서 개체입니다.</returns>
+      <param name="buffer">평가하는 동안 사용하는 버퍼입니다.</param>
+      <returns>8비트 부호 없는 정수 텐서 개체는 제공된 IBuffer *buffer*로의 버퍼 참조로 지원됩니다.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorUInt8Bit.CreateFromIterable(Windows.Foundation.Collections.IIterable{System.Int64},Windows.Foundation.Collections.IIterable{System.Byte})">
-      <summary>8 비트 부호 없는 정수 텐서 개체를 만들고, * shape * 크기의 버퍼를 할당 하 고, * data *를 모두 복사 합니다.</summary>
+      <summary>8비트 부호 없는 정수 텐서 개체를 만들고, *shape* 크기의 버퍼를 할당한 후, 모든 *data*를 여기로 복사합니다.</summary>
       <param name="shape">버퍼의 크기입니다.</param>
       <param name="data">버퍼에 복사할 데이터입니다.</param>
-      <returns>지정 된 데이터를 포함 하는 버퍼를 사용 하는 8 비트 부호 없는 정수 텐서 개체입니다.</returns>
+      <returns>지정된 데이터를 포함하는 버퍼를 가진 8비트 부호 없는 정수 텐서 개체입니다.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorUInt8Bit.CreateFromShapeArrayAndDataArray(System.Int64[],System.Byte[])">
-      <summary>8 비트 부호 없는 정수 텐서 개체를 만들고, * shape * 크기의 버퍼를 할당 하 고, * data *를 모두 복사 합니다.</summary>
+      <summary>8비트 부호 없는 정수 텐서 개체를 만들고, *shape* 크기의 버퍼를 할당한 후, 모든 *data*를 여기로 복사합니다.</summary>
       <param name="shape">버퍼의 크기입니다.</param>
       <param name="data">버퍼에 복사할 데이터입니다.</param>
-      <returns>지정 된 데이터를 포함 하는 버퍼를 사용 하는 8 비트 부호 없는 정수 텐서 개체입니다.</returns>
+      <returns>지정된 데이터를 포함하는 버퍼를 가진 8비트 부호 없는 정수 텐서 개체입니다.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorUInt8Bit.CreateReference">
-      <summary>부호 없는 8 비트 텐서 개체를 지 원하는 버퍼의 IMemoryBufferReference 표현을 반환 합니다.</summary>
+      <summary>8비트 부호 없는 정수 텐서 개체를 지원하는 버퍼의 IMemoryBufferReference 표현을 반환합니다.</summary>
       <returns>텐서 버퍼의 IMemoryBufferReference 표현입니다.</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.TensorUInt8Bit.GetAsVectorView">
-      <summary>데이터의 읽기 전용 뷰를 반환 합니다.</summary>
-      <returns>데이터의 읽기 전용 뷰입니다.</returns>
+      <summary>데이터의 읽기 전용 보기를 반환합니다.</summary>
+      <returns>데이터의 읽기 전용 보기입니다.</returns>
     </member>
   </members>
 </doc>

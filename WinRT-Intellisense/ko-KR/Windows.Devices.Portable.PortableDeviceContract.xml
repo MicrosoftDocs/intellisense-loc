@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <doc>
   <assembly>
-    <name>PortableDeviceContract.</name>
+    <name>Windows.Devices.Portable.PortableDeviceContract</name>
   </assembly>
   <members>
     <member name="T:Windows.Devices.Portable.PortableDeviceContract">
@@ -9,53 +9,53 @@
       </summary>
     </member>
     <member name="T:Windows.Devices.Portable.ServiceDevice">
-      <summary>장치 열거를 위한 WPD (Windows 휴대용 장치)를 지 원하는 휴대용 장치의 장치 서비스를 식별 하는 메서드를 제공 합니다.</summary>
+      <summary>장치 열거를 위해 WPD(Windows 휴대용 장치)를 지원하는 휴대용 장치의 장치 서비스를 식별하는 메서드를 제공합니다.</summary>
     </member>
     <member name="M:Windows.Devices.Portable.ServiceDevice.GetDeviceSelector(Windows.Devices.Portable.ServiceDeviceType)">
-      <summary>지정 된 ServiceDeviceType의 장치 서비스를 열거 하는 데 사용 되는 AQS (고급 쿼리 구문) 문자열을 반환 합니다. 이 문자열은 FindAllAsync 또는 CreateWatcher 메서드에 전달 됩니다.</summary>
+      <summary>지정된 ServiceDeviceType의 장치 서비스를 열거하는 데 사용되는 AQS(고급 쿼리 구문) 문자열을 반환합니다. 이 문자열은 FindAllAsync 또는 CreateWatcher 메서드에 전달됩니다.</summary>
       <param name="serviceType">식별할 서비스의 형식입니다.</param>
       <returns>AQS 문자열입니다.</returns>
     </member>
     <member name="M:Windows.Devices.Portable.ServiceDevice.GetDeviceSelectorFromServiceId(System.Guid)">
-      <summary>Guid를 기준으로 장치 서비스를 식별 하는 AQS (고급 쿼리 구문) 문자열입니다. 이 문자열은 FindAllAsync 또는 CreateWatcher 메서드에 전달 됩니다.</summary>
+      <summary>GUID로 장치 서비스를 식별하는 AQS(고급 쿼리 구문)입니다. 이 문자열은 FindAllAsync 또는 CreateWatcher 메서드에 전달됩니다.</summary>
       <param name="serviceId">서비스 식별자입니다.</param>
       <returns>AQS 문자열입니다.</returns>
     </member>
     <member name="T:Windows.Devices.Portable.ServiceDeviceType">
-      <summary>휴대용 장치 서비스의 유형을 나타냅니다.</summary>
+      <summary>휴대용 장치 서비스의 장치 유형을 나타냅니다.</summary>
     </member>
     <member name="F:Windows.Devices.Portable.ServiceDeviceType.CalendarService">
-      <summary>달력 정보를 제공 하는 서비스입니다.</summary>
+      <summary>달력 정보를 제공하는 서비스입니다.</summary>
     </member>
     <member name="F:Windows.Devices.Portable.ServiceDeviceType.ContactsService">
-      <summary>연락처를 추적 하는 서비스입니다.</summary>
+      <summary>연락처를 추적하는 서비스입니다.</summary>
     </member>
     <member name="F:Windows.Devices.Portable.ServiceDeviceType.DeviceStatusService">
       <summary>장치 상태 서비스입니다.</summary>
     </member>
     <member name="F:Windows.Devices.Portable.ServiceDeviceType.NotesService">
-      <summary>참고로 작성 된 서비스입니다.</summary>
+      <summary>메모 서비스입니다.</summary>
     </member>
     <member name="F:Windows.Devices.Portable.ServiceDeviceType.RingtonesService">
-      <summary>전화 벨 소리를 제공 하는 서비스입니다.</summary>
+      <summary>전화 벨소리를 제공하는 서비스입니다.</summary>
     </member>
     <member name="F:Windows.Devices.Portable.ServiceDeviceType.SmsService">
-      <summary>SMS (short message service) 메시징 서비스입니다.</summary>
+      <summary>SMS(문자 서비스) 메시징 서비스입니다.</summary>
     </member>
     <member name="F:Windows.Devices.Portable.ServiceDeviceType.TasksService">
-      <summary>작업을 추적 하는 서비스입니다.</summary>
+      <summary>작업을 추적하는 서비스입니다.</summary>
     </member>
     <member name="T:Windows.Devices.Portable.StorageDevice">
-      <summary>WPD를 지 원하는 휴대용 장치의 저장소 기능에 액세스 하기 위한 메서드를 제공 합니다. 이동식 저장 장치는 다음과 같습니다.</summary>
+      <summary>WPD를 지원하는 휴대용 장치의 저장소 기능에 액세스하는 메서드를 제공합니다. 이동식 저장 장치는 다음과 같습니다.</summary>
     </member>
     <member name="M:Windows.Devices.Portable.StorageDevice.FromId(System.String)">
-      <summary>이동식 저장 장치에 대 한 DeviceInformation Id에서 StorageFolder 개체를 가져옵니다.</summary>
-      <param name="deviceId">이동식 저장 장치를 식별 하는 DeviceInformation ID입니다. 이 id는 자동 재생 장치 이벤트 인수의 Deviceor DeviceInformationId 속성 또는 Windows에서 검색할 수 있습니다. 자세한 내용은 [빠른 시작: 자동 실행 장치에 대 한 앱 등록] (https://docs.microsoft.com/previous-versions/windows/apps/jj160497 (v = win. 10))을 참조 하세요. 자세한 내용은 이동식 저장소 샘플을 참조 하세요.</param>
-      <returns>이동식 저장 장치를 나타내며 장치의 콘텐츠에 대 한 액세스를 제공 하는 저장소 폴더 개체입니다.</returns>
+      <summary>이동식 저장 장치의 DeviceInformation ID에서 StorageFolder 개체를 가져옵니다.</summary>
+      <param name="deviceId">이동식 스토리지 디바이스를 식별하는 DeviceInformation ID입니다. 이 ID는 자동 실행 디바이스 이벤트 인수의 Windows.Devices.Enumeration 또는 DeviceInformationId 속성에서 검색할 수 있습니다. 자세한 내용은 [빠른 시작: 자동 재생 디바이스용 앱 등록](https://docs.microsoft.com/previous-versions/windows/apps/jj160497(v=win.10))을 참조하세요. 자세한 내용은 이동식 스토리지 샘플을 참조하세요.</param>
+      <returns>이동식 저장 장치를 나타내고 장치의 콘텐츠에 대한 액세스를 제공하는 저장소 폴더 개체입니다.</returns>
     </member>
     <member name="M:Windows.Devices.Portable.StorageDevice.GetDeviceSelector">
-      <summary>이동식 저장 장치를 식별 하는 AQS (고급 쿼리 구문) 문자열입니다. 이 문자열은 FindAllAsync 또는 CreateWatcher 메서드에 전달 됩니다.</summary>
-      <returns>저장 장치를 식별 하는 AQS 문자열입니다.</returns>
+      <summary>이동식 저장 장치를 식별하기 위한 AQS(고급 쿼리 구문) 문자열입니다. 이 문자열은 FindAllAsync 또는 CreateWatcher 메서드에 전달됩니다.</summary>
+      <returns>저장소 장치를 식별하기 위한 AQS 문자열입니다.</returns>
     </member>
   </members>
 </doc>
