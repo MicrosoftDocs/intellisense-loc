@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <doc>
   <assembly>
-    <name>Windows. IsolatedWindowsEnvironmentContract</name>
+    <name>Windows.Security.Isolation.IsolatedWindowsEnvironmentContract</name>
   </assembly>
   <members>
     <member name="T:Windows.Security.Isolation.IsolatedWindowsEnvironment">
@@ -224,7 +224,7 @@
       <summary>デバイスがハードウェア要件を満たしていない</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentHostError.RebootRequired">
-      <summary>再起動が必要</summary>
+      <summary>再起動が必要です</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentHostError.UnknownError">
       <summary>不明なエラー</summary>
@@ -456,7 +456,7 @@
       <summary>行わ.</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentShareFolderStatus.UnknownFailure">
-      <summary>不明なエラーです。</summary>
+      <summary>不明なエラー。</summary>
     </member>
     <member name="T:Windows.Security.Isolation.IsolatedWindowsEnvironmentStartProcessResult">
       <summary>分離 Windows 環境で開始プロセスの結果をクエリするランタイムクラス。</summary>
