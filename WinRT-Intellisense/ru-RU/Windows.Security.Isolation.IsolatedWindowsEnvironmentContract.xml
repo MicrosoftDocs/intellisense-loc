@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <doc>
   <assembly>
-    <name>Windows. Security. Isolation. Исолатедвиндовсенвиронментконтракт</name>
+    <name>Windows.Security.Isolation.IsolatedWindowsEnvironmentContract</name>
   </assembly>
   <members>
     <member name="T:Windows.Security.Isolation.IsolatedWindowsEnvironment">
@@ -68,17 +68,17 @@
     <member name="M:Windows.Security.Isolation.IsolatedWindowsEnvironment.StartProcessSilentlyAsync(System.String,System.String,Windows.Security.Isolation.IsolatedWindowsEnvironmentActivator)">
       <summary>Разрешает выполнение процессов внутри изолированной среды Windows.</summary>
       <param name="hostExePath">Строка пути выполнения узла.</param>
-      <param name="arguments">String</param>
+      <param name="arguments">Строка</param>
       <param name="activator">исолатедвиндовсенвиронментактиватор</param>
-      <returns>исолатедвиндовсенвиронментстартпроцессресулт</returns>
+      <returns>IsolatedWindowsEnvironmentStartProcessResult</returns>
     </member>
     <member name="M:Windows.Security.Isolation.IsolatedWindowsEnvironment.StartProcessSilentlyAsync(System.String,System.String,Windows.Security.Isolation.IsolatedWindowsEnvironmentActivator,Windows.Security.Isolation.IsolatedWindowsEnvironmentTelemetryParameters)">
       <summary>Разрешает выполнение процессов в изолированной среде Windows с корреляцией телеметрии.</summary>
       <param name="hostExePath">Строка пути выполнения узла.</param>
-      <param name="arguments">String</param>
+      <param name="arguments">Строка</param>
       <param name="activator">исолатедвиндовсенвиронментактиватор</param>
       <param name="telemetryParameters">Параметры телеметрии, определенные исолатедвиндовсенвиронменттелеметрипараметерс</param>
-      <returns>исолатедвиндовсенвиронментстартпроцессресулт</returns>
+      <returns>IsolatedWindowsEnvironmentStartProcessResult</returns>
     </member>
     <member name="M:Windows.Security.Isolation.IsolatedWindowsEnvironment.TerminateAsync">
       <summary>Асинхронное завершение изолированной среды Windows.</summary>
@@ -172,7 +172,7 @@
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentCreateResult.Status">
       <summary>Вызовы для исолатедвиндовсенвиронменткреатестатус</summary>
-      <returns>String</returns>
+      <returns>Строка</returns>
     </member>
     <member name="T:Windows.Security.Isolation.IsolatedWindowsEnvironmentCreateStatus">
       <summary>Содержит фактические возвращаемые сведения о состоянии изолированного создания среды Windows.</summary>
@@ -209,7 +209,7 @@
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentHost.IsReady">
       <summary>Логическое значение, которое указывает, правильно ли настроен узел и готов создать изолированную среду Windows.</summary>
-      <returns>Boolean</returns>
+      <returns>Boolean (Логическое)</returns>
     </member>
     <member name="T:Windows.Security.Isolation.IsolatedWindowsEnvironmentHostError">
       <summary>Перечислитель, представляющий возможный список ошибок, которые необходимо устранить перед созданием изолированной среды Windows на узле.</summary>
@@ -238,7 +238,7 @@
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentLaunchFileResult.File">
       <summary>Создает экземпляр класса среды выполнения Исолатедвиндовсенвиронментфиле.</summary>
-      <returns>String</returns>
+      <returns>Строка</returns>
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentLaunchFileResult.Status">
       <summary>Вызывает Исолатедвиндовсенвиронментлаунчфилестатус.</summary>
@@ -270,7 +270,7 @@
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentOptions.AllowCameraAndMicrophoneAccess">
       <summary>Логическое значение, указывающее, могут ли приложения, выполняемые в изолированной среде Windows, получить доступ к камере и микрофону устройства.</summary>
-      <returns>Boolean</returns>
+      <returns>Boolean (Логическое)</returns>
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentOptions.AllowedClipboardFormats">
       <summary>Перечисление форматов буфера обмена для изолированной среды Windows.</summary>
@@ -278,7 +278,7 @@
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentOptions.AllowGraphicsHardwareAcceleration">
       <summary>Логическое значение, показывающее, визуализирует ли изолированная среда Windows график с помощью аппаратного или программного ускорения.</summary>
-      <returns>Boolean</returns>
+      <returns>Boolean (Логическое)</returns>
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentOptions.AvailablePrinters">
       <summary>Перечисление выбора принтера для изолированной среды Windows.</summary>
@@ -290,19 +290,19 @@
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentOptions.EnvironmentOwnerId">
       <summary>Строка, идентифицирующая владельца каждой созданной изолированной среды Windows.</summary>
-      <returns>String</returns>
+      <returns>Строка</returns>
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentOptions.PersistUserProfile">
       <summary>Разрешает сохранение профиля пользователя в изолированной среде Windows из сеанса в сеанс.</summary>
-      <returns>Boolean</returns>
+      <returns>Boolean (Логическое)</returns>
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentOptions.SharedFolderNameInEnvironment">
       <summary>Отображаемое имя папки, используемой для предоставления общего доступа к ненадежному элементу внутри изолированной среды Windows путем вызова Шарехостфолдерфорунтрустедитемс.</summary>
-      <returns>String</returns>
+      <returns>Строка</returns>
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentOptions.SharedHostFolderPath">
       <summary>Путь к папке узла, которая является общей для изолированной среды Windows и узла для совместного использования непроверенных элементов, заданных путем вызова Шарехостфолдерфорунтрустедитемс.</summary>
-      <returns>String</returns>
+      <returns>Строка</returns>
     </member>
     <member name="M:Windows.Security.Isolation.IsolatedWindowsEnvironmentOptions.ShareHostFolderForUntrustedItems(System.String,System.String)">
       <summary>Задает Шаредфолдернамеиненвиронмент и Шаредхостфолдерпас для настройки общей папки для совместного использования недоверенных элементов с изолированной средой Windows.</summary>
@@ -427,7 +427,7 @@
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentShareFolderRequestOptions.AllowWrite">
       <summary>Определяет, могут ли приложения, выполняемые в изолированной среде Windows, записывать данные в общую папку.</summary>
-      <returns>Boolean</returns>
+      <returns>Boolean (Логическое)</returns>
     </member>
     <member name="T:Windows.Security.Isolation.IsolatedWindowsEnvironmentShareFolderResult">
       <summary>Объект, содержащий сведения о результате запроса общей папки.</summary>
@@ -456,7 +456,7 @@
       <summary>Успешно.</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentShareFolderStatus.UnknownFailure">
-      <summary>Неизвестный сбой.</summary>
+      <summary>Неизвестная ошибка.</summary>
     </member>
     <member name="T:Windows.Security.Isolation.IsolatedWindowsEnvironmentStartProcessResult">
       <summary>Класс времени выполнения, который запрашивает результат процесса запуска в изолированной среде Windows.</summary>
@@ -467,11 +467,11 @@
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentStartProcessResult.Process">
       <summary>Представляет время существования процесса, выполняемого в изолированной среде Windows.</summary>
-      <returns>String</returns>
+      <returns>Строка</returns>
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentStartProcessResult.Status">
       <summary>Запрашивает состояние выполнения процесса в изолированной среде Windows.</summary>
-      <returns>String</returns>
+      <returns>Строка</returns>
     </member>
     <member name="T:Windows.Security.Isolation.IsolatedWindowsEnvironmentStartProcessStatus">
       <summary>Результаты запуска процесса в изолированной среде Windows.</summary>
@@ -499,7 +499,7 @@
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentTelemetryParameters.CorrelationId">
       <summary>Идентификатор GUID, используемый в телеметрии Майкрософт для улучшения качества интерфейсов API.</summary>
-      <returns>GUID</returns>
+      <returns>Код GUID</returns>
     </member>
     <member name="T:Windows.Security.Isolation.IsolatedWindowsHostMessenger">
       <summary>Класс среды выполнения для двух методов: Постмессажеторецеивиер и жетфилеид.</summary>
