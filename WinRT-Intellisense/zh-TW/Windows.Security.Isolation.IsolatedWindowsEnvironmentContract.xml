@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <doc>
   <assembly>
-    <name>Windows. IsolatedWindowsEnvironmentContract</name>
+    <name>Windows.Security.Isolation.IsolatedWindowsEnvironmentContract</name>
   </assembly>
   <members>
     <member name="T:Windows.Security.Isolation.IsolatedWindowsEnvironment">
@@ -456,7 +456,7 @@
       <summary>均.</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentShareFolderStatus.UnknownFailure">
-      <summary>未知的失敗。</summary>
+      <summary>未知的錯誤。</summary>
     </member>
     <member name="T:Windows.Security.Isolation.IsolatedWindowsEnvironmentStartProcessResult">
       <summary>在隔離的 Windows 環境中查詢啟動進程結果的執行時間類別。</summary>
