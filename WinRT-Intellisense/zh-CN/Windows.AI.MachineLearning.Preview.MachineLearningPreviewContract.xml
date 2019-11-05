@@ -1,93 +1,93 @@
 <?xml version="1.0" encoding="utf-8"?>
 <doc>
   <assembly>
-    <name>Default-machinelearning-southcentralus. MachineLearningPreviewContract。</name>
+    <name>Windows.AI.MachineLearning.Preview.MachineLearningPreviewContract</name>
   </assembly>
   <members>
     <member name="T:Windows.AI.MachineLearning.Preview.FeatureElementKindPreview">
-      <summary>* * 已弃用。 * * 定义支持的功能数据类型的列表。</summary>
-      <deprecated type="deprecate">使用 TensorKind 而不是 FeatureElementKindPreview。有关详细信息，请参阅 MSDN。</deprecated>
+      <summary>**已弃用。**定义受支持功能数据类型的列表。</summary>
+      <deprecated type="deprecate">使用 TensorKind 而不是 FeatureElementKindPreview。 有关更多信息，请参见 MSDN。</deprecated>
     </member>
     <member name="F:Windows.AI.MachineLearning.Preview.FeatureElementKindPreview.Boolean">
-      <summary>功能元素的类型为 Boolean。</summary>
+      <summary>功能元素属于布尔值类型。</summary>
     </member>
     <member name="F:Windows.AI.MachineLearning.Preview.FeatureElementKindPreview.Complex128">
-      <summary>功能元素的类型为 Complex128。</summary>
+      <summary>功能元素属于 Complex128 类型。</summary>
     </member>
     <member name="F:Windows.AI.MachineLearning.Preview.FeatureElementKindPreview.Complex64">
-      <summary>功能元素的类型为 Complex64。</summary>
+      <summary>功能元素属于 Complex64 类型。</summary>
     </member>
     <member name="F:Windows.AI.MachineLearning.Preview.FeatureElementKindPreview.Double">
-      <summary>功能元素的类型为 Double。</summary>
+      <summary>功能元素属于 Double 类型。</summary>
     </member>
     <member name="F:Windows.AI.MachineLearning.Preview.FeatureElementKindPreview.Float">
-      <summary>功能元素的类型为 Float。</summary>
+      <summary>功能元素属于 Float 类型。</summary>
     </member>
     <member name="F:Windows.AI.MachineLearning.Preview.FeatureElementKindPreview.Float16">
-      <summary>功能元素的类型为 Float16。</summary>
+      <summary>功能元素属于 Float16 类型。</summary>
     </member>
     <member name="F:Windows.AI.MachineLearning.Preview.FeatureElementKindPreview.Int16">
-      <summary>功能元素的类型为 Int16。</summary>
+      <summary>功能元素属于 Int16 类型。</summary>
     </member>
     <member name="F:Windows.AI.MachineLearning.Preview.FeatureElementKindPreview.Int32">
-      <summary>功能元素的类型为 Int32。</summary>
+      <summary>功能元素属于 Int32 类型。</summary>
     </member>
     <member name="F:Windows.AI.MachineLearning.Preview.FeatureElementKindPreview.Int64">
-      <summary>功能元素的类型为 Int64。</summary>
+      <summary>功能元素属于 Int64 类型。</summary>
     </member>
     <member name="F:Windows.AI.MachineLearning.Preview.FeatureElementKindPreview.Int8">
       <summary>功能元素属于 Int8 类型。</summary>
     </member>
     <member name="F:Windows.AI.MachineLearning.Preview.FeatureElementKindPreview.String">
-      <summary>功能元素的类型为字符串。</summary>
+      <summary>功能元素属于 String 类型。</summary>
     </member>
     <member name="F:Windows.AI.MachineLearning.Preview.FeatureElementKindPreview.UInt16">
       <summary>功能元素属于 UInt16 类型。</summary>
     </member>
     <member name="F:Windows.AI.MachineLearning.Preview.FeatureElementKindPreview.UInt32">
-      <summary>功能元素的类型为 UInt32。</summary>
+      <summary>功能元素属于 UInt32 类型。</summary>
     </member>
     <member name="F:Windows.AI.MachineLearning.Preview.FeatureElementKindPreview.UInt64">
-      <summary>功能元素的类型为 UInt64。</summary>
+      <summary>功能元素属于 UInt64 类型。</summary>
     </member>
     <member name="F:Windows.AI.MachineLearning.Preview.FeatureElementKindPreview.UInt8">
-      <summary>功能元素的类型为 UInt8。</summary>
+      <summary>功能元素属于 UInt8 类型。</summary>
     </member>
     <member name="F:Windows.AI.MachineLearning.Preview.FeatureElementKindPreview.Undefined">
       <summary>
       </summary>
     </member>
     <member name="T:Windows.AI.MachineLearning.Preview.ILearningModelVariableDescriptorPreview">
-      <summary>* * 已弃用。 * * 表示变量描述符信息。</summary>
-      <deprecated type="deprecate">使用 ILearningModelFeatureDescriptor 而不是 ILearningModelVariableDescriptorPreview。有关详细信息，请参阅 MSDN。</deprecated>
+      <summary>**已弃用。**表示变量描述符信息。</summary>
+      <deprecated type="deprecate">使用 ILearningModelFeatureDescriptor 而不是 ILearningModelVariableDescriptorPreview。 有关更多信息，请参见 MSDN。</deprecated>
     </member>
     <member name="P:Windows.AI.MachineLearning.Preview.ILearningModelVariableDescriptorPreview.Description">
-      <summary>* * 已弃用。 * * 获取变量的说明。</summary>
-      <returns>变量的说明。</returns>
+      <summary>**已弃用。**获取变量的描述。</summary>
+      <returns>变量的描述。</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.Preview.ILearningModelVariableDescriptorPreview.IsRequired">
-      <summary>* * 已弃用。 * * 获取变量是必需的还是可选的。</summary>
-      <returns>如果变量是必需的，则为 True;否则为 false。</returns>
+      <summary>**已弃用。**获取变量是必需还是可选。</summary>
+      <returns>如果变量是必需，则为 true；否则为 false。</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.Preview.ILearningModelVariableDescriptorPreview.ModelFeatureKind">
-      <summary>* * 已弃用。 * * 获取变量的数据类型。</summary>
+      <summary>**已弃用。**获取变量的数据类型。</summary>
       <returns>变量的数据类型。</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.Preview.ILearningModelVariableDescriptorPreview.Name">
-      <summary>* * 已弃用。 * * 获取变量的名称。</summary>
+      <summary>**已弃用。**获取变量的名称。</summary>
       <returns>变量的名称。</returns>
     </member>
     <member name="T:Windows.AI.MachineLearning.Preview.ImageVariableDescriptorPreview">
-      <summary>* * 已弃用。 * * 表示映像描述符信息。</summary>
-      <deprecated type="deprecate">使用 ImageFeatureDescriptor 而不是 ImageVariableDescriptorPreview。有关详细信息，请参阅 MSDN。</deprecated>
+      <summary>**已弃用。**表示图像描述符信息。</summary>
+      <deprecated type="deprecate">使用 ImageFeatureDescriptor 而不是 ImageVariableDescriptorPreview。 有关更多信息，请参见 MSDN。</deprecated>
     </member>
     <member name="P:Windows.AI.MachineLearning.Preview.ImageVariableDescriptorPreview.BitmapPixelFormat">
-      <summary>* * 已弃用。 * * 获取图像的像素格式。</summary>
+      <summary>**已弃用。**获取图像的像素格式。</summary>
       <returns>图像的像素格式。</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.Preview.ImageVariableDescriptorPreview.Description">
-      <summary>* * 已弃用。 * * 获取图像变量的说明。</summary>
-      <returns>图像变量的说明。</returns>
+      <summary>**已弃用。**获取图像变量的描述。</summary>
+      <returns>图像变量的描述。</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.Preview.ImageVariableDescriptorPreview.Height">
       <summary>
@@ -102,11 +102,11 @@
       </returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.Preview.ImageVariableDescriptorPreview.ModelFeatureKind">
-      <summary>* * 已弃用。 * * 获取变量的数据类型。</summary>
+      <summary>**已弃用。**获取变量的数据类型。</summary>
       <returns>变量的数据类型。</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.Preview.ImageVariableDescriptorPreview.Name">
-      <summary>* * 已弃用。 * * 获取图像变量的名称。</summary>
+      <summary>**已弃用。**获取图像变量的名称。</summary>
       <returns>图像变量的名称。</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.Preview.ImageVariableDescriptorPreview.Width">
@@ -116,37 +116,37 @@
       </returns>
     </member>
     <member name="T:Windows.AI.MachineLearning.Preview.InferencingOptionsPreview">
-      <summary>* * 已弃用。 * * 表示用于控制模型评估的推理选项。</summary>
-      <deprecated type="deprecate">使用 LearningModelSession 而不是 InferencingOptionsPreview。有关详细信息，请参阅 MSDN。</deprecated>
+      <summary>**已弃用。**表示用于控制模型评估的推断选项。</summary>
+      <deprecated type="deprecate">使用 LearningModelSession 而不是 InferencingOptionsPreview。 有关更多信息，请参见 MSDN。</deprecated>
     </member>
     <member name="P:Windows.AI.MachineLearning.Preview.InferencingOptionsPreview.IsTracingEnabled">
-      <summary>* * 已弃用。 * * 获取或设置是否在模型评估期间启用跟踪。</summary>
-      <returns>如果启用跟踪，则为 True;否则为 false。默认值为 false。</returns>
+      <summary>**已弃用。**获取或设置是否在模型评估期间启用跟踪。</summary>
+      <returns>如果启用跟踪，则为 true；否则为 false。 默认值为 false。</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.Preview.InferencingOptionsPreview.MaxBatchSize">
-      <summary>* * 已弃用。 * * 获取或设置模型计算的最大批处理大小。</summary>
-      <returns>最大批处理大小。预览版 API 仅支持批处理大小1。</returns>
+      <summary>**已弃用。**获取或设置模型评估的最大批大小。</summary>
+      <returns>最大批大小。 Preview API 仅支持 1 批处理大小。</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.Preview.InferencingOptionsPreview.MinimizeMemoryAllocation">
-      <summary>* * 已弃用。 * * 获取或设置在模型计算后是否最大程度地减少内存分配。</summary>
-      <returns>如果在计算期间最小化内存分配，则为 True;否则为 false。默认值为 false。</returns>
+      <summary>**已弃用。**获取或设置是否在模型评估后最小化内存分配。</summary>
+      <returns>如果评估期间最小化内存分配，则为 ture；否则为 false。 默认值为 false。</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.Preview.InferencingOptionsPreview.PreferredDeviceKind">
-      <summary>* * 已弃用。 * * 获取或设置将对其执行评估的首选设备。</summary>
-      <returns>首选设备。默认值为 LearningDeviceAny。</returns>
+      <summary>**已弃用。**获取或设置将在上面执行评估的首选设备。</summary>
+      <returns>首选设备。 默认值为 LearningDeviceAny。</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.Preview.InferencingOptionsPreview.ReclaimMemoryAfterEvaluation">
-      <summary>* * 已弃用。 * * 获取或设置在模型计算后是否回收分配的内存。</summary>
-      <returns>如果在计算后回收分配的内存，则为 True;否则为 false。默认值为 false。</returns>
+      <summary>**已弃用。**获取或设置是否在模型评估后回收分配的内存。</summary>
+      <returns>如果评估后回收分配的内存，则为 ture；否则为 false。 默认值为 false。</returns>
     </member>
     <member name="T:Windows.AI.MachineLearning.Preview.LearningModelBindingPreview">
-      <summary>* * 已弃用。 * * 表示模型输入和变量实例之间的关联。</summary>
-      <deprecated type="deprecate">使用 LearningModelBinding 而不是 LearningModelBindingPreview。有关详细信息，请参阅 MSDN。</deprecated>
+      <summary>**已弃用。**表示模型输入和变量实例之间的关联。</summary>
+      <deprecated type="deprecate">使用 LearningModelBinding 而不是 LearningModelBindingPreview。 有关更多信息，请参见 MSDN。</deprecated>
     </member>
     <member name="M:Windows.AI.MachineLearning.Preview.LearningModelBindingPreview.#ctor(Windows.AI.MachineLearning.Preview.LearningModelPreview)">
       <summary>
       </summary>
-      <deprecated type="deprecate">使用 ILearningModelBindingFactory 而不是 ILearningModelBindingPreviewFactory。有关详细信息，请参阅 MSDN。</deprecated>
+      <deprecated type="deprecate">使用 ILearningModelBindingFactory 而不是 ILearningModelBindingPreviewFactory。 有关更多信息，请参见 MSDN。</deprecated>
       <param name="model">
       </param>
     </member>
@@ -157,15 +157,15 @@
       </returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.Preview.LearningModelBindingPreview.Bind(System.String,System.Object)">
-      <summary>* * 已弃用。 * * 将单个输入或输出功能绑定到已定义的变量。</summary>
-      <deprecated type="deprecate">使用 ILearningModelBinding 而不是 ILearningModelBindingPreview。有关详细信息，请参阅 MSDN。</deprecated>
+      <summary>**已弃用。**将一个输入或输出功能绑定到定义的变量。</summary>
+      <deprecated type="deprecate">使用 ILearningModelBinding 而不是 ILearningModelBindingPreview。 有关更多信息，请参见 MSDN。</deprecated>
       <param name="name">输入/输出功能的名称。</param>
       <param name="value">输入/输出功能的值。</param>
     </member>
     <member name="M:Windows.AI.MachineLearning.Preview.LearningModelBindingPreview.Bind(System.String,System.Object,Windows.Foundation.Collections.IPropertySet)">
       <summary>
       </summary>
-      <deprecated type="deprecate">使用 ILearningModelBinding 而不是 ILearningModelBindingPreview。有关详细信息，请参阅 MSDN。</deprecated>
+      <deprecated type="deprecate">使用 ILearningModelBinding 而不是 ILearningModelBindingPreview。 有关更多信息，请参见 MSDN。</deprecated>
       <param name="name">
       </param>
       <param name="value">
@@ -174,8 +174,8 @@
       </param>
     </member>
     <member name="M:Windows.AI.MachineLearning.Preview.LearningModelBindingPreview.Clear">
-      <summary>* * 已弃用。 * * 清除所有绑定变量。</summary>
-      <deprecated type="deprecate">使用 ILearningModelBinding 而不是 ILearningModelBindingPreview。有关详细信息，请参阅 MSDN。</deprecated>
+      <summary>**已弃用。**清除所有绑定的变量。</summary>
+      <deprecated type="deprecate">使用 ILearningModelBinding 而不是 ILearningModelBindingPreview。 有关更多信息，请参见 MSDN。</deprecated>
     </member>
     <member name="M:Windows.AI.MachineLearning.Preview.LearningModelBindingPreview.First">
       <summary>
@@ -208,56 +208,56 @@
       </param>
     </member>
     <member name="T:Windows.AI.MachineLearning.Preview.LearningModelDescriptionPreview">
-      <summary>* * 已弃用。 * * 表示提供的模型的元数据和属性说明。</summary>
-      <deprecated type="deprecate">使用 LearningModel 而不是 LearningModelDescriptionPreview。有关详细信息，请参阅 MSDN。</deprecated>
+      <summary>**已弃用。**表示提供的模型的元数据和属性说明。</summary>
+      <deprecated type="deprecate">使用 LearningModel 而不是 LearningModelDescriptionPreview。 有关更多信息，请参见 MSDN。</deprecated>
     </member>
     <member name="P:Windows.AI.MachineLearning.Preview.LearningModelDescriptionPreview.Author">
-      <summary>* * 已弃用。 * * 从模型中获取作者信息。</summary>
-      <returns>模型中的作者信息。</returns>
+      <summary>**已弃用。**从模型获取作者信息。</summary>
+      <returns>来自模型的作者信息。</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.Preview.LearningModelDescriptionPreview.Description">
-      <summary>* * 已弃用。 * * 获取模型的自定义说明。</summary>
-      <returns>模型的自定义说明。</returns>
+      <summary>**已弃用。**获取模型的自定义描述。</summary>
+      <returns>模型的自定义描述。</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.Preview.LearningModelDescriptionPreview.Domain">
-      <summary>* * 已弃用。 * * 获取模型的域信息。</summary>
+      <summary>**已弃用。**获取模型的域信息。</summary>
       <returns>模型的域信息。</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.Preview.LearningModelDescriptionPreview.InputFeatures">
-      <summary>* * 已弃用。 * * 获取模型的输入说明。</summary>
-      <returns>模型的输入说明，按输入的名称进行键控。</returns>
+      <summary>**已弃用。**获取模型的输入描述。</summary>
+      <returns>模型的输入描述，由输入名称进行键控。</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.Preview.LearningModelDescriptionPreview.Metadata">
-      <summary>* * 已弃用。 * * 从模型中获取元数据。</summary>
-      <returns>提供的模型的元数据。</returns>
+      <summary>**已弃用。**从模型获取元数据。</summary>
+      <returns>所提供模型的元数据。</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.Preview.LearningModelDescriptionPreview.Name">
-      <summary>* * 已弃用。 * * 获取模型的名称。</summary>
+      <summary>**已弃用。**获取模型的名称。</summary>
       <returns>模型的名称。</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.Preview.LearningModelDescriptionPreview.OutputFeatures">
-      <summary>* * 已弃用。 * * 获取模型的输出说明。</summary>
-      <returns>模型的输出说明，按输出的名称进行键控。</returns>
+      <summary>**已弃用。**获取模型的输出描述。</summary>
+      <returns>模型的输出描述，由输出名称进行键控。</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.Preview.LearningModelDescriptionPreview.Version">
-      <summary>* * 已弃用。 * * 获取模型的版本信息。</summary>
+      <summary>**已弃用。**获取模型的版本信息。</summary>
       <returns>模型的版本信息。</returns>
     </member>
     <member name="T:Windows.AI.MachineLearning.Preview.LearningModelDeviceKindPreview">
-      <summary>* * 已弃用。 * * 定义表示 Windows 机器学习支持的设备类型的常量列表。</summary>
-      <deprecated type="deprecate">使用 LearningModelDeviceKind 而不是 LearningModelDeviceKindPreview。有关详细信息，请参阅 MSDN。</deprecated>
+      <summary>**已弃用。**定义表示 Windows 机器学习支持的设备类型的常量列表。</summary>
+      <deprecated type="deprecate">使用 LearningModelDeviceKind 而不是 LearningModelDeviceKindPreview。 有关更多信息，请参见 MSDN。</deprecated>
     </member>
     <member name="F:Windows.AI.MachineLearning.Preview.LearningModelDeviceKindPreview.LearningDeviceAny">
-      <summary>默认值。任何设备。</summary>
+      <summary>默认值。 任何设备。</summary>
     </member>
     <member name="F:Windows.AI.MachineLearning.Preview.LearningModelDeviceKindPreview.LearningDeviceCpu">
       <summary>中央处理器。</summary>
     </member>
     <member name="F:Windows.AI.MachineLearning.Preview.LearningModelDeviceKindPreview.LearningDeviceDsp">
-      <summary>数字信号 proccesor。</summary>
+      <summary>数字信号处理器。</summary>
     </member>
     <member name="F:Windows.AI.MachineLearning.Preview.LearningModelDeviceKindPreview.LearningDeviceFpga">
-      <summary>现场可编程的入口数组。</summary>
+      <summary>字段可编程入口数组。</summary>
     </member>
     <member name="F:Windows.AI.MachineLearning.Preview.LearningModelDeviceKindPreview.LearningDeviceGpu">
       <summary>图形处理器。</summary>
@@ -266,52 +266,52 @@
       <summary>神经处理器。</summary>
     </member>
     <member name="T:Windows.AI.MachineLearning.Preview.LearningModelEvaluationResultPreview">
-      <summary>* * 已弃用。 * * 获取输出预测集以及与模型计算相关的相应概率。</summary>
-      <deprecated type="deprecate">使用 LearningModelEvaluationResult 而不是 LearningModelEvaluationResultPreview。有关详细信息，请参阅 MSDN。</deprecated>
+      <summary>**已弃用。**获取与模型评估相关的输出预测和对应的可能性的设置。</summary>
+      <deprecated type="deprecate">使用 LearningModelEvaluationResult 而不是 LearningModelEvaluationResultPreview。 有关更多信息，请参见 MSDN。</deprecated>
     </member>
     <member name="P:Windows.AI.MachineLearning.Preview.LearningModelEvaluationResultPreview.CorrelationId">
-      <summary>* * 已弃用。 * * 获取值以将输出结果与计算调用相关联。</summary>
-      <returns>用于将输出结果与计算调用相关联的值。</returns>
+      <summary>**已弃用。**获取用于将输出结果与评估调用相关联的值。</summary>
+      <returns>用于将输出结果与评估调用相关联的值。</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.Preview.LearningModelEvaluationResultPreview.Outputs">
-      <summary>* * 已弃用。 * * 获取表示输出预测和概率的一组功能。</summary>
-      <returns>表示输出预测和概率的特征集。</returns>
+      <summary>**已弃用。**获取表示输出预测以及可能性的功能集。</summary>
+      <returns>表示输出预测和可能性的功能集。</returns>
     </member>
     <member name="T:Windows.AI.MachineLearning.Preview.LearningModelFeatureKindPreview">
-      <summary>* * 已弃用。 * * 定义模型功能的数据类型列表</summary>
-      <deprecated type="deprecate">使用 LearningModelFeatureKind 而不是 LearningModelFeatureKindPreview。有关详细信息，请参阅 MSDN。</deprecated>
+      <summary>**已弃用。**定义模型功能的数据类型的列表</summary>
+      <deprecated type="deprecate">使用 LearningModelFeatureKind 而不是 LearningModelFeatureKindPreview。 有关更多信息，请参见 MSDN。</deprecated>
     </member>
     <member name="F:Windows.AI.MachineLearning.Preview.LearningModelFeatureKindPreview.Image">
-      <summary>功能类型是一个图像。</summary>
+      <summary>功能类型是 Image。</summary>
     </member>
     <member name="F:Windows.AI.MachineLearning.Preview.LearningModelFeatureKindPreview.Map">
-      <summary>功能类型是一个映射。</summary>
+      <summary>功能类型是 Map。</summary>
     </member>
     <member name="F:Windows.AI.MachineLearning.Preview.LearningModelFeatureKindPreview.Sequence">
-      <summary>功能类型是一个序列。</summary>
+      <summary>功能类型是 Sequence。</summary>
     </member>
     <member name="F:Windows.AI.MachineLearning.Preview.LearningModelFeatureKindPreview.Tensor">
-      <summary>此功能类型为 Tensor。</summary>
+      <summary>功能类型是 Tensor。</summary>
     </member>
     <member name="F:Windows.AI.MachineLearning.Preview.LearningModelFeatureKindPreview.Undefined">
-      <summary>功能类型未定义。</summary>
+      <summary>功能类型是 Undefined。</summary>
     </member>
     <member name="T:Windows.AI.MachineLearning.Preview.LearningModelPreview">
-      <summary>* * 已弃用。 * * 表示机器学习模型。</summary>
-      <deprecated type="deprecate">使用 LearningModel 而不是 LearningModelPreview。有关详细信息，请参阅 MSDN。</deprecated>
+      <summary>**已弃用。**表示机器学习模型。</summary>
+      <deprecated type="deprecate">使用 LearningModel 而不是 LearningModelPreview。 有关更多信息，请参见 MSDN。</deprecated>
     </member>
     <member name="P:Windows.AI.MachineLearning.Preview.LearningModelPreview.Description">
-      <summary>* * 已弃用。 * * 获取经过训练的机器学习模型的描述性元数据。</summary>
+      <summary>**已弃用。**获取经过培训的机器学习模型的描述性元数据。</summary>
       <returns>机器学习模型的描述性元数据。</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.Preview.LearningModelPreview.InferencingOptions">
-      <summary>* * 已弃用。 * * 获取或设置用于计算模型的推断选项。</summary>
-      <returns>用于评估模型的推断选项。</returns>
+      <summary>**已弃用。**获取或设置模型评估的推断选项。</summary>
+      <returns>模型评估的推断选项。</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.Preview.LearningModelPreview.EvaluateAsync(Windows.AI.MachineLearning.Preview.LearningModelBindingPreview,System.String)">
       <summary>
       </summary>
-      <deprecated type="deprecate">使用 ILearningModel 而不是 ILearningModelPreview。有关详细信息，请参阅 MSDN。</deprecated>
+      <deprecated type="deprecate">使用 ILearningModel 而不是 ILearningModelPreview。 有关更多信息，请参见 MSDN。</deprecated>
       <param name="binding">
       </param>
       <param name="correlationId">
@@ -320,28 +320,28 @@
       </returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.Preview.LearningModelPreview.EvaluateFeaturesAsync(Windows.Foundation.Collections.IMap{System.String,System.Object},System.String)">
-      <summary>* * 已弃用。 * * 异步计算名称变量实例作为模型的输入和输出。</summary>
-      <deprecated type="deprecate">使用 ILearningModel 而不是 ILearningModelPreview。有关详细信息，请参阅 MSDN。</deprecated>
+      <summary>**已弃用。**异步评估作为模型输入和输出的名称变量实例。</summary>
+      <deprecated type="deprecate">使用 ILearningModel 而不是 ILearningModelPreview。 有关更多信息，请参见 MSDN。</deprecated>
       <param name="features">要作为输入绑定的功能。</param>
-      <param name="correlationId">用于将计算与输出结果相关联的值。</param>
-      <returns>计算结果。</returns>
+      <param name="correlationId">用于将评估与输出结果相关联的值。</param>
+      <returns>评估结果。</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.Preview.LearningModelPreview.LoadModelFromStorageFileAsync(Windows.Storage.IStorageFile)">
-      <summary>* * 已弃用。 * * 从文件存储中异步加载模型。</summary>
-      <deprecated type="deprecate">使用 ILearningModelStatics 而不是 ILearningModelPreviewStatics。有关详细信息，请参阅 MSDN。</deprecated>
+      <summary>**已弃用。**从文件存储异步加载模型。</summary>
+      <deprecated type="deprecate">使用 ILearningModelStatics 而不是 ILearningModelPreviewStatics。 有关更多信息，请参见 MSDN。</deprecated>
       <param name="modelFile">模型文件的位置。</param>
       <returns>返回 LearningModelPreview。</returns>
     </member>
     <member name="M:Windows.AI.MachineLearning.Preview.LearningModelPreview.LoadModelFromStreamAsync(Windows.Storage.Streams.IRandomAccessStreamReference)">
-      <summary>* * 已弃用。 * * 从提供的流中异步加载模型。</summary>
-      <deprecated type="deprecate">使用 ILearningModelStatics 而不是 ILearningModelPreviewStatics。有关详细信息，请参阅 MSDN。</deprecated>
+      <summary>**已弃用。**从提供的流异步加载模型。</summary>
+      <deprecated type="deprecate">使用 ILearningModelStatics 而不是 ILearningModelPreviewStatics。 有关更多信息，请参见 MSDN。</deprecated>
       <param name="modelStream">模型的文件流。</param>
       <returns>返回 LearningModelPreview。</returns>
     </member>
     <member name="T:Windows.AI.MachineLearning.Preview.LearningModelVariableDescriptorPreview">
       <summary>
       </summary>
-      <deprecated type="deprecate">使用 ILearningModelFeatureDescriptor 而不是 LearningModelVariableDescriptorPreview。有关详细信息，请参阅 MSDN。</deprecated>
+      <deprecated type="deprecate">使用 ILearningModelFeatureDescriptor 而不是 LearningModelVariableDescriptorPreview。 有关更多信息，请参见 MSDN。</deprecated>
     </member>
     <member name="P:Windows.AI.MachineLearning.Preview.LearningModelVariableDescriptorPreview.Description">
       <summary>
@@ -372,16 +372,16 @@
       </summary>
     </member>
     <member name="T:Windows.AI.MachineLearning.Preview.MapVariableDescriptorPreview">
-      <summary>* * 已弃用。 * * 表示映射变量描述符信息。</summary>
-      <deprecated type="deprecate">使用 MapFeatureDescriptor 而不是 MapVariableDescriptorPreview。有关详细信息，请参阅 MSDN。</deprecated>
+      <summary>**已弃用。**表示映射变量描述符信息。</summary>
+      <deprecated type="deprecate">使用 MapFeatureDescriptor 而不是 MapVariableDescriptorPreview。 有关更多信息，请参见 MSDN。</deprecated>
     </member>
     <member name="P:Windows.AI.MachineLearning.Preview.MapVariableDescriptorPreview.Description">
-      <summary>* * 已弃用。 * * 获取说明映射变量。</summary>
-      <returns>地图变量的说明。</returns>
+      <summary>**已弃用。**获取描述映射变量。</summary>
+      <returns>映射变量的描述。</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.Preview.MapVariableDescriptorPreview.Fields">
-      <summary>* * 已弃用。 * * 获取地图变量字段的数据类型。</summary>
-      <returns>Map 变量的字段的数据类型。</returns>
+      <summary>**已弃用。**获取映射变量字段的数据类型。</summary>
+      <returns>映射变量字段的数据类型。</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.Preview.MapVariableDescriptorPreview.IsRequired">
       <summary>
@@ -390,16 +390,16 @@
       </returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.Preview.MapVariableDescriptorPreview.KeyKind">
-      <summary>* * 已弃用。 * * 获取地图变量的键的数据类型。</summary>
+      <summary>**已弃用。**获取映射变量键的数据类型。</summary>
       <returns>键的数据类型。</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.Preview.MapVariableDescriptorPreview.ModelFeatureKind">
-      <summary>* * 已弃用。 * * 获取变量的数据类型。</summary>
+      <summary>**已弃用。**获取变量的数据类型。</summary>
       <returns>变量的数据类型。</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.Preview.MapVariableDescriptorPreview.Name">
-      <summary>* * 已弃用。 * * 获取地图变量的名称。</summary>
-      <returns>地图变量的名称。此项在模型中的所有变量中必须是唯一的。</returns>
+      <summary>**已弃用。**获取映射变量的名称。</summary>
+      <returns>映射变量的名称。 这在模型中的所有变量中必须是唯一的。</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.Preview.MapVariableDescriptorPreview.ValidIntegerKeys">
       <summary>
@@ -414,15 +414,15 @@
       </returns>
     </member>
     <member name="T:Windows.AI.MachineLearning.Preview.SequenceVariableDescriptorPreview">
-      <summary>* * 已弃用。 * * 表示序列变量的描述符信息。</summary>
-      <deprecated type="deprecate">使用 SequenceFeatureDescriptor 而不是 SequenceVariableDescriptorPreview。有关详细信息，请参阅 MSDN。</deprecated>
+      <summary>**已弃用。**表示序列变量的描述符信息。</summary>
+      <deprecated type="deprecate">使用 SequenceFeatureDescriptor 而不是 SequenceVariableDescriptorPreview。 有关更多信息，请参见 MSDN。</deprecated>
     </member>
     <member name="P:Windows.AI.MachineLearning.Preview.SequenceVariableDescriptorPreview.Description">
-      <summary>* * 已弃用。 * * 获取序列变量的说明。</summary>
-      <returns>序列变量的说明。</returns>
+      <summary>**已弃用。**获取序列变量的描述。</summary>
+      <returns>对变量的描述。</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.Preview.SequenceVariableDescriptorPreview.ElementType">
-      <summary>* * 已弃用。 * * 获取序列变量的类型。</summary>
+      <summary>**已弃用。**获取序列变量的类型。</summary>
       <returns>序列变量的类型。</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.Preview.SequenceVariableDescriptorPreview.IsRequired">
@@ -432,24 +432,24 @@
       </returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.Preview.SequenceVariableDescriptorPreview.ModelFeatureKind">
-      <summary>* * 已弃用。 * * 获取变量的数据类型。</summary>
+      <summary>**已弃用。**获取变量的数据类型。</summary>
       <returns>变量的数据类型。</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.Preview.SequenceVariableDescriptorPreview.Name">
-      <summary>* * 已弃用。 * * 获取序列变量的名称。</summary>
-      <returns>序列变量的名称。此项在模型中的所有变量中必须是唯一的。</returns>
+      <summary>**已弃用。**获取序列变量的名称。</summary>
+      <returns>序列变量的名称。 这在模型中的所有变量中必须是唯一的。</returns>
     </member>
     <member name="T:Windows.AI.MachineLearning.Preview.TensorVariableDescriptorPreview">
-      <summary>* * 已弃用。 * * 表示 Tensor 变量的描述符信息。</summary>
-      <deprecated type="deprecate">使用 TensorFeatureDescriptor 而不是 TensorVariableDescriptorPreview。有关详细信息，请参阅 MSDN。</deprecated>
+      <summary>**已弃用。**表示张量变量的描述符信息。</summary>
+      <deprecated type="deprecate">使用 TensorFeatureDescriptor 而不是 TensorVariableDescriptorPreview。 有关更多信息，请参见 MSDN。</deprecated>
     </member>
     <member name="P:Windows.AI.MachineLearning.Preview.TensorVariableDescriptorPreview.DataType">
-      <summary>* * 已弃用。 * * 获取 tensor 数据的类型。</summary>
-      <returns>Tensor 数据的类型。</returns>
+      <summary>**已弃用。**获取张量数据的类型。</summary>
+      <returns>张量数据的类型。</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.Preview.TensorVariableDescriptorPreview.Description">
-      <summary>* * 已弃用。 * * 获取 tensor 的说明。</summary>
-      <returns>Tensor 的说明。</returns>
+      <summary>**已弃用。**获取张量的描述。</summary>
+      <returns>张量的描述。</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.Preview.TensorVariableDescriptorPreview.IsRequired">
       <summary>
@@ -458,16 +458,16 @@
       </returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.Preview.TensorVariableDescriptorPreview.ModelFeatureKind">
-      <summary>* * 已弃用。 * * 获取变量的数据类型。</summary>
+      <summary>**已弃用。**获取变量的数据类型。</summary>
       <returns>变量的数据类型。</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.Preview.TensorVariableDescriptorPreview.Name">
-      <summary>* * 已弃用。 * * 获取 tensor 的名称。</summary>
-      <returns>Tensor 的名称。此项在模型中的所有变量中必须是唯一的。</returns>
+      <summary>**已弃用。**获取张量的名称。</summary>
+      <returns>张量的名称。 这在模型中的所有变量中必须是唯一的。</returns>
     </member>
     <member name="P:Windows.AI.MachineLearning.Preview.TensorVariableDescriptorPreview.Shape">
-      <summary>* * 已弃用。 * * 获取 tensor 的 n 维形状。</summary>
-      <returns>Tensor 的 n 维形状。</returns>
+      <summary>**已弃用。**获取张量的 n 维形状。</summary>
+      <returns>张量的 n 维形状。</returns>
     </member>
   </members>
 </doc>
