@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <doc>
   <assembly>
-    <name>Windows. PortableDeviceContract</name>
+    <name>Windows.Devices.Portable.PortableDeviceContract</name>
   </assembly>
   <members>
     <member name="T:Windows.Devices.Portable.PortableDeviceContract">
@@ -9,20 +9,20 @@
       </summary>
     </member>
     <member name="T:Windows.Devices.Portable.ServiceDevice">
-      <summary>デバイス列挙用に WPD (Windows ポータブルデバイス) をサポートするポータブルデバイスのデバイスサービスを識別するためのメソッドを提供します。</summary>
+      <summary>デバイス列挙用 Windows ポータブル デバイス (WPD: Windows Portable Devices) をサポートする携帯機器のための、デバイス サービスを識別するためのメソッドを提供します。</summary>
     </member>
     <member name="M:Windows.Devices.Portable.ServiceDevice.GetDeviceSelector(Windows.Devices.Portable.ServiceDeviceType)">
-      <summary>指定された ServiceDeviceType のデバイスサービスを列挙するために使用される Advanced Query 構文 (AQS) 文字列を返します。この文字列は、FindAllAsync または CreateWatcher メソッドに渡されます。</summary>
+      <summary>指定した ServiceDeviceType のデバイス サービスを列挙するために使用されている高度なクエリ構文 (AQS) 文字列を返します。 この文字列は、FindAllAsync または CreateWatcher メソッドに渡されます。</summary>
       <param name="serviceType">識別するサービスの型。</param>
       <returns>AQS 文字列。</returns>
     </member>
     <member name="M:Windows.Devices.Portable.ServiceDevice.GetDeviceSelectorFromServiceId(System.Guid)">
-      <summary>Guid によってデバイスサービスを識別するための高度なクエリ構文 (AQS) 文字列。この文字列は、FindAllAsync または CreateWatcher メソッドに渡されます。</summary>
+      <summary>GUID によってデバイス サービスを識別するための高度な検索テクニック (AQS) 文字列。 この文字列は、FindAllAsync または CreateWatcher メソッドに渡されます。</summary>
       <param name="serviceId">サービス識別子。</param>
       <returns>AQS 文字列。</returns>
     </member>
     <member name="T:Windows.Devices.Portable.ServiceDeviceType">
-      <summary>ポータブルデバイスサービスの種類を示します。</summary>
+      <summary>ポータブル デバイス サービスの種類を示します。</summary>
     </member>
     <member name="F:Windows.Devices.Portable.ServiceDeviceType.CalendarService">
       <summary>カレンダー情報を提供するサービス。</summary>
@@ -31,31 +31,31 @@
       <summary>連絡先を追跡するサービス。</summary>
     </member>
     <member name="F:Windows.Devices.Portable.ServiceDeviceType.DeviceStatusService">
-      <summary>デバイスステータスサービス。</summary>
+      <summary>デバイス状態サービス。</summary>
     </member>
     <member name="F:Windows.Devices.Portable.ServiceDeviceType.NotesService">
-      <summary>メモを取るサービス。</summary>
+      <summary>ノート作成サービス。</summary>
     </member>
     <member name="F:Windows.Devices.Portable.ServiceDeviceType.RingtonesService">
       <summary>電話の着信音を提供するサービス。</summary>
     </member>
     <member name="F:Windows.Devices.Portable.ServiceDeviceType.SmsService">
-      <summary>ショートメッセージサービス (SMS) メッセージングサービス。</summary>
+      <summary>ショート メッセージ サービスの (SMS) メッセージング サービスです。</summary>
     </member>
     <member name="F:Windows.Devices.Portable.ServiceDeviceType.TasksService">
-      <summary>タスクを追跡するためのサービスです。</summary>
+      <summary>タスク追跡のサービス。</summary>
     </member>
     <member name="T:Windows.Devices.Portable.StorageDevice">
-      <summary>WPD をサポートするポータブルデバイスのストレージ機能にアクセスするためのメソッドを提供します。リムーバブル記憶装置には次のものがあります。</summary>
+      <summary>WPD をサポートするポータブル デバイスのストレージ機能にアクセスするメソッドを提供します。 リムーバブル記憶装置には次のものが含まれています。</summary>
     </member>
     <member name="M:Windows.Devices.Portable.StorageDevice.FromId(System.String)">
-      <summary>リムーバブル記憶装置の DeviceInformation Id から StorageFolder オブジェクトを取得します。</summary>
-      <param name="deviceId">リムーバブル記憶装置を識別する DeviceInformation ID。この id は、自動再生デバイスイベント引数の Windows. Devices. Enumeration または DeviceInformationId プロパティから取得できます。詳細については、「[クイックスタート: アプリを自動再生デバイスに登録する] (https://docs.microsoft.com/previous-versions/windows/apps/jj160497 (v = win. 10))」を参照してください。詳細については、リムーバブル記憶域のサンプルを参照してください。</param>
-      <returns>リムーバブル記憶装置を表すストレージフォルダーオブジェクト。デバイス上のコンテンツへのアクセスを提供します。</returns>
+      <summary>切り離し可能なストレージ デバイスの DeviceInformation ID から StorageFolder オブジェクトを取得します。</summary>
+      <param name="deviceId">リムーバブル記憶装置を識別する DeviceInformation ID。 この ID は、Windows.Devices.Enumeration、または自動再生デバイスのイベント引数の DeviceInformationId プロパティから取得できます。詳細については、「[クイック スタート: 自動再生デバイスにアプリを登録する](https://docs.microsoft.com/previous-versions/windows/apps/jj160497(v=win.10))」を参照してください。詳細については、リムーバブル記憶装置のサンプルを参照してください。</param>
+      <returns>リムーバブル記憶装置を表し、装置のコンテンツへのアクセスを可能にするストレージ フォルダー オブジェクト。</returns>
     </member>
     <member name="M:Windows.Devices.Portable.StorageDevice.GetDeviceSelector">
-      <summary>リムーバブル記憶装置を識別するための高度なクエリ構文 (AQS) 文字列。この文字列は、FindAllAsync または CreateWatcher メソッドに渡されます。</summary>
-      <returns>記憶装置を識別するための AQS 文字列。</returns>
+      <summary>削除可能なストレージ デバイスを識別するための高度クエリ構文 (AQS) の文字列です。 この文字列は、FindAllAsync または CreateWatcher メソッドに渡されます。</summary>
+      <returns>ストレージ デバイスを識別するための AQS の文字列です。</returns>
     </member>
   </members>
 </doc>

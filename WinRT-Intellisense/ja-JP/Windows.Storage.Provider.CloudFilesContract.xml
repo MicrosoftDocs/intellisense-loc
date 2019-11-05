@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <doc>
   <assembly>
-    <name>Windows... cloud. CloudFilesContract</name>
+    <name>Windows.Storage.Provider.CloudFilesContract</name>
   </assembly>
   <members>
     <member name="T:Windows.Storage.Provider.CloudFilesContract">
@@ -9,33 +9,33 @@
       </summary>
     </member>
     <member name="T:Windows.Storage.Provider.IStorageProviderItemPropertySource">
-      <summary>同期ルートからストレージプロバイダーの項目プロパティへのアクセスを提供します。</summary>
+      <summary>同期ルートから記憶域プロバイダー項目プロパティへのアクセスを提供します。</summary>
     </member>
     <member name="M:Windows.Storage.Provider.IStorageProviderItemPropertySource.GetItemProperties(System.String)">
-      <summary>記憶域プロバイダーの項目プロパティの一覧を取得します。</summary>
+      <summary>記憶域プロバイダーの項目のプロパティの一覧を取得します。</summary>
       <param name="itemPath">ストレージ項目へのパス。</param>
-      <returns>ストレージプロバイダーからの項目のプロパティの一覧。</returns>
+      <returns>記憶域プロバイダーからの項目のプロパティの一覧。</returns>
     </member>
     <member name="T:Windows.Storage.Provider.IStorageProviderPropertyCapabilities">
       <summary>同期ルートによってサポートされるプロパティ機能へのアクセスを提供します。</summary>
     </member>
     <member name="M:Windows.Storage.Provider.IStorageProviderPropertyCapabilities.IsPropertySupported(System.String)">
-      <summary>プロパティが同期ルートによってサポートされているかどうかを判断します。</summary>
-      <param name="propertyCanonicalName">プロパティの名前。例: "System. photos"</param>
-      <returns>* * True * * プロパティが同期ルートによってサポートされている場合。* * False * * それ以外の場合</returns>
+      <summary>プロパティが同期ルートによってサポートされているかどうかを決定します。</summary>
+      <param name="propertyCanonicalName">プロパティの名前。 たとえば、"System.Photo.DateTaken"</param>
+      <returns>プロパティが同期ルートによってサポートされている場合は **True**。それ以外の場合は **False**</returns>
     </member>
     <member name="T:Windows.Storage.Provider.IStorageProviderUriSource">
-      <summary>コンテンツ URI のパスと情報を取得するためのインターフェイス。</summary>
+      <summary>コンテンツ URI パスと情報を取得するためのインターフェイス。</summary>
     </member>
     <member name="M:Windows.Storage.Provider.IStorageProviderUriSource.GetContentInfoForPath(System.String,Windows.Storage.Provider.StorageProviderGetContentInfoForPathResult)">
-      <summary>URI のパスを指定して、ストレージプロバイダーの URI に関する情報を取得します。</summary>
-      <param name="path">ストレージプロバイダーの URI のパス。</param>
-      <param name="result">指定された記憶域プロバイダーの URI に関するコンテンツ情報。</param>
+      <summary>URI のパスを与えられた記憶域プロバイダーに関する情報を取得。</summary>
+      <param name="path">記憶域プロバイダー URI のパス。</param>
+      <param name="result">指定した記憶域プロバイダー URI に関するコンテンツ情報。</param>
     </member>
     <member name="M:Windows.Storage.Provider.IStorageProviderUriSource.GetPathForContentUri(System.String,Windows.Storage.Provider.StorageProviderGetPathForContentUriResult)">
-      <summary>URI の名前を指定して、コンテンツ URI のパスを取得します。</summary>
+      <summary>URI の名前を与えられたコンテンツ URI のパスを取得。</summary>
       <param name="contentUri">コンテンツ URI の文字列名。</param>
-      <param name="result">指定されたコンテンツ URI のパス。</param>
+      <param name="result">提供されるコンテンツ URI のパス。</param>
     </member>
     <member name="T:Windows.Storage.Provider.StorageProviderFileTypeInfo">
       <summary>
@@ -62,90 +62,90 @@
       </returns>
     </member>
     <member name="T:Windows.Storage.Provider.StorageProviderGetContentInfoForPathResult">
-      <summary>コンテンツ URI パスに関する追加情報を取得するメソッドを提供します。</summary>
+      <summary>コンテンツ URI パスに関する追加情報を取得する方法を提供。</summary>
     </member>
     <member name="M:Windows.Storage.Provider.StorageProviderGetContentInfoForPathResult.#ctor">
       <summary>StorageProviderGetContentInfoForPathResult の既定のコンストラクター。</summary>
     </member>
     <member name="P:Windows.Storage.Provider.StorageProviderGetContentInfoForPathResult.ContentId">
-      <summary>StorageProviderGetContentInfoForPathResult に関連付けられたコンテンツ ID を取得または設定します。</summary>
-      <returns>コンテンツ ID の値。</returns>
+      <summary>StorageProviderGetContentInfoForPathResult に関連付けられたコンテンツ ID を取得または設定。</summary>
+      <returns>コンテンツ ID 値。</returns>
     </member>
     <member name="P:Windows.Storage.Provider.StorageProviderGetContentInfoForPathResult.ContentUri">
-      <summary>StorageProviderGetContentInfoForPathResult に関連付けられたコンテンツ URI を取得または設定します。</summary>
+      <summary>StorageProviderGetContentInfoForPathResult に関連付けられたコンテンツ URI を取得または設定。</summary>
       <returns>コンテンツ URI 値。</returns>
     </member>
     <member name="P:Windows.Storage.Provider.StorageProviderGetContentInfoForPathResult.Status">
-      <summary>StorageProviderGetContentInfoForPathResult に関連付けられている記憶域プロバイダーの状態。</summary>
+      <summary>StorageProviderGetContentInfoForPathResult に関連付けられた記憶域プロバイダーの状態。</summary>
       <returns>StorageProviderUriSourceStatus 列挙値。</returns>
     </member>
     <member name="T:Windows.Storage.Provider.StorageProviderGetPathForContentUriResult">
-      <summary>コンテンツ URI の結果に関する追加情報を取得するメソッドを提供します。</summary>
+      <summary>コンテンツ URI の結果に関する追加情報を取得する方法を提供。</summary>
     </member>
     <member name="M:Windows.Storage.Provider.StorageProviderGetPathForContentUriResult.#ctor">
       <summary>StorageProviderGetPathForContentUriResult の既定のコンストラクター。</summary>
     </member>
     <member name="P:Windows.Storage.Provider.StorageProviderGetPathForContentUriResult.Path">
-      <summary>StorageProviderGetPathForContentUriResult オブジェクトのパスを取得します。</summary>
+      <summary>StorageProviderGetPathForContentUriResult オブジェクトのパスを取得。</summary>
       <returns>コンテンツ URI パス。</returns>
     </member>
     <member name="P:Windows.Storage.Provider.StorageProviderGetPathForContentUriResult.Status">
-      <summary>StorageProviderGetPathForContentUriResult に関連付けられている記憶域プロバイダーの状態。</summary>
+      <summary>StorageProviderGetPathForContentUriResult に関連付けられた記憶域プロバイダーの状態。</summary>
       <returns>StorageProviderUriSourceStatus 列挙値。</returns>
     </member>
     <member name="T:Windows.Storage.Provider.StorageProviderHardlinkPolicy">
-      <summary>プレースホルダーファイルまたはフォルダーでハードリンクを許可するかどうかを指定します。既定では、プレースホルダーのハードリンクは許可されていません。</summary>
+      <summary>プレースホルダー ファイルまたはフォルダーにハード リンクを許可するかどうかを指定します。 既定では、プレースホルダーにハード リンクすることは許可されません。</summary>
     </member>
     <member name="F:Windows.Storage.Provider.StorageProviderHardlinkPolicy.Allowed">
-      <summary>ハードリンクは、同じ同期ルート内のプレースホルダーで許可されます。</summary>
+      <summary>ハード リンクは、同じ同期ルート内のプレース ホルダーで許可されています。</summary>
     </member>
     <member name="F:Windows.Storage.Provider.StorageProviderHardlinkPolicy.None">
-      <summary>ハードリンクは許可されていません。</summary>
+      <summary>ハード リンクは許可されていません。</summary>
     </member>
     <member name="T:Windows.Storage.Provider.StorageProviderHydrationPolicy">
-      <summary>プレースホルダーファイルのファイルハイドレーションポリシー値の列挙体。ハイドレーションポリシーを使用すると、同期ルートでプレースホルダーファイルのデータを取得する動作をカスタマイズできます。</summary>
+      <summary>プレースフォルダーのファイルのファイル取り込みポリシー値の列挙体。 その取り込みポリシーにより、同期ルートが、プレースホルダー ファイルのデータを取得するための動作をカスタマイズすることができます。</summary>
     </member>
     <member name="F:Windows.Storage.Provider.StorageProviderHydrationPolicy.AlwaysFull">
-      <summary>これが選択されていて、プレースホルダーを完全に取り込まできない場合、プラットフォームは: ERROR_CLOUD_FILE_INVALID_REQUEST で失敗します。</summary>
+      <summary>このオプションを選択し、プレースホルダーが完全に取りこめない場合、プラットフォームは以下の理由で失敗します: ERROR_CLOUD_FILE_INVALID_REQUEST</summary>
     </member>
     <member name="F:Windows.Storage.Provider.StorageProviderHydrationPolicy.Full">
-      <summary>完全なハイドレーションが実行されます。要求を完了する前に、プレースホルダーをローカルで使用できるようにします。</summary>
+      <summary>フル取り込みが実行されます。 要求を完了する前に、プレースホルダーがローカルで有効であることを確認します。</summary>
     </member>
     <member name="F:Windows.Storage.Provider.StorageProviderHydrationPolicy.Partial">
-      <summary>ハイドレーションは、ユーザーの要求で実行されます。ハイドレーションはバックグラウンドで続行されません。</summary>
+      <summary>ユーザーの要求で取り込みが実行されます。 取り込みはバックグラウンドでは続行されません。</summary>
     </member>
     <member name="F:Windows.Storage.Provider.StorageProviderHydrationPolicy.Progressive">
-      <summary>オンデマンドの hyrdration が実行されます。ハイドレーションが完了していない場合は、バックグラウンドで続行されます。</summary>
+      <summary>オンデマンド取り込みが実行されます。 取り込みが完了していない場合は、バック グラウンドで継続されます。</summary>
     </member>
     <member name="T:Windows.Storage.Provider.StorageProviderHydrationPolicyModifier">
-      <summary>プライマリ StorageProviderHydrationPolicy で使用されるポリシー修飾子を提供します。</summary>
+      <summary>プライマリ StorageProviderHydrationPolicy に使用するポリシー修飾子を提供します。</summary>
     </member>
     <member name="F:Windows.Storage.Provider.StorageProviderHydrationPolicyModifier.AutoDehydrationAllowed">
       <summary>自動ファイル退避が許可されます。</summary>
     </member>
     <member name="F:Windows.Storage.Provider.StorageProviderHydrationPolicyModifier.None">
-      <summary>なし</summary>
+      <summary>修飾子がありません。</summary>
     </member>
     <member name="F:Windows.Storage.Provider.StorageProviderHydrationPolicyModifier.StreamingAllowed">
-      <summary>この修飾子を使用すると、プラットフォームは同期プロバイダーから返されたディスクにデータを格納できません。</summary>
+      <summary>この修飾子は、同期プロバイダーによって返されるディスクにデータを格納するプラットフォームを許可しません。</summary>
     </member>
     <member name="F:Windows.Storage.Provider.StorageProviderHydrationPolicyModifier.ValidationRequired">
-      <summary>データがファイルに取り込まされると、検証されます。</summary>
+      <summary>データがこのファイルに取り込まれると、そのデータは検証されます。</summary>
     </member>
     <member name="T:Windows.Storage.Provider.StorageProviderInSyncPolicy">
-      <summary>同期ルートによってサポートされるファイルとディレクトリの属性が含まれています。</summary>
+      <summary>同期ルートでサポートされているファイル属性とディレクトリ属性を格納します。</summary>
     </member>
     <member name="F:Windows.Storage.Provider.StorageProviderInSyncPolicy.Default">
       <summary>既定の同期ポリシー値。</summary>
     </member>
     <member name="F:Windows.Storage.Provider.StorageProviderInSyncPolicy.DirectoryCreationTime">
-      <summary>ディレクトリの作成時刻。</summary>
+      <summary>ディレクトリ作成時間。</summary>
     </member>
     <member name="F:Windows.Storage.Provider.StorageProviderInSyncPolicy.DirectoryHiddenAttribute">
-      <summary>ディレクトリの隠し属性。</summary>
+      <summary>ディレクトリの非表示属性。</summary>
     </member>
     <member name="F:Windows.Storage.Provider.StorageProviderInSyncPolicy.DirectoryLastWriteTime">
-      <summary>ディレクトリの最終書き込み時刻。</summary>
+      <summary>ディレクトリへの最後の書き込み時刻。</summary>
     </member>
     <member name="F:Windows.Storage.Provider.StorageProviderInSyncPolicy.DirectoryReadOnlyAttribute">
       <summary>ディレクトリの読み取り専用属性。</summary>
@@ -154,13 +154,13 @@
       <summary>ファイルのシステム属性。</summary>
     </member>
     <member name="F:Windows.Storage.Provider.StorageProviderInSyncPolicy.FileCreationTime">
-      <summary>ファイルの作成時刻。</summary>
+      <summary>ファイル作成時間。</summary>
     </member>
     <member name="F:Windows.Storage.Provider.StorageProviderInSyncPolicy.FileHiddenAttribute">
-      <summary>ファイルの隠し属性。</summary>
+      <summary>ファイルの非表示属性。</summary>
     </member>
     <member name="F:Windows.Storage.Provider.StorageProviderInSyncPolicy.FileLastWriteTime">
-      <summary>ファイルの最終書き込み時刻。</summary>
+      <summary>ファイルへの最後の書き込み時刻。</summary>
     </member>
     <member name="F:Windows.Storage.Provider.StorageProviderInSyncPolicy.FileReadOnlyAttribute">
       <summary>ファイルの読み取り専用属性。</summary>
@@ -169,83 +169,83 @@
       <summary>ファイルのシステム属性。</summary>
     </member>
     <member name="F:Windows.Storage.Provider.StorageProviderInSyncPolicy.PreserveInsyncForSyncEngine">
-      <summary>同期エンジン用に予約されている値。</summary>
+      <summary>同期エンジンに対して予約されている値。</summary>
     </member>
     <member name="T:Windows.Storage.Provider.StorageProviderItemProperties">
-      <summary>クラウドストレージプロバイダーのストレージ項目 (ファイルやフォルダーなど) のプロパティへのアクセスを提供します。</summary>
+      <summary>クラウド ストレージ プロバイダーのストレージ項目 (ファイルまたはフォルダーなど) のプロパティへのアクセスを提供します。</summary>
     </member>
     <member name="M:Windows.Storage.Provider.StorageProviderItemProperties.SetAsync(Windows.Storage.IStorageItem,Windows.Foundation.Collections.IIterable{Windows.Storage.Provider.StorageProviderItemProperty})">
-      <summary>ストレージ項目のカスタムプロパティ値を設定します。</summary>
+      <summary>ストレージ項目のカスタム プロパティ値を設定します。</summary>
       <param name="item">ストレージ項目。</param>
-      <param name="itemProperties">ストレージ項目の StorageProviderItemProperty 状態の反復可能なリスト。</param>
-      <returns>非同期アクション。非同期プログラミングを使用する場合、戻り値の型は void です。</returns>
+      <param name="itemProperties">ストレージ項目の StorageProviderItemProperty 状態の反復可能リスト。</param>
+      <returns>非同期アクション。 非同期プログラミングを使用すると、戻り値の型は void になります。</returns>
     </member>
     <member name="T:Windows.Storage.Provider.StorageProviderItemProperty">
-      <summary>ストレージ項目 (ファイルやフォルダーなど) のクラウドストレージプロバイダープロパティを定義します。</summary>
+      <summary>ストレージ項目 (ファイルまたはフォルダーなど) のクラウド ストレージ プロバイダーのプロパティを定義します。</summary>
     </member>
     <member name="M:Windows.Storage.Provider.StorageProviderItemProperty.#ctor">
       <summary>StorageProviderItemProperty の既定のコンストラクター。</summary>
     </member>
     <member name="P:Windows.Storage.Provider.StorageProviderItemProperty.IconResource">
-      <summary>クラウドストレージプロバイダープロパティのアイコンリソースへの参照。</summary>
-      <returns>アイコンリソースへの参照の文字列値。例: "SyncProviderResources .dll,-1234"</returns>
+      <summary>クラウド ストレージ プロバイダーのプロパティのアイコン リソースへの参照。</summary>
+      <returns>アイコン リソースへの参照の文字列値。 たとえば、"SyncProviderResources.dll, -1234"</returns>
     </member>
     <member name="P:Windows.Storage.Provider.StorageProviderItemProperty.Id">
-      <summary>クラウドストレージプロバイダーによって提供されるストレージ項目の Id。</summary>
-      <returns>ストレージ項目の Id。</returns>
+      <summary>クラウド ストレージ プロバイダーによって提供されるストレージ項目の ID。</summary>
+      <returns>ストレージ項目の ID。</returns>
     </member>
     <member name="P:Windows.Storage.Provider.StorageProviderItemProperty.Value">
-      <summary>ストレージプロバイダーストレージ項目の状態の説明テキスト。</summary>
+      <summary>ストレージ プロバイダーのストレージ項目の状態の説明テキスト。</summary>
       <returns>テキストの文字列値。</returns>
     </member>
     <member name="T:Windows.Storage.Provider.StorageProviderItemPropertyDefinition">
-      <summary>クラウドストレージプロバイダーから項目のプロパティを定義します。</summary>
+      <summary>クラウド ストレージ プロバイダーからの項目のプロパティを定義します。</summary>
     </member>
     <member name="M:Windows.Storage.Provider.StorageProviderItemPropertyDefinition.#ctor">
       <summary>StorageProviderItemPropertyDefinition の既定のコンストラクター。</summary>
     </member>
     <member name="P:Windows.Storage.Provider.StorageProviderItemPropertyDefinition.DisplayNameResource">
-      <summary>クラウド記憶域プロバイダーの状態の表示名を取得または設定します。</summary>
-      <returns>状態の表示名を表す文字列値。</returns>
+      <summary>クラウド ストレージ プロバイダーの状態の表示名を取得または設定します。</summary>
+      <returns>状態の表示名の文字列値。</returns>
     </member>
     <member name="P:Windows.Storage.Provider.StorageProviderItemPropertyDefinition.Id">
-      <summary>同期ルートの登録時にクラウド記憶域プロバイダーによって提供される記憶域項目の Id。</summary>
-      <returns>ストレージ項目の Id 番号。</returns>
+      <summary>同期ルートが登録されているときに、クラウド ストレージ プロバイダーによって提供されるストレージ項目の ID。</summary>
+      <returns>ストレージ項目の ID 番号。</returns>
     </member>
     <member name="T:Windows.Storage.Provider.StorageProviderPopulationPolicy">
-      <summary>同期プロバイダーがプレースホルダーファイルまたはディレクトリの方法を制御できるようにします。</summary>
+      <summary>プレースホルダー ファイルまたはディレクトリ方法を制御する同期プロバイダーを許可します</summary>
     </member>
     <member name="F:Windows.Storage.Provider.StorageProviderPopulationPolicy.AlwaysFull">
-      <summary>このプラットフォームでは、プレースホルダーファイルとディレクトリが常にローカルで利用可能であると想定されます。</summary>
+      <summary>プラットフォームは、プレースホルダー ファイルとディレクトリが常にローカルで利用できるとみなします。</summary>
     </member>
     <member name="F:Windows.Storage.Provider.StorageProviderPopulationPolicy.Full">
-      <summary>プレースホルダーファイルまたはディレクトリが完全に設定されていない場合、プラットフォームは、ユーザーの要求を完了する前に、同期プロバイダーによって設定されるように要求します。</summary>
+      <summary>プレースホルダー ファイルまたはディレクトリがまだ完全には設定されていない場合、プラットフォームはそれらに入力する同期プロバイダーを、ユーザーの要求が完了する前に要求します。</summary>
     </member>
     <member name="T:Windows.Storage.Provider.StorageProviderProtectionMode">
       <summary>同期ルートに含まれるデータの種類を示します。</summary>
     </member>
     <member name="F:Windows.Storage.Provider.StorageProviderProtectionMode.Personal">
-      <summary>同期ルートには、暗号化またはビジネス関連のファイルではなく、個人のファイルのみを含める必要があります。</summary>
+      <summary>同期ルートには、暗号化されたファイルまたはビジネス関連ファイルでない、個人用ファイルのみを格納する必要があります。</summary>
     </member>
     <member name="F:Windows.Storage.Provider.StorageProviderProtectionMode.Unknown">
-      <summary>同期ルートには、任意の種類のファイルを含めることができます。</summary>
+      <summary>同期ルートには、あらゆる種類のファイルを格納することができます。</summary>
     </member>
     <member name="T:Windows.Storage.Provider.StorageProviderSyncRootInfo">
-      <summary>オペレーティングシステムに登録するクラウドストレージプロバイダーの同期ルートのプロパティが含まれています。</summary>
+      <summary>オペレーティング システムに登録するクラウド ストレージ プロバイダーの同期ルートのプロパティを格納しています。</summary>
     </member>
     <member name="M:Windows.Storage.Provider.StorageProviderSyncRootInfo.#ctor">
       <summary>StorageProviderSyncRootInfo の既定のコンストラクター。</summary>
     </member>
     <member name="P:Windows.Storage.Provider.StorageProviderSyncRootInfo.AllowPinning">
-      <summary>ファイルをオフラインで使用できるようにする機能を有効または無効にします。</summary>
-      <returns>* * 固定が有効になっている場合、True * ** * False * * それ以外の場合</returns>
+      <summary>ファイルをオフラインで利用できる機能を有効または無効にします。</summary>
+      <returns>ピン留めが有効な場合は **True**。それ以外の場合は **False**。</returns>
     </member>
     <member name="P:Windows.Storage.Provider.StorageProviderSyncRootInfo.Context">
-      <summary>同期のルート id 情報を格納します。</summary>
-      <returns>同期ルート id を格納しているバッファー。</returns>
+      <summary>同期ルートの ID 情報が含まれています。</summary>
+      <returns>同期ルート ID を含むバッファー。</returns>
     </member>
     <member name="P:Windows.Storage.Provider.StorageProviderSyncRootInfo.DisplayNameResource">
-      <summary>既存の同期ルート登録にマップされるオプションの表示名。</summary>
+      <summary>既存の同期ルート登録にマップするオプションの表示名。</summary>
       <returns>表示名。</returns>
     </member>
     <member name="P:Windows.Storage.Provider.StorageProviderSyncRootInfo.FallbackFileTypeInfo">
@@ -255,39 +255,39 @@
       </returns>
     </member>
     <member name="P:Windows.Storage.Provider.StorageProviderSyncRootInfo.HardlinkPolicy">
-      <summary>同期ルートのハードリンクポリシー。</summary>
-      <returns>定義された Storageproviderハードリンクポリシー。</returns>
+      <summary>同期ルートのハード リンクポリシー。</summary>
+      <returns>定義されている StorageProviderHardlinkPolicy。</returns>
     </member>
     <member name="P:Windows.Storage.Provider.StorageProviderSyncRootInfo.HydrationPolicy">
-      <summary>同期ルート登録のハイドレーションポリシー。</summary>
-      <returns>記憶域プロバイダーハイドレーションポリシーの列挙値。</returns>
+      <summary>同期ルートの登録の取り込みポリシー。</summary>
+      <returns>記憶域プロバイダーの取り込みポリシーの列挙値。</returns>
     </member>
     <member name="P:Windows.Storage.Provider.StorageProviderSyncRootInfo.HydrationPolicyModifier">
-      <summary>同期ルート登録のハイドレーション policy 修飾子。</summary>
-      <returns>ストレージプロバイダーハイドレーションポリシー修飾子の列挙値。</returns>
+      <summary>同期ルートの登録の取り込みポリシー修飾子。</summary>
+      <returns>記憶域プロバイダーの取り込みポリシー修飾子の列挙値。</returns>
     </member>
     <member name="P:Windows.Storage.Provider.StorageProviderSyncRootInfo.IconResource">
-      <summary>ファイルまたはフォルダーのカスタム状態のアイコンリソースへのパス。</summary>
-      <returns>アイコンリソースへのパス (例: "SyncProvider. .dll,-100"、"SyncProvider .dll,-101")</returns>
+      <summary>ファイルまたはフォルダーのカスタム状態のアイコン リソースへのパス。</summary>
+      <returns>アイコン リソースへのパス、たとえば "SyncProvider.dll,-100" や "SyncProvider.dll,-101" など</returns>
     </member>
     <member name="P:Windows.Storage.Provider.StorageProviderSyncRootInfo.Id">
       <summary>同期ルートの識別子。</summary>
-      <returns>次の形式の識別子: [ストレージプロバイダー ID][Windows SID][アカウント ID]</returns>
+      <returns>フォーム内の識別子: [ストレージ プロバイダー ID]![Windows SID]![アカウント ID]</returns>
     </member>
     <member name="P:Windows.Storage.Provider.StorageProviderSyncRootInfo.InSyncPolicy">
-      <summary>クラウド記憶域プロバイダーの同期ポリシーへのアクセスを提供します。</summary>
-      <returns>同期ポリシーの値。</returns>
+      <summary>クラウド ストレージ プロバイダーの同期ポリシーへのアクセスを提供します。</summary>
+      <returns>同期ポリシー値。</returns>
     </member>
     <member name="P:Windows.Storage.Provider.StorageProviderSyncRootInfo.Path">
-      <summary>クラウドベースのフォルダーシステムのルートへのパスを表すストレージフォルダー。</summary>
-      <returns>ストレージフォルダー。</returns>
+      <summary>クラウド ベース フォルダー システムのルートへのパスを表すストレージ フォルダー。</summary>
+      <returns>ストレージ フォルダー。</returns>
     </member>
     <member name="P:Windows.Storage.Provider.StorageProviderSyncRootInfo.PopulationPolicy">
-      <summary>同期ルート登録の作成ポリシー。</summary>
+      <summary>同期ルートの登録の作成ポリシー。</summary>
       <returns>作成ポリシーの列挙値。</returns>
     </member>
     <member name="P:Windows.Storage.Provider.StorageProviderSyncRootInfo.ProtectionMode">
-      <summary>同期ルート登録の保護モード。</summary>
+      <summary>同期ルートの登録の保護モード。</summary>
       <returns>保護モードの列挙値。</returns>
     </member>
     <member name="P:Windows.Storage.Provider.StorageProviderSyncRootInfo.ProviderId">
@@ -295,12 +295,12 @@
       <returns>記憶域プロバイダーの ID を表す GUID。</returns>
     </member>
     <member name="P:Windows.Storage.Provider.StorageProviderSyncRootInfo.RecycleBinUri">
-      <summary>クラウドストレージのごみ箱への Uri。</summary>
+      <summary>クラウド ストレージ リサイクル ビンへの URI。</summary>
       <returns>ごみ箱への Uri。</returns>
     </member>
     <member name="P:Windows.Storage.Provider.StorageProviderSyncRootInfo.ShowSiblingsAsGroup">
-      <summary>ファイルエクスプローラーのメイン同期ルートの下に一覧表示されている兄弟同期ルートを表示します。</summary>
-      <returns>* * True * * 兄弟同期のルートが表示されている場合は * * False。それ以外の場合は、</returns>
+      <summary>エクスプローラーのメインの同期ルートの下に表示される兄弟同期ルートを示します。</summary>
+      <returns>兄弟同期ルートが表示される場合は **True**で、それ以外の場合は **False**</returns>
     </member>
     <member name="P:Windows.Storage.Provider.StorageProviderSyncRootInfo.StorageProviderItemPropertyDefinitions">
       <summary>同期ルートの StorageProviderItemPropertyDefinition 情報を取得します。</summary>
@@ -309,23 +309,23 @@
     </member>
     <member name="P:Windows.Storage.Provider.StorageProviderSyncRootInfo.Version">
       <summary>同期ルートのバージョン番号。</summary>
-      <returns>バージョン番号の文字列値。例: "1.0"</returns>
+      <returns>バージョン番号の文字列値。 例えば "1.0" など</returns>
     </member>
     <member name="T:Windows.Storage.Provider.StorageProviderSyncRootManager">
-      <summary>には、クラウド記憶域プロバイダーの同期ルートをオペレーティングシステムに登録または登録解除する機能が用意されています。</summary>
+      <summary>オペレーティング システムにクラウド ストレージ プロバイダーの同期ルートを登録または登録解除する機能を提供します。</summary>
     </member>
     <member name="M:Windows.Storage.Provider.StorageProviderSyncRootManager.GetCurrentSyncRoots">
       <summary>現在登録されているすべての同期ルートを取得します。</summary>
       <returns>現在登録されている同期ルートのコレクション。</returns>
     </member>
     <member name="M:Windows.Storage.Provider.StorageProviderSyncRootManager.GetSyncRootInformationForFolder(Windows.Storage.IStorageFolder)">
-      <summary>ストレージフォルダーを指定して、クラウドストレージプロバイダーの同期ルートのプロパティを返します。</summary>
-      <param name="folder">同期ルートのストレージフォルダー。</param>
-      <returns>指定されたストレージフォルダーのクラウドストレージプロバイダーの同期ルートのプロパティ。</returns>
+      <summary>指定されたストレージ フォルダーについてクラウド ストレージ プロバイダーの同期ルートのプロパティを返します。</summary>
+      <param name="folder">同期ルートのストレージ フォルダー。</param>
+      <returns>指定されたストレージ フォルダーに関するクラウド ストレージ プロバイダーの同期ルートのプロパティ。</returns>
     </member>
     <member name="M:Windows.Storage.Provider.StorageProviderSyncRootManager.GetSyncRootInformationForId(System.String)">
-      <summary>同期ルート Id が指定されたクラウドストレージプロバイダーの同期ルートのプロパティを返します。</summary>
-      <param name="id">同期ルート Id の文字列値。</param>
+      <summary>指定された同期ルート ID についてクラウド ストレージ プロバイダーの同期ルートのプロパティを返します。</summary>
+      <param name="id">同期ルート ID の文字列値。</param>
       <returns>指定された同期ルートのプロパティ。</returns>
     </member>
     <member name="M:Windows.Storage.Provider.StorageProviderSyncRootManager.IsSupported">
@@ -335,24 +335,24 @@
       </returns>
     </member>
     <member name="M:Windows.Storage.Provider.StorageProviderSyncRootManager.Register(Windows.Storage.Provider.StorageProviderSyncRootInfo)">
-      <summary>同期ルートをオペレーティングシステムに登録します。</summary>
+      <summary>オペレーティング システムとの同期ルートを登録します。</summary>
       <param name="syncRootInformation">登録する同期ルート。</param>
     </member>
     <member name="M:Windows.Storage.Provider.StorageProviderSyncRootManager.Unregister(System.String)">
-      <summary>オペレーティングシステムから同期ルートの登録を解除します。</summary>
-      <param name="id">登録を解除する同期ルートの Id。</param>
+      <summary>オペレーティング システムから同期ルートを登録解除します。</summary>
+      <param name="id">登録を解除する同期ルートの ID。</param>
     </member>
     <member name="T:Windows.Storage.Provider.StorageProviderUriSourceStatus">
-      <summary>ストレージプロバイダーの URI の状態を列挙します。</summary>
+      <summary>記憶域プロバイダー URI の状態の列挙値。</summary>
     </member>
     <member name="F:Windows.Storage.Provider.StorageProviderUriSourceStatus.FileNotFound">
-      <summary>URI が同期プロバイダーによって認識されていません。</summary>
+      <summary>同期プロバイダーは URI を認識しません。</summary>
     </member>
     <member name="F:Windows.Storage.Provider.StorageProviderUriSourceStatus.NoSyncRoot">
-      <summary>URI ソースに登録されている同期ルートがありません。</summary>
+      <summary>URI ソースに登録されている同期ルートはありません。</summary>
     </member>
     <member name="F:Windows.Storage.Provider.StorageProviderUriSourceStatus.Success">
-      <summary>ストレージプロバイダー ID は存在します。</summary>
+      <summary>記憶域プロバイダー ID が存在します。</summary>
     </member>
   </members>
 </doc>
