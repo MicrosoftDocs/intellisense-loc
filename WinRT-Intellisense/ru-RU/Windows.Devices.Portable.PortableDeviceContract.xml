@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <doc>
   <assembly>
-    <name>Windows. Devices. Portable. Портабледевицеконтракт</name>
+    <name>Windows.Devices.Portable.PortableDeviceContract</name>
   </assembly>
   <members>
     <member name="T:Windows.Devices.Portable.PortableDeviceContract">
@@ -9,23 +9,23 @@
       </summary>
     </member>
     <member name="T:Windows.Devices.Portable.ServiceDevice">
-      <summary>Предоставляет методы для идентификации службы устройства для портативного устройства, которое поддерживает WPD (портативные устройства Windows) для перечисления устройств.</summary>
+      <summary>Предоставляет методы для определения службы устройства для портативного устройства, поддерживающего WPD, для перечисления устройств.</summary>
     </member>
     <member name="M:Windows.Devices.Portable.ServiceDevice.GetDeviceSelector(Windows.Devices.Portable.ServiceDeviceType)">
-      <summary>Возвращает строку синтаксиса расширенных запросов (АКС), используемую для перечисления служб устройств указанного Сервицедевицетипе. Эта строка передается в метод Финдалласинк или Креатеватчер.</summary>
-      <param name="serviceType">Тип службы для обнаружения.</param>
-      <returns>Строка АКС.</returns>
+      <summary>Возвращает строку дополнительного синтаксиса запроса (AQS), которая используется для перечисления служб устройства указанного типа ServiceDeviceType. Эта строка передается методу FindAllAsync или CreateWatcher.</summary>
+      <param name="serviceType">Тип идентифицируемой службы.</param>
+      <returns>Строка расширенного синтаксиса запроса (AQS).</returns>
     </member>
     <member name="M:Windows.Devices.Portable.ServiceDevice.GetDeviceSelectorFromServiceId(System.Guid)">
-      <summary>Строка расширенного синтаксиса запросов (АКС) для идентификации службы устройства по ее идентификаторам GUID. Эта строка передается в метод Финдалласинк или Креатеватчер.</summary>
+      <summary>Строка расширенного синтаксиса запросов (AQS) для идентификации служб устройств по GUID. Эта строка передается методу FindAllAsync или CreateWatcher.</summary>
       <param name="serviceId">Идентификатор службы.</param>
-      <returns>Строка АКС.</returns>
+      <returns>Строка расширенного синтаксиса запроса (AQS).</returns>
     </member>
     <member name="T:Windows.Devices.Portable.ServiceDeviceType">
-      <summary>Указывает тип службы переносимых устройств.</summary>
+      <summary>Указывает тип службы переносных устройств.</summary>
     </member>
     <member name="F:Windows.Devices.Portable.ServiceDeviceType.CalendarService">
-      <summary>Служба, которая предоставляет сведения о календаре.</summary>
+      <summary>Служба, предоставляющая данные календаря.</summary>
     </member>
     <member name="F:Windows.Devices.Portable.ServiceDeviceType.ContactsService">
       <summary>Служба, которая отслеживает контакты.</summary>
@@ -34,28 +34,28 @@
       <summary>Служба состояния устройства.</summary>
     </member>
     <member name="F:Windows.Devices.Portable.ServiceDeviceType.NotesService">
-      <summary>Служба принятия заметок.</summary>
+      <summary>Служба ведения заметок.</summary>
     </member>
     <member name="F:Windows.Devices.Portable.ServiceDeviceType.RingtonesService">
-      <summary>Служба, которая предоставляет мелодии звонка для телефона.</summary>
+      <summary>Служба, предоставляющая мелодии вызова для телефонов.</summary>
     </member>
     <member name="F:Windows.Devices.Portable.ServiceDeviceType.SmsService">
-      <summary>Служба обмена сообщениями службы SMS.</summary>
+      <summary>Служба обмена сообщениями SMS.</summary>
     </member>
     <member name="F:Windows.Devices.Portable.ServiceDeviceType.TasksService">
       <summary>Служба для отслеживания задач.</summary>
     </member>
     <member name="T:Windows.Devices.Portable.StorageDevice">
-      <summary>Предоставляет методы для доступа к функциям хранилища переносимого устройства, поддерживающего WPD. К съемным запоминающим устройствам относятся:</summary>
+      <summary>Предоставляет методы для доступа к функциональным возможностям хранения переносных устройств, поддерживающих WPD. Съемные устройства хранения включают следующее:</summary>
     </member>
     <member name="M:Windows.Devices.Portable.StorageDevice.FromId(System.String)">
-      <summary>Возвращает объект Сторажефолдер из идентификатора Девицеинформатион для съемного устройства хранения.</summary>
-      <param name="deviceId">Идентификатор Девицеинформатион, определяющий съемное запоминающее устройство. Этот идентификатор можно получить из свойства Windows. Devices. Enumeration или Девицеинформатионид аргументов события устройства автозапуска. Дополнительные сведения см. в разделе [краткое руководство. Регистрация приложения для устройства автозапуска] (HTTPS://docs.Microsoft.com/Previous-Versions/Windows/Apps/jj160497 (v = Win. 10)). Дополнительные сведения см. в примере для съемных носителей.</param>
-      <returns>Объект папки хранилища, который представляет съемное запоминающее устройство и предоставляет доступ к содержимому на устройстве.</returns>
+      <summary>Получает объект StorageFolder из идентификатора DeviceInformation для съемного устройства хранения.</summary>
+      <param name="deviceId">Идентификатор DeviceInformation, определяющий съемное запоминающее устройство. Этот идентификатор можно получить из Windows.Devices.Enumeration или из свойства DeviceInformationId аргументов события устройства автозапуска. Дополнительные сведения см. в разделе [Краткое руководство. Регистрация приложения для устройства с автозапуском](https://docs.microsoft.com/previous-versions/windows/apps/jj160497(v=win.10)). Дополнительные сведения приведены в примере работы со съемным устройством памяти.</param>
+      <returns>Объект папки хранения, который представляет съемное запоминающее устройство и предоставляет доступ к содержимому на устройстве.</returns>
     </member>
     <member name="M:Windows.Devices.Portable.StorageDevice.GetDeviceSelector">
-      <summary>Строка расширенного синтаксиса запросов (АКС) для идентификации съемных запоминающих устройств. Эта строка передается в метод Финдалласинк или Креатеватчер.</summary>
-      <returns>Строка АКС для идентификации устройств хранения.</returns>
+      <summary>Строка расширенного синтаксиса запросов (AQS) для идентификации съемных запоминающих устройств. Эта строка передается методу FindAllAsync или CreateWatcher.</summary>
+      <returns>Строка AQS для указания запоминающих устройств.</returns>
     </member>
   </members>
 </doc>
