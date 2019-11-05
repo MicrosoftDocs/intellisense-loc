@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <doc>
   <assembly>
-    <name>Windows. Security. Isolation. isolatedwindowsenvironmentcontract</name>
+    <name>Windows.Security.Isolation.IsolatedWindowsEnvironmentContract</name>
   </assembly>
   <members>
     <member name="T:Windows.Security.Isolation.IsolatedWindowsEnvironment">
@@ -14,30 +14,30 @@
     <member name="M:Windows.Security.Isolation.IsolatedWindowsEnvironment.CreateAsync(Windows.Security.Isolation.IsolatedWindowsEnvironmentOptions)">
       <summary>Erstellen Sie eine isolierte Windows-Umgebung asynchron.</summary>
       <param name="options">Von isolatedwindowsenvironmentoptions definierte Konfigurationsoptionen für isolierte Windows-Umgebungen</param>
-      <returns>Isolatedwindowsenvironmentkreateresult</returns>
+      <returns>IsolatedWindowsEnvironmentCreateResult</returns>
     </member>
     <member name="M:Windows.Security.Isolation.IsolatedWindowsEnvironment.CreateAsync(Windows.Security.Isolation.IsolatedWindowsEnvironmentOptions,Windows.Security.Isolation.IsolatedWindowsEnvironmentTelemetryParameters)">
       <summary>Erstellen Sie asynchron eine isolierte Windows-Umgebung, und korrelieren Sie Sie mit telemetrieereignissen.</summary>
       <param name="options">Von isolatedwindowsenvironmentoptions definierte Konfigurationsoptionen für isolierte Windows-Umgebungen</param>
       <param name="telemetryParameters">Durch isolatedwindowsenvironmenttelemetryparameters definierte telemetrieparameter</param>
-      <returns>Isolatedwindowsenvironmentkreateresult</returns>
+      <returns>IsolatedWindowsEnvironmentCreateResult</returns>
     </member>
     <member name="M:Windows.Security.Isolation.IsolatedWindowsEnvironment.FindByOwnerId(System.String)">
       <summary>Gibt eine Liste isolierter Windows-Umgebungen zurück, die für einen bestimmten Besitzer registriert sind.</summary>
       <param name="environmentOwnerId">Eindeutiger Bezeichner für den Besitzer der isolierten Windows-Umgebung.</param>
-      <returns>Isolatedwindowsenvironment</returns>
+      <returns>IsolatedWindowsEnvironment</returns>
     </member>
     <member name="M:Windows.Security.Isolation.IsolatedWindowsEnvironment.GetById(System.String)">
       <summary>Gibt einen Verweis auf die isolierte Windows-Umgebung basierend auf der ID zurück.</summary>
       <param name="environmentId">Eine einer isolierten Windows-Umgebung zugewiesene ID.</param>
-      <returns>Isolatedwindowsenvironment</returns>
+      <returns>IsolatedWindowsEnvironment</returns>
     </member>
     <member name="M:Windows.Security.Isolation.IsolatedWindowsEnvironment.LaunchFileWithUIAsync(System.String,System.String,System.String)">
       <summary>Ermöglicht Anwendungen das Öffnen von Dateien in einer isolierten Windows-Umgebung.</summary>
       <param name="appExePath">Die Zeichenfolge des Ausführungs Pfads der Anwendung.</param>
       <param name="argumentsTemplate">Zeichenfolge, die die relative Position von filePath in Bezug auf andere Argumente angibt, die übermittelt werden sollen:</param>
       <param name="filePath">Zeichenfolge für den Pfad der Datei, die in der isolierten Windows-Umgebung geöffnet werden soll.</param>
-      <returns>Isolatedwindowsenvironmentlaunchfileresult</returns>
+      <returns>IsolatedWindowsEnvironmentLaunchFileResult</returns>
     </member>
     <member name="M:Windows.Security.Isolation.IsolatedWindowsEnvironment.LaunchFileWithUIAsync(System.String,System.String,System.String,Windows.Security.Isolation.IsolatedWindowsEnvironmentTelemetryParameters)">
       <summary>Ermöglicht Anwendungen das Öffnen von Dateien in einer isolierten Windows-Umgebung mit telemetriekorrelation.</summary>
@@ -45,7 +45,7 @@
       <param name="argumentsTemplate">Zeichenfolge, die die relative Position von filePath in Bezug auf andere Argumente angibt, die übermittelt werden sollen:</param>
       <param name="filePath">Zeichenfolge für den Pfad der Datei, die in einer isolierten Windows-Umgebung geöffnet werden soll</param>
       <param name="telemetryParameters">Durch isolatedwindowsenvironmenttelemetryparameters definierte telemetrieparameter</param>
-      <returns>Isolatedwindowsenvironmentlaunchfileresult</returns>
+      <returns>IsolatedWindowsEnvironmentLaunchFileResult</returns>
     </member>
     <member name="M:Windows.Security.Isolation.IsolatedWindowsEnvironment.RegisterMessageReceiver(System.Guid,Windows.Security.Isolation.MessageReceivedCallback)">
       <summary>Registrieren des Nachrichtenempfänger Rückrufs.</summary>
@@ -56,29 +56,29 @@
       <summary>Freigeben des Host Ordners in einer isolierten Windows-Umgebung.</summary>
       <param name="hostFolder">Der Name des Host Ordners.</param>
       <param name="requestOptions">isolatedwindowsenvironmentsharefolderrequestoptions</param>
-      <returns>Isolatedwindowsenvironmentsharefolderresult</returns>
+      <returns>IsolatedWindowsEnvironmentShareFolderResult</returns>
     </member>
     <member name="M:Windows.Security.Isolation.IsolatedWindowsEnvironment.ShareFolderAsync(System.String,Windows.Security.Isolation.IsolatedWindowsEnvironmentShareFolderRequestOptions,Windows.Security.Isolation.IsolatedWindowsEnvironmentTelemetryParameters)">
       <summary>Geben Sie einen Host Ordner mit einer isolierten Windows-Umgebung mit telemetriekorrelation frei.</summary>
       <param name="hostFolder">Die Zeichenfolge des Host Ordner namens.</param>
       <param name="requestOptions">isolatedwindowsenvironmentsharefolderrequestoptions</param>
       <param name="telemetryParameters">Durch isolatedwindowsenvironmenttelemetryparameters definierte telemetrieparameter</param>
-      <returns>Isolatedwindowsenvironmentsharefolderresult</returns>
+      <returns>IsolatedWindowsEnvironmentShareFolderResult</returns>
     </member>
     <member name="M:Windows.Security.Isolation.IsolatedWindowsEnvironment.StartProcessSilentlyAsync(System.String,System.String,Windows.Security.Isolation.IsolatedWindowsEnvironmentActivator)">
       <summary>Ermöglicht die Ausführung von Prozessen innerhalb einer isolierten Windows-Umgebung.</summary>
       <param name="hostExePath">Die Zeichenfolge des Host Ausführungs Pfades.</param>
       <param name="arguments">Zeichenfolge</param>
-      <param name="activator">Isolatedwindowsenvironmentactivator</param>
-      <returns>Isolatedwindowsenvironmentstartprocessresult</returns>
+      <param name="activator">IsolatedWindowsEnvironmentActivator</param>
+      <returns>IsolatedWindowsEnvironmentStartProcessResult</returns>
     </member>
     <member name="M:Windows.Security.Isolation.IsolatedWindowsEnvironment.StartProcessSilentlyAsync(System.String,System.String,Windows.Security.Isolation.IsolatedWindowsEnvironmentActivator,Windows.Security.Isolation.IsolatedWindowsEnvironmentTelemetryParameters)">
       <summary>Ermöglicht die Ausführung von Prozessen innerhalb einer isolierten Windows-Umgebung mit telemetriekorrelation.</summary>
       <param name="hostExePath">Die Zeichenfolge des Host Ausführungs Pfades.</param>
       <param name="arguments">Zeichenfolge</param>
-      <param name="activator">Isolatedwindowsenvironmentactivator</param>
+      <param name="activator">IsolatedWindowsEnvironmentActivator</param>
       <param name="telemetryParameters">Durch isolatedwindowsenvironmenttelemetryparameters definierte telemetrieparameter</param>
-      <returns>Isolatedwindowsenvironmentstartprocessresult</returns>
+      <returns>IsolatedWindowsEnvironmentStartProcessResult</returns>
     </member>
     <member name="M:Windows.Security.Isolation.IsolatedWindowsEnvironment.TerminateAsync">
       <summary>Die isolierte Windows-Umgebung wird asynchron beendet.</summary>
@@ -157,7 +157,7 @@
       <summary>UInt32 für den Abschluss der isolierten Windows-Umgebung in Prozent</summary>
     </member>
     <member name="F:Windows.Security.Isolation.IsolatedWindowsEnvironmentCreateProgress.State">
-      <summary>Isolatedwindowsenvironmentprogressstate</summary>
+      <summary>IsolatedWindowsEnvironmentProgressState</summary>
     </member>
     <member name="T:Windows.Security.Isolation.IsolatedWindowsEnvironmentCreateResult">
       <summary>Lauf Zeit Klasse, die Ergebnisse der Umgebungs Erstellung abfragt, z. b. Status und erweiterte Fehler.</summary>
@@ -315,8 +315,8 @@
     <member name="M:Windows.Security.Isolation.IsolatedWindowsEnvironmentOwnerRegistration.Register(System.String,Windows.Security.Isolation.IsolatedWindowsEnvironmentOwnerRegistrationData)">
       <summary>Registriert den Besitzer der isolierten Windows-Umgebung.</summary>
       <param name="ownerName">Der Name des Besitzers der isolierten Windows-Umgebung.</param>
-      <param name="ownerRegistrationData">isolatedwindowsenvironmentbesitzregistrationdata</param>
-      <returns>Isolatedwindowsenvironmentbesitzregistrationresult</returns>
+      <param name="ownerRegistrationData">isolatedwindowsenvironmentownerregistrationdata</param>
+      <returns>IsolatedWindowsEnvironmentOwnerRegistrationResult</returns>
     </member>
     <member name="M:Windows.Security.Isolation.IsolatedWindowsEnvironmentOwnerRegistration.Unregister(System.String)">
       <summary>Aufheben der Registrierung des Besitzers der isolierten Windows-Umgebung.</summary>
@@ -423,7 +423,7 @@
       <summary>Optionen für die Ausführung des Vorgangs zum Freigeben von Ordnern.</summary>
     </member>
     <member name="M:Windows.Security.Isolation.IsolatedWindowsEnvironmentShareFolderRequestOptions.#ctor">
-      <summary>Ergebnisse von isolatedwindowsenvironmentsharefolderrequestoptions.</summary>
+      <summary>Results of IsolatedWindowsEnvironmentShareFolderRequestOptions.</summary>
     </member>
     <member name="P:Windows.Security.Isolation.IsolatedWindowsEnvironmentShareFolderRequestOptions.AllowWrite">
       <summary>Bestimmt, ob in der isolierten Windows-Umgebung ausgelief Anwendungen Daten in diesen Ordner schreiben können, der freigegeben wird.</summary>
