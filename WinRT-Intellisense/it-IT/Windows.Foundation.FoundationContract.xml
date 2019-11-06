@@ -429,13 +429,13 @@
       <summary>Una matrice di valori **Inspectable**.</summary>
     </member>
     <member name="F:Windows.Foundation.PropertyType.Int16">
-      <summary>Signed Integer a 16 bit (2 byte).</summary>
+      <summary>Intero con segno a 16 bit (2 byte).</summary>
     </member>
     <member name="F:Windows.Foundation.PropertyType.Int16Array">
       <summary>Matrice di valori Int16.</summary>
     </member>
     <member name="F:Windows.Foundation.PropertyType.Int32">
-      <summary>Signed Integer a 32 bit (4 byte).</summary>
+      <summary>Intero con segno a 32 bit (4 byte).</summary>
     </member>
     <member name="F:Windows.Foundation.PropertyType.Int32Array">
       <summary>Matrice di valori Int32.</summary>
@@ -489,19 +489,19 @@
       <summary>Matrice di valori TimeSpan.</summary>
     </member>
     <member name="F:Windows.Foundation.PropertyType.UInt16">
-      <summary>Unsigned Integer a 16 bit (2 byte).</summary>
+      <summary>Intero senza segno a 16 bit (2 byte).</summary>
     </member>
     <member name="F:Windows.Foundation.PropertyType.UInt16Array">
       <summary>Matrice di valori UInt16.</summary>
     </member>
     <member name="F:Windows.Foundation.PropertyType.UInt32">
-      <summary>Unsigned Integer a 32 bit (4 byte).</summary>
+      <summary>Intero senza segno a 32 bit (4 byte).</summary>
     </member>
     <member name="F:Windows.Foundation.PropertyType.UInt32Array">
       <summary>Matrice di valori UInt32.</summary>
     </member>
     <member name="F:Windows.Foundation.PropertyType.UInt64">
-      <summary>Unsigned Integer a 64 bit (8 byte).</summary>
+      <summary>Intero senza segno a 64 bit (8 byte).</summary>
     </member>
     <member name="F:Windows.Foundation.PropertyType.UInt64Array">
       <summary>Matrice di valori UInt64.</summary>
