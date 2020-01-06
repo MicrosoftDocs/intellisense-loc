@@ -1536,8 +1536,8 @@
       <summary>Initialisiert eine neue Instanz der ContactAddress-Klasse.</summary>
     </member>
     <member name="P:Windows.Phone.PersonalInformation.ContactAddress.Country">
-      <summary>Ruft das Land ab oder legt es fest, das einer Kontaktadresse zugeordnet ist.</summary>
-      <returns>Das Land, das einer Kontaktadresse zugeordnet ist.</returns>
+      <summary>Ruft das Land oder die Region ab oder legt das Land/die Region fest, das bzw. das einer Kontaktadresse zugeordnet ist.</summary>
+      <returns>Das Land/die Region, das bzw. das einer Kontaktadresse zugeordnet ist.</returns>
     </member>
     <member name="P:Windows.Phone.PersonalInformation.ContactAddress.Locality">
       <summary>Ruft den Standort einer Kontaktadresse ab oder legt diesen fest.</summary>
